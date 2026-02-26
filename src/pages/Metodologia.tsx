@@ -100,17 +100,17 @@ const Metodologia = () => {
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground">Método de Pesquisa</p>
                   <p className="text-xs text-muted-foreground mt-1">Reflexivo e analítico</p>
                 </div>
-                <div className="text-2xl text-primary/60">≠</div>
+                <div className="text-3xl font-light text-primary/80">≠</div>
                 <div className="flex-1 text-center md:text-left">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground">Métodos de Criação</p>
                   <p className="text-xs text-muted-foreground mt-1">Filmagem, montagem, glitch, design</p>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
                 Embora método de pesquisa e métodos de criação se alimentem mutuamente, não se confundem.
                 O primeiro interroga, conceitua e articula; os segundos produzem, experimentam e materializam.
               </p>
-              <p className="text-sm text-muted-foreground leading-relaxed mt-4">
+              <p className="text-sm text-muted-foreground leading-relaxed mt-6 max-w-3xl">
                 O rigor reside na reflexividade com que cada decisão é interrogada e na consistência com que
                 as inferências se articulam aos referenciais mobilizados.
               </p>

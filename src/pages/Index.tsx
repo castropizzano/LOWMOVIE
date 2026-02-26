@@ -22,11 +22,11 @@ const Index = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="text-4xl md:text-6xl font-bold uppercase leading-[0.9] tracking-tight"
+            className="text-4xl md:text-6xl font-bold uppercase leading-none tracking-tight"
           >
             <span className="text-primary">LowMovie™</span>
             <br />
-            <span className="text-xl md:text-2xl font-normal text-foreground/80">
+            <span className="text-xl md:text-[1.65rem] font-medium text-foreground/70">
               e o Labirinto Criativo
             </span>
           </motion.h1>
@@ -46,7 +46,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-8 mx-auto max-w-lg border border-border/40 rounded-lg px-6 py-5 bg-card/20"
+            className="mt-8 mx-auto max-w-lg border border-border/60 rounded-lg px-8 py-6 bg-card/20"
           >
             <p className="text-sm text-foreground/80 leading-relaxed">
               Dissertação apresentada ao Programa de Pós-Graduação em Cinema e Artes do Vídeo — UNESPAR
@@ -66,23 +66,10 @@ const Index = () => {
             </p>
           </motion.div>
 
-          {/* Epígrafe */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.75 }}
-            className="mt-6"
-          >
-            <p className="text-xs italic text-muted-foreground max-w-xs mx-auto">
-              "We have such sights to show you."
-              <span className="block mt-1 not-italic text-muted-foreground/60">— Hellraiser (Clive Barker, 1987)</span>
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.9 }}
+            transition={{ duration: 0.7, delay: 0.75 }}
             className="mt-8"
           >
             <Link
@@ -92,6 +79,19 @@ const Index = () => {
               Explorar a pesquisa
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
+          </motion.div>
+
+          {/* Epígrafe */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.95 }}
+            className="mt-6"
+          >
+            <p className="text-[10px] italic text-muted-foreground/70 max-w-xs mx-auto">
+              "We have such sights to show you."
+              <span className="block mt-1 not-italic text-muted-foreground/50">— Hellraiser (Clive Barker, 1987)</span>
+            </p>
           </motion.div>
 
           <motion.div
