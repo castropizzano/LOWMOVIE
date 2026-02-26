@@ -16,9 +16,6 @@ const Index = () => {
             <p className="mb-2 font-display text-xs md:text-sm uppercase tracking-[0.3em] text-muted-foreground">
               Dissertação de Mestrado — Junho 2025
             </p>
-            <p className="mb-6 text-xs uppercase tracking-[0.2em] text-muted-foreground/60">
-              Mestrado em Cinema e Artes do Vídeo
-            </p>
           </motion.div>
 
           <motion.h1
@@ -44,16 +41,24 @@ const Index = () => {
             <br className="hidden sm:block" /> do coletivo LowPressure™
           </motion.p>
 
+          {/* Bloco institucional visível */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 space-y-2"
+            className="mt-8 mx-auto max-w-lg border border-border/40 rounded-lg px-6 py-5 bg-card/20"
           >
-            <p className="text-xs text-muted-foreground/60 font-display uppercase tracking-widest">
-              Castro Pizzano — PPG Cinema e Artes do Vídeo — UNESPAR
+            <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
+              Dissertação apresentada ao Programa de Pós-Graduação em Cinema e Artes do Vídeo — UNESPAR
             </p>
-            <p className="text-xs text-muted-foreground/50">
+            <p className="text-xs text-primary/80 mt-2 font-display uppercase tracking-widest">
+              Linha de Pesquisa: Processos de Criação no Cinema e nas Artes do Vídeo
+            </p>
+            <div className="h-px w-12 bg-border/50 mx-auto my-3" />
+            <p className="text-xs text-muted-foreground">
+              Castro Pizzano
+            </p>
+            <p className="text-xs text-muted-foreground mt-1">
               Orientador: Prof. Dr. Fábio Jabur de Noronha
             </p>
           </motion.div>
@@ -62,7 +67,7 @@ const Index = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.8 }}
-            className="mt-12"
+            className="mt-10"
           >
             <Link
               to="/apresentacao"
@@ -77,7 +82,7 @@ const Index = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 1 }}
-            className="mt-16"
+            className="mt-12"
           >
             <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/40">
               Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual

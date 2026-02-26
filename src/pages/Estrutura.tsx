@@ -8,21 +8,21 @@ const movimentos = [
     icon: Compass,
     title: "Corpo em Deriva",
     subtitle: "Operadores Poéticos",
-    desc: "Cartografia da formação estética do pesquisador-artista. Formulação dos operadores poéticos a partir da experiência corporal: corpo-câmera, cine-transe e coreocinema.",
+    desc: "Cartografia da formação estética do pesquisador-artista. A deriva não é errância sem destino: é atenção aberta ao que o espaço urbano oferece como possibilidade de gesto e de imagem. Este movimento formula os operadores poéticos a partir da experiência corporal — corpo-câmera, cine-transe e coreocinema — como modos de habitar o espaço e produzir linguagem.",
     items: ["Poética do instante", "Estética da borda", "Registro em fluxo"],
   },
   {
     icon: Users,
     title: "Coletivo em Baixo Relevo",
     subtitle: "Ética de Produção",
-    desc: "Análise do LowPressure™ como rede de vínculos, ética de produção e modos de pertencimento. Inclui a LowZine como arquivo vivo e a micropolítica do fazer cotidiano.",
+    desc: "Análise do LowPressure™ como ética de produção e micropolítica do fazer. Este movimento examina as dinâmicas internas do coletivo — seus modos de decisão, suas formas de autoria compartilhada, suas estratégias de circulação — demonstrando que a horizontalidade não é apenas um princípio organizacional, mas uma condição estética que se inscreve na própria textura do filme.",
     items: ["Vínculos e pertencimento", "Micropolítica do fazer", "LowZine como arquivo"],
   },
   {
     icon: Film,
     title: "Obra em Expansão",
     subtitle: "Processos do Filme",
-    desc: "Estudo do LowMovie™ em sua gênese, filmagem, montagem, trilha, glitch e campo simbólico. Análise da circulação como extensão da obra.",
+    desc: "Estudo do LowMovie™ em seus processos materiais, simbólicos e de circulação. Este movimento final aborda o filme como objeto estético acabado — embora provisoriamente — e como dispositivo de mediação entre a prática subcultural e o campo institucional do cinema e das artes do vídeo.",
     items: ["Filmagem como corpo-câmera", "Montagem e glitch", "Trilha e circulação"],
   },
 ];
@@ -36,6 +36,15 @@ const Estrutura = () => {
             title="Estrutura Analítica"
             subtitle="A dissertação se organiza em três movimentos"
           />
+
+          <AnimatedSection delay={0.05}>
+            <p className="max-w-3xl text-foreground/80 leading-relaxed mb-12">
+              A dissertação organiza-se em três movimentos analíticos que correspondem, simultaneamente,
+              a dimensões distintas do objeto e a níveis progressivos de complexidade conceitual.
+              Cada movimento possui autonomia interna, mas articula-se com os demais numa lógica de
+              aprofundamento cumulativo: do corpo ao coletivo, do coletivo à obra, da obra ao campo.
+            </p>
+          </AnimatedSection>
 
           <div className="grid gap-8 md:grid-cols-3">
             {movimentos.map((mov, i) => (
@@ -72,11 +81,14 @@ const Estrutura = () => {
                 <p>
                   O <span className="text-primary font-medium">Lowbyrinth™</span> funciona como
                   imagem-conceito e operador simbólico — uma lente imagética que sintetiza o caráter
-                  processual, labiríntico e transformador da criação coletiva.
+                  processual, labiríntico e transformador da criação coletiva. O labirinto não tem
+                  saída prevista — a obra é o próprio percurso.
                 </p>
-                <p className="text-muted-foreground">
-                  A referência junguiana opera como lente complementar, não como fundamento estruturante
-                  da análise. A tese se sustenta independentemente dessa referência.
+                <p>
+                  A obra expande-se para além de seus limites formais, operando como catalisador de novas
+                  relações entre arte, cidade e subcultura. A referência junguiana opera como lente
+                  complementar, não como fundamento estruturante da análise. A tese se sustenta
+                  independentemente dessa referência.
                 </p>
               </div>
             </div>
