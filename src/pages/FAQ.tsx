@@ -11,31 +11,31 @@ import {
 const questions = [
   {
     q: "Poética e estética",
-    a: "A escolha por \"poética\" enfatiza o fazer em ato, a formatividade do processo criador. A pesquisa analisa processos de criação, não apenas resultados formais.",
+    a: "Poética refere-se ao fazer em ato, à formatividade do processo criador. A escolha enfatiza o processo — não apenas o resultado formal. A dissertação analisa como se faz, não apenas o que se faz.",
   },
   {
     q: "Símbolo e signo",
-    a: "O símbolo é mobilizado como imagem condensadora de sentido, não como estrutura semiótica formal. A referência simbólica é operacional e contextual.",
+    a: "O símbolo é mobilizado como imagem condensadora de sentido. Não se realiza análise estrutural semiótica. A referência junguiana é operacional e complementar — funciona como lente imagética, não como sistema interpretativo totalizante.",
   },
   {
     q: "Rigor metodológico",
-    a: "A reflexividade substitui a neutralidade como critério de validade. O rigor está na explicitação metodológica da implicação.",
+    a: "O rigor reside na reflexividade explícita e na articulação teórica consistente. A posição de artista-pesquisador é assumida e fundamentada, não naturalizada. A neutralidade é substituída pela explicitação do posicionamento como critério de validade.",
   },
   {
     q: "Delimitação do objeto",
-    a: "O objeto central é o filme LowMovie™ e seus processos criativos. O coletivo é analisado enquanto condição de produção.",
+    a: "O objeto central é o filme LowMovie™ e seus processos criativos. O coletivo LowPressure™ é analisado enquanto condição de produção — contexto necessário, não objeto autônomo. É sobre cinema a partir do skate. O foco é o processo audiovisual.",
   },
   {
     q: "Dimensão política",
-    a: "A obra opera como micropolítica do fazer cotidiano, não como militância explícita.",
+    a: "A obra opera como micropolítica do gesto e da ocupação sensível da cidade. Não se trata de militância explícita, mas de uma ética do fazer que reconfigura as condições de produção e circulação artística.",
   },
   {
     q: "Autonomia conceitual",
-    a: "A tese se sustenta independentemente da referência junguiana. Jung é lente complementar, não fundamento estrutural.",
+    a: "A tese sustenta-se independentemente da referência junguiana. O Lowbyrinth™ funciona como imagem-conceito operacional. A estrutura argumentativa se apoia nos operadores poéticos e na pesquisa-criação, não na psicologia analítica.",
   },
   {
     q: "Contribuição inédita",
-    a: "O deslocamento do skate para o campo estético-metodológico e a formulação de operadores conceituais situados.",
+    a: "O deslocamento do skate para o campo estético-metodológico e a formulação de operadores analíticos situados — poética do instante, estética da borda, registro em fluxo — constituem contribuição original ao campo do cinema e das artes do vídeo no Brasil.",
   },
 ];
 
@@ -44,7 +44,7 @@ const FAQ = () => {
     <Layout>
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 max-w-3xl">
-          <SectionTitle title="Questões Críticas" subtitle="Perguntas centrais sobre a dissertação" />
+          <SectionTitle title="Questões Críticas" subtitle="Respostas fundamentadas às perguntas centrais" />
 
           <AnimatedSection delay={0.1}>
             <Accordion type="single" collapsible className="space-y-3">

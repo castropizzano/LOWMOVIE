@@ -5,19 +5,19 @@ import AnimatedSection from "@/components/AnimatedSection";
 const contribuicoes = [
   {
     title: "Skate como prática estética",
-    desc: "Deslocamento do skate do campo sociológico para uma abordagem estética produtora de linguagem audiovisual.",
+    desc: "Reposiciona o skate como prática estética produtora de linguagem audiovisual, deslocando-o do campo sociológico para o estético-metodológico.",
   },
   {
     title: "Operadores conceituais situados",
-    desc: "Formulação de operadores analíticos — poética do instante, estética da borda, registro em fluxo — derivados diretamente da prática.",
+    desc: "Formula operadores analíticos — poética do instante, estética da borda, registro em fluxo — derivados diretamente da prática artística.",
   },
   {
-    title: "Metodologia implicada estruturada",
-    desc: "Pesquisa-criação com rigor metodológico baseado em reflexividade e explicitação da posição do pesquisador.",
+    title: "Pesquisa-criação implicada",
+    desc: "Estrutura a pesquisa-criação implicada como abordagem rigorosa, onde a reflexividade e a explicitação da posição do pesquisador garantem a validade.",
   },
   {
-    title: "Ampliação do campo audiovisual",
-    desc: "Deslocamento epistemológico no campo audiovisual brasileiro, ao trazer o skate como objeto legítimo de investigação.",
+    title: "Deslocamento epistemológico",
+    desc: "Propõe um deslocamento epistemológico no campo audiovisual brasileiro, ao trazer o skate como objeto legítimo de investigação em cinema e artes do vídeo.",
   },
 ];
 
@@ -26,7 +26,7 @@ const Contribuicoes = () => {
     <Layout>
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 max-w-5xl">
-          <SectionTitle title="Contribuições" subtitle="O que esta dissertação propõe" />
+          <SectionTitle title="Contribuições" subtitle="O que esta dissertação propõe ao campo" />
 
           <div className="grid gap-6 md:grid-cols-2">
             {contribuicoes.map((item, i) => (

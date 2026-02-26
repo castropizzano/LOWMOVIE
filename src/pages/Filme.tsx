@@ -27,17 +27,23 @@ const Filme = () => {
             </div>
           </AnimatedSection>
 
-          {/* Descrição */}
+          {/* Descrição expandida */}
           <AnimatedSection delay={0.2}>
             <div className="max-w-3xl space-y-4 text-foreground/85 leading-relaxed mb-16">
               <p>
                 O <span className="text-primary font-medium">LowMovie™</span> opera como dispositivo
-                poético-político — filmagem, montagem, glitch, trilha e design como parte de um gesto
-                coletivo que transforma a cidade em campo sensível.
+                poético-político, onde viver, pensar e criar operam em um mesmo gesto. O filme não é
+                apenas registro — é processo criativo em que o corpo, o urbano e o coletivo convergem
+                como matéria audiovisual.
               </p>
               <p>
-                O filme não é apenas registro: é processo criativo em que o corpo, o urbano e o coletivo
-                convergem como matéria audiovisual.
+                A filmagem funciona como <strong>corpo-câmera</strong> — extensão sensível do realizador em movimento.
+                A montagem opera como <strong>artbook</strong>, reorganizando fragmentos em constelações de sentido.
+                O <strong>glitch</strong> emerge como linguagem de fratura, marca visual da instabilidade criativa.
+              </p>
+              <p>
+                A ecologia sensorial do filme — trilha sonora, paleta cromática, design gráfico e sonoridades urbanas —
+                constitui um campo estético integrado, onde cada camada reforça a poética do instante e do fluxo.
               </p>
             </div>
           </AnimatedSection>
@@ -73,7 +79,7 @@ const Filme = () => {
                 </div>
                 <div>
                   <p className="font-display text-sm uppercase tracking-wide">Lowbyrinth EP</p>
-                  <p className="text-xs text-muted-foreground mt-1">Ouvir no Spotify</p>
+                  <p className="text-xs text-muted-foreground mt-1">Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)</p>
                 </div>
                 <ExternalLink className="ml-auto h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
@@ -86,7 +92,7 @@ const Filme = () => {
                 </div>
                 <div>
                   <p className="font-display text-sm uppercase tracking-wide">Like Rats on Hostile Paths</p>
-                  <p className="text-xs text-muted-foreground mt-1">Ouvir no Bandcamp</p>
+                  <p className="text-xs text-muted-foreground mt-1">Trilha original do filme</p>
                 </div>
                 <ExternalLink className="ml-auto h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
