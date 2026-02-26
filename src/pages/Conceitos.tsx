@@ -68,7 +68,7 @@ const Conceitos = () => {
           <SectionTitle title="Conceitos" subtitle="Cartografia teórica, formulações autorais e ética de criação" />
 
           <AnimatedSection delay={0.05}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
+            <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 A fundamentação teórica articula tradições intelectuais distintas — teoria urbana,
                 estética relacional, estudos culturais, pesquisa em artes, teoria do cinema — numa constelação

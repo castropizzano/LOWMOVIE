@@ -25,7 +25,7 @@ const Coletivo = () => {
           />
 
           <AnimatedSection delay={0.1}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
+            <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 O <span className="text-primary font-semibold">LowPressure™</span> não é um grupo
                 formal — é uma rede de afinidades, uma forma de vida em rede que se constitui pelo
@@ -70,7 +70,7 @@ const Coletivo = () => {
           {/* Vocabulário do Skate */}
           <AnimatedSection delay={0.2}>
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Vocabulário do Skate</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-6 max-w-3xl">
+            <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               Termos centrais da cultura do skate mobilizados na pesquisa — categorias operacionais
               de uma prática estética situada.
             </p>

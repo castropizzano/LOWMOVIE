@@ -41,19 +41,19 @@ const Conclusao = () => {
             className="mt-16"
           >
             <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
-            <p className="text-base text-foreground/80 leading-relaxed text-justify max-w-2xl mx-auto">
+            <p className="text-base text-foreground/80 leading-relaxed text-justify max-w-3xl mx-auto">
               O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual autônoma e conhecimento
               estético legítimo no campo acadêmico. A dissertação demonstra, analiticamente, que o skate já opera
               como prática estética produtora de formas, linguagens e saberes.
             </p>
-            <p className="mt-4 text-base text-foreground/80 leading-relaxed max-w-2xl mx-auto">
+            <p className="mt-4 text-base text-foreground/80 leading-relaxed max-w-3xl mx-auto">
               A pesquisa afirma que o gesto criativo, quando analisado com rigor e implicação, constitui
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
               um filme fora dos circuitos convencionais — essas operações não são apenas práticas
               artísticas: são modos de conhecer o mundo. O percurso metodológico opera em espiral — cada retorno ao
               campo aprofunda a compreensão anterior.
             </p>
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify max-w-2xl mx-auto">
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify max-w-3xl mx-auto">
               O que o LowMovie™ ensina é que a poética não habita o resultado
               acabado, mas o processo que o engendra. O filme é a sedimentação provisória de um fluxo
               contínuo de gestos, decisões, improvisos e encontros. É nesse fluxo que reside a contribuição
@@ -68,7 +68,7 @@ const Conclusao = () => {
             transition={{ duration: 0.8, delay: 1.1 }}
             className="mt-16"
           >
-            <div className="border border-border/40 rounded-lg px-8 py-6 bg-card/20 max-w-xl mx-auto">
+            <div className="border border-border/40 rounded-lg px-8 py-6 bg-card/20 max-w-2xl mx-auto">
               <p className="text-sm text-muted-foreground leading-relaxed italic">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um lowbyrinth."

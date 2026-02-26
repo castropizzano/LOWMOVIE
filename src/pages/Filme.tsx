@@ -88,7 +88,7 @@ const Filme = () => {
 
           {/* Descrição */}
           <AnimatedSection delay={0.2}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
+            <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 O <span className="text-primary font-semibold">LowMovie™</span> opera como dispositivo
                 poético-político, onde viver, pensar e criar operam em um mesmo gesto. É a materialização
@@ -156,7 +156,7 @@ const Filme = () => {
 
           {/* Bloco 2 — Texto Analítico */}
           <AnimatedSection delay={0.4}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
+            <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 A sequência organiza-se em três momentos visuais articulados: preparação, projeção e absorção do gesto no espaço urbano. O enquadramento privilegia o plano geral aberto, com o talude ocupando grande parte do quadro e o corpo do skatista reduzido à condição de vetor em deslocamento, evidenciando a desproporção entre corpo e arquitetura.
               </p>
