@@ -1,135 +1,60 @@
 
 
-## Refinamento Final — Site Acadêmico-Institucional de Alto Nível
+## Refinamento Estratégico Final — Instrumento de Legitimação Acadêmica
 
-Revisão minuciosa de todas as páginas com base na dissertação completa (PDF analisado) e no material textual definitivo fornecido pelo usuário. O objetivo é elevar o site ao nível de apresentação institucional para defesa de mestrado.
-
----
-
-### Diagnóstico
-
-O site atual já possui a estrutura correta (9 páginas, dark mode sóbrio, navegação funcional). Porém, há lacunas significativas:
-
-1. **Conteúdo incompleto** — Faltam seções inteiras previstas no material definitivo: "Lugar de Fala — Artista-Pesquisador", "Mapa Conceitual de Autores", "Conceitos Próprios", "Ética de Criação e Ressonância com Herzog"
-2. **Textos rasos** — As descrições atuais são telegráficas demais. A dissertação oferece densidade teórica que deve aparecer no site
-3. **Pergunta central** — Atualmente chamada "Problema de Pesquisa"; deve incluir a "resposta sintética" conforme material definitivo
-4. **Orientador e banca** — Ausentes do site (Prof. Dr. Fábio Jabur de Noronha, banca com Profa. Fabiana Pelinson e Profa. Luciana Barone)
-5. **Footer** — Faltam informações da linha de pesquisa
-6. **Palavras-chave** — Ausentes (Skate; Videoarte; Processos Criativos; Subcultura Urbana; Colaboração Audiovisual)
-7. **Navbar** — Precisa refletir a nova estrutura expandida
+Análise comparativa minuciosa entre o conteúdo atual do site e o PDF da dissertação revelou lacunas significativas em densidade textual e dados concretos. O PDF contém parágrafos completos, argumentativamente densos, que o site ainda resume de forma telegráfica. O objetivo é elevar cada página ao nível do documento institucional, incorporando a análise estratégica de 5 pontos fornecida.
 
 ---
 
-### Plano de Mudanças
+### Diagnóstico detalhado — o que muda e por quê
 
-#### 1. Navbar (`src/components/Navbar.tsx`)
-- Reorganizar links para refletir a nova estrutura de páginas (10 páginas total)
-- Adicionar rota para nova página "Conceitos"
-- Manter "Questões" como label para FAQ
+**PONTO 1 — Home: ancoragem institucional**
+O site atual mostra "Castro Pizzano — PPG Cinema e Artes do Vídeo — UNESPAR" em texto pequeno e opaco (60% opacity). Precisa de um bloco institucional visível abaixo do subtítulo:
 
-#### 2. App.tsx — Nova rota
-- Adicionar rota `/conceitos` para a página de Conceitos Próprios + Mapa de Autores + Ética Herzog
+```text
+Dissertação apresentada ao Programa de Pós-Graduação em Cinema e Artes do Vídeo — UNESPAR
+Linha de Pesquisa: Processos de Criação no Cinema e nas Artes do Vídeo
+Orientador: Prof. Dr. Fábio Jabur de Noronha
+```
 
-#### 3. Home / Index (`src/pages/Index.tsx`)
-- Adicionar "Junho 2025" como data
-- Adicionar "Mestrado em Cinema e Artes do Vídeo" mais visível
-- Adicionar orientador: "Orientador: Prof. Dr. Fábio Jabur de Noronha"
-- Adicionar palavras-chave em bloco discreto na parte inferior
+Ação: reformatar o bloco de créditos, aumentar visibilidade, adicionar linha de pesquisa como elemento destacado.
 
-#### 4. Apresentação (`src/pages/Apresentacao.tsx`)
-- Expandir texto do contexto com a linguagem da dissertação (experiência urbana, deslocamento epistemológico)
-- **Adicionar nova seção: "Lugar de Fala — Artista-Pesquisador"** com os 4 pontos do material definitivo
-- Atualizar a pergunta central para incluir a formulação completa + resposta sintética
-- Manter justificativa com os 3 pontos
+**PONTO 2 — Filme: bloco "Dados da Obra"**
+A página do filme é conceitual mas carece de dados concretos. Adicionar bloco com campos estruturados:
+- Título, Ano, Duração, Formato, Estrutura, Direção, Coletivo, Locais de exibição
 
-#### 5. Metodologia (`src/pages/Metodologia.tsx`)
-- Expandir descrições dos eixos com o conteúdo da dissertação:
-  - Afeto: "força epistemológica e gesto ético-político... disposição de deixar-se tocar pelo campo"
-  - Escuta: "sustentar o silêncio, acolher o tempo do outro, permitir que o sentido emerja"
-  - Improviso: "abertura ao inesperado, um saber em movimento que aprende com a instabilidade"
-- Adicionar a **distinção fundamental** método de pesquisa ≠ métodos de criação (com formatação visual clara)
-- Adicionar referências: Coessens, Pimentel, Moriceau
+Isso transmite objetividade acadêmica e ancora o objeto.
 
-#### 6. Estrutura (`src/pages/Estrutura.tsx`)
-- Expandir descrição de cada movimento com conteúdos da dissertação:
-  - Corpo em Deriva: "cartografia da formação estética, corpo-câmera, cine-transe"
-  - Coletivo em Baixo Relevo: "vínculos, ética de produção, modos de pertencimento, a LowZine"
-  - Obra em Expansão: "gênese, filmagem, montagem, trilha, glitch, campo simbólico, circulação"
-- Expandir seção Operadores e Campo Simbólico com mais densidade
+**PONTO 3 — Metodologia: precisão operacional**
+Adicionar procedimentos concretos (período de pesquisa, instrumentos de registro, critérios de análise fílmica). Expandir as descrições dos eixos com o texto completo do PDF (página 5), que é significativamente mais denso que o atual.
 
-#### 7. Nova Página: Conceitos (`src/pages/Conceitos.tsx`)
-Página dedicada que reúne três blocos:
+**PONTO 4 — Apresentação: texto completo do PDF**
+O parágrafo de contexto no PDF (página 2) tem 3 parágrafos densos vs. 2 parágrafos curtos no site. Incorporar a densidade argumentativa completa: "O trabalho situa-se no cruzamento entre a produção cinematográfica contemporânea, as práticas subculturais urbanas e a pesquisa acadêmica em artes..." e "O coletivo LowPressure™ funciona como condição de produção e como ecossistema criativo..." O Lugar de Fala também precisa do texto completo do PDF (página 4), que é muito mais maduro.
 
-**a) Mapa Conceitual de Autores** — Grid de cards com:
-- Iain Borden — skate como reconfiguração espacial
-- McDuie-Ra — subcultura e territorialidade, "archiving from below"
-- Nicolas Bourriaud — estética relacional, obra como dispositivo de encontro
-- Stuart Hall — identidade como construção dinâmica
-- Luis Alberto de Abreu — criação horizontal
-- Coessens / Pimentel / Moriceau — pesquisa-criação, corpo como conhecimento
-- Delpeux / Araújo / Jean Rouch / Maya Deren — corpo-câmera, cine-transe, coreocinema
+**PONTO 5 — Contribuições: dimensão nacional explícita**
+O PDF (página 10) tem descrições expandidas para cada contribuição. Incorporar e adicionar referência explícita ao campo brasileiro.
 
-**b) Conceitos Próprios** — Lista com definições expandidas:
-- Lowbyrinth™
-- Poética do instante
-- Estética da borda
-- Registro em fluxo
-- Afeto como eixo metodológico
-
-**c) Ética de Criação e Ressonância com Herzog** — Bloco textual sobre autonomia criativa e micropolítica do fazer
-
-#### 8. O Filme (`src/pages/Filme.tsx`)
-- Expandir descrição: "dispositivo poético-político, onde viver, pensar e criar operam em um mesmo gesto"
-- Mencionar processos específicos: filmagem como corpo-câmera, montagem como artbook, glitch como linguagem de fratura, ecologia sensorial (trilha, som, paleta, design)
-- Manter placeholders de vídeo e galeria
-- Atualizar links de soundtrack com nomes completos dos artistas: Dan Guinski (Non-Grata) e Raphael Carvalho (Relvi)
-
-#### 9. O Coletivo (`src/pages/Coletivo.tsx`)
-- Expandir com conceitos da dissertação: "Like Rats on Hostile Paths" como síntese epistemológica
-- Mencionar a LowZine como arquivo vivo
-- Adicionar referência à crew como "forma de vida em rede"
-- Citação de Certeau sobre táticas vs. estratégias
-- Mencionar Rafão VM como "agregador do coletivo"
-
-#### 10. Contribuições (`src/pages/Contribuicoes.tsx`)
-- Refinar linguagem para versão definitiva:
-  1. "Reposiciona o skate como prática estética produtora de linguagem audiovisual"
-  2. "Formula operadores conceituais derivados da prática artística"
-  3. "Estrutura a pesquisa-criação implicada como abordagem rigorosa"
-  4. "Propõe deslocamento epistemológico no campo audiovisual brasileiro"
-
-#### 11. Questões Críticas (`src/pages/FAQ.tsx`)
-- Atualizar para 7 questões com respostas mais densas conforme material definitivo
-- Incluir a nova questão sobre cinema vs. skate: "É sobre cinema a partir do skate. O foco é o processo audiovisual."
-- Respostas mais longas e fundamentadas
-
-#### 12. Conclusão (`src/pages/Conclusao.tsx`)
-- Adicionar terceira frase de encerramento: "A dissertação afirma que o gesto criativo, quando analisado com rigor e implicação, constitui também forma de pensamento."
-- Manter hierarquia tipográfica existente
-
-#### 13. Layout / Footer (`src/components/Layout.tsx`)
-- Expandir footer com:
-  - Linha de pesquisa: "Processos de Criação no Cinema e nas Artes do Vídeo"
-  - Orientador: "Orientador: Prof. Dr. Fábio Jabur de Noronha"
-  - Palavras-chave
+**Demais páginas — elevar ao nível do PDF:**
+- **Estrutura**: usar texto da página 6 do PDF (descrições completas dos movimentos)
+- **Conceitos**: usar texto das páginas 7-9 do PDF (autores com contexto completo, conceitos com definições expandidas, Herzog com 3 parágrafos densos)
+- **Questões Críticas**: usar texto da página 11 do PDF (respostas longas, fundamentadas, com parágrafo introdutório)
+- **Conclusão**: usar texto da página 12 do PDF (3 parágrafos expandidos + frase de encerramento "Da prática corporal à formulação conceitual...")
 
 ---
 
-### Resumo de arquivos a modificar/criar
+### Arquivos a modificar
 
-| Arquivo | Ação |
-|---------|------|
-| `src/components/Navbar.tsx` | Editar — adicionar link "Conceitos" |
-| `src/App.tsx` | Editar — adicionar rota `/conceitos` |
-| `src/pages/Index.tsx` | Editar — orientador, data, palavras-chave |
-| `src/pages/Apresentacao.tsx` | Editar — Lugar de Fala, pergunta + resposta sintética |
-| `src/pages/Metodologia.tsx` | Editar — eixos expandidos, distinção fundamental |
-| `src/pages/Estrutura.tsx` | Editar — movimentos expandidos |
-| `src/pages/Conceitos.tsx` | **Criar** — Mapa de autores + conceitos próprios + Herzog |
-| `src/pages/Filme.tsx` | Editar — descrição expandida, artistas da trilha |
-| `src/pages/Coletivo.tsx` | Editar — "Like Rats", LowZine, Certeau, Rafão VM |
-| `src/pages/Contribuicoes.tsx` | Editar — linguagem refinada |
-| `src/pages/FAQ.tsx` | Editar — 7 questões com respostas densas |
-| `src/pages/Conclusao.tsx` | Editar — frase adicional |
-| `src/components/Layout.tsx` | Editar — footer expandido |
+| Arquivo | Mudanças |
+|---------|----------|
+| `src/pages/Index.tsx` | Bloco institucional reformatado com maior visibilidade. Adicionar linha de pesquisa como elemento destacado. |
+| `src/pages/Apresentacao.tsx` | Contexto expandido com 3 parágrafos do PDF (p.2). Lugar de Fala com texto completo do PDF (p.4) — 3 parágrafos densos em vez de 4 bullets. Justificativa com parágrafo de contextualização do PDF (p.2, último parágrafo). |
+| `src/pages/Metodologia.tsx` | Texto introdutório expandido do PDF (p.5). Eixos com descrições completas do PDF. Distinção fundamental com o parágrafo completo do PDF. Adicionar bloco "Procedimentos" com dados operacionais. |
+| `src/pages/Estrutura.tsx` | Descrições dos movimentos expandidas com texto do PDF (p.6). Cada card com parágrafo completo em vez de frase resumida. |
+| `src/pages/Conceitos.tsx` | Autores com contexto expandido do PDF (p.7). Conceitos com definições completas do PDF (p.8) — cada um com parágrafo inteiro. Herzog com 3 parágrafos do PDF (p.9). Adicionar parágrafo introdutório sobre a cartografia teórica. |
+| `src/pages/Filme.tsx` | Novo bloco "Dados da Obra" com campos estruturados (título, ano, formato, duração, direção, coletivo, exibições). Manter descrição e galeria. |
+| `src/pages/Contribuicoes.tsx` | Descrições expandidas do PDF (p.10). Cada contribuição com parágrafo completo. Menção explícita ao campo brasileiro. |
+| `src/pages/FAQ.tsx` | Parágrafo introdutório sobre antecipação de tensões da banca. Respostas expandidas com texto completo do PDF (p.11). |
+| `src/pages/Conclusao.tsx` | Texto expandido do PDF (p.12) — 3 parágrafos completos. Frase final: "Da prática corporal à formulação conceitual... o percurso desta dissertação é, ele mesmo, um lowbyrinth." |
+
+Nenhuma nova página ou rota será criada. Nenhuma mudança estrutural no layout, navbar ou footer. O foco é exclusivamente em densidade textual, dados concretos e precisão argumentativa.
 
