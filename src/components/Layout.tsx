@@ -12,13 +12,19 @@ const Layout = ({ children }: { children: ReactNode }) => {
             © 2025 Castro Pizzano — Universidade Estadual do Paraná
           </p>
           <p className="text-xs text-muted-foreground/70">
-            Linha de Pesquisa: Processos de Criação no Cinema e nas Artes do Vídeo
+            PPG em Cinema e Artes do Vídeo — Linha: Processos de Criação no Cinema e nas Artes do Vídeo
           </p>
           <p className="text-xs text-muted-foreground/70">
             Orientador: Prof. Dr. Fábio Jabur de Noronha
           </p>
+          <p className="text-[10px] text-muted-foreground/50">
+            Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone
+          </p>
           <p className="text-xs text-muted-foreground/50 mt-4">
             Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual
+          </p>
+          <p className="text-[10px] text-muted-foreground/30 mt-2 italic">
+            Este site funciona como mapa conceitual da pesquisa — ferramenta pedagógica complementar à dissertação.
           </p>
         </div>
       </footer>

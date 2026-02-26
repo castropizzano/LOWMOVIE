@@ -15,27 +15,31 @@ const questions = [
   },
   {
     q: "Símbolo e signo",
-    a: "O símbolo é mobilizado como imagem condensadora de sentido, não como unidade de análise semiótica. A dissertação não realiza análise estrutural semiótica. A referência junguiana, quando presente, é operacional e complementar — jamais estruturante. A tese sustenta-se independentemente dessa referência.",
+    a: "O símbolo é mobilizado como imagem condensadora de sentido, não como unidade de análise semiótica. A dissertação não realiza análise estrutural semiótica. A referência junguiana, quando presente, é operacional e complementar — jamais estruturante. A tese sustenta-se independentemente dessa referência. O conceito de fabulação, mobilizado a partir de Deleuze, opera em registro distinto: fabulação não designa invenção ficcional, mas um gesto de criação do real, um modo de produzir outras percepções e sentidos a partir do cotidiano.",
   },
   {
     q: "Rigor metodológico",
-    a: "O rigor não reside na neutralidade ou na replicabilidade, mas na reflexividade explícita, na transparência do posicionamento e na articulação teórica consistente. Cada inferência é confrontada com os referenciais mobilizados; cada escolha metodológica é justificada. A posição de artista-pesquisador é assumida e fundamentada, não naturalizada.",
+    a: "O rigor não reside na neutralidade ou na replicabilidade, mas na reflexividade explícita, na transparência do posicionamento e na articulação teórica consistente. Cada inferência é confrontada com os referenciais mobilizados; cada escolha metodológica é justificada. A posição de artista-pesquisador é assumida e fundamentada, não naturalizada. Como afirma Pimentel, \"toda ação praticada numa experiência modifica quem a pratica e quem a sofre\" — e essa transformação mútua é motor epistemológico, não contaminação.",
   },
   {
     q: "Delimitação do objeto",
-    a: "O objeto central é o filme LowMovie™ e seus processos criativos. O coletivo LowPressure™ é analisado como condição de produção — não como objeto em si. A dissertação mantém foco disciplinado, evitando dispersão temática. É sobre cinema a partir do skate. O foco é o processo audiovisual.",
+    a: "O objeto central é o filme LowMovie™ e seus processos criativos. O coletivo LowPressure™ é analisado como condição de produção — não como objeto em si. A dissertação mantém foco disciplinado, evitando dispersão temática. Os objetivos específicos delimitam com precisão o escopo: descrever as práticas colaborativas, analisar as escolhas formais, investigar os atravessamentos estéticos e observar as reverberações no campo.",
   },
   {
     q: "Dimensão política",
-    a: "A obra opera como micropolítica do gesto e da ocupação sensível da cidade. Sua dimensão política é imanente à prática, não declarativa. Criar autonomamente, circular fora dos circuitos institucionais, ocupar a cidade com o corpo — esses gestos são, em si mesmos, atos políticos.",
+    a: "A obra opera como micropolítica do gesto e da ocupação sensível da cidade. Sua dimensão política é imanente à prática, não declarativa. Criar autonomamente, circular fora dos circuitos institucionais, ocupar a cidade com o corpo — esses gestos são, em si mesmos, atos políticos. Não se trata de militância explícita, mas de uma operação mais sutil: criar sem esperar autorização institucional configura, por si só, uma micropolítica do fazer.",
   },
   {
     q: "Autonomia conceitual",
-    a: "A tese sustenta-se independentemente da referência junguiana. O Lowbyrinth™ funciona como imagem-conceito operacional. A estrutura argumentativa se apoia nos operadores poéticos e na pesquisa-criação, não na psicologia analítica.",
+    a: "A tese sustenta-se independentemente da referência junguiana. O Lowbyrinth™ funciona como imagem-conceito operacional. A estrutura argumentativa se apoia nos operadores poéticos e na pesquisa-criação, não na psicologia analítica. Os operadores — poética do instante, estética da borda, registro em fluxo — emergem da prática e retornam a ela, constituindo contribuição conceitual autônoma.",
   },
   {
     q: "Contribuição inédita",
-    a: "O ineditismo reside no deslocamento do skate para o campo estético-metodológico e na formulação de operadores analíticos situados — ferramentas conceituais que emergem da prática e que podem ser apropriadas por outras investigações no campo das artes e do cinema no Brasil.",
+    a: "O ineditismo reside no deslocamento do skate para o campo estético-metodológico e na formulação de operadores analíticos situados — ferramentas conceituais que emergem da prática e que podem ser apropriadas por outras investigações no campo das artes e do cinema no Brasil. A dissertação não documenta apenas uma cena — ela propõe um modo de pesquisar COM o skate, reconhecendo-o como prática produtora de conhecimento sensível, situado e compartilhado.",
+  },
+  {
+    q: "É uma pesquisa sobre skate ou sobre cinema?",
+    a: "É sobre cinema a partir do skate. O foco é o processo audiovisual — como a prática corporal do skate produz linguagem cinematográfica. O skate não é o objeto final da investigação, mas a matriz a partir da qual emerge uma poética audiovisual específica. A dissertação demonstra que o skate opera como prática estética produtora de formas, linguagens e saberes no campo do cinema e das artes do vídeo.",
   },
 ];
 
@@ -51,7 +55,8 @@ const FAQ = () => {
               Toda dissertação de qualidade deve antecipar as objeções possíveis e responder a elas com
               clareza e consistência argumentativa. As questões reunidas a seguir correspondem aos pontos
               de tensão conceitual mais prováveis na avaliação da banca, acompanhadas das respostas
-              fundamentadas que a dissertação sustenta.
+              fundamentadas que a dissertação sustenta. Esse exercício não é defensivo — é preventivo:
+              demonstra controle do argumento e domínio do campo.
             </p>
           </AnimatedSection>
 

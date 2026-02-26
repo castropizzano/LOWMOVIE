@@ -61,13 +61,29 @@ const Index = () => {
             <p className="text-xs text-muted-foreground mt-1">
               Orientador: Prof. Dr. Fábio Jabur de Noronha
             </p>
+            <div className="h-px w-8 bg-border/30 mx-auto my-2" />
+            <p className="text-[10px] text-muted-foreground/60 leading-relaxed">
+              Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone
+            </p>
+          </motion.div>
+
+          {/* Epígrafe sutil */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.75 }}
+            className="mt-6"
+          >
+            <p className="text-[10px] italic text-muted-foreground/40 max-w-xs mx-auto">
+              "We have such sights to show you."
+            </p>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.8 }}
-            className="mt-10"
+            transition={{ duration: 0.7, delay: 0.9 }}
+            className="mt-8"
           >
             <Link
               to="/apresentacao"
@@ -81,8 +97,8 @@ const Index = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 1 }}
-            className="mt-12"
+            transition={{ duration: 0.7, delay: 1.1 }}
+            className="mt-10"
           >
             <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/40">
               Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual

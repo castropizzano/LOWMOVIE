@@ -6,28 +6,29 @@ const autores = [
   {
     campo: "Skate como reinscrição urbana",
     refs: [
-      { nome: "Iain Borden", contrib: "Skate como reconfiguração espacial, prática que transforma o uso prescrito dos espaços urbanos em experiência corporal e estética." },
-      { nome: "McDuie-Ra", contrib: "Subcultura e territorialidade contemporânea, análise das formas de pertencimento e resistência que emergem das práticas subculturais em contextos urbanos globalizados." },
+      { nome: "Iain Borden", contrib: "Skate como reconfiguração espacial: o skate lê e reinscreve a cidade, ativando seus espaços como superfícies de criação. A prática transforma o uso prescrito dos espaços urbanos em experiência corporal e estética, desafiando a lógica funcionalista da arquitetura." },
+      { nome: "McDuie-Ra", contrib: "Subcultura e territorialidade contemporânea. Propõe o conceito de \"archiving from below\" — 'below' tem um duplo sentido: abaixo como arquivo não-oficial ou 'radical', carregado de contranarrativas; e abaixo como o ângulo a partir do qual skatistas e filmadores capturam a cidade, \"from below the knees\". Arquivos subterrâneos como formas de resistência epistêmica." },
     ],
   },
   {
     campo: "Estética relacional e identidade",
     refs: [
-      { nome: "Nicolas Bourriaud", contrib: "Obra como dispositivo relacional, arte que não produz objetos autônomos mas situações de encontro e negociação intersubjetiva." },
-      { nome: "Stuart Hall", contrib: "Identidade como construção dinâmica, processual e contextualmente determinada, recusando qualquer essencialismo identitário." },
+      { nome: "Nicolas Bourriaud", contrib: "Obra como dispositivo relacional e intersticial. \"A obra de arte representa um interstício social... um espaço de relações humanas que sugere outras possibilidades de troca.\" Arte que não produz objetos autônomos mas situações de encontro e negociação intersubjetiva." },
+      { nome: "Stuart Hall", contrib: "Identidade como construção dinâmica: \"a identidade cultural talvez deva ser pensada como uma 'produção', algo que nunca está completo, que é sempre processual.\" Recusa de qualquer essencialismo identitário — a identidade do coletivo é performance contínua." },
     ],
   },
   {
     campo: "Processo colaborativo e pesquisa-criação",
     refs: [
-      { nome: "Luis Alberto de Abreu", contrib: "Criação horizontal como método e como ética. Dramaturgia compartilhada como modelo de autoria coletiva." },
-      { nome: "Coessens, Pimentel, Moriceau", contrib: "Corpo como produção de conhecimento, pesquisa-criação como modalidade epistemológica legítima e rigorosa." },
+      { nome: "Luis Alberto de Abreu", contrib: "Criação horizontal como ética. \"Preferimos denominar essa experiência criativa e coletiva com o nome de processo colaborativo (e não método colaborativo).\" Dramaturgia compartilhada como modelo de autoria coletiva — a arena comum como espaço de criação." },
+      { nome: "Coessens, Pimentel, Moriceau", contrib: "Corpo como produção de conhecimento. Pimentel: \"toda ação praticada numa experiência modifica quem a pratica e quem a sofre.\" Pesquisa-criação como modalidade epistemológica legítima e rigorosa." },
     ],
   },
   {
     campo: "Corpo-câmera e cinema encarnado",
     refs: [
-      { nome: "Delpeux, Araújo, Rouch, Deren", contrib: "Cinema como gesto encarnado, câmera como extensão do corpo em ação. Filmar não é registrar, mas participar corporalmente da produção da imagem." },
+      { nome: "Delpeux", contrib: "\"A fusão sensível entre o corpo do performer e o dispositivo de registro: performer e câmera compõem juntos a imagem como uma única entidade em ato.\" Cinema como gesto encarnado." },
+      { nome: "Rouch, Deren, Deleuze", contrib: "Jean Rouch e o cine-transe: o realizador como corpo em estado de criação. Maya Deren e a dança como cinema. Deleuze e o conceito de fabulação — não como invenção ficcional, mas como gesto de criação do real, modo de produzir outras percepções e sentidos a partir do cotidiano." },
     ],
   },
 ];
@@ -50,6 +51,10 @@ const conceitos = [
     def: "Câmera como extensão do corpo em movimento contínuo. O registro em fluxo designa um modo de filmagem no qual a câmera não se posiciona diante do evento, mas dentro dele, acompanhando o deslocamento do skatista com a mesma intensidade corporal. O resultado é uma imagem que não representa o movimento: ela é movimento.",
   },
   {
+    nome: "Fabulação",
+    def: "Conceito mobilizado a partir de Deleuze: fabulação não designa invenção ficcional, mas um gesto de criação do real, um modo de produzir outras percepções e sentidos a partir do cotidiano. No LowMovie™, a fabulação opera nas cenas improvisadas, nos rituais coletivos e nas narrativas que emergem do próprio ato de filmar — o real é recriado pelo gesto cinematográfico.",
+  },
+  {
     nome: "Afeto como eixo metodológico",
     def: "Implicação sensível como operador epistemológico. O afeto, neste enquadramento, não é sentimentalismo: é a condição de acesso a dimensões do real que a observação distanciada não alcança. O vínculo afetivo com o campo — com as pessoas, os espaços, as práticas — constitui um instrumento de conhecimento tão legítimo quanto a análise formal ou a revisão bibliográfica.",
   },
@@ -64,13 +69,21 @@ const Conceitos = () => {
 
           {/* Introdução */}
           <AnimatedSection delay={0.05}>
-            <p className="max-w-3xl text-foreground/80 leading-relaxed mb-12">
-              A fundamentação teórica da dissertação articula tradições intelectuais distintas — teoria urbana,
-              estética relacional, estudos culturais, pesquisa em artes, teoria do cinema — numa constelação
-              conceitual orientada pelas exigências específicas do objeto. Não se trata de uma revisão bibliográfica
-              exaustiva, mas de uma cartografia teórica desenhada a partir dos problemas que o LowMovie™ coloca
-              à investigação acadêmica.
-            </p>
+            <div className="max-w-3xl space-y-4 text-foreground/80 leading-relaxed mb-12">
+              <p>
+                A fundamentação teórica da dissertação articula tradições intelectuais distintas — teoria urbana,
+                estética relacional, estudos culturais, pesquisa em artes, teoria do cinema — numa constelação
+                conceitual orientada pelas exigências específicas do objeto. Não se trata de uma revisão bibliográfica
+                exaustiva, mas de uma cartografia teórica desenhada a partir dos problemas que o LowMovie™ coloca
+                à investigação acadêmica.
+              </p>
+              <p>
+                Os conceitos mobilizados emergem da necessidade de nomear fenômenos que os vocabulários disponíveis
+                no campo não contemplavam adequadamente. Cada autor é convocado não como autoridade citável, mas
+                como interlocutor cujos conceitos são tensionados, adaptados e, em alguns casos, superados pelas
+                exigências do objeto.
+              </p>
+            </div>
           </AnimatedSection>
 
           {/* Mapa Conceitual de Autores */}
@@ -130,10 +143,11 @@ const Conceitos = () => {
                 <p>
                   A dissertação estabelece um diálogo produtivo com a ética criativa de Werner Herzog,
                   particularmente no que diz respeito à valorização do gesto criador diante da precariedade
-                  estrutural. Esse diálogo não é uma filiação estética — o LowMovie™ não é herzogiano em
-                  estilo — mas uma ressonância ética: ambos compartilham a convicção de que a criação autêntica
-                  não depende de condições ideais, mas da disposição para agir com os recursos disponíveis,
-                  transformando a limitação em potência expressiva.
+                  estrutural. Herzog afirma que <em>"o erro é algo que beira o sagrado... é preciso aceitar
+                  a tentativa e erro"</em>. Esse diálogo não é uma filiação estética — o LowMovie™ não é
+                  herzogiano em estilo — mas uma ressonância ética: ambos compartilham a convicção de que a
+                  criação autêntica não depende de condições ideais, mas da disposição para agir com os recursos
+                  disponíveis, transformando a limitação em potência expressiva.
                 </p>
                 <p>
                   Não se trata de militância explícita ou de postura combativa contra o sistema de produção

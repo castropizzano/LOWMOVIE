@@ -1,29 +1,38 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Compass, Users, Film } from "lucide-react";
+import { Compass, Users, Film, BookOpen } from "lucide-react";
 
 const movimentos = [
   {
     icon: Compass,
     title: "Corpo em Deriva",
     subtitle: "Operadores Poéticos",
-    desc: "Cartografia da formação estética do pesquisador-artista. A deriva não é errância sem destino: é atenção aberta ao que o espaço urbano oferece como possibilidade de gesto e de imagem. Este movimento formula os operadores poéticos a partir da experiência corporal — corpo-câmera, cine-transe e coreocinema — como modos de habitar o espaço e produzir linguagem.",
-    items: ["Poética do instante", "Estética da borda", "Registro em fluxo"],
+    desc: "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — articulando experiência, corpo e cidade como eixo de criação. A deriva não é errância sem destino: é atenção aberta ao que o espaço urbano oferece como possibilidade de gesto e de imagem.",
+    subcapitulos: ["Operadores poéticos do olhar", "Corpo-câmera: diálogos teóricos", "Entre vozes"],
   },
   {
     icon: Users,
     title: "Coletivo em Baixo Relevo",
     subtitle: "Ética de Produção",
-    desc: "Análise do LowPressure™ como ética de produção e micropolítica do fazer. Este movimento examina as dinâmicas internas do coletivo — seus modos de decisão, suas formas de autoria compartilhada, suas estratégias de circulação — demonstrando que a horizontalidade não é apenas um princípio organizacional, mas uma condição estética que se inscreve na própria textura do filme.",
-    items: ["Vínculos e pertencimento", "Micropolítica do fazer", "LowZine como arquivo"],
+    desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, examino os modos de decisão, as formas de autoria compartilhada e as estratégias de circulação. Discuto sua relação com a cidade, com a arquitetura e com as instituições, demonstrando que a horizontalidade não é apenas princípio organizacional, mas condição estética que se inscreve na própria textura do filme. Finalizo com a LowZine como arquivo vivo de imagens, entrevistas e depoimentos.",
+    subcapitulos: ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine como arquivo"],
   },
   {
     icon: Film,
     title: "Obra em Expansão",
     subtitle: "Processos do Filme",
-    desc: "Estudo do LowMovie™ em seus processos materiais, simbólicos e de circulação. Este movimento final aborda o filme como objeto estético acabado — embora provisoriamente — e como dispositivo de mediação entre a prática subcultural e o campo institucional do cinema e das artes do vídeo.",
-    items: ["Filmagem como corpo-câmera", "Montagem e glitch", "Trilha e circulação"],
+    desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos. O filme aborda-se como objeto estético acabado — embora provisoriamente — e como dispositivo de mediação entre a prática subcultural e o campo institucional.",
+    subcapitulos: [
+      "Gênese e linhagem dos vídeos de skate",
+      "Filmagem como corpo-câmera",
+      "Montagem e glitch",
+      "Ecologia sensorial (trilha, paleta, design)",
+      "Campo simbólico e Lowbyrinth™",
+      "Cenas, fabulação e rituais",
+      "Ritos de estreia e circulação",
+      "Pós-obra e reverberações",
+    ],
   },
 ];
 
@@ -54,10 +63,13 @@ const Estrutura = () => {
                   <h3 className="font-display text-xl uppercase tracking-tight mb-1">{mov.title}</h3>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">{mov.subtitle}</p>
                   <p className="text-sm text-foreground/75 leading-relaxed mb-6">{mov.desc}</p>
-                  <ul className="space-y-3">
-                    {mov.items.map((item) => (
-                      <li key={item} className="flex items-center gap-3 text-sm text-muted-foreground">
-                        <div className="h-1.5 w-1.5 rounded-full bg-primary/40" />
+                  <p className="font-display text-[10px] uppercase tracking-widest text-muted-foreground/60 mb-3">
+                    Subcapítulos
+                  </p>
+                  <ul className="space-y-2">
+                    {mov.subcapitulos.map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-xs text-muted-foreground">
+                        <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-1.5 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -67,8 +79,25 @@ const Estrutura = () => {
             ))}
           </div>
 
+          {/* Considerações Finais */}
+          <AnimatedSection delay={0.45} className="mt-8">
+            <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
+              <div className="flex items-start gap-4">
+                <BookOpen className="h-7 w-7 text-primary/60 shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-display text-lg uppercase tracking-tight mb-1">Considerações Finais</h3>
+                  <p className="text-sm text-foreground/75 leading-relaxed">
+                    Retomam a pergunta de pesquisa, sintetizam os achados de cada movimento e situam as
+                    reverberações da investigação no campo do cinema e das artes do vídeo. A conclusão não
+                    é encerramento — é abertura para as continuidades que a pesquisa projeta.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+
           {/* Operadores e Campo Simbólico */}
-          <AnimatedSection delay={0.5} className="mt-20">
+          <AnimatedSection delay={0.5} className="mt-16">
             <div className="max-w-3xl mx-auto">
               <h3 className="font-display text-xl uppercase tracking-tight mb-6 text-foreground">
                 Operadores e Campo Simbólico

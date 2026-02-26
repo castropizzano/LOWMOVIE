@@ -7,17 +7,17 @@ const eixos = [
   {
     icon: Heart,
     title: "Afeto",
-    desc: "Vínculo sensível com o campo investigado. O afeto não é contaminação, mas condição de acesso ao real em sua dimensão mais densa e significativa. A disposição de deixar-se tocar pelo campo constitui força epistemológica e gesto ético-político.",
+    desc: "Vínculo sensível com o campo investigado. Inspirado nos debates do grupo Afetos (UFMG), o afeto não é contaminação, mas condição de acesso ao real em sua dimensão mais densa e significativa. Afetar e ser afetado constituem formas legítimas de produzir conhecimento. A disposição de deixar-se tocar pelo campo constitui força epistemológica e gesto ético-político.",
   },
   {
     icon: Ear,
     title: "Escuta",
-    desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados que constituem o tecido relacional do grupo. Sustentar o silêncio, acolher o tempo do outro, permitir que o sentido emerja das dinâmicas coletivas sem imposição interpretativa.",
+    desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados que constituem o tecido relacional do grupo. Escutar é mais do que ouvir — a escuta expandiu-se para o corpo, para o som da cidade, para o ruído das rodas sobre o concreto. Sustentar o silêncio, acolher o tempo do outro, permitir que o sentido emerja das dinâmicas coletivas sem imposição interpretativa.",
   },
   {
     icon: Zap,
     title: "Improviso",
-    desc: "Abertura ao imprevisto como dado epistemológico legítimo, e não como falha do planejamento metodológico. Um saber em movimento que aprende com a instabilidade e com o gesto imprevisto.",
+    desc: "Abertura ao imprevisto como dado epistemológico legítimo, e não como falha do planejamento metodológico. A metodologia assume uma arquitetura móvel, capaz de se refazer a cada encontro. Um saber em movimento que aprende com a instabilidade e com o gesto imprevisto.",
   },
 ];
 
@@ -59,6 +59,43 @@ const Metodologia = () => {
             ))}
           </div>
 
+          {/* Procedimentos de Campo */}
+          <AnimatedSection delay={0.35}>
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
+              <p className="font-display text-xs uppercase tracking-widest text-primary mb-6">
+                Procedimentos de Campo — Três Operações Entrelaçadas
+              </p>
+              <div className="grid gap-6 md:grid-cols-3 mb-8">
+                <div className="border-l-2 border-primary/20 pl-4">
+                  <p className="font-display text-sm uppercase tracking-wide text-foreground mb-2">Vivência Situada</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Participação em processos coletivos: sessões de gravação, reuniões, eventos, sessões de skate.
+                    O pesquisador não observa de fora — habita o campo.
+                  </p>
+                </div>
+                <div className="border-l-2 border-primary/20 pl-4">
+                  <p className="font-display text-sm uppercase tracking-wide text-foreground mb-2">Convivência Criativa</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    O pesquisador participa das dinâmicas de produção e montagem, contribuindo ativamente para
+                    as decisões estéticas do coletivo enquanto investiga seus processos.
+                  </p>
+                </div>
+                <div className="border-l-2 border-primary/20 pl-4">
+                  <p className="font-display text-sm uppercase tracking-wide text-foreground mb-2">Escuta Partilhada</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Materializada em conversas abertas, registradas por meio de notas, áudios e diário digital.
+                    A escuta como instrumento de pesquisa e gesto de cuidado.
+                  </p>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground leading-relaxed border-t border-border/50 pt-4">
+                A pesquisa adota uma <strong>espiral cognitiva</strong> inspirada na Taxonomia de Bloom adaptada
+                como estrutura organizadora: cada retorno ao campo aprofunda a compreensão anterior, num movimento
+                cumulativo que articula prática, reflexão e formulação conceitual.
+              </p>
+            </div>
+          </AnimatedSection>
+
           <AnimatedSection delay={0.4}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
               <p className="font-display text-xs uppercase tracking-widest text-primary mb-4">
@@ -91,7 +128,7 @@ const Metodologia = () => {
             </div>
           </AnimatedSection>
 
-          {/* Procedimentos */}
+          {/* Procedimentos Operacionais */}
           <AnimatedSection delay={0.5}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30">
               <p className="font-display text-xs uppercase tracking-widest text-primary mb-6">
@@ -103,6 +140,8 @@ const Metodologia = () => {
                   { label: "Instrumentos de registro", value: "Diário de campo, registros audiovisuais, caderno de montagem" },
                   { label: "Procedimentos de análise", value: "Análise fílmica implicada, descrição densa dos processos criativos" },
                   { label: "Posicionamento", value: "Artista-pesquisador — membro ativo do coletivo criador" },
+                  { label: "Coleta de materiais", value: "Vídeos, zines, áudios, fotografias e trocas digitais — mediada pelo consentimento informado dos participantes" },
+                  { label: "Organização", value: "Espiral cognitiva: prática → reflexão → formulação → retorno ao campo" },
                 ].map((item) => (
                   <div key={item.label} className="border-l-2 border-primary/20 pl-4">
                     <p className="font-display text-xs uppercase tracking-wide text-foreground/70">{item.label}</p>
