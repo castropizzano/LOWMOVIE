@@ -1,79 +1,71 @@
 
 
-## Site Acadêmico-Artístico — LowMovie™ e o Labirinto Criativo
+## Refinamento: Site Acadêmico Sóbrio e Cinematográfico
 
-### Identidade Visual
-- **Dark mode** com fundo preto/grafite escuro
-- Paleta de acentos: magenta (#FF00FF), roxo (#8B00FF), verde neon para detalhes secundários (como na capa da dissertação)
-- Tipografia: sans-serif condensada para títulos (estilo editorial/urbano), corpo limpo e legível
-- Linhas finas, bordas geométricas e texturas sutis de glitch/ruído
-- Imagem da capa (vórtice magenta) como elemento visual recorrente
+O usuário solicita uma revisão estética significativa do site existente. O tom atual é expressivo e gráfico (glows neon, gradientes magenta pulsantes, texto com sombras brilhantes). O tom desejado é **sóbrio, elegante, cinematográfico e academicamente rigoroso** — sem perder a identidade autoral.
 
-### Estrutura de Páginas
+### Diagnóstico do estado atual vs. o desejado
 
-**1. Home / Landing**
-- Hero fullscreen com imagem de fundo (vórtice magenta) e título da dissertação em destaque
-- Subtítulo: autor, programa, universidade
-- Menu de navegação fixo no topo (translúcido, com blur)
-- CTA para explorar a pesquisa
-- Animações de fade-in ao carregar
+| Atual | Desejado |
+|-------|----------|
+| Glow neon intenso nos títulos | Tipografia limpa, hierarquia por peso/tamanho |
+| Orbs pulsantes de cor no hero | Fundo escuro simples, talvez uma linha sutil |
+| `gradient-text` em todos os títulos de seção | Títulos em branco/foreground, com acento pontual |
+| `border-glow` (box-shadow neon) nos cards | Bordas finas, sem glow |
+| Linguagem informal em trechos ("inscrita no asfalto") | Texto acadêmico preciso conforme fornecido |
+| `text-glow-primary` (text-shadow neon) | Sem text-shadow |
+| `animate-pulse-glow` no background | Estático ou transição muito sutil |
 
-**2. Apresentação**
-- Contexto e objeto da pesquisa
-- Problema de pesquisa em destaque (bloco visual diferenciado)
-- Justificativa com bullets estilizados
+### Mudanças planejadas
 
-**3. Metodologia**
-- Pesquisa-criação explicada com layout em cards (Afeto, Escuta, Improviso)
-- Distinção método de pesquisa vs. métodos de criação
-- Referências metodológicas
+**1. Identidade Visual (CSS / Tailwind)**
+- Reduzir intensidade do `--primary` de magenta 100% para algo mais contido (ex: `300 70% 55%`)
+- Remover ou atenuar `text-glow-primary`, `border-glow`, `animate-pulse-glow`
+- Manter `gradient-primary` apenas para linhas decorativas finas, não para texto de títulos
+- Ajustar `gradient-text` para ser usado apenas no título principal (hero), não em seções internas
 
-**4. Estrutura Analítica**
-- Três movimentos apresentados em layout de colunas/cards com ícones:
-  - Corpo em Deriva (operadores poéticos)
-  - Coletivo em Baixo Relevo (ética de produção)
-  - Obra em Expansão (processos do filme)
-- Animações de scroll ao revelar cada bloco
+**2. SectionTitle — sobriedade**
+- Títulos de seção em `text-foreground` (branco), sem `gradient-text`
+- Manter a linha decorativa fina abaixo, mas mais discreta
 
-**5. O Filme — LowMovie™**
-- Embed de vídeo/trailer (YouTube ou Vimeo)
-- Descrição do filme como dispositivo poético-político
-- Galeria de stills do filme
-- Links para soundtrack (Spotify/Bandcamp) com players embutidos
+**3. Home / Hero — cinematográfico e contido**
+- Remover os orbs pulsantes de fundo
+- Manter fundo escuro limpo, possivelmente com uma linha horizontal sutil ou vinheta
+- Título com hierarquia clara: "LOWMOVIE™" grande, subtítulo menor
+- Remover `text-glow-primary` do título; usar cor magenta sem glow
+- CTA mais discreto
 
-**6. O Coletivo — LowPressure™**
-- Descrição do coletivo como rede de artistas-skatistas
-- Galeria de imagens do coletivo e do processo criativo
-- Micropolítica do fazer cotidiano
+**4. Conteúdo textual — atualizar para a versão definitiva**
+- **Apresentação**: Atualizar texto para a versão fornecida (deslocamento epistemológico, linguagem mais precisa)
+- **Metodologia**: Atualizar descrições dos eixos (Afeto = vínculo sensível com o campo, etc.)
+- **Estrutura**: Adicionar seção "Operadores e Campo Simbólico" separada ou integrada
+- **FAQ**: Atualizar para 7 questões na versão definitiva (remover "Qual é a contribuição inédita?" como pergunta separada, adicionar "Contribuição — deslocamento epistemológico")
+- **Conclusão**: Atualizar texto final para versão definitiva ("O LowMovie™ evidencia que práticas subculturais podem produzir linguagem audiovisual autônoma...")
 
-**7. Contribuições**
-- Lista visual das contribuições da dissertação
-- Cada contribuição em card com destaque
+**5. Cards e elementos interativos**
+- Remover `border-glow` dos hover states
+- Manter hover sutil (apenas mudança de border-color, sem glow)
+- Tipografia dos cards: reduzir uppercase onde excessivo
 
-**8. Questões Críticas (FAQ)**
-- Seção de perguntas e respostas em formato accordion expansível
-- 8 perguntas com respostas detalhadas
+**6. Navbar**
+- Renomear "FAQ" para "Questões Críticas" no menu
+- Manter estrutura atual (já está sóbria)
 
-**9. Conclusão / Encerramento**
-- Texto de encerramento com tipografia grande e expressiva
-- Frase final em destaque: "É processo em movimento."
+### Arquivos a modificar
 
-### Navegação
-- Menu fixo no topo com links para cada página
-- Menu mobile com hamburger
-- Transições suaves entre páginas
-- Indicador visual da página atual
+1. `src/index.css` — atenuar utilities de glow, ajustar primary
+2. `src/components/SectionTitle.tsx` — remover gradient-text
+3. `src/pages/Index.tsx` — hero sóbrio, sem orbs, sem glow
+4. `src/pages/Apresentacao.tsx` — texto atualizado
+5. `src/pages/Metodologia.tsx` — texto atualizado
+6. `src/pages/Estrutura.tsx` — texto atualizado + operadores/campo simbólico
+7. `src/pages/Filme.tsx` — texto atualizado
+8. `src/pages/Coletivo.tsx` — texto atualizado
+9. `src/pages/Contribuicoes.tsx` — texto atualizado
+10. `src/pages/FAQ.tsx` — 7 questões atualizadas
+11. `src/pages/Conclusao.tsx` — texto final atualizado
+12. `src/components/Navbar.tsx` — renomear "FAQ" para "Questões"
 
-### Elementos Interativos
-- Animações de fade-in e slide ao scrollar (intersection observer)
-- Hover effects nos cards e links
-- Galeria de imagens com lightbox
-- Embeds de vídeo responsivos
-- Links externos para plataformas de música
-- Accordion para a seção de FAQ
-
-### Responsividade
-- Layout totalmente responsivo para mobile, tablet e desktop
-- Imagens e vídeos adaptáveis
-- Menu mobile com drawer lateral
+### Arquitetura de páginas
+Mantém-se a mesma estrutura de 9 páginas com rotas separadas. Nenhuma página nova é necessária.
 
