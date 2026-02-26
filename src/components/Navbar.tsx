@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link to="/" className="font-display text-lg font-bold uppercase tracking-widest text-primary">
+        <Link to="/" className="text-lg font-bold uppercase tracking-widest text-primary">
           LowMovie™
         </Link>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
               key={link.to}
               to={link.to}
               className={cn(
-                "px-3 py-2 text-xs font-medium uppercase tracking-wider transition-colors hover:text-primary",
+                "px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-colors hover:text-primary",
                 location.pathname === link.to
                   ? "text-primary"
                   : "text-muted-foreground"
@@ -52,7 +52,7 @@ const Navbar = () => {
             <Menu className="h-6 w-6" />
           </SheetTrigger>
           <SheetContent side="right" className="bg-background border-border w-72">
-            <SheetTitle className="font-display text-primary uppercase tracking-widest text-sm mb-8">
+            <SheetTitle className="text-primary uppercase tracking-widest text-sm font-semibold mb-8">
               Navegação
             </SheetTitle>
             <div className="flex flex-col gap-1">
@@ -62,7 +62,7 @@ const Navbar = () => {
                   to={link.to}
                   onClick={() => setOpen(false)}
                   className={cn(
-                    "px-4 py-3 font-display text-sm uppercase tracking-wider transition-colors hover:text-primary hover:bg-muted rounded-md",
+                    "px-4 py-3 text-sm font-semibold uppercase tracking-wider transition-colors hover:text-primary hover:bg-muted rounded-md",
                     location.pathname === link.to
                       ? "text-primary bg-muted"
                       : "text-muted-foreground"

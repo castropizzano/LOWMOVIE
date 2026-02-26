@@ -13,7 +13,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="mb-2 font-display text-xs md:text-sm uppercase tracking-[0.3em] text-muted-foreground">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               Dissertação de Mestrado — Junho 2025
             </p>
           </motion.div>
@@ -22,11 +22,11 @@ const Index = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.9] tracking-tight"
+            className="text-4xl md:text-6xl font-bold uppercase leading-[0.9] tracking-tight"
           >
             <span className="text-primary">LowMovie™</span>
             <br />
-            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground/80">
+            <span className="text-xl md:text-2xl font-normal text-foreground/80">
               e o Labirinto Criativo
             </span>
           </motion.h1>
@@ -35,23 +35,23 @@ const Index = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="mx-auto mt-8 max-w-xl text-sm md:text-base text-muted-foreground leading-relaxed"
+            className="mx-auto mt-8 max-w-xl text-sm text-muted-foreground leading-relaxed"
           >
             Subjetividade, subcultura e a poética em movimento
             <br className="hidden sm:block" /> do coletivo LowPressure™
           </motion.p>
 
-          {/* Bloco institucional visível */}
+          {/* Bloco institucional */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 mx-auto max-w-lg border border-border/40 rounded-lg px-6 py-5 bg-card/20"
           >
-            <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
+            <p className="text-sm text-foreground/80 leading-relaxed">
               Dissertação apresentada ao Programa de Pós-Graduação em Cinema e Artes do Vídeo — UNESPAR
             </p>
-            <p className="text-xs text-primary/80 mt-2 font-display uppercase tracking-widest">
+            <p className="text-xs font-semibold text-primary uppercase tracking-widest mt-2">
               Linha de Pesquisa: Processos de Criação no Cinema e nas Artes do Vídeo
             </p>
             <div className="h-px w-12 bg-border/50 mx-auto my-3" />
@@ -61,20 +61,19 @@ const Index = () => {
             <p className="text-xs text-muted-foreground mt-1">
               Orientador: Prof. Dr. Fábio Jabur de Noronha
             </p>
-            <div className="h-px w-8 bg-border/30 mx-auto my-2" />
-            <p className="text-[10px] text-muted-foreground/60 leading-relaxed">
+            <p className="text-xs text-muted-foreground mt-1">
               Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone
             </p>
           </motion.div>
 
-          {/* Epígrafe sutil */}
+          {/* Epígrafe */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.75 }}
             className="mt-6"
           >
-            <p className="text-[10px] italic text-muted-foreground/40 max-w-xs mx-auto">
+            <p className="text-xs italic text-muted-foreground max-w-xs mx-auto">
               "We have such sights to show you."
             </p>
           </motion.div>
@@ -87,7 +86,7 @@ const Index = () => {
           >
             <Link
               to="/apresentacao"
-              className="group inline-flex items-center gap-2 border border-border px-6 py-3 font-display text-xs uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
+              className="group inline-flex items-center gap-2 border border-border px-6 py-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
             >
               Explorar a pesquisa
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -100,7 +99,7 @@ const Index = () => {
             transition={{ duration: 0.7, delay: 1.1 }}
             className="mt-10"
           >
-            <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/40">
+            <p className="text-xs uppercase tracking-widest text-muted-foreground">
               Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual
             </p>
           </motion.div>

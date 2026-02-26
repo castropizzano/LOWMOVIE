@@ -8,21 +8,21 @@ const movimentos = [
     icon: Compass,
     title: "Corpo em Deriva",
     subtitle: "Operadores Poéticos",
-    desc: "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — articulando experiência, corpo e cidade como eixo de criação. A deriva não é errância sem destino: é atenção aberta ao que o espaço urbano oferece como possibilidade de gesto e de imagem.",
+    desc: "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — articulando experiência, corpo e cidade como eixo de criação.",
     subcapitulos: ["Operadores poéticos do olhar", "Corpo-câmera: diálogos teóricos", "Entre vozes"],
   },
   {
     icon: Users,
     title: "Coletivo em Baixo Relevo",
     subtitle: "Ética de Produção",
-    desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, examino os modos de decisão, as formas de autoria compartilhada e as estratégias de circulação. Discuto sua relação com a cidade, com a arquitetura e com as instituições, demonstrando que a horizontalidade não é apenas princípio organizacional, mas condição estética que se inscreve na própria textura do filme. Finalizo com a LowZine como arquivo vivo de imagens, entrevistas e depoimentos.",
+    desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, examino os modos de decisão, as formas de autoria compartilhada e as estratégias de circulação. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine como arquivo vivo de imagens, entrevistas e depoimentos.",
     subcapitulos: ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine como arquivo"],
   },
   {
     icon: Film,
     title: "Obra em Expansão",
     subtitle: "Processos do Filme",
-    desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos. O filme aborda-se como objeto estético acabado — embora provisoriamente — e como dispositivo de mediação entre a prática subcultural e o campo institucional.",
+    desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos.",
     subcapitulos: [
       "Gênese e linhagem dos vídeos de skate",
       "Filmagem como corpo-câmera",
@@ -39,7 +39,7 @@ const movimentos = [
 const Estrutura = () => {
   return (
     <Layout>
-      <section className="py-20 md:py-32">
+      <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-6xl">
           <SectionTitle
             title="Estrutura Analítica"
@@ -47,7 +47,7 @@ const Estrutura = () => {
           />
 
           <AnimatedSection delay={0.05}>
-            <p className="max-w-3xl text-foreground/80 leading-relaxed mb-12">
+            <p className="max-w-3xl text-base text-foreground/80 leading-relaxed mb-16">
               A dissertação organiza-se em três movimentos analíticos que correspondem, simultaneamente,
               a dimensões distintas do objeto e a níveis progressivos de complexidade conceitual.
               Cada movimento possui autonomia interna, mas articula-se com os demais numa lógica de
@@ -60,10 +60,10 @@ const Estrutura = () => {
               <AnimatedSection key={mov.title} delay={0.1 + i * 0.15}>
                 <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 h-full transition-colors hover:border-primary/30">
                   <mov.icon className="h-8 w-8 text-primary/60 mb-5" />
-                  <h3 className="font-display text-xl uppercase tracking-tight mb-1">{mov.title}</h3>
-                  <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4">{mov.subtitle}</p>
-                  <p className="text-sm text-foreground/75 leading-relaxed mb-6">{mov.desc}</p>
-                  <p className="font-display text-[10px] uppercase tracking-widest text-muted-foreground/60 mb-3">
+                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">{mov.title}</h3>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">{mov.subtitle}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed mb-6">{mov.desc}</p>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
                     Subcapítulos
                   </p>
                   <ul className="space-y-2">
@@ -80,13 +80,13 @@ const Estrutura = () => {
           </div>
 
           {/* Considerações Finais */}
-          <AnimatedSection delay={0.45} className="mt-8">
+          <AnimatedSection delay={0.45} className="mt-16">
             <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
               <div className="flex items-start gap-4">
                 <BookOpen className="h-7 w-7 text-primary/60 shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-display text-lg uppercase tracking-tight mb-1">Considerações Finais</h3>
-                  <p className="text-sm text-foreground/75 leading-relaxed">
+                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações Finais</h3>
+                  <p className="text-sm text-foreground/80 leading-relaxed">
                     Retomam a pergunta de pesquisa, sintetizam os achados de cada movimento e situam as
                     reverberações da investigação no campo do cinema e das artes do vídeo. A conclusão não
                     é encerramento — é abertura para as continuidades que a pesquisa projeta.
@@ -99,25 +99,23 @@ const Estrutura = () => {
           {/* Operadores e Campo Simbólico */}
           <AnimatedSection delay={0.5} className="mt-16">
             <div className="max-w-3xl mx-auto">
-              <h3 className="font-display text-xl uppercase tracking-tight mb-6 text-foreground">
+              <h3 className="text-lg font-semibold uppercase tracking-wide mb-6 text-foreground">
                 Operadores e Campo Simbólico
               </h3>
-              <div className="space-y-4 text-foreground/85 leading-relaxed">
+              <div className="space-y-4 text-foreground/80 leading-relaxed">
                 <p>
                   Os operadores emergem da prática e retornam a ela. Não são categorias apriorísticas,
                   mas conceitos formulados a partir da experiência sensível do fazer artístico.
                 </p>
                 <p>
-                  O <span className="text-primary font-medium">Lowbyrinth™</span> funciona como
+                  O <span className="text-primary font-semibold">Lowbyrinth™</span> funciona como
                   imagem-conceito e operador simbólico — uma lente imagética que sintetiza o caráter
-                  processual, labiríntico e transformador da criação coletiva. O labirinto não tem
-                  saída prevista — a obra é o próprio percurso.
+                  processual, labiríntico e transformador da criação coletiva.
                 </p>
                 <p>
                   A obra expande-se para além de seus limites formais, operando como catalisador de novas
                   relações entre arte, cidade e subcultura. A referência junguiana opera como lente
-                  complementar, não como fundamento estruturante da análise. A tese se sustenta
-                  independentemente dessa referência.
+                  complementar, não como fundamento estruturante da análise.
                 </p>
               </div>
             </div>
