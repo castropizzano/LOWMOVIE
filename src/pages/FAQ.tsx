@@ -51,7 +51,7 @@ const FAQ = () => {
           <SectionTitle title="Questões Críticas" subtitle="Respostas fundamentadas às perguntas centrais" />
 
           <AnimatedSection delay={0.05}>
-            <p className="text-base text-foreground/80 leading-relaxed mb-16">
+            <p className="text-base text-foreground/80 leading-relaxed text-justify mb-16">
               Toda dissertação de qualidade deve antecipar as objeções possíveis e responder a elas com
               clareza e consistência argumentativa. As questões reunidas a seguir correspondem aos pontos
               de tensão conceitual mais prováveis na avaliação da banca.

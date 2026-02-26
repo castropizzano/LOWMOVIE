@@ -31,12 +31,11 @@ const ImageLightbox = ({
             src={src} 
             alt={alt} 
             className={cn(
-              "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
+              "w-full h-full object-cover",
               imageClassName
             )}
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
         </div>
       </DialogTrigger>
       <DialogContent className="max-w-5xl w-[95vw] p-0 overflow-hidden bg-transparent border-none shadow-none">
