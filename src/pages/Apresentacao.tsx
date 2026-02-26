@@ -14,27 +14,26 @@ const Apresentacao = () => {
               <p>
                 Esta dissertação investiga os processos criativos que compõem o filme{" "}
                 <span className="text-primary font-medium">LowMovie™</span>, realizado pelo coletivo de
-                artistas-skatistas <span className="text-secondary font-medium">LowPressure™</span>,
+                artistas-skatistas <span className="text-primary font-medium">LowPressure™</span>,
                 analisando como tais dinâmicas colaborativas contribuem para a constituição de uma poética
                 audiovisual em movimento vinculada à experiência urbana do skate.
               </p>
               <p>
-                A pesquisa desloca o skate de abordagens predominantemente sociológicas para uma análise
-                estética e metodológica situada no campo do cinema e das artes do vídeo.
+                A pesquisa opera um deslocamento epistemológico: reposiciona o skate não apenas como fenômeno
+                sociocultural, mas como prática estética produtora de linguagem audiovisual.
               </p>
             </div>
           </AnimatedSection>
 
           {/* Problema de pesquisa */}
           <AnimatedSection delay={0.2} className="mt-16">
-            <div className="border border-primary/30 rounded-lg p-8 md:p-10 border-glow bg-card/50">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30">
               <p className="font-display text-xs uppercase tracking-widest text-primary mb-4">
                 Problema de Pesquisa
               </p>
               <p className="text-lg md:text-xl font-light leading-relaxed italic text-foreground/90">
-                "Como os processos criativos do LowMovie™, gestados em dinâmica coletiva e rizomática,
-                contribuem para a constituição de uma poética audiovisual em movimento vinculada à
-                experiência urbana do skate?"
+                "Como os processos criativos do LowMovie™, gestados em dinâmica coletiva,
+                contribuem para a constituição de uma poética audiovisual em movimento?"
               </p>
             </div>
           </AnimatedSection>
@@ -45,17 +44,16 @@ const Apresentacao = () => {
               Justificativa
             </h3>
             <p className="text-muted-foreground mb-6">
-              Embora os estudos sobre skate no Brasil estejam em expansão, ainda há lacunas quanto à
-              análise de sua dimensão estética e audiovisual. A dissertação contribui ao:
+              Apesar do crescimento dos estudos sobre skate no Brasil, predominam abordagens sociológicas e urbanas. Esta pesquisa contribui ao:
             </p>
             <div className="space-y-4">
               {[
-                "Investigar o skate como prática estética.",
-                "Analisar o audiovisual como campo sensível.",
-                "Propor operadores conceituais oriundos da prática artística.",
+                "Analisar o skate como prática estética situada.",
+                "Investigar o audiovisual como campo sensível e processual.",
+                "Formular operadores conceituais derivados da prática artística.",
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
-                  <div className="mt-1.5 h-2 w-2 rounded-full gradient-primary shrink-0" />
+                  <div className="mt-2 h-1.5 w-1.5 rounded-full bg-primary/60 shrink-0" />
                   <p className="text-foreground/85">{item}</p>
                 </div>
               ))}
