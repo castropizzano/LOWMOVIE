@@ -75,8 +75,7 @@ const Conceitos = () => {
                 conceitual orientada pelas exigências específicas do objeto.
               </p>
               <p>
-                Os conceitos mobilizados emergem da necessidade de nomear fenômenos que os vocabulários disponíveis
-                no campo não contemplavam adequadamente.
+                Os conceitos formulados nomeiam fenômenos que os vocabulários existentes não alcançavam.
               </p>
             </div>
           </AnimatedSection>
@@ -111,8 +110,7 @@ const Conceitos = () => {
               Conceitos Próprios — Formulações Autorais
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-8">
-              Operadores analíticos que permitem descrever, com precisão, fenômenos estéticos que os
-              vocabulários disponíveis no campo não contemplavam adequadamente.
+              Operadores analíticos derivados da prática artística.
             </p>
             <div className="space-y-6">
               {conceitos.map((c) => (

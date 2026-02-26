@@ -107,14 +107,12 @@ const Metodologia = () => {
                 </div>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                A dissertação estabelece com clareza uma distinção operacional frequentemente negligenciada:
-                embora ambos se alimentem mutuamente, não se confundem. O método de pesquisa interroga,
-                conceitua e articula; os métodos de criação produzem, experimentam e materializam.
+                Embora método de pesquisa e métodos de criação se alimentem mutuamente, não se confundem.
+                O primeiro interroga, conceitua e articula; os segundos produzem, experimentam e materializam.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mt-4">
-                O rigor reside na reflexividade explícita e na consistência conceitual com que as
-                análises são conduzidas. Cada decisão metodológica é justificada, cada posicionamento é
-                tornado visível, cada inferência é confrontada com os referenciais teóricos mobilizados.
+                O rigor reside na reflexividade com que cada decisão é interrogada e na consistência com que
+                as inferências se articulam aos referenciais mobilizados.
               </p>
             </div>
           </AnimatedSection>

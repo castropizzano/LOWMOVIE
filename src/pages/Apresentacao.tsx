@@ -61,10 +61,9 @@ const Apresentacao = () => {
                 com o espaço urbano emergem dessas práticas?"
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                A formulação da pergunta central carrega em si uma dupla exigência: de um lado, a necessidade
-                de descrever com precisão os processos criativos que deram origem ao filme — suas condições
-                materiais, seus procedimentos técnicos, suas escolhas estéticas; de outro, a tarefa de articular
-                teoricamente esses processos com o campo mais amplo do cinema e das artes do vídeo.
+                A pergunta opera em duas frentes simultâneas: a descrição precisa dos processos criativos — suas
+                condições materiais, procedimentos técnicos e escolhas estéticas — e a articulação teórica desses
+                processos com o campo do cinema e das artes do vídeo.
               </p>
 
               {/* Objetivos Específicos */}
@@ -116,13 +115,12 @@ const Apresentacao = () => {
               <p>
                 A dissertação assume explicitamente a posição de artista-pesquisador, operando a partir de uma
                 epistemologia que reconhece a implicação como condição de rigor e não como obstáculo a ele. Não
-                se parte de uma neutralidade externa ao campo investigado — postura que vem sendo consistentemente
-                problematizada nas ciências humanas e nas artes desde pelo menos a segunda metade do século XX —
-                mas de uma implicação situada, cujos contornos são explicitados e cujos efeitos sobre a produção
-                de conhecimento são constantemente interrogados.
+                se parte de uma neutralidade externa ao campo investigado, mas de uma implicação situada, cujos
+                contornos são explicitados e cujos efeitos sobre a produção de conhecimento são interrogados ao
+                longo de todo o percurso.
               </p>
               <p>
-                Essa posição não é uma concessão metodológica, mas uma escolha epistemológica deliberada. O
+                Trata-se de uma escolha epistemológica deliberada. O
                 artista-pesquisador não observa de fora: ele participa da tessitura do objeto, compartilha suas
                 condições de existência e, ao fazê-lo, acessa camadas de sentido inacessíveis a uma abordagem
                 estritamente distanciada. Como afirma Pimentel, <em>"toda ação praticada numa experiência modifica
@@ -130,9 +128,9 @@ const Apresentacao = () => {
                 e campo que a dissertação assume como motor epistemológico.
               </p>
               <p>
-                O rigor metodológico é garantido por três dispositivos articulados:
-                a <em>reflexividade</em>, a <em>explicitação do posicionamento</em> e a <em>articulação
-                consistente com referenciais teóricos da pesquisa-criação</em>. A prática não substitui o rigor — ela
+                O rigor opera por reflexividade, explicitação do posicionamento e articulação com os
+                referenciais da pesquisa-criação — não como defesa, mas como condição do próprio fazer.
+                A prática não substitui o rigor — ela
                 o produz. É no interior do fazer artístico, quando submetido à reflexão sistemática e à confrontação
                 teórica, que emerge um conhecimento que não poderia ser produzido por nenhuma outra via.
               </p>

@@ -86,10 +86,10 @@ const Estrutura = () => {
                 <BookOpen className="h-7 w-7 text-primary/60 shrink-0 mt-1" />
                 <div>
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações Finais</h3>
-                  <p className="text-sm text-foreground/80 leading-relaxed">
-                    Retomam a pergunta de pesquisa, sintetizam os achados de cada movimento e situam as
-                    reverberações da investigação no campo do cinema e das artes do vídeo. A conclusão não
-                    é encerramento — é abertura para as continuidades que a pesquisa projeta.
+                   <p className="text-sm text-foreground/80 leading-relaxed">
+                    As considerações finais situam as reverberações da investigação no campo do cinema e das
+                    artes do vídeo — não como encerramento, mas como abertura para as continuidades que a
+                    pesquisa projeta.
                   </p>
                 </div>
               </div>
