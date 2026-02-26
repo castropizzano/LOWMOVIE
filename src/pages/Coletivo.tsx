@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const glossario = [
   { termo: "Crew", def: "Grupo de skatistas que compartilham afinidades, sessões e produções." },
@@ -90,14 +91,17 @@ const Coletivo = () => {
           <AnimatedSection delay={0.3} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Galeria</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                <div
-                  key={i}
-                  className="aspect-square rounded-md bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground text-xs uppercase tracking-widest hover:border-primary/30 transition-colors cursor-pointer"
-                >
-                  Img {i}
-                </div>
-              ))}
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => {
+                const num = String(i).padStart(2, '0');
+                return (
+                  <ImageLightbox
+                    key={i}
+                    src={`/images/coletivo/${num}.png`}
+                    alt={`Imagem ${i} do Coletivo`}
+                    aspectRatio="aspect-square"
+                  />
+                );
+              })}
             </div>
           </AnimatedSection>
 
