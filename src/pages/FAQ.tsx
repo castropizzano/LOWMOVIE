@@ -48,13 +48,11 @@ const FAQ = () => {
     <Layout>
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-3xl">
-          <SectionTitle title="Questões Críticas" subtitle="Respostas fundamentadas às perguntas centrais" />
+          <SectionTitle title="Questões Críticas" subtitle="Tensões conceituais." />
 
           <AnimatedSection delay={0.05}>
             <p className="text-base text-foreground/80 leading-relaxed text-justify mb-16">
-              Toda dissertação de qualidade deve antecipar as objeções possíveis e responder a elas com
-              clareza e consistência argumentativa. As questões reunidas a seguir correspondem aos pontos
-              de tensão conceitual mais prováveis na avaliação da banca.
+              A pesquisa opera em um campo híbrido entre prática artística e reflexão teórica. Nesse contexto, algumas tensões se colocam de maneira inevitável. Abaixo, enfrento diretamente os pontos mais sensíveis do trabalho.
             </p>
           </AnimatedSection>
 
