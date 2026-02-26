@@ -42,8 +42,12 @@ const Conclusao = () => {
           >
             <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
             <p className="text-foreground/85 leading-relaxed max-w-2xl mx-auto">
-              O LowMovie™ evidencia que práticas subculturais podem produzir linguagem audiovisual
+              O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual
               autônoma e conhecimento estético legítimo no campo acadêmico.
+            </p>
+            <p className="mt-6 text-foreground/75 leading-relaxed max-w-2xl mx-auto">
+              A dissertação afirma que o gesto criativo, quando analisado com rigor e implicação,
+              constitui também forma de pensamento.
             </p>
             <p className="mt-8 font-display text-xl md:text-2xl uppercase tracking-tight text-foreground/70">
               A poética não é resultado.

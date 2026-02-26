@@ -16,8 +16,21 @@ const Coletivo = () => {
             <div className="max-w-3xl space-y-6 text-foreground/85 leading-relaxed mb-16">
               <p>
                 O <span className="text-primary font-medium">LowPressure™</span> não é um grupo
-                formal — é uma rede de afinidades, uma constelação de corpos que se encontram na
-                cidade, no skate, no vídeo e no som.
+                formal — é uma rede de afinidades, uma forma de vida em rede que se constitui pelo
+                encontro, pela prática e pela insistência do fazer. A crew opera como constelação de
+                corpos que se encontram na cidade, no skate, no vídeo e no som.
+              </p>
+              <p>
+                O título <span className="text-primary font-medium">"Like Rats on Hostile Paths"</span>{" "}
+                funciona como síntese epistemológica do coletivo: a ocupação tática de espaços hostis,
+                a reinvenção cotidiana das condições de criação. A expressão evoca Michel de Certeau e
+                sua distinção entre <em>táticas</em> (do cotidiano, do fraco) e <em>estratégias</em>{" "}
+                (do poder institucional).
+              </p>
+              <p>
+                A <span className="text-primary font-medium">LowZine</span> opera como arquivo vivo
+                do coletivo — publicação independente que documenta, organiza e projeta a memória estética
+                do grupo. Rafão VM atua como agregador do coletivo, figura central na articulação dos vínculos.
               </p>
               <p>
                 A micropolítica do fazer cotidiano é o que sustenta o coletivo: cada sessão de skate é

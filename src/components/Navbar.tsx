@@ -9,6 +9,7 @@ const links = [
   { to: "/apresentacao", label: "Apresentação" },
   { to: "/metodologia", label: "Metodologia" },
   { to: "/estrutura", label: "Estrutura" },
+  { to: "/conceitos", label: "Conceitos" },
   { to: "/filme", label: "O Filme" },
   { to: "/coletivo", label: "O Coletivo" },
   { to: "/contribuicoes", label: "Contribuições" },

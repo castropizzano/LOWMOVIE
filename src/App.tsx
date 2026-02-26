@@ -11,6 +11,7 @@ import Filme from "./pages/Filme";
 import Coletivo from "./pages/Coletivo";
 import Contribuicoes from "./pages/Contribuicoes";
 import FAQ from "./pages/FAQ";
+import Conceitos from "./pages/Conceitos";
 import Conclusao from "./pages/Conclusao";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/apresentacao" element={<Apresentacao />} />
           <Route path="/metodologia" element={<Metodologia />} />
           <Route path="/estrutura" element={<Estrutura />} />
+          <Route path="/conceitos" element={<Conceitos />} />
           <Route path="/filme" element={<Filme />} />
           <Route path="/coletivo" element={<Coletivo />} />
           <Route path="/contribuicoes" element={<Contribuicoes />} />

@@ -13,8 +13,11 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="mb-6 font-display text-xs md:text-sm uppercase tracking-[0.3em] text-muted-foreground">
-              Dissertação de Mestrado
+            <p className="mb-2 font-display text-xs md:text-sm uppercase tracking-[0.3em] text-muted-foreground">
+              Dissertação de Mestrado — Junho 2025
+            </p>
+            <p className="mb-6 text-xs uppercase tracking-[0.2em] text-muted-foreground/60">
+              Mestrado em Cinema e Artes do Vídeo
             </p>
           </motion.div>
 
@@ -45,9 +48,14 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 text-xs text-muted-foreground/60 font-display uppercase tracking-widest"
+            className="mt-6 space-y-2"
           >
-            Castro Pizzano — PPG Cinema e Artes do Vídeo — UNESPAR
+            <p className="text-xs text-muted-foreground/60 font-display uppercase tracking-widest">
+              Castro Pizzano — PPG Cinema e Artes do Vídeo — UNESPAR
+            </p>
+            <p className="text-xs text-muted-foreground/50">
+              Orientador: Prof. Dr. Fábio Jabur de Noronha
+            </p>
           </motion.div>
 
           <motion.div
@@ -63,6 +71,17 @@ const Index = () => {
               Explorar a pesquisa
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 1 }}
+            className="mt-16"
+          >
+            <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/40">
+              Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual
+            </p>
           </motion.div>
         </div>
 
