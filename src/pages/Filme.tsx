@@ -122,6 +122,71 @@ const Filme = () => {
             </div>
           </AnimatedSection>
 
+          {/* Análise de Sequência */}
+          <AnimatedSection delay={0.35} className="mt-16">
+            <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Análise de Sequência — Exemplo</h3>
+
+            {/* Bloco 1 — Sequência em Quadros */}
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mb-4">
+              {Array.from({ length: 14 }, (_, i) => (
+                <div
+                  key={i}
+                  className="aspect-video rounded-md bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground text-xs uppercase tracking-widest cursor-pointer hover:border-primary/30 transition-colors"
+                >
+                  {i + 1}
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center mb-4">
+              <div className="w-48 md:w-64 aspect-[3/4] rounded-md bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground text-xs uppercase tracking-widest cursor-pointer hover:border-primary/30 transition-colors">
+                Foto Final
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground mb-16">
+              Sequência do drop — gesto único executado sem margem para erro, em contexto urbano de alto risco físico e técnico.
+            </p>
+          </AnimatedSection>
+
+          {/* Bloco 2 — Texto Analítico */}
+          <AnimatedSection delay={0.4}>
+            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed mb-16">
+              <p>
+                A sequência organiza-se em três momentos visuais articulados: preparação, projeção e absorção do gesto no espaço urbano. O enquadramento privilegia o plano geral aberto, com o talude ocupando grande parte do quadro e o corpo do skatista reduzido à condição de vetor em deslocamento, evidenciando a desproporção entre corpo e arquitetura.
+              </p>
+              <p>
+                O movimento de câmera é contido, permitindo que a ação se desenvolva no interior do quadro. A descida pelo plano inclinado cria uma diagonal dominante, reforçada pela sombra projetada no concreto, transformando o corpo em traço gráfico. O ápice ocorre no momento do drop para a via principal — gesto executado sem possibilidade de erro, dado o desnível, a inclinação e a circulação viária.
+              </p>
+              <p>
+                A montagem preserva a continuidade do movimento, sustentando o registro em fluxo e recusando fragmentações espetacularizantes. O som direto das rodas sobre o concreto ancora o gesto na materialidade do espaço.
+              </p>
+              <p>
+                Nos quadros finais, o corpo atravessa a via e deixa o campo. Permanece a arquitetura. A cidade retorna como superfície. A fotografia realizada durante o take cristaliza o instante de suspensão entre gravidade e invenção.
+              </p>
+              <div className="space-y-1 pt-2">
+                <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Operadores conceituais</p>
+                <p className="text-sm font-semibold text-foreground">– Poética do instante</p>
+                <p className="text-sm font-semibold text-foreground">– Estética da borda</p>
+                <p className="text-sm font-semibold text-foreground">– Registro em fluxo</p>
+                <p className="text-sm font-semibold text-foreground">– Afeto como eixo</p>
+              </div>
+              <p>
+                O drop sintetiza simbolicamente o próprio argumento da dissertação: criar é assumir risco situado. O LowMovie™ emerge da borda, onde erro não é metáfora — é consequência física. O gesto único, irrepetível naquele contexto, condensa a ética da pesquisa: invenção como enfrentamento real do espaço.
+              </p>
+            </div>
+          </AnimatedSection>
+
+          {/* Bloco 3 — Conexão com a Tese */}
+          <AnimatedSection delay={0.45}>
+            <div className="border border-primary/20 bg-primary/5 rounded-lg p-8 mb-16">
+              <p className="text-base font-semibold text-foreground">Este drop não é apenas uma manobra.</p>
+              <p className="text-base font-semibold text-primary mt-1 mb-4">É a metáfora estrutural da pesquisa.</p>
+              <p className="text-sm text-foreground/80 leading-relaxed mb-4">
+                A dissertação defende que processos criativos situados operam em contextos de risco, liminaridade e improviso. Assim como no talude, não há neutralidade nem terreno plano. Há borda, inclinação e decisão.
+              </p>
+              <p className="text-sm font-semibold text-primary">LowMovie™ é o registro dessa condição.</p>
+            </div>
+          </AnimatedSection>
+
           {/* Soundtrack */}
           <AnimatedSection delay={0.4} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">
