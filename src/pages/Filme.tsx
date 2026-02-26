@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Play, Music, ExternalLink, Film } from "lucide-react";
+import { Music, ExternalLink, Film } from "lucide-react";
 
 const Filme = () => {
   return (
@@ -16,14 +16,14 @@ const Filme = () => {
           {/* Video Embed */}
           <AnimatedSection delay={0.1}>
             <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-card/30 mb-16">
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div className="h-20 w-20 rounded-full border border-border flex items-center justify-center transition-colors hover:border-primary/50 cursor-pointer">
-                  <Play className="h-8 w-8 text-muted-foreground ml-1" />
-                </div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                  Trailer em breve
-                </p>
-              </div>
+              <iframe
+                src="https://player.vimeo.com/video/819603753?h=0&title=0&byline=0&portrait=0"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                title="LowMovie™ Trailer"
+              />
             </div>
           </AnimatedSection>
 
@@ -114,9 +114,14 @@ const Filme = () => {
               {[1, 2, 3, 4, 5, 6].map((i) => (
                 <div
                   key={i}
-                  className="aspect-video rounded-md bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground text-xs uppercase tracking-widest"
+                  className="aspect-video rounded-md overflow-hidden border border-border/50"
                 >
-                  Still {i}
+                  <img
+                    src={`/images/stills/00${i}.jpg`}
+                    alt={`Still ${i} — LowMovie™`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
               ))}
             </div>
@@ -195,7 +200,9 @@ const Filme = () => {
             </h3>
             <div className="grid gap-4 sm:grid-cols-2">
               <a
-                href="#"
+                href="https://open.spotify.com/album/74vGlNUZCHtuycS2DR3wXv"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
                 <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
@@ -208,7 +215,9 @@ const Filme = () => {
                 <ExternalLink className="ml-auto h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
               </a>
               <a
-                href="#"
+                href="https://open.spotify.com/album/61vLb0sa98Xjr5ZGtDEEiZ"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
                 <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
