@@ -6,13 +6,7 @@ import Layout from "@/components/Layout";
 const Index = () => {
   return (
     <Layout>
-      <section className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden noise-overlay">
-        {/* Background gradient orb */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="h-[600px] w-[600px] rounded-full bg-primary/10 blur-[120px] animate-pulse-glow" />
-          <div className="absolute h-[400px] w-[400px] rounded-full bg-secondary/10 blur-[100px] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
-        </div>
-
+      <section className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -30,7 +24,7 @@ const Index = () => {
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.9] tracking-tight"
           >
-            <span className="text-glow-primary">LowMovie™</span>
+            <span className="text-primary">LowMovie™</span>
             <br />
             <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground/80">
               e o Labirinto Criativo
@@ -44,7 +38,7 @@ const Index = () => {
             className="mx-auto mt-8 max-w-xl text-sm md:text-base text-muted-foreground leading-relaxed"
           >
             Subjetividade, subcultura e a poética em movimento
-            <br className="hidden sm:block" /> do coletivo <span className="text-primary font-medium">LowPressure™</span>
+            <br className="hidden sm:block" /> do coletivo LowPressure™
           </motion.p>
 
           <motion.div
@@ -64,7 +58,7 @@ const Index = () => {
           >
             <Link
               to="/apresentacao"
-              className="group inline-flex items-center gap-2 border border-primary/50 px-6 py-3 font-display text-xs uppercase tracking-widest text-primary transition-all hover:bg-primary hover:text-primary-foreground hover:border-glow"
+              className="group inline-flex items-center gap-2 border border-border px-6 py-3 font-display text-xs uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
             >
               Explorar a pesquisa
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -72,8 +66,7 @@ const Index = () => {
           </motion.div>
         </div>
 
-        {/* Decorative lines */}
-        <div className="absolute bottom-0 left-0 right-0 h-px gradient-primary opacity-30" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-border/50" />
       </section>
     </Layout>
   );

@@ -12,7 +12,7 @@ const links = [
   { to: "/filme", label: "O Filme" },
   { to: "/coletivo", label: "O Coletivo" },
   { to: "/contribuicoes", label: "Contribuições" },
-  { to: "/faq", label: "FAQ" },
+  { to: "/faq", label: "Questões" },
   { to: "/conclusao", label: "Conclusão" },
 ];
 
