@@ -43,9 +43,8 @@ const Conclusao = () => {
             <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
             <p className="text-base text-foreground/80 leading-relaxed text-justify max-w-2xl mx-auto">
               O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual autônoma e conhecimento
-              estético legítimo no campo acadêmico. A dissertação não solicita reconhecimento para o
-              skate como arte — ela demonstra, analiticamente, que o skate já opera como prática
-              estética produtora de formas, linguagens e saberes.
+              estético legítimo no campo acadêmico. A dissertação demonstra, analiticamente, que o skate já opera
+              como prática estética produtora de formas, linguagens e saberes.
             </p>
             <p className="mt-4 text-base text-foreground/80 leading-relaxed max-w-2xl mx-auto">
               A pesquisa afirma que o gesto criativo, quando analisado com rigor e implicação, constitui

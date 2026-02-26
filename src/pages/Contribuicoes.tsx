@@ -36,8 +36,7 @@ const Contribuicoes = () => {
             <p className="max-w-3xl text-base text-foreground/80 leading-relaxed text-justify mb-16">
               As contribuições distribuem-se por quatro eixos articulados, cada um dos quais responde a
               uma lacuna identificada no campo do cinema e das artes do vídeo no contexto acadêmico brasileiro.
-              Não se trata de contribuições meramente temáticas, mas de deslocamentos que afetam a própria
-              estrutura conceitual e metodológica do campo.
+              São deslocamentos que afetam a estrutura conceitual e metodológica do campo.
             </p>
           </AnimatedSection>
 
