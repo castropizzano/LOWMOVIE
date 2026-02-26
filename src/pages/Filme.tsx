@@ -27,6 +27,30 @@ const Filme = () => {
             </div>
           </AnimatedSection>
 
+          {/* Dados da Obra */}
+          <AnimatedSection delay={0.15}>
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
+              <p className="font-display text-xs uppercase tracking-widest text-primary mb-6">
+                Dados da Obra
+              </p>
+              <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+                {[
+                  { label: "Título", value: "LowMovie™" },
+                  { label: "Ano", value: "2024" },
+                  { label: "Formato", value: "Curta-metragem experimental" },
+                  { label: "Direção", value: "Castro Pizzano / LowPressure™" },
+                  { label: "Coletivo", value: "LowPressure™" },
+                  { label: "Trilha sonora", value: "Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)" },
+                ].map((item) => (
+                  <div key={item.label} className="border-l-2 border-primary/20 pl-4">
+                    <p className="font-display text-xs uppercase tracking-wide text-foreground/60">{item.label}</p>
+                    <p className="text-sm text-foreground/85 mt-1">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
           {/* Descrição expandida */}
           <AnimatedSection delay={0.2}>
             <div className="max-w-3xl space-y-4 text-foreground/85 leading-relaxed mb-16">
@@ -34,7 +58,8 @@ const Filme = () => {
                 O <span className="text-primary font-medium">LowMovie™</span> opera como dispositivo
                 poético-político, onde viver, pensar e criar operam em um mesmo gesto. O filme não é
                 apenas registro — é processo criativo em que o corpo, o urbano e o coletivo convergem
-                como matéria audiovisual.
+                como matéria audiovisual. É a materialização de um processo coletivo que articula corpo,
+                cidade, câmera e improviso como elementos indissociáveis de uma mesma operação poética.
               </p>
               <p>
                 A filmagem funciona como <strong>corpo-câmera</strong> — extensão sensível do realizador em movimento.
@@ -44,6 +69,8 @@ const Filme = () => {
               <p>
                 A ecologia sensorial do filme — trilha sonora, paleta cromática, design gráfico e sonoridades urbanas —
                 constitui um campo estético integrado, onde cada camada reforça a poética do instante e do fluxo.
+                O filme aborda-se como objeto estético acabado — embora provisoriamente — e como dispositivo de
+                mediação entre a prática subcultural e o campo institucional do cinema e das artes do vídeo.
               </p>
             </div>
           </AnimatedSection>
