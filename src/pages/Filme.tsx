@@ -133,18 +133,31 @@ const Filme = () => {
 
             {/* Bloco 1 — Sequência em Quadros */}
             <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mb-4">
-              {Array.from({ length: 14 }, (_, i) => (
-                <div
-                  key={i}
-                  className="aspect-video rounded-md bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground text-xs uppercase tracking-widest cursor-pointer hover:border-primary/30 transition-colors"
-                >
-                  {i + 1}
-                </div>
-              ))}
+              {Array.from({ length: 14 }, (_, i) => {
+                const num = String(i + 1).padStart(2, '0');
+                return (
+                  <div
+                    key={i}
+                    className="aspect-video rounded-md overflow-hidden border border-border/50 hover:border-primary/30 transition-colors"
+                  >
+                    <img
+                      src={`/images/sequence/${num}.png`}
+                      alt={`Quadro ${i + 1} — Sequência do drop`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                );
+              })}
             </div>
-            <div className="flex justify-center mb-4">
-              <div className="w-48 md:w-64 aspect-[3/4] rounded-md bg-muted/30 border border-border/50 flex items-center justify-center text-muted-foreground text-xs uppercase tracking-widest cursor-pointer hover:border-primary/30 transition-colors">
-                Foto Final
+            <div className="max-w-3xl mb-4">
+              <div className="aspect-[3/4] rounded-md overflow-hidden border border-border/50">
+                <img
+                  src="/images/sequence/foto-final.jpg"
+                  alt="Fotografia final — Drop no talude"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
             <p className="text-xs text-muted-foreground mb-16">
