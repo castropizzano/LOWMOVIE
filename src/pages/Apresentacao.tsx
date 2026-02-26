@@ -6,7 +6,7 @@ const Apresentacao = () => {
   return (
     <Layout>
       <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title="Apresentação" subtitle="Contexto, objeto e posicionamento da pesquisa" />
 
           <AnimatedSection delay={0.1}>

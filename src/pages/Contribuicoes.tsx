@@ -33,7 +33,7 @@ const Contribuicoes = () => {
           <SectionTitle title="Contribuições" subtitle="O que esta dissertação propõe ao campo" />
 
           <AnimatedSection delay={0.05}>
-            <p className="max-w-3xl text-base text-foreground/80 leading-relaxed text-justify mb-16">
+            <p className="text-base text-foreground/80 leading-relaxed text-justify mb-16">
               As contribuições distribuem-se por quatro eixos articulados, cada um dos quais responde a
               uma lacuna identificada no campo do cinema e das artes do vídeo no contexto acadêmico brasileiro.
               São deslocamentos que afetam a estrutura conceitual e metodológica do campo.

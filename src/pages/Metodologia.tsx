@@ -32,7 +32,7 @@ const Metodologia = () => {
           />
 
           <AnimatedSection delay={0.1}>
-            <div className="max-w-3xl space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-16">
+            <div className="space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-16">
               <p>
                 A investigação estrutura-se como <span className="text-primary font-semibold">pesquisa-criação implicada</span>,
                 modalidade metodológica que articula a produção artística e a reflexão acadêmica como dimensões

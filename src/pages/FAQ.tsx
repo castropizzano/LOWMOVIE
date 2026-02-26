@@ -47,7 +47,7 @@ const FAQ = () => {
   return (
     <Layout>
       <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 max-w-3xl">
+        <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title="Questões Críticas" subtitle="Tensões conceituais." />
 
           <AnimatedSection delay={0.05}>
