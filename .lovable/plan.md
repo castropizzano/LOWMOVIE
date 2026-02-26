@@ -1,82 +1,165 @@
 
 
-## Auditoria de Largura — Diagnóstico Completo e Plano de Padronização
+## Auditoria Técnica, Tipográfica e Conceitual — Diagnóstico e Plano
 
-### Largura Padrão Definida
-
-O padrão dominante no site é: `container mx-auto px-4 max-w-5xl` (equivale a **64rem / 1024px**).
+Auditei todos os 10 arquivos de página + componentes Layout, Navbar, SectionTitle e ImageLightbox. Segue diagnóstico organizado por eixo, com correções propostas.
 
 ---
 
-### Inventário de Inconsistências
+### 1. LAYOUT — Padronização de Padding, Border e Border-Radius
 
-#### A. Containers Externos (nível de página)
+Todos os blocos destacados usam `rounded-lg` e `border` — consistentes. Porém o **padding interno** varia entre dois padrões e há desvios:
 
-| Página | Container Atual | Problema |
-|--------|----------------|----------|
-| **Apresentacao** | `max-w-4xl` (56rem) | 8rem mais estreito que o padrão |
-| **Estrutura** | `max-w-6xl` (72rem) | 8rem mais largo que o padrão |
-| **FAQ** | `max-w-3xl` (48rem) | 16rem mais estreito que o padrão |
-| **Conclusao** | `max-w-3xl` (48rem) | 16rem mais estreito — layout cinético/centrado, mas os parágrafos finais deveriam seguir o padrão |
-| Index | sem max-w fixo | OK — hero page com layout centrado, exceção legítima |
-| Filme, Coletivo, Conceitos, Metodologia, Contribuicoes | `max-w-5xl` | OK — padrão correto |
+| Padrão | Uso esperado | Ocorrências corretas |
+|--------|-------------|---------------------|
+| `p-6 md:p-8` | Cards em grids (2-3 colunas) | Estrutura movimentos, Metodologia eixos, Contribuições |
+| `p-8 md:p-10` | Blocos standalone/featured | Apresentação pergunta, Metodologia procedimentos/distinção/operacionais, Filme dados/linhagem, Conceitos ética |
 
-#### B. Blocos Internos com `max-w-3xl` (48rem) — Parágrafos Estreitados
+**Inconsistências encontradas:**
 
-| Arquivo | Linha | Elemento | Causa |
-|---------|-------|----------|-------|
-| **Filme.tsx** | 91 | Div de descrição do filme | `max-w-3xl` no div |
-| **Filme.tsx** | 159 | Div de texto analítico da sequência | `max-w-3xl` no div |
-| **Coletivo.tsx** | 28 | Div de texto principal do coletivo | `max-w-3xl` no div |
-| **Coletivo.tsx** | 73 | Parágrafo do vocabulário | `max-w-3xl` no `<p>` |
-| **Conceitos.tsx** | 71 | Div introdutória de conceitos | `max-w-3xl` no div |
-| **Metodologia.tsx** | 48 | Div introdutória de metodologia | `max-w-3xl` no div |
-| **Estrutura.tsx** | 55 | Parágrafo introdutório | `max-w-3xl` no `<p>` |
-| **Contribuicoes.tsx** | 36 | Parágrafo introdutório | `max-w-3xl` no `<p>` |
+| Arquivo | Linha | Atual | Deveria ser |
+|---------|-------|-------|-------------|
+| `Conceitos.tsx` L90 | Cards de autores (grid 2col) | `p-6` | `p-6 md:p-8` |
+| `Filme.tsx` L187 | Bloco "Este drop" (standalone) | `p-8` | `p-8 md:p-10` |
+| `Conclusao.tsx` L71 | Citação final (standalone) | `px-8 py-6` | `p-8 md:p-10` |
+| `Index.tsx` L49 | Bloco institucional | `px-6 py-5` | Manter — exceção legítima (hero centrado) |
 
-#### C. Conclusão — Blocos Internos Adicionais
-
-| Linha | Elemento | Causa |
-|-------|----------|-------|
-| 44 | Parágrafo síntese | `max-w-2xl mx-auto` |
-| 49 | Parágrafo método | `max-w-2xl mx-auto` |
-| 56 | Parágrafo final | `max-w-2xl mx-auto` |
-| 71 | Caixa de citação | `max-w-xl mx-auto` |
+**Correções**: 3 ajustes de padding.
 
 ---
 
-### Decisão de Design
+### 2. LARGURA — SectionTitle Subtitle
 
-**Conclusão** é uma página cinética/centrada com animações sequenciais e texto centralizado. Alterar para `max-w-5xl` quebraria o efeito visual intencional. **Proposta**: manter o container `max-w-3xl` centrado, mas expandir os parágrafos internos de `max-w-2xl` para `max-w-3xl` (eliminando a restrição dupla). A caixa de citação passa de `max-w-xl` para `max-w-2xl`.
+O `SectionTitle` limita o subtítulo a `max-w-2xl` (42rem), criando um bloco mais estreito que o corpo de texto em containers `max-w-5xl`. Isso é visualmente perceptível em subtítulos longos.
 
-Todas as demais páginas: container externo padronizado em `max-w-5xl`, remoção de todos os `max-w-3xl` internos nos blocos de parágrafos.
+**Correção**: Remover `max-w-2xl` do subtítulo em `SectionTitle.tsx` L15, permitindo que ocupe a largura natural do container.
 
 ---
 
-### Plano de Correções — 10 Arquivos
+### 3. TIPOGRAFIA — Justificação
 
-| Arquivo | Correção |
-|---------|----------|
-| `Apresentacao.tsx` L9 | `max-w-4xl` → `max-w-5xl` |
-| `Estrutura.tsx` L55 | `max-w-6xl` → `max-w-5xl` |
-| `FAQ.tsx` L50 | `max-w-3xl` → `max-w-5xl` |
-| `Filme.tsx` L91 | Remover `max-w-3xl` do div |
-| `Filme.tsx` L159 | Remover `max-w-3xl` do div |
-| `Coletivo.tsx` L28 | Remover `max-w-3xl` do div |
-| `Coletivo.tsx` L73 | Remover `max-w-3xl` do `<p>` |
-| `Conceitos.tsx` L71 | Remover `max-w-3xl` do div |
-| `Metodologia.tsx` L48 | Remover `max-w-3xl` do div |
-| `Estrutura.tsx` L55 | Remover `max-w-3xl` do `<p>` (após mudar container) |
-| `Contribuicoes.tsx` L36 | Remover `max-w-3xl` do `<p>` |
-| `Conclusao.tsx` L44,49,56 | `max-w-2xl` → `max-w-3xl` |
-| `Conclusao.tsx` L71 | `max-w-xl` → `max-w-2xl` |
+Auditoria completa de `text-justify`:
 
-**Total**: 13 correções em 8 arquivos. Nenhuma alteração em hierarquia, espaçamento ou identidade visual.
+| Arquivo | Linha | Status |
+|---------|-------|--------|
+| Apresentação L13, L114, L145 | ✅ Justificado |
+| Metodologia L35 | ✅ Justificado |
+| Conceitos L71, L133 | ✅ Justificado |
+| Estrutura L50, L105 | ✅ Justificado |
+| Contribuições L36 | ✅ Justificado |
+| FAQ L54 | ✅ Justificado |
+| Filme L91, L159, L190 | ✅ Justificado |
+| Coletivo L28 | ✅ Justificado |
+| **Conclusão L49** | ❌ Sem `text-justify` | Segundo parágrafo |
+| Conclusão L44, L56 | ✅ Justificado |
 
-### Relatório Final Esperado
+**Correção**: Adicionar `text-justify` ao parágrafo L49 de `Conclusao.tsx`.
 
-- **Largura padrão**: `max-w-5xl` (64rem / 1024px)
-- **Exceções mantidas**: Index (hero), Conclusão (centrada em `max-w-3xl`)
-- **Seções ajustadas**: Apresentação, Estrutura, FAQ (containers), Filme, Coletivo, Conceitos, Metodologia, Contribuições, Conclusão (blocos internos)
-- **Uniformidade desktop e mobile**: Garantida pelo `container mx-auto px-4` + Tailwind responsive — sem breakpoints customizados afetados
+---
+
+### 4. HIERARQUIA DE TÍTULOS
+
+| Nível | Uso | Status |
+|-------|-----|--------|
+| `h1` | Apenas Index (hero) e 404 | ✅ Correto |
+| `h2` | SectionTitle (todas as páginas) | ✅ Correto |
+| `h3` | Subseções dentro das páginas | ✅ Correto |
+| `h4` | Não utilizado | ✅ OK — não há necessidade |
+
+Hierarquia uniforme. Sem quebras.
+
+---
+
+### 5. PADRONIZAÇÃO DE ™
+
+| Termo | Ocorrências | Status |
+|-------|------------|--------|
+| LowMovie™ | ~20 ocorrências | ✅ Consistente em todo o site |
+| LowPressure™ | ~12 ocorrências | ✅ Consistente |
+| Lowbyrinth™ | 6 ocorrências | ⚠️ 1 inconsistência |
+
+**Inconsistência encontrada:**
+- `Conclusao.tsx` L74: `"um lowbyrinth."` — minúscula e sem ™
+- Deveria ser: `"um Lowbyrinth™."`
+
+**Nota**: `Filme.tsx` L214 exibe "Lowbyrinth EP" sem ™ — aceitável pois é o nome do álbum no Spotify, não o conceito acadêmico.
+
+**Correção**: 1 ajuste em Conclusão.
+
+---
+
+### 6. EPÍGRAFE DA HOME
+
+A epígrafe atual é: *"We have such sights to show you."* — fala do personagem Pinhead (Hellraiser, Clive Barker, 1987).
+
+**Avaliação**: Referência a um filme de horror cult. Pode soar lúdica/provocativa num contexto de defesa acadêmica. Não compromete a seriedade do site dado o contexto subcultural da pesquisa, mas uma banca poderia estranhar a ausência de atribuição.
+
+**Sugestão**: Manter se for referência intencional à cultura pop/subcultural (coerente com a pesquisa), mas **adicionar atribuição**: `— Hellraiser (Clive Barker, 1987)`. Alternativa mais institucional não é necessária — a epígrafe funciona como gesto autoral coerente com o posicionamento da pesquisa.
+
+---
+
+### 7. TOM PROMOCIONAL
+
+Varredura completa de linguagem:
+
+| Trecho | Arquivo | Avaliação |
+|--------|---------|-----------|
+| "Dispositivo poético-político nascido do gesto coletivo" | Filme subtitle | Linguagem acadêmica legítima |
+| "Rede de artistas-skatistas que ativam a cidade como campo sensível" | Coletivo subtitle | OK — descritivo |
+| "Este drop não é apenas uma manobra. É a metáfora estrutural da pesquisa." | Filme L188-189 | Limítrofe — tom assertivo mas defensável como síntese argumentativa |
+| "LowMovie™ é o registro dessa condição." | Filme L193 | OK — síntese |
+
+**Avaliação geral**: Sem linguagem promocional. O tom é acadêmico-autoral, coerente com pesquisa-criação.
+
+---
+
+### 8. AUTORES — Grafia e Presença
+
+| Autor no site | Grafia | Status |
+|---------------|--------|--------|
+| Bourriaud | Nicolas Bourriaud | ✅ |
+| Stuart Hall | Stuart Hall | ✅ |
+| Iain Borden | Iain Borden | ✅ |
+| McDuie-Ra | McDuie-Ra | ✅ (grafia com hífen, padrão do autor) |
+| Coessens | Coessens | ✅ |
+| Pimentel | Pimentel | ✅ |
+| Moriceau | Moriceau | ✅ |
+| Deleuze | Deleuze | ✅ |
+| Rouch | Rouch | ✅ (Jean Rouch, mencionado em Conceitos) |
+| Deren | Deren | ✅ (Maya Deren, mencionado em Conceitos) |
+| Herzog | Herzog | ✅ (citado como ressonância ética, não como referência bibliográfica formal — adequado) |
+| Delpeux | Delpeux | ✅ |
+| Abreu | Luis Alberto de Abreu | ✅ |
+| Certeau | Certeau (mencionado em Coletivo) | ✅ |
+| Lefebvre | Lefebvre (mencionado em Coletivo) | ✅ |
+| Machado e Brandão | Machado e Brandão (Apresentação + Contribuições) | ✅ |
+
+**Nota sobre "Dan Guinski"**: Aparece em Filme.tsx L45 como `"Dan Guinski"` e L215 como `"Dan Guinski"`. Verificar se a grafia correta é **Guinski** ou **Guinski** (consistente internamente, mas confirmar com a dissertação).
+
+---
+
+### Plano de Correções
+
+| # | Arquivo | Linha | Correção |
+|---|---------|-------|----------|
+| 1 | `SectionTitle.tsx` | L15 | Remover `max-w-2xl` do subtítulo |
+| 2 | `Conceitos.tsx` | L90 | `p-6` → `p-6 md:p-8` |
+| 3 | `Filme.tsx` | L187 | `p-8` → `p-8 md:p-10` |
+| 4 | `Conclusao.tsx` | L71 | `px-8 py-6` → `p-8 md:p-10` |
+| 5 | `Conclusao.tsx` | L49 | Adicionar `text-justify` |
+| 6 | `Conclusao.tsx` | L74 | `lowbyrinth` → `Lowbyrinth™` |
+| 7 | `Index.tsx` | L78 | Adicionar atribuição à epígrafe: `— Hellraiser (Clive Barker, 1987)` |
+
+**Total**: 7 correções cirúrgicas em 5 arquivos.
+
+### Confirmação Final
+
+- **Largura padrão**: `max-w-5xl` (1024px) — uniforme em todas as páginas (exceto Conclusão centrada em `max-w-3xl` e Index hero)
+- **Padding padrão**: `p-6 md:p-8` (cards em grid) / `p-8 md:p-10` (blocos standalone) — será uniformizado
+- **Border/radius**: `border border-border rounded-lg` — uniforme
+- **Justificação**: 100% dos parágrafos de corpo justificados após correção
+- **Hierarquia de títulos**: h1 (Index) → h2 (SectionTitle) → h3 (subseções) — sem quebras
+- **™**: Uniforme após correção do Lowbyrinth™ em Conclusão
+- **Autores**: Grafia correta e consistente
+- **Tom**: Acadêmico-autoral, sem linguagem promocional
 
