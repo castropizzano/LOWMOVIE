@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Music, ExternalLink, Film } from "lucide-react";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const Filme = () => {
   return (
@@ -112,17 +113,12 @@ const Filme = () => {
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Stills do Filme</h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div
+                <ImageLightbox
                   key={i}
-                  className="aspect-video rounded-md overflow-hidden border border-border/50"
-                >
-                  <img
-                    src={`/images/stills/00${i}.jpg`}
-                    alt={`Still ${i} — LowMovie™`}
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
+                  src={`/images/stills/00${i}.jpg`}
+                  alt={`Still ${i} — LowMovie™`}
+                  aspectRatio="aspect-video"
+                />
               ))}
             </div>
           </AnimatedSection>
@@ -136,29 +132,22 @@ const Filme = () => {
               {Array.from({ length: 14 }, (_, i) => {
                 const num = String(i + 1).padStart(2, '0');
                 return (
-                  <div
-                    key={i}
-                    className="aspect-video rounded-md overflow-hidden border border-border/50 hover:border-primary/30 transition-colors"
-                  >
-                    <img
+                  <div key={i}>
+                    <ImageLightbox
                       src={`/images/sequence/${num}.png`}
                       alt={`Quadro ${i + 1} — Sequência do drop`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
+                      aspectRatio="aspect-video"
                     />
                   </div>
                 );
               })}
             </div>
             <div className="max-w-3xl mb-4">
-              <div className="aspect-[3/4] rounded-md overflow-hidden border border-border/50">
-                <img
-                  src="/images/sequence/foto-final.jpg"
-                  alt="Fotografia final — Drop no talude"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
+              <ImageLightbox
+                src="/images/sequence/foto-final.jpg"
+                alt="Fotografia final — Drop no talude"
+                aspectRatio="aspect-[3/4]"
+              />
             </div>
             <p className="text-xs text-muted-foreground mb-16">
               Sequência do drop — gesto único executado sem margem para erro, em contexto urbano de alto risco físico e técnico.
