@@ -6,22 +6,22 @@ const contribuicoes = [
   {
     num: "01",
     title: "Reposicionamento epistemológico do skate",
-    desc: "A dissertação reposiciona o skate como prática estética produtora de linguagem audiovisual, superando abordagens que o reduzem a fenômeno sociológico, esportivo ou subcultural. Esse gesto abre um campo de investigação até então inexplorado na pesquisa acadêmica brasileira em cinema.",
+    desc: "A dissertação reposiciona o skate como prática estética produtora de linguagem audiovisual, superando abordagens que o reduzem a fenômeno sociológico, esportivo ou subcultural. Esse gesto abre um campo de investigação até então inexplorado na pesquisa acadêmica brasileira em cinema. Como apontam Machado e Brandão, entre os diversos programas de pós-graduação mapeados, ainda existe um território fértil e pouco explorado para investigações que articulem práticas subculturais urbanas com a produção cinematográfica contemporânea.",
   },
   {
     num: "02",
     title: "Formulação de operadores conceituais",
-    desc: "Os conceitos de poética do instante, estética da borda, registro em fluxo e Lowbyrinth™ constituem ferramentas analíticas derivadas da prática artística, oferecendo ao campo vocabulário preciso para fenômenos até então não nomeados.",
+    desc: "Os conceitos de poética do instante, estética da borda, registro em fluxo e Lowbyrinth™ constituem ferramentas analíticas derivadas da prática artística, oferecendo ao campo vocabulário preciso para fenômenos até então não nomeados. Esses operadores não são meras nomenclaturas — são instrumentos de análise que podem ser apropriados por outras investigações no campo das artes e do cinema.",
   },
   {
     num: "03",
     title: "Pesquisa-criação implicada como método",
-    desc: "A dissertação estrutura a pesquisa-criação implicada como abordagem academicamente rigorosa, demonstrando que a implicação do pesquisador no campo investigado, quando submetida a reflexividade explícita, produz — e não compromete — conhecimento válido.",
+    desc: "A dissertação estrutura a pesquisa-criação implicada como abordagem academicamente rigorosa, demonstrando que a implicação do pesquisador no campo investigado, quando submetida a reflexividade explícita, produz — e não compromete — conhecimento válido. A pesquisa não documenta apenas uma cena ou uma estética — ela propõe um modo de pesquisar COM o skate, reconhecendo-o como prática produtora de conhecimento sensível, situado e compartilhado.",
   },
   {
     num: "04",
     title: "Deslocamento no campo audiovisual brasileiro",
-    desc: "Ao propor que práticas subculturais podem constituir matrizes de produção cinematográfica autônoma, a dissertação amplia as fronteiras do que é reconhecido como cinema e como pesquisa em cinema no Brasil.",
+    desc: "Ao propor que práticas subculturais podem constituir matrizes de produção cinematográfica autônoma, a dissertação amplia as fronteiras do que é reconhecido como cinema e como pesquisa em cinema no Brasil. A contribuição é simultaneamente temática, metodológica e epistemológica — oferecendo ao campo do cinema e das artes do vídeo ferramentas conceituais derivadas da prática artística implicada e do fazer coletivo situado no contexto brasileiro contemporâneo.",
   },
 ];
 

@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
-import { Play, Music, ExternalLink } from "lucide-react";
+import { Play, Music, ExternalLink, Film } from "lucide-react";
 
 const Filme = () => {
   return (
@@ -38,15 +38,53 @@ const Filme = () => {
                   { label: "Título", value: "LowMovie™" },
                   { label: "Ano", value: "2024" },
                   { label: "Formato", value: "Curta-metragem experimental" },
+                  { label: "Duração", value: "~25 min" },
                   { label: "Direção", value: "Castro Pizzano / LowPressure™" },
                   { label: "Coletivo", value: "LowPressure™" },
                   { label: "Trilha sonora", value: "Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)" },
+                  { label: "Estrutura", value: "Segmentos entrelaçados — sessões, interlúdios, cenas de fabulação" },
+                  { label: "Première / Circulação", value: "Exibições em circuitos independentes e institucionais" },
                 ].map((item) => (
                   <div key={item.label} className="border-l-2 border-primary/20 pl-4">
                     <p className="font-display text-xs uppercase tracking-wide text-foreground/60">{item.label}</p>
                     <p className="text-sm text-foreground/85 mt-1">{item.value}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Linhagem dos vídeos de skate */}
+          <AnimatedSection delay={0.17}>
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
+              <div className="flex items-start gap-4 mb-6">
+                <Film className="h-7 w-7 text-primary/60 shrink-0 mt-1" />
+                <div>
+                  <p className="font-display text-xs uppercase tracking-widest text-primary mb-2">
+                    Linhagem — A Gramática dos Vídeos de Skate
+                  </p>
+                  <p className="text-sm text-foreground/80 leading-relaxed">
+                    O LowMovie™ inscreve-se numa tradição audiovisual própria da cultura do skate que produziu
+                    linguagem cinematográfica autônoma antes de qualquer reconhecimento institucional. A <strong>VideoParte</strong> —
+                    formato audiovisual central do skate — constitui uma gramática com ritmo, montagem e códigos
+                    estéticos específicos. O <strong>Full-Length</strong> expande essa gramática para uma estrutura narrativa
+                    completa, com múltiplas partes, interlúdios e arco dramático.
+                  </p>
+                </div>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-3">
+                <div className="border-l-2 border-primary/20 pl-4">
+                  <p className="font-display text-xs uppercase tracking-wide text-foreground/70">Ty Evans</p>
+                  <p className="text-xs text-muted-foreground mt-1">Pioneiro da cinematografia de skate em alta definição, expandiu os limites técnicos da filmagem</p>
+                </div>
+                <div className="border-l-2 border-primary/20 pl-4">
+                  <p className="font-display text-xs uppercase tracking-wide text-foreground/70">Spike Jonze</p>
+                  <p className="text-xs text-muted-foreground mt-1">Transitou do vídeo de skate ao cinema de autor, demonstrando a potência estética do meio</p>
+                </div>
+                <div className="border-l-2 border-primary/20 pl-4">
+                  <p className="font-display text-xs uppercase tracking-wide text-foreground/70">Beagle (Brian Anderson)</p>
+                  <p className="text-xs text-muted-foreground mt-1">Referência na articulação entre documentário, identidade e subcultura no audiovisual do skate</p>
+                </div>
               </div>
             </div>
           </AnimatedSection>
@@ -69,8 +107,14 @@ const Filme = () => {
               <p>
                 A ecologia sensorial do filme — trilha sonora, paleta cromática, design gráfico e sonoridades urbanas —
                 constitui um campo estético integrado, onde cada camada reforça a poética do instante e do fluxo.
-                O filme aborda-se como objeto estético acabado — embora provisoriamente — e como dispositivo de
-                mediação entre a prática subcultural e o campo institucional do cinema e das artes do vídeo.
+                As <strong>cenas de fabulação</strong> funcionam como <em>improviso enquanto dramaturgia do real</em> —
+                momentos em que o filme transcende o registro para produzir ficções situadas, narrativas que emergem
+                do próprio ato de filmar.
+              </p>
+              <p>
+                Os <strong>ritos de estreia</strong> — première, sessões coletivas, projeções em espaços não-convencionais —
+                constituem o circuito de circulação do filme, prolongando a obra para além de seus limites formais e
+                demonstrando que a circulação é parte constitutiva da poética, e não apenas distribuição.
               </p>
             </div>
           </AnimatedSection>

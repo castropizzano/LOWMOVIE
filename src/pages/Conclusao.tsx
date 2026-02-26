@@ -54,7 +54,9 @@ const Conclusao = () => {
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
               um filme fora dos circuitos convencionais — essas operações não são apenas práticas
               artísticas: são modos de conhecer o mundo, de interrogar a cidade, de produzir sentido a
-              partir do corpo em movimento.
+              partir do corpo em movimento. O percurso metodológico opera em espiral — cada retorno ao
+              campo aprofunda a compreensão anterior, articulando prática, reflexão e formulação conceitual
+              num movimento cumulativo que não se encerra com a conclusão do texto.
             </p>
             <p className="mt-6 text-foreground/75 leading-relaxed max-w-2xl mx-auto">
               O que o LowMovie™ ensina, em última instância, é que a poética não habita o resultado
