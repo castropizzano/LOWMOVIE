@@ -184,7 +184,7 @@ const Filme = () => {
 
           {/* Bloco 3 — Conexão com a Tese */}
           <AnimatedSection delay={0.45}>
-            <div className="border border-primary/20 bg-primary/5 rounded-lg p-8 mb-16">
+            <div className="border border-primary/20 bg-primary/5 rounded-lg p-8 md:p-10 mb-16">
               <p className="text-base font-semibold text-foreground">Este drop não é apenas uma manobra.</p>
               <p className="text-base font-semibold text-primary mt-1 mb-4">É a metáfora estrutural da pesquisa.</p>
               <p className="text-sm text-foreground/80 leading-relaxed text-justify mb-4">

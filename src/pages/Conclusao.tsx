@@ -46,7 +46,7 @@ const Conclusao = () => {
               estético legítimo no campo acadêmico. A dissertação demonstra, analiticamente, que o skate já opera
               como prática estética produtora de formas, linguagens e saberes.
             </p>
-            <p className="mt-4 text-base text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+            <p className="mt-4 text-base text-foreground/80 leading-relaxed text-justify max-w-3xl mx-auto">
               A pesquisa afirma que o gesto criativo, quando analisado com rigor e implicação, constitui
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
               um filme fora dos circuitos convencionais — essas operações não são apenas práticas
@@ -68,10 +68,10 @@ const Conclusao = () => {
             transition={{ duration: 0.8, delay: 1.1 }}
             className="mt-16"
           >
-            <div className="border border-border/40 rounded-lg px-8 py-6 bg-card/20 max-w-2xl mx-auto">
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20 max-w-2xl mx-auto">
               <p className="text-sm text-muted-foreground leading-relaxed italic">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
-                do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um lowbyrinth."
+                do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
               </p>
             </div>
           </motion.div>

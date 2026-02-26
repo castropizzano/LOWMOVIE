@@ -75,6 +75,7 @@ const Index = () => {
           >
             <p className="text-xs italic text-muted-foreground max-w-xs mx-auto">
               "We have such sights to show you."
+              <span className="block mt-1 not-italic text-muted-foreground/60">— Hellraiser (Clive Barker, 1987)</span>
             </p>
           </motion.div>
 

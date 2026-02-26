@@ -87,7 +87,7 @@ const Conceitos = () => {
             </h3>
             <div className="grid gap-6 md:grid-cols-2">
               {autores.map((grupo) => (
-                <div key={grupo.campo} className="border border-border rounded-lg p-6 bg-card/30">
+                <div key={grupo.campo} className="border border-border rounded-lg p-6 md:p-8 bg-card/30">
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
                     {grupo.campo}
                   </p>
