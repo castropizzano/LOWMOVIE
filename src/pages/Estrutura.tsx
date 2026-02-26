@@ -47,7 +47,7 @@ const Estrutura = () => {
           />
 
           <AnimatedSection delay={0.05}>
-            <p className="max-w-3xl text-base text-foreground/80 leading-relaxed mb-16">
+            <p className="max-w-3xl text-base text-foreground/80 leading-relaxed text-justify mb-16">
               A dissertação organiza-se em três movimentos analíticos que correspondem, simultaneamente,
               a dimensões distintas do objeto e a níveis progressivos de complexidade conceitual.
               Cada movimento possui autonomia interna, mas articula-se com os demais numa lógica de
@@ -102,7 +102,7 @@ const Estrutura = () => {
               <h3 className="text-lg font-semibold uppercase tracking-wide mb-6 text-foreground">
                 Operadores e Campo Simbólico
               </h3>
-              <div className="space-y-4 text-foreground/80 leading-relaxed">
+              <div className="space-y-4 text-foreground/80 leading-relaxed text-justify">
                 <p>
                   Os operadores emergem da prática e retornam a ela. Não são categorias apriorísticas,
                   mas conceitos formulados a partir da experiência sensível do fazer artístico.

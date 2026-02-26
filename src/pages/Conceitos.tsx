@@ -68,7 +68,7 @@ const Conceitos = () => {
           <SectionTitle title="Conceitos" subtitle="Cartografia teórica, formulações autorais e ética de criação" />
 
           <AnimatedSection delay={0.05}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed mb-16">
+            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 A fundamentação teórica articula tradições intelectuais distintas — teoria urbana,
                 estética relacional, estudos culturais, pesquisa em artes, teoria do cinema — numa constelação
@@ -132,7 +132,7 @@ const Conceitos = () => {
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
                 Ética de Criação e Ressonância com Herzog
               </p>
-              <div className="space-y-4 text-foreground/80 leading-relaxed">
+              <div className="space-y-4 text-foreground/80 leading-relaxed text-justify">
                 <p>
                   Herzog afirma que <em>"o erro é algo que beira o sagrado... é preciso aceitar
                   a tentativa e erro"</em>. Esse diálogo não é uma filiação estética — é uma ressonância

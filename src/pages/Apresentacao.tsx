@@ -10,7 +10,7 @@ const Apresentacao = () => {
           <SectionTitle title="Apresentação" subtitle="Contexto, objeto e posicionamento da pesquisa" />
 
           <AnimatedSection delay={0.1}>
-            <div className="space-y-4 text-base leading-relaxed text-foreground/80">
+            <div className="space-y-4 text-base leading-relaxed text-foreground/80 text-justify">
               <p>
                 Esta dissertação investiga os processos criativos do filme{" "}
                 <span className="text-primary font-semibold">LowMovie™</span>, realizado pelo coletivo de
@@ -112,7 +112,7 @@ const Apresentacao = () => {
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6 text-foreground">
               Lugar de Fala — Artista-Pesquisador
             </h3>
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
+            <div className="space-y-4 text-foreground/80 leading-relaxed text-justify">
               <p>
                 A dissertação assume explicitamente a posição de artista-pesquisador, operando a partir de uma
                 epistemologia que reconhece a implicação como condição de rigor e não como obstáculo a ele. Não
@@ -144,7 +144,7 @@ const Apresentacao = () => {
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6 text-foreground">
               Justificativa
             </h3>
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
+            <div className="space-y-4 text-foreground/80 leading-relaxed text-justify">
               <p>
                 A relevância desta investigação reside, sobretudo, na escassez de pesquisas acadêmicas brasileiras
                 que abordem o skate enquanto matriz de produção audiovisual e não apenas como objeto de registro

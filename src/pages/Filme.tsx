@@ -88,7 +88,7 @@ const Filme = () => {
 
           {/* Descrição */}
           <AnimatedSection delay={0.2}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed mb-16">
+            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 O <span className="text-primary font-semibold">LowMovie™</span> opera como dispositivo
                 poético-político, onde viver, pensar e criar operam em um mesmo gesto. É a materialização
@@ -142,7 +142,7 @@ const Filme = () => {
                 );
               })}
             </div>
-            <div className="max-w-3xl mb-4">
+            <div className="mb-4">
               <ImageLightbox
                 src="/images/sequence/foto-final.jpg"
                 alt="Fotografia final — Drop no talude"
@@ -156,7 +156,7 @@ const Filme = () => {
 
           {/* Bloco 2 — Texto Analítico */}
           <AnimatedSection delay={0.4}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed mb-16">
+            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 A sequência organiza-se em três momentos visuais articulados: preparação, projeção e absorção do gesto no espaço urbano. O enquadramento privilegia o plano geral aberto, com o talude ocupando grande parte do quadro e o corpo do skatista reduzido à condição de vetor em deslocamento, evidenciando a desproporção entre corpo e arquitetura.
               </p>
@@ -187,7 +187,7 @@ const Filme = () => {
             <div className="border border-primary/20 bg-primary/5 rounded-lg p-8 mb-16">
               <p className="text-base font-semibold text-foreground">Este drop não é apenas uma manobra.</p>
               <p className="text-base font-semibold text-primary mt-1 mb-4">É a metáfora estrutural da pesquisa.</p>
-              <p className="text-sm text-foreground/80 leading-relaxed mb-4">
+              <p className="text-sm text-foreground/80 leading-relaxed text-justify mb-4">
                 A dissertação defende que processos criativos situados operam em contextos de risco, liminaridade e improviso. Assim como no talude, não há neutralidade nem terreno plano. Há borda, inclinação e decisão.
               </p>
               <p className="text-sm font-semibold text-primary">LowMovie™ é o registro dessa condição.</p>

@@ -41,7 +41,7 @@ const Conclusao = () => {
             className="mt-16"
           >
             <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
-            <p className="text-base text-foreground/80 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base text-foreground/80 leading-relaxed text-justify max-w-2xl mx-auto">
               O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual autônoma e conhecimento
               estético legítimo no campo acadêmico. A dissertação não solicita reconhecimento para o
               skate como arte — ela demonstra, analiticamente, que o skate já opera como prática
@@ -54,7 +54,7 @@ const Conclusao = () => {
               artísticas: são modos de conhecer o mundo. O percurso metodológico opera em espiral — cada retorno ao
               campo aprofunda a compreensão anterior.
             </p>
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify max-w-2xl mx-auto">
               O que o LowMovie™ ensina é que a poética não habita o resultado
               acabado, mas o processo que o engendra. O filme é a sedimentação provisória de um fluxo
               contínuo de gestos, decisões, improvisos e encontros. É nesse fluxo que reside a contribuição

@@ -25,7 +25,7 @@ const Coletivo = () => {
           />
 
           <AnimatedSection delay={0.1}>
-            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed mb-16">
+            <div className="max-w-3xl space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 O <span className="text-primary font-semibold">LowPressure™</span> não é um grupo
                 formal — é uma rede de afinidades, uma forma de vida em rede que se constitui pelo
