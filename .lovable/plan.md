@@ -1,17 +1,51 @@
 
 
-## Plano — Scroll to top ao navegar
+## Plano — Correção de data + Redesign editorial da capa
 
-Adicionar um componente `ScrollToTop` que usa `useLocation` do React Router para detectar mudanças de rota e executar `window.scrollTo(0, 0)` automaticamente.
+### Correções
+- "Junho 2025" → "Março 2026"
 
-### Implementação
+### Redesign editorial acadêmico (`src/pages/Index.tsx`)
 
-1. **Criar `src/components/ScrollToTop.tsx`** — componente que escuta mudanças de `pathname` via `useEffect` e faz `window.scrollTo(0, 0)`.
+Layout assimétrico com hierarquia forte:
 
-2. **Adicionar em `src/App.tsx`** — inserir `<ScrollToTop />` dentro do `<BrowserRouter>`, antes do `<Routes>`.
+```text
+┌─────────────────────────────────────────────┐
+│                                             │
+│  DISSERTAÇÃO DE MESTRADO — MARÇO 2026       │  ← left-aligned, small
+│                                             │
+│  LOWMOVIE™                                 │  ← left-aligned, massive
+│  E O LABIRINTO CRIATIVO                    │  ← left-aligned, secondary
+│                                             │
+│  Subjetividade, subcultura e a poética...  │  ← left-aligned, muted
+│                                             │
+│  ─────────────────────                      │  ← line accent
+│                                             │
+│  PPG Cinema e Artes do Vídeo — UNESPAR     │  ← left, small
+│  LINHA: PROCESSOS DE CRIAÇÃO...            │  ← left, primary color
+│                                             │
+│  Castro Pizzano                             │
+│  Orientador: Prof. Dr. Fábio Jabur...      │
+│  Banca: Profa. Dra. Fabiana...             │
+│                                             │
+│  ─────────────────────                      │
+│                                             │
+│  [ EXPLORAR A PESQUISA → ]                 │  ← left-aligned button
+│                                             │
+│  "We have such sights..."                  │  ← left, subtle
+│                                             │
+│  SKATE · VIDEOARTE · PROCESSOS...          │  ← bottom, full width
+│                                             │
+└─────────────────────────────────────────────┘
+```
+
+- Tudo alinhado à esquerda (`text-left`)
+- Título `LowMovie™` em escala maior (`text-5xl md:text-7xl`)
+- Remover o card/box com borda — informações institucionais ficam soltas com separadores lineares
+- Mais espaçamento vertical entre blocos
+- Keywords no rodapé da seção, separadas por linha
 
 | Arquivo | Alteração |
 |---------|-----------|
-| `ScrollToTop.tsx` (novo) | Componente scroll-to-top |
-| `App.tsx` | Inserir componente no router |
+| `Index.tsx` | Data corrigida + layout editorial left-aligned |
 
