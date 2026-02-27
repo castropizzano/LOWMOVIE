@@ -99,7 +99,7 @@ const Coletivo = () => {
                     key={i}
                     src={`/images/coletivo/${num}.png`}
                     alt={`Imagem ${i} do Coletivo`}
-                    aspectRatio="aspect-[3/4]"
+                    aspectRatio="aspect-video"
                     imageClassName="object-contain bg-muted/20"
                   />
                 );
