@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import NextSectionButton from "@/components/NextSectionButton";
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +12,7 @@ import {
 const questions = [
   {
     q: "Poética versus estética",
-    a: "A escolha pelo termo poética — e não estética — é deliberada. Poética refere-se ao fazer em ato, à formatividade do processo criador. A ênfase recai sobre o processo, e não apenas sobre o resultado formal. A estética diz respeito à recepção e à experiência sensível do espectador — dimensão que a dissertação não ignora, mas não elege como foco principal.",
+    a: "A escolha pelo termo poética — e não estética — é deliberada. Poética refere-se ao fazer em ato, ao modo como a obra se forma durante o processo. A ênfase recai sobre o processo, e não apenas sobre o resultado formal. A estética diz respeito à recepção e à experiência sensível do espectador — dimensão que a dissertação não ignora, mas não elege como foco principal.",
   },
   {
     q: "Símbolo e signo",
@@ -27,7 +28,7 @@ const questions = [
   },
   {
     q: "Dimensão política",
-    a: "A obra opera como micropolítica do gesto e da ocupação sensível da cidade. Sua dimensão política é imanente à prática, não declarativa. Criar sem esperar autorização institucional configura, por si só, uma micropolítica do fazer.",
+    a: "A obra opera como micropolítica do gesto e da ocupação sensível da cidade. Sua dimensão política é inseparável da prática, não declarativa. Criar sem esperar autorização institucional configura, por si só, uma micropolítica do fazer.",
   },
   {
     q: "Autonomia conceitual",
@@ -74,6 +75,8 @@ const FAQ = () => {
               ))}
             </Accordion>
           </AnimatedSection>
+
+          <NextSectionButton to="/conclusao" label="Conclusão" />
         </div>
       </section>
     </Layout>

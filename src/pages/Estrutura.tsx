@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import NextSectionButton from "@/components/NextSectionButton";
 import { Compass, Users, Film, BookOpen } from "lucide-react";
 
 const movimentos = [
@@ -104,7 +105,7 @@ const Estrutura = () => {
               </h3>
               <div className="space-y-4 text-foreground/80 leading-relaxed text-justify">
                 <p>
-                  Os operadores emergem da prática e retornam a ela. Não são categorias apriorísticas,
+                  Os operadores emergem da prática e retornam a ela. Não são categorias definidas de antemão,
                   mas conceitos formulados a partir da experiência sensível do fazer artístico.
                 </p>
                 <p>
@@ -120,6 +121,8 @@ const Estrutura = () => {
               </div>
             </div>
           </AnimatedSection>
+
+          <NextSectionButton to="/conceitos" label="Conceitos" />
         </div>
       </section>
     </Layout>
