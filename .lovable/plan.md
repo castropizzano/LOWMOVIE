@@ -1,12 +1,25 @@
 
 
-## Imagens P&B com cor no hover
+## Acervo do Processo — Card na página Conclusão
 
-Aplicar `grayscale` em todas as imagens do site via CSS, removendo o filtro no hover para revelar as cores antes de abrir o lightbox.
+Adicionar um card com iframe do Google Drive ao final de `src/pages/Conclusao.tsx`, após a citação.
+
+**Folder ID**: `1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX`
 
 ### Alteração
 
-**`src/components/ImageLightbox.tsx`** — Adicionar classes de filtro na `<img>` do thumbnail:
-- `grayscale` + `hover:grayscale-0` + `transition-all duration-500` na imagem dentro do trigger
-- Manter a imagem do lightbox (fullscreen) em cores normais
+**`src/pages/Conclusao.tsx`**:
+- Importar `FolderOpen` do lucide-react
+- Após o card da citação (após linha 57), adicionar:
+  - Divider + título "Acervo do Processo" com ícone `FolderOpen`
+  - Texto curto explicativo
+  - iframe: `https://drive.google.com/embeddedfolderview?id=1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX#grid`
+  - Aviso "Somente visualização — downloads desabilitados"
+
+### Importante (ação manual do usuário)
+Para impedir downloads, você precisa configurar no Google Drive:
+1. Abrir a pasta → Compartilhar → Engrenagem (⚙️)
+2. Desmarcar **"Os leitores e comentadores podem ver a opção de fazer download, imprimir e copiar"**
+
+Sem essa configuração, o Google Drive permitirá downloads mesmo com o embed.
 
