@@ -118,6 +118,8 @@ const Filme = () => {
                   key={i}
                   src={`/images/stills/00${i}.jpg`}
                   alt={`Still ${i} — LowMovie™`}
+                  aspectRatio="aspect-video"
+                  imageClassName="object-cover"
                 />
               ))}
             </div>
