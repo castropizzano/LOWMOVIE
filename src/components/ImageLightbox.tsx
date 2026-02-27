@@ -31,7 +31,7 @@ const ImageLightbox = ({
             src={src} 
             alt={alt} 
             className={cn(
-              "w-full h-full object-cover",
+              "w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500",
               imageClassName
             )}
             loading="lazy"
