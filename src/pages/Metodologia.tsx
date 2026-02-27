@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import NextSectionButton from "@/components/NextSectionButton";
 import { Heart, Ear, Zap } from "lucide-react";
 
 const eixos = [
@@ -140,6 +141,8 @@ const Metodologia = () => {
               </div>
             </div>
           </AnimatedSection>
+
+          <NextSectionButton to="/estrutura" label="Estrutura" />
         </div>
       </section>
     </Layout>

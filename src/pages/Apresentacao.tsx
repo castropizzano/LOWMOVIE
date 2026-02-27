@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import NextSectionButton from "@/components/NextSectionButton";
 
 const Apresentacao = () => {
   return (
@@ -158,6 +159,8 @@ const Apresentacao = () => {
               </p>
             </div>
           </AnimatedSection>
+
+          <NextSectionButton to="/metodologia" label="Metodologia" />
         </div>
       </section>
     </Layout>

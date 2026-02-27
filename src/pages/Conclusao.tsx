@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 
 const Conclusao = () => {
@@ -6,40 +5,21 @@ const Conclusao = () => {
     <Layout>
       <section className="flex min-h-[calc(100vh-4rem)] items-center justify-center py-20">
         <div className="container mx-auto px-4 max-w-3xl text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          >
+          <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-8">
               Síntese
             </p>
-          </motion.div>
+          </div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.15 }}
-            className="text-2xl md:text-4xl font-bold uppercase leading-tight tracking-tight text-foreground/80"
-          >
+          <p className="text-2xl md:text-4xl font-bold uppercase leading-tight tracking-tight text-foreground/80">
             A <span className="text-primary">poética</span> não é resultado.
-          </motion.p>
+          </p>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-4 text-xl md:text-2xl font-semibold uppercase tracking-tight text-primary"
-          >
+          <p className="mt-4 text-xl md:text-2xl font-semibold uppercase tracking-tight text-primary">
             É processo em movimento.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.7 }}
-            className="mt-16"
-          >
+          <div className="mt-16">
             <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
             <p className="text-base text-foreground/80 leading-relaxed text-justify max-w-3xl mx-auto">
               O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual autônoma e conhecimento
@@ -60,21 +40,16 @@ const Conclusao = () => {
               mais profunda: o movimento é, simultaneamente, condição de produção, linguagem expressiva e forma de
               pensamento.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.1 }}
-            className="mt-16"
-          >
+          <div className="mt-16">
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20 max-w-2xl mx-auto">
               <p className="text-sm text-muted-foreground leading-relaxed italic">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </Layout>

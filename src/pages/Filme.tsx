@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import NextSectionButton from "@/components/NextSectionButton";
 import { Music, ExternalLink, Film } from "lucide-react";
 import ImageLightbox from "@/components/ImageLightbox";
 
@@ -158,7 +159,7 @@ const Filme = () => {
           <AnimatedSection delay={0.4}>
             <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
-                A sequência organiza-se em três momentos visuais articulados: preparação, projeção e absorção do gesto no espaço urbano. O enquadramento privilegia o plano geral aberto, com o talude ocupando grande parte do quadro e o corpo do skatista reduzido à condição de vetor em deslocamento, evidenciando a desproporção entre corpo e arquitetura.
+                A sequência organiza-se em três momentos visuais articulados: preparação, projeção e absorção do gesto no espaço urbano. O enquadramento privilegia o plano geral aberto, com o talude (plano inclinado de concreto) ocupando grande parte do quadro e o corpo do skatista reduzido à condição de vetor em deslocamento, evidenciando a desproporção entre corpo e arquitetura.
               </p>
               <p>
                 O movimento de câmera é contido, permitindo que a ação se desenvolva no interior do quadro. A descida pelo plano inclinado cria uma diagonal dominante, reforçada pela sombra projetada no concreto, transformando o corpo em traço gráfico. O ápice ocorre no momento do drop para a via principal — gesto executado sem possibilidade de erro, dado o desnível, a inclinação e a circulação viária.
@@ -188,7 +189,7 @@ const Filme = () => {
               <p className="text-base font-semibold text-foreground">Este drop não é apenas uma manobra.</p>
               <p className="text-base font-semibold text-primary mt-1 mb-4">É a metáfora estrutural da pesquisa.</p>
               <p className="text-sm text-foreground/80 leading-relaxed text-justify mb-4">
-                A dissertação defende que processos criativos situados operam em contextos de risco, liminaridade e improviso. Assim como no talude, não há neutralidade nem terreno plano. Há borda, inclinação e decisão.
+                A dissertação defende que processos criativos situados operam em contextos de risco, zona de limiar (entre controle e incerteza) e improviso. Assim como no talude, não há neutralidade nem terreno plano. Há borda, inclinação e decisão.
               </p>
               <p className="text-sm font-semibold text-primary">LowMovie™ é o registro dessa condição.</p>
             </div>
@@ -233,6 +234,8 @@ const Filme = () => {
               </a>
             </div>
           </AnimatedSection>
+
+          <NextSectionButton to="/coletivo" label="O Coletivo" />
         </div>
       </section>
     </Layout>

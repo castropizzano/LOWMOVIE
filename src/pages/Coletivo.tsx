@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import NextSectionButton from "@/components/NextSectionButton";
 import ImageLightbox from "@/components/ImageLightbox";
 
 const glossario = [
@@ -33,7 +34,7 @@ const Coletivo = () => {
               </p>
               <p>
                 O processo criativo se enraíza na escuta e na convivência. A identidade
-                do coletivo se afirma como <span className="text-primary font-semibold">construção rizomática</span>,
+                do coletivo se afirma como <span className="text-primary font-semibold">construção rizomática</span> (que cresce em rede, sem hierarquia fixa),
                 em que saberes e fazeres se moldam ao ritmo de um coletivo em movimento. Como afirma Stuart Hall,
                 <em> "a identidade cultural talvez deva ser pensada como uma 'produção', algo que nunca está
                 completo, que é sempre processual"</em>.
@@ -116,6 +117,8 @@ const Coletivo = () => {
               </p>
             </div>
           </AnimatedSection>
+
+          <NextSectionButton to="/contribuicoes" label="Contribuições" />
         </div>
       </section>
     </Layout>

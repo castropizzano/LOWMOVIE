@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
+import NextSectionButton from "@/components/NextSectionButton";
 
 const contribuicoes = [
   {
@@ -51,6 +52,8 @@ const Contribuicoes = () => {
               </AnimatedSection>
             ))}
           </div>
+
+          <NextSectionButton to="/faq" label="Questões" />
         </div>
       </section>
     </Layout>
