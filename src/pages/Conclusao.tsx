@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { FolderOpen, Eye } from "lucide-react";
+import { FolderOpen, Eye, ExternalLink } from "lucide-react";
 
 const Conclusao = () => {
   return (
@@ -63,14 +63,15 @@ const Conclusao = () => {
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
               Documentos, registros e materiais produzidos ao longo da pesquisa — disponíveis para consulta.
             </p>
-            <div className="border border-border/40 rounded-lg overflow-hidden bg-card/20 max-w-3xl mx-auto">
-              <iframe
-                src="https://drive.google.com/embeddedfolderview?id=1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX#grid"
-                className="w-full h-[400px] md:h-[500px] border-0"
-                title="Acervo do Processo LowMovie"
-                loading="lazy"
-              />
-            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/20 hover:bg-card/40 transition-colors group"
+            >
+              <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+              <span className="text-sm font-medium text-foreground/80">Abrir Acervo no Google Drive</span>
+            </a>
             <div className="flex items-center justify-center gap-1.5 mt-4">
               <Eye className="h-3.5 w-3.5 text-muted-foreground" />
               <p className="text-xs text-muted-foreground">
