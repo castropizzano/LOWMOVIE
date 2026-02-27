@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { FolderOpen, Eye, ExternalLink } from "lucide-react";
+import { FolderOpen, Eye, ExternalLink, FileText, Youtube } from "lucide-react";
 
 const Conclusao = () => {
   return (
@@ -52,6 +52,29 @@ const Conclusao = () => {
             </div>
           </div>
 
+          {/* Dissertação PDF */}
+          <div className="mt-20">
+            <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <FileText className="h-5 w-5 text-primary" />
+              <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                Dissertação Completa
+              </h2>
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
+              Leia a dissertação na íntegra — versão otimizada para leitura digital.
+            </p>
+            <div className="border border-border/40 rounded-lg overflow-hidden bg-card/20 max-w-3xl mx-auto">
+              <iframe
+                src="/docs/dissertacao.pdf"
+                className="w-full h-[500px] md:h-[700px] border-0"
+                title="Dissertação — LowMovie™ e o Labirinto Criativo"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Acervo do Processo */}
           <div className="mt-20">
             <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -77,6 +100,35 @@ const Conclusao = () => {
               <p className="text-xs text-muted-foreground">
                 Somente visualização — downloads desabilitados
               </p>
+            </div>
+          </div>
+
+          {/* Entrevista Podcast */}
+          <div className="mt-20">
+            <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Youtube className="h-5 w-5 text-primary" />
+              <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                Entrevista Completa
+              </h2>
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-2">
+              <span className="text-primary font-semibold uppercase text-xs tracking-widest">Podcast Chiclé Vídeos</span>
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
+              Conversa sobre a trajetória criativa, os bastidores do LowMovie™, a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
+            </p>
+            <div className="border border-border/40 rounded-lg overflow-hidden bg-card/20 max-w-3xl mx-auto">
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <iframe
+                  src="https://www.youtube.com/embed/rOoUJyzGkDY"
+                  className="absolute inset-0 w-full h-full border-0"
+                  title="Skate Punk — Processos Criativos | Podcast Chiclé Vídeos"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </div>
