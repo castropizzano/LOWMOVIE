@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { FolderOpen, Eye } from "lucide-react";
 
 const Conclusao = () => {
   return (
@@ -47,6 +48,33 @@ const Conclusao = () => {
               <p className="text-sm text-muted-foreground leading-relaxed italic">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-20">
+            <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <FolderOpen className="h-5 w-5 text-primary" />
+              <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                Acervo do Processo
+              </h2>
+            </div>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
+              Documentos, registros e materiais produzidos ao longo da pesquisa — disponíveis para consulta.
+            </p>
+            <div className="border border-border/40 rounded-lg overflow-hidden bg-card/20 max-w-3xl mx-auto">
+              <iframe
+                src="https://drive.google.com/embeddedfolderview?id=1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX#grid"
+                className="w-full h-[400px] md:h-[500px] border-0"
+                title="Acervo do Processo LowMovie"
+                loading="lazy"
+              />
+            </div>
+            <div className="flex items-center justify-center gap-1.5 mt-4">
+              <Eye className="h-3.5 w-3.5 text-muted-foreground" />
+              <p className="text-xs text-muted-foreground">
+                Somente visualização — downloads desabilitados
               </p>
             </div>
           </div>
