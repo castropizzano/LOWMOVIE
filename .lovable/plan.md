@@ -1,51 +1,13 @@
 
 
-## Plano — Correção de data + Redesign editorial da capa
+## Duas alterações
 
-### Correções
-- "Junho 2025" → "Março 2026"
+### 1. Stills do Filme (`Filme.tsx`) — Expandir sem barras
+Os stills com letterbox (barras horizontais) precisam de `object-cover` dentro de um container `aspect-video` (16:9) para que a imagem preencha o thumbnail e as barras desapareçam.
 
-### Redesign editorial acadêmico (`src/pages/Index.tsx`)
+- Adicionar `aspectRatio="aspect-video"` e `imageClassName="object-cover"` nos ImageLightbox dos stills (linha 117-121)
 
-Layout assimétrico com hierarquia forte:
-
-```text
-┌─────────────────────────────────────────────┐
-│                                             │
-│  DISSERTAÇÃO DE MESTRADO — MARÇO 2026       │  ← left-aligned, small
-│                                             │
-│  LOWMOVIE™                                 │  ← left-aligned, massive
-│  E O LABIRINTO CRIATIVO                    │  ← left-aligned, secondary
-│                                             │
-│  Subjetividade, subcultura e a poética...  │  ← left-aligned, muted
-│                                             │
-│  ─────────────────────                      │  ← line accent
-│                                             │
-│  PPG Cinema e Artes do Vídeo — UNESPAR     │  ← left, small
-│  LINHA: PROCESSOS DE CRIAÇÃO...            │  ← left, primary color
-│                                             │
-│  Castro Pizzano                             │
-│  Orientador: Prof. Dr. Fábio Jabur...      │
-│  Banca: Profa. Dra. Fabiana...             │
-│                                             │
-│  ─────────────────────                      │
-│                                             │
-│  [ EXPLORAR A PESQUISA → ]                 │  ← left-aligned button
-│                                             │
-│  "We have such sights..."                  │  ← left, subtle
-│                                             │
-│  SKATE · VIDEOARTE · PROCESSOS...          │  ← bottom, full width
-│                                             │
-└─────────────────────────────────────────────┘
-```
-
-- Tudo alinhado à esquerda (`text-left`)
-- Título `LowMovie™` em escala maior (`text-5xl md:text-7xl`)
-- Remover o card/box com borda — informações institucionais ficam soltas com separadores lineares
-- Mais espaçamento vertical entre blocos
-- Keywords no rodapé da seção, separadas por linha
-
-| Arquivo | Alteração |
-|---------|-----------|
-| `Index.tsx` | Data corrigida + layout editorial left-aligned |
+### 2. Galeria do Coletivo (`Coletivo.tsx`) — Mudar para 16:9
+- Trocar `aspectRatio="aspect-[3/4]"` por `aspectRatio="aspect-video"` (linha 102)
+- Manter `imageClassName="object-contain bg-muted/20"` para as imagens caberem inteiras no 16:9
 
