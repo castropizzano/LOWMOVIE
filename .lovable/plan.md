@@ -1,46 +1,62 @@
 
 
-## Plano de Ajustes de Microtipografia e Diagramação
+## Plano — 3 Eixos de Correção
 
-### 1. HOME (`src/pages/Index.tsx`)
+### 1. Remover animações de entrada (conteudo visivel imediatamente)
 
-**Título + Subtítulo (L25-31)**:
-- Reduzir gap entre "LowMovie™" e subtítulo: `leading-[0.9]` → `leading-none` no h1
-- Aumentar peso do subtítulo: `font-normal` → `font-medium`, e opacidade `text-foreground/80` → `text-foreground/70` (manter discreto mas com mais presença)
-- Aumentar levemente o subtítulo: `text-xl md:text-2xl` → `text-xl md:text-[1.65rem]` para melhor proporção
+**AnimatedSection.tsx**: Alterar o componente para renderizar um `div` simples sem animação (mantendo className). Isso afeta todas as páginas de uma vez.
 
-**Bloco institucional (L49)**:
-- Aumentar contraste da borda: `border-border/40` → `border-border/60`
-- Ajustar padding: `px-6 py-5` → `px-8 py-6` para maior presença
+**Conclusao.tsx**: Substituir os 4 blocos `motion.div`/`motion.p` por elementos HTML estáticos (`div`, `p`) sem `initial`/`animate`/`transition`.
 
-**Epígrafe (L69-80)** — Reposicionar abaixo do botão CTA:
-- Mover o bloco da epígrafe (L69-80) para depois do bloco do botão (L82-95)
-- Reduzir tamanho: `text-xs` → `text-[10px]`
-- Aumentar opacidade reduzida: `text-muted-foreground` → `text-muted-foreground/70`
+**Index.tsx**: Substituir os 7 blocos `motion.div`/`motion.h1`/`motion.p` por elementos estáticos.
 
-### 2. FOOTER (`src/components/Layout.tsx`)
+### 2. Botão "Próxima seção" no final de cada página
 
-**L9-29**:
-- Aumentar line-height: adicionar `leading-relaxed` aos parágrafos do footer
-- Aumentar separação: `space-y-3` → `space-y-4`
-- Melhorar respiração antes da frase final: `mt-2` → `mt-6` na frase explicativa (L26)
-- Adicionar separador visual antes da frase final: `border-t border-border/30 pt-6`
+Criar um componente `NextSectionButton` reutilizável que recebe `to` e `label`. Usar a mesma linguagem visual do botão da Home (border, uppercase, tracking-widest, ArrowRight icon).
 
-### 3. DISTINÇÃO FUNDAMENTAL (`src/pages/Metodologia.tsx`)
+Sequência de navegação (conforme Navbar):
+- `/apresentacao` → `/metodologia` (Metodologia)
+- `/metodologia` → `/estrutura` (Estrutura)
+- `/estrutura` → `/conceitos` (Conceitos)
+- `/conceitos` → `/filme` (O Filme)
+- `/filme` → `/coletivo` (O Coletivo)
+- `/coletivo` → `/contribuicoes` (Contribuições)
+- `/contribuicoes` → `/faq` (Questões)
+- `/faq` → `/conclusao` (Conclusão)
+- `/conclusao` → nenhum (página final)
 
-**Card L94-117**:
-- Restringir largura do texto interno: adicionar `max-w-3xl` nos parágrafos de corpo (L109, L113) para melhorar medida tipográfica dentro do card
-- Aumentar espaçamento entre parágrafos: `mt-4` → `mt-6` (L113)
-- Destaque no símbolo "≠": `text-2xl text-primary/60` → `text-3xl font-light text-primary/80` para maior presença visual
-- Ajustar padding: já está em `p-8 md:p-10` — correto, manter
+Adicionar o componente no final de cada página (antes do `</section>`), dentro do container.
 
-### Resumo
+### 3. Vocabulário — tornar termos técnicos mais acessíveis
 
-| Arquivo | Correções |
+Termos identificados que podem ser opacos para leitores não-acadêmicos:
+
+| Termo | Arquivo | Correção proposta |
+|-------|---------|-------------------|
+| **talude** (2x) | `Filme.tsx` L161, L191 | Adicionar explicação inline: "talude (plano inclinado de concreto)" na primeira ocorrência |
+| **rizomática** | `Coletivo.tsx` L36 | Adicionar: "construção rizomática (que cresce em rede, sem hierarquia fixa)" |
+| **liminaridade** | `Filme.tsx` L191 | Substituir por: "risco, zona de limiar (entre controle e incerteza) e improviso" |
+| **apriorísticas** | `Estrutura.tsx` L107 | Substituir por: "categorias definidas de antemão" |
+| **formatividade** | `FAQ.tsx` L14 | Substituir por: "ao fazer em ato, ao modo como a obra se forma durante o processo" |
+| **epistemológico/a** (recorrente) | Vários | Manter — termo central da dissertação, amplamente compreensível no contexto acadêmico. Não simplificar. |
+| **imanente** | `FAQ.tsx` L31 | Substituir por: "Sua dimensão política é inseparável da prática" |
+
+**Total**: 7 ajustes de vocabulário em 4 arquivos + 1 novo componente + remoção de animações em 3 arquivos.
+
+### Arquivos modificados
+
+| Arquivo | Alteração |
 |---------|-----------|
-| `Index.tsx` | 5 ajustes (título, subtítulo, bloco institucional, epígrafe reposicionada) |
-| `Layout.tsx` | 4 ajustes (line-height, spacing, separador visual) |
-| `Metodologia.tsx` | 3 ajustes (max-w texto, spacing parágrafos, símbolo ≠) |
-
-**Total**: 12 ajustes cirúrgicos em 3 arquivos. Sem alteração de cor, identidade visual ou conteúdo textual.
+| `AnimatedSection.tsx` | Remover animação, renderizar div simples |
+| `Index.tsx` | Remover motion, usar HTML estático |
+| `Conclusao.tsx` | Remover motion, usar HTML estático |
+| `NextSectionButton.tsx` (novo) | Componente de navegação reutilizável |
+| `Apresentacao.tsx` | Adicionar NextSectionButton |
+| `Metodologia.tsx` | Adicionar NextSectionButton |
+| `Estrutura.tsx` | Adicionar NextSectionButton + corrigir "apriorísticas" |
+| `Conceitos.tsx` | Adicionar NextSectionButton |
+| `Filme.tsx` | Adicionar NextSectionButton + corrigir "talude" e "liminaridade" |
+| `Coletivo.tsx` | Adicionar NextSectionButton + corrigir "rizomática" |
+| `Contribuicoes.tsx` | Adicionar NextSectionButton |
+| `FAQ.tsx` | Adicionar NextSectionButton + corrigir "formatividade" e "imanente" |
 
