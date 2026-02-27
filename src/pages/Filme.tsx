@@ -38,10 +38,10 @@ const Filme = () => {
               <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                 {[
                   { label: "Título", value: "LowMovie™" },
-                  { label: "Ano", value: "2024" },
-                  { label: "Formato", value: "Curta-metragem experimental" },
-                  { label: "Duração", value: "~25 min" },
-                  { label: "Direção", value: "Castro Pizzano / LowPressure™" },
+                  { label: "Ano", value: "2023" },
+                  { label: "Formato", value: "Full-length video" },
+                  { label: "Duração", value: "~1h" },
+                  { label: "Direção", value: "Rafão VM (dir.) & Castro Pizzano \"Punk\" (co-dir.)" },
                   { label: "Coletivo", value: "LowPressure™" },
                   { label: "Trilha sonora", value: "Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)" },
                   { label: "Estrutura", value: "Segmentos entrelaçados — sessões, interlúdios, cenas de fabulação" },
