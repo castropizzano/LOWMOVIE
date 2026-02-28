@@ -1,15 +1,18 @@
 
 
-## Inserir capa da dissertação na Home com layout lado a lado
+## Alinhar largura do header com footer e corpo (max-w-5xl)
 
-### Arquivos
-- Copiar `user-uploads://image-12.png` → `src/assets/capa-dissertacao.png`
+### Alteração em `src/components/Navbar.tsx` (linha 26)
 
-### Alterações em `src/pages/Index.tsx`
+Trocar o container interno de `container mx-auto` para `mx-auto max-w-5xl`, alinhando com o padrão `max-w-5xl` usado no footer e nas páginas de conteúdo.
 
-1. Importar a imagem: `import capaDissertacao from "@/assets/capa-dissertacao.png"`
-2. Transformar o conteúdo da section em um grid de 2 colunas (`grid md:grid-cols-2 gap-12 items-center`)
-3. Coluna esquerda: imagem da capa com `rounded-lg shadow-lg` e proporção preservada
-4. Coluna direita: todo o texto existente (título, subtítulo, informações acadêmicas, botão, epígrafe, tags)
-5. Em mobile, a imagem fica acima do texto (ordem natural do grid)
+```
+// De:
+<div className="container mx-auto flex h-16 items-center justify-between px-4">
+
+// Para:
+<div className="mx-auto max-w-5xl flex h-16 items-center justify-between px-4">
+```
+
+A barra de navegação continua full-width visualmente (o `<nav>` mantém `left-0 right-0` com borda e backdrop), mas o conteúdo interno (logo + links) fica alinhado com o corpo do site.
 
