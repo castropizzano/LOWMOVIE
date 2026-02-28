@@ -1,18 +1,19 @@
 
 
-## Substituir vídeo da lightbox por YouTube
+## Vídeos em preto e branco antes do hover/play
 
-### Alteração
+Aplicar o mesmo padrão visual das imagens (grayscale → cor no hover) aos iframes de vídeo.
 
-**`src/components/WelcomeOverlay.tsx`** — Trocar a URL do iframe:
+### Alterações
 
-- **De:** `https://streamable.com/e/861ig9?autoplay=1&loop=1&nocontrols=1`
-- **Para:** `https://www.youtube.com/embed/3kO3N49cUkU?autoplay=1&loop=1&playlist=3kO3N49cUkU&controls=0&mute=1&showinfo=0&rel=0&modestbranding=1`
+**1. `src/components/WelcomeOverlay.tsx`**
+- Adicionar `grayscale group-hover:grayscale-0 transition-all duration-500` ao iframe do YouTube
+- Adicionar `group` ao container do vídeo
 
-Parâmetros utilizados:
-- `autoplay=1` — reprodução automática
-- `mute=1` — necessário para autoplay funcionar nos navegadores
-- `loop=1&playlist=3kO3N49cUkU` — loop contínuo (YouTube exige playlist= com o próprio ID para loop funcionar)
-- `controls=0` — sem controles visíveis
-- `showinfo=0&rel=0&modestbranding=1` — interface limpa sem sugestões
+**2. `src/pages/Filme.tsx`**
+- Adicionar `grayscale hover:grayscale-0 transition-all duration-500` ao iframe do Vimeo
+- Adicionar `group` ao container e usar `group-hover:grayscale-0` no iframe
+
+### Nota técnica
+O filtro CSS `grayscale` funciona em iframes. O vídeo aparecerá em preto e branco e revelará as cores ao passar o mouse, consistente com o tratamento das imagens.
 
