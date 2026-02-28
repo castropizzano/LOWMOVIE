@@ -18,6 +18,15 @@ const WelcomeOverlay = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
+
+    // Fire-and-forget: envia email para Google Forms/Sheets
+    const params = new URLSearchParams();
+    params.append("emailAddress", email);
+    fetch(
+      "https://docs.google.com/forms/d/e/1FAIpQLSftGDKDFks87l4_7uOl0hD9S00akAoTjrxfbPNLlaoHrpF5rQ/formResponse",
+      { method: "POST", body: params, mode: "no-cors" }
+    ).catch(() => {});
+
     localStorage.setItem(STORAGE_KEY, "true");
     setClosing(true);
     setTimeout(() => setVisible(false), 400);
