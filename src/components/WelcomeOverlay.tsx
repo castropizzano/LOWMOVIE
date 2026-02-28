@@ -40,12 +40,12 @@ const WelcomeOverlay = () => {
     >
       <div className="w-full max-w-xl mx-4 border border-border bg-background/95 rounded-lg shadow-2xl overflow-hidden">
         {/* Video */}
-        <div className="relative w-full aspect-video">
+        <div className="relative w-full aspect-video group">
           <iframe
             src="https://www.youtube.com/embed/3kO3N49cUkU?autoplay=1&loop=1&playlist=3kO3N49cUkU&controls=0&mute=1&showinfo=0&rel=0&modestbranding=1"
             allowFullScreen
             allow="autoplay"
-            className="absolute inset-0 w-full h-full border-0"
+            className="absolute inset-0 w-full h-full border-0 grayscale group-hover:grayscale-0 transition-all duration-500"
             title="LowMovie — Introdução"
           />
         </div>

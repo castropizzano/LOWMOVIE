@@ -17,10 +17,10 @@ const Filme = () => {
 
           {/* Video Embed */}
           <AnimatedSection delay={0.1}>
-            <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-card/30 mb-16">
+            <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-card/30 mb-16 group">
               <iframe
                 src="https://player.vimeo.com/video/819603753?h=0&title=0&byline=0&portrait=0"
-                className="absolute inset-0 w-full h-full"
+                className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
