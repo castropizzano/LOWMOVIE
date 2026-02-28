@@ -47,7 +47,7 @@ const Contribuicoes = () => {
                 <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 h-full transition-colors hover:border-primary/30">
                   <p className="text-xs font-semibold text-primary/60 tracking-widest mb-2">{item.num}</p>
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-3">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{item.desc}</p>
                 </div>
               </AnimatedSection>
             ))}

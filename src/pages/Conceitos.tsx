@@ -96,7 +96,7 @@ const Conceitos = () => {
                     {grupo.refs.map((ref) => (
                       <div key={ref.nome}>
                         <p className="text-sm font-semibold text-foreground">{ref.nome}</p>
-                        <p className="text-sm text-muted-foreground leading-relaxed mt-1">{ref.contrib}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed text-justify mt-1">{ref.contrib}</p>
                       </div>
                     ))}
                   </div>
@@ -119,7 +119,7 @@ const Conceitos = () => {
                   <p className="text-base font-semibold uppercase tracking-wide text-foreground mb-2">
                     {c.nome}
                   </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{c.def}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{c.def}</p>
                 </div>
               ))}
             </div>

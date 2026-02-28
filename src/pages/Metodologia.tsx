@@ -51,7 +51,7 @@ const Metodologia = () => {
                 <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30 h-full">
                   <eixo.icon className="h-7 w-7 text-primary/70 mb-4" />
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-3">{eixo.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{eixo.desc}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{eixo.desc}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -66,20 +66,20 @@ const Metodologia = () => {
               <div className="grid gap-6 md:grid-cols-3 mb-8">
                 <div className="border-l-2 border-primary/20 pl-4">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Vivência Situada</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                     Participação em processos coletivos: sessões de gravação, reuniões, eventos, sessões de skate.
                   </p>
                 </div>
                 <div className="border-l-2 border-primary/20 pl-4">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Convivência Criativa</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                     O pesquisador participa das dinâmicas de produção e montagem, contribuindo ativamente para
                     as decisões estéticas do coletivo.
                   </p>
                 </div>
                 <div className="border-l-2 border-primary/20 pl-4">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Escuta Partilhada</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                     Materializada em conversas abertas, registradas por meio de notas, áudios e diário digital.
                   </p>
                 </div>
@@ -107,11 +107,11 @@ const Metodologia = () => {
                   <p className="text-xs text-muted-foreground mt-1">Filmagem, montagem, glitch, design</p>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed max-w-3xl">
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify max-w-3xl">
                 Embora método de pesquisa e métodos de criação se alimentem mutuamente, não se confundem.
                 O primeiro interroga, conceitua e articula; os segundos produzem, experimentam e materializam.
               </p>
-              <p className="text-sm text-muted-foreground leading-relaxed mt-6 max-w-3xl">
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mt-6 max-w-3xl">
                 O rigor reside na reflexividade com que cada decisão é interrogada e na consistência com que
                 as inferências se articulam aos referenciais mobilizados.
               </p>

@@ -65,7 +65,7 @@ const Filme = () => {
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
                     Linhagem — A Gramática dos Vídeos de Skate
                   </p>
-                  <p className="text-sm text-foreground/80 leading-relaxed">
+                  <p className="text-sm text-foreground/80 leading-relaxed text-justify">
                     O LowMovie™ inscreve-se numa tradição audiovisual própria da cultura do skate. A <strong>VideoParte</strong> constitui
                     uma gramática com ritmo, montagem e códigos estéticos específicos. O <strong>Full-Length</strong> expande
                     essa gramática para uma estrutura narrativa completa.
@@ -80,7 +80,7 @@ const Filme = () => {
                 ].map((ref) => (
                   <div key={ref.nome} className="border-l-2 border-primary/20 pl-4">
                     <p className="text-sm font-semibold text-foreground">{ref.nome}</p>
-                    <p className="text-sm text-muted-foreground mt-1">{ref.desc}</p>
+                    <p className="text-sm text-muted-foreground text-justify mt-1">{ref.desc}</p>
                   </div>
                 ))}
               </div>

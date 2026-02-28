@@ -63,7 +63,7 @@ const Estrutura = () => {
                   <mov.icon className="h-8 w-8 text-primary/60 mb-5" />
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">{mov.title}</h3>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">{mov.subtitle}</p>
-                  <p className="text-sm text-foreground/80 leading-relaxed mb-6">{mov.desc}</p>
+                  <p className="text-sm text-foreground/80 leading-relaxed text-justify mb-6">{mov.desc}</p>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">
                     Subcapítulos
                   </p>
