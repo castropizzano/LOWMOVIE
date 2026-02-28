@@ -1,25 +1,48 @@
 
 
-## Acervo do Processo — Card na página Conclusão
+## Reorganizar Conclusão: cards, alinhamento à esquerda, fix PDF bloqueado
 
-Adicionar um card com iframe do Google Drive ao final de `src/pages/Conclusao.tsx`, após a citação.
+### Problemas identificados
+1. O iframe do PDF está bloqueado pelo Chrome ("Esta página foi bloqueada pelo Chrome")
+2. Os 3 blocos (Dissertação, Acervo, Entrevista) não estão em cards — são seções soltas
+3. Textos centralizados em vez de alinhados à esquerda
 
-**Folder ID**: `1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX`
+### Alterações em `src/pages/Conclusao.tsx`
 
-### Alteração
+1. **Trocar `text-center` por `text-left`** no container principal (linha 8)
+2. **Remover `mx-auto` dos separadores** e alinhá-los à esquerda
+3. **Remover `items-center justify-center`** dos flex de título, trocando por alinhamento à esquerda
+4. **Substituir o iframe do PDF** por um card com link externo (mesmo padrão do Acervo), apontando para `/docs/dissertacao.pdf` com `target="_blank"` — o navegador abrirá o PDF no seu próprio viewer
+5. **Envolver cada seção (Dissertação, Acervo, Entrevista) em um card** com `border border-border/40 rounded-lg p-8 md:p-10 bg-card/20`
+6. **Dentro de cada card**: título com ícone, descrição, e conteúdo (link ou iframe do YouTube) — tudo alinhado à esquerda
+7. **Textos justificados** (`text-justify`) nos parágrafos do corpo, títulos alinhados à esquerda
 
-**`src/pages/Conclusao.tsx`**:
-- Importar `FolderOpen` do lucide-react
-- Após o card da citação (após linha 57), adicionar:
-  - Divider + título "Acervo do Processo" com ícone `FolderOpen`
-  - Texto curto explicativo
-  - iframe: `https://drive.google.com/embeddedfolderview?id=1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX#grid`
-  - Aviso "Somente visualização — downloads desabilitados"
+### Estrutura final dos 3 cards
 
-### Importante (ação manual do usuário)
-Para impedir downloads, você precisa configurar no Google Drive:
-1. Abrir a pasta → Compartilhar → Engrenagem (⚙️)
-2. Desmarcar **"Os leitores e comentadores podem ver a opção de fazer download, imprimir e copiar"**
+```text
+┌─────────────────────────────────────┐
+│ 📄 DISSERTAÇÃO COMPLETA            │
+│ Leia a dissertação na íntegra...   │
+│ [↗ Abrir Dissertação em PDF]       │
+└─────────────────────────────────────┘
 
-Sem essa configuração, o Google Drive permitirá downloads mesmo com o embed.
+┌─────────────────────────────────────┐
+│ 📁 ACERVO DO PROCESSO              │
+│ Documentos, registros e materiais..│
+│ [↗ Abrir Acervo no Google Drive]   │
+│ 👁 Somente visualização            │
+└─────────────────────────────────────┘
+
+┌─────────────────────────────────────┐
+│ ▶ ENTREVISTA COMPLETA              │
+│ Podcast Chiclé Vídeos              │
+│ Conversa sobre a trajetória...     │
+│ ┌─────────────────────────────────┐ │
+│ │     YouTube Player embed        │ │
+│ └─────────────────────────────────┘ │
+└─────────────────────────────────────┘
+```
+
+### Escopo
+- Apenas `src/pages/Conclusao.tsx` será modificado
 
