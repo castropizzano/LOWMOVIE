@@ -1,32 +1,20 @@
 
 
-## Lightbox de boas-vindas na Home (primeira visita)
+## Integrar lightbox com Google Forms/Sheets
 
-### O que será feito
+### Dados extraídos do formulário
 
-Criar um modal/overlay que aparece **apenas na primeira visita** do usuário à Home. O fundo (a página Index) fica visível mas esmaecido. O lightbox contém:
+- **FORM_ID**: `1FAIpQLSftGDKDFks87l4_7uOl0hD9S00akAoTjrxfbPNLlaoHrpF5rQ`
+- **Campo de email**: O formulário usa o coletor de email nativo do Google Forms. O parâmetro é `emailAddress` (não `entry.XXXXX`).
+- **URL de submissão**: `https://docs.google.com/forms/d/e/1FAIpQLSftGDKDFks87l4_7uOl0hD9S00akAoTjrxfbPNLlaoHrpF5rQ/formResponse`
 
-1. **Vídeo em loop** — embed do Streamable (`https://streamable.com/861ig9`) com autoplay, loop, sem controles
-2. **Campo de email** — input simples com botão "Entrar" para fins acadêmicos
-3. **Texto de contexto** — breve introdução à pesquisa
-4. **Persistência** — ao submeter o email, salva flag no `localStorage` e fecha o modal. Nas visitas seguintes, o modal não aparece mais.
+### Alteração
 
-### Alterações
+**`src/components/WelcomeOverlay.tsx`** — Editar `handleSubmit`:
 
-**1. Criar `src/components/WelcomeOverlay.tsx`**
-- Overlay fullscreen com `backdrop-blur-sm bg-black/70` sobre a Home
-- Card centralizado com:
-  - Iframe do Streamable em loop (autoplay, muted, loop)
-  - Título "Bem-vindo ao Labirinto Criativo"
-  - Breve texto introdutório
-  - Input de email + botão "Entrar"
-- Ao submeter: salva `lowmovie_visited = true` no localStorage, fecha overlay com fade-out
-- Usa `useState` para controlar visibilidade, `useEffect` para checar localStorage
+1. Antes de fechar o overlay, enviar o email via `fetch` POST para a URL do Google Forms com `emailAddress={email}` usando `URLSearchParams` e `mode: 'no-cors'`
+2. O fetch roda em paralelo com o fechamento do overlay (fire-and-forget) para não travar a UX
+3. O fluxo atual (localStorage + fade-out) permanece inalterado
 
-**2. Editar `src/pages/Index.tsx`**
-- Importar e renderizar `<WelcomeOverlay />` dentro do componente
-- O overlay fica por cima do conteúdo existente (z-50)
-
-### Embed do vídeo
-URL do iframe: `https://streamable.com/e/861ig9?autoplay=1&loop=1&nocontrols=1`
+Os emails aparecerão automaticamente na planilha Google vinculada ao formulário.
 
