@@ -5,7 +5,7 @@ const Conclusao = () => {
   return (
     <Layout>
       <section className="flex min-h-[calc(100vh-4rem)] items-center justify-center py-20">
-        <div className="container mx-auto px-4 max-w-3xl text-center">
+        <div className="container mx-auto px-4 max-w-3xl text-left">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-8">
               Síntese
@@ -21,20 +21,20 @@ const Conclusao = () => {
           </p>
 
           <div className="mt-16">
-            <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
-            <p className="text-base text-foreground/80 leading-relaxed text-justify max-w-3xl mx-auto">
+            <div className="h-px w-16 bg-primary/40 mb-8" />
+            <p className="text-base text-foreground/80 leading-relaxed text-justify max-w-3xl">
               O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual autônoma e conhecimento
               estético legítimo no campo acadêmico. A dissertação demonstra, analiticamente, que o skate já opera
               como prática estética produtora de formas, linguagens e saberes.
             </p>
-            <p className="mt-4 text-base text-foreground/80 leading-relaxed text-justify max-w-3xl mx-auto">
+            <p className="mt-4 text-base text-foreground/80 leading-relaxed text-justify max-w-3xl">
               A pesquisa afirma que o gesto criativo, quando analisado com rigor e implicação, constitui
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
               um filme fora dos circuitos convencionais — essas operações não são apenas práticas
               artísticas: são modos de conhecer o mundo. O percurso metodológico opera em espiral — cada retorno ao
               campo aprofunda a compreensão anterior.
             </p>
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify max-w-3xl mx-auto">
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify max-w-3xl">
               O que o LowMovie™ ensina é que a poética não habita o resultado
               acabado, mas o processo que o engendra. O filme é a sedimentação provisória de um fluxo
               contínuo de gestos, decisões, improvisos e encontros. É nesse fluxo que reside a contribuição
@@ -44,90 +44,94 @@ const Conclusao = () => {
           </div>
 
           <div className="mt-16">
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20 max-w-2xl mx-auto">
-              <p className="text-sm text-muted-foreground leading-relaxed italic">
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20 max-w-2xl">
+              <p className="text-sm text-muted-foreground leading-relaxed italic text-justify">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
               </p>
             </div>
           </div>
 
-          {/* Dissertação PDF */}
+          {/* Card: Dissertação PDF */}
           <div className="mt-20">
-            <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <FileText className="h-5 w-5 text-primary" />
-              <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
-                Dissertação Completa
-              </h2>
-            </div>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
-              Leia a dissertação na íntegra — versão otimizada para leitura digital.
-            </p>
-            <div className="border border-border/40 rounded-lg overflow-hidden bg-card/20 max-w-3xl mx-auto">
-              <iframe
-                src="/docs/dissertacao.pdf"
-                className="w-full h-[500px] md:h-[700px] border-0"
-                title="Dissertação — LowMovie™ e o Labirinto Criativo"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          {/* Acervo do Processo */}
-          <div className="mt-20">
-            <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <FolderOpen className="h-5 w-5 text-primary" />
-              <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
-                Acervo do Processo
-              </h2>
-            </div>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
-              Documentos, registros e materiais produzidos ao longo da pesquisa — disponíveis para consulta.
-            </p>
-            <a
-              href="https://drive.google.com/drive/folders/1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/20 hover:bg-card/40 transition-colors group"
-            >
-              <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
-              <span className="text-sm font-medium text-foreground/80">Abrir Acervo no Google Drive</span>
-            </a>
-            <div className="flex items-center justify-center gap-1.5 mt-4">
-              <Eye className="h-3.5 w-3.5 text-muted-foreground" />
-              <p className="text-xs text-muted-foreground">
-                Somente visualização — downloads desabilitados
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+              <div className="flex items-center gap-2 mb-4">
+                <FileText className="h-5 w-5 text-primary" />
+                <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                  Dissertação Completa
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">
+                Leia a dissertação na íntegra — versão otimizada para leitura digital.
               </p>
+              <a
+                href="/docs/dissertacao.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
+              >
+                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium text-foreground/80">Abrir Dissertação em PDF</span>
+              </a>
             </div>
           </div>
 
-          {/* Entrevista Podcast */}
-          <div className="mt-20">
-            <div className="h-px w-16 bg-primary/40 mx-auto mb-8" />
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Youtube className="h-5 w-5 text-primary" />
-              <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
-                Entrevista Completa
-              </h2>
+          {/* Card: Acervo do Processo */}
+          <div className="mt-8">
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+              <div className="flex items-center gap-2 mb-4">
+                <FolderOpen className="h-5 w-5 text-primary" />
+                <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                  Acervo do Processo
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">
+                Documentos, registros e materiais produzidos ao longo da pesquisa — disponíveis para consulta.
+              </p>
+              <a
+                href="https://drive.google.com/drive/folders/1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
+              >
+                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium text-foreground/80">Abrir Acervo no Google Drive</span>
+              </a>
+              <div className="flex items-center gap-1.5 mt-4">
+                <Eye className="h-3.5 w-3.5 text-muted-foreground" />
+                <p className="text-xs text-muted-foreground">
+                  Somente visualização — downloads desabilitados
+                </p>
+              </div>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-2">
-              <span className="text-primary font-semibold uppercase text-xs tracking-widest">Podcast Chiclé Vídeos</span>
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-xl mx-auto mb-8">
-              Conversa sobre a trajetória criativa, os bastidores do LowMovie™, a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
-            </p>
-            <div className="border border-border/40 rounded-lg overflow-hidden bg-card/20 max-w-3xl mx-auto">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  src="https://www.youtube.com/embed/rOoUJyzGkDY"
-                  className="absolute inset-0 w-full h-full border-0"
-                  title="Skate Punk — Processos Criativos | Podcast Chiclé Vídeos"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
+          </div>
+
+          {/* Card: Entrevista Podcast */}
+          <div className="mt-8">
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+              <div className="flex items-center gap-2 mb-4">
+                <Youtube className="h-5 w-5 text-primary" />
+                <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                  Entrevista Completa
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+                <span className="text-primary font-semibold uppercase text-xs tracking-widest">Podcast Chiclé Vídeos</span>
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">
+                Conversa sobre a trajetória criativa, os bastidores do LowMovie™, a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
+              </p>
+              <div className="rounded-lg overflow-hidden">
+                <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                  <iframe
+                    src="https://www.youtube.com/embed/rOoUJyzGkDY"
+                    className="absolute inset-0 w-full h-full border-0"
+                    title="Skate Punk — Processos Criativos | Podcast Chiclé Vídeos"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
