@@ -219,7 +219,71 @@ const Conclusao = () => {
                     </a>
                   </TabsContent>
                 ))}
-              </Tabs>
+          </Tabs>
+            </div>
+          </div>
+
+          {/* Card: Manual LowMovie™ */}
+          <div className="mt-8">
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+              <div className="flex items-center gap-2 mb-4">
+                <FileText className="h-5 w-5 text-primary" />
+                <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                  Manual LowMovie™
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">
+                Brandbook e diretrizes visuais do projeto LowMovie™.
+              </p>
+              <div className="rounded-lg overflow-hidden mb-6">
+                <iframe
+                  src="/docs/LowMovie_brandbook.pdf"
+                  className="w-full border-0 rounded-lg"
+                  style={{ height: "600px" }}
+                  title="Manual LowMovie™"
+                />
+              </div>
+              <a
+                href="/docs/LowMovie_brandbook.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
+              >
+                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium text-foreground/80">Abrir Manual em PDF</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Card: Manual LowPressure™ */}
+          <div className="mt-8">
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+              <div className="flex items-center gap-2 mb-4">
+                <FileText className="h-5 w-5 text-primary" />
+                <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                  Manual LowPressure™
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">
+                Brandbook e diretrizes visuais do coletivo LowPressure™.
+              </p>
+              <div className="rounded-lg overflow-hidden mb-6">
+                <iframe
+                  src="/docs/LowPressure_brandbook.pdf"
+                  className="w-full border-0 rounded-lg"
+                  style={{ height: "600px" }}
+                  title="Manual LowPressure™"
+                />
+              </div>
+              <a
+                href="/docs/LowPressure_brandbook.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
+              >
+                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium text-foreground/80">Abrir Manual em PDF</span>
+              </a>
             </div>
           </div>
         </div>
