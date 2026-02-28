@@ -1,17 +1,61 @@
 
 
-## Duas alterações
+## 2 Features de Impacto Acadêmico
 
-### 1. Remover grayscale do vídeo de boas-vindas (`src/components/WelcomeOverlay.tsx`)
-- Linha 48: remover `grayscale group-hover:grayscale-0 transition-all duration-500` do className do iframe — o vídeo de intro deve aparecer em cores.
+### Feature 1: Mapa Conceitual Interativo — `/mapa`
 
-### 2. Melhorar diagramação da "Distinção Fundamental" (`src/pages/Metodologia.tsx`)
-Referência: a imagem mostra o bloco com o título alinhado à esquerda, os dois termos centralizados com o símbolo ≠ entre eles, e os parágrafos descritivos abaixo com mais espaçamento e respiro.
+Grafo SVG interativo com nós e conexões, sem dependências externas.
 
-Alterações nas linhas 94-118:
-- Aumentar o espaçamento entre o título e o diagrama (mb-8)
-- Centralizar o bloco de comparação com justify-center
-- Remover `max-w-3xl` dos parágrafos para ocupar a largura total do card
-- Adicionar mais separação entre os dois parágrafos descritivos (mt-4 em vez de mt-6, e separar visualmente com espaçamento consistente)
-- Manter a estrutura geral mas com melhor respiro visual entre os elementos
+**Novos arquivos:**
+
+- **`src/data/conceptMap.ts`** — Dados do grafo:
+  - ~20 nós reaproveitando dados de `Conceitos.tsx`: 6 conceitos autorais (Lowbyrinth, Poética do instante, Estética da borda, Registro em fluxo, Fabulação, Afeto), 8 autores (Borden, McDuie-Ra, Bourriaud, Hall, Abreu, Delpeux, Rouch, Deren), 4 campos temáticos
+  - Cada nó: id, label, tipo (conceito | autor | campo), descrição curta, cor por tipo
+  - ~25 arestas conectando autores a conceitos e campos
+
+- **`src/components/ConceptGraph.tsx`** — Componente SVG interativo:
+  - Layout force-directed simples (simulação com requestAnimationFrame)
+  - Nós como círculos coloridos por tipo com label
+  - Arestas como linhas SVG
+  - Drag-to-move nos nós
+  - Hover revela tooltip com definição
+  - Zoom com wheel (transform scale)
+  - Legenda visual (conceito / autor / campo)
+
+- **`src/pages/Mapa.tsx`** — Página com Layout, título e grafo fullscreen
+
+**Arquivos modificados:**
+- `src/App.tsx` — Rota `/mapa`
+- `src/components/AppSidebar.tsx` — Item "Mapa" com ícone `Network` após "Conclusão"
+
+---
+
+### Feature 2: Lowbyrinth™ — Navegação Não-Linear
+
+Modo alternativo de navegação que performa o conceito de labirinto da tese.
+
+**Novos arquivos:**
+
+- **`src/data/lowbyrinth.ts`** — Mapa de derivas:
+  - Cada seção do site com: título, path, conceito-chave, array de 2-3 conexões sugeridas com justificativa curta
+
+- **`src/components/LowbyrinthMode.tsx`** — Overlay fullscreen:
+  - Fundo escuro (bg-black/95) com blur
+  - Cards flutuantes posicionados organicamente representando conceitos/seções
+  - Cada card sugere derivas com justificativa ("de Corpo em Deriva, derive para Estética da borda")
+  - Linhas SVG pontilhadas conectando cards
+  - Texto: "Derive. O percurso é o conhecimento."
+  - Clique navega e fecha overlay
+  - Animação de entrada com framer-motion (stagger)
+
+**Arquivos modificados:**
+- `src/components/Layout.tsx` — Botão "Lowbyrinth™" no header (ao lado do SidebarTrigger), toggle estado, renderiza overlay
+
+---
+
+### Ordem de implementação
+1. Dados: `conceptMap.ts` + `lowbyrinth.ts` (paralelo)
+2. Componentes: `ConceptGraph.tsx` + `LowbyrinthMode.tsx` (paralelo)
+3. Página: `Mapa.tsx`
+4. Integrações: `App.tsx`, `AppSidebar.tsx`, `Layout.tsx`
 
