@@ -93,10 +93,10 @@ const Metodologia = () => {
 
           <AnimatedSection delay={0.4}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
-              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-4">
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-8">
                 Distinção Fundamental
               </p>
-              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 mb-6">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-8">
                 <div className="flex-1 text-center md:text-right">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground">Método de Pesquisa</p>
                   <p className="text-xs text-muted-foreground mt-1">Reflexivo e analítico</p>
@@ -107,11 +107,11 @@ const Metodologia = () => {
                   <p className="text-xs text-muted-foreground mt-1">Filmagem, montagem, glitch, design</p>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed text-justify max-w-3xl">
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                 Embora método de pesquisa e métodos de criação se alimentem mutuamente, não se confundem.
                 O primeiro interroga, conceitua e articula; os segundos produzem, experimentam e materializam.
               </p>
-              <p className="text-sm text-muted-foreground leading-relaxed text-justify mt-6 max-w-3xl">
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mt-4">
                 O rigor reside na reflexividade com que cada decisão é interrogada e na consistência com que
                 as inferências se articulam aos referenciais mobilizados.
               </p>
