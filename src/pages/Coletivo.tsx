@@ -82,7 +82,7 @@ const Coletivo = () => {
                   className="border border-border rounded-lg p-4 bg-card/30 hover:border-primary/30 transition-colors"
                 >
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-1">{item.termo}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.def}</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{item.def}</p>
                 </div>
               ))}
             </div>
