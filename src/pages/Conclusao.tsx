@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { FolderOpen, Eye, ExternalLink, FileText, Youtube } from "lucide-react";
+import { FolderOpen, ExternalLink, FileText, Youtube } from "lucide-react";
 
 const Conclusao = () => {
   return (
@@ -97,12 +97,6 @@ const Conclusao = () => {
                 <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
                 <span className="text-sm font-medium text-foreground/80">Abrir Acervo no Google Drive</span>
               </a>
-              <div className="flex items-center gap-1.5 mt-4">
-                <Eye className="h-3.5 w-3.5 text-muted-foreground" />
-                <p className="text-xs text-muted-foreground">
-                  Somente visualização — downloads desabilitados
-                </p>
-              </div>
             </div>
           </div>
 
