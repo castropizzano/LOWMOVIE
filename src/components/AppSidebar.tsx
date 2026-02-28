@@ -12,6 +12,7 @@ import {
   Network,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
+import lowpressureLogo from "@/assets/lowpressure-logo.png";
 import { useLocation } from "react-router-dom";
 
 import {
@@ -87,9 +88,17 @@ export function AppSidebar() {
 
       <SidebarFooter className="border-t border-sidebar-border px-4 py-3">
         {!collapsed && (
-          <p className="text-[10px] uppercase tracking-widest text-sidebar-foreground/40">
-            © 2025 Castro Pizzano
-          </p>
+          <div className="flex flex-col items-center gap-3">
+            <img src={lowpressureLogo} alt="LowPressure™" className="w-16 h-16 opacity-30" />
+            <p className="text-[10px] uppercase tracking-widest text-sidebar-foreground/40">
+              © 2025 Castro Pizzano
+            </p>
+          </div>
+        )}
+        {collapsed && (
+          <div className="flex justify-center">
+            <img src={lowpressureLogo} alt="LowPressure™" className="w-6 h-6 opacity-30" />
+          </div>
         )}
       </SidebarFooter>
     </Sidebar>
