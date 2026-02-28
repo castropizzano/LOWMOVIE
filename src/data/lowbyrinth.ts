@@ -18,7 +18,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "Apresentação",
     path: "/apresentacao",
     conceito: "Implicação",
-    x: 15, y: 20,
+    x: 50, y: 12,
     derivas: [
       { to: "/metodologia", label: "Metodologia", justificativa: "Da implicação pessoal ao rigor do método — o afeto fundamenta a pesquisa." },
       { to: "/conceitos", label: "Conceitos", justificativa: "Do relato à cartografia conceitual — nomear o que a experiência revelou." },
@@ -28,7 +28,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "Metodologia",
     path: "/metodologia",
     conceito: "Pesquisa-criação",
-    x: 40, y: 12,
+    x: 82, y: 18,
     derivas: [
       { to: "/coletivo", label: "O Coletivo", justificativa: "Do método ao campo — o processo colaborativo é a metodologia em ato." },
       { to: "/filme", label: "O Filme", justificativa: "Da pesquisa-criação à obra — o filme materializa o percurso metodológico." },
@@ -38,7 +38,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "Estrutura",
     path: "/estrutura",
     conceito: "Arquitetura",
-    x: 70, y: 18,
+    x: 88, y: 50,
     derivas: [
       { to: "/mapa", label: "Mapa Conceitual", justificativa: "Da estrutura linear ao grafo — ver as conexões que o texto lineariza." },
       { to: "/apresentacao", label: "Apresentação", justificativa: "Retorne ao início com novos olhos — a estrutura recontextualiza a origem." },
@@ -48,7 +48,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "Conceitos",
     path: "/conceitos",
     conceito: "Lowbyrinth™",
-    x: 25, y: 50,
+    x: 12, y: 50,
     derivas: [
       { to: "/filme", label: "O Filme", justificativa: "Dos conceitos à imagem — cada operador analítico se encarna no filme." },
       { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do texto ao grafo — visualize a constelação teórica em suas conexões." },
@@ -59,7 +59,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "O Filme",
     path: "/filme",
     conceito: "Corpo em deriva",
-    x: 55, y: 45,
+    x: 18, y: 18,
     derivas: [
       { to: "/coletivo", label: "O Coletivo", justificativa: "Do filme aos corpos — quem são os que criam juntos." },
       { to: "/conceitos", label: "Conceitos", justificativa: "Da imagem ao conceito — o filme é teoria em ato." },
@@ -69,7 +69,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "O Coletivo",
     path: "/coletivo",
     conceito: "Processo colaborativo",
-    x: 80, y: 55,
+    x: 82, y: 82,
     derivas: [
       { to: "/contribuicoes", label: "Contribuições", justificativa: "Do coletivo ao campo — o que a prática coletiva oferece à academia." },
       { to: "/metodologia", label: "Metodologia", justificativa: "Do campo ao método — o coletivo como dispositivo epistemológico." },
@@ -79,7 +79,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "Contribuições",
     path: "/contribuicoes",
     conceito: "Legado",
-    x: 60, y: 78,
+    x: 50, y: 88,
     derivas: [
       { to: "/conclusao", label: "Conclusão", justificativa: "Das contribuições ao encerramento — o que permanece aberto." },
       { to: "/faq", label: "Questões", justificativa: "Das contribuições às perguntas — antecipar o que a banca pode indagar." },
@@ -89,7 +89,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "Questões",
     path: "/faq",
     conceito: "Antecipação",
-    x: 35, y: 82,
+    x: 18, y: 82,
     derivas: [
       { to: "/conceitos", label: "Conceitos", justificativa: "Das perguntas às definições — cada questão remete a um operador conceitual." },
       { to: "/apresentacao", label: "Apresentação", justificativa: "Das questões à origem — reler o início à luz das dúvidas." },
@@ -99,7 +99,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     title: "Conclusão",
     path: "/conclusao",
     conceito: "Horizonte",
-    x: 15, y: 70,
+    x: 50, y: 50,
     derivas: [
       { to: "/apresentacao", label: "Apresentação", justificativa: "Do fim ao início — o labirinto é circular." },
       { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do encerramento à visão total — o mapa revela o que o percurso construiu." },
