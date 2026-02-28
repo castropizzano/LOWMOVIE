@@ -37,11 +37,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual</p>
                 </div>
               </div>
-              <div className="border-t border-border/30 pt-6 mt-8">
-                <p className="text-xs text-muted-foreground leading-relaxed italic text-center">
-                  Este site funciona como mapa conceitual da pesquisa — ferramenta pedagógica complementar à dissertação.
-                </p>
-              </div>
             </div>
           </footer>
         </div>
