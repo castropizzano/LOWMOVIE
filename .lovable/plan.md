@@ -1,39 +1,32 @@
 
 
-## Justificar textos em todos os cards do site
+## Lightbox de boas-vindas na Home (primeira visita)
 
-### Auditoria completa
+### O que será feito
 
-Identifiquei todos os locais onde texto descritivo dentro de cards/accordions **não** usa `text-justify`. O padrão do site já aplica justificação nos parágrafos de corpo — falta aplicar dentro dos cards para consistência total.
+Criar um modal/overlay que aparece **apenas na primeira visita** do usuário à Home. O fundo (a página Index) fica visível mas esmaecido. O lightbox contém:
 
-### Alterações por arquivo
+1. **Vídeo em loop** — embed do Streamable (`https://streamable.com/861ig9`) com autoplay, loop, sem controles
+2. **Campo de email** — input simples com botão "Entrar" para fins acadêmicos
+3. **Texto de contexto** — breve introdução à pesquisa
+4. **Persistência** — ao submeter o email, salva flag no `localStorage` e fecha o modal. Nas visitas seguintes, o modal não aparece mais.
 
-**1. `src/pages/FAQ.tsx`** — AccordionContent (linha 80)
-- Adicionar `text-justify` à classe do conteúdo do accordion
+### Alterações
 
-**2. `src/pages/Contribuicoes.tsx`** — Card desc (linha 50)
-- Adicionar `text-justify` ao parágrafo `{item.desc}`
+**1. Criar `src/components/WelcomeOverlay.tsx`**
+- Overlay fullscreen com `backdrop-blur-sm bg-black/70` sobre a Home
+- Card centralizado com:
+  - Iframe do Streamable em loop (autoplay, muted, loop)
+  - Título "Bem-vindo ao Labirinto Criativo"
+  - Breve texto introdutório
+  - Input de email + botão "Entrar"
+- Ao submeter: salva `lowmovie_visited = true` no localStorage, fecha overlay com fade-out
+- Usa `useState` para controlar visibilidade, `useEffect` para checar localStorage
 
-**3. `src/pages/Metodologia.tsx`** — Eixos cards (linha 54)
-- Adicionar `text-justify` ao parágrafo `{eixo.desc}`
-- Adicionar `text-justify` nos 3 procedimentos de campo (linhas 69, 75, 82)
-- Adicionar `text-justify` nos parágrafos de Distinção Fundamental (linhas 110, 114)
+**2. Editar `src/pages/Index.tsx`**
+- Importar e renderizar `<WelcomeOverlay />` dentro do componente
+- O overlay fica por cima do conteúdo existente (z-50)
 
-**4. `src/pages/Conceitos.tsx`** — Refs e definições
-- Adicionar `text-justify` nas contribuições dos autores (linha 99)
-- Adicionar `text-justify` nas definições dos conceitos próprios (linha 122)
-
-**5. `src/pages/Coletivo.tsx`** — Glossário (linha 85)
-- Adicionar `text-justify` às definições dos termos
-
-**6. `src/pages/Estrutura.tsx`** — Movimentos cards (linha 79)
-- Adicionar `text-justify` ao parágrafo `{mov.desc}`
-
-**7. `src/pages/Filme.tsx`** — Linhagem (linha 68)
-- Adicionar `text-justify` ao parágrafo descritivo da linhagem
-- Adicionar `text-justify` nas refs (linha 83)
-
-### Nota visual
-
-Todos os textos descritivos com mais de uma linha dentro de cards passam a usar `text-justify`, alinhando com o padrão editorial já estabelecido nos blocos de corpo. Textos curtos (labels, valores de uma linha) permanecem sem justificação.
+### Embed do vídeo
+URL do iframe: `https://streamable.com/e/861ig9?autoplay=1&loop=1&nocontrols=1`
 
