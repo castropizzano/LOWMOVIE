@@ -88,16 +88,16 @@ export function AppSidebar() {
 
       <SidebarFooter className="border-t border-sidebar-border px-4 py-3">
         {!collapsed && (
-          <div className="flex flex-col items-center gap-3">
-            <img src={lowpressureLogo} alt="LowPressure™" className="w-16 h-16 opacity-30" />
+          <div className="flex flex-col items-center gap-3 py-2">
+            <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90" />
             <p className="text-[10px] uppercase tracking-widest text-sidebar-foreground/40">
               © 2025 Castro Pizzano
             </p>
           </div>
         )}
         {collapsed && (
-          <div className="flex justify-center">
-            <img src={lowpressureLogo} alt="LowPressure™" className="w-6 h-6 opacity-30" />
+          <div className="flex justify-center py-2">
+            <img src={lowpressureLogo} alt="LowPressure™" className="w-8 h-8 brightness-0 invert opacity-90" />
           </div>
         )}
       </SidebarFooter>
