@@ -65,6 +65,14 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
     return null;
   }
 
+  const COLOR_REGEX = /^(#[0-9A-Fa-f]{3,8}|hsl\([^)]+\)|oklch\([^)]+\)|rgba?\([^)]+\)|[a-zA-Z]+)$/;
+
+  const sanitizeColor = (color: string | undefined): string | null => {
+    if (!color) return null;
+    const trimmed = color.trim();
+    return COLOR_REGEX.test(trimmed) ? trimmed : null;
+  };
+
   return (
     <style
       dangerouslySetInnerHTML={{
@@ -74,7 +82,8 @@ const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
 ${prefix} [data-chart=${id}] {
 ${colorConfig
   .map(([key, itemConfig]) => {
-    const color = itemConfig.theme?.[theme as keyof typeof itemConfig.theme] || itemConfig.color;
+    const raw = itemConfig.theme?.[theme as keyof typeof itemConfig.theme] || itemConfig.color;
+    const color = sanitizeColor(raw);
     return color ? `  --color-${key}: ${color};` : null;
   })
   .join("\n")}

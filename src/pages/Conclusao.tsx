@@ -192,6 +192,7 @@ const Conclusao = () => {
                             className="absolute inset-0 w-full h-full border-0"
                             title={item.label}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                             allowFullScreen
                             loading="lazy"
                           />
