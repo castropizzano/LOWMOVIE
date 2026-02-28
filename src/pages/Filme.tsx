@@ -171,12 +171,15 @@ const Filme = () => {
               <p>
                 Nos quadros finais, o corpo atravessa a via e deixa o campo. Permanece a arquitetura. A cidade retorna como superfície. A fotografia realizada durante o take cristaliza o instante de suspensão entre gravidade e invenção.
               </p>
-              <div className="space-y-1 pt-2">
+              <div className="pt-2">
                 <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">Operadores conceituais</p>
-                <p className="text-sm font-semibold text-foreground">– Poética do instante</p>
-                <p className="text-sm font-semibold text-foreground">– Estética da borda</p>
-                <p className="text-sm font-semibold text-foreground">– Registro em fluxo</p>
-                <p className="text-sm font-semibold text-foreground">– Afeto como eixo</p>
+                <div className="flex flex-wrap gap-2">
+                  {["Poética do instante", "Estética da borda", "Registro em fluxo", "Afeto como eixo"].map((op) => (
+                    <span key={op} className="text-xs font-semibold uppercase tracking-wide border border-primary/30 rounded px-3 py-1.5 text-foreground bg-primary/5">
+                      {op}
+                    </span>
+                  ))}
+                </div>
               </div>
               <p>
                 O drop sintetiza simbolicamente o próprio argumento da dissertação: criar é assumir risco situado. O LowMovie™ emerge da borda, onde erro não é metáfora — é consequência física. O gesto único, irrepetível naquele contexto, condensa a ética da pesquisa: invenção como enfrentamento real do espaço.
