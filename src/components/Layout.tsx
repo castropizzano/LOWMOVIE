@@ -1,17 +1,25 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
+import LowbyrinthMode from "./LowbyrinthMode";
 
 const Layout = ({ children }: { children: ReactNode }) => {
+  const [lowbyrinthOpen, setLowbyrinthOpen] = useState(false);
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
         <AppSidebar />
 
         <div className="flex-1 flex flex-col min-w-0">
-          {/* Header fino com trigger */}
-          <header className="sticky top-0 z-40 flex h-12 items-center border-b border-border/50 bg-background/80 backdrop-blur-xl px-4">
+          <header className="sticky top-0 z-40 flex h-12 items-center border-b border-border/50 bg-background/80 backdrop-blur-xl px-4 gap-3">
             <SidebarTrigger />
+            <button
+              onClick={() => setLowbyrinthOpen(true)}
+              className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
+            >
+              Lowbyrinth™
+            </button>
           </header>
 
           <main className="flex-1">
@@ -41,6 +49,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
           </footer>
         </div>
       </div>
+      <LowbyrinthMode open={lowbyrinthOpen} onClose={() => setLowbyrinthOpen(false)} />
     </SidebarProvider>
   );
 };

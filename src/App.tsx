@@ -12,6 +12,7 @@ import Coletivo from "./pages/Coletivo";
 import Contribuicoes from "./pages/Contribuicoes";
 import FAQ from "./pages/FAQ";
 import Conceitos from "./pages/Conceitos";
+import Mapa from "./pages/Mapa";
 import Conclusao from "./pages/Conclusao";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/coletivo" element={<Coletivo />} />
           <Route path="/contribuicoes" element={<Contribuicoes />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/mapa" element={<Mapa />} />
           <Route path="/conclusao" element={<Conclusao />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

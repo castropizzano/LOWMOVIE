@@ -9,6 +9,7 @@ import {
   HandHeart,
   HelpCircle,
   CheckCircle,
+  Network,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
@@ -37,6 +38,7 @@ const items = [
   { title: "Contribuições", url: "/contribuicoes", icon: HandHeart },
   { title: "Questões", url: "/faq", icon: HelpCircle },
   { title: "Conclusão", url: "/conclusao", icon: CheckCircle },
+  { title: "Mapa", url: "/mapa", icon: Network },
 ];
 
 export function AppSidebar() {
