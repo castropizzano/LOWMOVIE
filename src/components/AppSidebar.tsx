@@ -89,7 +89,9 @@ export function AppSidebar() {
       <SidebarFooter className="border-t border-sidebar-border px-4 py-3">
         {!collapsed && (
           <div className="flex flex-col items-center gap-3 py-2">
-            <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90" />
+            <a href="https://www.instagram.com/lowpressure.fam/" target="_blank" rel="noopener noreferrer">
+              <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+            </a>
             <p className="text-[10px] uppercase tracking-widest text-sidebar-foreground/40">
               © 2025 Castro Pizzano
             </p>
@@ -97,7 +99,9 @@ export function AppSidebar() {
         )}
         {collapsed && (
           <div className="flex justify-center py-2">
-            <img src={lowpressureLogo} alt="LowPressure™" className="w-8 h-8 brightness-0 invert opacity-90" />
+            <a href="https://www.instagram.com/lowpressure.fam/" target="_blank" rel="noopener noreferrer">
+              <img src={lowpressureLogo} alt="LowPressure™" className="w-8 h-8 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+            </a>
           </div>
         )}
       </SidebarFooter>
