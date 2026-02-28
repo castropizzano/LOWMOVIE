@@ -1,34 +1,39 @@
 
 
-## Substituir navbar horizontal por sidebar lateral fixa
+## Justificar textos em todos os cards do site
 
-### Visão geral
-Trocar o header com links horizontais por uma sidebar à esquerda estilo documentação, usando o componente Sidebar do shadcn/ui. O logo fica no topo da sidebar, os 10 links ficam listados verticalmente, e a sidebar pode ser colapsada para modo ícone. O conteúdo principal ocupa o restante da largura.
+### Auditoria completa
 
-### Alterações
+Identifiquei todos os locais onde texto descritivo dentro de cards/accordions **não** usa `text-justify`. O padrão do site já aplica justificação nos parágrafos de corpo — falta aplicar dentro dos cards para consistência total.
 
-**1. `src/components/Layout.tsx`** — Reestruturar com `SidebarProvider`
-- Envolver tudo com `SidebarProvider`
-- Substituir `<Navbar />` por `<AppSidebar />`
-- Adicionar um header fino com `<SidebarTrigger />` para toggle
-- Remover `pt-16` (não há mais header fixo no topo)
-- Manter o footer dentro da área de conteúdo principal
+### Alterações por arquivo
 
-**2. Criar `src/components/AppSidebar.tsx`**
-- Usar `Sidebar` com `collapsible="icon"`
-- Logo "LowMovie™" no topo da sidebar
-- Lista dos 10 links usando `SidebarMenu` / `SidebarMenuItem` / `SidebarMenuButton`
-- Highlight da rota ativa com `NavLink` + `activeClassName`
-- Ícones opcionais por seção (Home, BookOpen, Film, Users, etc.)
+**1. `src/pages/FAQ.tsx`** — AccordionContent (linha 80)
+- Adicionar `text-justify` à classe do conteúdo do accordion
 
-**3. Remover `src/components/Navbar.tsx`**
-- Não será mais utilizado
+**2. `src/pages/Contribuicoes.tsx`** — Card desc (linha 50)
+- Adicionar `text-justify` ao parágrafo `{item.desc}`
 
-**4. `src/pages/Index.tsx` e demais páginas**
-- Ajustar containers se necessário — o conteúdo agora ocupa `flex-1` ao lado da sidebar, sem necessidade de `max-w-5xl` central (ou manter para limitar largura do texto)
+**3. `src/pages/Metodologia.tsx`** — Eixos cards (linha 54)
+- Adicionar `text-justify` ao parágrafo `{eixo.desc}`
+- Adicionar `text-justify` nos 3 procedimentos de campo (linhas 69, 75, 82)
+- Adicionar `text-justify` nos parágrafos de Distinção Fundamental (linhas 110, 114)
 
-### Comportamento
-- Desktop: sidebar aberta com labels visíveis; pode colapsar para ícones
-- Mobile: sidebar em modo offcanvas, ativada pelo trigger no header
-- Footer permanece no fundo da área de conteúdo (não dentro da sidebar)
+**4. `src/pages/Conceitos.tsx`** — Refs e definições
+- Adicionar `text-justify` nas contribuições dos autores (linha 99)
+- Adicionar `text-justify` nas definições dos conceitos próprios (linha 122)
+
+**5. `src/pages/Coletivo.tsx`** — Glossário (linha 85)
+- Adicionar `text-justify` às definições dos termos
+
+**6. `src/pages/Estrutura.tsx`** — Movimentos cards (linha 79)
+- Adicionar `text-justify` ao parágrafo `{mov.desc}`
+
+**7. `src/pages/Filme.tsx`** — Linhagem (linha 68)
+- Adicionar `text-justify` ao parágrafo descritivo da linhagem
+- Adicionar `text-justify` nas refs (linha 83)
+
+### Nota visual
+
+Todos os textos descritivos com mais de uma linha dentro de cards passam a usar `text-justify`, alinhando com o padrão editorial já estabelecido nos blocos de corpo. Textos curtos (labels, valores de uma linha) permanecem sem justificação.
 
