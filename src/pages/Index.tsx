@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
+import WelcomeOverlay from "@/components/WelcomeOverlay";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
 
 const Index = () => {
   return (
     <Layout>
+      <WelcomeOverlay />
       <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
