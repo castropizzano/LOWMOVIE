@@ -1,48 +1,68 @@
 
 
-## Reorganizar Conclusão: cards, alinhamento à esquerda, fix PDF bloqueado
+## Entrevistas com abas, transcrições PDF e imagem LowZine
 
-### Problemas identificados
-1. O iframe do PDF está bloqueado pelo Chrome ("Esta página foi bloqueada pelo Chrome")
-2. Os 3 blocos (Dissertação, Acervo, Entrevista) não estão em cards — são seções soltas
-3. Textos centralizados em vez de alinhados à esquerda
+### Resumo
+Transformar o card "Entrevista Completa" em um sistema de abas com 6 entrevistas. Cada aba contém vídeo YouTube + transcrição PDF (abre via link externo). A aba LowZine terá a imagem do fanzine em vez de vídeo.
+
+### Arquivos a copiar para o projeto
+
+PDFs de transcrição → `public/docs/transcricoes/`:
+- `Skate_Punk_Interview_Transcript.pdf`
+- `Black_Media_Skate_LowMovie_Interview.pdf`
+- `Gabriel_Peralta_Photos_Interview.pdf`
+- `Rafao_VM_Skate_Marginal_Interview.pdf`
+- `Werner_Herzog_Skateboarding_Interview.pdf`
+- `Entrevista-Transcrita_PIZZANO_Castro_LEITE_Rafael_Auto_Rafao_VM_METRI_Caio_LowZine_LowMovie_LowPressure.pdf`
+
+Imagem LowZine → `public/images/lowzine.png`
 
 ### Alterações em `src/pages/Conclusao.tsx`
 
-1. **Trocar `text-center` por `text-left`** no container principal (linha 8)
-2. **Remover `mx-auto` dos separadores** e alinhá-los à esquerda
-3. **Remover `items-center justify-center`** dos flex de título, trocando por alinhamento à esquerda
-4. **Substituir o iframe do PDF** por um card com link externo (mesmo padrão do Acervo), apontando para `/docs/dissertacao.pdf` com `target="_blank"` — o navegador abrirá o PDF no seu próprio viewer
-5. **Envolver cada seção (Dissertação, Acervo, Entrevista) em um card** com `border border-border/40 rounded-lg p-8 md:p-10 bg-card/20`
-6. **Dentro de cada card**: título com ícone, descrição, e conteúdo (link ou iframe do YouTube) — tudo alinhado à esquerda
-7. **Textos justificados** (`text-justify`) nos parágrafos do corpo, títulos alinhados à esquerda
+1. Importar `Tabs`, `TabsList`, `TabsTrigger`, `TabsContent` de `@/components/ui/tabs`
+2. Substituir o card de Entrevista (linhas 103-131) por um card com abas horizontais scrolláveis
 
-### Estrutura final dos 3 cards
+### Estrutura das abas
+
+Cada aba segue o padrão:
 
 ```text
-┌─────────────────────────────────────┐
-│ 📄 DISSERTAÇÃO COMPLETA            │
-│ Leia a dissertação na íntegra...   │
-│ [↗ Abrir Dissertação em PDF]       │
-└─────────────────────────────────────┘
+[Skate Punk] [Black Media] [Gabriel Peralta] [Rafão VM] [Herzog] [LowZine]
 
-┌─────────────────────────────────────┐
-│ 📁 ACERVO DO PROCESSO              │
-│ Documentos, registros e materiais..│
-│ [↗ Abrir Acervo no Google Drive]   │
-│ 👁 Somente visualização            │
-└─────────────────────────────────────┘
+── Conteúdo da aba ativa ──────────────────
+Subtítulo (ex: "Podcast Chiclé Vídeos")
+Descrição do conteúdo
 
-┌─────────────────────────────────────┐
-│ ▶ ENTREVISTA COMPLETA              │
-│ Podcast Chiclé Vídeos              │
-│ Conversa sobre a trajetória...     │
-│ ┌─────────────────────────────────┐ │
-│ │     YouTube Player embed        │ │
-│ └─────────────────────────────────┘ │
-└─────────────────────────────────────┘
+┌─ YouTube embed (16:9) ──────────────────┐
+│                                          │
+└──────────────────────────────────────────┘
+
+[↗ Abrir Transcrição em PDF]
+───────────────────────────────────────────
 ```
 
+### Dados das 6 abas
+
+| Aba | YouTube ID | Transcrição PDF | Tipo |
+|-----|-----------|----------------|------|
+| Skate Punk | `rOoUJyzGkDY` | `Skate_Punk_Interview_Transcript.pdf` | vídeo + PDF |
+| Black Media | `YJEW5YB59Ws` | `Black_Media_Skate_LowMovie_Interview.pdf` | vídeo + PDF |
+| Gabriel Peralta | `n7Vu89PzMLE` | `Gabriel_Peralta_Photos_Interview.pdf` | vídeo + PDF |
+| Rafão VM | `t89iwhuAOjU` | `Rafao_VM_Skate_Marginal_Interview.pdf` | vídeo + PDF |
+| Werner Herzog | `EQLInlnfWUc` | `Werner_Herzog_Skateboarding_Interview.pdf` | vídeo + PDF |
+| LowZine | — | `Entrevista-Transcrita_...LowPressure.pdf` | imagem + PDF |
+
+### Aba LowZine — comportamento especial
+- Em vez de vídeo, exibe a imagem `lowzine.png` em largura total dentro do card
+- Abaixo, link para a transcrição PDF
+
+### Detalhes de implementação
+- TabsList com `overflow-x-auto` e `flex-wrap` para responsividade mobile
+- Cada TabsTrigger com texto curto (ex: "Skate Punk", "Black Media", etc.)
+- Links de transcrição usam o mesmo padrão visual dos links existentes (border, rounded, hover)
+- Card título permanece "Entrevistas" com ícone Youtube
+
 ### Escopo
-- Apenas `src/pages/Conclusao.tsx` será modificado
+- Copiar 6 PDFs + 1 imagem para `public/`
+- Modificar apenas `src/pages/Conclusao.tsx`
 
