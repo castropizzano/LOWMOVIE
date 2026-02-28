@@ -1,16 +1,15 @@
 
 
-## Adicionar cards com PDF viewer para brandbooks LowPressure e LowMovie
+## Copiar 6 PDFs de transcrição para o projeto
 
-### Arquivos
-- Copiar `user-uploads://LowPressure_brandbook.pdf` → `public/docs/LowPressure_brandbook.pdf`
-- Copiar `user-uploads://LowMovie_brandbook.pdf` → `public/docs/LowMovie_brandbook.pdf`
+Copiar os 6 arquivos enviados para `public/docs/transcricoes/`, com os nomes que o código em `Conclusao.tsx` já referencia:
 
-### Alterações em `src/pages/Conclusao.tsx`
-Após o card de Entrevistas (linha 224), adicionar dois novos cards:
+1. `user-uploads://Skate_Punk_Interview_Transcript-2.pdf` → `public/docs/transcricoes/Skate_Punk_Interview_Transcript.pdf`
+2. `user-uploads://Black_Media_Skate_LowMovie_Interview-2.pdf` → `public/docs/transcricoes/Black_Media_Skate_LowMovie_Interview.pdf`
+3. `user-uploads://Gabriel_Peralta_Photos_Interview-2.pdf` → `public/docs/transcricoes/Gabriel_Peralta_Photos_Interview.pdf`
+4. `user-uploads://Rafao_VM_Skate_Marginal_Interview-2.pdf` → `public/docs/transcricoes/Rafao_VM_Skate_Marginal_Interview.pdf`
+5. `user-uploads://Werner_Herzog_Skateboarding_Interview-2.pdf` → `public/docs/transcricoes/Werner_Herzog_Skateboarding_Interview.pdf`
+6. `user-uploads://Entrevista-Transcrita_PIZZANO_Castro_LEITE_Rafael_Auto_Rafao_VM_METRI_Caio_LowZine_LowMovie_LowPressure-2.pdf` → `public/docs/transcricoes/Entrevista-Transcrita_PIZZANO_Castro_LEITE_Rafael_Auto_Rafao_VM_METRI_Caio_LowZine_LowMovie_LowPressure.pdf`
 
-1. **Manual LowMovie™** — card com ícone `FileText`, título, descrição breve, e `<iframe>` embutido apontando para `/docs/LowMovie_brandbook.pdf` com altura fixa (~600px) e borda arredondada
-2. **Manual LowPressure™** — mesmo padrão, apontando para `/docs/LowPressure_brandbook.pdf`
-
-Cada card usa o mesmo estilo visual existente (`border border-border/40 rounded-lg p-8 md:p-10 bg-card/20`). O iframe usa `type="application/pdf"` como fallback e inclui link externo abaixo para navegadores que não suportam PDF inline.
+Nenhuma alteração de código necessária — os caminhos já estão configurados em `Conclusao.tsx`.
 
