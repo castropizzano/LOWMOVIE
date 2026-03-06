@@ -240,15 +240,12 @@ const Defense = () => {
                 Esse encontro produz não apenas registros de manobras, mas uma forma própria de linguagem audiovisual.
               </p>
             </div>
-            <div className="grid grid-cols-5 grid-rows-2 gap-2 max-w-6xl w-full h-[60vh]">
-              {Array.from({ length: 10 }, (_, i) => (
-                <img
-                  key={i}
-                  src={`/images/coletivo/${String(i + 1).padStart(2, "0")}.png`}
-                  alt={`Coletivo ${i + 1}`}
-                  className="w-full h-full object-cover rounded"
-                />
-              ))}
+            <div className="max-w-5xl w-full">
+              <img
+                src="/images/low-kids.png"
+                alt="Coletivo LowPressure na rua"
+                className="w-full rounded-lg shadow-lg object-cover"
+              />
             </div>
           </div>
         );
