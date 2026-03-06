@@ -74,7 +74,7 @@ const Index = () => {
                   Orientador: Prof. Dr. Fábio Jabur de Noronha
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone
+                  Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz
                 </p>
               </div>
 

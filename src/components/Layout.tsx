@@ -38,7 +38,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
                   <p className="text-xs text-muted-foreground leading-relaxed">PPG em Cinema e Artes do Vídeo</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
                   <p className="text-xs text-muted-foreground leading-relaxed">Linha: Processos de Criação no Cinema e nas Artes do Vídeo</p>
