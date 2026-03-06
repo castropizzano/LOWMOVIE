@@ -227,7 +227,7 @@ const Defense = () => {
                   </p>
                 </div>
                 <div className="mt-8 space-y-1">
-                  <p className="text-sm text-foreground/90">PPG em Cinema e Artes do Vídeo — UNESPAR</p>
+                  <p className="text-sm text-foreground/90">Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR</p>
                   <p className="text-xs text-muted-foreground">Castro Pizzano · Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
                 </div>
               </div>

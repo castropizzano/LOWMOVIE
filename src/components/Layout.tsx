@@ -37,7 +37,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
-                  <p className="text-xs text-muted-foreground leading-relaxed">PPG em Cinema e Artes do Vídeo</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR</p>
                   <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
