@@ -166,17 +166,19 @@ const Defense = () => {
       case 1:
         return (
           <div className="relative w-full h-full">
-            <VideoEmbed
-              src="https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
-              fadeIn
-            />
+            {!videoEnded && (
+              <VideoEmbed
+                src="https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
+                fadeIn
+              />
+            )}
             <AnimatePresence>
               {videoEnded && (
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
-                  className="absolute inset-0 z-10 flex items-center justify-center bg-background/80"
+                  className="absolute inset-0 z-10 flex items-center justify-center bg-background"
                 >
                   <div className="max-w-3xl px-8 text-center space-y-3">
                     <p className="text-base text-foreground/80 leading-relaxed">
