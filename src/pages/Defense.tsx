@@ -437,7 +437,7 @@ const Defense = () => {
                     src={foto.src}
                     alt={`Foto ${i + 1}`}
                     className={`${foto.span} h-48 md:h-56 rounded border-none`}
-                    imageClassName="grayscale-0"
+                    imageClassName=""
                     caption="@peralta_jpg"
                   />
                 ))}
