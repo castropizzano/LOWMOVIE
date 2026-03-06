@@ -1,24 +1,14 @@
 
 
-## Reorganizar nós do Lowbyrinth em padrão octogonal
+## Corrigir cards do YouTube visíveis após o vídeo no Bloco 1
 
-Reposicionar os 9 nós para ocupar os 8 pontos cardeais/intercardeais + centro, inspirado no símbolo geométrico da imagem.
+**Problema**: Quando o vídeo do YouTube termina, ele exibe thumbnails de recomendação. O overlay de texto usa `bg-background/80` (80% opacidade), permitindo que os cards do YouTube apareçam por trás.
 
-### Alteração em `src/data/lowbyrinth.ts`
+**Solução**: Duas correções em `src/pages/Defense.tsx`:
 
-Novas coordenadas (x%, y%):
+1. **Overlay opaco**: Trocar `bg-background/80` por `bg-background` (100% opaco) no overlay de texto pós-vídeo (linha 179), para cobrir completamente o iframe.
 
-| Posição | Nó | x | y |
-|---|---|---|---|
-| Centro | **Conclusão** | 50 | 50 |
-| Topo | Apresentação | 50 | 12 |
-| Topo-direita | Metodologia | 82 | 18 |
-| Direita | Estrutura | 88 | 50 |
-| Baixo-direita | O Coletivo | 82 | 82 |
-| Baixo | Contribuições | 50 | 88 |
-| Baixo-esquerda | Questões | 18 | 82 |
-| Esquerda | Conceitos | 12 | 50 |
-| Topo-esquerda | O Filme | 18 | 18 |
+2. **Esconder iframe quando o vídeo terminar**: Quando `videoEnded` for `true`, esconder o iframe (via CSS `opacity-0` ou removê-lo do DOM), garantindo que os cards do YouTube não sejam renderizados.
 
-Todas as derivas existentes permanecem iguais. Apenas as coordenadas `x` e `y` de cada nó mudam.
+Mudança pontual em ~3 linhas no bloco `case 1`.
 
