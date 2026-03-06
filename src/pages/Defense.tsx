@@ -310,7 +310,7 @@ const Defense = () => {
                   { title: "Improviso", icon: "⚡", desc: "Abertura ao imprevisto como dado epistemológico legítimo. Arquitetura móvel capaz de se refazer a cada encontro." },
                 ].map((e) => (
                   <div key={e.title} className="border border-border rounded-lg p-6 md:p-8 bg-card/30">
-                    <p className="text-3xl mb-3 opacity-70">{e.icon}</p>
+                    
                     <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">{e.title}</p>
                     <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
                   </div>
