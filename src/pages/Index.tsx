@@ -53,8 +53,8 @@ const Index = () => {
               </p>
 
               <p className="mt-8 max-w-lg text-sm text-muted-foreground leading-relaxed">
-                Subjetividade, subcultura e a poética em movimento
-                <br /> do coletivo LowPressure™
+                Subjetividade, Subcultura e a Poética em Movimento
+                <br /> do Coletivo LowPressure™
               </p>
 
               <div className="w-16 h-px bg-primary/50 mt-10" />
