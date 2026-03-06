@@ -2,21 +2,18 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
-import { Heart, Ear, Zap } from "lucide-react";
+
 
 const eixos = [
   {
-    icon: Heart,
     title: "Afeto",
     desc: "Vínculo sensível com o campo investigado. Inspirado nos debates do grupo Afetos (UFMG), o afeto não é contaminação, mas condição de acesso ao real em sua dimensão mais densa e significativa. Afetar e ser afetado constituem formas legítimas de produzir conhecimento.",
   },
   {
-    icon: Ear,
     title: "Escuta",
     desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir — a escuta expandiu-se para o corpo, para o som da cidade, para o ruído das rodas sobre o concreto. Sustentar o silêncio, acolher o tempo do outro.",
   },
   {
-    icon: Zap,
     title: "Improviso",
     desc: "Abertura ao imprevisto como dado epistemológico legítimo, e não como falha do planejamento. A metodologia assume uma arquitetura móvel, capaz de se refazer a cada encontro. Um saber em movimento que aprende com a instabilidade.",
   },
@@ -49,7 +46,7 @@ const Metodologia = () => {
             {eixos.map((eixo, i) => (
               <AnimatedSection key={eixo.title} delay={0.15 + i * 0.1}>
                 <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30 h-full">
-                  <eixo.icon className="h-7 w-7 text-primary/70 mb-4" />
+                  
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-3">{eixo.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed text-justify">{eixo.desc}</p>
                 </div>
