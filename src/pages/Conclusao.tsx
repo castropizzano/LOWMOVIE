@@ -185,8 +185,8 @@ const Conclusao = () => {
                     </p>
 
                     {item.youtubeId ? (
-                      <div className="rounded-lg overflow-hidden mb-6">
-                        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                      <div className="rounded-lg overflow-hidden mb-6 group/video">
+                        <div className="relative w-full grayscale hover:grayscale-0 transition-all duration-500" style={{ paddingBottom: "56.25%" }}>
                           <iframe
                             src={`https://www.youtube.com/embed/${item.youtubeId}`}
                             className="absolute inset-0 w-full h-full border-0"
