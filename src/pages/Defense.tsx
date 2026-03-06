@@ -63,7 +63,7 @@ const CONTRIBUICOES = [
 const VideoEmbed = ({ src, fadeIn = true, contained = false }: { src: string; fadeIn?: boolean; contained?: boolean }) => {
   const [loaded, setLoaded] = useState(false);
   return (
-    <div className={`relative flex items-center justify-center ${contained ? 'w-full aspect-video' : 'w-full h-full'}`}>
+    <div className={`relative flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 ${contained ? 'w-full aspect-video' : 'w-full h-full'}`}>
       <iframe
         src={src}
         className="w-full h-full absolute inset-0"
@@ -204,7 +204,7 @@ const Defense = () => {
         return (
           <div className="flex items-center justify-center h-full px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl">
-              <img src={capaDissertacao} alt="Capa da dissertação" className="w-full max-w-sm mx-auto rounded-lg shadow-lg" />
+              <img src={capaDissertacao} alt="Capa da dissertação" className="w-full max-w-sm mx-auto rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500" />
               <div className="text-left">
                 <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                   Dissertação de Mestrado — Março 2026
@@ -250,7 +250,7 @@ const Defense = () => {
               <img
                 src="/images/low-kids.png"
                 alt="Coletivo LowPressure na rua"
-                className="w-full rounded-lg shadow-lg object-cover"
+                className="w-full rounded-lg shadow-lg object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
           </div>
@@ -325,7 +325,7 @@ const Defense = () => {
               <img
                 src="/images/low-crew.png"
                 alt="LowPressure Fam"
-                className="w-full rounded-lg mt-8 object-cover max-h-[40vh]"
+                className="w-full rounded-lg mt-8 object-cover max-h-[40vh] grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
           </div>
@@ -465,7 +465,7 @@ const Defense = () => {
               <img
                 src="/images/contribuicoes.jpg"
                 alt="Skate e cidade"
-                className="w-full rounded-lg mt-8 object-cover max-h-[35vh]"
+                className="w-full rounded-lg mt-8 object-cover max-h-[35vh] grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
           </div>
