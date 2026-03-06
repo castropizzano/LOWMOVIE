@@ -93,7 +93,7 @@ export function AppSidebar() {
               <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
             </a>
             <p className="text-[10px] uppercase tracking-widest text-sidebar-foreground/40">
-              © 2025 Castro Pizzano
+              © 2026 Castro Pizzano
             </p>
           </div>
         )}

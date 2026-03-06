@@ -29,7 +29,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <footer className="border-t border-border/50 py-12">
             <div className="mx-auto max-w-5xl px-4">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground leading-relaxed mb-4">
-                © 2025 Castro Pizzano
+                © 2026 Castro Pizzano
               </p>
               <div className="space-y-2">
                 <div className="flex flex-col md:flex-row md:justify-between">
