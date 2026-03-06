@@ -161,7 +161,7 @@ const Defense = () => {
   const renderBlock = () => {
     switch (currentBlock) {
       case 0:
-        return <div className="w-full h-full bg-black" />;
+        return <div className="w-full h-full bg-background" />;
 
       case 1:
         return (
@@ -176,13 +176,13 @@ const Defense = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6 }}
-                  className="absolute inset-0 z-10 flex items-center justify-center bg-black/80"
+                  className="absolute inset-0 z-10 flex items-center justify-center bg-background/80"
                 >
                   <div className="max-w-3xl px-8 text-center space-y-3">
-                    <p className="text-sm text-neutral-300 leading-relaxed">
+                    <p className="text-base text-foreground/80 leading-relaxed">
                       "Essa pesquisa começou tentando compreender o que acontece nesse tipo de gesto."
                     </p>
-                    <p className="text-sm text-neutral-400 leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       "Um gesto que acontece entre corpo, cidade e risco — e que muitas vezes acaba se transformando em imagem."
                     </p>
                   </div>
@@ -198,29 +198,29 @@ const Defense = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl">
               <img src={capaDissertacao} alt="Capa da dissertação" className="w-full max-w-sm mx-auto rounded-lg shadow-lg" />
               <div className="text-left">
-                <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-neutral-500">
+                <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                   Dissertação de Mestrado — Março 2026
                 </p>
-                <h2 className="text-4xl md:text-6xl font-bold uppercase leading-none tracking-tight text-white">
+                <h2 className="text-4xl md:text-6xl font-bold uppercase leading-none tracking-tight text-foreground">
                   LowMovie™
                 </h2>
-                <p className="mt-2 text-lg md:text-xl font-medium text-neutral-400 uppercase tracking-wide">
+                <p className="mt-2 text-lg md:text-xl font-medium text-foreground/80 uppercase tracking-wide">
                   e o Labirinto Criativo
                 </p>
                 <div className="mt-6 space-y-3">
-                  <p className="text-sm text-neutral-400 leading-relaxed">
+                  <p className="text-base text-foreground/80 leading-relaxed">
                     A dissertação que apresento hoje investiga como práticas subculturais, como o skate, podem produzir linguagem cinematográfica e conhecimento estético.
                   </p>
-                  <p className="text-sm text-neutral-500 leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     O objeto central da pesquisa é o processo criativo do coletivo LowPressure™, a partir da produção do filme LowMovie™.
                   </p>
-                  <p className="text-sm text-neutral-500 leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Em vez de observar esse processo à distância, a pesquisa foi construída a partir dele.
                   </p>
                 </div>
                 <div className="mt-8 space-y-1">
-                  <p className="text-sm text-neutral-300">PPG em Cinema e Artes do Vídeo — UNESPAR</p>
-                  <p className="text-xs text-neutral-500">Castro Pizzano · Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
+                  <p className="text-sm text-foreground/90">PPG em Cinema e Artes do Vídeo — UNESPAR</p>
+                  <p className="text-xs text-muted-foreground">Castro Pizzano · Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
                 </div>
               </div>
             </div>
@@ -231,10 +231,10 @@ const Defense = () => {
         return (
           <div className="flex flex-col items-center justify-center h-full p-8">
             <div className="text-center mb-6 max-w-3xl space-y-2">
-              <p className="text-sm text-neutral-400 leading-relaxed">
+              <p className="text-base text-foreground/80 leading-relaxed">
                 O coletivo LowPressure™ se organiza como um espaço de experimentação estética onde skate, imagem e cidade se encontram.
               </p>
-              <p className="text-sm text-neutral-500 leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Esse encontro produz não apenas registros de manobras, mas uma forma própria de linguagem audiovisual.
               </p>
             </div>
@@ -256,13 +256,13 @@ const Defense = () => {
           <div className="flex items-center justify-center h-full px-8">
             <div className="max-w-4xl w-full">
               <div className="text-center mb-10 space-y-3 max-w-2xl mx-auto">
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-base text-foreground/80 leading-relaxed">
                   Para compreender esse processo, proponho o conceito de Lowbyrinth™.
                 </p>
-                <p className="text-sm text-neutral-500 leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   O Lowbyrinth descreve um processo criativo que não se organiza de forma linear.
                 </p>
-                <p className="text-sm text-neutral-500 leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Ele opera como um labirinto sensível, onde tentativa, erro, descoberta e improviso fazem parte da criação.
                 </p>
               </div>
@@ -273,16 +273,16 @@ const Defense = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
-                    className={`border rounded-lg p-6 ${
+                    className={`border rounded-lg p-6 md:p-8 ${
                       c.highlight
-                        ? "border-purple-500/40 bg-purple-950/20 shadow-[0_0_25px_rgba(168,85,247,0.15)]"
-                        : "border-neutral-800 bg-neutral-900/50"
+                        ? "border-primary/40 bg-primary/10 shadow-[0_0_25px_hsl(300_60%_55%/0.15)]"
+                        : "border-border bg-card/30"
                     }`}
                   >
-                    <p className={`text-sm font-semibold uppercase tracking-wide mb-2 ${c.highlight ? "text-purple-200" : "text-neutral-300"}`}>
+                    <p className={`text-sm font-semibold uppercase tracking-wide mb-2 ${c.highlight ? "text-primary" : "text-foreground"}`}>
                       {c.nome}
                     </p>
-                    <p className="text-xs text-neutral-500 leading-relaxed">{c.def}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{c.def}</p>
                   </motion.div>
                 ))}
               </div>
@@ -295,16 +295,16 @@ const Defense = () => {
           <div className="flex items-center justify-center h-full px-8">
             <div className="max-w-5xl w-full">
               <div className="text-center mb-10 space-y-3 max-w-2xl mx-auto">
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-base text-foreground/80 leading-relaxed">
                   Metodologicamente, a pesquisa se insere no campo da pesquisa-criação implicada.
                 </p>
-                <p className="text-sm text-neutral-500 leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Nesse modelo, prática artística e reflexão teórica não são separadas.
                 </p>
-                <p className="text-sm text-neutral-500 leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   O processo criativo funciona simultaneamente como produção estética e como campo de investigação.
                 </p>
-                <p className="text-sm text-neutral-500 leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   O rigor da pesquisa não está na neutralidade, mas na reflexividade sobre o próprio processo criativo.
                 </p>
               </div>
@@ -314,10 +314,10 @@ const Defense = () => {
                   { title: "Escuta", icon: "◉", desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir." },
                   { title: "Improviso", icon: "⚡", desc: "Abertura ao imprevisto como dado epistemológico legítimo. Arquitetura móvel capaz de se refazer a cada encontro." },
                 ].map((e) => (
-                  <div key={e.title} className="border border-neutral-800 rounded-lg p-10 bg-neutral-900/50">
+                  <div key={e.title} className="border border-border rounded-lg p-6 md:p-8 bg-card/30">
                     <p className="text-3xl mb-3 opacity-70">{e.icon}</p>
-                    <p className="text-base font-semibold uppercase tracking-wide text-white mb-2">{e.title}</p>
-                    <p className="text-sm text-neutral-500 leading-relaxed">{e.desc}</p>
+                    <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">{e.title}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
                   </div>
                 ))}
               </div>
@@ -329,16 +329,16 @@ const Defense = () => {
         return (
           <div className="flex items-center justify-center h-full">
             <div className="text-center max-w-2xl px-8 space-y-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-600">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/70">
                 LowPressure™ apresenta
               </p>
-              <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-wide text-white">
+              <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-wide text-foreground">
                 Fragmentos simbólicos
               </h2>
-              <p className="text-sm text-neutral-400 leading-relaxed">
+              <p className="text-base text-foreground/80 leading-relaxed">
                 Durante o processo de criação do LowMovie™, produzimos uma série de peças audiovisuais que funcionam como fragmentos simbólicos do universo do filme.
               </p>
-              <p className="text-sm text-neutral-500 leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Esses fragmentos não revelam diretamente a obra, mas expressam os princípios que estruturam o processo criativo do coletivo.
               </p>
             </div>
@@ -355,18 +355,18 @@ const Defense = () => {
               />
             </div>
             <div className="mt-6 flex items-center gap-4">
-              <button onClick={() => currentTeaser > 0 && setCurrentTeaser((p) => p - 1)} className="text-neutral-600 hover:text-white transition-colors">
+              <button onClick={() => currentTeaser > 0 && setCurrentTeaser((p) => p - 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
                 <ArrowRight className="h-4 w-4 rotate-180" />
               </button>
               <div className="text-center">
-                <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
+                <p className="text-xs font-semibold uppercase tracking-widest text-foreground/80">
                   {currentTeaser + 1}/6 — {TEASERS[currentTeaser].name}
                 </p>
-                <p className="mt-2 text-[11px] text-neutral-500 max-w-md leading-relaxed italic">
+                <p className="mt-2 text-[11px] text-muted-foreground max-w-md leading-relaxed italic">
                   {TEASERS[currentTeaser].legend}
                 </p>
               </div>
-              <button onClick={() => currentTeaser < 5 && setCurrentTeaser((p) => p + 1)} className="text-neutral-600 hover:text-white transition-colors">
+              <button onClick={() => currentTeaser < 5 && setCurrentTeaser((p) => p + 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
                 <ArrowRight className="h-4 w-4" />
               </button>
             </div>
@@ -376,7 +376,7 @@ const Defense = () => {
       case 8:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <p className="text-sm text-neutral-400 leading-relaxed text-center mb-6 max-w-2xl">
+            <p className="text-base text-foreground/80 leading-relaxed text-center mb-6 max-w-2xl">
               A convergência dessas ideias aparece no trailer do filme LowMovie™, que sintetiza o conceito de Lowbyrinth™.
             </p>
             <div className="w-full max-w-5xl aspect-video relative">
@@ -392,13 +392,13 @@ const Defense = () => {
         return (
           <div className="flex flex-col items-center justify-center h-full p-8 overflow-auto">
             <div className="text-center mb-6 max-w-2xl space-y-2">
-              <p className="text-sm text-neutral-400 leading-relaxed">
+              <p className="text-base text-foreground/80 leading-relaxed">
                 O LowMovie™ não é apenas objeto da pesquisa.
               </p>
-              <p className="text-sm text-neutral-500 leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Ele é também o espaço onde a investigação acontece.
               </p>
-              <p className="text-sm text-neutral-500 leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 O filme articula corpo, câmera e cidade como operadores de linguagem.
               </p>
             </div>
@@ -431,15 +431,15 @@ const Defense = () => {
         return (
           <div className="flex items-center justify-center h-full px-8">
             <div className="max-w-4xl w-full">
-              <p className="text-sm text-neutral-400 leading-relaxed text-center mb-10">
+              <p className="text-base text-foreground/80 leading-relaxed text-center mb-10">
                 A pesquisa propõe três contribuições principais.
               </p>
               <div className="grid gap-6 md:grid-cols-3">
                 {CONTRIBUICOES.map((c, i) => (
-                  <div key={i} className="border border-neutral-800 rounded-lg p-8 bg-neutral-900/50">
-                    <p className="text-xs font-semibold text-neutral-600 tracking-widest mb-3">{String(i + 1).padStart(2, "0")}</p>
-                    <p className="text-sm font-semibold uppercase tracking-wide text-white mb-3">{c.title}</p>
-                    <p className="text-xs text-neutral-500 leading-relaxed">{c.desc}</p>
+                  <div key={i} className="border border-border rounded-lg p-6 md:p-8 bg-card/30">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/70 mb-3">{String(i + 1).padStart(2, "0")}</p>
+                    <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-3">{c.title}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{c.desc}</p>
                   </div>
                 ))}
               </div>
@@ -452,18 +452,18 @@ const Defense = () => {
           <div className="flex items-center justify-center h-full px-8 overflow-auto">
             <div className="max-w-[900px] w-full py-12">
               <div className="text-center mb-12 space-y-2">
-                <p className="text-sm text-neutral-400 leading-relaxed">
+                <p className="text-base text-foreground/80 leading-relaxed">
                   Toda pesquisa em arte opera em tensões conceituais.
                 </p>
-                <p className="text-sm text-neutral-500 leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Em vez de evitá-las, optei por torná-las visíveis.
                 </p>
               </div>
               <div className="space-y-6 pointer-events-none">
                 {FAQ_ITEMS.map((item, i) => (
-                  <div key={i} className="border border-neutral-800 rounded-lg p-6 bg-neutral-900/50">
-                    <p className="text-sm font-semibold uppercase tracking-wide text-neutral-300 mb-3">{item.q}</p>
-                    <p className="text-sm text-neutral-500 leading-relaxed">{item.a}</p>
+                  <div key={i} className="border border-border rounded-lg p-6 bg-card/30">
+                    <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-3">{item.q}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{item.a}</p>
                   </div>
                 ))}
               </div>
@@ -474,20 +474,20 @@ const Defense = () => {
       case 12:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <p className="text-sm text-neutral-400 leading-relaxed text-center mb-4">
+            <p className="text-base text-foreground/80 leading-relaxed text-center mb-4">
               O portal organiza a pesquisa como um percurso navegável.
             </p>
             <div className="w-full max-w-5xl h-[50vh]">
               <ConceptGraph />
             </div>
             <div className="mt-6 text-center space-y-2">
-              <p className="text-sm text-neutral-400 leading-relaxed">
+              <p className="text-base text-foreground/80 leading-relaxed">
                 O LowMovie™ é um filme-labirinto.
               </p>
-              <p className="text-sm text-neutral-500 leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Não se assiste a ele de fora.
               </p>
-              <p className="mt-2 text-lg font-semibold uppercase tracking-widest text-white animate-pulse">
+              <p className="mt-2 text-lg font-semibold uppercase tracking-widest text-foreground animate-pulse">
                 É preciso entrar.
               </p>
             </div>
@@ -510,7 +510,7 @@ const Defense = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 bg-black text-white overflow-hidden cursor-pointer select-none"
+      className="fixed inset-0 bg-background text-foreground overflow-hidden cursor-pointer select-none"
       onClick={handleClick}
     >
       <VideoPreloader blockIndex={currentBlock} />
@@ -532,7 +532,7 @@ const Defense = () => {
       {currentBlock > 0 && (
         <button
           onClick={(e) => { e.stopPropagation(); navigate("/"); }}
-          className="absolute top-4 left-4 z-20 text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
+          className="absolute top-4 left-4 z-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
           title="Voltar ao portal (ESC)"
         >
           <X className="h-5 w-5" />
@@ -542,13 +542,13 @@ const Defense = () => {
       {/* Footer: block indicator left, arrow right */}
       {currentBlock > 0 && (
         <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-6 py-4 z-20">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-600 pointer-events-none">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70 pointer-events-none">
             BLOCO {String(currentBlock).padStart(2, "0")} — {BLOCKS[currentBlock]?.title?.toUpperCase()}
           </p>
           {currentBlock < BLOCKS.length - 1 && (
             <button
               onClick={(e) => { e.stopPropagation(); goNext(); }}
-              className="text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
+              className="text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
             >
               <ArrowRight className="h-4 w-4" />
             </button>
