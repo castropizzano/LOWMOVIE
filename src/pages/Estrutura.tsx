@@ -2,25 +2,25 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
-import { Compass, Users, Film, BookOpen } from "lucide-react";
+
 
 const movimentos = [
   {
-    icon: Compass,
+    
     title: "Corpo em Deriva",
     subtitle: "Operadores Poéticos",
     desc: "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — articulando experiência, corpo e cidade como eixo de criação.",
     subcapitulos: ["Operadores poéticos do olhar", "Corpo-câmera: diálogos teóricos", "Entre vozes"],
   },
   {
-    icon: Users,
+    
     title: "Coletivo em Baixo Relevo",
     subtitle: "Ética de Produção",
     desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, examino os modos de decisão, as formas de autoria compartilhada e as estratégias de circulação. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine como arquivo vivo de imagens, entrevistas e depoimentos.",
     subcapitulos: ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine como arquivo"],
   },
   {
-    icon: Film,
+    
     title: "Obra em Expansão",
     subtitle: "Processos do Filme",
     desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos.",
@@ -60,7 +60,7 @@ const Estrutura = () => {
             {movimentos.map((mov, i) => (
               <AnimatedSection key={mov.title} delay={0.1 + i * 0.15}>
                 <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 h-full transition-colors hover:border-primary/30">
-                  <mov.icon className="h-8 w-8 text-primary/60 mb-5" />
+                  
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">{mov.title}</h3>
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">{mov.subtitle}</p>
                   <p className="text-sm text-foreground/80 leading-relaxed text-justify mb-6">{mov.desc}</p>
@@ -82,19 +82,14 @@ const Estrutura = () => {
 
           {/* Considerações Finais */}
           <AnimatedSection delay={0.45} className="mt-16">
-            <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
-              <div className="flex items-start gap-4">
-                <BookOpen className="h-7 w-7 text-primary/60 shrink-0 mt-1" />
-                <div>
+             <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações Finais</h3>
                    <p className="text-sm text-foreground/80 leading-relaxed">
                     As considerações finais situam as reverberações da investigação no campo do cinema e das
                     artes do vídeo — não como encerramento, mas como abertura para as continuidades que a
                     pesquisa projeta.
                   </p>
-                </div>
-              </div>
-            </div>
+             </div>
           </AnimatedSection>
 
           {/* Operadores e Campo Simbólico */}
