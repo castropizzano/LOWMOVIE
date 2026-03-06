@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, X } from "lucide-react";
 import ConceptGraph from "@/components/ConceptGraph";
+import ImageLightbox from "@/components/ImageLightbox";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
 
 /* ─── Block definitions (0-13) ─── */
@@ -422,11 +423,13 @@ const Defense = () => {
                   { src: "/images/fotos/11.jpg", span: "col-span-1" },
                   { src: "/images/fotos/12.jpg", span: "col-span-2" },
                 ].map((foto, i) => (
-                  <img
+                  <ImageLightbox
                     key={`foto-${i}`}
                     src={foto.src}
                     alt={`Foto ${i + 1}`}
-                    className={`${foto.span} w-full h-48 md:h-56 object-cover rounded`}
+                    className={`${foto.span} h-48 md:h-56 rounded border-none`}
+                    imageClassName="grayscale-0"
+                    caption="@peralta_jpg"
                   />
                 ))}
               </div>

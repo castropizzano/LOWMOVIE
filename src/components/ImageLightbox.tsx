@@ -7,7 +7,8 @@ interface ImageLightboxProps {
   alt: string;
   className?: string;
   imageClassName?: string;
-  aspectRatio?: string; // e.g. "aspect-video", "aspect-square"
+  aspectRatio?: string;
+  caption?: string;
 }
 
 const ImageLightbox = ({ 
@@ -15,7 +16,8 @@ const ImageLightbox = ({
   alt, 
   className, 
   imageClassName,
-  aspectRatio 
+  aspectRatio,
+  caption,
 }: ImageLightboxProps) => {
   return (
     <Dialog>
@@ -42,12 +44,17 @@ const ImageLightbox = ({
         <VisuallyHidden>
           <DialogTitle>{alt}</DialogTitle>
         </VisuallyHidden>
-        <div className="relative w-full h-full flex items-center justify-center">
+        <div className="relative w-full h-full flex flex-col items-center justify-center">
           <img 
             src={src} 
             alt={alt} 
-            className="max-w-full max-h-[90vh] object-contain rounded-md shadow-2xl"
+            className="max-w-full max-h-[85vh] object-contain rounded-md shadow-2xl"
           />
+          {caption && (
+            <p className="self-end mt-2 mr-1 text-[11px] text-muted-foreground/70 tracking-wide">
+              {caption}
+            </p>
+          )}
         </div>
       </DialogContent>
     </Dialog>
