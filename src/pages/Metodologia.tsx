@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
-import { Heart, Ear, Zap } from "lucide-react";
+
 
 const eixos = [
   {
@@ -49,7 +49,7 @@ const Metodologia = () => {
             {eixos.map((eixo, i) => (
               <AnimatedSection key={eixo.title} delay={0.15 + i * 0.1}>
                 <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30 h-full">
-                  <eixo.icon className="h-7 w-7 text-primary/70 mb-4" />
+                  
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-3">{eixo.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed text-justify">{eixo.desc}</p>
                 </div>
