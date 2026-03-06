@@ -398,23 +398,26 @@ const Defense = () => {
               </p>
             </div>
             <div className="max-w-6xl w-full">
-              <div className="grid grid-cols-3 gap-2 mb-4">
-                {Array.from({ length: 6 }, (_, i) => (
+              <div className="grid grid-cols-4 gap-2">
+                {[
+                  { src: "/images/fotos/01.jpg", span: "col-span-2" },
+                  { src: "/images/fotos/02.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/03.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/04.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/05.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/06.jpg", span: "col-span-2" },
+                  { src: "/images/fotos/07.jpg", span: "col-span-2" },
+                  { src: "/images/fotos/08.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/09.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/10.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/11.jpg", span: "col-span-1" },
+                  { src: "/images/fotos/12.jpg", span: "col-span-2" },
+                ].map((foto, i) => (
                   <img
-                    key={`still-${i}`}
-                    src={`/images/stills/${String(i + 1).padStart(3, "0")}.jpg`}
-                    alt={`Still ${i + 1}`}
-                    className="w-full h-36 object-cover rounded"
-                  />
-                ))}
-              </div>
-              <div className="grid grid-cols-5 gap-2">
-                {Array.from({ length: 14 }, (_, i) => (
-                  <img
-                    key={`seq-${i}`}
-                    src={`/images/sequence/${String(i + 1).padStart(2, "0")}.png`}
-                    alt={`Sequence ${i + 1}`}
-                    className="w-full h-20 object-cover rounded"
+                    key={`foto-${i}`}
+                    src={foto.src}
+                    alt={`Foto ${i + 1}`}
+                    className={`${foto.span} w-full h-48 md:h-56 object-cover rounded`}
                   />
                 ))}
               </div>
