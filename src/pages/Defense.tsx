@@ -204,7 +204,7 @@ const Defense = () => {
         return (
           <div className="flex items-center justify-center h-full px-8">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl">
-              <img src={capaDissertacao} alt="Capa da dissertação" className="w-full max-w-sm mx-auto rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500" />
+              <img src="/images/poster-lowmovie.png" alt="Poster LowMovie" className="w-full max-w-sm mx-auto rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500" />
               <div className="text-left">
                 <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                   Dissertação de Mestrado — Março 2026
