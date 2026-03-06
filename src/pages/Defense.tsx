@@ -394,7 +394,7 @@ const Defense = () => {
                 A convergência dessas ideias aparece no trailer do filme LowMovie™, que sintetiza o conceito de Lowbyrinth™.
               </p>
               <VideoEmbed
-                src="https://player.vimeo.com/video/819603753?autoplay=1&muted=0"
+                src="https://www.youtube.com/embed/Zom42CQ83CU?autoplay=1&rel=0&modestbranding=1"
                 fadeIn
                 contained
               />
