@@ -14,6 +14,7 @@ import FAQ from "./pages/FAQ";
 import Conceitos from "./pages/Conceitos";
 import Mapa from "./pages/Mapa";
 import Conclusao from "./pages/Conclusao";
+import Defense from "./pages/Defense";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/mapa" element={<Mapa />} />
           <Route path="/conclusao" element={<Conclusao />} />
+          <Route path="/defense" element={<Defense />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

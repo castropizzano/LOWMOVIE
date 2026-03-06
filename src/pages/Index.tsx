@@ -1,10 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { useRef, useCallback } from "react";
 import Layout from "@/components/Layout";
 import WelcomeOverlay from "@/components/WelcomeOverlay";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
 
 const Index = () => {
+  const navigate = useNavigate();
+  const clickCountRef = useRef(0);
+  const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleCoverClick = useCallback(() => {
+    clickCountRef.current += 1;
+    if (clickTimerRef.current) clearTimeout(clickTimerRef.current);
+    if (clickCountRef.current >= 3) {
+      clickCountRef.current = 0;
+      navigate("/defense");
+      return;
+    }
+    clickTimerRef.current = setTimeout(() => {
+      clickCountRef.current = 0;
+    }, 1000);
+  }, [navigate]);
+
   return (
     <Layout>
       <WelcomeOverlay />
@@ -16,7 +34,8 @@ const Index = () => {
               <img
                 src={capaDissertacao}
                 alt="Capa da dissertação LowMovie e o Labirinto Criativo"
-                className="w-full rounded-lg shadow-lg"
+                className="w-full rounded-lg shadow-lg cursor-default"
+                onClick={handleCoverClick}
               />
             </div>
 
