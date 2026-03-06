@@ -6,17 +6,14 @@ import NextSectionButton from "@/components/NextSectionButton";
 
 const eixos = [
   {
-    icon: Heart,
     title: "Afeto",
     desc: "Vínculo sensível com o campo investigado. Inspirado nos debates do grupo Afetos (UFMG), o afeto não é contaminação, mas condição de acesso ao real em sua dimensão mais densa e significativa. Afetar e ser afetado constituem formas legítimas de produzir conhecimento.",
   },
   {
-    icon: Ear,
     title: "Escuta",
     desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir — a escuta expandiu-se para o corpo, para o som da cidade, para o ruído das rodas sobre o concreto. Sustentar o silêncio, acolher o tempo do outro.",
   },
   {
-    icon: Zap,
     title: "Improviso",
     desc: "Abertura ao imprevisto como dado epistemológico legítimo, e não como falha do planejamento. A metodologia assume uma arquitetura móvel, capaz de se refazer a cada encontro. Um saber em movimento que aprende com a instabilidade.",
   },
