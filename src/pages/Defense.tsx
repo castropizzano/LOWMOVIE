@@ -448,8 +448,8 @@ const Defense = () => {
 
       case 10:
         return (
-          <div className="flex items-center justify-center h-full px-8">
-            <div className="max-w-4xl w-full">
+          <div className="flex items-center justify-center h-full px-8 overflow-auto">
+            <div className="max-w-4xl w-full py-8">
               <p className="text-base text-foreground/80 leading-relaxed text-center mb-10">
                 A pesquisa propõe três contribuições principais.
               </p>
@@ -462,6 +462,11 @@ const Defense = () => {
                   </div>
                 ))}
               </div>
+              <img
+                src="/images/contribuicoes.jpg"
+                alt="Skate e cidade"
+                className="w-full rounded-lg mt-8 object-cover max-h-[35vh]"
+              />
             </div>
           </div>
         );
