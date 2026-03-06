@@ -1,24 +1,35 @@
 
 
-## Reorganizar nós do Lowbyrinth em padrão octogonal
+## Defense Mode — Ajustes
 
-Reposicionar os 9 nós para ocupar os 8 pontos cardeais/intercardeais + centro, inspirado no símbolo geométrico da imagem.
+### Mudancas
 
-### Alteração em `src/data/lowbyrinth.ts`
+**1. Remover Block 8 (Simbolos grid) e reduzir para 13 blocos (0-13)**
 
-Novas coordenadas (x%, y%):
+Renumerar blocos: antigo 9→8 (Trailer), 10→9 (Frames), 11→10 (Contribuicoes), 12→11 (Questoes), 13→12 (Mapa), 14→13 (Encerramento).
 
-| Posição | Nó | x | y |
-|---|---|---|---|
-| Centro | **Conclusão** | 50 | 50 |
-| Topo | Apresentação | 50 | 12 |
-| Topo-direita | Metodologia | 82 | 18 |
-| Direita | Estrutura | 88 | 50 |
-| Baixo-direita | O Coletivo | 82 | 82 |
-| Baixo | Contribuições | 50 | 88 |
-| Baixo-esquerda | Questões | 18 | 82 |
-| Esquerda | Conceitos | 12 | 50 |
-| Topo-esquerda | O Filme | 18 | 18 |
+**2. Adicionar legendas aos teasers (Block 7)**
 
-Todas as derivas existentes permanecem iguais. Apenas as coordenadas `x` e `y` de cada nó mudam.
+Cada teaser tera seu nome + resumo do simbolismo abaixo do video. Textos condensados a partir do conteudo fornecido:
+
+| Teaser | Legenda resumida |
+|--------|-----------------|
+| Eye of Horus | O olhar das lentes. Visao holistica — a camera como extensao do olho que capta cada manobra e momento. |
+| Ishtar Star | Bastidores da criacao. Ishtar desce ao submundo para se renovar — processo individual ao encontro da uniao criativa. |
+| Star of Lakshmi | Superacoes e vitorias. Lakshmi protege o espirito coletivo, concedendo vitoria sobre os obstaculos enfrentados. |
+| The Chaos | Transgressao e resistencia. O caos como principio criativo — disseminacao de energia em alta velocidade. |
+| Labyrinth | Picos vazios, arquitetura enfrentada. O labirinto como caminho de aprendizagem e busca pelo autoconhecimento. |
+| The Rat | Vivencias e irreverencia. O rato simboliza adaptacao, sobrevivencia e ressignificacao das ruas. |
+
+**3. Adicionar botao ESC / voltar ao portal**
+
+Ja existe `ESC` no teclado para voltar. Adicionar um botao visual discreto no canto superior esquerdo (icone X ou "Exit") para voltar ao portal via `navigate("/")`.
+
+**4. Navegacao entre blocos ja funciona**
+
+← e → ja estao implementados. O botao "Next" ja existe. Vou adicionar tambem um botao "Prev" discreto no lado esquerdo para quem nao usa teclado.
+
+### Arquivo editado
+
+`src/pages/Defense.tsx` — remover block 8, renumerar, adicionar legendas aos teasers, adicionar botoes Exit e Prev.
 
