@@ -274,7 +274,7 @@ const Defense = () => {
                     transition={{ duration: 0.4, delay: i * 0.1 }}
                     className="border rounded-lg p-6 md:p-8 border-primary/40 bg-primary/10 shadow-[0_0_25px_hsl(300_60%_55%/0.15)]"
                   >
-                    <p className={`text-sm font-semibold uppercase tracking-wide mb-2 ${c.highlight ? "text-primary" : "text-foreground"}`}>
+                    <p className="text-sm font-semibold uppercase tracking-wide mb-2 text-primary">
                       {c.nome}
                     </p>
                     <p className="text-sm text-muted-foreground leading-relaxed">{c.def}</p>
