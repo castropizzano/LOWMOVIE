@@ -184,7 +184,15 @@ const Defense = () => {
 
   const handleClick = useCallback((e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
-    if (target.closest("button") || target.closest("a") || target.closest("iframe") || target.closest("svg")) return;
+    if (
+      target.closest("button") ||
+      target.closest("a") ||
+      target.closest("iframe") ||
+      target.closest("svg") ||
+      target.closest("[data-radix-dialog-trigger]") ||
+      target.closest("[role='dialog']") ||
+      target.tagName === "IMG"
+    ) return;
     goNext();
   }, [goNext]);
 
