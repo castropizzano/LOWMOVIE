@@ -60,8 +60,7 @@ const Filme = () => {
           {/* Linhagem */}
           <AnimatedSection delay={0.17}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
-              <div className="flex items-start gap-4 mb-6">
-                <Film className="h-7 w-7 text-primary/60 shrink-0 mt-1" />
+              <div className="mb-6">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
                     Linhagem — A Gramática dos Vídeos de Skate
@@ -203,7 +202,7 @@ const Filme = () => {
           {/* Soundtrack */}
           <AnimatedSection delay={0.4} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">
-              <Music className="inline h-5 w-5 text-muted-foreground mr-2 -mt-1" />
+              
               Soundtrack
             </h3>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -214,7 +213,6 @@ const Filme = () => {
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
                 <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
-                  <Music className="h-5 w-5 text-primary/70" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide">Lowbyrinth EP</p>
@@ -229,7 +227,6 @@ const Filme = () => {
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
                 <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
-                  <Music className="h-5 w-5 text-primary/70" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide">Like Rats on Hostile Paths</p>
