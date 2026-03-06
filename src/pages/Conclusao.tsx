@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { FolderOpen, ExternalLink, FileText, Youtube } from "lucide-react";
+
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const interviews = [
@@ -108,7 +108,7 @@ const Conclusao = () => {
           <div className="mt-20">
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                <FileText className="h-5 w-5 text-primary" />
+                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Dissertação Completa
                 </h2>
@@ -122,7 +122,7 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                
                 <span className="text-sm font-medium text-foreground/80">Abrir Dissertação em PDF</span>
               </a>
             </div>
@@ -132,7 +132,7 @@ const Conclusao = () => {
           <div className="mt-8">
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                <FolderOpen className="h-5 w-5 text-primary" />
+                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Acervo do Processo
                 </h2>
@@ -146,7 +146,7 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                
                 <span className="text-sm font-medium text-foreground/80">Abrir Acervo no Google Drive</span>
               </a>
             </div>
@@ -156,7 +156,7 @@ const Conclusao = () => {
           <div className="mt-8">
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-6">
-                <Youtube className="h-5 w-5 text-primary" />
+                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Entrevistas
                 </h2>
@@ -215,7 +215,7 @@ const Conclusao = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
                     >
-                      <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                      
                       <span className="text-sm font-medium text-foreground/80">Abrir Transcrição em PDF</span>
                     </a>
                   </TabsContent>
@@ -228,7 +228,7 @@ const Conclusao = () => {
           <div className="mt-8">
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                <FileText className="h-5 w-5 text-primary" />
+                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Manual LowMovie™
                 </h2>
@@ -250,7 +250,7 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                
                 <span className="text-sm font-medium text-foreground/80">Abrir Manual em PDF</span>
               </a>
             </div>
@@ -260,7 +260,7 @@ const Conclusao = () => {
           <div className="mt-8">
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                <FileText className="h-5 w-5 text-primary" />
+                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Manual LowPressure™
                 </h2>
@@ -282,7 +282,7 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                <ExternalLink className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" />
+                
                 <span className="text-sm font-medium text-foreground/80">Abrir Manual em PDF</span>
               </a>
             </div>
