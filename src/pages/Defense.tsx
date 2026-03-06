@@ -25,7 +25,7 @@ const BLOCKS = [
 ];
 
 const TEASERS = [
-  { name: "Eye of Horus", id: "819602079", legend: "O olhar. A câmera. O registro das tentativas." },
+  { name: "Eye of Horus", id: "epIEe4pf1o8", legend: "O olhar. A câmera. O registro das tentativas.", platform: "youtube" as const },
   { name: "Ishtar Star", id: "819602679", legend: "A criação coletiva e os bastidores da produção." },
   { name: "Star of Lakshmi", id: "819603077", legend: "O esforço, o erro, e a superação." },
   { name: "The Chaos", id: "819602986", legend: "A tensão urbana e a transgressão." },
@@ -374,7 +374,11 @@ const Defense = () => {
                 </div>
               </div>
               <VideoEmbed
-                src={`https://player.vimeo.com/video/${TEASERS[currentTeaser].id}?autoplay=1&background=0&muted=0`}
+                src={
+                  TEASERS[currentTeaser].platform === "youtube"
+                    ? `https://www.youtube.com/embed/${TEASERS[currentTeaser].id}?autoplay=1&rel=0&modestbranding=1`
+                    : `https://player.vimeo.com/video/${TEASERS[currentTeaser].id}?autoplay=1&background=0&muted=0`
+                }
                 fadeIn
                 contained
               />
