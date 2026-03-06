@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ArrowLeft, X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import ConceptGraph from "@/components/ConceptGraph";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
 
@@ -96,11 +96,21 @@ const Defense = () => {
   const navigate = useNavigate();
   const [currentBlock, setCurrentBlock] = useState(0);
   const [currentTeaser, setCurrentTeaser] = useState(0);
+  const [videoEnded, setVideoEnded] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (currentBlock === 0) {
       const timer = setTimeout(() => setCurrentBlock(1), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [currentBlock]);
+
+  // Block 1: show text after video ends (~37s)
+  useEffect(() => {
+    if (currentBlock === 1) {
+      setVideoEnded(false);
+      const timer = setTimeout(() => setVideoEnded(true), 37000);
       return () => clearTimeout(timer);
     }
   }, [currentBlock]);
@@ -160,16 +170,25 @@ const Defense = () => {
               src="https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
               fadeIn
             />
-            <div className="absolute bottom-16 left-0 right-0 z-10 pointer-events-none">
-              <div className="mx-auto max-w-3xl px-8 py-6 bg-black/60 backdrop-blur-sm rounded-lg text-center space-y-3">
-                <p className="text-sm text-neutral-300 leading-relaxed">
-                  "Essa pesquisa começou tentando compreender o que acontece nesse tipo de gesto."
-                </p>
-                <p className="text-sm text-neutral-400 leading-relaxed">
-                  "Um gesto que acontece entre corpo, cidade e risco — e que muitas vezes acaba se transformando em imagem."
-                </p>
-              </div>
-            </div>
+            <AnimatePresence>
+              {videoEnded && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6 }}
+                  className="absolute inset-0 z-10 flex items-center justify-center bg-black/80"
+                >
+                  <div className="max-w-3xl px-8 text-center space-y-3">
+                    <p className="text-sm text-neutral-300 leading-relaxed">
+                      "Essa pesquisa começou tentando compreender o que acontece nesse tipo de gesto."
+                    </p>
+                    <p className="text-sm text-neutral-400 leading-relaxed">
+                      "Um gesto que acontece entre corpo, cidade e risco — e que muitas vezes acaba se transformando em imagem."
+                    </p>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         );
 
@@ -247,21 +266,24 @@ const Defense = () => {
                   Ele opera como um labirinto sensível, onde tentativa, erro, descoberta e improviso fazem parte da criação.
                 </p>
               </div>
-              <div className="grid gap-4 md:grid-cols-2">
-                {CONCEITOS.map((c) => (
-                  <div
+              <div className="grid gap-4 md:grid-cols-2 pointer-events-none">
+                {CONCEITOS.map((c, i) => (
+                  <motion.div
                     key={c.nome}
-                    className={`border rounded-lg p-6 transition-all ${
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.1 }}
+                    className={`border rounded-lg p-6 ${
                       c.highlight
-                        ? "border-white/40 bg-white/10 scale-105 shadow-[0_0_30px_rgba(255,255,255,0.1)]"
+                        ? "border-purple-500/40 bg-purple-950/20 shadow-[0_0_25px_rgba(168,85,247,0.15)]"
                         : "border-neutral-800 bg-neutral-900/50"
                     }`}
                   >
-                    <p className={`text-sm font-semibold uppercase tracking-wide mb-2 ${c.highlight ? "text-white" : "text-neutral-300"}`}>
+                    <p className={`text-sm font-semibold uppercase tracking-wide mb-2 ${c.highlight ? "text-purple-200" : "text-neutral-300"}`}>
                       {c.nome}
                     </p>
                     <p className="text-xs text-neutral-500 leading-relaxed">{c.def}</p>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
@@ -271,7 +293,7 @@ const Defense = () => {
       case 5:
         return (
           <div className="flex items-center justify-center h-full px-8">
-            <div className="max-w-4xl w-full">
+            <div className="max-w-5xl w-full">
               <div className="text-center mb-10 space-y-3 max-w-2xl mx-auto">
                 <p className="text-sm text-neutral-400 leading-relaxed">
                   Metodologicamente, a pesquisa se insere no campo da pesquisa-criação implicada.
@@ -292,10 +314,10 @@ const Defense = () => {
                   { title: "Escuta", icon: "◉", desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir." },
                   { title: "Improviso", icon: "⚡", desc: "Abertura ao imprevisto como dado epistemológico legítimo. Arquitetura móvel capaz de se refazer a cada encontro." },
                 ].map((e) => (
-                  <div key={e.title} className="border border-neutral-800 rounded-lg p-6 bg-neutral-900/50">
-                    <p className="text-2xl mb-3">{e.icon}</p>
-                    <p className="text-sm font-semibold uppercase tracking-wide text-white mb-2">{e.title}</p>
-                    <p className="text-xs text-neutral-500 leading-relaxed">{e.desc}</p>
+                  <div key={e.title} className="border border-neutral-800 rounded-lg p-10 bg-neutral-900/50">
+                    <p className="text-3xl mb-3 opacity-70">{e.icon}</p>
+                    <p className="text-base font-semibold uppercase tracking-wide text-white mb-2">{e.title}</p>
+                    <p className="text-sm text-neutral-500 leading-relaxed">{e.desc}</p>
                   </div>
                 ))}
               </div>
@@ -334,7 +356,7 @@ const Defense = () => {
             </div>
             <div className="mt-6 flex items-center gap-4">
               <button onClick={() => currentTeaser > 0 && setCurrentTeaser((p) => p - 1)} className="text-neutral-600 hover:text-white transition-colors">
-                <ArrowLeft className="h-4 w-4" />
+                <ArrowRight className="h-4 w-4 rotate-180" />
               </button>
               <div className="text-center">
                 <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
@@ -428,8 +450,8 @@ const Defense = () => {
       case 11:
         return (
           <div className="flex items-center justify-center h-full px-8 overflow-auto">
-            <div className="max-w-3xl w-full py-12">
-              <div className="text-center mb-10 space-y-2">
+            <div className="max-w-[900px] w-full py-12">
+              <div className="text-center mb-12 space-y-2">
                 <p className="text-sm text-neutral-400 leading-relaxed">
                   Toda pesquisa em arte opera em tensões conceituais.
                 </p>
@@ -437,11 +459,11 @@ const Defense = () => {
                   Em vez de evitá-las, optei por torná-las visíveis.
                 </p>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-6 pointer-events-none">
                 {FAQ_ITEMS.map((item, i) => (
-                  <div key={i} className="border border-neutral-800 rounded-lg p-5 bg-neutral-900/50">
-                    <p className="text-sm font-semibold uppercase tracking-wide text-neutral-300 mb-2">{item.q}</p>
-                    <p className="text-xs text-neutral-500 leading-relaxed">{item.a}</p>
+                  <div key={i} className="border border-neutral-800 rounded-lg p-6 bg-neutral-900/50">
+                    <p className="text-sm font-semibold uppercase tracking-wide text-neutral-300 mb-3">{item.q}</p>
+                    <p className="text-sm text-neutral-500 leading-relaxed">{item.a}</p>
                   </div>
                 ))}
               </div>
@@ -517,36 +539,21 @@ const Defense = () => {
         </button>
       )}
 
-      {/* Bottom indicator */}
+      {/* Footer: block indicator left, arrow right */}
       {currentBlock > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-6 py-4 pointer-events-none z-20">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-600">
-            {String(currentBlock).padStart(2, "0")} — {BLOCKS[currentBlock]?.title}
+        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-6 py-4 z-20">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-600 pointer-events-none">
+            BLOCO {String(currentBlock).padStart(2, "0")} — {BLOCKS[currentBlock]?.title?.toUpperCase()}
           </p>
-          <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-700">
-            Defense Mode — LowMovie™ Research
-          </p>
+          {currentBlock < BLOCKS.length - 1 && (
+            <button
+              onClick={(e) => { e.stopPropagation(); goNext(); }}
+              className="text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
+            >
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          )}
         </div>
-      )}
-
-      {/* Prev button */}
-      {currentBlock > 1 && (
-        <button
-          onClick={(e) => { e.stopPropagation(); goPrev(); }}
-          className="absolute bottom-4 left-6 z-20 flex items-center gap-1 text-[10px] font-semibold uppercase tracking-widest text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
-        >
-          <ArrowLeft className="h-3 w-3" /> Prev
-        </button>
-      )}
-
-      {/* Next button */}
-      {currentBlock > 0 && currentBlock < BLOCKS.length - 1 && (
-        <button
-          onClick={(e) => { e.stopPropagation(); goNext(); }}
-          className="absolute bottom-4 right-6 z-20 flex items-center gap-1 text-[10px] font-semibold uppercase tracking-widest text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
-        >
-          Next <ArrowRight className="h-3 w-3" />
-        </button>
       )}
     </div>
   );
