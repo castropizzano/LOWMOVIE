@@ -61,7 +61,7 @@ const Index = () => {
 
               <div className="mt-8 space-y-1">
                 <p className="text-sm text-foreground/80 leading-relaxed">
-                  PPG em Cinema e Artes do Vídeo — UNESPAR
+                  Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR
                 </p>
                 <p className="text-xs font-semibold text-primary uppercase tracking-widest">
                   Linha: Processos de Criação no Cinema e nas Artes do Vídeo
