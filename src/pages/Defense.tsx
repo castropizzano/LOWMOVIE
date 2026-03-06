@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ArrowLeft, X } from "lucide-react";
 import ConceptGraph from "@/components/ConceptGraph";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
 
-/* ─── Block definitions ─── */
+/* ─── Block definitions (0-13) ─── */
 const BLOCKS = [
   { id: 0, title: "" },
   { id: 1, title: "Abertura" },
@@ -15,22 +15,21 @@ const BLOCKS = [
   { id: 5, title: "Metodologia" },
   { id: 6, title: "Fragmentos" },
   { id: 7, title: "Teasers" },
-  { id: 8, title: "Símbolos" },
-  { id: 9, title: "Trailer" },
-  { id: 10, title: "Frames" },
-  { id: 11, title: "Contribuições" },
-  { id: 12, title: "Questões Críticas" },
-  { id: 13, title: "Lowbyrinth™" },
-  { id: 14, title: "Encerramento" },
+  { id: 8, title: "Trailer" },
+  { id: 9, title: "Frames" },
+  { id: 10, title: "Contribuições" },
+  { id: 11, title: "Questões Críticas" },
+  { id: 12, title: "Lowbyrinth™" },
+  { id: 13, title: "Encerramento" },
 ];
 
 const TEASERS = [
-  { name: "Eye of Horus", id: "819602079" },
-  { name: "Ishtar Star", id: "819602679" },
-  { name: "Star of Lakshmi", id: "819603077" },
-  { name: "The Chaos", id: "819602986" },
-  { name: "Labyrinth", id: "819602898" },
-  { name: "The Rat", id: "819602797" },
+  { name: "Eye of Horus", id: "819602079", legend: "O olhar das lentes. Visão holística — a câmera como extensão do olho que capta cada manobra e momento." },
+  { name: "Ishtar Star", id: "819602679", legend: "Bastidores da criação. Ishtar desce ao submundo para se renovar — processo individual ao encontro da união criativa." },
+  { name: "Star of Lakshmi", id: "819603077", legend: "Superações e vitórias. Lakshmi protege o espírito coletivo, concedendo vitória sobre os obstáculos enfrentados." },
+  { name: "The Chaos", id: "819602986", legend: "Transgressão e resistência. O caos como princípio criativo — disseminação de energia em alta velocidade." },
+  { name: "Labyrinth", id: "819602898", legend: "Picos vazios, arquitetura enfrentada. O labirinto como caminho de aprendizagem e busca pelo autoconhecimento." },
+  { name: "The Rat", id: "819602797", legend: "Vivências e irreverência. O rato simboliza adaptação, sobrevivência e ressignificação das ruas." },
 ];
 
 const CONCEITOS = [
@@ -85,8 +84,8 @@ const VideoPreloader = ({ blockIndex }: { blockIndex: number }) => {
   const nextBlock = blockIndex + 1;
   let src: string | null = null;
   if (nextBlock === 1) src = "https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=0";
-  if (nextBlock === 9) src = "https://player.vimeo.com/video/819603753?autoplay=0&background=1";
-  if (nextBlock === 14) src = "https://www.youtube.com/embed/g3SDaD16c7w?autoplay=0";
+  if (nextBlock === 8) src = "https://player.vimeo.com/video/819603753?autoplay=0&background=1";
+  if (nextBlock === 13) src = "https://www.youtube.com/embed/g3SDaD16c7w?autoplay=0";
   if (nextBlock === 7) src = `https://player.vimeo.com/video/${TEASERS[0].id}?autoplay=0&background=1`;
   if (!src) return null;
   return <iframe src={src} className="absolute w-0 h-0 opacity-0 pointer-events-none" tabIndex={-1} />;
@@ -99,7 +98,6 @@ const Defense = () => {
   const [currentTeaser, setCurrentTeaser] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Block 0 auto-advance
   useEffect(() => {
     if (currentBlock === 0) {
       const timer = setTimeout(() => setCurrentBlock(1), 2000);
@@ -108,8 +106,7 @@ const Defense = () => {
   }, [currentBlock]);
 
   const goNext = useCallback(() => {
-    if (currentBlock === 0) return; // auto-advance only
-    // Block 7: sub-navigation for teasers
+    if (currentBlock === 0) return;
     if (currentBlock === 7 && currentTeaser < TEASERS.length - 1) {
       setCurrentTeaser((p) => p + 1);
       return;
@@ -122,13 +119,11 @@ const Defense = () => {
 
   const goPrev = useCallback(() => {
     if (currentBlock === 0) return;
-    // Block 7: sub-navigation for teasers
     if (currentBlock === 7 && currentTeaser > 0) {
       setCurrentTeaser((p) => p - 1);
       return;
     }
-    // Circular: from block 13 back goes to block 1
-    if (currentBlock === 13) {
+    if (currentBlock === 12) {
       setCurrentBlock(1);
       return;
     }
@@ -137,7 +132,6 @@ const Defense = () => {
     }
   }, [currentBlock, currentTeaser]);
 
-  // Keyboard navigation
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") goNext();
@@ -148,7 +142,6 @@ const Defense = () => {
     return () => window.removeEventListener("keydown", handler);
   }, [goNext, goPrev, navigate]);
 
-  // Click to advance (not on interactive elements)
   const handleClick = useCallback((e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
     if (target.closest("button") || target.closest("a") || target.closest("iframe") || target.closest("svg")) return;
@@ -157,11 +150,9 @@ const Defense = () => {
 
   const renderBlock = () => {
     switch (currentBlock) {
-      /* ── Block 0: Black screen ── */
       case 0:
         return <div className="w-full h-full bg-black" />;
 
-      /* ── Block 1: Intro video ── */
       case 1:
         return (
           <VideoEmbed
@@ -170,7 +161,6 @@ const Defense = () => {
           />
         );
 
-      /* ── Block 2: Home focus mode ── */
       case 2:
         return (
           <div className="flex items-center justify-center h-full px-8">
@@ -198,7 +188,6 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 3: Coletivo gallery ── */
       case 3:
         return (
           <div className="flex items-center justify-center h-full p-8">
@@ -215,7 +204,6 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 4: Conceitos ── */
       case 4:
         return (
           <div className="flex items-center justify-center h-full px-8">
@@ -244,7 +232,6 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 5: Metodologia ── */
       case 5:
         return (
           <div className="flex items-center justify-center h-full px-8">
@@ -272,7 +259,6 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 6: Intro teasers ── */
       case 6:
         return (
           <div className="flex items-center justify-center h-full">
@@ -288,7 +274,6 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 7: Teasers playlist ── */
       case 7:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
@@ -300,42 +285,24 @@ const Defense = () => {
             </div>
             <div className="mt-6 flex items-center gap-4">
               <button onClick={() => currentTeaser > 0 && setCurrentTeaser((p) => p - 1)} className="text-neutral-600 hover:text-white transition-colors">
-                <ChevronLeft className="h-5 w-5" />
+                <ArrowLeft className="h-4 w-4" />
               </button>
-              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
-                Teaser {currentTeaser + 1}/6 — {TEASERS[currentTeaser].name}
-              </p>
-              <button onClick={() => currentTeaser < 5 && setCurrentTeaser((p) => p + 1)} className="text-neutral-600 hover:text-white transition-colors">
-                <ChevronRight className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        );
-
-      /* ── Block 8: Symbols grid ── */
-      case 8:
-        return (
-          <div className="flex items-center justify-center h-full px-8">
-            <div className="max-w-4xl w-full">
-              <h2 className="text-2xl font-bold uppercase tracking-wide text-white mb-10 text-center">
-                Símbolos
-              </h2>
-              <div className="grid grid-cols-3 gap-4">
-                {TEASERS.map((t) => (
-                  <div
-                    key={t.id}
-                    className="border border-neutral-800 rounded-lg p-6 text-center bg-neutral-900/50 transition-all hover:border-white/40 hover:bg-white/5 cursor-default"
-                  >
-                    <p className="text-sm font-semibold uppercase tracking-wide text-neutral-300">{t.name}</p>
-                  </div>
-                ))}
+              <div className="text-center">
+                <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
+                  {currentTeaser + 1}/6 — {TEASERS[currentTeaser].name}
+                </p>
+                <p className="mt-2 text-[11px] text-neutral-600 max-w-md leading-relaxed">
+                  {TEASERS[currentTeaser].legend}
+                </p>
               </div>
+              <button onClick={() => currentTeaser < 5 && setCurrentTeaser((p) => p + 1)} className="text-neutral-600 hover:text-white transition-colors">
+                <ArrowRight className="h-4 w-4" />
+              </button>
             </div>
           </div>
         );
 
-      /* ── Block 9: Trailer ── */
-      case 9:
+      case 8:
         return (
           <div className="flex items-center justify-center h-full px-8">
             <div className="w-full max-w-5xl aspect-video relative">
@@ -347,8 +314,7 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 10: Frames gallery ── */
-      case 10:
+      case 9:
         return (
           <div className="flex items-center justify-center h-full p-8 overflow-auto">
             <div className="max-w-6xl w-full">
@@ -376,8 +342,7 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 11: Contribuições ── */
-      case 11:
+      case 10:
         return (
           <div className="flex items-center justify-center h-full px-8">
             <div className="max-w-4xl w-full">
@@ -397,8 +362,7 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 12: FAQ ── */
-      case 12:
+      case 11:
         return (
           <div className="flex items-center justify-center h-full px-8 overflow-auto">
             <div className="max-w-3xl w-full py-12">
@@ -417,8 +381,7 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 13: Mapa Lowbyrinth™ ── */
-      case 13:
+      case 12:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
             <div className="w-full max-w-5xl h-[60vh]">
@@ -430,8 +393,7 @@ const Defense = () => {
           </div>
         );
 
-      /* ── Block 14: Encerramento ── */
-      case 14:
+      case 13:
         return (
           <VideoEmbed
             src="https://www.youtube.com/embed/g3SDaD16c7w?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
@@ -450,10 +412,8 @@ const Defense = () => {
       className="fixed inset-0 bg-black text-white overflow-hidden cursor-pointer select-none"
       onClick={handleClick}
     >
-      {/* Preloader */}
       <VideoPreloader blockIndex={currentBlock} />
 
-      {/* Block content */}
       <AnimatePresence mode="wait">
         <motion.div
           key={currentBlock + (currentBlock === 7 ? `-${currentTeaser}` : "")}
@@ -467,7 +427,18 @@ const Defense = () => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Bottom indicator (hidden on block 0) */}
+      {/* Exit button */}
+      {currentBlock > 0 && (
+        <button
+          onClick={(e) => { e.stopPropagation(); navigate("/"); }}
+          className="absolute top-4 left-4 z-20 text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
+          title="Voltar ao portal (ESC)"
+        >
+          <X className="h-5 w-5" />
+        </button>
+      )}
+
+      {/* Bottom indicator */}
       {currentBlock > 0 && (
         <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-6 py-4 pointer-events-none z-20">
           <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-600">
@@ -479,11 +450,21 @@ const Defense = () => {
         </div>
       )}
 
-      {/* Next button (hidden on block 0 and last block) */}
+      {/* Prev button */}
+      {currentBlock > 1 && (
+        <button
+          onClick={(e) => { e.stopPropagation(); goPrev(); }}
+          className="absolute bottom-4 left-6 z-20 flex items-center gap-1 text-[10px] font-semibold uppercase tracking-widest text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
+        >
+          <ArrowLeft className="h-3 w-3" /> Prev
+        </button>
+      )}
+
+      {/* Next button */}
       {currentBlock > 0 && currentBlock < BLOCKS.length - 1 && (
         <button
           onClick={(e) => { e.stopPropagation(); goNext(); }}
-          className="absolute bottom-4 right-1/2 translate-x-1/2 md:right-6 md:translate-x-0 md:bottom-12 z-20 flex items-center gap-1 text-[10px] font-semibold uppercase tracking-widest text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
+          className="absolute bottom-4 right-6 z-20 flex items-center gap-1 text-[10px] font-semibold uppercase tracking-widest text-neutral-700 hover:text-neutral-400 transition-colors pointer-events-auto"
         >
           Next <ArrowRight className="h-3 w-3" />
         </button>
