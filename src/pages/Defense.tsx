@@ -272,11 +272,7 @@ const Defense = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
-                    className={`border rounded-lg p-6 md:p-8 ${
-                      c.highlight
-                        ? "border-primary/40 bg-primary/10 shadow-[0_0_25px_hsl(300_60%_55%/0.15)]"
-                        : "border-border bg-card/30"
-                    }`}
+                    className="border rounded-lg p-6 md:p-8 border-primary/40 bg-primary/10 shadow-[0_0_25px_hsl(300_60%_55%/0.15)]"
                   >
                     <p className={`text-sm font-semibold uppercase tracking-wide mb-2 ${c.highlight ? "text-primary" : "text-foreground"}`}>
                       {c.nome}
