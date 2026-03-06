@@ -59,10 +59,10 @@ const CONTRIBUICOES = [
 ];
 
 /* ─── Video embed component ─── */
-const VideoEmbed = ({ src, fadeIn = true }: { src: string; fadeIn?: boolean }) => {
+const VideoEmbed = ({ src, fadeIn = true, contained = false }: { src: string; fadeIn?: boolean; contained?: boolean }) => {
   const [loaded, setLoaded] = useState(false);
   return (
-    <div className="relative w-full h-full flex items-center justify-center">
+    <div className={`relative flex items-center justify-center ${contained ? 'w-full aspect-video' : 'w-full h-full'}`}>
       <iframe
         src={src}
         className="w-full h-full absolute inset-0"
@@ -167,10 +167,15 @@ const Defense = () => {
         return (
           <div className="relative w-full h-full">
             {!videoEnded && (
-              <VideoEmbed
-                src="https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
-                fadeIn
-              />
+              <div className="flex flex-col items-center justify-center h-full px-8">
+                <div className="w-[84%]">
+                  <VideoEmbed
+                    src="https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
+                    fadeIn
+                    contained
+                  />
+                </div>
+              </div>
             )}
             <AnimatePresence>
               {videoEnded && (
@@ -343,27 +348,30 @@ const Defense = () => {
       case 7:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <div className="w-full max-w-4xl aspect-video relative">
+            <div className="w-[84%]">
+              <div className="flex items-center justify-between mb-4">
+                <div className="text-left">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-foreground/80">
+                    {currentTeaser + 1}/6 — {TEASERS[currentTeaser].name}
+                  </p>
+                  <p className="mt-1 text-[11px] text-muted-foreground max-w-md leading-relaxed italic">
+                    {TEASERS[currentTeaser].legend}
+                  </p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <button onClick={() => currentTeaser > 0 && setCurrentTeaser((p) => p - 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
+                    <ArrowRight className="h-4 w-4 rotate-180" />
+                  </button>
+                  <button onClick={() => currentTeaser < 5 && setCurrentTeaser((p) => p + 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                </div>
+              </div>
               <VideoEmbed
                 src={`https://player.vimeo.com/video/${TEASERS[currentTeaser].id}?autoplay=1&background=0&muted=0`}
                 fadeIn
+                contained
               />
-            </div>
-            <div className="mt-6 flex items-center gap-4">
-              <button onClick={() => currentTeaser > 0 && setCurrentTeaser((p) => p - 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
-                <ArrowRight className="h-4 w-4 rotate-180" />
-              </button>
-              <div className="text-center">
-                <p className="text-xs font-semibold uppercase tracking-widest text-foreground/80">
-                  {currentTeaser + 1}/6 — {TEASERS[currentTeaser].name}
-                </p>
-                <p className="mt-2 text-[11px] text-muted-foreground max-w-md leading-relaxed italic">
-                  {TEASERS[currentTeaser].legend}
-                </p>
-              </div>
-              <button onClick={() => currentTeaser < 5 && setCurrentTeaser((p) => p + 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
-                <ArrowRight className="h-4 w-4" />
-              </button>
             </div>
           </div>
         );
@@ -371,13 +379,14 @@ const Defense = () => {
       case 8:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <p className="text-base text-foreground/80 leading-relaxed text-center mb-6 max-w-2xl">
-              A convergência dessas ideias aparece no trailer do filme LowMovie™, que sintetiza o conceito de Lowbyrinth™.
-            </p>
-            <div className="w-full max-w-5xl aspect-video relative">
+            <div className="w-[84%]">
+              <p className="text-base text-foreground/80 leading-relaxed text-left mb-4">
+                A convergência dessas ideias aparece no trailer do filme LowMovie™, que sintetiza o conceito de Lowbyrinth™.
+              </p>
               <VideoEmbed
                 src="https://player.vimeo.com/video/819603753?autoplay=1&muted=0"
                 fadeIn
+                contained
               />
             </div>
           </div>
@@ -494,10 +503,15 @@ const Defense = () => {
 
       case 13:
         return (
-          <VideoEmbed
-            src="https://www.youtube.com/embed/g3SDaD16c7w?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
-            fadeIn
-          />
+          <div className="flex items-center justify-center h-full px-8">
+            <div className="w-[84%]">
+              <VideoEmbed
+                src="https://www.youtube.com/embed/g3SDaD16c7w?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
+                fadeIn
+                contained
+              />
+            </div>
+          </div>
         );
 
       default:
