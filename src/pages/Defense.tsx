@@ -293,7 +293,7 @@ const Defense = () => {
 
       case 5:
         return (
-          <div className="flex items-center justify-center h-full px-8">
+          <div className="flex items-center justify-center h-full px-8 overflow-auto">
             <div className="max-w-5xl w-full">
               <div className="text-center mb-10 space-y-3 max-w-2xl mx-auto">
                 <p className="text-base text-foreground/80 leading-relaxed">
@@ -322,6 +322,11 @@ const Defense = () => {
                   </div>
                 ))}
               </div>
+              <img
+                src="/images/low-crew.png"
+                alt="LowPressure Fam"
+                className="w-full rounded-lg mt-8 object-cover max-h-[40vh]"
+              />
             </div>
           </div>
         );
