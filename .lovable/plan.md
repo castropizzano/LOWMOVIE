@@ -1,24 +1,28 @@
 
 
-## Reorganizar nós do Lowbyrinth em padrão octogonal
+## Mosaico de 12 fotos no Bloco 9
 
-Reposicionar os 9 nós para ocupar os 8 pontos cardeais/intercardeais + centro, inspirado no símbolo geométrico da imagem.
+### Assets
+Copiar as 12 fotos enviadas (`01.jpg`–`12.jpg`) para `public/images/fotos/`.
 
-### Alteração em `src/data/lowbyrinth.ts`
+### Alteração em `src/pages/Defense.tsx` (Bloco 9, linhas 400-421)
 
-Novas coordenadas (x%, y%):
+Substituir os dois grids (stills 3-col + sequence 5-col) por um mosaico CSS Grid de 4 colunas com spans variados. Todas as fotos são portrait, então o layout alterna entre `col-span-1` e `col-span-2` para criar ritmo visual:
 
-| Posição | Nó | x | y |
-|---|---|---|---|
-| Centro | **Conclusão** | 50 | 50 |
-| Topo | Apresentação | 50 | 12 |
-| Topo-direita | Metodologia | 82 | 18 |
-| Direita | Estrutura | 88 | 50 |
-| Baixo-direita | O Coletivo | 82 | 82 |
-| Baixo | Contribuições | 50 | 88 |
-| Baixo-esquerda | Questões | 18 | 82 |
-| Esquerda | Conceitos | 12 | 50 |
-| Topo-esquerda | O Filme | 18 | 18 |
+```text
+┌────────┬────────┬────────┬────────┐
+│ 01 2c  │        │ 02 1c  │ 03 1c  │  row 1
+├────────┼────────┼────────┼────────┤
+│ 04 1c  │ 05 1c  │ 06 2c  │        │  row 2
+├────────┼────────┼────────┼────────┤
+│ 07 2c  │        │ 08 1c  │ 09 1c  │  row 3
+├────────┼────────┼────────┼────────┤
+│ 10 1c  │ 11 1c  │ 12 2c  │        │  row 4
+└────────┴────────┴────────┴────────┘
+```
 
-Todas as derivas existentes permanecem iguais. Apenas as coordenadas `x` e `y` de cada nó mudam.
+Cada imagem: `object-cover rounded h-48 md:h-56 w-full`. Gap de `gap-2`. O texto narrativo acima permanece inalterado.
+
+### Arquivo editado
+- `src/pages/Defense.tsx` -- bloco `case 9`
 
