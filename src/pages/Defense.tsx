@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight, X, ChevronDown } from "lucide-react";
 import ConceptGraph from "@/components/ConceptGraph";
 import ImageLightbox from "@/components/ImageLightbox";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
@@ -90,6 +90,35 @@ const VideoPreloader = ({ blockIndex }: { blockIndex: number }) => {
   if (nextBlock === 7) src = `https://player.vimeo.com/video/${TEASERS[0].id}?autoplay=0&background=1`;
   if (!src) return null;
   return <iframe src={src} className="absolute w-0 h-0 opacity-0 pointer-events-none" tabIndex={-1} />;
+};
+
+/* ─── FAQ Item with click-to-reveal ─── */
+const FAQCard = ({ item }: { item: { q: string; a: string } }) => {
+  const [open, setOpen] = useState(false);
+  return (
+    <div
+      onClick={(e) => { e.stopPropagation(); setOpen(!open); }}
+      className="border border-border rounded-lg p-8 bg-card/30 cursor-pointer hover:border-primary/40 hover:bg-card/50 transition-all duration-300"
+    >
+      <div className="flex items-center justify-between">
+        <p className="text-lg md:text-xl font-semibold uppercase tracking-wide text-foreground">{item.q}</p>
+        <ChevronDown className={`h-5 w-5 text-muted-foreground transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
+      </div>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-left mt-4 pt-4 border-t border-border/50">{item.a}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
 };
 
 /* ─── Main component ─── */
@@ -186,11 +215,11 @@ const Defense = () => {
                   transition={{ duration: 0.6 }}
                   className="absolute inset-0 z-10 flex items-center justify-center bg-background"
                 >
-                  <div className="max-w-3xl px-8 text-center space-y-3">
-                    <p className="text-base text-foreground/80 leading-relaxed">
+                  <div className="max-w-5xl px-8 text-left space-y-4">
+                    <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                       "Essa pesquisa começou tentando compreender o que acontece nesse tipo de gesto."
                     </p>
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                    <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
                       "Um gesto que acontece entre corpo, cidade e risco — e que muitas vezes acaba se transformando em imagem."
                     </p>
                   </div>
@@ -206,7 +235,7 @@ const Defense = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl">
               <img src="/images/poster-lowmovie.png" alt="Poster LowMovie" className="w-full max-w-sm mx-auto rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500" />
               <div className="text-left">
-                <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                   Dissertação de Mestrado — Março 2026
                 </p>
                 <h2 className="text-4xl md:text-6xl font-bold uppercase leading-none tracking-tight text-foreground">
@@ -215,20 +244,20 @@ const Defense = () => {
                 <p className="mt-2 text-lg md:text-xl font-medium text-foreground/80 uppercase tracking-wide">
                   e o Labirinto Criativo
                 </p>
-                <div className="mt-6 space-y-3">
-                  <p className="text-base text-foreground/80 leading-relaxed">
+                <div className="mt-6 space-y-4">
+                  <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                     A dissertação que apresento hoje investiga como práticas subculturais, como o skate, podem produzir linguagem cinematográfica e conhecimento estético.
                   </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     O objeto central da pesquisa é o processo criativo do coletivo LowPressure™, a partir da produção do filme LowMovie™.
                   </p>
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                     Em vez de observar esse processo à distância, a pesquisa foi construída a partir dele.
                   </p>
                 </div>
                 <div className="mt-8 space-y-1">
-                  <p className="text-sm text-foreground/90">Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR</p>
-                  <p className="text-xs text-muted-foreground">Castro Pizzano · Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
+                  <p className="text-base text-foreground/90">Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR</p>
+                  <p className="text-sm text-muted-foreground">Castro Pizzano · Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
                 </div>
               </div>
             </div>
@@ -238,11 +267,11 @@ const Defense = () => {
       case 3:
         return (
           <div className="flex flex-col items-center justify-center h-full p-8">
-            <div className="text-center mb-6 max-w-3xl space-y-2">
-              <p className="text-base text-foreground/80 leading-relaxed">
+            <div className="text-left mb-6 max-w-5xl space-y-4">
+              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O coletivo LowPressure™ se organiza como um espaço de experimentação estética onde skate, imagem e cidade se encontram.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Esse encontro produz não apenas registros de manobras, mas uma forma própria de linguagem audiovisual.
               </p>
             </div>
@@ -259,31 +288,31 @@ const Defense = () => {
       case 4:
         return (
           <div className="flex items-center justify-center h-full px-8">
-            <div className="max-w-4xl w-full">
-              <div className="text-center mb-10 space-y-3 max-w-2xl mx-auto">
-                <p className="text-base text-foreground/80 leading-relaxed">
+            <div className="max-w-5xl w-full">
+              <div className="text-left mb-10 space-y-4 max-w-5xl">
+                <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Para compreender esse processo, proponho o conceito de Lowbyrinth™.
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   O Lowbyrinth descreve um processo criativo que não se organiza de forma linear.
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Ele opera como um labirinto sensível, onde tentativa, erro, descoberta e improviso fazem parte da criação.
                 </p>
               </div>
-              <div className="grid gap-4 md:grid-cols-2 pointer-events-none">
+              <div className="grid gap-4 md:grid-cols-2">
                 {CONCEITOS.map((c, i) => (
                   <motion.div
                     key={c.nome}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
-                    className="border rounded-lg p-6 md:p-8 border-primary/40 bg-primary/10 shadow-[0_0_25px_hsl(300_60%_55%/0.15)]"
+                    className="border rounded-lg p-8 border-primary/40 bg-primary/10 shadow-[0_0_25px_hsl(300_60%_55%/0.15)] hover:scale-[1.03] hover:shadow-[0_0_40px_hsl(300_60%_55%/0.25)] transition-all duration-300 cursor-default"
                   >
-                    <p className="text-sm font-semibold uppercase tracking-wide mb-2 text-primary">
+                    <p className="text-lg md:text-xl font-semibold uppercase tracking-wide mb-2 text-primary">
                       {c.nome}
                     </p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{c.def}</p>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{c.def}</p>
                   </motion.div>
                 ))}
               </div>
@@ -295,17 +324,17 @@ const Defense = () => {
         return (
           <div className="flex items-center justify-center h-full px-8 overflow-auto">
             <div className="max-w-5xl w-full">
-              <div className="text-center mb-10 space-y-3 max-w-2xl mx-auto">
-                <p className="text-base text-foreground/80 leading-relaxed">
+              <div className="text-left mb-10 space-y-4 max-w-5xl">
+                <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Metodologicamente, a pesquisa se insere no campo da pesquisa-criação implicada.
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Nesse modelo, prática artística e reflexão teórica não são separadas.
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   O processo criativo funciona simultaneamente como produção estética e como campo de investigação.
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   O rigor da pesquisa não está na neutralidade, mas na reflexividade sobre o próprio processo criativo.
                 </p>
               </div>
@@ -315,10 +344,9 @@ const Defense = () => {
                   { title: "Escuta", icon: "◉", desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir." },
                   { title: "Improviso", icon: "⚡", desc: "Abertura ao imprevisto como dado epistemológico legítimo. Arquitetura móvel capaz de se refazer a cada encontro." },
                 ].map((e) => (
-                  <div key={e.title} className="border border-border rounded-lg p-6 md:p-8 bg-card/30">
-                    
-                    <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">{e.title}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{e.desc}</p>
+                  <div key={e.title} className="border border-border rounded-lg p-8 bg-card/30 hover:border-primary/30 hover:scale-[1.03] transition-all duration-300 cursor-default">
+                    <p className="text-lg md:text-xl font-semibold uppercase tracking-wide text-foreground mb-3">{e.title}</p>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{e.desc}</p>
                   </div>
                 ))}
               </div>
@@ -334,17 +362,17 @@ const Defense = () => {
       case 6:
         return (
           <div className="flex items-center justify-center h-full">
-            <div className="text-center max-w-2xl px-8 space-y-6">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/70">
+            <div className="text-left max-w-5xl px-8 space-y-6">
+              <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground/70">
                 LowPressure™ apresenta
               </p>
               <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-wide text-foreground">
                 Fragmentos simbólicos
               </h2>
-              <p className="text-base text-foreground/80 leading-relaxed">
+              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 Durante o processo de criação do LowMovie™, produzimos uma série de peças audiovisuais que funcionam como fragmentos simbólicos do universo do filme.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Esses fragmentos não revelam diretamente a obra, mas expressam os princípios que estruturam o processo criativo do coletivo.
               </p>
             </div>
@@ -357,19 +385,19 @@ const Defense = () => {
             <div className="w-[84%]">
               <div className="flex items-center justify-between mb-4">
                 <div className="text-left">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-foreground/80">
+                  <p className="text-sm font-semibold uppercase tracking-widest text-foreground/80">
                     {currentTeaser + 1}/6 — {TEASERS[currentTeaser].name}
                   </p>
-                  <p className="mt-1 text-[11px] text-muted-foreground max-w-md leading-relaxed italic">
+                  <p className="mt-1 text-sm text-muted-foreground max-w-md leading-relaxed italic">
                     {TEASERS[currentTeaser].legend}
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
                   <button onClick={() => currentTeaser > 0 && setCurrentTeaser((p) => p - 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
-                    <ArrowRight className="h-4 w-4 rotate-180" />
+                    <ArrowRight className="h-5 w-5 rotate-180" />
                   </button>
                   <button onClick={() => currentTeaser < 5 && setCurrentTeaser((p) => p + 1)} className="text-muted-foreground/70 hover:text-foreground transition-colors">
-                    <ArrowRight className="h-4 w-4" />
+                    <ArrowRight className="h-5 w-5" />
                   </button>
                 </div>
               </div>
@@ -390,7 +418,7 @@ const Defense = () => {
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
             <div className="w-[84%]">
-              <p className="text-base text-foreground/80 leading-relaxed text-left mb-4">
+              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4">
                 A convergência dessas ideias aparece no trailer do filme LowMovie™, que sintetiza o conceito de Lowbyrinth™.
               </p>
               <VideoEmbed
@@ -405,14 +433,14 @@ const Defense = () => {
       case 9:
         return (
           <div className="flex flex-col items-center justify-center h-full p-8 overflow-auto">
-            <div className="text-center mb-6 max-w-2xl space-y-2">
-              <p className="text-base text-foreground/80 leading-relaxed">
+            <div className="text-left mb-6 max-w-5xl space-y-4">
+              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O LowMovie™ não é apenas objeto da pesquisa.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Ele é também o espaço onde a investigação acontece.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 O filme articula corpo, câmera e cidade como operadores de linguagem.
               </p>
             </div>
@@ -449,16 +477,16 @@ const Defense = () => {
       case 10:
         return (
           <div className="flex items-center justify-center h-full px-8 overflow-auto">
-            <div className="max-w-4xl w-full py-8">
-              <p className="text-base text-foreground/80 leading-relaxed text-center mb-10">
+            <div className="max-w-5xl w-full py-8">
+              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-10">
                 A pesquisa propõe três contribuições principais.
               </p>
               <div className="grid gap-6 md:grid-cols-3">
                 {CONTRIBUICOES.map((c, i) => (
-                  <div key={i} className="border border-border rounded-lg p-6 md:p-8 bg-card/30">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/70 mb-3">{String(i + 1).padStart(2, "0")}</p>
-                    <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-3">{c.title}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{c.desc}</p>
+                  <div key={i} className="border border-border rounded-lg p-8 bg-card/30 hover:border-primary/30 hover:scale-[1.03] transition-all duration-300 cursor-default">
+                    <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground/70 mb-3">{String(i + 1).padStart(2, "0")}</p>
+                    <p className="text-lg md:text-xl font-semibold uppercase tracking-wide text-foreground mb-3">{c.title}</p>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{c.desc}</p>
                   </div>
                 ))}
               </div>
@@ -474,21 +502,18 @@ const Defense = () => {
       case 11:
         return (
           <div className="flex items-center justify-center h-full px-8 overflow-auto">
-            <div className="max-w-[900px] w-full py-12">
-              <div className="text-center mb-12 space-y-2">
-                <p className="text-base text-foreground/80 leading-relaxed">
+            <div className="max-w-5xl w-full py-12">
+              <div className="text-left mb-12 space-y-4">
+                <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Toda pesquisa em arte opera em tensões conceituais.
                 </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Em vez de evitá-las, optei por torná-las visíveis.
                 </p>
               </div>
-              <div className="space-y-6 pointer-events-none">
+              <div className="space-y-4">
                 {FAQ_ITEMS.map((item, i) => (
-                  <div key={i} className="border border-border rounded-lg p-6 bg-card/30">
-                    <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-3">{item.q}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.a}</p>
-                  </div>
+                  <FAQCard key={i} item={item} />
                 ))}
               </div>
             </div>
@@ -498,20 +523,20 @@ const Defense = () => {
       case 12:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <p className="text-base text-foreground/80 leading-relaxed text-center mb-4">
+            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4 max-w-5xl w-full">
               O portal organiza a pesquisa como um percurso navegável.
             </p>
             <div className="w-full max-w-5xl h-[50vh]">
               <ConceptGraph />
             </div>
-            <div className="mt-6 text-center space-y-2">
-              <p className="text-base text-foreground/80 leading-relaxed">
+            <div className="mt-6 text-left max-w-5xl w-full space-y-4">
+              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O LowMovie™ é um filme-labirinto.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Não se assiste a ele de fora.
               </p>
-              <p className="mt-2 text-lg font-semibold uppercase tracking-widest text-foreground animate-pulse">
+              <p className="mt-2 text-2xl md:text-3xl font-semibold uppercase tracking-widest text-foreground animate-pulse">
                 É preciso entrar.
               </p>
             </div>
