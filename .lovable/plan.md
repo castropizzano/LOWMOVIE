@@ -1,24 +1,17 @@
 
 
-## Reorganizar nós do Lowbyrinth em padrão octogonal
+## Plano: Adicionar Lattes e contato ao footer
 
-Reposicionar os 9 nós para ocupar os 8 pontos cardeais/intercardeais + centro, inspirado no símbolo geométrico da imagem.
+### O que muda
+Adicionar uma linha ao footer em `src/components/Layout.tsx` com o link do Lattes e o email de contato.
 
-### Alteração em `src/data/lowbyrinth.ts`
+### Implementação
+No footer do Layout (após o bloco de linha de pesquisa, ~linha 47), adicionar uma nova `div` com:
+- Link para o Lattes: `http://lattes.cnpq.br/5523516994010198` (abre em nova aba)
+- Email: `castropizzano@gmail.com` (como `mailto:` link)
 
-Novas coordenadas (x%, y%):
+Seguindo o mesmo estilo visual existente: `text-xs text-muted-foreground`, layout flex responsivo com `md:flex-row md:justify-between`.
 
-| Posição | Nó | x | y |
-|---|---|---|---|
-| Centro | **Conclusão** | 50 | 50 |
-| Topo | Apresentação | 50 | 12 |
-| Topo-direita | Metodologia | 82 | 18 |
-| Direita | Estrutura | 88 | 50 |
-| Baixo-direita | O Coletivo | 82 | 82 |
-| Baixo | Contribuições | 50 | 88 |
-| Baixo-esquerda | Questões | 18 | 82 |
-| Esquerda | Conceitos | 12 | 50 |
-| Topo-esquerda | O Filme | 18 | 18 |
-
-Todas as derivas existentes permanecem iguais. Apenas as coordenadas `x` e `y` de cada nó mudam.
+### Resultado
+Todas as páginas passam a exibir Lattes e email no rodapé, de forma discreta e consistente com o design atual.
 
