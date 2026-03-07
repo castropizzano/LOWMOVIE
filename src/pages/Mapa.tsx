@@ -6,7 +6,7 @@ const Mapa = () => {
   return (
     <Layout>
       <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle
             title="Mapa Conceitual"
             subtitle="Cartografia interativa das relações entre autores, conceitos e campos temáticos"
