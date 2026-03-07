@@ -92,7 +92,7 @@ const Coletivo = () => {
           <AnimatedSection delay={0.3} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Galeria</h3>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => {
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((i) => {
                 const num = String(i).padStart(2, '0');
                 return (
                   <ImageLightbox
