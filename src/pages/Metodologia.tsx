@@ -70,7 +70,7 @@ const Metodologia = () => {
                 <div className="border-l-2 border-primary/20 pl-4">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Convivência Criativa</p>
                   <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                    O pesquisador participa das dinâmicas de produção e montagem, contribuindo ativamente para
+                    Participo das dinâmicas de produção e montagem, contribuindo ativamente para
                     as decisões estéticas do coletivo.
                   </p>
                 </div>
