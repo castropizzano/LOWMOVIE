@@ -53,7 +53,7 @@ const FAQ = () => {
 
           <AnimatedSection delay={0.05}>
             <p className="text-base text-foreground/80 leading-relaxed text-justify mb-16">
-              A pesquisa opera em um campo híbrido entre prática artística e reflexão teórica. Nesse contexto, algumas tensões se colocam de maneira inevitável. Abaixo, enfrento diretamente os pontos mais sensíveis do trabalho.
+              A pesquisa se move num campo híbrido entre prática artística e reflexão teórica. Nesse contexto, algumas tensões se colocam de maneira inevitável. Abaixo, enfrento diretamente os pontos mais sensíveis do trabalho.
             </p>
           </AnimatedSection>
 

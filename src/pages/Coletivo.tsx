@@ -57,8 +57,7 @@ const Coletivo = () => {
                 improvisados</span>. A cidade não é palco — é co-autora.
               </p>
               <p>
-                Herzog afirma que <em>"o erro é algo que beira o sagrado... é preciso aceitar a tentativa e
-                erro"</em>. No LowPressure™, o erro não é falha — é material criativo.
+                Como sugere Herzog, no LowPressure™ o erro não é falha — é material criativo.
               </p>
               <p>
                 A <span className="text-primary font-semibold">LowZine</span> funciona como arquivo vivo.
