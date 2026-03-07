@@ -98,7 +98,7 @@ const Filme = () => {
               </p>
               <p>
                 A filmagem funciona como <strong>corpo-câmera</strong> — extensão sensível do realizador em movimento.
-                A montagem opera como <strong>artbook</strong>, reorganizando fragmentos em constelações de sentido.
+                A montagem atua como <strong>artbook</strong>, reorganizando fragmentos em constelações de sentido.
                 O <strong>glitch</strong> emerge como linguagem de fratura.
               </p>
               <p>

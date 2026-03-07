@@ -28,7 +28,7 @@ const questions = [
   },
   {
     q: "Dimensão política",
-    a: "A obra opera como micropolítica do gesto e da ocupação sensível da cidade. Sua dimensão política é inseparável da prática, não declarativa. Criar sem esperar autorização institucional configura, por si só, uma micropolítica do fazer.",
+    a: "A obra age como micropolítica do gesto e da ocupação sensível da cidade. Sua dimensão política é inseparável da prática, não declarativa. Criar sem esperar autorização institucional configura, por si só, uma micropolítica do fazer.",
   },
   {
     q: "Autonomia conceitual",

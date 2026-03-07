@@ -47,7 +47,7 @@ const FAQ_ITEMS = [
   { q: "Símbolo e signo", a: "O símbolo é mobilizado como imagem condensadora de sentido, não como unidade de análise semiótica." },
   { q: "Rigor metodológico", a: "O rigor reside na reflexividade explícita, na transparência do posicionamento e na articulação teórica consistente." },
   { q: "Delimitação do objeto", a: "O objeto central é o filme LowMovie™ e seus processos criativos. O coletivo LowPressure™ é analisado como condição de produção." },
-  { q: "Dimensão política", a: "A obra opera como micropolítica do gesto e da ocupação sensível da cidade." },
+  { q: "Dimensão política", a: "A obra age como micropolítica do gesto e da ocupação sensível da cidade." },
   { q: "Autonomia conceitual", a: "A tese sustenta-se independentemente da referência junguiana. O Lowbyrinth™ funciona como imagem-conceito operacional." },
   { q: "Contribuição inédita", a: "O ineditismo reside no deslocamento do skate para o campo estético-metodológico." },
   { q: "Skate ou cinema?", a: "É sobre cinema a partir do skate. O skate não é o objeto final da investigação, mas a matriz." },
@@ -315,7 +315,7 @@ const Defense = () => {
                   O Lowbyrinth™ descreve um processo criativo que não se organiza de forma linear.
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Ele opera como um labirinto sensível, onde tentativa, erro, descoberta e improviso fazem parte da criação.
+                  Ele funciona como um labirinto sensível, onde tentativa, erro, descoberta e improviso fazem parte da criação.
                 </p>
               </div>
               <div className="grid gap-4 md:grid-cols-2">
@@ -532,7 +532,7 @@ const Defense = () => {
             <div className="max-w-5xl w-full">
               <div className="text-left mb-12 space-y-4">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                  Toda pesquisa em arte opera em tensões conceituais.
+                  Toda pesquisa em arte se move entre tensões conceituais.
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Em vez de evitá-las, optei por torná-las visíveis.

@@ -39,7 +39,7 @@ const Apresentacao = () => {
               </p>
               <p>
                 O coletivo <span className="text-primary font-semibold">LowPressure™</span> funciona como
-                condição de produção e como ecossistema criativo no qual se gestam as decisões estéticas do
+                condição de produção e como ecossistema criativo no qual se formam as decisões estéticas do
                 filme. Sua estrutura horizontal, baseada em vínculos afetivos e em uma ética de produção
                 autônoma, configura um modo de fazer cinema que prescinde das hierarquias tradicionais da
                 indústria audiovisual. O LowMovie™, portanto, não é apenas um produto fílmico: é a
