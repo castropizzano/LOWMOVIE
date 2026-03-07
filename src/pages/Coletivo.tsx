@@ -52,7 +52,7 @@ const Coletivo = () => {
                 O "rato" é figura de sobrevivência e inteligência tática — <em>astúcias do tempo e do desvio</em>.
               </p>
               <p>
-                Lefebvre complementa: o espaço urbano é produção social em disputa. O skate opera nesse intervalo,
+                Lefebvre complementa: o espaço urbano é produção social em disputa. O skate atua nesse intervalo,
                 <span className="text-primary font-semibold"> transformando trajetos planejados em percursos
                 improvisados</span>. A cidade não é palco — é co-autora.
               </p>

@@ -203,7 +203,7 @@ const Filme = () => {
           <AnimatedSection delay={0.4} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">
               
-              Soundtrack
+              Trilha Sonora
             </h3>
             <div className="grid gap-4 sm:grid-cols-2">
               <a
