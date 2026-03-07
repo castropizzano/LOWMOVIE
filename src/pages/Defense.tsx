@@ -176,7 +176,10 @@ const Defense = () => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") goNext();
       else if (e.key === "ArrowLeft") goPrev();
-      else if (e.key === "Escape") navigate("/");
+      else if (e.key === "Escape") {
+        if (document.querySelector("[role='dialog'][data-state='open']")) return;
+        navigate("/");
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
@@ -239,8 +242,8 @@ const Defense = () => {
 
       case 2:
         return (
-          <div className="flex items-center justify-center h-full px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl my-auto">
               <img src="/images/poster-lowmovie.png" alt="Poster LowMovie" className="w-full max-w-sm mx-auto rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500" />
               <div className="text-left">
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
@@ -274,7 +277,7 @@ const Defense = () => {
 
       case 3:
         return (
-          <div className="flex flex-col items-center justify-center h-full p-8">
+          <div className="h-full overflow-y-auto p-8 pt-14 pb-16 flex flex-col items-center justify-start">
             <div className="text-left mb-6 max-w-5xl space-y-4">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O coletivo LowPressure™ se organiza como um espaço de experimentação estética onde skate, imagem e cidade se encontram.
@@ -287,7 +290,7 @@ const Defense = () => {
               <img
                 src="/images/low-kids.png"
                 alt="Coletivo LowPressure na rua"
-                className="w-full rounded-lg shadow-lg object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full max-h-[50vh] rounded-lg shadow-lg object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
           </div>
@@ -295,8 +298,8 @@ const Defense = () => {
 
       case 4:
         return (
-          <div className="flex items-center justify-center h-full px-8">
-            <div className="max-w-5xl w-full">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
+            <div className="max-w-5xl w-full my-auto">
               <div className="text-left mb-10 space-y-4 max-w-5xl">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Para compreender esse processo, proponho o conceito de Lowbyrinth™.
@@ -330,8 +333,8 @@ const Defense = () => {
 
       case 5:
         return (
-          <div className="flex items-center justify-center h-full px-8 overflow-auto">
-            <div className="max-w-5xl w-full">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
+            <div className="max-w-5xl w-full my-auto">
               <div className="text-left mb-10 space-y-4 max-w-5xl">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Metodologicamente, a pesquisa se insere no campo da pesquisa-criação implicada.
@@ -440,7 +443,7 @@ const Defense = () => {
 
       case 9:
         return (
-          <div className="flex flex-col items-center justify-center h-full p-8 overflow-auto">
+          <div className="h-full overflow-y-auto p-8 pt-14 pb-16 flex flex-col items-center justify-start">
             <div className="text-left mb-6 max-w-5xl space-y-4">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O LowMovie™ não é apenas objeto da pesquisa.
@@ -472,7 +475,7 @@ const Defense = () => {
                     key={`foto-${i}`}
                     src={foto.src}
                     alt={`Foto ${i + 1}`}
-                    className={`${foto.span} h-48 md:h-56 rounded border-none`}
+                    className={`${foto.span} h-32 md:h-48 rounded border-none`}
                     imageClassName=""
                     caption="@peralta_jpg"
                   />
@@ -484,8 +487,8 @@ const Defense = () => {
 
       case 10:
         return (
-          <div className="flex items-center justify-center h-full px-8 overflow-auto">
-            <div className="max-w-5xl w-full py-8">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
+            <div className="max-w-5xl w-full my-auto">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-10">
                 A pesquisa propõe três contribuições principais.
               </p>
@@ -509,8 +512,8 @@ const Defense = () => {
 
       case 11:
         return (
-          <div className="flex items-center justify-center h-full px-8 overflow-auto">
-            <div className="max-w-5xl w-full py-12">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
+            <div className="max-w-5xl w-full my-auto">
               <div className="text-left mb-12 space-y-4">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Toda pesquisa em arte opera em tensões conceituais.
