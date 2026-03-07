@@ -1,13 +1,24 @@
 
 
-## Lightbox — Expandir para 80% da tela
+## Reorganizar nós do Lowbyrinth em padrão octogonal
 
-**Problema**: A lightbox atual usa `max-w-5xl w-[95vw]` e `max-h-[85vh]`, mas a imagem não ocupa proporcionalmente 80% da viewport.
+Reposicionar os 9 nós para ocupar os 8 pontos cardeais/intercardeais + centro, inspirado no símbolo geométrico da imagem.
 
-**Solução**: Ajustar o `DialogContent` e a `img` interna no `ImageLightbox.tsx` para que a imagem ocupe ~80% da largura e altura da tela, mantendo proporção:
+### Alteração em `src/data/lowbyrinth.ts`
 
-- `DialogContent`: mudar para `w-[80vw] h-[80vh] max-w-none` (remover `max-w-5xl`)
-- `img`: mudar para `max-w-[80vw] max-h-[80vh] object-contain`
+Novas coordenadas (x%, y%):
 
-Isso afeta todas as lightboxes do portal e do Defense Mode de uma só vez, pois todos usam o mesmo componente `ImageLightbox`.
+| Posição | Nó | x | y |
+|---|---|---|---|
+| Centro | **Conclusão** | 50 | 50 |
+| Topo | Apresentação | 50 | 12 |
+| Topo-direita | Metodologia | 82 | 18 |
+| Direita | Estrutura | 88 | 50 |
+| Baixo-direita | O Coletivo | 82 | 82 |
+| Baixo | Contribuições | 50 | 88 |
+| Baixo-esquerda | Questões | 18 | 82 |
+| Esquerda | Conceitos | 12 | 50 |
+| Topo-esquerda | O Filme | 18 | 18 |
+
+Todas as derivas existentes permanecem iguais. Apenas as coordenadas `x` e `y` de cada nó mudam.
 

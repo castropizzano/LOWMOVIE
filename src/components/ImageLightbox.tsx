@@ -40,7 +40,7 @@ const ImageLightbox = ({
           />
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-5xl w-[95vw] p-0 overflow-hidden bg-transparent border-none shadow-none">
+      <DialogContent className="w-[80vw] h-[80vh] max-w-none p-0 overflow-hidden bg-transparent border-none shadow-none flex items-center justify-center">
         <VisuallyHidden>
           <DialogTitle>{alt}</DialogTitle>
         </VisuallyHidden>
@@ -48,7 +48,7 @@ const ImageLightbox = ({
           <img 
             src={src} 
             alt={alt} 
-            className="max-w-full max-h-[85vh] object-contain rounded-md shadow-2xl"
+            className="max-w-[80vw] max-h-[80vh] object-contain rounded-md shadow-2xl"
           />
           {caption && (
             <p className="self-end mt-2 mr-1 text-[11px] text-muted-foreground/70 tracking-wide">
