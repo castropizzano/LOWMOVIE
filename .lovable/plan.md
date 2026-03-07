@@ -1,17 +1,11 @@
 
+## Fix: Lightbox caption visibility
 
-## Plano: Adicionar Lattes e contato ao footer
+**Problem**: In `ImageLightbox.tsx`, the lightbox container is `h-[80vh]` and the image is `max-h-[80vh]`. When the image fills the container, the caption (`mt-2`) overflows below the visible area.
 
-### O que muda
-Adicionar uma linha ao footer em `src/components/Layout.tsx` com o link do Lattes e o email de contato.
+**Solution**: Reduce the image `max-h` to `max-h-[75vh]` to leave room for the caption below it. This ensures the caption remains visible within the 80vh container.
 
-### Implementação
-No footer do Layout (após o bloco de linha de pesquisa, ~linha 47), adicionar uma nova `div` com:
-- Link para o Lattes: `http://lattes.cnpq.br/5523516994010198` (abre em nova aba)
-- Email: `castropizzano@gmail.com` (como `mailto:` link)
+**File**: `src/components/ImageLightbox.tsx` (line 51)
+- Change `max-h-[80vh]` to `max-h-[75vh]` on the lightbox `<img>`
 
-Seguindo o mesmo estilo visual existente: `text-xs text-muted-foreground`, layout flex responsivo com `md:flex-row md:justify-between`.
-
-### Resultado
-Todas as páginas passam a exibir Lattes e email no rodapé, de forma discreta e consistente com o design atual.
-
+This affects all lightbox instances consistently, including blocks 01 (Punkinho) and 05 (Crew LowPressure) in Defense Mode.
