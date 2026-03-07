@@ -30,11 +30,11 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Coluna esquerda — Capa */}
-            <div>
+            <div style={{ aspectRatio: '1194/1688' }}>
               <img
                 src={capaDissertacao}
                 alt="Capa da dissertação LowMovie e o Labirinto Criativo"
-                className="w-full rounded-lg shadow-lg cursor-default"
+                className="w-full h-full rounded-lg shadow-lg cursor-default"
                 onClick={handleCoverClick}
                 width={1194}
                 height={1688}
