@@ -141,7 +141,7 @@ const Conclusao = () => {
                 Documentos, registros e materiais produzidos ao longo da pesquisa — disponíveis para consulta.
               </p>
               <a
-                href="https://drive.google.com/drive/folders/1PTwdYEHC0mE7wa6Mt8GxsMgJ7zxfUXBX"
+                href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
