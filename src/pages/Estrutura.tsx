@@ -9,21 +9,21 @@ const movimentos = [
     
     title: "Corpo em Deriva",
     subtitle: "Operadores Poéticos",
-    desc: "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — articulando experiência, corpo e cidade como eixo de criação.",
+    desc: "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — e orientam a leitura do percurso, articulando experiência, corpo e cidade como eixo de criação.",
     subcapitulos: ["Operadores poéticos do olhar: instante, borda, fluxo", "Corpo-câmera: diálogos teóricos", "Entre vozes"],
   },
   {
     
     title: "Coletivo em Baixo Relevo",
     subtitle: "Ética de Produção",
-    desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, examino os modos de decisão, as formas de autoria compartilhada e as estratégias de circulação. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine como arquivo vivo de imagens, entrevistas e depoimentos.",
+    desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, acompanhando como vínculos, ética de produção e modos de pertencimento se organizam no cotidiano do grupo. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine, que compõe a memória e a linguagem do coletivo.",
     subcapitulos: ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine"],
   },
   {
     
     title: "Obra em Expansão",
     subtitle: "Processos do Filme",
-    desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos.",
+    desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico que se torna legível na obra. Analiso a fabulação em cenas e rituais, e examino os modos de estreia e circulação do filme em diferentes circuitos.",
     subcapitulos: [
       "Gênese e ethos da escuta como método vivo",
       "Linhagem dos vídeos de skate e gramática do meio",
@@ -86,9 +86,8 @@ const Estrutura = () => {
              <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações — Ecos do Labirinto</h3>
                    <p className="text-sm text-foreground/80 leading-relaxed">
-                    Situo as reverberações da investigação no campo do cinema e das
-                    artes do vídeo — não como encerramento, mas como abertura para as continuidades que a
-                    pesquisa projeta.
+                    Retomam a pergunta de pesquisa, sintetizam os achados e situam as reverberações do percurso,
+                    articulando implicações estéticas, políticas e metodológicas que permanecem em movimento.
                   </p>
              </div>
           </AnimatedSection>

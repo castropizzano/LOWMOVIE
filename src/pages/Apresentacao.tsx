@@ -56,10 +56,10 @@ const Apresentacao = () => {
                 Pergunta Central
               </p>
               <p className="text-lg font-normal leading-relaxed italic text-foreground/80 mb-6">
-                "Como os processos criativos do LowMovie™, gestados em dinâmica coletiva e rizomática,
-                contribuem para a constituição de uma poética audiovisual em movimento no campo do cinema
-                e das artes do vídeo — e quais modos de subjetivação, de elaboração simbólica e de relação
-                com o espaço urbano emergem dessas práticas?"
+                "Como os processos criativos que compõem o LowMovie™, gestados em dinâmica coletiva e
+                rizomática do LowPressure™, contribuem para a construção de uma estética em movimento no
+                campo do cinema e das artes visuais? Quais modos de subjetivação, de elaboração simbólica
+                e de relação com o espaço urbano emergem dessas práticas?"
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
                 A pergunta articula descrição dos processos criativos e sua formulação teórica no campo do cinema e das artes do vídeo.
@@ -73,19 +73,19 @@ const Apresentacao = () => {
                 <ul className="space-y-3 text-sm text-foreground/80 leading-relaxed">
                   <li className="flex items-start gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-2 shrink-0" />
-                    <span>Descrever as práticas colaborativas do coletivo LowPressure™ e seus modos de organização criativa</span>
+                    <span>Descrever as práticas colaborativas mobilizadas no processo do filme (filmagem, montagem, zine e eventos)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-2 shrink-0" />
-                    <span>Analisar as escolhas formais do LowMovie™ — filmagem, montagem, trilha, design — como expressão de uma poética audiovisual situada</span>
+                    <span>Analisar as escolhas formais do LowMovie™ como linguagem de risco, erro e presença</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-2 shrink-0" />
-                    <span>Investigar os atravessamentos estéticos entre skate, cidade e produção de imagem</span>
+                    <span>Investigar os atravessamentos estéticos que se manifestam na obra</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-2 shrink-0" />
-                    <span>Observar as reverberações dessas práticas no campo do cinema e das artes do vídeo no Brasil</span>
+                    <span>Observar suas reverberações em diferentes circuitos de circulação e exibição</span>
                   </li>
                 </ul>
               </div>
