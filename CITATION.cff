@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Se você utilizar este projeto como referência, por favor cite conforme abaixo."
+title: "LOWMOVIE™ e o Labirinto Criativo"
+subtitle: "Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™"
+type: software
+authors:
+  - family-names: Pizzano
+    given-names: Castro
+    orcid: ""
+repository-code: "https://github.com/castropizzano/lowmovie"
+url: "https://lowmovie.lovable.app"
+abstract: >-
+  Portal interativo da dissertação de mestrado de Castro Pizzano,
+  desenvolvido para o Programa de Pós-Graduação em Cinema e Artes do Vídeo
+  (PPG-CINEAV) da Universidade Estadual do Paraná (UNESPAR).
+  Investiga processos criativos contemporâneos do Coletivo LowPressure™
+  através da pesquisa-criação implicada.
+keywords:
+  - cinema
+  - artes do vídeo
+  - pesquisa-criação
+  - subcultura
+  - skate
+  - documentário
+  - LowPressure
+  - LowMovie
+  - labirinto criativo
+license: "All Rights Reserved"
+date-released: "2026-03-07"
