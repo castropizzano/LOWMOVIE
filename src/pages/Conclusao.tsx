@@ -250,15 +250,7 @@ const Conclusao = () => {
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">
                 Brandbook e diretrizes visuais do projeto LowMovie™.
               </p>
-              <div className="rounded-lg overflow-hidden mb-6">
-                <iframe
-                  src="/docs/LowMovie_brandbook.pdf"
-                  className="w-full border-0 rounded-lg"
-                  style={{ height: "600px" }}
-                  title="Manual LowMovie™"
-                  sandbox="allow-scripts allow-same-origin"
-                />
-              </div>
+              <PdfPageViewer src="/docs/LowMovie_brandbook.pdf" title="Manual LowMovie™" />
               <a
                 href="/docs/LowMovie_brandbook.pdf"
                 target="_blank"
@@ -286,15 +278,7 @@ const Conclusao = () => {
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">
                 Brandbook e diretrizes visuais do coletivo LowPressure™.
               </p>
-              <div className="rounded-lg overflow-hidden mb-6">
-                <iframe
-                  src="/docs/LowPressure_brandbook.pdf"
-                  className="w-full border-0 rounded-lg"
-                  style={{ height: "600px" }}
-                  title="Manual LowPressure™"
-                  sandbox="allow-scripts allow-same-origin"
-                />
-              </div>
+              <PdfPageViewer src="/docs/LowPressure_brandbook.pdf" title="Manual LowPressure™" />
               <a
                 href="/docs/LowPressure_brandbook.pdf"
                 target="_blank"
