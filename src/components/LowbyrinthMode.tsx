@@ -31,7 +31,7 @@ const NodeCard = ({
     `}
     onClick={onToggle}
   >
-    <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40 mb-1">
+    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40 mb-1">
       {node.conceito}
     </p>
     <p className="text-sm font-semibold text-white/90">{node.title}</p>
@@ -46,7 +46,7 @@ const NodeCard = ({
           className="overflow-hidden"
         >
           <div className="pt-3 mt-3 border-t border-white/10 space-y-2">
-            <p className="text-[10px] uppercase tracking-widest text-white/30 mb-2">Derive para:</p>
+            <p className="text-[11px] uppercase tracking-widest text-white/30 mb-2">Derive para:</p>
             {node.derivas.map((d, i) => (
               <button
                 key={i}
@@ -54,12 +54,12 @@ const NodeCard = ({
                 className="block w-full text-left p-2 rounded bg-white/5 hover:bg-white/10 transition-colors"
               >
                 <p className="text-xs font-semibold text-white/80">{d.label}</p>
-                <p className="text-[10px] text-white/40 leading-relaxed mt-0.5">{d.justificativa}</p>
+                <p className="text-[11px] text-white/40 leading-relaxed mt-0.5">{d.justificativa}</p>
               </button>
             ))}
             <button
               onClick={(e) => { e.stopPropagation(); onNavigate(node.path); }}
-              className="text-[10px] uppercase tracking-widest text-white/50 hover:text-white/80 transition-colors mt-2"
+              className="text-[11px] uppercase tracking-widest text-white/50 hover:text-white/80 transition-colors mt-2"
             >
               → Ir para {node.title}
             </button>

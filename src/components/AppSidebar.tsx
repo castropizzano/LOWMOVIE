@@ -92,7 +92,7 @@ export function AppSidebar() {
             <a href="https://www.instagram.com/lowpressure.fam/" target="_blank" rel="noopener noreferrer">
               <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
             </a>
-            <p className="text-[10px] uppercase tracking-widest text-sidebar-foreground/40">
+            <p className="text-[11px] uppercase tracking-widest text-sidebar-foreground/40">
               © 2026 Castro Pizzano
             </p>
           </div>

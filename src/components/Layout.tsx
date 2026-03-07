@@ -16,7 +16,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
             <SidebarTrigger />
             <button
               onClick={() => setLowbyrinthOpen(true)}
-              className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
+              className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
             >
               Lowbyrinth™
             </button>

@@ -1,6 +1,12 @@
 import Layout from "@/components/Layout";
-
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import SectionTitle from "@/components/SectionTitle";
+import NextSectionButton from "@/components/NextSectionButton";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const interviews = [
   {
@@ -58,11 +64,10 @@ const Conclusao = () => {
     <Layout>
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl text-left">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-8">
-              Síntese
-            </p>
-          </div>
+          <SectionTitle
+            title="Conclusão"
+            subtitle="Síntese da pesquisa e horizontes abertos"
+          />
 
           <p className="text-2xl md:text-4xl font-bold uppercase leading-tight tracking-tight text-foreground/80">
             A <span className="text-primary">poética</span> não é resultado.
@@ -104,11 +109,15 @@ const Conclusao = () => {
             </div>
           </div>
 
+          {/* Separador */}
+          <div className="mt-16 mb-16">
+            <div className="h-px w-full bg-border/30" />
+          </div>
+
           {/* Card: Dissertação PDF */}
-          <div className="mt-20">
+          <div>
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Dissertação Completa
                 </h2>
@@ -122,17 +131,20 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                
                 <span className="text-sm font-medium text-foreground/80">Abrir Dissertação em PDF</span>
               </a>
             </div>
           </div>
 
+          {/* Separador */}
+          <div className="mt-16 mb-16">
+            <div className="h-px w-full bg-border/30" />
+          </div>
+
           {/* Card: Acervo do Processo */}
-          <div className="mt-8">
+          <div>
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Acervo do Processo
                 </h2>
@@ -146,89 +158,90 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                
                 <span className="text-sm font-medium text-foreground/80">Abrir Acervo no Google Drive</span>
               </a>
             </div>
           </div>
 
-          {/* Card: Entrevistas com Tabs */}
-          <div className="mt-8">
+          {/* Separador */}
+          <div className="mt-16 mb-16">
+            <div className="h-px w-full bg-border/30" />
+          </div>
+
+          {/* Card: Entrevistas com Accordion */}
+          <div>
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-6">
-                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Entrevistas
                 </h2>
               </div>
 
-              <Tabs defaultValue="skate-punk" className="w-full">
-                <TabsList className="w-full h-auto flex-wrap justify-start gap-1 bg-transparent p-0 mb-8">
-                  {interviews.map((item) => (
-                    <TabsTrigger
-                      key={item.id}
-                      value={item.id}
-                      className="text-xs uppercase tracking-widest px-3 py-2 rounded-md border border-border/40 bg-card/30 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:border-primary"
-                    >
-                      {item.label}
-                    </TabsTrigger>
-                  ))}
-                </TabsList>
-
+              <Accordion type="single" collapsible className="w-full">
                 {interviews.map((item) => (
-                  <TabsContent key={item.id} value={item.id}>
-                    <p className="text-primary font-semibold uppercase text-xs tracking-widest mb-1">
-                      {item.subtitle}
-                    </p>
-                    <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">
-                      {item.description}
-                    </p>
+                  <AccordionItem key={item.id} value={item.id}>
+                    <AccordionTrigger className="text-sm font-semibold uppercase tracking-wider text-foreground/80 hover:no-underline">
+                      <span className="flex items-center gap-3">
+                        {item.label}
+                        <span className="text-xs font-normal normal-case tracking-normal text-muted-foreground">{item.subtitle}</span>
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="pt-2 space-y-6">
+                        <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                          {item.description}
+                        </p>
 
-                    {item.youtubeId ? (
-                      <div className="rounded-lg overflow-hidden mb-6 group/video">
-                        <div className="relative w-full grayscale hover:grayscale-0 transition-all duration-500" style={{ paddingBottom: "56.25%" }}>
-                          <iframe
-                            src={`https://www.youtube.com/embed/${item.youtubeId}`}
-                            className="absolute inset-0 w-full h-full border-0"
-                            title={item.label}
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
-                            allowFullScreen
-                            loading="lazy"
-                          />
-                        </div>
-                      </div>
-                    ) : item.image ? (
-                      <div className="rounded-lg overflow-hidden mb-6">
-                        <img
-                          src={item.image}
-                          alt={item.label}
-                          className="w-full h-auto"
-                          loading="lazy"
-                        />
-                      </div>
-                    ) : null}
+                        {item.youtubeId ? (
+                          <div className="rounded-lg overflow-hidden group/video">
+                            <div className="relative w-full grayscale hover:grayscale-0 transition-all duration-500" style={{ paddingBottom: "56.25%" }}>
+                              <iframe
+                                src={`https://www.youtube.com/embed/${item.youtubeId}`}
+                                className="absolute inset-0 w-full h-full border-0"
+                                title={item.label}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
+                                allowFullScreen
+                                loading="lazy"
+                              />
+                            </div>
+                          </div>
+                        ) : item.image ? (
+                          <div className="rounded-lg overflow-hidden">
+                            <img
+                              src={item.image}
+                              alt={item.label}
+                              className="w-full h-auto"
+                              loading="lazy"
+                            />
+                          </div>
+                        ) : null}
 
-                    <a
-                      href={item.transcript}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
-                    >
-                      
-                      <span className="text-sm font-medium text-foreground/80">Abrir Transcrição em PDF</span>
-                    </a>
-                  </TabsContent>
+                        <a
+                          href={item.transcript}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
+                        >
+                          <span className="text-sm font-medium text-foreground/80">Abrir Transcrição em PDF</span>
+                        </a>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
                 ))}
-          </Tabs>
+              </Accordion>
             </div>
           </div>
 
+          {/* Separador */}
+          <div className="mt-16 mb-16">
+            <div className="h-px w-full bg-border/30" />
+          </div>
+
           {/* Card: Manual LowMovie™ */}
-          <div className="mt-8">
+          <div>
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Manual LowMovie™
                 </h2>
@@ -250,17 +263,20 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                
                 <span className="text-sm font-medium text-foreground/80">Abrir Manual em PDF</span>
               </a>
             </div>
           </div>
 
+          {/* Separador */}
+          <div className="mt-16 mb-16">
+            <div className="h-px w-full bg-border/30" />
+          </div>
+
           {/* Card: Manual LowPressure™ */}
-          <div className="mt-8">
+          <div>
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
-                
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Manual LowPressure™
                 </h2>
@@ -282,11 +298,12 @@ const Conclusao = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group"
               >
-                
                 <span className="text-sm font-medium text-foreground/80">Abrir Manual em PDF</span>
               </a>
             </div>
           </div>
+
+          <NextSectionButton to="/mapa" label="Mapa Conceitual" />
         </div>
       </section>
     </Layout>
