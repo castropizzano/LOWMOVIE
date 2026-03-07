@@ -368,10 +368,11 @@ const Defense = () => {
                   </div>
                 ))}
               </div>
-              <img
+              <ImageLightbox
                 src="/images/low-crew.png"
-                alt="LowPressure Fam"
-                className="w-full rounded-lg mt-8 object-cover max-h-[40vh] grayscale hover:grayscale-0 transition-all duration-500"
+                alt="LowPressure™ Fam"
+                className="w-full mt-8"
+                imageClassName="rounded-lg object-cover max-h-[40vh]"
               />
             </div>
             </div>
