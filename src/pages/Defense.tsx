@@ -606,18 +606,42 @@ const Defense = () => {
 
       {/* Footer: block indicator left, arrow right */}
       {currentBlock > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-6 py-4 z-20">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70 pointer-events-none">
-            BLOCO {String(currentBlock).padStart(2, "0")} — {BLOCKS[currentBlock]?.title?.toUpperCase()}
-          </p>
-          {currentBlock < BLOCKS.length - 1 && (
-            <button
-              onClick={(e) => { e.stopPropagation(); goNext(); }}
-              className="text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
-            >
-              <ArrowRight className="h-4 w-4" />
-            </button>
-          )}
+        <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-2 px-6 py-3">
+          {/* Progress dots */}
+          <div className="flex items-center gap-1.5 pointer-events-auto">
+            {BLOCKS.slice(1).map((block, i) => (
+              <button
+                key={block.id}
+                onClick={(e) => { e.stopPropagation(); setCurrentBlock(i + 1); }}
+                title={`${String(i + 1).padStart(2, "0")} — ${block.title}`}
+                className="group relative"
+              >
+                <span
+                  className={`block rounded-full transition-all duration-300 ${
+                    i + 1 === currentBlock
+                      ? "w-6 h-1.5 bg-foreground"
+                      : i + 1 < currentBlock
+                        ? "w-1.5 h-1.5 bg-muted-foreground/60"
+                        : "w-1.5 h-1.5 bg-muted-foreground/25"
+                  }`}
+                />
+              </button>
+            ))}
+          </div>
+          {/* Block label + arrow */}
+          <div className="w-full flex items-center justify-between">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70 pointer-events-none">
+              BLOCO {String(currentBlock).padStart(2, "0")} — {BLOCKS[currentBlock]?.title?.toUpperCase()}
+            </p>
+            {currentBlock < BLOCKS.length - 1 && (
+              <button
+                onClick={(e) => { e.stopPropagation(); goNext(); }}
+                className="text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
+              >
+                <ArrowRight className="h-4 w-4" />
+              </button>
+            )}
+          </div>
         </div>
       )}
     </div>
