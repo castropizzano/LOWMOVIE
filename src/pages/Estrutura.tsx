@@ -16,14 +16,14 @@ const movimentos = [
     
     title: "Coletivo em Baixo Relevo",
     subtitle: "Ética de Produção",
-    desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, acompanhando como vínculos, ética de produção e modos de pertencimento se organizam no cotidiano do grupo. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine, que compõe a memória e a linguagem do coletivo.",
+    desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, acompanhando como vínculos, ética de produção e modos de pertencimento se organizam no cotidiano do grupo. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine, como arquivo vivo de imagens, entrevistas e depoimentos que compõem a memória e a linguagem do coletivo.",
     subcapitulos: ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine"],
   },
   {
     
     title: "Obra em Expansão",
     subtitle: "Processos do Filme",
-    desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico que se torna legível na obra. Analiso a fabulação em cenas e rituais, e examino os modos de estreia e circulação do filme em diferentes circuitos.",
+    desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico que se torna legível na obra. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos do filme em diferentes circuitos.",
     subcapitulos: [
       "Gênese e ethos da escuta como método vivo",
       "Linhagem dos vídeos de skate e gramática do meio",
