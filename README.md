@@ -126,3 +126,5 @@ Este projeto foi desenvolvido através de processos híbridos de criação, envo
 © 2026 Castro Pizzano. Todos os direitos reservados.
 
 Materiais audiovisuais e imagens podem possuir licenças específicas. Ver [`LICENSE`](LICENSE).
+
+<!-- sync: 2026-03-07 -->
