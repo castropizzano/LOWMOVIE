@@ -373,7 +373,7 @@ const Defense = () => {
                 src="/images/low-crew.png"
                 alt="LowPressure™ Fam"
                 className="w-full mt-8"
-                imageClassName="rounded-lg object-cover max-h-[40vh]"
+                imageClassName="rounded-lg object-contain"
               />
             </div>
             </div>
