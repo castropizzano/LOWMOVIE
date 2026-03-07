@@ -33,7 +33,7 @@ const Coletivo = () => {
                 encontro, pela prática e pela insistência do fazer.
               </p>
               <p>
-                O processo criativo se enraíza na escuta e na convivência. A identidade
+                O processo criativo nasce da escuta e da convivência. A identidade
                 do coletivo se afirma como <span className="text-primary font-semibold">construção rizomática</span> (que cresce em rede, sem hierarquia fixa),
                 em que saberes e fazeres se moldam ao ritmo de um coletivo em movimento. Como afirma Stuart Hall,
                 <em> "a identidade cultural talvez deva ser pensada como uma 'produção', algo que nunca está

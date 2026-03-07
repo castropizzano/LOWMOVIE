@@ -85,7 +85,7 @@ const Estrutura = () => {
              <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
                   <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações Finais</h3>
                    <p className="text-sm text-foreground/80 leading-relaxed">
-                    As considerações finais situam as reverberações da investigação no campo do cinema e das
+                    Situo as reverberações da investigação no campo do cinema e das
                     artes do vídeo — não como encerramento, mas como abertura para as continuidades que a
                     pesquisa projeta.
                   </p>

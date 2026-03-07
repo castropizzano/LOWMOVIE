@@ -312,7 +312,7 @@ const Defense = () => {
                   Para compreender esse processo, proponho o conceito de Lowbyrinth™.
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  O Lowbyrinth descreve um processo criativo que não se organiza de forma linear.
+                  O Lowbyrinth™ descreve um processo criativo que não se organiza de forma linear.
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Ele opera como um labirinto sensível, onde tentativa, erro, descoberta e improviso fazem parte da criação.
@@ -346,7 +346,7 @@ const Defense = () => {
             <div className="max-w-5xl w-full">
               <div className="text-left mb-10 space-y-4 max-w-5xl">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                  Metodologicamente, a pesquisa se insere no campo da pesquisa-criação implicada.
+                   Adoto a pesquisa-criação implicada como abordagem metodológica.
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Nesse modelo, prática artística e reflexão teórica não são separadas.
@@ -355,7 +355,7 @@ const Defense = () => {
                   O processo criativo funciona simultaneamente como produção estética e como campo de investigação.
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  O rigor da pesquisa não está na neutralidade, mas na reflexividade sobre o próprio processo criativo.
+                   O rigor não reside na neutralidade — reside na capacidade de interrogar cada decisão criativa.
                 </p>
               </div>
               <div className="grid gap-6 md:grid-cols-3">
@@ -392,7 +392,7 @@ const Defense = () => {
                 Fragmentos simbólicos
               </h2>
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                Durante o processo de criação do LowMovie™, produzimos uma série de peças audiovisuais que funcionam como fragmentos simbólicos do universo do filme.
+                 Durante o processo de criação do LowMovie™, produzimos peças audiovisuais que condensam o universo simbólico do filme.
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Esses fragmentos não revelam diretamente a obra, mas expressam os princípios que estruturam o processo criativo do coletivo.
@@ -441,7 +441,7 @@ const Defense = () => {
           <div className="flex flex-col items-center justify-center h-full px-8">
             <div className="w-[84%]">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4">
-                A convergência dessas ideias aparece no trailer do filme LowMovie™, que sintetiza o conceito de Lowbyrinth™.
+                 Essas ideias convergem no trailer do LowMovie™, que sintetiza o Lowbyrinth™.
               </p>
               <VideoEmbed
                 src="https://www.youtube.com/embed/Zom42CQ83CU?autoplay=1&rel=0&modestbranding=1"
@@ -504,7 +504,7 @@ const Defense = () => {
             <div className="min-h-full flex items-center justify-center">
             <div className="max-w-5xl w-full">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-10">
-                A pesquisa propõe três contribuições principais.
+                 Proponho três contribuições principais.
               </p>
               <div className="grid gap-6 md:grid-cols-3">
                 {CONTRIBUICOES.map((c, i) => (
@@ -554,7 +554,7 @@ const Defense = () => {
             <div className="min-h-full flex flex-col items-center justify-center">
               <div className="max-w-5xl w-full text-left mb-6 space-y-2">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                  O portal organiza a pesquisa como um percurso navegável.
+                   Organizei a pesquisa como um percurso navegável.
                 </p>
               </div>
               <div className="max-w-5xl w-full border border-border/30 rounded-lg overflow-hidden">
