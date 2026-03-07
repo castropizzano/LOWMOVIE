@@ -453,7 +453,7 @@ const Defense = () => {
         return (
           <div className="h-full overflow-y-auto p-8 pt-14 pb-16">
             <div className="min-h-full flex flex-col items-center justify-center">
-            <div className="text-left mb-6 max-w-5xl space-y-4">
+            <div className="text-left mb-6 max-w-6xl w-full space-y-4">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O LowMovie™ não é apenas objeto da pesquisa.
               </p>
