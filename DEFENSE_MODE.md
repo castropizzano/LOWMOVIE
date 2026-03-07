@@ -16,10 +16,11 @@ https://lowmovie.lovable.app/defense
 
 | Ação | Controle |
 |---|---|
-| Próximo bloco | `→` ou `↓` ou `Espaço` |
+| Próximo bloco | `→` ou `↓` ou `Espaço` ou clique |
 | Bloco anterior | `←` ou `↑` |
 | Início | `Home` |
 | Final | `End` |
+| Sair | `Esc` |
 
 ## Recomendações para apresentação
 
