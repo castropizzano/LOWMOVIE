@@ -1,4 +1,4 @@
-# LOWMOVIE™ E O LABIRINTO CRIATIVO
+# LOWMOVIE™ E O LABIRINTO CRIATIVO 
 
 > **Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™**
 
