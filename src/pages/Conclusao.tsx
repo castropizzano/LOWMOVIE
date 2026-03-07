@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import PdfPageViewer from "@/components/PdfPageViewer";
 
 const interviews = [
   {
