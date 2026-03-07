@@ -29,6 +29,8 @@ export const nodes: GraphNode[] = [
   { id: "delpeux", label: "Delpeux", type: "autor", description: "Fusão sensível entre corpo do performer e dispositivo de registro: entidade única em ato." },
   { id: "rouch", label: "Rouch / Deren", type: "autor", description: "Rouch e o cine-transe. Deren e a dança como cinema. Fabulação como gesto de criação do real." },
   { id: "deleuze", label: "Deleuze", type: "autor", description: "Fabulação: não invenção ficcional, mas gesto de criação do real a partir do cotidiano." },
+  { id: "certeau", label: "Michel de Certeau", type: "autor", description: "Táticas e estratégias: reinvenção cotidiana do espaço pela prática ordinária." },
+  { id: "lefebvre", label: "Henri Lefebvre", type: "autor", description: "Produção social do espaço: o espaço urbano como produto e produtor de relações." },
 
   // Conceitos autorais
   { id: "lowbyrinth", label: "Lowbyrinth™", type: "conceito", description: "Imagem-conceito do caráter processual, não-linear e labiríntico da criação. O labirinto não tem saída — a obra é o percurso." },
@@ -43,6 +45,8 @@ export const edges: GraphEdge[] = [
   // Campos → Autores
   { source: "campo-urbano", target: "borden" },
   { source: "campo-urbano", target: "mcduie-ra" },
+  { source: "campo-urbano", target: "certeau" },
+  { source: "campo-urbano", target: "lefebvre" },
   { source: "campo-estetica", target: "bourriaud" },
   { source: "campo-estetica", target: "hall" },
   { source: "campo-processo", target: "abreu" },
@@ -63,6 +67,8 @@ export const edges: GraphEdge[] = [
   { source: "rouch", target: "poetica" },
   { source: "deleuze", target: "fabulacao" },
   { source: "deleuze", target: "lowbyrinth" },
+  { source: "certeau", target: "estetica-borda" },
+  { source: "lefebvre", target: "lowbyrinth" },
 
   // Conceitos entre si
   { source: "poetica", target: "estetica-borda" },
