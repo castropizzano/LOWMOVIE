@@ -212,8 +212,7 @@ const Filme = () => {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
-                <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
-                </div>
+                <img src="/images/lowbyrinth-ep-cover.jpg" alt="Lowbyrinth EP Cover" className="h-12 w-12 rounded-md object-cover shrink-0" />
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide">Lowbyrinth EP</p>
                   <p className="text-xs text-muted-foreground mt-1">Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)</p>
@@ -226,8 +225,7 @@ const Filme = () => {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
-                <div className="h-12 w-12 rounded-md bg-primary/10 flex items-center justify-center shrink-0">
-                </div>
+                <img src="/images/like-rats-cover.jpg" alt="Like Rats on Hostile Paths Cover" className="h-12 w-12 rounded-md object-cover shrink-0" />
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide">Like Rats on Hostile Paths</p>
                   <p className="text-xs text-muted-foreground mt-1">Trilha original do filme</p>
