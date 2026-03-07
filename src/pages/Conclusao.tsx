@@ -92,8 +92,8 @@ const Conclusao = () => {
               campo aprofunda a compreensão anterior.
             </p>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
-              O que o LowMovie™ ensina é que a poética não habita o resultado
-              acabado, mas o processo que o engendra. O filme é a sedimentação provisória de um fluxo
+               O que o LowMovie™ ensina é que a poética não habita o resultado
+              acabado, mas o percurso que o constitui. O filme é a sedimentação provisória de um fluxo
               contínuo de gestos, decisões, improvisos e encontros. É nesse fluxo que reside a contribuição
               mais profunda: o movimento é, simultaneamente, condição de produção, linguagem expressiva e forma de
               pensamento.

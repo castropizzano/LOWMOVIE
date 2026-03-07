@@ -76,7 +76,7 @@ const Conceitos = () => {
                 conceitual orientada pelas exigências específicas do objeto.
               </p>
               <p>
-                Os conceitos formulados nomeiam fenômenos que os vocabulários existentes não alcançavam.
+                As formulações a seguir nomeiam processos que os vocabulários disponíveis não alcançavam.
               </p>
             </div>
           </AnimatedSection>

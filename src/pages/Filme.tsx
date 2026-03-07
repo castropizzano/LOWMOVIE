@@ -40,7 +40,7 @@ const Filme = () => {
                 {[
                   { label: "Título", value: "LowMovie™" },
                   { label: "Ano", value: "2023" },
-                  { label: "Formato", value: "Full-length video" },
+                  { label: "Formato", value: "Full-length (longa-metragem de skate)" },
                   { label: "Duração", value: "~1h" },
                   { label: "Direção", value: "Rafão VM (dir.) & Castro Pizzano \"Punk\" (co-dir.)" },
                   { label: "Coletivo", value: "LowPressure™" },
@@ -91,8 +91,8 @@ const Filme = () => {
           <AnimatedSection delay={0.2}>
             <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
-                O <span className="text-primary font-semibold">LowMovie™</span> opera como dispositivo
-                poético-político, onde viver, pensar e criar operam em um mesmo gesto. É a materialização
+                O <span className="text-primary font-semibold">LowMovie™</span> funciona como dispositivo
+                poético-político, onde viver, pensar e criar convergem num mesmo gesto. É a materialização
                 de um processo coletivo que articula corpo, cidade, câmera e improviso como elementos
                 indissociáveis de uma mesma operação poética.
               </p>

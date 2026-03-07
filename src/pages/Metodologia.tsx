@@ -64,7 +64,7 @@ const Metodologia = () => {
                 <div className="border-l-2 border-primary/20 pl-4">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Vivência Situada</p>
                   <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                    Participação em processos coletivos: sessões de gravação, reuniões, eventos, sessões de skate.
+                    Participo de sessões de gravação, reuniões, eventos e sessões de skate com o coletivo.
                   </p>
                 </div>
                 <div className="border-l-2 border-primary/20 pl-4">
@@ -77,7 +77,7 @@ const Metodologia = () => {
                 <div className="border-l-2 border-primary/20 pl-4">
                   <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Escuta Partilhada</p>
                   <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                    Materializada em conversas abertas, registradas por meio de notas, áudios e diário digital.
+                    Registro conversas abertas por meio de notas, áudios e diário digital.
                   </p>
                 </div>
               </div>

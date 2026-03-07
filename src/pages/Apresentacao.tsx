@@ -62,9 +62,7 @@ const Apresentacao = () => {
                 com o espaço urbano emergem dessas práticas?"
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                A pergunta opera em duas frentes simultâneas: a descrição precisa dos processos criativos — suas
-                condições materiais, procedimentos técnicos e escolhas estéticas — e a articulação teórica desses
-                processos com o campo do cinema e das artes do vídeo.
+                A pergunta articula descrição dos processos criativos e sua formulação teórica no campo do cinema e das artes do vídeo.
               </p>
 
               {/* Objetivos Específicos */}
