@@ -550,25 +550,27 @@ const Defense = () => {
       case 12:
         return (
           <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
-            <div className="min-h-full flex items-center justify-center">
-              <div className="max-w-5xl w-full">
-                <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4">
+            <div className="min-h-full flex flex-col items-center justify-center">
+              <div className="max-w-5xl w-full text-left mb-6 space-y-2">
+                <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   O portal organiza a pesquisa como um percurso navegável.
                 </p>
-                <div className="w-full h-[50vh]">
+              </div>
+              <div className="max-w-5xl w-full border border-border/30 rounded-lg overflow-hidden">
+                <div className="w-full h-[45vh]">
                   <ConceptGraph />
                 </div>
-                <div className="mt-6 text-left space-y-4">
-                  <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                    O LowMovie™ é um filme-labirinto.
-                  </p>
-                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    Não se assiste a ele de fora.
-                  </p>
-                  <p className="mt-2 text-2xl md:text-3xl font-semibold uppercase tracking-widest text-foreground animate-pulse">
-                    É preciso entrar.
-                  </p>
-                </div>
+              </div>
+              <div className="max-w-5xl w-full mt-8 text-left space-y-4">
+                <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
+                  O LowMovie™ é um filme-labirinto.
+                </p>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  Não se assiste a ele de fora.
+                </p>
+                <p className="mt-2 text-2xl md:text-3xl font-semibold uppercase tracking-widest text-foreground">
+                  É preciso entrar.
+                </p>
               </div>
             </div>
           </div>
