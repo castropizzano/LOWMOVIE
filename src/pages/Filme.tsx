@@ -1,3 +1,4 @@
+import { useState, useCallback } from "react";
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
