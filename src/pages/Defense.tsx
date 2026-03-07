@@ -290,10 +290,11 @@ const Defense = () => {
               </p>
             </div>
             <div className="max-w-5xl w-full">
-              <img
+              <ImageLightbox
                 src="/images/low-kids.png"
-                alt="Coletivo LowPressure na rua"
-                className="w-full max-h-[50vh] rounded-lg shadow-lg object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                alt="Coletivo LowPressure™ na rua"
+                className="w-full"
+                imageClassName="rounded-lg shadow-lg object-cover max-h-[50vh]"
               />
             </div>
             </div>
