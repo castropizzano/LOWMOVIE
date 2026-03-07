@@ -57,6 +57,7 @@ const CONTRIBUICOES = [
   { title: "Skate como matriz audiovisual", desc: "O skate não aparece apenas como prática esportiva, mas como forma de organizar o olhar cinematográfico." },
   { title: "Operadores conceituais", desc: "Poética do instante, estética da borda e registro em fluxo." },
   { title: "Pesquisa-criação implicada", desc: "Uma metodologia onde o processo artístico produz conhecimento." },
+  { title: "Deslocamento no campo audiovisual brasileiro", desc: "Reposiciona o skate como produtor de linguagem cinematográfica no contexto brasileiro." },
 ];
 
 /* ─── Video embed component ─── */
@@ -506,7 +507,7 @@ const Defense = () => {
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-10">
                  Proponho três contribuições principais.
               </p>
-              <div className="grid gap-6 md:grid-cols-3">
+              <div className="grid gap-6 md:grid-cols-2">
                 {CONTRIBUICOES.map((c, i) => (
                   <div key={i} className="border border-border rounded-lg p-8 bg-card/30 hover:border-primary/30 hover:scale-[1.03] transition-all duration-300 cursor-default">
                     <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground/70 mb-3">{String(i + 1).padStart(2, "0")}</p>

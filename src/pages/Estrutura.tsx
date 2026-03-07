@@ -10,14 +10,14 @@ const movimentos = [
     title: "Corpo em Deriva",
     subtitle: "Operadores Poéticos",
     desc: "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — articulando experiência, corpo e cidade como eixo de criação.",
-    subcapitulos: ["Operadores poéticos do olhar", "Corpo-câmera: diálogos teóricos", "Entre vozes"],
+    subcapitulos: ["Operadores poéticos do olhar: instante, borda, fluxo", "Corpo-câmera: diálogos teóricos", "Entre vozes"],
   },
   {
     
     title: "Coletivo em Baixo Relevo",
     subtitle: "Ética de Produção",
     desc: "Apresento o LowPressure™ e suas dinâmicas de colaboração, examino os modos de decisão, as formas de autoria compartilhada e as estratégias de circulação. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine como arquivo vivo de imagens, entrevistas e depoimentos.",
-    subcapitulos: ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine como arquivo"],
+    subcapitulos: ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine"],
   },
   {
     
@@ -25,14 +25,15 @@ const movimentos = [
     subtitle: "Processos do Filme",
     desc: "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos.",
     subcapitulos: [
-      "Gênese e linhagem dos vídeos de skate",
-      "Filmagem como corpo-câmera",
-      "Montagem e glitch",
-      "Ecologia sensorial (trilha, paleta, design)",
-      "Campo simbólico e Lowbyrinth™",
-      "Cenas, fabulação e rituais",
-      "Ritos de estreia e circulação",
-      "Pós-obra e reverberações",
+      "Gênese e ethos da escuta como método vivo",
+      "Linhagem dos vídeos de skate e gramática do meio",
+      "Filmagem: corpo-câmera, risco e erro como linguagem",
+      "Montagem: artbook e o filme como escrita",
+      "Ecologia sensorial: trilha, som, paleta e design",
+      "Campo simbólico: Hellraiser, Lowbyrinth™ e semiótica",
+      "Cenas e fabulação: improviso como dramaturgia do real",
+      "Ritos de estreia: organismo em circulação",
+      "Pós-obra: reverberação, continuidade",
     ],
   },
 ];
@@ -83,7 +84,7 @@ const Estrutura = () => {
           {/* Considerações Finais */}
           <AnimatedSection delay={0.45} className="mt-16">
              <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
-                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações Finais</h3>
+                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações — Ecos do Labirinto</h3>
                    <p className="text-sm text-foreground/80 leading-relaxed">
                     Situo as reverberações da investigação no campo do cinema e das
                     artes do vídeo — não como encerramento, mas como abertura para as continuidades que a

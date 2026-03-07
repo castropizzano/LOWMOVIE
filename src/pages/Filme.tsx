@@ -76,7 +76,7 @@ const Filme = () => {
                 {[
                   { nome: "Ty Evans", desc: "Pioneiro da cinematografia de skate em alta definição" },
                   { nome: "Spike Jonze", desc: "Do vídeo de skate ao cinema de autor" },
-                  { nome: "Beagle (Brian Anderson)", desc: "Documentário, identidade e subcultura no audiovisual do skate" },
+                  { nome: "Beagle", desc: "Filmmaker da Baker Skateboards — documentário, identidade e subcultura" },
                 ].map((ref) => (
                   <div key={ref.nome} className="border-l-2 border-primary/20 pl-4">
                     <p className="text-sm font-semibold text-foreground">{ref.nome}</p>
