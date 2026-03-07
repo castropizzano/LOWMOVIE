@@ -255,6 +255,7 @@ const Conclusao = () => {
                   className="w-full border-0 rounded-lg"
                   style={{ height: "600px" }}
                   title="Manual LowMovie™"
+                  sandbox="allow-scripts allow-same-origin"
                 />
               </div>
               <a
@@ -290,6 +291,7 @@ const Conclusao = () => {
                   className="w-full border-0 rounded-lg"
                   style={{ height: "600px" }}
                   title="Manual LowPressure™"
+                  sandbox="allow-scripts allow-same-origin"
                 />
               </div>
               <a

@@ -73,6 +73,7 @@ const VideoEmbed = ({ src, fadeIn = true, contained = false }: { src: string; fa
           border: "none",
         }}
         allow="autoplay; fullscreen; picture-in-picture"
+        sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
         allowFullScreen
         onLoad={() => setLoaded(true)}
       />
@@ -89,7 +90,7 @@ const VideoPreloader = ({ blockIndex }: { blockIndex: number }) => {
   if (nextBlock === 13) src = "https://www.youtube.com/embed/g3SDaD16c7w?autoplay=0";
   if (nextBlock === 7) src = `https://www.youtube.com/embed/${TEASERS[0].id}?autoplay=0`;
   if (!src) return null;
-  return <iframe src={src} className="absolute w-0 h-0 opacity-0 pointer-events-none" tabIndex={-1} />;
+  return <iframe src={src} className="absolute w-0 h-0 opacity-0 pointer-events-none" tabIndex={-1} sandbox="allow-scripts allow-same-origin allow-presentation" />;
 };
 
 /* ─── FAQ Item with click-to-reveal ─── */
