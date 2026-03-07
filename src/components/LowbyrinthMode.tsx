@@ -149,6 +149,13 @@ const LowbyrinthMode = ({ open, onClose }: LowbyrinthModeProps) => {
               </svg>
 
               <div className="relative w-full" style={{ minHeight: "100vh" }}>
+                {/* Background guide image */}
+                <img
+                  src="/images/lowbyrinth.png"
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-contain opacity-30 pointer-events-none"
+                  style={{ minHeight: "100vh" }}
+                />
                 {lowbyrinthNodes.map((node, index) => (
                   <motion.div
                     key={node.path}
