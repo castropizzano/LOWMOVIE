@@ -52,17 +52,16 @@ const Coletivo = () => {
                 O "rato" é figura de sobrevivência e inteligência tática — <em>astúcias do tempo e do desvio</em>.
               </p>
               <p>
-                Lefebvre complementa: o espaço urbano é produção social em disputa. O skate opera nesse intervalo,
+                Lefebvre complementa: o espaço urbano é produção social em disputa. O skate atua nesse intervalo,
                 <span className="text-primary font-semibold"> transformando trajetos planejados em percursos
                 improvisados</span>. A cidade não é palco — é co-autora.
               </p>
               <p>
-                Herzog afirma que <em>"o erro é algo que beira o sagrado... é preciso aceitar a tentativa e
-                erro"</em>. No LowPressure™, o erro não é falha — é material criativo.
+                Como sugere Herzog, no LowPressure™ o erro não é falha — é material criativo.
               </p>
               <p>
                 A <span className="text-primary font-semibold">LowZine</span> funciona como arquivo vivo.
-                O <span className="text-primary font-semibold">BrandBook</span> funciona como artefato narrativo
+                O <span className="text-primary font-semibold">BrandBook</span> é o artefato narrativo
                 do coletivo. Rafão VM atua como agregador, figura central na articulação dos vínculos.
               </p>
             </div>

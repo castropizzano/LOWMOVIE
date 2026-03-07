@@ -127,7 +127,7 @@ const Apresentacao = () => {
                 e campo que a dissertação assume como motor epistemológico.
               </p>
               <p>
-                O rigor opera por reflexividade, explicitação do posicionamento e articulação com os
+                O rigor se exerce por reflexividade, explicitação do posicionamento e articulação com os
                 referenciais da pesquisa-criação — não como defesa, mas como condição do próprio fazer.
                 A prática não substitui o rigor — ela
                 o produz. É no interior do fazer artístico, quando submetido à reflexão sistemática e à confrontação
