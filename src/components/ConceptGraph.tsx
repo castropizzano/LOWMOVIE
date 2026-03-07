@@ -28,18 +28,20 @@ const ConceptGraph = () => {
   // Initialize positions
   useEffect(() => {
     const w = 900, h = 650;
-    const initial: SimNode[] = nodes.map((n, i) => {
-      const angle = (i / nodes.length) * Math.PI * 2;
-      const typeOffset = n.type === "campo" ? 0.3 : n.type === "autor" ? 0.6 : 0.9;
-      const r = (Math.min(w, h) / 2) * typeOffset * 0.7;
-      return {
-        ...n,
-        x: w / 2 + Math.cos(angle) * r + (Math.random() - 0.5) * 40,
-        y: h / 2 + Math.sin(angle) * r + (Math.random() - 0.5) * 40,
-        vx: 0,
-        vy: 0,
-      };
-    });
+    const campos = nodes.filter(n => n.type === "campo");
+    const autores = nodes.filter(n => n.type === "autor");
+    const conceitos = nodes.filter(n => n.type === "conceito");
+    const placeRing = (arr: typeof nodes, radiusFactor: number) =>
+      arr.map((n, i) => {
+        const angle = (i / arr.length) * Math.PI * 2 - Math.PI / 2;
+        const r = (Math.min(w, h) / 2) * radiusFactor;
+        return { ...n, x: w / 2 + Math.cos(angle) * r, y: h / 2 + Math.sin(angle) * r, vx: 0, vy: 0 };
+      });
+    const initial: SimNode[] = [
+      ...placeRing(campos, 0.75),
+      ...placeRing(autores, 0.45),
+      ...placeRing(conceitos, 0.2),
+    ];
     nodesRef.current = initial;
     setSimNodes([...initial]);
     startSimulation();
@@ -48,7 +50,7 @@ const ConceptGraph = () => {
 
   const startSimulation = useCallback(() => {
     let iterations = 0;
-    const maxIterations = 300;
+    const maxIterations = 500;
 
     const tick = () => {
       if (iterations >= maxIterations) return;
@@ -61,7 +63,7 @@ const ConceptGraph = () => {
           const dx = ns[j].x - ns[i].x;
           const dy = ns[j].y - ns[i].y;
           const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
-          const force = (800 * alpha) / (dist * dist);
+          const force = (2500 * alpha) / (dist * dist);
           const fx = (dx / dist) * force;
           const fy = (dy / dist) * force;
           ns[i].vx -= fx;
@@ -79,7 +81,7 @@ const ConceptGraph = () => {
         const dx = t.x - s.x;
         const dy = t.y - s.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        const force = (dist - 120) * 0.005 * alpha;
+        const force = (dist - 180) * 0.005 * alpha;
         const fx = (dx / Math.max(dist, 1)) * force;
         const fy = (dy / Math.max(dist, 1)) * force;
         s.vx += fx;
@@ -90,8 +92,8 @@ const ConceptGraph = () => {
 
       // Center gravity
       for (const n of ns) {
-        n.vx += (450 - n.x) * 0.001 * alpha;
-        n.vy += (325 - n.y) * 0.001 * alpha;
+        n.vx += (450 - n.x) * 0.0005 * alpha;
+        n.vy += (325 - n.y) * 0.0005 * alpha;
       }
 
       // Apply velocities
@@ -100,8 +102,8 @@ const ConceptGraph = () => {
         else { n.vx *= 0.85; n.x += n.vx; }
         if (n.fy !== undefined) { n.y = n.fy; n.vy = 0; }
         else { n.vy *= 0.85; n.y += n.vy; }
-        n.x = Math.max(40, Math.min(860, n.x));
-        n.y = Math.max(40, Math.min(610, n.y));
+        n.x = Math.max(50, Math.min(850, n.x));
+        n.y = Math.max(50, Math.min(600, n.y));
       }
 
       iterations++;
