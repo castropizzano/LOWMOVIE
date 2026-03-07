@@ -166,7 +166,7 @@ const Defense = () => {
       return;
     }
     if (currentBlock === 12) {
-      setCurrentBlock(1);
+      setCurrentBlock(11);
       return;
     }
     if (currentBlock > 1) {
@@ -176,9 +176,19 @@ const Defense = () => {
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") goNext();
-      else if (e.key === "ArrowLeft") goPrev();
-      else if (e.key === "Escape") {
+      if (e.key === "ArrowRight" || e.key === "ArrowDown" || e.key === " ") {
+        e.preventDefault();
+        goNext();
+      } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        goPrev();
+      } else if (e.key === "Home") {
+        e.preventDefault();
+        setCurrentBlock(0);
+      } else if (e.key === "End") {
+        e.preventDefault();
+        setCurrentBlock(BLOCKS.length - 1);
+      } else if (e.key === "Escape") {
         if (document.querySelector("[role='dialog'][data-state='open']")) return;
         navigate("/");
       }
@@ -505,7 +515,7 @@ const Defense = () => {
             <div className="min-h-full flex items-center justify-center">
             <div className="max-w-5xl w-full">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-10">
-                 Proponho três contribuições principais.
+                 Proponho quatro contribuições principais.
               </p>
               <div className="grid gap-6 md:grid-cols-2">
                 {CONTRIBUICOES.map((c, i) => (
