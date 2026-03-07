@@ -598,18 +598,9 @@ const Defense = () => {
     >
       <VideoPreloader blockIndex={currentBlock} />
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={currentBlock + (currentBlock === 7 ? `-${currentTeaser}` : "")}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.4 }}
-          className="absolute inset-0"
-        >
-          {renderBlock()}
-        </motion.div>
-      </AnimatePresence>
+      <div className="absolute inset-0">
+        {renderBlock()}
+      </div>
 
       {/* Exit button */}
       {currentBlock > 0 && (
