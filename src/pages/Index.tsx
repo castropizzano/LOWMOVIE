@@ -36,6 +36,10 @@ const Index = () => {
                 alt="Capa da dissertação LowMovie e o Labirinto Criativo"
                 className="w-full rounded-lg shadow-lg cursor-default"
                 onClick={handleCoverClick}
+                width={1194}
+                height={1688}
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
 
