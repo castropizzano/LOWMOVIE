@@ -4,7 +4,6 @@ import { useRef, useCallback } from "react";
 import Layout from "@/components/Layout";
 import WelcomeOverlay from "@/components/WelcomeOverlay";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
-import { useEffect } from "react";
 
 const Index = () => {
   const navigate = useNavigate();
