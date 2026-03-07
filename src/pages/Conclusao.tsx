@@ -21,7 +21,7 @@ const interviews = [
     id: "black-media",
     label: "Black Media",
     subtitle: "Black View",
-    description: "Black Media Skate — perspectivas sobre skate, cultura negra e produção audiovisual independente no contexto do LowMovie™.",
+    description: "Black Media Skate — mídia underground de skate nacional discute o LowMovie™, processos criativos e produção audiovisual independente.",
     youtubeId: "YJEW5YB59Ws",
     transcript: "/docs/transcricoes/Black_Media_Skate_LowMovie_Interview.pdf",
   },
@@ -81,11 +81,11 @@ const Conclusao = () => {
             <div className="h-px w-16 bg-primary/40 mb-8" />
             <p className="text-base text-foreground/80 leading-relaxed text-justify">
               O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual autônoma e conhecimento
-              estético legítimo no campo acadêmico. A dissertação demonstra, analiticamente, que o skate já opera
+              estético legítimo no campo acadêmico. Demonstro, analiticamente, que o skate já opera
               como prática estética produtora de formas, linguagens e saberes.
             </p>
             <p className="mt-4 text-base text-foreground/80 leading-relaxed text-justify">
-              A pesquisa afirma que o gesto criativo, quando analisado com rigor e implicação, constitui
+              Afirmo que o gesto criativo, quando analisado com rigor e implicação, constitui
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
               um filme fora dos circuitos convencionais — essas operações não são apenas práticas
               artísticas: são modos de conhecer o mundo. O percurso metodológico opera em espiral — cada retorno ao
