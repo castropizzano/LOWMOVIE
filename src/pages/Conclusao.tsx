@@ -196,7 +196,7 @@ const Conclusao = () => {
                           <div className="rounded-lg overflow-hidden group/video">
                             <div className="relative w-full grayscale hover:grayscale-0 transition-all duration-500" style={{ paddingBottom: "56.25%" }}>
                               <iframe
-                                src={`https://www.youtube.com/embed/${item.youtubeId}`}
+                                src={`https://www.youtube-nocookie.com/embed/${item.youtubeId}`}
                                 className="absolute inset-0 w-full h-full border-0"
                                 title={item.label}
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
