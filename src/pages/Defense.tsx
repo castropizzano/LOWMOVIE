@@ -245,7 +245,7 @@ const Defense = () => {
           <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
             <div className="min-h-full flex items-center justify-center">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl">
-              <img src="/images/poster-lowmovie.png" alt="Poster LowMovie" className="w-full max-w-sm mx-auto rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500" />
+              <ImageLightbox src="/images/poster-lowmovie.png" alt="Poster LowMovie™" className="w-full max-w-sm mx-auto" imageClassName="rounded-lg shadow-lg" />
               <div className="text-left">
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
                   Dissertação de Mestrado — Março 2026
