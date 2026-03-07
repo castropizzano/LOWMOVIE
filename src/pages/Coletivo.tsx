@@ -61,7 +61,7 @@ const Coletivo = () => {
               </p>
               <p>
                 A <span className="text-primary font-semibold">LowZine</span> funciona como arquivo vivo.
-                O <span className="text-primary font-semibold">BrandBook</span> funciona como artefato narrativo
+                O <span className="text-primary font-semibold">BrandBook</span> é o artefato narrativo
                 do coletivo. Rafão VM atua como agregador, figura central na articulação dos vínculos.
               </p>
             </div>
