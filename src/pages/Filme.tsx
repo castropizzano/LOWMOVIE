@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
-import { Music, ExternalLink, Film } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import ImageLightbox from "@/components/ImageLightbox";
 
 const Filme = () => {

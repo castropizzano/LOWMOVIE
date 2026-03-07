@@ -85,9 +85,9 @@ const VideoPreloader = ({ blockIndex }: { blockIndex: number }) => {
   const nextBlock = blockIndex + 1;
   let src: string | null = null;
   if (nextBlock === 1) src = "https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=0";
-  if (nextBlock === 8) src = "https://player.vimeo.com/video/819603753?autoplay=0&background=1";
+  if (nextBlock === 8) src = "https://www.youtube.com/embed/Zom42CQ83CU?autoplay=0";
   if (nextBlock === 13) src = "https://www.youtube.com/embed/g3SDaD16c7w?autoplay=0";
-  if (nextBlock === 7) src = `https://player.vimeo.com/video/${TEASERS[0].id}?autoplay=0&background=1`;
+  if (nextBlock === 7) src = `https://www.youtube.com/embed/${TEASERS[0].id}?autoplay=0`;
   if (!src) return null;
   return <iframe src={src} className="absolute w-0 h-0 opacity-0 pointer-events-none" tabIndex={-1} />;
 };
@@ -547,23 +547,27 @@ const Defense = () => {
 
       case 12:
         return (
-          <div className="flex flex-col items-center justify-center h-full px-8">
-            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4 max-w-5xl w-full">
-              O portal organiza a pesquisa como um percurso navegável.
-            </p>
-            <div className="w-full max-w-5xl h-[50vh]">
-              <ConceptGraph />
-            </div>
-            <div className="mt-6 text-left max-w-5xl w-full space-y-4">
-              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                O LowMovie™ é um filme-labirinto.
-              </p>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Não se assiste a ele de fora.
-              </p>
-              <p className="mt-2 text-2xl md:text-3xl font-semibold uppercase tracking-widest text-foreground animate-pulse">
-                É preciso entrar.
-              </p>
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
+            <div className="min-h-full flex items-center justify-center">
+              <div className="max-w-5xl w-full">
+                <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4">
+                  O portal organiza a pesquisa como um percurso navegável.
+                </p>
+                <div className="w-full h-[50vh]">
+                  <ConceptGraph />
+                </div>
+                <div className="mt-6 text-left space-y-4">
+                  <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
+                    O LowMovie™ é um filme-labirinto.
+                  </p>
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                    Não se assiste a ele de fora.
+                  </p>
+                  <p className="mt-2 text-2xl md:text-3xl font-semibold uppercase tracking-widest text-foreground animate-pulse">
+                    É preciso entrar.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         );
