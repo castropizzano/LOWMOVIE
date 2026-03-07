@@ -1,20 +1,24 @@
 
 
-# Correção do alinhamento do texto no Bloco 9 (Defense Mode)
+## Reorganizar nós do Lowbyrinth em padrão octogonal
 
-## Problema
-O bloco de texto ("O LowMovie™ não é apenas objeto da pesquisa...") está centralizado na página porque o container flex usa `items-center`. O texto deveria estar alinhado à esquerda, acompanhando a largura da galeria de fotos abaixo.
+Reposicionar os 9 nós para ocupar os 8 pontos cardeais/intercardeais + centro, inspirado no símbolo geométrico da imagem.
 
-## Solução
-No `src/pages/Defense.tsx`, bloco `case 9` (linhas 456-466):
-- Mudar o `max-w-5xl` do bloco de texto para `max-w-6xl w-full` para que ele ocupe a mesma largura do grid de fotos abaixo
-- O `text-left` já está aplicado, então basta alinhar o container ao grid
+### Alteração em `src/data/lowbyrinth.ts`
 
-Alteração concreta na linha 456:
-```tsx
-// De:
-<div className="text-left mb-6 max-w-5xl space-y-4">
-// Para:
-<div className="text-left mb-6 max-w-6xl w-full space-y-4">
-```
+Novas coordenadas (x%, y%):
+
+| Posição | Nó | x | y |
+|---|---|---|---|
+| Centro | **Conclusão** | 50 | 50 |
+| Topo | Apresentação | 50 | 12 |
+| Topo-direita | Metodologia | 82 | 18 |
+| Direita | Estrutura | 88 | 50 |
+| Baixo-direita | O Coletivo | 82 | 82 |
+| Baixo | Contribuições | 50 | 88 |
+| Baixo-esquerda | Questões | 18 | 82 |
+| Esquerda | Conceitos | 12 | 50 |
+| Topo-esquerda | O Filme | 18 | 18 |
+
+Todas as derivas existentes permanecem iguais. Apenas as coordenadas `x` e `y` de cada nó mudam.
 
