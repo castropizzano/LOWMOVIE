@@ -86,10 +86,10 @@ const VideoEmbed = ({ src, fadeIn = true, contained = false }: { src: string; fa
 const VideoPreloader = ({ blockIndex }: { blockIndex: number }) => {
   const nextBlock = blockIndex + 1;
   let src: string | null = null;
-  if (nextBlock === 1) src = "https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=0";
-  if (nextBlock === 8) src = "https://www.youtube.com/embed/Zom42CQ83CU?autoplay=0";
-  if (nextBlock === 13) src = "https://www.youtube.com/embed/g3SDaD16c7w?autoplay=0";
-  if (nextBlock === 7) src = `https://www.youtube.com/embed/${TEASERS[0].id}?autoplay=0`;
+  if (nextBlock === 1) src = "https://www.youtube-nocookie.com/embed/rQuIDG-1EV4?autoplay=0";
+  if (nextBlock === 8) src = "https://www.youtube-nocookie.com/embed/Zom42CQ83CU?autoplay=0";
+  if (nextBlock === 13) src = "https://www.youtube-nocookie.com/embed/g3SDaD16c7w?autoplay=0";
+  if (nextBlock === 7) src = `https://www.youtube-nocookie.com/embed/${TEASERS[0].id}?autoplay=0`;
   if (!src) return null;
   return <iframe src={src} className="absolute w-0 h-0 opacity-0 pointer-events-none" tabIndex={-1} sandbox="allow-scripts allow-same-origin allow-presentation" />;
 };
@@ -223,7 +223,7 @@ const Defense = () => {
               <div className="flex flex-col items-center justify-center h-full px-8">
                 <div className="w-[84%]">
                   <VideoEmbed
-                    src="https://www.youtube.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
+                    src="https://www.youtube-nocookie.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
                     fadeIn
                     contained
                   />
@@ -437,7 +437,7 @@ const Defense = () => {
               <VideoEmbed
                 src={
                   TEASERS[currentTeaser].platform === "youtube"
-                    ? `https://www.youtube.com/embed/${TEASERS[currentTeaser].id}?autoplay=1&rel=0&modestbranding=1`
+                    ? `https://www.youtube-nocookie.com/embed/${TEASERS[currentTeaser].id}?autoplay=1&rel=0&modestbranding=1`
                     : `https://player.vimeo.com/video/${TEASERS[currentTeaser].id}?autoplay=1&background=0&muted=0`
                 }
                 fadeIn
@@ -455,7 +455,7 @@ const Defense = () => {
                  Essas ideias convergem no trailer do LowMovie™, que sintetiza o Lowbyrinth™.
               </p>
               <VideoEmbed
-                src="https://www.youtube.com/embed/Zom42CQ83CU?autoplay=1&rel=0&modestbranding=1"
+                src="https://www.youtube-nocookie.com/embed/Zom42CQ83CU?autoplay=1&rel=0&modestbranding=1"
                 fadeIn
                 contained
               />
@@ -593,7 +593,7 @@ const Defense = () => {
           <div className="flex items-center justify-center h-full px-8">
             <div className="w-[84%]">
               <VideoEmbed
-                src="https://www.youtube.com/embed/g3SDaD16c7w?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
+                src="https://www.youtube-nocookie.com/embed/g3SDaD16c7w?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
                 fadeIn
                 contained
               />

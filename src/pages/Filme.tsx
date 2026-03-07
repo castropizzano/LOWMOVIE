@@ -19,7 +19,7 @@ const Filme = () => {
           <AnimatedSection delay={0.1}>
             <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-card/30 mb-16 group">
               <iframe
-                src="https://www.youtube.com/embed/wcYBh6_DqO8?rel=0&modestbranding=1"
+                src="https://www.youtube-nocookie.com/embed/wcYBh6_DqO8?rel=0&modestbranding=1"
                 className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture"
