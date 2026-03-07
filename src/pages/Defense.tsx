@@ -242,8 +242,9 @@ const Defense = () => {
 
       case 2:
         return (
-          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
-            <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl my-auto">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
+            <div className="min-h-full flex items-center justify-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl">
               <img src="/images/poster-lowmovie.png" alt="Poster LowMovie" className="w-full max-w-sm mx-auto rounded-lg shadow-lg grayscale hover:grayscale-0 transition-all duration-500" />
               <div className="text-left">
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
@@ -272,12 +273,14 @@ const Defense = () => {
                 </div>
               </div>
             </div>
+            </div>
           </div>
         );
 
       case 3:
         return (
-          <div className="h-full overflow-y-auto p-8 pt-14 pb-16 flex flex-col items-center justify-start">
+          <div className="h-full overflow-y-auto p-8 pt-14 pb-16">
+            <div className="min-h-full flex flex-col items-center justify-center">
             <div className="text-left mb-6 max-w-5xl space-y-4">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O coletivo LowPressure™ se organiza como um espaço de experimentação estética onde skate, imagem e cidade se encontram.
@@ -293,13 +296,15 @@ const Defense = () => {
                 className="w-full max-h-[50vh] rounded-lg shadow-lg object-cover grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
+            </div>
           </div>
         );
 
       case 4:
         return (
-          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
-            <div className="max-w-5xl w-full my-auto">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
+            <div className="min-h-full flex items-center justify-center">
+            <div className="max-w-5xl w-full">
               <div className="text-left mb-10 space-y-4 max-w-5xl">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Para compreender esse processo, proponho o conceito de Lowbyrinth™.
@@ -328,13 +333,15 @@ const Defense = () => {
                 ))}
               </div>
             </div>
+            </div>
           </div>
         );
 
       case 5:
         return (
-          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
-            <div className="max-w-5xl w-full my-auto">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
+            <div className="min-h-full flex items-center justify-center">
+            <div className="max-w-5xl w-full">
               <div className="text-left mb-10 space-y-4 max-w-5xl">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Metodologicamente, a pesquisa se insere no campo da pesquisa-criação implicada.
@@ -366,6 +373,7 @@ const Defense = () => {
                 alt="LowPressure Fam"
                 className="w-full rounded-lg mt-8 object-cover max-h-[40vh] grayscale hover:grayscale-0 transition-all duration-500"
               />
+            </div>
             </div>
           </div>
         );
@@ -443,7 +451,8 @@ const Defense = () => {
 
       case 9:
         return (
-          <div className="h-full overflow-y-auto p-8 pt-14 pb-16 flex flex-col items-center justify-start">
+          <div className="h-full overflow-y-auto p-8 pt-14 pb-16">
+            <div className="min-h-full flex flex-col items-center justify-center">
             <div className="text-left mb-6 max-w-5xl space-y-4">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                 O LowMovie™ não é apenas objeto da pesquisa.
@@ -482,13 +491,15 @@ const Defense = () => {
                 ))}
               </div>
             </div>
+            </div>
           </div>
         );
 
       case 10:
         return (
-          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
-            <div className="max-w-5xl w-full my-auto">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
+            <div className="min-h-full flex items-center justify-center">
+            <div className="max-w-5xl w-full">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-10">
                 A pesquisa propõe três contribuições principais.
               </p>
@@ -507,13 +518,15 @@ const Defense = () => {
                 className="w-full rounded-lg mt-8 object-cover max-h-[35vh] grayscale hover:grayscale-0 transition-all duration-500"
               />
             </div>
+            </div>
           </div>
         );
 
       case 11:
         return (
-          <div className="h-full overflow-y-auto px-8 pt-14 pb-16 flex items-start justify-center">
-            <div className="max-w-5xl w-full my-auto">
+          <div className="h-full overflow-y-auto px-8 pt-14 pb-16">
+            <div className="min-h-full flex items-center justify-center">
+            <div className="max-w-5xl w-full">
               <div className="text-left mb-12 space-y-4">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
                   Toda pesquisa em arte opera em tensões conceituais.
@@ -527,6 +540,7 @@ const Defense = () => {
                   <FAQCard key={i} item={item} />
                 ))}
               </div>
+            </div>
             </div>
           </div>
         );
