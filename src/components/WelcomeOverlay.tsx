@@ -1,9 +1,11 @@
-import { useState, useEffect, FormEvent } from "react";
+import { useState, useEffect, FormEvent, useCallback } from "react";
 import { z } from "zod";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Play } from "lucide-react";
 
 const STORAGE_KEY = "lowmovie_visited";
+const YOUTUBE_ID = "3kO3N49cUkU";
 
 const emailSchema = z.string().trim().email("Email inválido").max(254, "Email muito longo");
 
@@ -12,11 +14,16 @@ const WelcomeOverlay = () => {
   const [email, setEmail] = useState("");
   const [closing, setClosing] = useState(false);
   const [error, setError] = useState("");
+  const [iframeLoaded, setIframeLoaded] = useState(false);
 
   useEffect(() => {
     if (!localStorage.getItem(STORAGE_KEY)) {
       setVisible(true);
     }
+  }, []);
+
+  const loadIframe = useCallback(() => {
+    setIframeLoaded(true);
   }, []);
 
   const handleSubmit = (e: FormEvent) => {
@@ -49,16 +56,35 @@ const WelcomeOverlay = () => {
       className={`fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/70 transition-opacity duration-400 ${closing ? "opacity-0" : "opacity-100"}`}
     >
       <div className="w-full max-w-xl mx-4 border border-border bg-background/95 rounded-lg shadow-2xl overflow-hidden">
-        {/* Video */}
-        <div className="relative w-full aspect-video group">
-          <iframe
-            src="https://www.youtube.com/embed/3kO3N49cUkU?autoplay=1&loop=1&playlist=3kO3N49cUkU&controls=0&mute=1&showinfo=0&rel=0&modestbranding=1"
-            allowFullScreen
-            allow="autoplay"
-            sandbox="allow-scripts allow-same-origin allow-presentation"
-            className="absolute inset-0 w-full h-full border-0"
-            title="LowMovie — Introdução"
-          />
+        {/* Video facade / iframe */}
+        <div className="relative w-full aspect-video group bg-black">
+          {iframeLoaded ? (
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}?autoplay=1&loop=1&playlist=${YOUTUBE_ID}&controls=0&mute=1&showinfo=0&rel=0&modestbranding=1`}
+              allowFullScreen
+              allow="autoplay"
+              sandbox="allow-scripts allow-same-origin allow-presentation"
+              className="absolute inset-0 w-full h-full border-0"
+              title="LowMovie — Introdução"
+              loading="lazy"
+            />
+          ) : (
+            <button
+              onClick={loadIframe}
+              className="absolute inset-0 w-full h-full flex items-center justify-center cursor-pointer"
+              aria-label="Reproduzir vídeo"
+            >
+              <img
+                src={`https://i.ytimg.com/vi/${YOUTUBE_ID}/hqdefault.jpg`}
+                alt="LowMovie — Introdução"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="relative z-10 w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center shadow-lg">
+                <Play className="w-8 h-8 text-primary-foreground ml-1" />
+              </div>
+            </button>
+          )}
         </div>
 
         {/* Content */}
