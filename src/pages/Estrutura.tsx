@@ -109,8 +109,8 @@ const Estrutura = () => {
                   processual, labiríntico e transformador da criação coletiva.
                 </p>
                 <p>
-                  A obra expande-se para além de seus limites formais, operando como catalisador de novas
-                  relações entre arte, cidade e subcultura. A referência junguiana opera como lente
+                  A obra expande-se para além de seus limites formais, abrindo novas
+                  relações entre arte, cidade e subcultura. A referência junguiana funciona como lente
                   complementar, não como fundamento estruturante da análise.
                 </p>
               </div>

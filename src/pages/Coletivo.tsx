@@ -61,7 +61,7 @@ const Coletivo = () => {
                 erro"</em>. No LowPressure™, o erro não é falha — é material criativo.
               </p>
               <p>
-                A <span className="text-primary font-semibold">LowZine</span> opera como arquivo vivo.
+                A <span className="text-primary font-semibold">LowZine</span> funciona como arquivo vivo.
                 O <span className="text-primary font-semibold">BrandBook</span> funciona como artefato narrativo
                 do coletivo. Rafão VM atua como agregador, figura central na articulação dos vínculos.
               </p>

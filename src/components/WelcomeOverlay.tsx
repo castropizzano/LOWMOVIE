@@ -67,7 +67,7 @@ const WelcomeOverlay = () => {
             Bem-vindo ao Labirinto Criativo
           </h2>
           <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-            Esta plataforma é parte da dissertação de mestrado sobre o coletivo
+            Esta plataforma é parte da minha dissertação de mestrado sobre o coletivo
             LowPressure™ e suas práticas audiovisuais. Insira seu email para
             acessar o conteúdo — os dados são utilizados exclusivamente para fins
             acadêmicos.
