@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+# LOWMOVIE™ E O LABIRINTO CRIATIVO
 
-## Project info
+Portal interativo da dissertação de mestrado de **Castro Pizzano**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+> Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™
 
-## How can I edit this code?
+## Sobre
 
-There are several ways of editing your application.
+Plataforma institucional desenvolvida para a defesa da dissertação no **Programa de Pós-Graduação em Cinema e Artes do Vídeo (PPG-CINEAV)** da **Universidade Estadual do Paraná (UNESPAR)**.
 
-**Use Lovable**
+- **Linha de pesquisa:** Processos de Criação no Cinema e nas Artes do Vídeo
+- **Orientador:** Prof. Dr. Fábio Jabur de Noronha
+- **Banca:** Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz
+- **Defesa:** Março 2026
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Estrutura do portal
 
-Changes made via Lovable will be committed automatically to this repo.
+| Seção | Descrição |
+|---|---|
+| Apresentação | Contexto, motivação e objeto da pesquisa |
+| Metodologia | Pesquisa-criação implicada como abordagem |
+| Estrutura | Arquitetura da dissertação |
+| Conceitos | Operadores conceituais: Lowbyrinth™, poética do instante, estética da borda, registro em fluxo |
+| O Filme | O documentário *Like Rats* e o processo criativo |
+| O Coletivo | O coletivo LowPressure™ e a produção colaborativa |
+| Contribuições | Aportes ao campo do cinema e das artes do vídeo |
+| Questões | Antecipação de tensões críticas da banca |
+| Conclusão | Síntese e horizontes abertos |
+| Mapa Conceitual | Grafo interativo das conexões teóricas |
+| Lowbyrinth™ | Modo de navegação não-linear entre seções |
 
-**Use your preferred IDE**
+## Links
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Portal:** [lowmovie.lovable.app](https://lowmovie.lovable.app)
+- **Acervo:** [Google Drive](https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Stack
 
-Follow these steps:
+React · TypeScript · Vite · Tailwind CSS · shadcn/ui · Framer Motion
+
+## Desenvolvimento local
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+git clone <URL_DO_REPO>
+cd <NOME_DO_PROJETO>
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Licença
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2026 Castro Pizzano. Todos os direitos reservados.
