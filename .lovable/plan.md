@@ -34,3 +34,14 @@
 
 ### Resolved
 - Hellraiser epigraph removed from Index.tsx
+
+## Completed: Ultra-Comprehensive Final Audit
+
+All critical issues resolved:
+
+1. **NotFound link** — `href="/"` → `href="/home"` (no more Intro re-trigger)
+2. **Defense Mode i18n** — All hardcoded PT text moved to `defense.*` keys in pt.json/en.json; Defense.tsx fully refactored to use `t()`
+3. **ConceptGraph i18n** — All node labels/descriptions added to `conceptMap.nodes.*` in both locales; ConceptGraph.tsx uses `t()` with fallback
+4. **CITATION.cff** — Empty ORCID field removed
+5. **Repetitive patterns** — 7 targeted edits in pt.json: varied "constitui", "articula", "constituem" with "opera", "funde", "oferecem", "compõem", "funcionar como"
+6. **WelcomeOverlay** — Zod message hardcoded but has no visual impact (documented)
