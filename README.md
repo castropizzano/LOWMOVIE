@@ -115,7 +115,16 @@ npm run dev
 
 ---
 
-## Nota sobre Processo Criativo
+## Estratégia de Preservação Digital
+
+O projeto LOWMOVIE™ inclui uma estratégia deliberada de preservação digital, alinhada a práticas contemporâneas de conservação de arte digital e media art. Como **obra em expansão** e **arquivo vivo**, o projeto demanda camadas complementares de preservação que garantam sua acessibilidade de longo prazo, independentemente de mudanças em plataformas ou ambientes de hospedagem.
+
+A preservação opera em quatro camadas: portal ao vivo, repositório versionado, espelho offline navegável e arquivo organizado de mídias. Essa estratégia reconhece que a preservação não é um gesto técnico posterior, mas uma extensão conceitual da própria pesquisa.
+
+→ Ver guia completo em [`PRESERVATION.md`](PRESERVATION.md)
+
+---
+
 
 Este projeto foi desenvolvido através de processos híbridos de criação, envolvendo colaboração entre práticas artísticas, ferramentas digitais e reflexão teórica. A documentação presente neste repositório busca tornar visível parte desse processo.
 

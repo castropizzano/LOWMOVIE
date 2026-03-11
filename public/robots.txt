@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Internet Archive / Wayback Machine
+User-agent: ia_archiver
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
 Sitemap: https://lowmovie.lovable.app/sitemap.xml
