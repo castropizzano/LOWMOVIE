@@ -107,7 +107,7 @@ const Defense = () => {
 
   useEffect(() => {
     if (currentBlock === 0) {
-      const timer = setTimeout(() => setCurrentBlock(1), 2000);
+      const timer = setTimeout(() => setCurrentBlock(1), 5000);
       return () => clearTimeout(timer);
     }
   }, [currentBlock]);
