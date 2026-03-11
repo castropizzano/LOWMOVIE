@@ -197,7 +197,7 @@ const Defense = () => {
           <div className="relative w-full h-full">
             {!videoEnded && (
               <div className="flex flex-col items-center justify-center h-full px-8">
-                <div className="w-[84%]">
+              <div className="w-full md:w-[84%]">
                   <VideoEmbed
                     src="https://www.youtube-nocookie.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
                     fadeIn
