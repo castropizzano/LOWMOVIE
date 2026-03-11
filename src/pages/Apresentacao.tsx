@@ -16,7 +16,7 @@ const Apresentacao = () => {
                 Esta dissertação investiga os processos criativos do filme{" "}
                 <span className="text-primary font-semibold">LowMovie™</span>, realizado pelo coletivo de
                 artistas-skatistas <span className="text-primary font-semibold">LowPressure™</span>,
-                analisando como tais dinâmicas colaborativas contribuem para a constituição de uma poética
+                analisando como tais dinâmicas colaborativas contribuem para a formação de uma poética
                 audiovisual em movimento vinculada à experiência urbana do skate. O trabalho situa-se no
                 cruzamento entre a produção cinematográfica contemporânea, as práticas subculturais urbanas
                 e a pesquisa acadêmica em artes, propondo uma abordagem que reconhece a potência estética
