@@ -1,36 +1,20 @@
 
-## Completed: Reduce em dash (—) overuse
 
-~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
+# Vídeo do Processo Lowbyrinth (Blender) — Onde encaixar
 
-## Completed: Human Writing Audit
+## Análise
 
-~20 edits across 7 files:
-- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
-- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
-- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
-- Route fix: lowbyrinth.ts `/faq` → `/questoes`
+O vídeo de 13s mostra o processo de criação do movimento do Lowbyrinth no Blender. Após revisar todas as páginas, o melhor lugar é a **página Conceitos** (`/conceitos`), logo após a definição do conceito "Lowbyrinth" — que é o primeiro item na lista de conceitos próprios. O vídeo funciona como registro visual da materialização do conceito em interface.
 
-## Completed: Full Editorial Audit (pre-defense)
+**Alternativa descartada:** Estrutura (seção "Portal como Interface") — possível, mas a conexão conceitual é mais forte na página de Conceitos.
 
-7 edits across 6 files:
-- MethodManual.tsx L123: "constitui" → "é"
-- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
-- Filme.tsx L69: "constitui" → "possui"
-- Metodologia.tsx L109: "articula" → "formula"
-- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
-- README.md L32: "simultaneamente" → "a um só tempo,"
-- Defense.tsx L30: removed serial comma before "e"
+## Implementação
 
-## Completed: Visual Design Consistency Audit
+1. **Copiar o vídeo** para `public/videos/lowbyrinth-process.mp4`
+2. **Editar `Conceitos.tsx`** — inserir um bloco de vídeo logo após a definição do conceito Lowbyrinth (primeiro item da lista de conceitos próprios), usando um `<video>` nativo com `autoPlay`, `loop`, `muted`, `playsInline` e o filtro `grayscale` com hover colorido (padrão do site)
+3. **Adicionar chaves de tradução** nos JSONs:
+   - `conceitos.processVideoCaption` (PT): "Processo de criação do movimento do Lowbyrinth™ no Blender"
+   - (EN): "Lowbyrinth™ movement creation process in Blender"
 
-8 fixes across 6 files:
-- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
-- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
-- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
-- Index.tsx: Cover image added grayscale hover:grayscale-0
-- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
-- Mapa.tsx: Added text-justify to instruction text
+O vídeo será exibido inline com `aspect-video`, `rounded-lg`, `border border-border`, seguindo o padrão visual do site. Por ser curto (13s), autoplay em loop mudo é a melhor experiência.
 
-### Resolved
-- Hellraiser epigraph removed from Index.tsx
