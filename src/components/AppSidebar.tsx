@@ -29,7 +29,7 @@ import {
 } from "@/components/ui/sidebar";
 
 const items = [
-  { title: "Home", url: "/", icon: Home },
+  { title: "Home", url: "/home", icon: Home },
   { title: "Apresentação", url: "/apresentacao", icon: Presentation },
   { title: "Metodologia", url: "/metodologia", icon: FlaskConical },
   { title: "Estrutura", url: "/estrutura", icon: LayoutGrid },
