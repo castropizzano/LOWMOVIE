@@ -20,8 +20,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Implicação",
     x: 50, y: 12,
     derivas: [
-      { to: "/metodologia", label: "Metodologia", justificativa: "Da implicação pessoal ao rigor do método — o afeto fundamenta a pesquisa." },
-      { to: "/conceitos", label: "Conceitos", justificativa: "Do relato à cartografia conceitual — nomear o que a experiência revelou." },
+      { to: "/metodologia", label: "Metodologia", justificativa: "Da implicação pessoal ao rigor do método. O afeto fundamenta a pesquisa." },
+      { to: "/conceitos", label: "Conceitos", justificativa: "Do relato à cartografia conceitual. Nomear o que a experiência revelou." },
     ],
   },
   {
