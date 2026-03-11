@@ -84,7 +84,7 @@ const Conclusao = () => {
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80 mb-4">{t("conclusao.publicationsTitle")}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">{t("conclusao.publicationHarpiaDesc")}</p>
-              <a href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+              <a href="https://drive.google.com/file/d/1DUueUK6W9C2u4vJY6HRqQ7Ji0J00EUh1/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
                 <span className="text-sm font-medium text-foreground/80">{t("conclusao.openPublication")}</span>
               </a>
             </div>
