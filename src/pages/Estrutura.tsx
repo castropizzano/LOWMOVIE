@@ -117,7 +117,7 @@ const Estrutura = () => {
                   </li>
                 </ul>
                 <p>
-                  Essa arquitetura transforma o portal em uma interface de pesquisa — onde teoria, criação e
+                  Essa arquitetura transforma o portal em uma interface de pesquisa, onde teoria, criação e
                   documentação coexistem em um sistema navegável. Dissertação, obra e interface digital se conectam
                   no que pode ser compreendido como um dispositivo expandido de pesquisa.
                 </p>
