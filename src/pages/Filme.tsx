@@ -45,7 +45,7 @@ const Filme = () => {
                   { label: "Direção", value: "Rafão VM (dir.) & Castro Pizzano \"Punk\" (co-dir.)" },
                   { label: "Coletivo", value: "LowPressure™" },
                   { label: "Trilha sonora", value: "Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)" },
-                  { label: "Estrutura", value: "Segmentos entrelaçados — sessões, interlúdios, cenas de fabulação" },
+                  { label: "Estrutura", value: "Segmentos entrelaçados: sessões, interlúdios, cenas de fabulação" },
                   { label: "Circulação", value: "Circuitos independentes e institucionais" },
                 ].map((item) => (
                   <div key={item.label} className="border-l-2 border-primary/20 pl-4">
