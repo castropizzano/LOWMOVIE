@@ -79,9 +79,9 @@ export const edges: GraphEdge[] = [
 ];
 
 export const typeColors: Record<NodeType, string> = {
-  conceito: "hsl(45, 80%, 60%)",
-  autor: "hsl(200, 60%, 55%)",
-  campo: "hsl(340, 50%, 55%)",
+  conceito: "hsl(290, 55%, 65%)",   // light magenta — protagonists
+  autor:    "hsl(260, 45%, 60%)",   // soft violet
+  campo:    "hsl(320, 50%, 55%)",   // rose-magenta
 };
 
 export const typeLabels: Record<NodeType, string> = {
