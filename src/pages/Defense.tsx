@@ -621,7 +621,7 @@ const Defense = () => {
       {/* Exit button */}
       {currentBlock > 0 && (
         <button
-          onClick={(e) => { e.stopPropagation(); navigate("/"); }}
+          onClick={(e) => { e.stopPropagation(); navigate("/home"); }}
           className="absolute top-4 left-4 z-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
           title="Voltar ao portal (ESC)"
         >
