@@ -1,50 +1,36 @@
 
+## Completed: Reduce em dash (—) overuse
 
-# Publicação Acadêmica Derivada — Análise e Proposta
+~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
 
-## Minha avaliação honesta
+## Completed: Human Writing Audit
 
-Concordo com a análise. O artigo tem peso acadêmico real: publicação em revista científica, coautoria com a orientadora, LowMovie como exemplo empírico dentro de teoria narrativa (Ricoeur). Merece visibilidade no portal.
+~20 edits across 7 files:
+- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
+- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
+- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
+- Route fix: lowbyrinth.ts `/faq` → `/questoes`
 
-Mas o documento já está no acervo do Google Drive. Não faz sentido duplicar o PDF no portal. O que faz sentido é **dar visibilidade textual** a essa produção derivada.
+## Completed: Full Editorial Audit (pre-defense)
 
-## Onde colocar
+7 edits across 6 files:
+- MethodManual.tsx L123: "constitui" → "é"
+- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
+- Filme.tsx L69: "constitui" → "possui"
+- Metodologia.tsx L109: "articula" → "formula"
+- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
+- README.md L32: "simultaneamente" → "a um só tempo,"
+- Defense.tsx L30: removed serial comma before "e"
 
-Na página **Conclusão** (`/conclusao`), entre a seção **Dissertação PDF** e o **Acervo do Processo**. Uma seção curta chamada **"Publicações Relacionadas"** — funciona como registro de produção acadêmica derivada e é escalável (se surgirem outros artigos, basta adicionar).
+## Completed: Visual Design Consistency Audit
 
-O link apontaria para o acervo no Drive (onde o PDF já está), não para um PDF local.
+8 fixes across 6 files:
+- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
+- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
+- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
+- Index.tsx: Cover image added grayscale hover:grayscale-0
+- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
+- Mapa.tsx: Added text-justify to instruction text
 
-## Implementação
-
-1. **Editar `Conclusao.tsx`** — inserir um novo bloco entre "Dissertação PDF" (linha 78) e "Acervo" (linha 82), seguindo o mesmo padrão visual (card com border, título uppercase, parágrafo descritivo, botão-link)
-
-2. **Adicionar chaves de tradução** PT/EN:
-   - `conclusao.publicationsTitle`: "Publicações Relacionadas" / "Related Publications"
-   - `conclusao.publicationHarpiaDesc`: nota acadêmica descritiva (o texto que você sugeriu, levemente editado)
-   - `conclusao.openPublication`: "Acessar publicação no acervo" / "Access publication in archive"
-
-3. O link do botão aponta para o mesmo Google Drive do acervo
-
-## Resultado visual
-
-```text
-┌─────────────────────────────────────────────┐
-│  DISSERTAÇÃO COMPLETA                       │
-│  [link PDF]                                 │
-├─────────────────────────────────────────────┤
-│  PUBLICAÇÕES RELACIONADAS                   │
-│                                             │
-│  O artigo "A arte de contar: as tessituras  │
-│  entre narrativa e jornalismo a partir do   │
-│  conceito de tríplice mimese", publicado na │
-│  Revista Científica Harpia (2025)...        │
-│                                             │
-│  [Acessar publicação no acervo]             │
-├─────────────────────────────────────────────┤
-│  ACERVO DO PROCESSO                         │
-│  [link Drive]                               │
-└─────────────────────────────────────────────┘
-```
-
-Leve, acadêmico, sem autopromoção. E escalável para futuras publicações.
-
+### Resolved
+- Hellraiser epigraph removed from Index.tsx
