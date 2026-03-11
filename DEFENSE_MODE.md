@@ -33,7 +33,7 @@ https://lowmovie.lovable.app/defense
 
 Durante a defesa, o portal pode ser usado em conjunto com:
 
-- **Lowbyrinth™** (`/mapa`) — para demonstrar a navegação não-linear
+- **Lowbyrinth™** (botão no header do portal) — para demonstrar a navegação não-linear
 - **Mapa Conceitual** (`/mapa`) — para visualizar conexões teóricas
 - **Seções individuais** — para aprofundar pontos específicos levantados pela banca
 

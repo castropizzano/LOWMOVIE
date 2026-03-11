@@ -134,13 +134,10 @@ const Conclusao = () => {
                   Lowbyrinth™ como Ferramenta Pedagógica
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — também sugere possíveis aplicações pedagógicas.
+                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — sugere também aplicações pedagógicas que pretendo explorar.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  Em contextos de ensino, o diagrama pode funcionar como ferramenta de mediação em processos de aprendizagem em arte, design e audiovisual. Nesse sentido, ele pode ser compreendido como um mapa conceitual navegável, no qual estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  A ideia de percurso, característica do labirinto, aproxima-se de abordagens pedagógicas que valorizam a experimentação, a descoberta e o desenvolvimento de processos autorais.
+                  Penso nele como um mapa conceitual navegável: estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.
                 </p>
               </div>
 
@@ -153,16 +150,10 @@ const Conclusao = () => {
                   Sala de Aula — Possibilidades Metodológicas
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  A experiência de pesquisa-criação associada ao LowMovie™ aponta também para possíveis desdobramentos em ambientes educacionais.
+                  A experiência de pesquisa-criação do LowMovie™ me leva a pensar também em desdobramentos para ambientes educacionais — processo colaborativo, espiral cognitiva, implicação do corpo no gesto criativo.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  Aspectos como o processo colaborativo, a espiral cognitiva e a implicação do corpo no gesto criativo podem inspirar práticas pedagógicas voltadas à experimentação artística e à produção de conhecimento sensível.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  Nesse contexto, teoria, prática e experiência passam a se relacionar de maneira mais integrada, permitindo que a aprendizagem emerja do próprio processo de criação.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  Mais do que estabelecer um modelo fechado, essa perspectiva abre caminhos para pensar a sala de aula como espaço de investigação estética, encontro coletivo e desenvolvimento de práticas autorais.
+                  Não pretendo estabelecer um modelo fechado. O que proponho é abrir caminhos para pensar a sala de aula como espaço de investigação estética, encontro coletivo e desenvolvimento de práticas autorais.
                 </p>
               </div>
             </div>

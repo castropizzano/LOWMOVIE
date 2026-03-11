@@ -23,7 +23,7 @@ const Apresentacao = () => {
                 de formas de criação historicamente marginalizadas pelo campo artístico institucionalizado.
               </p>
               <p>
-                A pesquisa opera um deslocamento epistemológico decisivo: reposiciona o
+                A pesquisa propõe um deslocamento epistemológico decisivo: reposiciona o
                 skate não apenas como fenômeno sociocultural — objeto recorrente de investigações sociológicas
                 e antropológicas — mas como prática estética produtora de linguagem audiovisual situada. Esse
                 gesto de reposicionamento implica reconhecer que o corpo em movimento sobre o skate não é

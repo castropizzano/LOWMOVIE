@@ -49,7 +49,7 @@ const FAQ = () => {
     <Layout>
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
-          <SectionTitle title="Questões Críticas" subtitle="Tensões conceituais." />
+          <SectionTitle title="Questões Críticas" subtitle="Tensões conceituais" />
 
           <AnimatedSection delay={0.05}>
             <p className="text-base text-foreground/80 leading-relaxed text-justify mb-16">
