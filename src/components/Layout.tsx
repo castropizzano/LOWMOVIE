@@ -22,6 +22,12 @@ const Layout = ({ children }: { children: ReactNode }) => {
             >
               Lowbyrinth™
             </button>
+            <button
+              onClick={() => setMethodOpen(true)}
+              className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
+            >
+              Manual do Método
+            </button>
           </header>
 
           <main className="flex-1">
