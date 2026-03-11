@@ -71,8 +71,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Processo colaborativo",
     x: 82, y: 82,
     derivas: [
-      { to: "/contribuicoes", label: "Contribuições", justificativa: "Do coletivo ao campo — o que a prática coletiva oferece à academia." },
-      { to: "/metodologia", label: "Metodologia", justificativa: "Do campo ao método — o coletivo como dispositivo epistemológico." },
+      { to: "/contribuicoes", label: "Contribuições", justificativa: "Do coletivo ao campo. O que a prática coletiva oferece à academia." },
+      { to: "/metodologia", label: "Metodologia", justificativa: "Do campo ao método. O coletivo como dispositivo epistemológico." },
     ],
   },
   {
