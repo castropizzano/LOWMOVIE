@@ -15,8 +15,8 @@ export interface GraphEdge {
 export const nodes: GraphNode[] = [
   // Campos temáticos
   { id: "campo-urbano", label: "Skate e cidade", type: "campo", description: "Skate como reinscrição urbana: o corpo relê e reconfigura o espaço construído." },
-  { id: "campo-estetica", label: "Estética relacional", type: "campo", description: "A obra como interstício social — espaço de relações humanas e outras possibilidades de troca." },
-  { id: "campo-processo", label: "Processo colaborativo", type: "campo", description: "Criação coletiva como experiência — não método, mas processo." },
+  { id: "campo-estetica", label: "Estética relacional", type: "campo", description: "A obra como interstício social, espaço de relações humanas e outras possibilidades de troca." },
+  { id: "campo-processo", label: "Processo colaborativo", type: "campo", description: "Criação coletiva como experiência, não método, mas processo." },
   { id: "campo-cinema", label: "Corpo-câmera", type: "campo", description: "Fusão entre performer e dispositivo de registro: corpo e câmera como entidade única em ato." },
 
   // Autores
