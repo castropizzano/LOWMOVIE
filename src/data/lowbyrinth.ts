@@ -61,8 +61,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Corpo em deriva",
     x: 18, y: 18,
     derivas: [
-      { to: "/coletivo", label: "O Coletivo", justificativa: "Do filme aos corpos — quem são os que criam juntos." },
-      { to: "/conceitos", label: "Conceitos", justificativa: "Da imagem ao conceito — o filme é teoria em ato." },
+      { to: "/coletivo", label: "O Coletivo", justificativa: "Do filme aos corpos. Quem são os que criam juntos." },
+      { to: "/conceitos", label: "Conceitos", justificativa: "Da imagem ao conceito. O filme é teoria em ato." },
     ],
   },
   {
