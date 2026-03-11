@@ -1,12 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Volume2, VolumeX } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Intro = () => {
   const navigate = useNavigate();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
   const [overlayVisible, setOverlayVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const seen = sessionStorage.getItem("lowmovie_intro_seen");
@@ -42,21 +44,14 @@ const Intro = () => {
         onEnded={enter}
         className="absolute inset-0 w-full h-full object-cover"
       />
-
-      {/* Subtle vignette */}
       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/40 pointer-events-none" />
-
-      {/* Sound toggle */}
       <button
         onClick={toggleSound}
         className="absolute top-6 right-6 z-10 border border-border/50 rounded-full p-3 text-foreground/60 hover:text-primary hover:border-primary/50 transition-all backdrop-blur-sm bg-background/20"
-        aria-label={muted ? "Enable sound" : "Mute sound"}
+        aria-label={muted ? t("intro.enableSound") : t("intro.muteSound")}
       >
         {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
       </button>
-
-
-      {/* Bottom buttons */}
       <div
         className={`absolute bottom-12 left-0 right-0 flex flex-col sm:flex-row items-center justify-center gap-4 px-6 transition-opacity duration-1000 ${
           overlayVisible ? "opacity-100" : "opacity-0"
@@ -66,7 +61,7 @@ const Intro = () => {
           onClick={enter}
           className="border border-border/50 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-foreground/70 hover:border-primary/50 hover:text-primary transition-all backdrop-blur-sm bg-background/20"
         >
-          Enter Portal
+          {t("intro.enterPortal")}
         </button>
       </div>
     </div>
