@@ -219,7 +219,7 @@ const Conclusao = () => {
 
           {/* Card: Entrevistas com Accordion */}
           <div>
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-6">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Entrevistas
