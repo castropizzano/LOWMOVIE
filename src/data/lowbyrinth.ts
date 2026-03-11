@@ -81,8 +81,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Legado",
     x: 50, y: 88,
     derivas: [
-      { to: "/conclusao", label: "Conclusão", justificativa: "Das contribuições ao encerramento — o que permanece aberto." },
-      { to: "/faq", label: "Questões", justificativa: "Das contribuições às perguntas — antecipar o que a banca pode indagar." },
+      { to: "/conclusao", label: "Conclusão", justificativa: "Das contribuições ao encerramento. O que permanece aberto." },
+      { to: "/questoes", label: "Questões", justificativa: "Das contribuições às perguntas. Antecipar o que a banca pode indagar." },
     ],
   },
   {
