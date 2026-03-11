@@ -4,16 +4,12 @@ import { AppSidebar } from "./AppSidebar";
 import LowbyrinthMode from "./LowbyrinthMode";
 import MethodManual from "./MethodManual";
 import { useTranslation } from "react-i18next";
+import { cn } from "@/lib/utils";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const [lowbyrinthOpen, setLowbyrinthOpen] = useState(false);
   const [methodOpen, setMethodOpen] = useState(false);
   const { t, i18n } = useTranslation();
-
-  const toggleLang = () => {
-    const next = i18n.language === "pt" ? "en" : "pt";
-    i18n.changeLanguage(next);
-  };
 
   useEffect(() => {
     document.documentElement.lang = i18n.language;
