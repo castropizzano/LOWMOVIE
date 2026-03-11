@@ -50,7 +50,7 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader className="border-b border-sidebar-border px-4 h-12 flex items-center">
-        <NavLink to="/" className="flex items-center gap-2">
+        <NavLink to="/" className="flex items-center gap-2" onClick={() => sessionStorage.removeItem("lowmovie_intro_seen")}>
           <span className={`text-lg font-bold uppercase tracking-widest text-sidebar-primary transition-all ${collapsed ? "hidden" : ""}`}>
             LowMovie™
           </span>
