@@ -190,6 +190,13 @@
     "ownConcepts": "Conceitos Próprios: Formulações Autorais",
     "ownConceptsNote": "Operadores analíticos derivados da prática artística.",
     "processVideoCaption": "Processo de criação do movimento do Lowbyrinth™ no Blender",
+    "tabProcesso": "Processo",
+    "tabBox": "Box",
+    "tabCard": "Card",
+    "tabVHS": "VHS Tape",
+    "nftBoxCaption": "Lowbyrinth™ — Box (artefato digital NFT)",
+    "nftCardCaption": "Lowbyrinth™ — Card (artefato digital NFT)",
+    "nftVHSCaption": "Lowbyrinth™ — VHS Tape (artefato digital NFT)",
     "concepts": {
       "lowbyrinth": { "name": "Lowbyrinth™", "def": "Imagem-conceito que sintetiza o caráter processual, não-linear e labiríntico da criação no interior do coletivo LowPressure™. O labirinto não tem saída prevista: a obra é o próprio percurso." },
       "poetica": { "name": "Poética do instante", "def": "Captura do gesto efêmero como condensação sensível do real. O momento em que corpo, espaço, luz e câmera convergem numa configuração irrepetível." },

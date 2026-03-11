@@ -61,17 +61,30 @@ const Conceitos = () => {
                     <p className="text-sm text-muted-foreground leading-relaxed text-justify">{t(`conceitos.concepts.${key}.def`)}</p>
                   </div>
                   {key === "lowbyrinth" && (
-                    <div className="mt-4 ml-6">
-                      <video
-                        src="/videos/lowbyrinth-process.mp4"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full max-w-md aspect-video rounded-lg border border-border grayscale hover:grayscale-0 transition-all duration-500"
-                      />
-                      <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-2">{t("conceitos.processVideoCaption")}</p>
-                    </div>
+                    <Tabs defaultValue="processo" className="mt-4">
+                      <TabsList>
+                        <TabsTrigger value="processo">{t("conceitos.tabProcesso")}</TabsTrigger>
+                        <TabsTrigger value="box">{t("conceitos.tabBox")}</TabsTrigger>
+                        <TabsTrigger value="card">{t("conceitos.tabCard")}</TabsTrigger>
+                        <TabsTrigger value="vhs">{t("conceitos.tabVHS")}</TabsTrigger>
+                      </TabsList>
+                      <TabsContent value="processo">
+                        <video src="/videos/lowbyrinth-process.mp4" autoPlay loop muted playsInline className="w-full aspect-video rounded-lg border border-border grayscale hover:grayscale-0 transition-all duration-500" />
+                        <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-2">{t("conceitos.processVideoCaption")}</p>
+                      </TabsContent>
+                      <TabsContent value="box">
+                        <video src="/videos/lowbyrinth-nft-box.mp4" autoPlay loop muted playsInline className="w-full aspect-video rounded-lg border border-border grayscale hover:grayscale-0 transition-all duration-500" />
+                        <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-2">{t("conceitos.nftBoxCaption")}</p>
+                      </TabsContent>
+                      <TabsContent value="card">
+                        <video src="/videos/lowbyrinth-nft-card.mp4" autoPlay loop muted playsInline className="w-full aspect-video rounded-lg border border-border grayscale hover:grayscale-0 transition-all duration-500" />
+                        <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-2">{t("conceitos.nftCardCaption")}</p>
+                      </TabsContent>
+                      <TabsContent value="vhs">
+                        <video src="/videos/lowbyrinth-nft-vhs.mp4" autoPlay loop muted playsInline className="w-full aspect-video rounded-lg border border-border grayscale hover:grayscale-0 transition-all duration-500" />
+                        <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-2">{t("conceitos.nftVHSCaption")}</p>
+                      </TabsContent>
+                    </Tabs>
                   )}
                 </div>
               ))}
