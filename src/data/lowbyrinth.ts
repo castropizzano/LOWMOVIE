@@ -87,7 +87,7 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
   },
   {
     title: "Questões",
-    path: "/faq",
+    path: "/questoes",
     conceito: "Antecipação",
     x: 18, y: 82,
     derivas: [

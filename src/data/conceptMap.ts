@@ -24,7 +24,7 @@ export const nodes: GraphNode[] = [
   { id: "mcduie-ra", label: "McDuie-Ra", type: "autor", description: "Subcultura e territorialidade. 'Archiving from below', arquivo não-oficial e ângulo de captura 'from below the knees'." },
   { id: "bourriaud", label: "Nicolas Bourriaud", type: "autor", description: "A obra de arte como interstício social que sugere outras possibilidades de troca." },
   { id: "hall", label: "Stuart Hall", type: "autor", description: "Identidade cultural como produção processual, nunca completa." },
-  { id: "abreu", label: "Luis A. de Abreu", type: "autor", description: "Processo colaborativo como experiência criativa coletiva — não método, mas processo." },
+  { id: "abreu", label: "Luis A. de Abreu", type: "autor", description: "Processo colaborativo como experiência criativa coletiva, não método, mas processo." },
   { id: "coessens", label: "Coessens / Pimentel", type: "autor", description: "Corpo como produção de conhecimento: toda ação praticada modifica quem a pratica." },
   { id: "delpeux", label: "Delpeux", type: "autor", description: "Fusão sensível entre corpo do performer e dispositivo de registro: entidade única em ato." },
   { id: "rouch", label: "Rouch / Deren", type: "autor", description: "Rouch e o cine-transe. Deren e a dança como cinema. Fabulação como gesto de criação do real." },
