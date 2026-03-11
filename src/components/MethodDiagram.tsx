@@ -79,6 +79,16 @@ const MethodDiagram = () => {
                 <span key={item} className="text-xs text-white/70 bg-white/5 px-2 py-1 rounded">{item}</span>
               ))}
             </div>
+            {activeLayer === layer.id && (
+              <motion.p
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="text-xs text-white/50 mt-3 leading-relaxed italic"
+              >
+                {layer.description}
+              </motion.p>
+            )}
           </motion.div>
         ))}
 
