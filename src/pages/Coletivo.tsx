@@ -57,7 +57,7 @@ const Coletivo = () => {
                 improvisados</span>. A cidade não é palco — é co-autora.
               </p>
               <p>
-                Como sugere Herzog, no LowPressure™ o erro não é falha — é material criativo.
+                Como sugere Herzog, no LowPressure™ o erro não é falha, é material criativo.
               </p>
               <p>
                 A <span className="text-primary font-semibold">LowZine</span> funciona como arquivo vivo.
