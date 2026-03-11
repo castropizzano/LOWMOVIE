@@ -122,7 +122,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
               <p className="text-sm text-white/70 leading-relaxed max-w-2xl text-justify">
                 LowMovie™ constitui uma metodologia de pesquisa-criação implicada em que o skate 
                 atua como matriz de produção audiovisual. O corpo em movimento e a vivência urbana 
-                operam como agentes constituintes da gramática fílmica. A cidade funciona como campo 
+                são agentes constituintes da gramática fílmica. A cidade funciona como campo 
                 ativo de criação. A câmera participa do acontecimento.
               </p>
             </motion.div>
