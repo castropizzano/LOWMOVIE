@@ -206,8 +206,8 @@ const ConceptGraph = () => {
             <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: typeColors[node.type] }}>
               {t(`conceptMap.typeLabels.${node.type}`)}
             </p>
-            <p className="text-sm font-semibold text-foreground mb-1">{node.label}</p>
-            <p className="text-xs text-muted-foreground leading-relaxed">{node.description}</p>
+            <p className="text-sm font-semibold text-foreground mb-1">{t(`conceptMap.nodes.${node.id}.label`, node.label)}</p>
+            <p className="text-xs text-muted-foreground leading-relaxed">{t(`conceptMap.nodes.${node.id}.description`, node.description)}</p>
           </div>
         );
       })()}
