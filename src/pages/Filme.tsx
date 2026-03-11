@@ -127,7 +127,7 @@ const Filme = () => {
 
           {/* Análise de Sequência */}
           <AnimatedSection delay={0.35} className="mt-16">
-            <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Análise de Sequência — Exemplo</h3>
+            <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Análise de Sequência: Exemplo</h3>
 
             {/* Bloco 1 — Sequência em Quadros */}
             <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mb-4">
