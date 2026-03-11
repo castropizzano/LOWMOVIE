@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, X, ChevronDown } from "lucide-react";
 import ConceptGraph from "@/components/ConceptGraph";
@@ -7,58 +8,24 @@ import ImageLightbox from "@/components/ImageLightbox";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
 
 /* ─── Block definitions (0-13) ─── */
-const BLOCKS = [
-  { id: 0, title: "" },
-  { id: 1, title: "Abertura" },
-  { id: 2, title: "A Pesquisa" },
-  { id: 3, title: "O Coletivo" },
-  { id: 4, title: "Conceitos" },
-  { id: 5, title: "Metodologia" },
-  { id: 6, title: "Fragmentos" },
-  { id: 7, title: "Teasers" },
-  { id: 8, title: "Trailer" },
-  { id: 9, title: "Frames" },
-  { id: 10, title: "Contribuições" },
-  { id: 11, title: "Questões Críticas" },
-  { id: 12, title: "Lowbyrinth™" },
-  { id: 13, title: "Encerramento" },
+const BLOCK_KEYS = [
+  "",
+  "abertura",
+  "pesquisa",
+  "coletivo",
+  "conceitos",
+  "metodologia",
+  "fragmentos",
+  "teasers",
+  "trailer",
+  "frames",
+  "contribuicoes",
+  "questoes",
+  "lowbyrinth",
+  "encerramento",
 ];
 
-const TEASERS: { name: string; id: string; legend: string; platform?: "youtube" | "vimeo" }[] = [
-  { name: "Eye of Horus", id: "epIEe4pf1o8", legend: "O olhar. A câmera. O registro das tentativas.", platform: "youtube" },
-  { name: "Ishtar Star", id: "kVrXqhYnZjw", legend: "A criação coletiva e os bastidores da produção.", platform: "youtube" },
-  { name: "Star of Lakshmi", id: "w4coRA38tto", legend: "O esforço, o erro e a superação.", platform: "youtube" },
-  { name: "The Chaos", id: "DMl8LWjiUyk", legend: "A tensão urbana e a transgressão.", platform: "youtube" },
-  { name: "Labyrinth", id: "trBIP6Jl7LY", legend: "O espaço da cidade como campo de aprendizagem.", platform: "youtube" },
-  { name: "The Rat", id: "i-dUpm9XbHA", legend: "A sobrevivência e adaptação das subculturas urbanas.", platform: "youtube" },
-];
-
-const CONCEITOS = [
-  { nome: "Lowbyrinth™", def: "Imagem-conceito que sintetiza o caráter processual, não-linear e labiríntico da criação no interior do coletivo LowPressure™.", highlight: true },
-  { nome: "Poética do instante", def: "Captura do gesto efêmero como condensação sensível do real." },
-  { nome: "Estética da borda", def: "Linguagem que emerge do limite entre controle e acaso." },
-  { nome: "Registro em fluxo", def: "Câmera como extensão do corpo em movimento contínuo." },
-  { nome: "Fabulação", def: "Gesto de criação do real, não invenção ficcional (Deleuze)." },
-  { nome: "Afeto como eixo", def: "Implicação sensível como operador epistemológico." },
-];
-
-const FAQ_ITEMS = [
-  { q: "Poética versus estética", a: "A escolha pelo termo poética — e não estética — é deliberada. Poética refere-se ao fazer em ato, ao modo como a obra se forma durante o processo." },
-  { q: "Símbolo e signo", a: "O símbolo é mobilizado como imagem condensadora de sentido, não como unidade de análise semiótica." },
-  { q: "Rigor metodológico", a: "O rigor reside na reflexividade explícita, na transparência do posicionamento e na articulação teórica consistente." },
-  { q: "Delimitação do objeto", a: "O objeto central é o filme LowMovie™ e seus processos criativos. O coletivo LowPressure™ é analisado como condição de produção." },
-  { q: "Dimensão política", a: "A obra age como micropolítica do gesto e da ocupação sensível da cidade." },
-  { q: "Autonomia conceitual", a: "A tese sustenta-se independentemente da referência junguiana. O Lowbyrinth™ funciona como imagem-conceito operacional." },
-  { q: "Contribuição inédita", a: "O ineditismo reside no deslocamento do skate para o campo estético-metodológico." },
-  { q: "Skate ou cinema?", a: "É sobre cinema a partir do skate. O skate não é o objeto final da investigação, mas a matriz." },
-];
-
-const CONTRIBUICOES = [
-  { title: "Skate como matriz audiovisual", desc: "O skate não aparece apenas como prática esportiva, mas como forma de organizar o olhar cinematográfico." },
-  { title: "Operadores conceituais", desc: "Poética do instante, estética da borda e registro em fluxo." },
-  { title: "Pesquisa-criação implicada", desc: "Uma metodologia onde o processo artístico produz conhecimento." },
-  { title: "Deslocamento no campo audiovisual brasileiro", desc: "Reposiciona o skate como produtor de linguagem cinematográfica no contexto brasileiro." },
-];
+const TEASER_IDS = ["epIEe4pf1o8", "kVrXqhYnZjw", "w4coRA38tto", "DMl8LWjiUyk", "trBIP6Jl7LY", "i-dUpm9XbHA"];
 
 /* ─── Video embed component ─── */
 const VideoEmbed = ({ src, fadeIn = true, contained = false }: { src: string; fadeIn?: boolean; contained?: boolean }) => {
@@ -89,7 +56,7 @@ const VideoPreloader = ({ blockIndex }: { blockIndex: number }) => {
   if (nextBlock === 1) src = "https://www.youtube-nocookie.com/embed/rQuIDG-1EV4?autoplay=0";
   if (nextBlock === 8) src = "https://www.youtube-nocookie.com/embed/Zom42CQ83CU?autoplay=0";
   if (nextBlock === 13) src = "https://www.youtube-nocookie.com/embed/g3SDaD16c7w?autoplay=0";
-  if (nextBlock === 7) src = `https://www.youtube-nocookie.com/embed/${TEASERS[0].id}?autoplay=0`;
+  if (nextBlock === 7) src = `https://www.youtube-nocookie.com/embed/${TEASER_IDS[0]}?autoplay=0`;
   if (!src) return null;
   return <iframe src={src} className="absolute w-0 h-0 opacity-0 pointer-events-none" tabIndex={-1} sandbox="allow-scripts allow-same-origin allow-presentation" />;
 };
@@ -126,10 +93,17 @@ const FAQCard = ({ item }: { item: { q: string; a: string } }) => {
 /* ─── Main component ─── */
 const Defense = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [currentBlock, setCurrentBlock] = useState(0);
   const [currentTeaser, setCurrentTeaser] = useState(0);
   const [videoEnded, setVideoEnded] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const teasers = t("defense.teasers", { returnObjects: true }) as { name: string; legend: string }[];
+  const conceitos = t("defense.conceitos", { returnObjects: true }) as { nome: string; def: string }[];
+  const faqItems = t("defense.faqItems", { returnObjects: true }) as { q: string; a: string }[];
+  const contribuicoes = t("defense.contribuicoes", { returnObjects: true }) as { title: string; desc: string }[];
+  const triad = t("defense.triad", { returnObjects: true }) as { title: string; desc: string }[];
 
   useEffect(() => {
     if (currentBlock === 0) {
@@ -149,11 +123,11 @@ const Defense = () => {
 
   const goNext = useCallback(() => {
     if (currentBlock === 0) return;
-    if (currentBlock === 7 && currentTeaser < TEASERS.length - 1) {
+    if (currentBlock === 7 && currentTeaser < TEASER_IDS.length - 1) {
       setCurrentTeaser((p) => p + 1);
       return;
     }
-    if (currentBlock < BLOCKS.length - 1) {
+    if (currentBlock < BLOCK_KEYS.length - 1) {
       if (currentBlock === 7) setCurrentTeaser(0);
       setCurrentBlock((p) => p + 1);
     }
@@ -187,7 +161,7 @@ const Defense = () => {
         setCurrentBlock(0);
       } else if (e.key === "End") {
         e.preventDefault();
-        setCurrentBlock(BLOCKS.length - 1);
+        setCurrentBlock(BLOCK_KEYS.length - 1);
       } else if (e.key === "Escape") {
         if (document.querySelector("[role='dialog'][data-state='open']")) return;
         navigate("/home");
@@ -210,6 +184,8 @@ const Defense = () => {
     ) return;
     goNext();
   }, [goNext]);
+
+  const blockTitle = currentBlock > 0 ? t(`defense.blocks.${BLOCK_KEYS[currentBlock]}`) : "";
 
   const renderBlock = () => {
     switch (currentBlock) {
@@ -240,10 +216,10 @@ const Defense = () => {
                 >
                   <div className="max-w-5xl px-8 text-left space-y-4">
                     <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                      "Essa pesquisa começou tentando compreender o que acontece nesse tipo de gesto."
+                      {t("defense.block1Quote1")}
                     </p>
                     <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                      "Um gesto que acontece entre corpo, cidade e risco — e que muitas vezes acaba se transformando em imagem."
+                      {t("defense.block1Quote2")}
                     </p>
                   </div>
                 </motion.div>
@@ -260,28 +236,28 @@ const Defense = () => {
               <ImageLightbox src="/images/poster-lowmovie.png" alt="Poster LowMovie™" className="w-full max-w-sm mx-auto" imageClassName="rounded-lg shadow-lg" />
               <div className="text-left">
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-                  Dissertação de Mestrado · Março 2026
+                  {t("defense.block2Date")}
                 </p>
                 <h2 className="text-4xl md:text-6xl font-bold uppercase leading-none tracking-tight text-foreground">
                   LowMovie™
                 </h2>
                 <p className="mt-2 text-lg md:text-xl font-medium text-foreground/80 uppercase tracking-wide">
-                  e o Labirinto Criativo
+                  {t("home.subtitle")}
                 </p>
                 <div className="mt-6 space-y-4">
                   <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                    A dissertação que apresento hoje investiga como práticas subculturais, como o skate, podem produzir linguagem cinematográfica e conhecimento estético.
+                    {t("defense.block2Intro")}
                   </p>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    O objeto central da pesquisa é o processo criativo do coletivo LowPressure™, a partir da produção do filme LowMovie™.
+                    {t("defense.block2Object")}
                   </p>
                   <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                    Em vez de observar esse processo à distância, a pesquisa foi construída a partir dele.
+                    {t("defense.block2Method")}
                   </p>
                 </div>
                 <div className="mt-8 space-y-1">
-                  <p className="text-base text-foreground/90">Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR</p>
-                  <p className="text-sm text-muted-foreground">Castro Pizzano · Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
+                  <p className="text-base text-foreground/90">{t("defense.block2Program")}</p>
+                  <p className="text-sm text-muted-foreground">{t("defense.block2Author")}</p>
                 </div>
               </div>
             </div>
@@ -295,10 +271,10 @@ const Defense = () => {
             <div className="min-h-full flex flex-col items-center justify-center">
             <div className="text-left mb-6 max-w-5xl space-y-4">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                O coletivo LowPressure™ se organiza como um espaço de experimentação estética onde skate, imagem e cidade se encontram.
+                {t("defense.block3P1")}
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Esse encontro produz não apenas registros de manobras, mas uma forma própria de linguagem audiovisual.
+                {t("defense.block3P2")}
               </p>
             </div>
             <div className="max-w-5xl w-full">
@@ -320,17 +296,17 @@ const Defense = () => {
             <div className="max-w-5xl w-full">
               <div className="text-left mb-10 space-y-4 max-w-5xl">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                  Para compreender esse processo, proponho o conceito de Lowbyrinth™.
+                  {t("defense.block4P1")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  O Lowbyrinth™ descreve um processo criativo que não se organiza de forma linear.
+                  {t("defense.block4P2")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Ele funciona como um labirinto sensível, onde tentativa, erro, descoberta e improviso fazem parte da criação.
+                  {t("defense.block4P3")}
                 </p>
               </div>
               <div className="grid gap-4 md:grid-cols-2">
-                {CONCEITOS.map((c, i) => (
+                {conceitos.map((c, i) => (
                   <motion.div
                     key={c.nome}
                     initial={{ opacity: 0, y: 20 }}
@@ -357,24 +333,20 @@ const Defense = () => {
             <div className="max-w-5xl w-full">
               <div className="text-left mb-10 space-y-4 max-w-5xl">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                   Adoto a pesquisa-criação implicada como abordagem metodológica.
+                   {t("defense.block5P1")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Nesse modelo, prática artística e reflexão teórica não são separadas.
+                  {t("defense.block5P2")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  O processo criativo funciona simultaneamente como produção estética e como campo de investigação.
+                  {t("defense.block5P3")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                   O rigor não reside na neutralidade — reside na capacidade de interrogar cada decisão criativa.
+                   {t("defense.block5P4")}
                 </p>
               </div>
               <div className="grid gap-6 md:grid-cols-3">
-                {[
-                  { title: "Afeto", icon: "♥", desc: "Vínculo sensível com o campo investigado. Afetar e ser afetado constituem formas legítimas de produzir conhecimento." },
-                  { title: "Escuta", icon: "◉", desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir." },
-                  { title: "Improviso", icon: "⚡", desc: "Abertura ao imprevisto como dado epistemológico legítimo. Arquitetura móvel capaz de se refazer a cada encontro." },
-                ].map((e) => (
+                {triad.map((e) => (
                   <div key={e.title} className="border border-border rounded-lg p-8 bg-card/30 hover:border-primary/30 hover:scale-[1.03] transition-all duration-300 cursor-default">
                     <p className="text-lg md:text-xl font-semibold uppercase tracking-wide text-foreground mb-3">{e.title}</p>
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed">{e.desc}</p>
@@ -397,16 +369,16 @@ const Defense = () => {
           <div className="flex items-center justify-center h-full">
             <div className="text-left max-w-5xl px-8 space-y-6">
               <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground/70">
-                LowPressure™ apresenta
+                {t("defense.block6Presents")}
               </p>
               <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-wide text-foreground">
-                Fragmentos simbólicos
+                {t("defense.block6Title")}
               </h2>
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                 Durante o processo de criação do LowMovie™, produzimos peças audiovisuais que condensam o universo simbólico do filme.
+                 {t("defense.block6P1")}
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Esses fragmentos não revelam diretamente a obra, mas expressam os princípios que estruturam o processo criativo do coletivo.
+                {t("defense.block6P2")}
               </p>
             </div>
           </div>
@@ -419,10 +391,10 @@ const Defense = () => {
               <div className="flex items-center justify-between mb-4">
                 <div className="text-left">
                   <p className="text-sm font-semibold uppercase tracking-widest text-foreground/80">
-                    {currentTeaser + 1}/6 — {TEASERS[currentTeaser].name}
+                    {currentTeaser + 1}/6 — {teasers[currentTeaser]?.name}
                   </p>
                   <p className="mt-1 text-sm text-muted-foreground max-w-md leading-relaxed italic">
-                    {TEASERS[currentTeaser].legend}
+                    {teasers[currentTeaser]?.legend}
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
@@ -435,11 +407,7 @@ const Defense = () => {
                 </div>
               </div>
               <VideoEmbed
-                src={
-                  TEASERS[currentTeaser].platform === "youtube"
-                    ? `https://www.youtube-nocookie.com/embed/${TEASERS[currentTeaser].id}?autoplay=1&rel=0&modestbranding=1`
-                    : `https://player.vimeo.com/video/${TEASERS[currentTeaser].id}?autoplay=1&background=0&muted=0`
-                }
+                src={`https://www.youtube-nocookie.com/embed/${TEASER_IDS[currentTeaser]}?autoplay=1&rel=0&modestbranding=1`}
                 fadeIn
                 contained
               />
@@ -452,7 +420,7 @@ const Defense = () => {
           <div className="flex flex-col items-center justify-center h-full px-8">
             <div className="w-[84%]">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4">
-                 Essas ideias convergem no trailer do LowMovie™, que sintetiza o Lowbyrinth™.
+                 {t("defense.block8P1")}
               </p>
               <VideoEmbed
                 src="https://www.youtube-nocookie.com/embed/Zom42CQ83CU?autoplay=1&rel=0&modestbranding=1"
@@ -469,13 +437,13 @@ const Defense = () => {
             <div className="min-h-full flex flex-col items-center justify-center">
             <div className="text-left mb-6 max-w-6xl w-full space-y-4">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                O LowMovie™ não é apenas objeto da pesquisa.
+                {t("defense.block9P1")}
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                Ele é também o espaço onde a investigação acontece.
+                {t("defense.block9P2")}
               </p>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                O filme articula corpo, câmera e cidade como operadores de linguagem.
+                {t("defense.block9P3")}
               </p>
             </div>
             <div className="max-w-6xl w-full">
@@ -515,10 +483,10 @@ const Defense = () => {
             <div className="min-h-full flex items-center justify-center">
             <div className="max-w-5xl w-full">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-10">
-                 Proponho quatro contribuições principais.
+                 {t("defense.block10P1")}
               </p>
               <div className="grid gap-6 md:grid-cols-2">
-                {CONTRIBUICOES.map((c, i) => (
+                {contribuicoes.map((c, i) => (
                   <div key={i} className="border border-border rounded-lg p-8 bg-card/30 hover:border-primary/30 hover:scale-[1.03] transition-all duration-300 cursor-default">
                     <p className="text-sm font-semibold uppercase tracking-widest text-muted-foreground/70 mb-3">{String(i + 1).padStart(2, "0")}</p>
                     <p className="text-lg md:text-xl font-semibold uppercase tracking-wide text-foreground mb-3">{c.title}</p>
@@ -543,14 +511,14 @@ const Defense = () => {
             <div className="max-w-5xl w-full">
               <div className="text-left mb-12 space-y-4">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                  Toda pesquisa em arte se move entre tensões conceituais.
+                  {t("defense.block11P1")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Em vez de evitá-las, optei por torná-las visíveis.
+                  {t("defense.block11P2")}
                 </p>
               </div>
               <div className="space-y-4">
-                {FAQ_ITEMS.map((item, i) => (
+                {faqItems.map((item, i) => (
                   <FAQCard key={i} item={item} />
                 ))}
               </div>
@@ -565,7 +533,7 @@ const Defense = () => {
             <div className="min-h-full flex flex-col items-center justify-center">
               <div className="max-w-5xl w-full text-left mb-6 space-y-2">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                   Organizei a pesquisa como um percurso navegável.
+                   {t("defense.block12P1")}
                 </p>
               </div>
               <div className="max-w-5xl w-full border border-border/30 rounded-lg overflow-hidden">
@@ -575,13 +543,13 @@ const Defense = () => {
               </div>
               <div className="max-w-5xl w-full mt-8 text-left space-y-4">
                 <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed">
-                  O LowMovie™ é um filme-labirinto.
+                  {t("defense.block12P2")}
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Não se assiste a ele de fora.
+                  {t("defense.block12P3")}
                 </p>
                 <p className="mt-2 text-2xl md:text-3xl font-semibold uppercase tracking-widest text-foreground">
-                  É preciso entrar.
+                  {t("defense.block12P4")}
                 </p>
               </div>
             </div>
@@ -623,7 +591,7 @@ const Defense = () => {
         <button
           onClick={(e) => { e.stopPropagation(); navigate("/home"); }}
           className="absolute top-4 left-4 z-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
-          title="Voltar ao portal (ESC)"
+          title={t("defense.backToPortal")}
         >
           <X className="h-5 w-5" />
         </button>
@@ -634,11 +602,11 @@ const Defense = () => {
         <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-2 px-6 py-3">
           {/* Progress dots */}
           <div className="flex items-center gap-1.5 pointer-events-auto">
-            {BLOCKS.slice(1).map((block, i) => (
+            {BLOCK_KEYS.slice(1).map((key, i) => (
               <button
-                key={block.id}
+                key={key}
                 onClick={(e) => { e.stopPropagation(); setCurrentBlock(i + 1); }}
-                title={`${String(i + 1).padStart(2, "0")} — ${block.title}`}
+                title={`${String(i + 1).padStart(2, "0")} — ${t(`defense.blocks.${key}`)}`}
                 className="group relative"
               >
                 <span
@@ -656,9 +624,9 @@ const Defense = () => {
           {/* Block label + arrow */}
           <div className="w-full flex items-center justify-between">
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70 pointer-events-none">
-              BLOCO {String(currentBlock).padStart(2, "0")} — {BLOCKS[currentBlock]?.title?.toUpperCase()}
+              {t("defense.block")} {String(currentBlock).padStart(2, "0")} — {blockTitle.toUpperCase()}
             </p>
-            {currentBlock < BLOCKS.length - 1 && (
+            {currentBlock < BLOCK_KEYS.length - 1 && (
               <button
                 onClick={(e) => { e.stopPropagation(); goNext(); }}
                 className="text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"

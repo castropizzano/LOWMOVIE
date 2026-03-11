@@ -206,8 +206,8 @@ const ConceptGraph = () => {
             <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: typeColors[node.type] }}>
               {t(`conceptMap.typeLabels.${node.type}`)}
             </p>
-            <p className="text-sm font-semibold text-foreground mb-1">{node.label}</p>
-            <p className="text-xs text-muted-foreground leading-relaxed">{node.description}</p>
+            <p className="text-sm font-semibold text-foreground mb-1">{t(`conceptMap.nodes.${node.id}.label`, node.label)}</p>
+            <p className="text-xs text-muted-foreground leading-relaxed">{t(`conceptMap.nodes.${node.id}.description`, node.description)}</p>
           </div>
         );
       })()}
@@ -276,22 +276,25 @@ const ConceptGraph = () => {
                   className="text-[9px] font-semibold uppercase tracking-wider fill-foreground pointer-events-none select-none"
                   style={{ fontSize: node.type === "campo" ? "8px" : "9px" }}
                 >
-                  {node.label.length > 18
-                    ? node.label.split(" ").reduce<string[]>((lines, word) => {
-                        const last = lines[lines.length - 1] || "";
-                        if ((last + " " + word).trim().length <= 14) {
-                          lines[lines.length - 1] = (last + " " + word).trim();
-                        } else {
-                          lines.push(word);
-                        }
-                        return lines;
-                      }, [""])
-                      .map((line, i, arr) => (
-                        <tspan key={i} x={0} dy={i === 0 ? `${-(arr.length - 1) * 0.5}em` : "1.1em"}>
-                          {line}
-                        </tspan>
-                      ))
-                    : node.label}
+                {(() => {
+                    const label = t(`conceptMap.nodes.${node.id}.label`, node.label);
+                    return label.length > 18
+                      ? label.split(" ").reduce<string[]>((lines, word) => {
+                          const last = lines[lines.length - 1] || "";
+                          if ((last + " " + word).trim().length <= 14) {
+                            lines[lines.length - 1] = (last + " " + word).trim();
+                          } else {
+                            lines.push(word);
+                          }
+                          return lines;
+                        }, [""])
+                        .map((line, i, arr) => (
+                          <tspan key={i} x={0} dy={i === 0 ? `${-(arr.length - 1) * 0.5}em` : "1.1em"}>
+                            {line}
+                          </tspan>
+                        ))
+                      : label;
+                  })()}
                 </text>
               </g>
             );
