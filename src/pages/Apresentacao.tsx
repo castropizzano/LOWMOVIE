@@ -128,8 +128,8 @@ const Apresentacao = () => {
               </p>
               <p>
                 O rigor se exerce por reflexividade, explicitação do posicionamento e articulação com os
-                referenciais da pesquisa-criação — não como defesa, mas como condição do próprio fazer.
-                A prática não substitui o rigor — ela
+                referenciais da pesquisa-criação, não como defesa, mas como condição do próprio fazer.
+                A prática não substitui o rigor. Ela
                 o produz. É no interior do fazer artístico, quando submetido à reflexão sistemática e à confrontação
                 teórica, que emerge um conhecimento que não poderia ser produzido por nenhuma outra via.
               </p>
