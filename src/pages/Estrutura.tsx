@@ -50,8 +50,8 @@ const Estrutura = () => {
 
           <AnimatedSection delay={0.05}>
             <p className="text-base text-foreground/80 leading-relaxed text-justify mb-16">
-              A dissertação organiza-se em três movimentos analíticos que correspondem, simultaneamente,
-              a dimensões distintas do objeto e a níveis progressivos de complexidade conceitual.
+              A dissertação organiza-se em três movimentos analíticos que correspondem a dimensões distintas
+              do objeto, em complexidade conceitual progressiva.
               Cada movimento possui autonomia interna, mas articula-se com os demais numa lógica de
               aprofundamento cumulativo: do corpo ao coletivo, do coletivo à obra, da obra ao campo.
             </p>
