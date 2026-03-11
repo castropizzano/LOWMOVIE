@@ -387,10 +387,10 @@ const Defense = () => {
       case 7:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <div className="w-[84%]">
+            <div className="w-full md:w-[84%]">
               <div className="flex items-center justify-between mb-4">
                 <div className="text-left">
-                  <p className="text-sm font-semibold uppercase tracking-widest text-foreground/80">
+                  <p className="text-xs md:text-sm font-semibold uppercase tracking-widest text-foreground/80">
                     {currentTeaser + 1}/6 — {teasers[currentTeaser]?.name}
                   </p>
                   <p className="mt-1 text-sm text-muted-foreground max-w-md leading-relaxed italic">
