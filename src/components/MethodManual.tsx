@@ -120,7 +120,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 O Deslocamento Fundamental
               </p>
               <p className="text-sm text-white/70 leading-relaxed max-w-2xl text-justify">
-                LowMovie™ constitui uma metodologia de pesquisa-criação implicada em que o skate 
+                LowMovie™ é uma metodologia de pesquisa-criação implicada em que o skate 
                 atua como matriz de produção audiovisual. O corpo em movimento e a vivência urbana 
                 são agentes constituintes da gramática fílmica. A cidade funciona como campo 
                 ativo de criação. A câmera participa do acontecimento.

@@ -37,7 +37,7 @@ const autores = [
 const conceitos = [
   {
     nome: "Lowbyrinth™",
-    def: "Imagem-conceito que sintetiza o caráter processual, não-linear e labiríntico da criação no interior do coletivo LowPressure™. O labirinto não tem saída prevista — a obra é o próprio percurso.",
+    def: "Imagem-conceito que sintetiza o caráter processual, não-linear e labiríntico da criação no interior do coletivo LowPressure™. O labirinto não tem saída prevista: a obra é o próprio percurso.",
   },
   {
     nome: "Poética do instante",

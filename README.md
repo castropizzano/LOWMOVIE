@@ -29,7 +29,7 @@ LOWMOVIE™ é um projeto de pesquisa-criação implicada que investiga processo
 - Subjetividade artística e produção colaborativa
 - Experimentação estética no cinema independente
 
-O conceito de **Labirinto Criativo** emerge como modelo interpretativo para compreender os fluxos não lineares da criação artística — onde projetos se conectam, experiências retroalimentam novas criações e a prática artística torna-se simultaneamente objeto, método e documentação.
+O conceito de **Labirinto Criativo** emerge como modelo interpretativo para compreender os fluxos não lineares da criação artística — onde projetos se conectam, experiências retroalimentam novas criações e a prática artística torna-se, a um só tempo, objeto, método e documentação.
 
 ---
 

@@ -106,7 +106,7 @@ const Metodologia = () => {
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                 Embora método de pesquisa e métodos de criação se alimentem mutuamente, não se confundem.
-                O primeiro interroga, conceitua e articula; os segundos produzem, experimentam e materializam.
+                O primeiro interroga, conceitua e formula; os segundos produzem, experimentam e materializam.
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mt-4">
                 O rigor reside na reflexividade com que cada decisão é interrogada e na consistência com que
