@@ -18,6 +18,7 @@ const NODE_RADIUS: Record<NodeType, number> = {
 };
 
 const ConceptGraph = () => {
+  const { t } = useTranslation();
   const svgRef = useRef<SVGSVGElement>(null);
   const animRef = useRef<number>(0);
   const [simNodes, setSimNodes] = useState<SimNode[]>([]);
