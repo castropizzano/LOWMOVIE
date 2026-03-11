@@ -27,8 +27,8 @@ const Apresentacao = () => {
                 skate não apenas como fenômeno sociocultural, objeto recorrente de investigações sociológicas
                 e antropológicas, mas como prática estética produtora de linguagem audiovisual situada. Esse
                 gesto de reposicionamento implica reconhecer que o corpo em movimento sobre o skate não é
-                meramente tema ou motivo visual, mas agente constitutivo de uma gramática fílmica própria,
-                dotada de ritmo, enquadramento, textura e temporalidade específicos.
+                meramente tema ou motivo visual, mas agente constitutivo de uma gramática fílmica
+                com ritmo, enquadramento e temporalidade próprios.
               </p>
               <p>
                 Os vídeos de skate registram a evolução técnica e criativa dos praticantes e desempenham
