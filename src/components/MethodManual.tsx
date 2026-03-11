@@ -72,11 +72,11 @@ const researcherDirectives = [
 ];
 
 const symbolicField = [
-  { icon: Rat, name: "Rato Alquimista", meaning: "Transmutação pela margem — transformar o descarte em ouro criativo." },
-  { icon: Eye, name: "Olho de Hórus", meaning: "Visão expandida — ver além do visível, captar o invisível do gesto." },
-  { icon: Sparkles, name: "Estrela de Ishtar", meaning: "Criação como força cósmica — o ato de criar como ritual." },
-  { icon: Shield, name: "Estrela de Lakshmi", meaning: "Proteção e prosperidade criativa — a crew como rede de suporte." },
-  { icon: Zap, name: "Símbolo do Caos", meaning: "O caos como matriz generativa — desordem produtiva, entropia criativa." },
+  { icon: Rat, name: "Rato Alquimista", meaning: "Transmutação pela margem. Transformar o descarte em ouro criativo." },
+  { icon: Eye, name: "Olho de Hórus", meaning: "Visão expandida: ver além do visível, captar o invisível do gesto." },
+  { icon: Sparkles, name: "Estrela de Ishtar", meaning: "Criação como força cósmica. O ato de criar como ritual." },
+  { icon: Shield, name: "Estrela de Lakshmi", meaning: "Proteção e prosperidade criativa. A crew como rede de suporte." },
+  { icon: Zap, name: "Símbolo do Caos", meaning: "O caos como matriz generativa. Desordem produtiva, entropia criativa." },
 ];
 
 const MethodManual = ({ open, onClose }: MethodManualProps) => {

@@ -99,7 +99,7 @@ const Estrutura = () => {
               <div className="space-y-4 text-sm text-foreground/80 leading-relaxed text-justify">
                 <p>
                   Este portal funciona como uma arquitetura epistemológica navegável.
-                  Não é apenas suporte de apresentação — é parte do dispositivo metodológico da pesquisa.
+                  Não é apenas suporte de apresentação. É parte do dispositivo metodológico da pesquisa.
                 </p>
                 <p>A estrutura digital organiza a investigação em três níveis simultâneos:</p>
                 <ul className="space-y-3 ml-1">
