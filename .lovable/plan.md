@@ -11,5 +11,16 @@
 - Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
 - Route fix: lowbyrinth.ts `/faq` → `/questoes`
 
-### Pending author decision
-- Hellraiser epigraph on Home page (Index.tsx lines 98-101): keep or remove?
+## Completed: Full Editorial Audit (pre-defense)
+
+7 edits across 6 files:
+- MethodManual.tsx L123: "constitui" → "é"
+- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
+- Filme.tsx L69: "constitui" → "possui"
+- Metodologia.tsx L109: "articula" → "formula"
+- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
+- README.md L32: "simultaneamente" → "a um só tempo,"
+- Defense.tsx L30: removed serial comma before "e"
+
+### Resolved
+- Hellraiser epigraph removed from Index.tsx
