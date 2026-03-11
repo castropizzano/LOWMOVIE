@@ -432,5 +432,85 @@
       "autor": "Autor / Referência",
       "campo": "Campo temático"
     }
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Página não encontrada",
+    "back": "Voltar ao início"
+  },
+  "lowbyrinthData": {
+    "apresentacao": {
+      "title": "Apresentação",
+      "conceito": "Implicação",
+      "derivas": [
+        { "label": "Metodologia", "justificativa": "Da implicação pessoal ao rigor do método. O afeto fundamenta a pesquisa." },
+        { "label": "Conceitos", "justificativa": "Do relato à cartografia conceitual. Nomear o que a experiência revelou." }
+      ]
+    },
+    "metodologia": {
+      "title": "Metodologia",
+      "conceito": "Pesquisa-criação",
+      "derivas": [
+        { "label": "O Coletivo", "justificativa": "Do método ao campo. O processo colaborativo é a metodologia em ato." },
+        { "label": "O Filme", "justificativa": "Da pesquisa-criação à obra. O filme materializa o percurso metodológico." }
+      ]
+    },
+    "estrutura": {
+      "title": "Estrutura",
+      "conceito": "Arquitetura",
+      "derivas": [
+        { "label": "Mapa Conceitual", "justificativa": "Da estrutura linear ao grafo. Ver as conexões que o texto lineariza." },
+        { "label": "Apresentação", "justificativa": "Retorne ao início com novos olhos. A estrutura recontextualiza a origem." }
+      ]
+    },
+    "conceitos": {
+      "title": "Conceitos",
+      "conceito": "Lowbyrinth™",
+      "derivas": [
+        { "label": "O Filme", "justificativa": "Dos conceitos à imagem. Cada operador analítico se encarna no filme." },
+        { "label": "Mapa Conceitual", "justificativa": "Do texto ao grafo. Visualize a constelação teórica em suas conexões." },
+        { "label": "Conclusão", "justificativa": "Dos conceitos ao horizonte. O que estas formulações abrem como possibilidade." }
+      ]
+    },
+    "filme": {
+      "title": "O Filme",
+      "conceito": "Corpo em deriva",
+      "derivas": [
+        { "label": "O Coletivo", "justificativa": "Do filme aos corpos. Quem são os que criam juntos." },
+        { "label": "Conceitos", "justificativa": "Da imagem ao conceito. O filme é teoria em ato." }
+      ]
+    },
+    "coletivo": {
+      "title": "O Coletivo",
+      "conceito": "Processo colaborativo",
+      "derivas": [
+        { "label": "Contribuições", "justificativa": "Do coletivo ao campo. O que a prática coletiva oferece à academia." },
+        { "label": "Metodologia", "justificativa": "Do campo ao método. O coletivo como dispositivo epistemológico." }
+      ]
+    },
+    "contribuicoes": {
+      "title": "Contribuições",
+      "conceito": "Legado",
+      "derivas": [
+        { "label": "Conclusão", "justificativa": "Das contribuições ao encerramento. O que permanece aberto." },
+        { "label": "Questões", "justificativa": "Das contribuições às perguntas. Antecipar o que a banca pode indagar." }
+      ]
+    },
+    "questoes": {
+      "title": "Questões",
+      "conceito": "Antecipação",
+      "derivas": [
+        { "label": "Conceitos", "justificativa": "Das perguntas às definições. Cada questão remete a um operador conceitual." },
+        { "label": "Apresentação", "justificativa": "Das questões à origem. Reler o início à luz das dúvidas." }
+      ]
+    },
+    "conclusao": {
+      "title": "Conclusão",
+      "conceito": "Horizonte",
+      "derivas": [
+        { "label": "Apresentação", "justificativa": "Do fim ao início. O labirinto é circular." },
+        { "label": "Mapa Conceitual", "justificativa": "Do encerramento à visão total. O mapa revela o que o percurso construiu." }
+      ]
+    }
   }
 }
