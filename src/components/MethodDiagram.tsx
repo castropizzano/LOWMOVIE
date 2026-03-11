@@ -7,6 +7,7 @@ const layers = [
     id: "experiencia",
     label: "EXPERIÊNCIA URBANA",
     items: ["Skate", "Cidade", "Coletivo LowPressure™"],
+    description: "A rua é o dispositivo. O skate transforma a cidade em campo de criação — cada pico, cada terreno, cada sessão produz linguagem.",
     radius: 230,
     color: "hsl(0, 0%, 30%)",
     activeColor: "hsl(0, 70%, 45%)",
@@ -15,6 +16,7 @@ const layers = [
     id: "processo",
     label: "PROCESSO CRIATIVO",
     items: ["Filmagem de skate", "Montagem audiovisual", "Design independente", "Trilha sonora autoral"],
+    description: "O processo nasce do movimento. Filmar, montar, desenhar e compor são atos simultâneos de um mesmo gesto criativo.",
     radius: 180,
     color: "hsl(0, 0%, 35%)",
     activeColor: "hsl(0, 70%, 50%)",
@@ -23,6 +25,7 @@ const layers = [
     id: "triade",
     label: "TRÍADE METODOLÓGICA",
     items: ["Afeto", "Escuta", "Improviso"],
+    description: "Os três eixos que sustentam a pesquisa-criação: afetar e ser afetado, ouvir o campo, e improvisar como forma de conhecimento.",
     radius: 130,
     color: "hsl(0, 0%, 40%)",
     activeColor: "hsl(0, 70%, 55%)",
@@ -31,6 +34,7 @@ const layers = [
     id: "conceitos",
     label: "CONCEITOS OPERADORES",
     items: ["Poética do Instante", "Estética da Borda", "Registro em Fluxo"],
+    description: "Os conceitos que organizam a prática: capturar o instante irrepetível, habitar as bordas, e registrar sem interromper o fluxo.",
     radius: 80,
     color: "hsl(0, 0%, 45%)",
     activeColor: "hsl(0, 70%, 60%)",
@@ -75,6 +79,16 @@ const MethodDiagram = () => {
                 <span key={item} className="text-xs text-white/70 bg-white/5 px-2 py-1 rounded">{item}</span>
               ))}
             </div>
+            {activeLayer === layer.id && (
+              <motion.p
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="text-xs text-white/50 mt-3 leading-relaxed italic"
+              >
+                {layer.description}
+              </motion.p>
+            )}
           </motion.div>
         ))}
 
