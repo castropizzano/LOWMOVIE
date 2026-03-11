@@ -54,9 +54,24 @@ const Conceitos = () => {
             <p className="text-sm text-muted-foreground leading-relaxed mb-8">{t("conceitos.ownConceptsNote")}</p>
             <div className="space-y-6">
               {conceitoKeys.map((key) => (
-                <div key={key} className="border-l-2 border-primary/30 pl-6">
-                  <p className="text-base font-semibold uppercase tracking-wide text-foreground mb-2">{t(`conceitos.concepts.${key}.name`)}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{t(`conceitos.concepts.${key}.def`)}</p>
+                <div key={key}>
+                  <div className="border-l-2 border-primary/30 pl-6">
+                    <p className="text-base font-semibold uppercase tracking-wide text-foreground mb-2">{t(`conceitos.concepts.${key}.name`)}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed text-justify">{t(`conceitos.concepts.${key}.def`)}</p>
+                  </div>
+                  {key === "lowbyrinth" && (
+                    <div className="mt-4 ml-6">
+                      <video
+                        src="/videos/lowbyrinth-process.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full max-w-md aspect-video rounded-lg border border-border grayscale hover:grayscale-0 transition-all duration-500"
+                      />
+                      <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-2">{t("conceitos.processVideoCaption")}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
