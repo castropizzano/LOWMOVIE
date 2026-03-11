@@ -68,12 +68,6 @@ const Intro = () => {
         >
           Enter Portal
         </button>
-        <button
-          onClick={enter}
-          className="border border-border/50 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-foreground/70 hover:border-primary/50 hover:text-primary transition-all backdrop-blur-sm bg-background/20"
-        >
-          Skip Intro
-        </button>
       </div>
     </div>
   );
