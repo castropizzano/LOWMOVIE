@@ -1,60 +1,36 @@
 
+## Completed: Reduce em dash (—) overuse
 
-# Correspondência Eben Sterling / Thrasher — Análise
+~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
 
-## O conteúdo
+## Completed: Human Writing Audit
 
-Troca de e-mails (maio 2024) entre Castro Pizzano e Eben Sterling (Thrasher Magazine). Sterling responde ao filme com uma frase de validação direta:
+~20 edits across 7 files:
+- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
+- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
+- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
+- Route fix: lowbyrinth.ts `/faq` → `/questoes`
 
-> *"I'd say you achieved your goal of presenting skateboarding and skateboard film making as art."*
+## Completed: Full Editorial Audit (pre-defense)
 
-Isso é significativo — é o reconhecimento externo do projeto por um agente central da cultura do skate global.
+7 edits across 6 files:
+- MethodManual.tsx L123: "constitui" → "é"
+- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
+- Filme.tsx L69: "constitui" → "possui"
+- Metodologia.tsx L109: "articula" → "formula"
+- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
+- README.md L32: "simultaneamente" → "a um só tempo,"
+- Defense.tsx L30: removed serial comma before "e"
 
-## Vale inserir?
+## Completed: Visual Design Consistency Audit
 
-Sim, mas de forma **leve**. Os documentos já estão no acervo. O que faz sentido é dar visibilidade à validação sem duplicar os PDFs no portal.
+8 fixes across 6 files:
+- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
+- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
+- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
+- Index.tsx: Cover image added grayscale hover:grayscale-0
+- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
+- Mapa.tsx: Added text-justify to instruction text
 
-## Onde: Página do Filme (`/filme`), após a seção Premiere
-
-A correspondência é sobre a **circulação do filme** — encaixa naturalmente após a Premiere, que já documenta a estreia. Uma seção curta "Correspondência" com:
-
-- Breve parágrafo contextualizando o contato (sem expor o e-mail completo — preserva a formalidade acadêmica)
-- A citação de Sterling em destaque (blockquote estilizado, como os quotes que já existem no site)
-- Nota de que a correspondência completa integra o acervo do processo
-
-Não precisa de link direto para os PDFs (já estão no Drive). A citação fala por si.
-
-## Implementação
-
-1. **Editar `src/pages/Filme.tsx`** — inserir uma `AnimatedSection` entre Premiere e Soundtrack
-2. **Adicionar chaves de tradução** PT/EN:
-   - `filme.correspondenceTitle`: "Correspondência" / "Correspondence"
-   - `filme.correspondenceDesc`: contextualização breve
-   - `filme.correspondenceQuote`: a frase de Sterling
-   - `filme.correspondenceAttrib`: "Eben Sterling — Thrasher Magazine, 2024"
-   - `filme.correspondenceNote`: nota sobre o acervo
-
-## Resultado visual
-
-```text
-┌─────────────────────────────────────────────┐
-│  PREMIERE                                   │
-│  [vídeo embed]                              │
-├─────────────────────────────────────────────┤
-│  CORRESPONDÊNCIA                            │
-│  [parágrafo de contexto]                    │
-│                                             │
-│  ┌─────────────────────────────────────────┐│
-│  │ "I'd say you achieved your goal of      ││
-│  │  presenting skateboarding and           ││
-│  │  skateboard film making as art."        ││
-│  │                                         ││
-│  │  — Eben Sterling, Thrasher Magazine     ││
-│  └─────────────────────────────────────────┘│
-│                                             │
-│  [nota: correspondência no acervo]          │
-├─────────────────────────────────────────────┤
-│  SOUNDTRACK                                 │
-└─────────────────────────────────────────────┘
-```
-
+### Resolved
+- Hellraiser epigraph removed from Index.tsx
