@@ -190,6 +190,13 @@
     "ownConcepts": "Original Concepts: Authorial Formulations",
     "ownConceptsNote": "Analytical operators derived from artistic practice.",
     "processVideoCaption": "Lowbyrinth™ movement creation process in Blender",
+    "tabProcesso": "Process",
+    "tabBox": "Box",
+    "tabCard": "Card",
+    "tabVHS": "VHS Tape",
+    "nftBoxCaption": "Lowbyrinth™ — Box (NFT digital artifact)",
+    "nftCardCaption": "Lowbyrinth™ — Card (NFT digital artifact)",
+    "nftVHSCaption": "Lowbyrinth™ — VHS Tape (NFT digital artifact)",
     "concepts": {
       "lowbyrinth": { "name": "Lowbyrinth™", "def": "Image-concept that synthesizes the processual, non-linear, and labyrinthine character of creation within the LowPressure™ collective. The labyrinth has no planned exit: the work is the journey itself." },
       "poetica": { "name": "Poetics of the instant", "def": "Capture of the ephemeral gesture as a sensible condensation of the real. The moment when body, space, light, and camera converge in an unrepeatable configuration." },
