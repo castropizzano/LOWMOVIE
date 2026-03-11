@@ -179,11 +179,11 @@ const ConceptGraph = () => {
     <div className="relative w-full h-[70vh] min-h-[500px] border border-border rounded-lg bg-card/30 overflow-hidden">
       {/* Legenda */}
       <div className="absolute top-4 left-4 z-10 flex flex-col gap-2 bg-background/80 backdrop-blur-sm rounded-md p-3 border border-border">
-        {(Object.keys(typeLabels) as NodeType[]).map((type) => (
+        {(["conceito", "autor", "campo"] as NodeType[]).map((type) => (
           <div key={type} className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full" style={{ backgroundColor: typeColors[type] }} />
             <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-              {typeLabels[type]}
+              {t(`conceptMap.typeLabels.${type}`)}
             </span>
           </div>
         ))}
