@@ -1,36 +1,57 @@
 
-## Completed: Reduce em dash (—) overuse
 
-~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
+# Site Bilíngue Completo PT/EN
 
-## Completed: Human Writing Audit
+## Resumo
 
-~20 edits across 7 files:
-- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
-- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
-- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
-- Route fix: lowbyrinth.ts `/faq` → `/questoes`
+Implementar internacionalização completa com `react-i18next`. Todas as páginas, sidebar, overlays e botões terão tradução PT/EN. Toggle de idioma no header do Layout.
 
-## Completed: Full Editorial Audit (pre-defense)
+## Estrutura
 
-7 edits across 6 files:
-- MethodManual.tsx L123: "constitui" → "é"
-- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
-- Filme.tsx L69: "constitui" → "possui"
-- Metodologia.tsx L109: "articula" → "formula"
-- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
-- README.md L32: "simultaneamente" → "a um só tempo,"
-- Defense.tsx L30: removed serial comma before "e"
+```text
+src/i18n/
+  index.ts              ← config i18next + detector de idioma
+  locales/
+    pt.json             ← ~80 blocos de texto (conteúdo atual)
+    en.json             ← tradução completa para inglês
+```
 
-## Completed: Visual Design Consistency Audit
+## Implementação
 
-8 fixes across 6 files:
-- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
-- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
-- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
-- Index.tsx: Cover image added grayscale hover:grayscale-0
-- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
-- Mapa.tsx: Added text-justify to instruction text
+### 1. Instalar dependências
+- `react-i18next` + `i18next` + `i18next-browser-languagedetector`
 
-### Resolved
-- Hellraiser epigraph removed from Index.tsx
+### 2. Configurar i18n (`src/i18n/index.ts`)
+- Idioma padrão: `pt`
+- Fallback: `pt`
+- Persistência em `localStorage`
+
+### 3. Criar arquivos de tradução
+- Organizar por página: `home.*`, `apresentacao.*`, `metodologia.*`, etc.
+- Incluir strings de UI: sidebar, footer, buttons, overlays
+
+### 4. Seletor de idioma
+- Toggle `PT / EN` no header do Layout (ao lado dos botões Lowbyrinth™ e Manual do Método)
+- Estilo consistente: `text-[11px] font-bold uppercase tracking-[0.2em]`
+
+### 5. Refatorar páginas (~12 arquivos)
+- Substituir strings hardcoded por `t('chave')`
+- Páginas: Intro, Index, Apresentacao, Metodologia, Estrutura, Conceitos, Filme, Coletivo, Contribuicoes, FAQ, Conclusao, Mapa
+- Componentes: AppSidebar, Layout (footer), WelcomeOverlay, LowbyrinthMode, MethodManual
+
+### 6. Meta tags
+- Atualizar `<html lang>` dinamicamente via `useEffect`
+- Atualizar `document.title` conforme idioma
+
+## Ordem de execução
+
+1. Setup i18n + arquivos de tradução (maior volume de trabalho)
+2. Toggle no header
+3. Refatorar componentes compartilhados (sidebar, layout, overlay)
+4. Refatorar páginas uma a uma
+5. Ajustar meta tags
+
+## Nota
+
+O maior esforço é a **tradução dos textos acadêmicos** para inglês — são parágrafos longos e densos. A parte técnica (i18n setup + refatoração) é mecânica.
+
