@@ -94,13 +94,6 @@ const Index = () => {
                 </Link>
               </div>
 
-              <div className="mt-8">
-                <p className="text-[10px] italic text-muted-foreground/70 max-w-xs">
-                  "We have such sights to show you."
-                  <span className="block mt-1 not-italic text-muted-foreground/50">— Hellraiser (Clive Barker, 1987)</span>
-                </p>
-              </div>
-
               <div className="mt-12">
                 <p className="text-xs uppercase tracking-widest text-muted-foreground">
                   Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual
