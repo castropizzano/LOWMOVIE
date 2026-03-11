@@ -50,9 +50,9 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Lowbyrinth™",
     x: 12, y: 50,
     derivas: [
-      { to: "/filme", label: "O Filme", justificativa: "Dos conceitos à imagem — cada operador analítico se encarna no filme." },
-      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do texto ao grafo — visualize a constelação teórica em suas conexões." },
-      { to: "/conclusao", label: "Conclusão", justificativa: "Dos conceitos ao horizonte — o que estas formulações abrem como possibilidade." },
+      { to: "/filme", label: "O Filme", justificativa: "Dos conceitos à imagem. Cada operador analítico se encarna no filme." },
+      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do texto ao grafo. Visualize a constelação teórica em suas conexões." },
+      { to: "/conclusao", label: "Conclusão", justificativa: "Dos conceitos ao horizonte. O que estas formulações abrem como possibilidade." },
     ],
   },
   {
