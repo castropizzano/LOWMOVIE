@@ -1,5 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from "react";
-import { nodes, edges, typeColors, typeLabels, GraphNode, NodeType } from "@/data/conceptMap";
+import { nodes, edges, typeColors, GraphNode, NodeType } from "@/data/conceptMap";
+import { useTranslation } from "react-i18next";
 
 interface SimNode extends GraphNode {
   x: number;
