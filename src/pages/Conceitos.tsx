@@ -71,7 +71,7 @@ const Conceitos = () => {
           <AnimatedSection delay={0.05}>
             <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
-                A fundamentação teórica articula tradições intelectuais distintas — teoria urbana,
+                A fundamentação teórica articula tradições intelectuais distintas: teoria urbana,
                 estética relacional, estudos culturais, pesquisa em artes, teoria do cinema — numa constelação
                 conceitual orientada pelas exigências específicas do objeto.
               </p>
