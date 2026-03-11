@@ -110,6 +110,45 @@ const Conclusao = () => {
             </div>
           </div>
 
+          {/* Card: Obra em Expansão */}
+          <div className="mt-16">
+            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+              <div className="flex items-center gap-2 mb-6">
+                <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
+                  Obra em Expansão — Horizontes Pedagógicos
+                </h2>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
+                  Lowbyrinth™ como Ferramenta Pedagógica
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — se revela também
+                  como dispositivo pedagógico. Em sala de aula, funciona como ferramenta de ensino-aprendizagem
+                  em arte, design e audiovisual: um mapa navegável onde o estudante percorre camadas de sentido,
+                  confronta referências e constrói seu próprio trajeto criativo.
+                </p>
+              </div>
+
+              <div className="my-6">
+                <div className="h-px w-full bg-border/30" />
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
+                  Sala de Aula — Método Replicável
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                  A pesquisa-criação do LowMovie™ constitui um método replicável em ambientes educacionais.
+                  O processo colaborativo, a espiral cognitiva e a implicação do corpo no gesto criativo
+                  podem ser adaptados como práticas pedagógicas — transformando a sala de aula em campo
+                  de produção de conhecimento sensível, onde teoria e prática se atravessam continuamente.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Separador */}
           <div className="mt-16 mb-16">
             <div className="h-px w-full bg-border/30" />

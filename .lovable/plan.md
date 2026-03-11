@@ -1,22 +1,11 @@
 
+## Fix: Lightbox caption visibility
 
-# Adicionar "Obra em Expansão" à Conclusão
+**Problem**: In `ImageLightbox.tsx`, the lightbox container is `h-[80vh]` and the image is `max-h-[80vh]`. When the image fills the container, the caption (`mt-2`) overflows below the visible area.
 
-## O que inserir
+**Solution**: Reduce the image `max-h` to `max-h-[75vh]` to leave room for the caption below it. This ensures the caption remains visible within the 80vh container.
 
-Um novo card entre a citação do Lowbyrinth™ e o card "Dissertação Completa", com dois blocos:
+**File**: `src/components/ImageLightbox.tsx` (line 51)
+- Change `max-h-[80vh]` to `max-h-[75vh]` on the lightbox `<img>`
 
-1. **Lowbyrinth™ como Ferramenta Pedagógica** — o conceito de labirinto criativo aplicado em contexto de sala de aula como dispositivo de ensino-aprendizagem em arte, design e audiovisual.
-
-2. **Sala de Aula** — a pesquisa-criação do LowMovie™ como método replicável em ambientes educacionais, onde o processo colaborativo e a espiral cognitiva podem ser adaptados para práticas pedagógicas.
-
-## Implementação
-
-Editar `src/pages/Conclusao.tsx`:
-- Após a citação (linha ~111) e antes do separador (linha ~113), inserir um novo card com o mesmo estilo visual (`border border-border/40 rounded-lg p-8 md:p-10 bg-card/20`)
-- Título: "Obra em Expansão — Horizontes Pedagógicos"
-- Dois sub-blocos com `h-px` divisor entre eles
-- Textos descritivos curtos (2-3 frases cada), tom acadêmico-poético coerente com o resto da página
-
-Nenhum arquivo novo, nenhuma dependência nova.
-
+This affects all lightbox instances consistently, including blocks 01 (Punkinho) and 05 (Crew LowPressure) in Defense Mode.
