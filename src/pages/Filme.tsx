@@ -11,7 +11,7 @@ const Filme = () => {
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle
-            title="O Filme — LowMovie™"
+            title="O Filme: LowMovie™"
             subtitle="Dispositivo poético-político nascido do gesto coletivo"
           />
 
