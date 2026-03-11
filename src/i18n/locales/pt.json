@@ -624,6 +624,34 @@
         { "label": "Apresentação", "justificativa": "Do fim ao início. O labirinto é circular." },
         { "label": "Mapa Conceitual", "justificativa": "Do encerramento à visão total. O mapa revela o que o percurso construiu." }
       ]
+    },
+    "methodDiagram": {
+      "core": "LOWMOVIE™",
+      "coreSub": "Corpo + Câmera + Cidade",
+      "expansion": "Obra em Expansão →",
+      "layers": {
+        "experiencia": {
+          "label": "EXPERIÊNCIA URBANA",
+          "items": ["Skate", "Cidade", "Coletivo LowPressure™"],
+          "description": "A rua é o dispositivo. O skate transforma a cidade em campo de criação — cada pico, cada terreno, cada sessão produz linguagem."
+        },
+        "processo": {
+          "label": "PROCESSO CRIATIVO",
+          "items": ["Filmagem de skate", "Montagem audiovisual", "Design independente", "Trilha sonora autoral"],
+          "description": "O processo nasce do movimento. Filmar, montar, desenhar e compor são atos simultâneos de um mesmo gesto criativo."
+        },
+        "triade": {
+          "label": "TRÍADE METODOLÓGICA",
+          "items": ["Afeto", "Escuta", "Improviso"],
+          "description": "Os três eixos que sustentam a pesquisa-criação: afetar e ser afetado, ouvir o campo, e improvisar como forma de conhecimento."
+        },
+        "conceitos": {
+          "label": "CONCEITOS OPERADORES",
+          "items": ["Poética do Instante", "Estética da Borda", "Registro em Fluxo"],
+          "description": "Os conceitos que organizam a prática: capturar o instante irrepetível, habitar as bordas, e registrar sem interromper o fluxo."
+        }
+      },
+      "expansionItems": ["Filme", "LowZine", "Portal Digital", "Eventos", "Arquivo Vivo"]
     }
   }
 }
