@@ -114,6 +114,10 @@ npm run dev
 
 > PIZZANO, C. **LOWMOVIE™ e o Labirinto Criativo:** Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™. Curitiba: UNESPAR, 2026.
 
+**Zenodo:**
+
+> PIZZANO, C. *LowMovie™ and the Creative Labyrinth: A Research-Creation Project in Cinema and Skate Culture.* Zenodo, 2026. https://doi.org/10.5281/zenodo.18950438
+
 → Ver também [`CITATION.cff`](CITATION.cff) para citação automática no GitHub.
 
 ---
