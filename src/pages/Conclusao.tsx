@@ -89,7 +89,7 @@ const Conclusao = () => {
               Afirmo que o gesto criativo, quando analisado com rigor e implicação, constitui
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
               um filme fora dos circuitos convencionais — essas operações não são apenas práticas
-              artísticas: são modos de conhecer o mundo. O percurso metodológico se desenvolve em espiral — cada retorno ao
+              artísticas: são modos de conhecer o mundo. O percurso metodológico se desenvolve em espiral: cada retorno ao
               campo aprofunda a compreensão anterior.
             </p>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
