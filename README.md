@@ -57,6 +57,8 @@ O portal digital funciona como **interface expandida da dissertação**, permiti
 
 | Seção | Descrição |
 |---|---|
+| Intro | Tela de abertura com vídeo de introdução |
+| Home | Capa da dissertação, dados institucionais e navegação |
 | Apresentação | Contexto, motivação e objeto da pesquisa |
 | Metodologia | Pesquisa-criação implicada como abordagem |
 | Estrutura | Arquitetura da dissertação |
@@ -65,7 +67,7 @@ O portal digital funciona como **interface expandida da dissertação**, permiti
 | O Coletivo | O coletivo LowPressure™ e a produção colaborativa |
 | Contribuições | Aportes ao campo do cinema e das artes do vídeo |
 | Questões | Antecipação de tensões críticas da banca |
-| Conclusão | Síntese e horizontes abertos |
+| Conclusão | Síntese e horizontes (inclui links para artigo Harpia e Memorial Ecos Criativos) |
 | Mapa Conceitual | Grafo interativo das conexões teóricas |
 | Lowbyrinth™ | Modo de navegação não-linear entre seções |
 

@@ -9,19 +9,26 @@ Todas as mudanças significativas do projeto são documentadas neste arquivo.
 Versão apresentada na defesa da dissertação de mestrado.
 
 ### Portal Interativo
-- Home com vídeo de introdução e navegação para todas as seções
+- Intro: tela de abertura com vídeo (`/`) e transição para o portal
+- Home com capa da dissertação, dados institucionais e navegação para todas as seções
 - Páginas completas: Apresentação, Metodologia, Estrutura, Conceitos, O Filme, O Coletivo, Contribuições, Questões Críticas, Conclusão
 - Mapa Conceitual interativo com grafo de conexões teóricas
 - Lowbyrinth™: modo de navegação não-linear entre seções
 - Manual do Método: painel de referência rápida da metodologia
-- Internacionalização completa (PT/EN)
+- Visualizador de PDF embutido (dissertação, brandbooks, transcrições)
+- Internacionalização completa (PT/EN) via i18next
 - Design responsivo para desktop e mobile
 - Animações e transições com Framer Motion
 
 ### Defense Mode
-- Página `/defense` otimizada para projeção
+- Página `/defense` otimizada para projeção (acesso oculto: triple-click na capa)
 - Navegação por teclado (setas)
 - Blocos sequenciais com conteúdo condensado
+- Abertura com transição de 2.5s
+
+### Links Externos
+- Artigo Harpia (Revista Harpia, UNESPAR)
+- Memorial Ecos Criativos (exposição fotográfica)
 
 ### Documentação e Preservação
 - `PRESERVATION.md`: guia completo de preservação digital
