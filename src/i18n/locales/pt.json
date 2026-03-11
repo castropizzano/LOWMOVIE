@@ -300,6 +300,11 @@
       "c3": { "title": "Pesquisa-criação implicada como método", "desc": "A dissertação estrutura a pesquisa-criação implicada como abordagem rigorosa, demonstrando que a implicação, quando submetida a reflexividade explícita, produz conhecimento válido. Propõe um modo de pesquisar COM o skate, prática produtora de conhecimento sensível, situado e compartilhado." },
       "c4": { "title": "Deslocamento no campo audiovisual brasileiro", "desc": "Ao propor que práticas subculturais podem funcionar como matrizes de produção cinematográfica autônoma, a dissertação amplia as fronteiras do que é reconhecido como cinema e como pesquisa em cinema no Brasil." }
     },
+    "archive": {
+      "title": "Arquivamento Acadêmico",
+      "desc": "O projeto LOWMOVIE™ está arquivado no repositório científico Zenodo, garantindo preservação digital e citabilidade acadêmica através de DOI.",
+      "link": "Acessar no Zenodo"
+    },
     "next": "Questões"
   },
   "questoes": {

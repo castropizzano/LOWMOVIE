@@ -1,5 +1,7 @@
 # LOWMOVIE™ E O LABIRINTO CRIATIVO 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18950438.svg)](https://doi.org/10.5281/zenodo.18950438)
+
 > **Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™**
 
 Repositório oficial da dissertação de mestrado de **Castro Pizzano**.
@@ -85,6 +87,7 @@ A página `/defense` oferece um modo de apresentação dedicado com navegação 
 |---|---|
 | 🌐 **Portal** | [lowmovie.lovable.app](https://lowmovie.lovable.app) |
 | 📁 **Acervo** | [Google Drive](https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing) |
+| 🔗 **DOI** | [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438) |
 
 ---
 
@@ -111,6 +114,10 @@ npm run dev
 
 > PIZZANO, C. **LOWMOVIE™ e o Labirinto Criativo:** Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™. Curitiba: UNESPAR, 2026.
 
+**Zenodo:**
+
+> PIZZANO, C. *LowMovie™ and the Creative Labyrinth: A Research-Creation Project in Cinema and Skate Culture.* Zenodo, 2026. https://doi.org/10.5281/zenodo.18950438
+
 → Ver também [`CITATION.cff`](CITATION.cff) para citação automática no GitHub.
 
 ---
@@ -136,4 +143,4 @@ Este projeto foi desenvolvido através de processos híbridos de criação, envo
 
 Materiais audiovisuais e imagens podem possuir licenças específicas. Ver [`LICENSE`](LICENSE).
 
-<!-- sync: 2026-03-07 -->
+<!-- sync: 2026-03-11 -->

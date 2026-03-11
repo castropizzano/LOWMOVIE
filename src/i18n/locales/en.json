@@ -300,6 +300,11 @@
       "c3": { "title": "Implicated research-creation as method", "desc": "The dissertation structures implicated research-creation as a rigorous approach, demonstrating that implication, when subjected to explicit reflexivity, produces valid knowledge. It proposes a way of researching WITH skateboarding as a practice that produces sensitive, situated, and shared knowledge." },
       "c4": { "title": "Displacement in the Brazilian audiovisual field", "desc": "By proposing that subcultural practices can constitute matrices of autonomous film production, the dissertation expands the boundaries of what is recognized as cinema and as cinema research in Brazil." }
     },
+    "archive": {
+      "title": "Academic Archival",
+      "desc": "The LOWMOVIE™ project is archived on the Zenodo scientific repository, ensuring digital preservation and academic citability through DOI.",
+      "link": "View on Zenodo"
+    },
     "next": "Questions"
   },
   "questoes": {

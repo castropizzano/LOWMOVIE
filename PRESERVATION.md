@@ -15,6 +15,7 @@ O projeto LOWMOVIE™ adota uma estratégia deliberada de preservação digital 
 | **Espelho offline** | Snapshot navegável do portal para acesso local |
 | **Arquivo de mídias** | Cópia organizada de todos os assets do projeto |
 | **Arquivos web públicos** | Internet Archive / Wayback Machine |
+| **DOI permanente** | [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438) via Zenodo |
 
 ---
 
@@ -119,17 +120,14 @@ git clone LOWMOVIE_ARCHIVE/repository/lowmovie-repo.bundle lowmovie-restored
 
 O repositório público no GitHub é automaticamente elegível para o [GitHub Archive Program](https://archiveprogram.github.com/), que preserva código em Arctic Code Vault para armazenamento de longo prazo.
 
-### DOI via Zenodo/Figshare
+### DOI via Zenodo ✅
 
-Para atribuir um DOI permanente ao repositório:
+O projeto possui DOI permanente atribuído pelo Zenodo:
 
-1. Acesse [zenodo.org](https://zenodo.org) e vincule sua conta GitHub
-2. Ative o repositório LOWMOVIE™ na lista de repositórios
-3. Crie uma release no GitHub (ex: `v1.0-defense`)
-4. O Zenodo gerará automaticamente um DOI citável
-5. Adicione o badge do DOI ao README.md
-
-Alternativa: [Figshare](https://figshare.com) para depósito direto de arquivos com DOI.
+- **DOI:** [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438)
+- Badge adicionado ao `README.md`
+- Referência incluída no `CITATION.cff`
+- Citação disponível no portal (página Contribuições e footer)
 
 ---
 
@@ -147,8 +145,8 @@ Use este checklist ao criar um pacote de arquivo completo:
 - [ ] Copiar metadados (`CITATION.cff`, `README.md`, `LICENSE`, `PRESERVATION.md`)
 - [ ] Gerar manifest com checksums SHA256
 - [ ] Registrar data e versão no `preservation_log.md`
-- [ ] Submeter ao Zenodo para DOI (opcional)
-- [ ] Submeter URL ao Wayback Machine: `https://web.archive.org/save/https://lowmovie.lovable.app`
+- [x] Submeter ao Zenodo para DOI — [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438)
+- [x] Submeter URL ao Wayback Machine: `https://web.archive.org/save/https://lowmovie.lovable.app`
 
 ---
 
@@ -191,4 +189,4 @@ Recomenda-se manter ao menos **duas cópias em mídias diferentes** e **uma cóp
 
 ---
 
-*Última atualização: Março 2026*
+*Última atualização: 11 de Março de 2026*

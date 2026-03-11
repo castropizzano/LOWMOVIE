@@ -86,6 +86,16 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.researchLine")}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed md:text-right">{t("footer.keywords")}</p>
                 </div>
+                <div className="flex flex-col md:flex-row md:justify-between pt-2">
+                  <a
+                    href="https://doi.org/10.5281/zenodo.18950438"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] text-muted-foreground hover:text-primary transition-colors leading-relaxed"
+                  >
+                    DOI: 10.5281/zenodo.18950438
+                  </a>
+                </div>
               </div>
             </div>
           </footer>
