@@ -84,7 +84,7 @@ const Estrutura = () => {
           {/* Considerações Finais */}
           <AnimatedSection delay={0.45} className="mt-16">
              <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
-                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações — Ecos do Labirinto</h3>
+                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações: Ecos do Labirinto</h3>
                    <p className="text-sm text-foreground/80 leading-relaxed">
                     Retomam a pergunta de pesquisa, sintetizam os achados e situam as reverberações do percurso,
                     articulando implicações estéticas, políticas e metodológicas que permanecem em movimento.
