@@ -431,6 +431,29 @@
       "conceito": "Conceito autoral",
       "autor": "Autor / Referência",
       "campo": "Campo temático"
+    },
+    "nodes": {
+      "campo-urbano": { "label": "Skate e cidade", "description": "Skate como reinscrição urbana: o corpo relê e reconfigura o espaço construído." },
+      "campo-estetica": { "label": "Estética relacional", "description": "A obra como interstício social, espaço de relações humanas e outras possibilidades de troca." },
+      "campo-processo": { "label": "Processo colaborativo", "description": "Criação coletiva como experiência, não método, mas processo." },
+      "campo-cinema": { "label": "Corpo-câmera", "description": "Fusão entre performer e dispositivo de registro: corpo e câmera como entidade única em ato." },
+      "borden": { "label": "Iain Borden", "description": "Skate como reconfiguração espacial: o skate lê e reinscreve a cidade, ativando espaços como superfícies de criação." },
+      "mcduie-ra": { "label": "McDuie-Ra", "description": "Subcultura e territorialidade. 'Archiving from below', arquivo não-oficial e ângulo de captura 'from below the knees'." },
+      "bourriaud": { "label": "Nicolas Bourriaud", "description": "A obra de arte como interstício social que sugere outras possibilidades de troca." },
+      "hall": { "label": "Stuart Hall", "description": "Identidade cultural como produção processual, nunca completa." },
+      "abreu": { "label": "Luis A. de Abreu", "description": "Processo colaborativo como experiência criativa coletiva, não método, mas processo." },
+      "coessens": { "label": "Coessens / Pimentel", "description": "Corpo como produção de conhecimento: toda ação praticada modifica quem a pratica." },
+      "delpeux": { "label": "Delpeux", "description": "Fusão sensível entre corpo do performer e dispositivo de registro: entidade única em ato." },
+      "rouch": { "label": "Rouch / Deren", "description": "Rouch e o cine-transe. Deren e a dança como cinema. Fabulação como gesto de criação do real." },
+      "deleuze": { "label": "Deleuze", "description": "Fabulação: não invenção ficcional, mas gesto de criação do real a partir do cotidiano." },
+      "certeau": { "label": "Michel de Certeau", "description": "Táticas e estratégias: reinvenção cotidiana do espaço pela prática ordinária." },
+      "lefebvre": { "label": "Henri Lefebvre", "description": "Produção social do espaço: o espaço urbano como produto e produtor de relações." },
+      "lowbyrinth": { "label": "Lowbyrinth™", "description": "Imagem-conceito do caráter processual, não-linear e labiríntico da criação. O labirinto não tem saída: a obra é o percurso." },
+      "poetica": { "label": "Poética do instante", "description": "Captura do gesto efêmero como condensação sensível do real. Corpo, espaço, luz e câmera convergem numa configuração irrepetível." },
+      "estetica-borda": { "label": "Estética da borda", "description": "Linguagem entre controle e acaso. A borda do skate, do enquadramento e entre arte e vida." },
+      "registro-fluxo": { "label": "Registro em fluxo", "description": "Câmera como extensão do corpo em movimento. A imagem não representa o movimento: ela é movimento." },
+      "fabulacao": { "label": "Fabulação", "description": "A partir de Deleuze: gesto de criação do real, produzindo outras percepções a partir do cotidiano." },
+      "afeto": { "label": "Afeto como eixo", "description": "Implicação sensível como operador epistemológico. Vínculo afetivo como instrumento de conhecimento." }
     }
   },
   "notFound": {
