@@ -28,7 +28,7 @@ const systemLayers = [
     number: "01",
     title: "EXPERIÊNCIA URBANA",
     subtitle: "O Skate como Prática Estética Urbana",
-    description: "A experiência urbana constitui a base do sistema. O skate transforma a cidade em campo de criação — cada pico, cada terreno, cada sessão produz linguagem. O corpo do skatista negocia com a arquitetura, e dessa fricção emerge matéria criativa.",
+    description: "A experiência urbana constitui a base do sistema. O skate transforma a cidade em campo de criação: cada pico, cada terreno, cada sessão produz linguagem. O corpo do skatista negocia com a arquitetura, e dessa fricção emerge matéria criativa.",
   },
   {
     number: "02",
