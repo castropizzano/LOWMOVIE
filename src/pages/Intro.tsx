@@ -55,19 +55,6 @@ const Intro = () => {
         {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
       </button>
 
-      {/* Overlay content */}
-      <div
-        className={`absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-1000 ${
-          overlayVisible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight text-foreground drop-shadow-lg">
-          LowMovie™
-        </h1>
-        <p className="mt-4 text-xs uppercase tracking-[0.2em] text-muted-foreground drop-shadow-md">
-          Enter the Lowbyrinth
-        </p>
-      </div>
 
       {/* Bottom buttons */}
       <div
