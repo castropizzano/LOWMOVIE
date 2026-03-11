@@ -93,9 +93,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <a href="https://github.com/your-repo/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/license-All%20Rights%20Reserved-red.svg" alt="License" className="h-5" />
                   </a>
-                  <a href="https://lovable.dev" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/Built%20with-Lovable-ff69b4.svg" alt="Built with Lovable" className="h-5" />
-                  </a>
                 </div>
               </div>
             </div>
