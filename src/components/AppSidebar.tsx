@@ -14,6 +14,7 @@ import {
 import { NavLink } from "@/components/NavLink";
 import lowpressureLogo from "@/assets/lowpressure-logo.png";
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import {
   Sidebar,
@@ -28,24 +29,25 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 
-const items = [
-  { title: "Home", url: "/home", icon: Home },
-  { title: "Apresentação", url: "/apresentacao", icon: Presentation },
-  { title: "Metodologia", url: "/metodologia", icon: FlaskConical },
-  { title: "Estrutura", url: "/estrutura", icon: LayoutGrid },
-  { title: "Conceitos", url: "/conceitos", icon: Lightbulb },
-  { title: "O Filme", url: "/filme", icon: Film },
-  { title: "O Coletivo", url: "/coletivo", icon: Users },
-  { title: "Contribuições", url: "/contribuicoes", icon: HandHeart },
-  { title: "Questões", url: "/questoes", icon: HelpCircle },
-  { title: "Conclusão", url: "/conclusao", icon: CheckCircle },
-  { title: "Mapa", url: "/mapa", icon: Network },
+const itemDefs = [
+  { key: "home", url: "/home", icon: Home },
+  { key: "apresentacao", url: "/apresentacao", icon: Presentation },
+  { key: "metodologia", url: "/metodologia", icon: FlaskConical },
+  { key: "estrutura", url: "/estrutura", icon: LayoutGrid },
+  { key: "conceitos", url: "/conceitos", icon: Lightbulb },
+  { key: "filme", url: "/filme", icon: Film },
+  { key: "coletivo", url: "/coletivo", icon: Users },
+  { key: "contribuicoes", url: "/contribuicoes", icon: HandHeart },
+  { key: "questoes", url: "/questoes", icon: HelpCircle },
+  { key: "conclusao", url: "/conclusao", icon: CheckCircle },
+  { key: "mapa", url: "/mapa", icon: Network },
 ];
 
 export function AppSidebar() {
   const { state } = useSidebar();
   const collapsed = state === "collapsed";
   const location = useLocation();
+  const { t } = useTranslation();
 
   return (
     <Sidebar collapsible="icon">
@@ -64,18 +66,19 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => {
+              {itemDefs.map((item) => {
+                const title = t(`nav.${item.key}`);
                 const active = location.pathname === item.url;
                 return (
-                  <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton asChild isActive={active} tooltip={item.title}>
+                  <SidebarMenuItem key={item.key}>
+                    <SidebarMenuButton asChild isActive={active} tooltip={title}>
                       <NavLink
                         to={item.url}
                         className="text-xs font-semibold uppercase tracking-wider"
                         activeClassName="text-sidebar-primary"
                       >
                         <item.icon className="h-4 w-4 shrink-0" />
-                        <span>{item.title}</span>
+                        <span>{title}</span>
                       </NavLink>
                     </SidebarMenuButton>
                   </SidebarMenuItem>

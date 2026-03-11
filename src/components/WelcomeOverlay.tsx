@@ -3,6 +3,7 @@ import { z } from "zod";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const STORAGE_KEY = "lowmovie_visited";
 const YOUTUBE_ID = "3kO3N49cUkU";
@@ -15,6 +16,7 @@ const WelcomeOverlay = () => {
   const [closing, setClosing] = useState(false);
   const [error, setError] = useState("");
   const [iframeLoaded, setIframeLoaded] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (!localStorage.getItem(STORAGE_KEY)) {
@@ -32,7 +34,7 @@ const WelcomeOverlay = () => {
 
     const result = emailSchema.safeParse(email);
     if (!result.success) {
-      setError(result.error.errors[0]?.message || "Email inválido");
+      setError(t("welcome.invalidEmail"));
       return;
     }
 
@@ -56,7 +58,6 @@ const WelcomeOverlay = () => {
       className={`fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/70 transition-opacity duration-400 ${closing ? "opacity-0" : "opacity-100"}`}
     >
       <div className="w-full max-w-xl mx-4 border border-border bg-background/95 rounded-lg shadow-2xl overflow-hidden">
-        {/* Video facade / iframe */}
         <div className="relative w-full aspect-video group bg-black">
           {iframeLoaded ? (
             <iframe
@@ -72,7 +73,7 @@ const WelcomeOverlay = () => {
             <button
               onClick={loadIframe}
               className="absolute inset-0 w-full h-full flex items-center justify-center cursor-pointer"
-              aria-label="Reproduzir vídeo"
+              aria-label={t("welcome.playVideo")}
             >
               <img
                 src={`https://i.ytimg.com/vi/${YOUTUBE_ID}/hqdefault.jpg`}
@@ -87,16 +88,12 @@ const WelcomeOverlay = () => {
           )}
         </div>
 
-        {/* Content */}
         <div className="p-6 space-y-4">
           <h2 className="text-lg font-bold uppercase tracking-widest text-primary">
-            Bem-vindo ao Labirinto Criativo
+            {t("welcome.title")}
           </h2>
           <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-            Esta plataforma é parte da minha dissertação de mestrado sobre o coletivo
-            LowPressure™ e suas práticas audiovisuais. Insira seu email para
-            acessar o conteúdo — os dados são utilizados exclusivamente para fins
-            acadêmicos.
+            {t("welcome.description")}
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-2">
@@ -105,13 +102,13 @@ const WelcomeOverlay = () => {
                 type="email"
                 required
                 maxLength={254}
-                placeholder="seu@email.com"
+                placeholder={t("welcome.placeholder")}
                 value={email}
                 onChange={(e) => { setEmail(e.target.value); setError(""); }}
                 className="flex-1"
               />
               <Button type="submit" size="sm" className="uppercase tracking-widest text-xs px-6">
-                Entrar
+                {t("welcome.enter")}
               </Button>
             </div>
             {error && <p className="text-xs text-destructive">{error}</p>}

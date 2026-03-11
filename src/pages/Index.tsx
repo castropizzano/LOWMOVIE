@@ -4,11 +4,13 @@ import { useRef, useCallback } from "react";
 import Layout from "@/components/Layout";
 import WelcomeOverlay from "@/components/WelcomeOverlay";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
+import { useTranslation } from "react-i18next";
 
 const Index = () => {
   const navigate = useNavigate();
   const clickCountRef = useRef(0);
   const clickTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const { t } = useTranslation();
 
   const handleCoverClick = useCallback(() => {
     clickCountRef.current += 1;
@@ -29,11 +31,10 @@ const Index = () => {
       <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 max-w-5xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Coluna esquerda — Capa */}
             <div style={{ aspectRatio: '1194/1688' }}>
               <img
                 src={capaDissertacao}
-                alt="Capa da dissertação LowMovie e o Labirinto Criativo"
+                alt={t("home.coverAlt")}
                 className="w-full h-full rounded-lg shadow-lg cursor-default grayscale hover:grayscale-0 transition-all duration-500"
                 onClick={handleCoverClick}
                 width={1194}
@@ -42,67 +43,46 @@ const Index = () => {
                 decoding="async"
               />
             </div>
-
-            {/* Coluna direita — Texto */}
             <div className="text-left">
               <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                Dissertação de Mestrado · Março 2026
+                {t("home.dissertationDate")}
               </p>
-
               <h1 className="text-5xl md:text-7xl font-bold uppercase leading-none tracking-tight">
                 <span className="text-primary">LowMovie™</span>
               </h1>
               <p className="mt-2 text-xl md:text-2xl font-medium text-foreground/70 uppercase tracking-wide">
-                e o Labirinto Criativo
+                {t("home.subtitle")}
               </p>
-
               <p className="mt-8 max-w-lg text-sm text-muted-foreground leading-relaxed">
-                Subjetividade, Subcultura e a Poética em Movimento
-                <br /> do Coletivo LowPressure™
+                {t("home.tagline")}
+                <br /> {t("home.tagline2")}
               </p>
-
               <div className="w-16 h-px bg-primary/50 mt-10" />
-
               <div className="mt-8 space-y-1">
-                <p className="text-sm text-foreground/80 leading-relaxed">
-                  Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR
-                </p>
-                <p className="text-xs font-semibold text-primary uppercase tracking-widest">
-                  Linha: Processos de Criação no Cinema e nas Artes do Vídeo
-                </p>
+                <p className="text-sm text-foreground/80 leading-relaxed">{t("home.program")}</p>
+                <p className="text-xs font-semibold text-primary uppercase tracking-widest">{t("home.researchLine")}</p>
               </div>
-
               <div className="mt-6 space-y-1">
-                <p className="text-sm text-foreground/90">Castro Pizzano</p>
-                <p className="text-xs text-muted-foreground">
-                  Orientador: Prof. Dr. Fábio Jabur de Noronha
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz
-                </p>
+                <p className="text-sm text-foreground/90">{t("home.author")}</p>
+                <p className="text-xs text-muted-foreground">{t("home.advisor")}</p>
+                <p className="text-xs text-muted-foreground">{t("home.committee")}</p>
               </div>
-
               <div className="w-16 h-px bg-border/50 mt-10" />
-
               <div className="mt-8">
                 <Link
                   to="/apresentacao"
                   className="group inline-flex items-center gap-2 border border-border px-6 py-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
                 >
-                  Explorar a pesquisa
+                  {t("home.explore")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
-
               <div className="mt-12">
-                <p className="text-xs uppercase tracking-widest text-muted-foreground">
-                  Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual
-                </p>
+                <p className="text-xs uppercase tracking-widest text-muted-foreground">{t("home.keywords")}</p>
               </div>
             </div>
           </div>
         </div>
-
         <div className="absolute bottom-0 left-0 right-0 h-px bg-border/50" />
       </section>
     </Layout>
