@@ -6,7 +6,8 @@ Mapa da arquitetura do portal LOWMOVIE™.
 
 | Arquivo | Rota | Seção |
 |---|---|---|
-| `src/pages/Index.tsx` | `/` | Página inicial com overlay de boas-vindas |
+| `src/pages/Intro.tsx` | `/` | Tela de abertura com vídeo |
+| `src/pages/Index.tsx` | `/home` | Página inicial com capa da dissertação |
 | `src/pages/Apresentacao.tsx` | `/apresentacao` | Contexto e objeto da pesquisa |
 | `src/pages/Metodologia.tsx` | `/metodologia` | Pesquisa-criação implicada |
 | `src/pages/Estrutura.tsx` | `/estrutura` | Arquitetura da dissertação |
@@ -17,7 +18,7 @@ Mapa da arquitetura do portal LOWMOVIE™.
 | `src/pages/FAQ.tsx` | `/questoes` | Tensões críticas antecipadas |
 | `src/pages/Conclusao.tsx` | `/conclusao` | Síntese e horizontes |
 | `src/pages/Mapa.tsx` | `/mapa` | Grafo conceitual interativo |
-| `src/pages/Defense.tsx` | `/defense` | Modo de apresentação para banca |
+| `src/pages/Defense.tsx` | `/defense` | Modo de apresentação para banca (acesso oculto: triple-click na capa em `/home`) |
 
 ## Componentes Principais
 
@@ -25,13 +26,18 @@ Mapa da arquitetura do portal LOWMOVIE™.
 |---|---|
 | `Layout.tsx` | Estrutura base com sidebar e navegação |
 | `AppSidebar.tsx` | Menu lateral de navegação |
-| `WelcomeOverlay.tsx` | Tela de abertura do portal |
+| `WelcomeOverlay.tsx` | Tela de abertura do portal (overlay na Home) |
 | `LowbyrinthMode.tsx` | Navegação não-linear entre seções |
 | `ConceptGraph.tsx` | Grafo interativo do mapa conceitual |
 | `AnimatedSection.tsx` | Wrapper com animações Framer Motion |
 | `ImageLightbox.tsx` | Visualização ampliada de imagens |
 | `SectionTitle.tsx` | Títulos padronizados de seção |
 | `NextSectionButton.tsx` | Navegação sequencial entre seções |
+| `MethodManual.tsx` | Painel de referência rápida da metodologia |
+| `MethodDiagram.tsx` | Diagrama interativo do sistema de conhecimento |
+| `PdfPageViewer.tsx` | Visualizador de páginas PDF embutido |
+| `NavLink.tsx` | Componente de link de navegação com estado ativo |
+| `ScrollToTop.tsx` | Reset de scroll ao navegar entre páginas |
 
 ## Dados
 
@@ -39,6 +45,14 @@ Mapa da arquitetura do portal LOWMOVIE™.
 |---|---|
 | `src/data/lowbyrinth.ts` | Nós e derivas do Lowbyrinth™ |
 | `src/data/conceptMap.ts` | Estrutura do mapa conceitual |
+
+## Internacionalização
+
+| Arquivo | Conteúdo |
+|---|---|
+| `src/i18n/index.ts` | Configuração do i18next |
+| `src/i18n/locales/pt.json` | Traduções em português |
+| `src/i18n/locales/en.json` | Traduções em inglês |
 
 ## Documentos (público)
 
