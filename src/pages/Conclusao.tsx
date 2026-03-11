@@ -22,7 +22,7 @@ const interviews = [
     id: "black-media",
     label: "Black Media",
     subtitle: "Black View",
-    description: "Black Media Skate — mídia underground de skate nacional discute o LowMovie™, processos criativos e produção audiovisual independente.",
+    description: "Black Media Skate, mídia underground de skate nacional discute o LowMovie™, processos criativos e produção audiovisual independente.",
     youtubeId: "YJEW5YB59Ws",
     transcript: "/docs/transcricoes/Black_Media_Skate_LowMovie_Interview.pdf",
   },
