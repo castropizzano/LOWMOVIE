@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Intro from "./pages/Intro";
 import Index from "./pages/Index";
 import Apresentacao from "./pages/Apresentacao";
 import Metodologia from "./pages/Metodologia";
@@ -24,7 +25,8 @@ const App = () => (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Index />} />
+        <Route path="/" element={<Intro />} />
+        <Route path="/home" element={<Index />} />
         <Route path="/apresentacao" element={<Apresentacao />} />
         <Route path="/metodologia" element={<Metodologia />} />
         <Route path="/estrutura" element={<Estrutura />} />
