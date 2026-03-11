@@ -92,8 +92,41 @@ const Estrutura = () => {
              </div>
           </AnimatedSection>
 
-          {/* Operadores e Campo Simbólico */}
+          {/* O Portal como Interface de Pesquisa */}
           <AnimatedSection delay={0.5} className="mt-16">
+            <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
+              <h3 className="text-lg font-semibold uppercase tracking-wide mb-4">O Portal como Interface de Pesquisa</h3>
+              <div className="space-y-4 text-sm text-foreground/80 leading-relaxed text-justify">
+                <p>
+                  Este portal funciona como uma arquitetura epistemológica navegável.
+                  Não é apenas suporte de apresentação — é parte do dispositivo metodológico da pesquisa.
+                </p>
+                <p>A estrutura digital organiza a investigação em três níveis simultâneos:</p>
+                <ul className="space-y-3 ml-1">
+                  <li className="flex items-start gap-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-1.5 shrink-0" />
+                    <span><span className="font-semibold text-foreground">Nível 1 — Interface sensível:</span> home, estética e navegação. A experiência visual introduz o visitante ao universo poético do projeto.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-1.5 shrink-0" />
+                    <span><span className="font-semibold text-foreground">Nível 2 — Estrutura conceitual:</span> metodologia, conceitos e organização analítica da pesquisa.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="h-1.5 w-1.5 rounded-full bg-primary/40 mt-1.5 shrink-0" />
+                    <span><span className="font-semibold text-foreground">Nível 3 — Documentação viva:</span> filme, coletivo, acervo, entrevistas e mapa conceitual.</span>
+                  </li>
+                </ul>
+                <p>
+                  Essa arquitetura transforma o portal em uma interface de pesquisa — onde teoria, criação e
+                  documentação coexistem em um sistema navegável. Dissertação, obra e interface digital se conectam
+                  no que pode ser compreendido como um dispositivo expandido de pesquisa.
+                </p>
+              </div>
+            </div>
+          </AnimatedSection>
+
+          {/* Operadores e Campo Simbólico */}
+          <AnimatedSection delay={0.55} className="mt-16">
             <div>
               <h3 className="text-lg font-semibold uppercase tracking-wide mb-6 text-foreground">
                 Operadores e Campo Simbólico
