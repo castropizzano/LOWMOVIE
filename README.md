@@ -143,4 +143,4 @@ Este projeto foi desenvolvido através de processos híbridos de criação, envo
 
 Materiais audiovisuais e imagens podem possuir licenças específicas. Ver [`LICENSE`](LICENSE).
 
-<!-- sync: 2026-03-07 -->
+<!-- sync: 2026-03-11 -->
