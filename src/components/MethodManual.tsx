@@ -59,7 +59,7 @@ const systemLayers = [
 const researcherDirectives = [
   {
     title: "Implicação Situada",
-    text: "O pesquisador não observa de fora — ele está dentro do campo. Skatista, videomaker e pesquisador são o mesmo corpo.",
+    text: "O pesquisador não observa de fora. Ele está dentro do campo. Skatista, videomaker e pesquisador são o mesmo corpo.",
   },
   {
     title: "Confrontação Teórica",
