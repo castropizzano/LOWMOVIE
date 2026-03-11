@@ -1,47 +1,30 @@
 
-## Completed: Reduce em dash (—) overuse
 
-~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
+## Wider Color Separation for Concept Map
 
-## Completed: Human Writing Audit
+The current colors (hues 260°, 290°, 320°) are only 30° apart — too close to distinguish clearly, especially between the violet and magenta tones visible in the screenshot.
 
-~20 edits across 7 files:
-- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
-- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
-- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
-- Route fix: lowbyrinth.ts `/faq` → `/questoes`
+### Proposed Palette
 
-## Completed: Full Editorial Audit (pre-defense)
+Widen the hue spread to ~50° while keeping all colors within the portal's dark aesthetic:
 
-7 edits across 6 files:
-- MethodManual.tsx L123: "constitui" → "é"
-- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
-- Filme.tsx L69: "constitui" → "possui"
-- Metodologia.tsx L109: "articula" → "formula"
-- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
-- README.md L32: "simultaneamente" → "a um só tempo,"
-- Defense.tsx L30: removed serial comma before "e"
+```text
+  Conceito autoral →  hsl(280, 60%, 68%)   — bright orchid/magenta (protagonist, brightest)
+  Autor/Referência →  hsl(230, 50%, 62%)   — periwinkle/indigo (cooler, clearly blue-violet)
+  Campo temático   →  hsl(340, 55%, 60%)   — warm rose-pink (clearly warmer/redder)
+```
 
-## Completed: Visual Design Consistency Audit
+This gives ~50-60° hue separation instead of 30°, making each type immediately distinguishable while all three still live in the cool-to-warm violet-pink family of the portal.
 
-8 fixes across 6 files:
-- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
-- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
-- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
-- Index.tsx: Cover image added grayscale hover:grayscale-0
-- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
-- Mapa.tsx: Added text-justify to instruction text
+### Implementation
 
-### Resolved
-- Hellraiser epigraph removed from Index.tsx
+One change in `src/data/conceptMap.ts` lines 81-85:
 
-## Completed: Ultra-Comprehensive Final Audit
+```ts
+export const typeColors: Record<NodeType, string> = {
+  conceito: "hsl(280, 60%, 68%)",   // orchid magenta — protagonists
+  autor:    "hsl(230, 50%, 62%)",   // periwinkle indigo
+  campo:    "hsl(340, 55%, 60%)",   // warm rose-pink
+};
+```
 
-All critical issues resolved:
-
-1. **NotFound link** — `href="/"` → `href="/home"` (no more Intro re-trigger)
-2. **Defense Mode i18n** — All hardcoded PT text moved to `defense.*` keys in pt.json/en.json; Defense.tsx fully refactored to use `t()`
-3. **ConceptGraph i18n** — All node labels/descriptions added to `conceptMap.nodes.*` in both locales; ConceptGraph.tsx uses `t()` with fallback
-4. **CITATION.cff** — Empty ORCID field removed
-5. **Repetitive patterns** — 7 targeted edits in pt.json: varied "constitui", "articula", "constituem" with "opera", "funde", "oferecem", "compõem", "funcionar como"
-6. **WelcomeOverlay** — Zod message hardcoded but has no visual impact (documented)
