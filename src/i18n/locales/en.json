@@ -432,5 +432,85 @@
       "autor": "Author / Reference",
       "campo": "Thematic field"
     }
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Page not found",
+    "back": "Back to home"
+  },
+  "lowbyrinthData": {
+    "apresentacao": {
+      "title": "Overview",
+      "conceito": "Implication",
+      "derivas": [
+        { "label": "Methodology", "justificativa": "From personal implication to methodological rigor. Affect grounds the research." },
+        { "label": "Concepts", "justificativa": "From narrative to conceptual cartography. Naming what experience revealed." }
+      ]
+    },
+    "metodologia": {
+      "title": "Methodology",
+      "conceito": "Research-creation",
+      "derivas": [
+        { "label": "The Collective", "justificativa": "From method to field. The collaborative process is methodology in action." },
+        { "label": "The Film", "justificativa": "From research-creation to the work. The film materializes the methodological journey." }
+      ]
+    },
+    "estrutura": {
+      "title": "Structure",
+      "conceito": "Architecture",
+      "derivas": [
+        { "label": "Concept Map", "justificativa": "From linear structure to graph. See the connections that text linearizes." },
+        { "label": "Overview", "justificativa": "Return to the beginning with new eyes. Structure recontextualizes the origin." }
+      ]
+    },
+    "conceitos": {
+      "title": "Concepts",
+      "conceito": "Lowbyrinth™",
+      "derivas": [
+        { "label": "The Film", "justificativa": "From concepts to image. Each analytical operator is embodied in the film." },
+        { "label": "Concept Map", "justificativa": "From text to graph. Visualize the theoretical constellation in its connections." },
+        { "label": "Conclusion", "justificativa": "From concepts to horizon. What these formulations open as possibility." }
+      ]
+    },
+    "filme": {
+      "title": "The Film",
+      "conceito": "Body in drift",
+      "derivas": [
+        { "label": "The Collective", "justificativa": "From film to bodies. Who are the ones who create together." },
+        { "label": "Concepts", "justificativa": "From image to concept. The film is theory in action." }
+      ]
+    },
+    "coletivo": {
+      "title": "The Collective",
+      "conceito": "Collaborative process",
+      "derivas": [
+        { "label": "Contributions", "justificativa": "From collective to field. What collective practice offers to academia." },
+        { "label": "Methodology", "justificativa": "From field to method. The collective as epistemological device." }
+      ]
+    },
+    "contribuicoes": {
+      "title": "Contributions",
+      "conceito": "Legacy",
+      "derivas": [
+        { "label": "Conclusion", "justificativa": "From contributions to closure. What remains open." },
+        { "label": "Questions", "justificativa": "From contributions to questions. Anticipating what the committee may ask." }
+      ]
+    },
+    "questoes": {
+      "title": "Questions",
+      "conceito": "Anticipation",
+      "derivas": [
+        { "label": "Concepts", "justificativa": "From questions to definitions. Each question refers to a conceptual operator." },
+        { "label": "Overview", "justificativa": "From questions to origin. Rereading the beginning in light of doubts." }
+      ]
+    },
+    "conclusao": {
+      "title": "Conclusion",
+      "conceito": "Horizon",
+      "derivas": [
+        { "label": "Overview", "justificativa": "From end to beginning. The labyrinth is circular." },
+        { "label": "Concept Map", "justificativa": "From closure to full vision. The map reveals what the journey built." }
+      ]
+    }
   }
 }

@@ -1,13 +1,13 @@
 export interface Deriva {
   to: string;
-  label: string;
-  justificativa: string;
+  /** i18n key index for this deriva within the node */
+  index: number;
 }
 
 export interface LowbyrinthNode {
-  title: string;
+  /** i18n key (e.g. "apresentacao") */
+  key: string;
   path: string;
-  conceito: string;
   x: number;
   y: number;
   derivas: Deriva[];
@@ -15,94 +15,85 @@ export interface LowbyrinthNode {
 
 export const lowbyrinthNodes: LowbyrinthNode[] = [
   {
-    title: "Apresentação",
+    key: "apresentacao",
     path: "/apresentacao",
-    conceito: "Implicação",
     x: 50, y: 12,
     derivas: [
-      { to: "/metodologia", label: "Metodologia", justificativa: "Da implicação pessoal ao rigor do método. O afeto fundamenta a pesquisa." },
-      { to: "/conceitos", label: "Conceitos", justificativa: "Do relato à cartografia conceitual. Nomear o que a experiência revelou." },
+      { to: "/metodologia", index: 0 },
+      { to: "/conceitos", index: 1 },
     ],
   },
   {
-    title: "Metodologia",
+    key: "metodologia",
     path: "/metodologia",
-    conceito: "Pesquisa-criação",
     x: 82, y: 18,
     derivas: [
-      { to: "/coletivo", label: "O Coletivo", justificativa: "Do método ao campo. O processo colaborativo é a metodologia em ato." },
-      { to: "/filme", label: "O Filme", justificativa: "Da pesquisa-criação à obra. O filme materializa o percurso metodológico." },
+      { to: "/coletivo", index: 0 },
+      { to: "/filme", index: 1 },
     ],
   },
   {
-    title: "Estrutura",
+    key: "estrutura",
     path: "/estrutura",
-    conceito: "Arquitetura",
     x: 88, y: 50,
     derivas: [
-      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Da estrutura linear ao grafo. Ver as conexões que o texto lineariza." },
-      { to: "/apresentacao", label: "Apresentação", justificativa: "Retorne ao início com novos olhos. A estrutura recontextualiza a origem." },
+      { to: "/mapa", index: 0 },
+      { to: "/apresentacao", index: 1 },
     ],
   },
   {
-    title: "Conceitos",
+    key: "conceitos",
     path: "/conceitos",
-    conceito: "Lowbyrinth™",
     x: 12, y: 50,
     derivas: [
-      { to: "/filme", label: "O Filme", justificativa: "Dos conceitos à imagem. Cada operador analítico se encarna no filme." },
-      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do texto ao grafo. Visualize a constelação teórica em suas conexões." },
-      { to: "/conclusao", label: "Conclusão", justificativa: "Dos conceitos ao horizonte. O que estas formulações abrem como possibilidade." },
+      { to: "/filme", index: 0 },
+      { to: "/mapa", index: 1 },
+      { to: "/conclusao", index: 2 },
     ],
   },
   {
-    title: "O Filme",
+    key: "filme",
     path: "/filme",
-    conceito: "Corpo em deriva",
     x: 18, y: 18,
     derivas: [
-      { to: "/coletivo", label: "O Coletivo", justificativa: "Do filme aos corpos. Quem são os que criam juntos." },
-      { to: "/conceitos", label: "Conceitos", justificativa: "Da imagem ao conceito. O filme é teoria em ato." },
+      { to: "/coletivo", index: 0 },
+      { to: "/conceitos", index: 1 },
     ],
   },
   {
-    title: "O Coletivo",
+    key: "coletivo",
     path: "/coletivo",
-    conceito: "Processo colaborativo",
     x: 82, y: 82,
     derivas: [
-      { to: "/contribuicoes", label: "Contribuições", justificativa: "Do coletivo ao campo. O que a prática coletiva oferece à academia." },
-      { to: "/metodologia", label: "Metodologia", justificativa: "Do campo ao método. O coletivo como dispositivo epistemológico." },
+      { to: "/contribuicoes", index: 0 },
+      { to: "/metodologia", index: 1 },
     ],
   },
   {
-    title: "Contribuições",
+    key: "contribuicoes",
     path: "/contribuicoes",
-    conceito: "Legado",
     x: 50, y: 88,
     derivas: [
-      { to: "/conclusao", label: "Conclusão", justificativa: "Das contribuições ao encerramento. O que permanece aberto." },
-      { to: "/questoes", label: "Questões", justificativa: "Das contribuições às perguntas. Antecipar o que a banca pode indagar." },
+      { to: "/conclusao", index: 0 },
+      { to: "/questoes", index: 1 },
     ],
   },
   {
-    title: "Questões",
+    key: "questoes",
     path: "/questoes",
-    conceito: "Antecipação",
     x: 18, y: 82,
     derivas: [
-      { to: "/conceitos", label: "Conceitos", justificativa: "Das perguntas às definições. Cada questão remete a um operador conceitual." },
-      { to: "/apresentacao", label: "Apresentação", justificativa: "Das questões à origem. Reler o início à luz das dúvidas." },
+      { to: "/conceitos", index: 0 },
+      { to: "/apresentacao", index: 1 },
     ],
   },
   {
-    title: "Conclusão",
+    key: "conclusao",
     path: "/conclusao",
-    conceito: "Horizonte",
     x: 50, y: 50,
     derivas: [
-      { to: "/apresentacao", label: "Apresentação", justificativa: "Do fim ao início. O labirinto é circular." },
-      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do encerramento à visão total. O mapa revela o que o percurso construiu." },
+      { to: "/apresentacao", index: 0 },
+      { to: "/mapa", index: 1 },
     ],
   },
 ];
