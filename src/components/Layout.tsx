@@ -26,7 +26,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
         <div className="flex-1 flex flex-col min-w-0">
           <header className="sticky top-0 z-40 flex h-12 items-center border-b border-border/50 bg-background/80 backdrop-blur-xl px-4 gap-3">
-            <SidebarTrigger />
+            <SidebarTrigger className="md:hidden" />
             <button
               onClick={() => setLowbyrinthOpen(true)}
               className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"

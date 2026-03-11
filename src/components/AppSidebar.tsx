@@ -44,21 +44,16 @@ const itemDefs = [
 ];
 
 export function AppSidebar() {
-  const { state } = useSidebar();
-  const collapsed = state === "collapsed";
   const location = useLocation();
   const { t } = useTranslation();
 
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar collapsible="none">
       <SidebarHeader className="border-b border-sidebar-border px-4 h-12 flex items-center">
         <NavLink to="/" className="flex items-center gap-2" onClick={() => sessionStorage.removeItem("lowmovie_intro_seen")}>
-          <span className={`text-lg font-bold uppercase tracking-widest text-sidebar-primary transition-all ${collapsed ? "hidden" : ""}`}>
+          <span className="text-lg font-bold uppercase tracking-widest text-sidebar-primary">
             LowMovie™
           </span>
-          {collapsed && (
-            <span className="text-lg font-bold text-sidebar-primary">LM</span>
-          )}
         </NavLink>
       </SidebarHeader>
 
@@ -90,23 +85,14 @@ export function AppSidebar() {
       </SidebarContent>
 
       <SidebarFooter className="border-t border-sidebar-border px-4 py-3">
-        {!collapsed && (
-          <div className="flex flex-col items-center gap-3 py-2">
-            <a href="https://www.instagram.com/lowpressure.fam/" target="_blank" rel="noopener noreferrer">
-              <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" width={96} height={96} loading="lazy" decoding="async" />
-            </a>
-            <p className="text-[11px] uppercase tracking-widest text-sidebar-foreground/40">
-              © 2026 Castro Pizzano
-            </p>
-          </div>
-        )}
-        {collapsed && (
-          <div className="flex justify-center py-2">
-            <a href="https://www.instagram.com/lowpressure.fam/" target="_blank" rel="noopener noreferrer">
-              <img src={lowpressureLogo} alt="LowPressure™" className="w-8 h-8 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" width={32} height={32} loading="lazy" decoding="async" />
-            </a>
-          </div>
-        )}
+        <div className="flex flex-col items-center gap-3 py-2">
+          <a href="https://www.instagram.com/lowpressure.fam/" target="_blank" rel="noopener noreferrer">
+            <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" width={96} height={96} loading="lazy" decoding="async" />
+          </a>
+          <p className="text-[11px] uppercase tracking-widest text-sidebar-foreground/40">
+            © 2026 Castro Pizzano
+          </p>
+        </div>
       </SidebarFooter>
     </Sidebar>
   );
