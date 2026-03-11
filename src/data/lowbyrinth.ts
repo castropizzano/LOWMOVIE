@@ -30,8 +30,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Pesquisa-criação",
     x: 82, y: 18,
     derivas: [
-      { to: "/coletivo", label: "O Coletivo", justificativa: "Do método ao campo — o processo colaborativo é a metodologia em ato." },
-      { to: "/filme", label: "O Filme", justificativa: "Da pesquisa-criação à obra — o filme materializa o percurso metodológico." },
+      { to: "/coletivo", label: "O Coletivo", justificativa: "Do método ao campo. O processo colaborativo é a metodologia em ato." },
+      { to: "/filme", label: "O Filme", justificativa: "Da pesquisa-criação à obra. O filme materializa o percurso metodológico." },
     ],
   },
   {
