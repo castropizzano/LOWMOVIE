@@ -447,7 +447,7 @@ const Defense = () => {
               </p>
             </div>
             <div className="max-w-6xl w-full">
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 {[
                   { src: "/images/fotos/01.jpg", span: "col-span-2" },
                   { src: "/images/fotos/02.jpg", span: "col-span-1" },
