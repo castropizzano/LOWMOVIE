@@ -2,9 +2,11 @@ import { ReactNode, useState } from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import LowbyrinthMode from "./LowbyrinthMode";
+import MethodManual from "./MethodManual";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const [lowbyrinthOpen, setLowbyrinthOpen] = useState(false);
+  const [methodOpen, setMethodOpen] = useState(false);
 
   return (
     <SidebarProvider>
@@ -19,6 +21,12 @@ const Layout = ({ children }: { children: ReactNode }) => {
               className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
             >
               Lowbyrinth™
+            </button>
+            <button
+              onClick={() => setMethodOpen(true)}
+              className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
+            >
+              Manual do Método
             </button>
           </header>
 
@@ -50,6 +58,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         </div>
       </div>
       <LowbyrinthMode open={lowbyrinthOpen} onClose={() => setLowbyrinthOpen(false)} />
+      <MethodManual open={methodOpen} onClose={() => setMethodOpen(false)} />
     </SidebarProvider>
   );
 };
