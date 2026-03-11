@@ -32,8 +32,8 @@ const Apresentacao = () => {
               </p>
               <p>
                 Os vídeos de skate registram a evolução técnica e criativa dos praticantes e desempenham
-                papel central na construção da identidade cultural do skate. A <span className="text-primary font-semibold">VideoParte</span> — formato
-                audiovisual próprio da cultura do skate — constitui uma linguagem com gramática, ritmo e
+                papel central na construção da identidade cultural do skate. A <span className="text-primary font-semibold">VideoParte</span>, formato
+                audiovisual próprio da cultura do skate, constitui uma linguagem com gramática, ritmo e
                 códigos estéticos específicos que a dissertação analisa como matriz de produção cinematográfica
                 autônoma, e não apenas como registro documental de uma prática esportiva.
               </p>
