@@ -107,7 +107,7 @@ const Conclusao = () => {
           </div>
 
           <div className="mt-16">
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <p className="text-sm text-muted-foreground leading-relaxed italic text-justify">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
