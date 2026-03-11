@@ -629,7 +629,7 @@
         { "label": "Apresentação", "justificativa": "Do fim ao início. O labirinto é circular." },
         { "label": "Mapa Conceitual", "justificativa": "Do encerramento à visão total. O mapa revela o que o percurso construiu." }
       ]
-    },
+    }
   },
   "methodDiagram": {
     "core": "LOWMOVIE™",

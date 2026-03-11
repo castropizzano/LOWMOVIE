@@ -629,7 +629,7 @@
         { "label": "Overview", "justificativa": "From end to beginning. The labyrinth is circular." },
         { "label": "Concept Map", "justificativa": "From closure to full vision. The map reveals what the journey built." }
       ]
-    },
+    }
   },
   "methodDiagram": {
     "core": "LOWMOVIE™",
