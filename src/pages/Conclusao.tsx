@@ -113,6 +113,10 @@ const Conclusao = () => {
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
               </p>
+              <div className="my-4 h-px w-full bg-border/30" />
+              <p className="text-base text-foreground/80 leading-relaxed italic text-justify">
+                "O LowMovie™ pode ser compreendido como um processo de pesquisa-criação em movimento, que articula prática artística, reflexão crítica e experiência urbana."
+              </p>
             </div>
           </div>
 
