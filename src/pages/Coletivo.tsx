@@ -29,7 +29,7 @@ const Coletivo = () => {
             <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 O <span className="text-primary font-semibold">LowPressure™</span> não é um grupo
-                formal — é uma rede de afinidades, uma forma de vida em rede que se constitui pelo
+                formal. É uma rede de afinidades, uma forma de vida em rede que se constitui pelo
                 encontro, pela prática e pela insistência do fazer.
               </p>
               <p>
