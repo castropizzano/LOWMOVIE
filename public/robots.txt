@@ -8,4 +8,4 @@ Allow: /
 User-agent: archive.org_bot
 Allow: /
 
-Sitemap: https://lowmovie.lovable.app/sitemap.xml
+

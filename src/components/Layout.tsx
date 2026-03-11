@@ -90,7 +90,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <a href="https://doi.org/10.5281/zenodo.18950438" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18950438-cd59e8?style=flat&labelColor=1a1a1a" alt="DOI" className="h-5" />
                   </a>
-                  <a href="https://github.com/your-repo/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/castropizzano/lowmovie/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-cd59e8?style=flat&labelColor=1a1a1a" alt="License" className="h-5" />
                   </a>
                 </div>

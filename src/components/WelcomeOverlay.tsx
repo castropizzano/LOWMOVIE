@@ -55,7 +55,7 @@ const WelcomeOverlay = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/70 transition-opacity duration-400 ${closing ? "opacity-0" : "opacity-100"}`}
+      className={`fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-background/70 transition-opacity duration-400 ${closing ? "opacity-0" : "opacity-100"}`}
     >
       <div className="w-full max-w-xl mx-4 border border-border bg-background/95 rounded-lg shadow-2xl overflow-hidden">
         <div className="relative w-full aspect-video group bg-black">
