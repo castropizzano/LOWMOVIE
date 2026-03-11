@@ -418,7 +418,7 @@ const Defense = () => {
       case 8:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <div className="w-[84%]">
+            <div className="w-full md:w-[84%]">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4">
                  {t("defense.block8P1")}
               </p>
