@@ -35,13 +35,31 @@ const Layout = ({ children }: { children: ReactNode }) => {
             >
               {t("header.methodManual")}
             </button>
-            <button
-              onClick={toggleLang}
-              className="ml-auto text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
-              aria-label="Toggle language"
-            >
-              {i18n.language === "pt" ? "EN" : "PT"}
-            </button>
+            <div className="ml-auto flex items-center border border-border/50 rounded overflow-hidden">
+              <button
+                onClick={() => i18n.changeLanguage("pt")}
+                className={cn(
+                  "text-[11px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 transition-colors",
+                  i18n.language === "pt"
+                    ? "bg-primary/20 text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                )}
+              >
+                PT
+              </button>
+              <div className="w-px h-4 bg-border/50" />
+              <button
+                onClick={() => i18n.changeLanguage("en")}
+                className={cn(
+                  "text-[11px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 transition-colors",
+                  i18n.language === "en"
+                    ? "bg-primary/20 text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                )}
+              >
+                EN
+              </button>
+            </div>
           </header>
 
           <main className="flex-1">
