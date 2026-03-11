@@ -624,7 +624,7 @@ const Defense = () => {
           {/* Block label + arrow */}
           <div className="w-full flex items-center justify-between">
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70 pointer-events-none">
-              {t("defense.block")} {String(currentBlock).padStart(2, "0")} — {blockTitle.toUpperCase()}
+              <span className="hidden sm:inline">{t("defense.block")} {String(currentBlock).padStart(2, "0")} — </span>{blockTitle.toUpperCase()}
             </p>
             {currentBlock < BLOCK_KEYS.length - 1 && (
               <button
