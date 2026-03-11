@@ -134,7 +134,7 @@ const Conclusao = () => {
                   Lowbyrinth™ como Ferramenta Pedagógica
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — sugere também aplicações pedagógicas que pretendo explorar.
+                  O Lowbyrinth™, labirinto conceitual que organiza a poética do LowMovie™, sugere também aplicações pedagógicas que pretendo explorar.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                   Penso nele como um mapa conceitual navegável: estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.
