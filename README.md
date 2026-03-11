@@ -1,5 +1,7 @@
 # LOWMOVIE™ E O LABIRINTO CRIATIVO 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18950438.svg)](https://doi.org/10.5281/zenodo.18950438)
+
 > **Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™**
 
 Repositório oficial da dissertação de mestrado de **Castro Pizzano**.
