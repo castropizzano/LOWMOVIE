@@ -41,7 +41,7 @@ const Coletivo = () => {
               </p>
               <p>
                 A questão da <span className="text-primary font-semibold">autoria compartilhada</span> é central.
-                Como propõe Abreu, <em>"num processo de criação partilhada não há muito espaço
+                Como propõe Luis Alberto de Abreu, <em>"num processo de criação partilhada não há muito espaço
                 para 'minha cena', 'meu texto', 'minha ideia'. Tudo é jogado numa arena comum"</em>. A autoria
                 não é propriedade individual, é emergência coletiva.
               </p>
