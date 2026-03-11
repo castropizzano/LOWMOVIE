@@ -54,7 +54,7 @@ const interviews = [
     id: "lowzine",
     label: "LowZine",
     subtitle: "Fanzine Coletivo",
-    description: "LowZine — fanzine coletivo produzido pelo grupo LowPressure™, reunindo registros visuais, textos e fragmentos do processo criativo.",
+    description: "LowZine, fanzine coletivo produzido pelo grupo LowPressure™, reunindo registros visuais, textos e fragmentos do processo criativo.",
     image: "/images/lowzine.png",
     transcript: "/docs/transcricoes/Entrevista-Transcrita_PIZZANO_Castro_LEITE_Rafael_Auto_Rafao_VM_METRI_Caio_LowZine_LowMovie_LowPressure.pdf",
   },
