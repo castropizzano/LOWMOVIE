@@ -1,12 +1,23 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, useEffect } from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import LowbyrinthMode from "./LowbyrinthMode";
 import MethodManual from "./MethodManual";
+import { useTranslation } from "react-i18next";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const [lowbyrinthOpen, setLowbyrinthOpen] = useState(false);
   const [methodOpen, setMethodOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const toggleLang = () => {
+    const next = i18n.language === "pt" ? "en" : "pt";
+    i18n.changeLanguage(next);
+  };
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   return (
     <SidebarProvider>
@@ -20,13 +31,20 @@ const Layout = ({ children }: { children: ReactNode }) => {
               onClick={() => setLowbyrinthOpen(true)}
               className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
             >
-              Lowbyrinth™
+              {t("header.lowbyrinth")}
             </button>
             <button
               onClick={() => setMethodOpen(true)}
               className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
             >
-              Manual do Método
+              {t("header.methodManual")}
+            </button>
+            <button
+              onClick={toggleLang}
+              className="ml-auto text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors border border-border/50 rounded px-2.5 py-1 hover:border-foreground/30"
+              aria-label="Toggle language"
+            >
+              {i18n.language === "pt" ? "EN" : "PT"}
             </button>
           </header>
 
@@ -37,20 +55,20 @@ const Layout = ({ children }: { children: ReactNode }) => {
           <footer className="border-t border-border/50 py-12">
             <div className="mx-auto max-w-5xl px-4">
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground leading-relaxed mb-4">
-                © 2026 Castro Pizzano
+                {t("footer.copyright")}
               </p>
               <div className="space-y-2">
                 <div className="flex flex-col md:flex-row md:justify-between">
-                  <p className="text-xs text-muted-foreground leading-relaxed">Universidade Estadual do Paraná</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.university")}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">{t("footer.advisor")}</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
-                  <p className="text-xs text-muted-foreground leading-relaxed">Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.program")}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">{t("footer.committee")}</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
-                  <p className="text-xs text-muted-foreground leading-relaxed">Linha: Processos de Criação no Cinema e nas Artes do Vídeo</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.researchLine")}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed md:text-right">{t("footer.keywords")}</p>
                 </div>
               </div>
             </div>
