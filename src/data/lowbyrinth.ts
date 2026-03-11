@@ -91,8 +91,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Antecipação",
     x: 18, y: 82,
     derivas: [
-      { to: "/conceitos", label: "Conceitos", justificativa: "Das perguntas às definições — cada questão remete a um operador conceitual." },
-      { to: "/apresentacao", label: "Apresentação", justificativa: "Das questões à origem — reler o início à luz das dúvidas." },
+      { to: "/conceitos", label: "Conceitos", justificativa: "Das perguntas às definições. Cada questão remete a um operador conceitual." },
+      { to: "/apresentacao", label: "Apresentação", justificativa: "Das questões à origem. Reler o início à luz das dúvidas." },
     ],
   },
   {
