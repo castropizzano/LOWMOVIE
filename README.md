@@ -87,6 +87,7 @@ A página `/defense` oferece um modo de apresentação dedicado com navegação 
 |---|---|
 | 🌐 **Portal** | [lowmovie.lovable.app](https://lowmovie.lovable.app) |
 | 📁 **Acervo** | [Google Drive](https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing) |
+| 🔗 **DOI** | [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438) |
 
 ---
 
