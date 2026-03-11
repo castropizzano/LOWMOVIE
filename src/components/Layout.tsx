@@ -2,9 +2,11 @@ import { ReactNode, useState } from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import LowbyrinthMode from "./LowbyrinthMode";
+import MethodManual from "./MethodManual";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const [lowbyrinthOpen, setLowbyrinthOpen] = useState(false);
+  const [methodOpen, setMethodOpen] = useState(false);
 
   return (
     <SidebarProvider>
