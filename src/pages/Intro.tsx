@@ -47,7 +47,7 @@ const Intro = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/40 pointer-events-none" />
       <button
         onClick={toggleSound}
-        className="absolute top-6 right-6 z-10 border border-border/50 rounded-full p-3 text-foreground/60 hover:text-primary hover:border-primary/50 transition-all backdrop-blur-sm bg-background/20"
+        className="absolute top-[calc(1.5rem+env(safe-area-inset-top))] right-6 z-10 border border-border/50 rounded-full p-3 text-foreground/60 hover:text-primary hover:border-primary/50 transition-all backdrop-blur-sm bg-background/20"
         aria-label={muted ? t("intro.enableSound") : t("intro.muteSound")}
       >
         {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
