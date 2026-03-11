@@ -51,7 +51,7 @@ const Contribuicoes = () => {
             ))}
           </div>
 
-          <NextSectionButton to="/faq" label="Questões" />
+          <NextSectionButton to="/questoes" label="Questões" />
         </div>
       </section>
     </Layout>

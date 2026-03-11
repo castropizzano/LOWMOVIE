@@ -59,7 +59,7 @@ O portal digital funciona como **interface expandida da dissertação**, permiti
 | Metodologia | Pesquisa-criação implicada como abordagem |
 | Estrutura | Arquitetura da dissertação |
 | Conceitos | Operadores conceituais da pesquisa |
-| O Filme | O documentário *Like Rats* e o processo criativo |
+| O Filme | O documentário LowMovie™ e o processo criativo |
 | O Coletivo | O coletivo LowPressure™ e a produção colaborativa |
 | Contribuições | Aportes ao campo do cinema e das artes do vídeo |
 | Questões | Antecipação de tensões críticas da banca |

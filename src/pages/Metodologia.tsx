@@ -11,7 +11,7 @@ const eixos = [
   },
   {
     title: "Escuta",
-    desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir — a escuta expandiu-se para o corpo, para o som da cidade, para o ruído das rodas sobre o concreto. Sustentar o silêncio, acolher o tempo do outro.",
+    desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir — a escuta expande-se para o corpo, para o som da cidade, para o ruído das rodas sobre o concreto. Sustentar o silêncio, acolher o tempo do outro.",
   },
   {
     title: "Improviso",

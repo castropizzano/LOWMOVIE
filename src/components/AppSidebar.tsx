@@ -37,7 +37,7 @@ const items = [
   { title: "O Filme", url: "/filme", icon: Film },
   { title: "O Coletivo", url: "/coletivo", icon: Users },
   { title: "Contribuições", url: "/contribuicoes", icon: HandHeart },
-  { title: "Questões", url: "/faq", icon: HelpCircle },
+  { title: "Questões", url: "/questoes", icon: HelpCircle },
   { title: "Conclusão", url: "/conclusao", icon: CheckCircle },
   { title: "Mapa", url: "/mapa", icon: Network },
 ];
