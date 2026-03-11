@@ -205,7 +205,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-2xl text-justify">
                   LowMovie™ opera a partir de um lugar de fala específico: o artista-pesquisador que é, 
                   simultaneamente, skatista, videomaker e investigador. Não há separação entre quem cria 
-                  e quem pesquisa — o corpo que anda de skate é o mesmo que filma, monta e teoriza.
+                  e quem pesquisa. O corpo que anda de skate é o mesmo que filma, monta e teoriza.
                 </p>
               </motion.div>
 

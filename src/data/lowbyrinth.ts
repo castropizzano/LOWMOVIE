@@ -101,8 +101,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Horizonte",
     x: 50, y: 50,
     derivas: [
-      { to: "/apresentacao", label: "Apresentação", justificativa: "Do fim ao início — o labirinto é circular." },
-      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do encerramento à visão total — o mapa revela o que o percurso construiu." },
+      { to: "/apresentacao", label: "Apresentação", justificativa: "Do fim ao início. O labirinto é circular." },
+      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Do encerramento à visão total. O mapa revela o que o percurso construiu." },
     ],
   },
 ];

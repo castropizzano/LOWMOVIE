@@ -260,7 +260,7 @@ const Defense = () => {
               <ImageLightbox src="/images/poster-lowmovie.png" alt="Poster LowMovie™" className="w-full max-w-sm mx-auto" imageClassName="rounded-lg shadow-lg" />
               <div className="text-left">
                 <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-                  Dissertação de Mestrado — Março 2026
+                  Dissertação de Mestrado · Março 2026
                 </p>
                 <h2 className="text-4xl md:text-6xl font-bold uppercase leading-none tracking-tight text-foreground">
                   LowMovie™

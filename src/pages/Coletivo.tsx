@@ -7,7 +7,7 @@ import ImageLightbox from "@/components/ImageLightbox";
 const glossario = [
   { termo: "Crew", def: "Grupo de skatistas que compartilham afinidades, sessões e produções." },
   { termo: "Sessão", def: "Encontro de prática coletiva do skate em um determinado espaço urbano." },
-  { termo: "Spot", def: "Local urbano apropriado para a prática do skate — escadarias, bordas, corrimãos." },
+  { termo: "Spot", def: "Local urbano apropriado para a prática do skate: escadarias, bordas, corrimãos." },
   { termo: "Shape", def: "A prancha do skate. Elemento central da prática, com dimensões e desgastes que influenciam o estilo." },
   { termo: "Tricks", def: "Manobras executadas sobre o skate. Cada trick possui nome e gramática corporal própria." },
   { termo: "Linha", def: "Sequência encadeada de manobras executadas em fluxo contínuo." },
