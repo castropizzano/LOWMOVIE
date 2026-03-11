@@ -27,7 +27,7 @@ const BLOCKS = [
 const TEASERS: { name: string; id: string; legend: string; platform?: "youtube" | "vimeo" }[] = [
   { name: "Eye of Horus", id: "epIEe4pf1o8", legend: "O olhar. A câmera. O registro das tentativas.", platform: "youtube" },
   { name: "Ishtar Star", id: "kVrXqhYnZjw", legend: "A criação coletiva e os bastidores da produção.", platform: "youtube" },
-  { name: "Star of Lakshmi", id: "w4coRA38tto", legend: "O esforço, o erro, e a superação.", platform: "youtube" },
+  { name: "Star of Lakshmi", id: "w4coRA38tto", legend: "O esforço, o erro e a superação.", platform: "youtube" },
   { name: "The Chaos", id: "DMl8LWjiUyk", legend: "A tensão urbana e a transgressão.", platform: "youtube" },
   { name: "Labyrinth", id: "trBIP6Jl7LY", legend: "O espaço da cidade como campo de aprendizagem.", platform: "youtube" },
   { name: "The Rat", id: "i-dUpm9XbHA", legend: "A sobrevivência e adaptação das subculturas urbanas.", platform: "youtube" },

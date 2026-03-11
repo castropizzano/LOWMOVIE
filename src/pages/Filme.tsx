@@ -66,7 +66,7 @@ const Filme = () => {
                     Linhagem: A Gramática dos Vídeos de Skate
                   </p>
                   <p className="text-sm text-foreground/80 leading-relaxed text-justify">
-                    O LowMovie™ inscreve-se numa tradição audiovisual própria da cultura do skate. A <strong>VideoParte</strong> constitui
+                    O LowMovie™ inscreve-se numa tradição audiovisual própria da cultura do skate. A <strong>VideoParte</strong> possui
                     uma gramática com ritmo, montagem e códigos estéticos específicos. O <strong>Full-Length</strong> expande
                     essa gramática para uma estrutura narrativa completa.
                   </p>
