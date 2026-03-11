@@ -119,15 +119,18 @@ const Conclusao = () => {
                 </h2>
               </div>
 
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
                   Lowbyrinth™ como Ferramenta Pedagógica
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — se revela também
-                  como dispositivo pedagógico. Em sala de aula, funciona como ferramenta de ensino-aprendizagem
-                  em arte, design e audiovisual: um mapa navegável onde o estudante percorre camadas de sentido,
-                  confronta referências e constrói seu próprio trajeto criativo.
+                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — também sugere possíveis aplicações pedagógicas.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                  Em contextos de ensino, o diagrama pode funcionar como ferramenta de mediação em processos de aprendizagem em arte, design e audiovisual. Nesse sentido, ele pode ser compreendido como um mapa conceitual navegável, no qual estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                  A ideia de percurso, característica do labirinto, aproxima-se de abordagens pedagógicas que valorizam a experimentação, a descoberta e o desenvolvimento de processos autorais.
                 </p>
               </div>
 
@@ -135,15 +138,21 @@ const Conclusao = () => {
                 <div className="h-px w-full bg-border/30" />
               </div>
 
-              <div className="space-y-2">
+              <div className="space-y-3">
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
-                  Sala de Aula — Método Replicável
+                  Sala de Aula — Possibilidades Metodológicas
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  A pesquisa-criação do LowMovie™ constitui um método replicável em ambientes educacionais.
-                  O processo colaborativo, a espiral cognitiva e a implicação do corpo no gesto criativo
-                  podem ser adaptados como práticas pedagógicas — transformando a sala de aula em campo
-                  de produção de conhecimento sensível, onde teoria e prática se atravessam continuamente.
+                  A experiência de pesquisa-criação associada ao LowMovie™ aponta também para possíveis desdobramentos em ambientes educacionais.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                  Aspectos como o processo colaborativo, a espiral cognitiva e a implicação do corpo no gesto criativo podem inspirar práticas pedagógicas voltadas à experimentação artística e à produção de conhecimento sensível.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                  Nesse contexto, teoria, prática e experiência passam a se relacionar de maneira mais integrada, permitindo que a aprendizagem emerja do próprio processo de criação.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
+                  Mais do que estabelecer um modelo fechado, essa perspectiva abre caminhos para pensar a sala de aula como espaço de investigação estética, encontro coletivo e desenvolvimento de práticas autorais.
                 </p>
               </div>
             </div>

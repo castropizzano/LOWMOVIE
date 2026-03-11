@@ -1,13 +1,11 @@
 
+## Fix: Lightbox caption visibility
 
-# Atualizar textos da seção "Obra em Expansão"
+**Problem**: In `ImageLightbox.tsx`, the lightbox container is `h-[80vh]` and the image is `max-h-[80vh]`. When the image fills the container, the caption (`mt-2`) overflows below the visible area.
 
-## Mudanças
+**Solution**: Reduce the image `max-h` to `max-h-[75vh]` to leave room for the caption below it. This ensures the caption remains visible within the 80vh container.
 
-Editar `src/pages/Conclusao.tsx` linhas 122-148: substituir os textos dos dois blocos pelo conteúdo fornecido pelo usuário.
+**File**: `src/components/ImageLightbox.tsx` (line 51)
+- Change `max-h-[80vh]` to `max-h-[75vh]` on the lightbox `<img>`
 
-- **Bloco 1**: "Lowbyrinth™ como Ferramenta Pedagógica" — 3 parágrafos (tom mais cauteloso: "sugere possíveis aplicações", "pode funcionar como")
-- **Bloco 2**: Renomear para "Sala de Aula — Possibilidades Metodológicas" — 4 parágrafos (tom aberto: "aponta para possíveis desdobramentos", "abre caminhos")
-
-Posição no layout permanece a mesma (entre a citação Lowbyrinth e o card Dissertação). Nenhuma mudança estrutural ou visual.
-
+This affects all lightbox instances consistently, including blocks 01 (Punkinho) and 05 (Crew LowPressure) in Defense Mode.
