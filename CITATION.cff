@@ -6,7 +6,7 @@ type: software
 authors:
   - family-names: Pizzano
     given-names: Castro
-    orcid: ""
+    
 repository-code: "https://github.com/castropizzano/lowmovie"
 url: "https://lowmovie.lovable.app"
 abstract: >-
