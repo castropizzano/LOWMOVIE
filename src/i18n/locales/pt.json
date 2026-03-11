@@ -1,0 +1,418 @@
+{
+  "nav": {
+    "home": "Home",
+    "apresentacao": "Apresentação",
+    "metodologia": "Metodologia",
+    "estrutura": "Estrutura",
+    "conceitos": "Conceitos",
+    "filme": "O Filme",
+    "coletivo": "O Coletivo",
+    "contribuicoes": "Contribuições",
+    "questoes": "Questões",
+    "conclusao": "Conclusão",
+    "mapa": "Mapa"
+  },
+  "header": {
+    "lowbyrinth": "Lowbyrinth™",
+    "methodManual": "Manual do Método"
+  },
+  "footer": {
+    "copyright": "© 2026 Castro Pizzano",
+    "university": "Universidade Estadual do Paraná",
+    "advisor": "Orientador: Prof. Dr. Fábio Jabur de Noronha",
+    "program": "Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR",
+    "committee": "Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz",
+    "researchLine": "Linha: Processos de Criação no Cinema e nas Artes do Vídeo",
+    "keywords": "Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual"
+  },
+  "intro": {
+    "enableSound": "Enable sound",
+    "muteSound": "Mute sound",
+    "enterPortal": "Enter Portal"
+  },
+  "welcome": {
+    "title": "Bem-vindo ao Labirinto Criativo",
+    "description": "Esta plataforma é parte da minha dissertação de mestrado sobre o coletivo LowPressure™ e suas práticas audiovisuais. Insira seu email para acessar o conteúdo — os dados são utilizados exclusivamente para fins acadêmicos.",
+    "placeholder": "seu@email.com",
+    "enter": "Entrar",
+    "invalidEmail": "Email inválido",
+    "playVideo": "Reproduzir vídeo"
+  },
+  "home": {
+    "dissertationDate": "Dissertação de Mestrado · Março 2026",
+    "subtitle": "e o Labirinto Criativo",
+    "tagline": "Subjetividade, Subcultura e a Poética em Movimento",
+    "tagline2": "do Coletivo LowPressure™",
+    "program": "Mestrado em Cinema e Artes do Vídeo | PPG-CINEAV | UNESPAR",
+    "researchLine": "Linha: Processos de Criação no Cinema e nas Artes do Vídeo",
+    "author": "Castro Pizzano",
+    "advisor": "Orientador: Prof. Dr. Fábio Jabur de Noronha",
+    "committee": "Banca: Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz",
+    "explore": "Explorar a pesquisa",
+    "keywords": "Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual",
+    "coverAlt": "Capa da dissertação LowMovie e o Labirinto Criativo"
+  },
+  "apresentacao": {
+    "title": "Apresentação",
+    "subtitle": "Contexto, objeto e posicionamento da pesquisa",
+    "p1": "Esta dissertação investiga os processos criativos do filme <1>LowMovie™</1>, realizado pelo coletivo de artistas-skatistas <1>LowPressure™</1>, analisando como tais dinâmicas colaborativas contribuem para a formação de uma poética audiovisual em movimento vinculada à experiência urbana do skate. O trabalho situa-se no cruzamento entre a produção cinematográfica contemporânea, as práticas subculturais urbanas e a pesquisa acadêmica em artes, propondo uma abordagem que reconhece a potência estética de práticas criativas que o campo artístico institucional historicamente marginalizou.",
+    "p2": "A pesquisa propõe um deslocamento epistemológico decisivo: reposiciona o skate não apenas como fenômeno sociocultural, objeto recorrente de investigações sociológicas e antropológicas, mas como prática estética produtora de linguagem audiovisual situada. Esse gesto de reposicionamento implica reconhecer que o corpo em movimento sobre o skate não é meramente tema ou motivo visual, mas agente constitutivo de uma gramática fílmica com ritmo, enquadramento e temporalidade próprios.",
+    "p3": "Os vídeos de skate registram a evolução técnica e criativa dos praticantes e desempenham papel central na construção da identidade cultural do skate. A <1>VideoParte</1>, formato audiovisual próprio da cultura do skate, apresenta uma linguagem com gramática, ritmo e códigos estéticos específicos que a dissertação analisa como matriz de produção cinematográfica autônoma, e não apenas como registro documental de uma prática esportiva.",
+    "p4": "O coletivo <1>LowPressure™</1> funciona como condição de produção e como ecossistema criativo no qual se formam as decisões estéticas do filme. Sua estrutura horizontal, baseada em vínculos afetivos e em uma ética de produção autônoma, representa um modo de fazer cinema que prescinde das hierarquias tradicionais da indústria audiovisual. O LowMovie™, portanto, não é apenas um produto fílmico: é a materialização de um processo coletivo que articula corpo, cidade, câmera e improviso como elementos indissociáveis de uma mesma operação poética.",
+    "centralQuestion": "Pergunta Central",
+    "question": "\"Como os processos criativos que compõem o LowMovie™, gestados em dinâmica coletiva e rizomática do LowPressure™, contribuem para a construção de uma estética em movimento no campo do cinema e das artes visuais? Quais modos de subjetivação, de elaboração simbólica e de relação com o espaço urbano emergem dessas práticas?\"",
+    "questionNote": "A pergunta articula descrição dos processos criativos e sua formulação teórica no campo do cinema e das artes do vídeo.",
+    "specificObjectives": "Objetivos Específicos",
+    "obj1": "Descrever as práticas colaborativas mobilizadas no processo do filme (filmagem, montagem, zine e eventos)",
+    "obj2": "Analisar as escolhas formais do LowMovie™ como linguagem de risco, erro e presença",
+    "obj3": "Investigar os atravessamentos estéticos que se manifestam na obra",
+    "obj4": "Observar suas reverberações em diferentes circuitos de circulação e exibição",
+    "syntheticAnswer": "Resposta Sintética",
+    "answer": "Os processos criativos do LowMovie™ transformam a experiência corporal do skate em linguagem cinematográfica situada e coletiva, constituindo uma poética audiovisual baseada em três operadores fundamentais: <1>o instante</1> (captura do gesto efêmero como condensação sensível do real), <1>a borda</1> (linguagem emergente do limite entre controle e acaso) e <1>o fluxo</1> (câmera como extensão do corpo em deslocamento contínuo).",
+    "lugarDeFala": "Lugar de Fala: Artista-Pesquisador",
+    "lugarP1": "A dissertação assume explicitamente a posição de artista-pesquisador, operando a partir de uma epistemologia que reconhece a implicação como condição de rigor e não como obstáculo a ele. Não se parte de uma neutralidade externa ao campo investigado, mas de uma implicação situada, cujos contornos são explicitados e cujos efeitos sobre a produção de conhecimento são interrogados ao longo de todo o percurso.",
+    "lugarP2": "Trata-se de uma escolha epistemológica deliberada. O artista-pesquisador não observa de fora: ele participa da tessitura do objeto, compartilha suas condições de existência e, ao fazê-lo, acessa camadas de sentido inacessíveis a uma abordagem estritamente distanciada. Como afirma Pimentel, \"toda ação praticada numa experiência modifica quem a pratica e quem a sofre\". É precisamente essa transformação mútua entre pesquisador e campo que a dissertação assume como motor epistemológico.",
+    "lugarP3": "O rigor se exerce por reflexividade, explicitação do posicionamento e articulação com os referenciais da pesquisa-criação, não como defesa, mas como condição do próprio fazer. A prática não substitui o rigor. Ela o produz. É no interior do fazer artístico, quando submetido à reflexão sistemática e à confrontação teórica, que emerge um conhecimento que não poderia ser produzido por nenhuma outra via.",
+    "justificativa": "Justificativa",
+    "justP1": "A relevância desta investigação reside, sobretudo, na escassez de pesquisas acadêmicas brasileiras que abordem o skate enquanto matriz de produção audiovisual e não apenas como objeto de registro documental. Como apontam Machado e Brandão, entre os diversos programas de pós-graduação mapeados, ainda existe um território fértil e pouco explorado para investigações que articulem práticas subculturais urbanas com a produção cinematográfica contemporânea.",
+    "justP2": "Ao propor essa inflexão, a dissertação não documenta apenas uma cena ou uma estética: propõe um modo de pesquisar com o skate, reconhecendo-o como prática produtora de conhecimento sensível, situado e compartilhado. A contribuição é, portanto, temática, metodológica e epistemológica.",
+    "next": "Metodologia"
+  },
+  "metodologia": {
+    "title": "Metodologia",
+    "subtitle": "Pesquisa-criação implicada, fundamentada na reflexividade",
+    "intro": "A investigação estrutura-se como <1>pesquisa-criação implicada</1>, modalidade metodológica que articula a produção artística e a reflexão acadêmica como dimensões indissociáveis de um mesmo processo investigativo.",
+    "refs": "Referências: Coessens, Pimentel, Moriceau — corpo como produção de conhecimento.",
+    "eixos": {
+      "afeto": { "title": "Afeto", "desc": "Vínculo sensível com o campo investigado. Inspirado nos debates do grupo Afetos (UFMG), o afeto não é contaminação, mas condição de acesso ao real em sua dimensão mais densa e significativa. Afetar e ser afetado constituem formas legítimas de produzir conhecimento." },
+      "escuta": { "title": "Escuta", "desc": "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir — a escuta expande-se para o corpo, para o som da cidade, para o ruído das rodas sobre o concreto. Sustentar o silêncio, acolher o tempo do outro." },
+      "improviso": { "title": "Improviso", "desc": "Abertura ao imprevisto como dado epistemológico legítimo, e não como falha do planejamento. A metodologia assume uma arquitetura móvel, capaz de se refazer a cada encontro. Um saber em movimento que aprende com a instabilidade." }
+    },
+    "fieldProcedures": "Procedimentos de Campo: Três Operações Entrelaçadas",
+    "vivencia": { "title": "Vivência Situada", "desc": "Participo de sessões de gravação, reuniões, eventos e sessões de skate com o coletivo." },
+    "convivencia": { "title": "Convivência Criativa", "desc": "Participo das dinâmicas de produção e montagem, contribuindo ativamente para as decisões estéticas do coletivo." },
+    "escutaPartilhada": { "title": "Escuta Partilhada", "desc": "Registro conversas abertas por meio de notas, áudios e diário digital." },
+    "spiralNote": "A pesquisa adota uma <1>espiral cognitiva</1> inspirada na Taxonomia de Bloom adaptada: cada retorno ao campo aprofunda a compreensão anterior, num movimento cumulativo.",
+    "distinction": "Distinção Fundamental",
+    "researchMethod": "Método de Pesquisa",
+    "researchMethodSub": "Reflexivo e analítico",
+    "creationMethods": "Métodos de Criação",
+    "creationMethodsSub": "Filmagem, montagem, glitch, design",
+    "distinctionP1": "Embora método de pesquisa e métodos de criação se alimentem mutuamente, não se confundem. O primeiro interroga, conceitua e formula; os segundos produzem, experimentam e materializam.",
+    "distinctionP2": "O rigor reside na reflexividade com que cada decisão é interrogada e na consistência com que as inferências se articulam aos referenciais mobilizados.",
+    "operational": "Procedimentos Operacionais",
+    "opItems": {
+      "period": { "label": "Período de pesquisa", "value": "2023–2025" },
+      "instruments": { "label": "Instrumentos de registro", "value": "Diário de campo, registros audiovisuais, caderno de montagem" },
+      "analysis": { "label": "Procedimentos de análise", "value": "Análise fílmica implicada, descrição densa dos processos criativos" },
+      "positioning": { "label": "Posicionamento", "value": "Artista-pesquisador, membro ativo do coletivo criador" },
+      "collection": { "label": "Coleta de materiais", "value": "Vídeos, zines, áudios, fotografias e trocas digitais, mediada pelo consentimento informado" },
+      "organization": { "label": "Organização", "value": "Espiral cognitiva: prática → reflexão → formulação → retorno ao campo" }
+    },
+    "next": "Estrutura"
+  },
+  "estrutura": {
+    "title": "Estrutura Analítica",
+    "subtitle": "A dissertação se organiza em três movimentos",
+    "intro": "A dissertação organiza-se em três movimentos analíticos que correspondem a dimensões distintas do objeto, em complexidade conceitual progressiva. Cada movimento possui autonomia interna, mas articula-se com os demais numa lógica de aprofundamento cumulativo: do corpo ao coletivo, do coletivo à obra, da obra ao campo.",
+    "subchapters": "Subcapítulos",
+    "mov1": {
+      "title": "Corpo em Deriva",
+      "subtitle": "Operadores Poéticos",
+      "desc": "Apresento minha trajetória e relação com o filmar, traço uma cartografia da formação estética que me conduz ao skate como campo de criação. Nesse movimento, formulo os conceitos que emergem da prática — poética do instante, estética da borda e registro em fluxo — e orientam a leitura do percurso, articulando experiência, corpo e cidade como eixo de criação.",
+      "subs": ["Operadores poéticos do olhar: instante, borda, fluxo", "Corpo-câmera: diálogos teóricos", "Entre vozes"]
+    },
+    "mov2": {
+      "title": "Coletivo em Baixo Relevo",
+      "subtitle": "Ética de Produção",
+      "desc": "Apresento o LowPressure™ e suas dinâmicas de colaboração, acompanhando como vínculos, ética de produção e modos de pertencimento se organizam no cotidiano do grupo. Discuto sua relação com a cidade, com a arquitetura e com as instituições. Finalizo com a LowZine, como arquivo vivo de imagens, entrevistas e depoimentos que compõem a memória e a linguagem do coletivo.",
+      "subs": ["Identidade e ética em movimento", "Cidade como campo de vínculos", "A Zine"]
+    },
+    "mov3": {
+      "title": "Obra em Expansão",
+      "subtitle": "Processos do Filme",
+      "desc": "Apresento o LowMovie™ desde sua gênese e linhagens criativas, atravessando produção, filmagem, montagem, trilha sonora, design e a construção de um campo simbólico que se torna legível na obra. Analiso a fabulação em cenas e rituais, e examino os modos de estreia, circulação e atravessamentos do filme em diferentes circuitos.",
+      "subs": [
+        "Gênese e ethos da escuta como método vivo",
+        "Linhagem dos vídeos de skate e gramática do meio",
+        "Filmagem: corpo-câmera, risco e erro como linguagem",
+        "Montagem: artbook e o filme como escrita",
+        "Ecologia sensorial: trilha, som, paleta e design",
+        "Campo simbólico: Hellraiser, Lowbyrinth™ e semiótica",
+        "Cenas e fabulação: improviso como dramaturgia do real",
+        "Ritos de estreia: organismo em circulação",
+        "Pós-obra: reverberação, continuidade"
+      ]
+    },
+    "considerations": {
+      "title": "Considerações: Ecos do Labirinto",
+      "desc": "Retomam a pergunta de pesquisa, sintetizam os achados e situam as reverberações do percurso, articulando implicações estéticas, políticas e metodológicas que permanecem em movimento."
+    },
+    "portal": {
+      "title": "O Portal como Interface de Pesquisa",
+      "p1": "Este portal funciona como uma arquitetura epistemológica navegável. Não é apenas suporte de apresentação. É parte do dispositivo metodológico da pesquisa.",
+      "p2": "A estrutura digital organiza a investigação em três níveis simultâneos:",
+      "level1": "<1>Nível 1 — Interface sensível:</1> home, estética e navegação. A experiência visual introduz o visitante ao universo poético do projeto.",
+      "level2": "<1>Nível 2 — Estrutura conceitual:</1> metodologia, conceitos e organização analítica da pesquisa.",
+      "level3": "<1>Nível 3 — Documentação viva:</1> filme, coletivo, acervo, entrevistas e mapa conceitual.",
+      "p3": "Teoria, criação e documentação coexistem aqui em um sistema navegável. Dissertação, obra e interface digital se conectam como um dispositivo expandido de pesquisa."
+    },
+    "operators": {
+      "title": "Operadores e Campo Simbólico",
+      "p1": "Os operadores emergem da prática e retornam a ela. Não são categorias definidas de antemão, mas conceitos formulados a partir da experiência sensível do fazer artístico.",
+      "p2": "O <1>Lowbyrinth™</1> funciona como imagem-conceito e operador simbólico, uma lente imagética que sintetiza o caráter processual, labiríntico e transformador da criação coletiva.",
+      "p3": "A obra expande-se para além de seus limites formais, abrindo novas relações entre arte, cidade e subcultura. A referência junguiana funciona como lente complementar, não como fundamento estruturante da análise."
+    },
+    "next": "Conceitos"
+  },
+  "conceitos": {
+    "title": "Conceitos",
+    "subtitle": "Cartografia teórica, formulações autorais e ética de criação",
+    "intro1": "A fundamentação teórica articula tradições intelectuais distintas: teoria urbana, estética relacional, estudos culturais, pesquisa em artes, teoria do cinema, numa constelação conceitual orientada pelas exigências específicas do objeto.",
+    "intro2": "As formulações a seguir nomeiam processos que os vocabulários disponíveis não alcançavam.",
+    "authorsMap": "Mapa Conceitual de Autores",
+    "campos": {
+      "urbano": "Skate como reinscrição urbana",
+      "estetica": "Estética relacional e identidade",
+      "processo": "Processo colaborativo e pesquisa-criação",
+      "cinema": "Corpo-câmera e cinema encarnado"
+    },
+    "autores": {
+      "borden": "Skate como reconfiguração espacial: o skate lê e reinscreve a cidade, ativando seus espaços como superfícies de criação.",
+      "mcduie": "Subcultura e territorialidade. Propõe o conceito de \"archiving from below\" — 'below' tem duplo sentido: arquivo não-oficial e ângulo de captura da cidade \"from below the knees\".",
+      "bourriaud": "\"A obra de arte representa um interstício social... um espaço de relações humanas que sugere outras possibilidades de troca.\"",
+      "hall": "\"A identidade cultural talvez deva ser pensada como uma 'produção', algo que nunca está completo, que é sempre processual.\"",
+      "abreu": "\"Preferimos denominar essa experiência criativa e coletiva com o nome de processo colaborativo (e não método colaborativo).\"",
+      "coessens": "Corpo como produção de conhecimento. Pimentel: \"toda ação praticada numa experiência modifica quem a pratica e quem a sofre.\"",
+      "delpeux": "\"A fusão sensível entre o corpo do performer e o dispositivo de registro: performer e câmera compõem juntos a imagem como uma única entidade em ato.\"",
+      "rouch": "Rouch e o cine-transe. Deren e a dança como cinema. Deleuze e a fabulação — gesto de criação do real, não invenção ficcional."
+    },
+    "ownConcepts": "Conceitos Próprios: Formulações Autorais",
+    "ownConceptsNote": "Operadores analíticos derivados da prática artística.",
+    "concepts": {
+      "lowbyrinth": { "name": "Lowbyrinth™", "def": "Imagem-conceito que sintetiza o caráter processual, não-linear e labiríntico da criação no interior do coletivo LowPressure™. O labirinto não tem saída prevista: a obra é o próprio percurso." },
+      "poetica": { "name": "Poética do instante", "def": "Captura do gesto efêmero como condensação sensível do real. O momento em que corpo, espaço, luz e câmera convergem numa configuração irrepetível." },
+      "borda": { "name": "Estética da borda", "def": "Linguagem que emerge do limite entre controle e acaso, entre o planejado e o contingente. A borda é, simultaneamente, a borda do skate, a borda do enquadramento e a borda conceitual entre arte e vida." },
+      "fluxo": { "name": "Registro em fluxo", "def": "Câmera como extensão do corpo em movimento contínuo. A câmera não se posiciona diante do evento, mas dentro dele. A imagem não representa o movimento: ela é movimento." },
+      "fabulacao": { "name": "Fabulação", "def": "A partir de Deleuze: fabulação não designa invenção ficcional, mas um gesto de criação do real, um modo de produzir outras percepções e sentidos a partir do cotidiano." },
+      "afeto": { "name": "Afeto como eixo metodológico", "def": "Implicação sensível como operador epistemológico. O vínculo afetivo com o campo constitui um instrumento de conhecimento tão legítimo quanto a análise formal." }
+    },
+    "ethicsTitle": "Ética de Criação e Ressonância com Herzog",
+    "ethicsP1": "Herzog afirma que \"o erro é algo que beira o sagrado... é preciso aceitar a tentativa e erro\". Esse diálogo não é uma filiação estética — é uma ressonância ética: ambos compartilham a convicção de que a criação autêntica não depende de condições ideais, mas da disposição para agir com os recursos disponíveis.",
+    "ethicsP2": "Criar sem esperar autorização institucional configura, por si só, uma micropolítica do fazer. Quando um coletivo de skatistas produz um filme que dialoga com o campo do cinema experimental sem solicitar permissão nem aprovação prévia, esse gesto carrega uma dimensão política que se realiza na própria materialidade da obra.",
+    "ethicsP3": "A aproximação com Herzog permite situar o LowPressure™ numa linhagem de cineastas que operaram nas margens do sistema industrial — de Jean Rouch filmando em transe a Maya Deren reinventando a dança no cinema experimental.",
+    "next": "O Filme"
+  },
+  "filme": {
+    "title": "O Filme: LowMovie™",
+    "subtitle": "Dispositivo poético-político nascido do gesto coletivo",
+    "workData": "Dados da Obra",
+    "data": {
+      "titulo": { "label": "Título", "value": "LowMovie™" },
+      "ano": { "label": "Ano", "value": "2023" },
+      "formato": { "label": "Formato", "value": "Full-length (longa-metragem de skate)" },
+      "duracao": { "label": "Duração", "value": "~1h" },
+      "direcao": { "label": "Direção", "value": "Rafão VM (dir.) & Castro Pizzano \"Punk\" (co-dir.)" },
+      "coletivo": { "label": "Coletivo", "value": "LowPressure™" },
+      "trilha": { "label": "Trilha sonora", "value": "Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)" },
+      "estrutura": { "label": "Estrutura", "value": "Segmentos entrelaçados: sessões, interlúdios, cenas de fabulação" },
+      "circulacao": { "label": "Circulação", "value": "Circuitos independentes e institucionais" }
+    },
+    "lineageTitle": "Linhagem: A Gramática dos Vídeos de Skate",
+    "lineageDesc": "O LowMovie™ inscreve-se numa tradição audiovisual própria da cultura do skate. A <1>VideoParte</1> possui uma gramática com ritmo, montagem e códigos estéticos específicos. O <1>Full-Length</1> expande essa gramática para uma estrutura narrativa completa.",
+    "lineageRefs": {
+      "tyEvans": { "name": "Ty Evans", "desc": "Pioneiro da cinematografia de skate em alta definição" },
+      "spikeJonze": { "name": "Spike Jonze", "desc": "Do vídeo de skate ao cinema de autor" },
+      "beagle": { "name": "Beagle", "desc": "Filmmaker da Baker Skateboards: documentário, identidade e subcultura" }
+    },
+    "descP1": "O <1>LowMovie™</1> funciona como dispositivo poético-político, onde viver, pensar e criar convergem num mesmo gesto. É a materialização de um processo coletivo que articula corpo, cidade, câmera e improviso como elementos indissociáveis de uma mesma operação poética.",
+    "descP2": "A filmagem é <1>corpo-câmera</1>, extensão sensível do realizador em movimento. A montagem atua como <1>artbook</1>, reorganizando fragmentos em constelações de sentido. O <1>glitch</1> emerge como linguagem de fratura.",
+    "descP3": "As <1>cenas de fabulação</1> funcionam como improviso enquanto dramaturgia do real. Os <1>ritos de estreia</1> constituem o circuito de circulação do filme, prolongando a obra para além de seus limites formais.",
+    "stills": "Stills do Filme",
+    "sequenceTitle": "Análise de Sequência: Exemplo",
+    "sequenceCaption": "Sequência do drop — gesto único executado sem margem para erro, em contexto urbano de alto risco físico e técnico.",
+    "seqP1": "A sequência organiza-se em três momentos visuais articulados: preparação, projeção e absorção do gesto no espaço urbano. O enquadramento privilegia o plano geral aberto, com o talude (plano inclinado de concreto) ocupando grande parte do quadro e o corpo do skatista reduzido à condição de vetor em deslocamento, evidenciando a desproporção entre corpo e arquitetura.",
+    "seqP2": "O movimento de câmera é contido, permitindo que a ação se desenvolva no interior do quadro. A descida pelo plano inclinado cria uma diagonal dominante, reforçada pela sombra projetada no concreto, transformando o corpo em traço gráfico. O ápice ocorre no momento do drop para a via principal — gesto executado sem possibilidade de erro, dado o desnível, a inclinação e a circulação viária.",
+    "seqP3": "A montagem preserva a continuidade do movimento, sustentando o registro em fluxo e recusando fragmentações espetacularizantes. O som direto das rodas sobre o concreto ancora o gesto na materialidade do espaço.",
+    "seqP4": "Nos quadros finais, o corpo atravessa a via e deixa o campo. Permanece a arquitetura. A cidade retorna como superfície. A fotografia realizada durante o take cristaliza o instante de suspensão entre gravidade e invenção.",
+    "conceptualOperators": "Operadores conceituais",
+    "operators": ["Poética do instante", "Estética da borda", "Registro em fluxo", "Afeto como eixo"],
+    "seqP5": "O drop sintetiza simbolicamente o próprio argumento da dissertação: criar é assumir risco situado. O LowMovie™ emerge da borda, onde erro não é metáfora, é consequência física. O gesto único, irrepetível naquele contexto, condensa a ética da pesquisa: invenção como enfrentamento real do espaço.",
+    "thesisConnection1": "Este drop não é apenas uma manobra.",
+    "thesisConnection2": "É a metáfora estrutural da pesquisa.",
+    "thesisConnectionP": "A dissertação defende que processos criativos situados operam em contextos de risco, zona de limiar (entre controle e incerteza) e improviso. Assim como no talude, não há neutralidade nem terreno plano. Há borda, inclinação e decisão.",
+    "thesisConnection3": "LowMovie™ é o registro dessa condição.",
+    "soundtrack": "Trilha Sonora",
+    "soundtrackOriginal": "Trilha original do filme",
+    "next": "O Coletivo"
+  },
+  "coletivo": {
+    "title": "O Coletivo: LowPressure™",
+    "subtitle": "Rede de artistas-skatistas que ativam a cidade como campo sensível",
+    "p1": "O <1>LowPressure™</1> não é um grupo formal. É uma rede de afinidades, uma forma de vida em rede que se constitui pelo encontro, pela prática e pela insistência do fazer.",
+    "p2": "O processo criativo nasce da escuta e da convivência. A identidade do coletivo se afirma como <1>construção rizomática</1> (que cresce em rede, sem hierarquia fixa), em que saberes e fazeres se moldam ao ritmo de um coletivo em movimento. Como afirma Stuart Hall, \"a identidade cultural talvez deva ser pensada como uma 'produção', algo que nunca está completo, que é sempre processual\".",
+    "p3": "A questão da <1>autoria compartilhada</1> é central. Como propõe Luis Alberto de Abreu, \"num processo de criação partilhada não há muito espaço para 'minha cena', 'meu texto', 'minha ideia'. Tudo é jogado numa arena comum\". A autoria não é propriedade individual, é emergência coletiva.",
+    "p4": "O título <1>\"Like Rats on Hostile Paths\"</1> funciona como síntese epistemológica: a ocupação tática de espaços hostis. Certeau distingue táticas (do cotidiano, do fraco) e estratégias (do poder institucional). O \"rato\" é figura de sobrevivência e inteligência tática — astúcias do tempo e do desvio.",
+    "p5": "Lefebvre complementa: o espaço urbano é produção social em disputa. O skate atua nesse intervalo, <1>transformando trajetos planejados em percursos improvisados</1>. A cidade não é palco — é co-autora.",
+    "p6": "Como sugere Herzog, no LowPressure™ o erro não é falha, é material criativo.",
+    "p7": "A <1>LowZine</1> funciona como arquivo vivo. O <1>BrandBook</1> é o artefato narrativo do coletivo. Rafão VM atua como agregador, figura central na articulação dos vínculos.",
+    "vocab": "Vocabulário do Skate",
+    "vocabNote": "Termos centrais da cultura do skate mobilizados na pesquisa, categorias operacionais de uma prática estética situada.",
+    "glossary": {
+      "crew": { "term": "Crew", "def": "Grupo de skatistas que compartilham afinidades, sessões e produções." },
+      "sessao": { "term": "Sessão", "def": "Encontro de prática coletiva do skate em um determinado espaço urbano." },
+      "spot": { "term": "Spot", "def": "Local urbano apropriado para a prática do skate: escadarias, bordas, corrimãos." },
+      "shape": { "term": "Shape", "def": "A prancha do skate. Elemento central da prática, com dimensões e desgastes que influenciam o estilo." },
+      "tricks": { "term": "Tricks", "def": "Manobras executadas sobre o skate. Cada trick possui nome e gramática corporal própria." },
+      "linha": { "term": "Linha", "def": "Sequência encadeada de manobras executadas em fluxo contínuo." },
+      "videoparte": { "term": "VideoParte", "def": "Formato audiovisual próprio da cultura do skate: registro editado da performance com trilha sonora." },
+      "fulllength": { "term": "Full-Length", "def": "Produção audiovisual completa de skate, com múltiplas partes e estrutura narrativa." }
+    },
+    "gallery": "Galeria",
+    "quote": "\"Num processo de criação partilhada não há muito espaço para 'minha cena', 'meu texto', 'minha ideia'. Tudo é jogado numa arena comum.\"",
+    "quoteAuthor": "— Luis Alberto de Abreu",
+    "next": "Contribuições"
+  },
+  "contribuicoes": {
+    "title": "Contribuições",
+    "subtitle": "O que esta dissertação propõe ao campo",
+    "intro": "Quatro eixos articulados, cada um respondendo a uma lacuna no campo do cinema e das artes do vídeo no Brasil.",
+    "items": {
+      "c1": { "title": "Reposicionamento epistemológico do skate", "desc": "A dissertação reposiciona o skate como prática estética produtora de linguagem audiovisual. Como apontam Machado e Brandão, ainda existe um território fértil e pouco explorado para investigações que articulem práticas subculturais urbanas com a produção cinematográfica contemporânea." },
+      "c2": { "title": "Formulação de operadores conceituais", "desc": "Os conceitos de poética do instante, estética da borda, registro em fluxo e Lowbyrinth™ constituem ferramentas analíticas derivadas da prática artística, oferecendo ao campo vocabulário preciso para fenômenos até então não nomeados." },
+      "c3": { "title": "Pesquisa-criação implicada como método", "desc": "A dissertação estrutura a pesquisa-criação implicada como abordagem rigorosa, demonstrando que a implicação, quando submetida a reflexividade explícita, produz conhecimento válido. Propõe um modo de pesquisar COM o skate, prática produtora de conhecimento sensível, situado e compartilhado." },
+      "c4": { "title": "Deslocamento no campo audiovisual brasileiro", "desc": "Ao propor que práticas subculturais podem constituir matrizes de produção cinematográfica autônoma, a dissertação amplia as fronteiras do que é reconhecido como cinema e como pesquisa em cinema no Brasil." }
+    },
+    "next": "Questões"
+  },
+  "questoes": {
+    "title": "Questões Críticas",
+    "subtitle": "Tensões conceituais",
+    "intro": "A pesquisa se move num campo híbrido entre prática artística e reflexão teórica. Nesse contexto, algumas tensões se colocam de maneira inevitável. Abaixo, enfrento diretamente os pontos mais sensíveis do trabalho.",
+    "items": {
+      "q1": { "q": "Poética versus estética", "a": "A escolha pelo termo poética — e não estética — é deliberada. Poética refere-se ao fazer em ato, ao modo como a obra se forma durante o processo. A ênfase recai sobre o processo, e não apenas sobre o resultado formal. A estética diz respeito à recepção e à experiência sensível do espectador — dimensão que a dissertação não ignora, mas não elege como foco principal." },
+      "q2": { "q": "Símbolo e signo", "a": "O símbolo é mobilizado como imagem condensadora de sentido, não como unidade de análise semiótica. A referência junguiana é operacional e complementar — jamais estruturante. O conceito de fabulação (Deleuze) não designa invenção ficcional, mas um gesto de criação do real." },
+      "q3": { "q": "Rigor metodológico", "a": "O rigor reside na reflexividade explícita, na transparência do posicionamento e na articulação teórica consistente. Cada inferência é confrontada com os referenciais mobilizados; cada escolha metodológica é justificada. Como afirma Pimentel, \"toda ação praticada numa experiência modifica quem a pratica e quem a sofre\"." },
+      "q4": { "q": "Delimitação do objeto", "a": "O objeto central é o filme LowMovie™ e seus processos criativos. O coletivo LowPressure™ é analisado como condição de produção — não como objeto em si. Os objetivos específicos delimitam com precisão o escopo: descrever, analisar, investigar e observar." },
+      "q5": { "q": "Dimensão política", "a": "A obra age como micropolítica do gesto e da ocupação sensível da cidade. Sua dimensão política é inseparável da prática, não declarativa. Criar sem esperar autorização institucional constitui, por si só, uma micropolítica do fazer." },
+      "q6": { "q": "Autonomia conceitual", "a": "A tese sustenta-se independentemente da referência junguiana. O Lowbyrinth™ funciona como imagem-conceito operacional. Os operadores — poética do instante, estética da borda, registro em fluxo — emergem da prática e retornam a ela." },
+      "q7": { "q": "Contribuição inédita", "a": "O ineditismo reside no deslocamento do skate para o campo estético-metodológico e na formulação de operadores analíticos situados. A dissertação propõe um modo de pesquisar COM o skate, reconhecendo-o como prática produtora de conhecimento sensível." },
+      "q8": { "q": "É uma pesquisa sobre skate ou sobre cinema?", "a": "É sobre cinema a partir do skate. O foco é o processo audiovisual — como a prática corporal do skate produz linguagem cinematográfica. O skate não é o objeto final da investigação, mas a matriz a partir da qual emerge uma poética audiovisual específica." }
+    },
+    "next": "Conclusão"
+  },
+  "conclusao": {
+    "title": "Conclusão",
+    "subtitle": "Síntese da pesquisa e horizontes abertos",
+    "headline1": "A <1>poética</1> não é resultado.",
+    "headline2": "É processo em movimento.",
+    "p1": "O LowMovie™ demonstra que práticas subculturais podem produzir linguagem audiovisual autônoma e conhecimento estético legítimo no campo acadêmico. Demonstro, analiticamente, que o skate já constitui uma prática estética produtora de formas, linguagens e saberes.",
+    "p2": "Afirmo que o gesto criativo, quando analisado com rigor e implicação, é também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular um filme fora dos circuitos convencionais. Essas operações não são apenas práticas artísticas: são modos de conhecer o mundo. O percurso metodológico se desenvolve em espiral: cada retorno ao campo aprofunda a compreensão anterior.",
+    "p3": "O que o LowMovie™ ensina é que a poética não habita o resultado acabado, mas o percurso que o constitui. O filme é a sedimentação provisória de um fluxo de gestos, decisões e encontros. É nesse fluxo que o movimento se revela como condição de produção, linguagem e pensamento.",
+    "p4": "Esta pesquisa não propõe um método fechado, mas um campo de possibilidades para pensar processos criativos em audiovisual a partir da experiência do skate e da criação coletiva.",
+    "p5": "O LowMovie™ aparece aqui menos como conclusão e mais como processo em movimento, uma experiência que permanece aberta a novos desdobramentos criativos, teóricos e pedagógicos.",
+    "quote1": "\"Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico, do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™.\"",
+    "quote2": "\"O LowMovie™ pode ser compreendido como um processo de pesquisa-criação em movimento, que articula prática artística, reflexão crítica e experiência urbana.\"",
+    "expansion": "Obra em Expansão: Horizontes Pedagógicos",
+    "pedagogyTitle": "Lowbyrinth™ como Ferramenta Pedagógica",
+    "pedagogyP1": "O Lowbyrinth™, labirinto conceitual que organiza a poética do LowMovie™, sugere também aplicações pedagógicas que pretendo explorar.",
+    "pedagogyP2": "Penso nele como um mapa conceitual navegável: estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.",
+    "classroomTitle": "Sala de Aula: Possibilidades Metodológicas",
+    "classroomP1": "A experiência de pesquisa-criação do LowMovie™ me leva a pensar também em desdobramentos para ambientes educacionais: processo colaborativo, espiral cognitiva, implicação do corpo no gesto criativo.",
+    "classroomP2": "Não pretendo estabelecer um modelo fechado. O que proponho é abrir caminhos para pensar a sala de aula como espaço de investigação estética, encontro coletivo e desenvolvimento de práticas autorais.",
+    "fullDissertation": "Dissertação Completa",
+    "fullDissertationNote": "Leia a dissertação na íntegra. Versão otimizada para leitura digital.",
+    "openPdf": "Abrir Dissertação em PDF",
+    "archive": "Acervo do Processo",
+    "archiveNote": "Documentos, registros e materiais produzidos ao longo da pesquisa, disponíveis para consulta.",
+    "openArchive": "Abrir Acervo no Google Drive",
+    "interviews": "Entrevistas",
+    "openTranscript": "Abrir Transcrição em PDF",
+    "interviewItems": {
+      "skatePunk": { "label": "Skate Punk", "subtitle": "Podcast Chiclé Vídeos", "desc": "Conversa sobre a trajetória criativa, os bastidores do LowMovie™, a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™." },
+      "blackMedia": { "label": "Black Media", "subtitle": "Black View", "desc": "Black Media Skate, mídia underground de skate nacional discute o LowMovie™, processos criativos e produção audiovisual independente." },
+      "peralta": { "label": "Gabriel Peralta", "subtitle": "Fotos de Skate", "desc": "Gabriel Peralta fala sobre fotografia de skate, registro documental e a construção de memória visual no universo do skateboarding." },
+      "rafao": { "label": "Rafão VM", "subtitle": "Skate Marginal", "desc": "Rafão VM discute skate marginal, produção independente e os cruzamentos entre subcultura, arte e resistência." },
+      "herzog": { "label": "Herzog", "subtitle": "Sobre Skateboarding", "desc": "Werner Herzog reflete sobre skateboarding como gesto, movimento e forma de expressão cultural contemporânea." },
+      "lowzine": { "label": "LowZine", "subtitle": "Fanzine Coletivo", "desc": "LowZine, fanzine coletivo produzido pelo grupo LowPressure™, reunindo registros visuais, textos e fragmentos do processo criativo." }
+    },
+    "manualLowMovie": "Manual LowMovie™",
+    "manualLowMovieNote": "Brandbook e diretrizes visuais do projeto LowMovie™.",
+    "manualLowPressure": "Manual LowPressure™",
+    "manualLowPressureNote": "Brandbook e diretrizes visuais do coletivo LowPressure™.",
+    "openManual": "Abrir Manual em PDF",
+    "next": "Mapa Conceitual"
+  },
+  "mapa": {
+    "title": "Mapa Conceitual",
+    "subtitle": "Cartografia interativa das relações entre autores, conceitos e campos temáticos",
+    "instructions": "Arraste os nós para reorganizar. Passe o cursor para ver definições. Use scroll para zoom e arraste o fundo para navegar."
+  },
+  "lowbyrinth": {
+    "title": "Lowbyrinth™",
+    "subtitle": "Derive. O percurso é o conhecimento.",
+    "driftTo": "Derive para:",
+    "goTo": "Ir para"
+  },
+  "method": {
+    "title": "Manual do Método LowMovie™",
+    "subtitle": "Práticas de Pesquisa-Criação e Autonomia Coletiva",
+    "fundamentalShift": "O Deslocamento Fundamental",
+    "fundamentalShiftDesc": "LowMovie™ é uma metodologia de pesquisa-criação implicada em que o skate atua como matriz de produção audiovisual. O corpo em movimento e a vivência urbana são agentes constituintes da gramática fílmica. A cidade funciona como campo ativo de criação. A câmera participa do acontecimento.",
+    "knowledgeSystem": "Sistema de Conhecimento Criativo",
+    "anatomyTitle": "Anatomia do Sistema",
+    "layersTitle": "As 5 Camadas do Sistema LowMovie™",
+    "layerLabel": "Camada",
+    "layers": {
+      "l1": { "title": "EXPERIÊNCIA URBANA", "subtitle": "O Skate como Prática Estética Urbana", "desc": "A experiência urbana constitui a base do sistema. O skate transforma a cidade em campo de criação: cada pico, cada terreno, cada sessão produz linguagem. O corpo do skatista negocia com a arquitetura, e dessa fricção emerge matéria criativa." },
+      "l2": { "title": "PROCESSO CRIATIVO", "subtitle": "Filmagem, Montagem, Design e Trilha como Gesto Único", "desc": "O processo criativo nasce do movimento. Filmar, montar, desenhar e compor não são etapas separadas, são atos simultâneos de um mesmo gesto. A câmera é extensão do corpo. A montagem é improvisação. O design é manifesto. A trilha é paisagem sonora do asfalto." },
+      "l3": { "title": "TRÍADE METODOLÓGICA", "subtitle": "Afeto, Escuta e Improviso como Epistemologia", "desc": "Os três eixos que sustentam a pesquisa-criação: o afeto como forma de conhecimento (afetar e ser afetado pelo campo), a escuta como método (ouvir o que o terreno, o corpo e a cidade dizem), e o improviso como epistemologia (a instabilidade e a surpresa como matéria de saber)." },
+      "l4": { "title": "CONCEITOS OPERADORES", "subtitle": "Poética do Instante, Estética da Borda, Registro em Fluxo", "desc": "Os conceitos que organizam a prática sem engessá-la: capturar o instante irrepetível (a manobra que acontece uma única vez), habitar as bordas (do enquadramento, do asfalto, da norma), e registrar sem interromper o fluxo (a câmera como cúmplice, não como vigilante)." },
+      "l5": { "title": "NÚCLEO: LOWMOVIE™", "subtitle": "Corpo + Câmera + Cidade = Sistema Criativo Vivo", "desc": "No centro do sistema, LowMovie™ funciona como organismo vivo onde corpo, câmera e cidade se fundem. Não é um método que se aplica, é uma prática que se vive. O erro é matéria sagrada, a autonomia é política, e produzir é resistir." }
+    },
+    "researcherTitle": "O Artista-Pesquisador",
+    "researcherPlace": "Lugar de Fala",
+    "researcherDesc": "LowMovie™ parte de um lugar de fala específico: o artista-pesquisador que é, simultaneamente, skatista, videomaker e investigador. Não há separação entre quem cria e quem pesquisa. O corpo que anda de skate é o mesmo que filma, monta e teoriza.",
+    "directives": {
+      "d1": { "title": "Implicação Situada", "text": "O pesquisador não observa de fora. Ele está dentro do campo. Skatista, videomaker e pesquisador são o mesmo corpo." },
+      "d2": { "title": "Confrontação Teórica", "text": "A prática interroga a teoria. Deleuze, Guattari, Rancière e Herzog são convocados pelo asfalto, não pela biblioteca." },
+      "d3": { "title": "Simultaneidade de Métodos", "text": "Pesquisa-criação, autoetnografia, cartografia afetiva e montagem cinematográfica operam juntas, sem hierarquia." }
+    },
+    "symbolicTitle": "Campo Simbólico",
+    "symbolicPlace": "Imaginário",
+    "symbolicDesc": "LowMovie™ mobiliza um campo simbólico próprio, figuras arquetípicas e signos que atravessam a obra como forças de sentido, conectando o gesto criativo a camadas mais profundas de significação.",
+    "symbols": {
+      "s1": { "name": "Rato Alquimista", "meaning": "Transmutação pela margem. Transformar o descarte em ouro criativo." },
+      "s2": { "name": "Olho de Hórus", "meaning": "Visão expandida: ver além do visível, captar o invisível do gesto." },
+      "s3": { "name": "Estrela de Ishtar", "meaning": "Criação como força cósmica. O ato de criar como ritual." },
+      "s4": { "name": "Estrela de Lakshmi", "meaning": "Proteção e prosperidade criativa. A crew como rede de suporte." },
+      "s5": { "name": "Símbolo do Caos", "meaning": "O caos como matriz generativa. Desordem produtiva, entropia criativa." }
+    },
+    "manifestoTitle": "13 Princípios do Método LowMovie™",
+    "manifestoLabel": "Manifesto",
+    "principles": [
+      "A cidade é o campo de criação. A rua é o dispositivo.",
+      "O corpo é instrumento de pesquisa. Ele sente a vibração do terreno e a tensão da cidade.",
+      "A câmera é extensão do corpo em movimento. Ela não observa: participa.",
+      "O skate gera linguagem audiovisual. Ritmo, enquadramento, duração e intensidade nascem da manobra.",
+      "O erro beira o sagrado. Ele alimenta o processo criativo e revela o que o controle esconde.",
+      "O improviso é epistemologia. A instabilidade e a surpresa funcionam como matéria de conhecimento.",
+      "A escuta é método. Silêncio antes da manobra, ruído das rodas no concreto, respiração da cidade.",
+      "O afeto é forma de conhecimento. Afetar e ser afetado pelo campo produz saber.",
+      "O glitch e a imperfeição são força estética. A borda do skate encontra a borda do enquadramento.",
+      "A autonomia é política criativa. Produção direta, circulação autônoma, criação coletiva.",
+      "A crew é organismo criativo. Skatistas, videomakers, músicos e designers formam um sistema vivo.",
+      "A obra se expande para além do filme. Zine, portal, evento, arquivo: tudo é processo.",
+      "LowMovie™ é um sistema criativo vivo. Produzir é resistir. O movimento é a poética."
+    ],
+    "closingQuote": "\"O erro é algo que beira o sagrado.\"",
+    "closingAuthor": "Werner Herzog"
+  },
+  "conceptMap": {
+    "typeLabels": {
+      "conceito": "Conceito autoral",
+      "autor": "Autor / Referência",
+      "campo": "Campo temático"
+    }
+  }
+}
