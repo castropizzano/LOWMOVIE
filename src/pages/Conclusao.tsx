@@ -150,7 +150,7 @@ const Conclusao = () => {
                   Sala de Aula: Possibilidades Metodológicas
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  A experiência de pesquisa-criação do LowMovie™ me leva a pensar também em desdobramentos para ambientes educacionais — processo colaborativo, espiral cognitiva, implicação do corpo no gesto criativo.
+                  A experiência de pesquisa-criação do LowMovie™ me leva a pensar também em desdobramentos para ambientes educacionais: processo colaborativo, espiral cognitiva, implicação do corpo no gesto criativo.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                   Não pretendo estabelecer um modelo fechado. O que proponho é abrir caminhos para pensar a sala de aula como espaço de investigação estética, encontro coletivo e desenvolvimento de práticas autorais.
