@@ -1,47 +1,140 @@
 
-## Completed: Reduce em dash (—) overuse
 
-~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
+# Final Authorship and Writing-Style Audit Report
 
-## Completed: Human Writing Audit
+## 1. AUTHORIAL VOICE ANALYSIS
 
-~20 edits across 7 files:
-- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
-- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
-- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
-- Route fix: lowbyrinth.ts `/faq` → `/questoes`
+**Strong authorial voice throughout.** The portal consistently uses first person in field/authorial sections (Metodologia, Estrutura, Conclusão, FAQ) and maintains a clear intellectual position. The voice is assertive, discipline-appropriate, and conceptually grounded.
 
-## Completed: Full Editorial Audit (pre-defense)
+**Sections with strongest voice:**
+- `apresentacao.lugarP1–P3` — Excellent. Clear epistemological positioning with no hedging.
+- `questoes.items` — Direct, anticipatory, intellectually honest.
+- `conclusao.p1–p5` — Strong authorial closure.
+- `estrutura.mov1–mov3` — First person, precise, well-articulated.
+- `metodologia.eixos` — Dense, grounded, non-generic.
 
-7 edits across 6 files:
-- MethodManual.tsx L123: "constitui" → "é"
-- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
-- Filme.tsx L69: "constitui" → "possui"
-- Metodologia.tsx L109: "articula" → "formula"
-- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
-- README.md L32: "simultaneamente" → "a um só tempo,"
-- Defense.tsx L30: removed serial comma before "e"
+## 2. GENERIC LANGUAGE DETECTION
 
-## Completed: Visual Design Consistency Audit
+### 2A. Patterns flagged
 
-8 fixes across 6 files:
-- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
-- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
-- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
-- Index.tsx: Cover image added grayscale hover:grayscale-0
-- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
-- Mapa.tsx: Added text-justify to instruction text
+**F1.** `filme.descP1`: *"O LowMovie™ opera como dispositivo poético-político, onde viver, pensar e criar convergem num mesmo gesto."*
+- **Issue:** "opera como" is flagged in the memory note as a systemic AI pattern. This phrase appears here and is the only remaining instance.
+- **Suggestion:** "O LowMovie™ é dispositivo poético-político: viver, pensar e criar convergem num mesmo gesto."
 
-### Resolved
-- Hellraiser epigraph removed from Index.tsx
+**F2.** `method.fundamentalShiftDesc`: *"LowMovie™ é uma metodologia de pesquisa-criação implicada em que o skate atua como matriz de produção audiovisual."*
+- **Issue:** "atua como" — functionally equivalent to "opera como." Repeated structural pattern.
+- **Suggestion:** "LowMovie™ é uma metodologia de pesquisa-criação implicada: o skate é a matriz de produção audiovisual."
 
-## Completed: Ultra-Comprehensive Final Audit
+**F3.** `method.symbolicDesc`: *"LowMovie™ mobiliza um campo simbólico próprio, figuras arquetípicas e signos que atravessam a obra como forças de sentido, conectando o gesto criativo a camadas mais profundas de significação."*
+- **Issue:** "camadas mais profundas de significação" is vague filler. "Forças de sentido" + "camadas mais profundas" is redundant.
+- **Suggestion:** "LowMovie™ mobiliza um campo simbólico próprio — figuras arquetípicas e signos que atravessam a obra, conectando o gesto criativo a territórios de significação não verbalizáveis."
 
-All critical issues resolved:
+**F4.** `method.layers.l5.desc`: *"No centro do sistema, LowMovie™ funciona como organismo vivo onde corpo, câmera e cidade se fundem."*
+- **Issue:** Another "funciona como" instance.
+- **Suggestion:** "No centro do sistema, LowMovie™ é organismo vivo: corpo, câmera e cidade se fundem."
 
-1. **NotFound link** — `href="/"` → `href="/home"` (no more Intro re-trigger)
-2. **Defense Mode i18n** — All hardcoded PT text moved to `defense.*` keys in pt.json/en.json; Defense.tsx fully refactored to use `t()`
-3. **ConceptGraph i18n** — All node labels/descriptions added to `conceptMap.nodes.*` in both locales; ConceptGraph.tsx uses `t()` with fallback
-4. **CITATION.cff** — Empty ORCID field removed
-5. **Repetitive patterns** — 7 targeted edits in pt.json: varied "constitui", "articula", "constituem" with "opera", "funde", "oferecem", "compõem", "funcionar como"
-6. **WelcomeOverlay** — Zod message hardcoded but has no visual impact (documented)
+**F5.** `estrutura.portal.p1`: *"Este portal funciona como uma arquitetura epistemológica navegável."*
+- **Issue:** "funciona como" again.
+- **Suggestion:** "Este portal é uma arquitetura epistemológica navegável."
+
+**F6.** `estrutura.operators.p2`: *"O Lowbyrinth™ funciona como imagem-conceito e operador simbólico, uma lente imagética..."*
+- **Issue:** Same pattern.
+- **Suggestion:** "O Lowbyrinth™ é imagem-conceito e operador simbólico — lente imagética que sintetiza..."
+
+### Summary of "opera/funciona/atua como" pattern:
+6 instances detected across the portal. This is the most visible AI-patterned construction remaining. All can be replaced with direct predication ("é") or restructured.
+
+## 3. CONCEPTUAL DENSITY CHECK
+
+**Overall: HIGH.** The portal maintains strong conceptual density. No significant dilution detected.
+
+**One minor flag:**
+
+**F7.** `method.layers.l2.desc`: *"Filmar, montar, desenhar e compor não são etapas separadas, são atos simultâneos de um mesmo gesto. A câmera é extensão do corpo. A montagem é improvisação. O design é manifesto. A trilha é paisagem sonora do asfalto."*
+- **Issue:** The staccato rhythm ("X é Y. X é Y. X é Y.") is stylistically effective as manifesto but feels slightly mechanical in repetition. Acceptable in the Manual context but worth noting.
+- **Assessment:** No change needed — this is intentional manifesto register.
+
+## 4. RHYTHM AND SENTENCE VARIATION
+
+**Generally strong.** The Apresentação and Metodologia sections show good variation. The Conclusão maintains a natural flow.
+
+**One flag:**
+
+**F8.** `defense.block12P1–P4`:
+```
+"Organizei a pesquisa como um percurso navegável."
+"O LowMovie™ é um filme-labirinto."
+"Não se assiste a ele de fora."
+"É preciso entrar."
+```
+- **Assessment:** This is intentional rhetorical escalation for the defense closing. Effective. No change needed.
+
+## 5. TERMINOLOGY CONSISTENCY
+
+| Term | Status |
+|------|--------|
+| LowMovie™ | CONSISTENT — ™ used in all instances |
+| Lowbyrinth™ | CONSISTENT — ™ used in all instances |
+| LowPressure™ | CONSISTENT — ™ used in all instances |
+| LowZine | MINOR — appears without ™ throughout. Verify if the dissertation uses ™ for LowZine. |
+| pesquisa-criação implicada | CONSISTENT |
+| poética do instante / estética da borda / registro em fluxo | CONSISTENT |
+| artista-pesquisador | CONSISTENT |
+
+**F9.** `LowZine` — Verify against the dissertation whether this should carry ™.
+
+## 6. ACADEMIC TONE OPTIMIZATION
+
+**F10.** `method.layers.l5.desc`: *"O erro é matéria sagrada, a autonomia é política, e produzir é resistir."*
+- **Issue:** Slightly promotional/manifesto tone for an academic context. However, this is explicitly within the "Manual do Método" section which is presented as manifesto.
+- **Assessment:** Acceptable in context. No change needed.
+
+**F11.** `method.researcherDesc`: *"O corpo que anda de skate é o mesmo que filma, monta e teoriza."*
+- **Assessment:** Strong, clear, non-promotional. Excellent authorial sentence.
+
+No exaggerated or unnecessarily dramatic language detected outside the manifesto register.
+
+## 7. REDUNDANCY ELIMINATION
+
+**F12.** The concept definitions appear in three places:
+1. `conceitos.concepts` (full definitions)
+2. `defense.conceitos` (abbreviated)
+3. `conceptMap.nodes` (map descriptions)
+
+- **Assessment:** This is structural, not redundant — each serves a different interface context. Acceptable.
+
+**F13.** The methodological triad (afeto/escuta/improviso) appears in:
+1. `metodologia.eixos` (full)
+2. `defense.triad` (abbreviated)
+3. `method.layers.l3` (system context)
+
+- **Assessment:** Same — structural repetition across different presentation modes. Acceptable.
+
+No problematic redundancy detected.
+
+## 8. NATURALITY AND READABILITY
+
+The text reads as authored, not generated. The voice is consistent with a researcher who is also a practitioner. Sentence structures vary appropriately. The first-person sections feel authentic.
+
+The only detectable "AI residue" is the **"funciona/opera/atua como"** pattern (F1–F6), which should be cleaned.
+
+## 9. EDITORIAL SUGGESTIONS — Summary
+
+| # | Location | Issue | Suggested Fix |
+|---|----------|-------|---------------|
+| F1 | `filme.descP1` | "opera como" | Replace with direct "é" |
+| F2 | `method.fundamentalShiftDesc` | "atua como" | Restructure with ":" |
+| F3 | `method.symbolicDesc` | Vague filler | Replace "camadas mais profundas" |
+| F4 | `method.layers.l5.desc` | "funciona como" | Replace with "é" |
+| F5 | `estrutura.portal.p1` | "funciona como" | Replace with "é" |
+| F6 | `estrutura.operators.p2` | "funciona como" | Replace with "é" + dash |
+| F9 | Multiple | LowZine ™ consistency | Verify against dissertation |
+
+## 10. FINAL ASSESSMENT
+
+### WRITING READY FOR ACADEMIC DEFENSE
+
+**Reasoning:** The portal demonstrates clear intellectual ownership, consistent academic voice, and high conceptual density throughout. The writing is grounded in the dissertation's terminology and theoretical framework. No hallucinated or generic AI filler was detected beyond 6 instances of the "funciona/opera/atua como" construction — a minor stylistic pattern that does not affect meaning or academic credibility. All other text reads as authored, precise, and discipline-appropriate.
+
+**Recommended (non-blocking):** Clean the 6 "funciona/opera/atua como" instances before the defense for maximum stylistic polish. This is a refinement, not a correction.
+
