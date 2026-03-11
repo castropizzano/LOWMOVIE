@@ -599,7 +599,7 @@ const Defense = () => {
 
       {/* Footer: block indicator left, arrow right */}
       {currentBlock > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-2 px-6 py-3">
+        <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-2 px-6 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
           {/* Progress dots */}
           <div className="flex items-center gap-1.5 pointer-events-auto">
             {BLOCK_KEYS.slice(1).map((key, i) => (
