@@ -91,7 +91,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
                     <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18950438.svg" alt="DOI" className="h-5" />
                   </a>
                   <a href="https://github.com/your-repo/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/license-All%20Rights%20Reserved-red.svg" alt="License" className="h-5" />
+                    <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg" alt="License" className="h-5" />
                   </a>
                 </div>
               </div>
