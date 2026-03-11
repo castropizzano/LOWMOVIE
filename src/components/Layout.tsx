@@ -86,14 +86,15 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.researchLine")}</p>
                   <p className="text-xs text-muted-foreground leading-relaxed md:text-right">{t("footer.keywords")}</p>
                 </div>
-                <div className="flex flex-col md:flex-row md:justify-between pt-2">
-                  <a
-                    href="https://doi.org/10.5281/zenodo.18950438"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[11px] text-muted-foreground hover:text-primary transition-colors leading-relaxed"
-                  >
-                    DOI: 10.5281/zenodo.18950438
+                <div className="flex flex-wrap items-center gap-3 pt-3">
+                  <a href="https://doi.org/10.5281/zenodo.18950438" target="_blank" rel="noopener noreferrer">
+                    <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18950438.svg" alt="DOI" className="h-5" />
+                  </a>
+                  <a href="https://github.com/your-repo/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/license-All%20Rights%20Reserved-red.svg" alt="License" className="h-5" />
+                  </a>
+                  <a href="https://lovable.dev" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/Built%20with-Lovable-ff69b4.svg" alt="Built with Lovable" className="h-5" />
                   </a>
                 </div>
               </div>
