@@ -1,69 +1,49 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useTranslation } from "react-i18next";
 
-const layers = [
-  {
-    id: "experiencia",
-    label: "EXPERIÊNCIA URBANA",
-    items: ["Skate", "Cidade", "Coletivo LowPressure™"],
-    description: "A rua é o dispositivo. O skate transforma a cidade em campo de criação — cada pico, cada terreno, cada sessão produz linguagem.",
-    radius: 230,
-    color: "hsl(0, 0%, 30%)",
-    activeColor: "hsl(300, 60%, 45%)",
-  },
-  {
-    id: "processo",
-    label: "PROCESSO CRIATIVO",
-    items: ["Filmagem de skate", "Montagem audiovisual", "Design independente", "Trilha sonora autoral"],
-    description: "O processo nasce do movimento. Filmar, montar, desenhar e compor são atos simultâneos de um mesmo gesto criativo.",
-    radius: 180,
-    color: "hsl(0, 0%, 35%)",
-    activeColor: "hsl(300, 60%, 50%)",
-  },
-  {
-    id: "triade",
-    label: "TRÍADE METODOLÓGICA",
-    items: ["Afeto", "Escuta", "Improviso"],
-    description: "Os três eixos que sustentam a pesquisa-criação: afetar e ser afetado, ouvir o campo, e improvisar como forma de conhecimento.",
-    radius: 130,
-    color: "hsl(0, 0%, 40%)",
-    activeColor: "hsl(300, 60%, 55%)",
-  },
-  {
-    id: "conceitos",
-    label: "CONCEITOS OPERADORES",
-    items: ["Poética do Instante", "Estética da Borda", "Registro em Fluxo"],
-    description: "Os conceitos que organizam a prática: capturar o instante irrepetível, habitar as bordas, e registrar sem interromper o fluxo.",
-    radius: 80,
-    color: "hsl(0, 0%, 45%)",
-    activeColor: "hsl(300, 60%, 60%)",
-  },
+const LAYER_IDS = ["experiencia", "processo", "triade", "conceitos"] as const;
+
+const layerMeta = [
+  { id: "experiencia", radius: 230, color: "hsl(0, 0%, 30%)", activeColor: "hsl(300, 60%, 45%)" },
+  { id: "processo", radius: 180, color: "hsl(0, 0%, 35%)", activeColor: "hsl(300, 60%, 50%)" },
+  { id: "triade", radius: 130, color: "hsl(0, 0%, 40%)", activeColor: "hsl(300, 60%, 55%)" },
+  { id: "conceitos", radius: 80, color: "hsl(0, 0%, 45%)", activeColor: "hsl(300, 60%, 60%)" },
 ];
-
-const expansionItems = ["Filme", "LowZine", "Portal Digital", "Eventos", "Arquivo Vivo"];
 
 const MethodDiagram = () => {
   const [activeLayer, setActiveLayer] = useState<string | null>(null);
   const isMobile = useIsMobile();
+  const { t } = useTranslation();
   const cx = 260;
   const cy = 260;
+
+  const layers = layerMeta.map((meta, i) => ({
+    ...meta,
+    label: t(`methodDiagram.layers.${meta.id}.label`),
+    items: t(`methodDiagram.layers.${meta.id}.items`, { returnObjects: true }) as string[],
+    description: t(`methodDiagram.layers.${meta.id}.description`),
+  }));
+
+  const expansionItems = t("methodDiagram.expansionItems", { returnObjects: true }) as string[];
+  const coreLabel = t("methodDiagram.core");
+  const coreSub = t("methodDiagram.coreSub");
+  const expansionLabel = t("methodDiagram.expansion");
 
   if (isMobile) {
     return (
       <div className="space-y-3 px-2">
-        {/* Core */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1 }}
           className="border border-primary/60 rounded-lg p-5 text-center bg-primary/10"
         >
-          <p className="text-base font-bold tracking-[0.3em] uppercase text-foreground">LOWMOVIE™</p>
-          <p className="text-[10px] tracking-widest uppercase text-muted-foreground mt-1">Corpo + Câmera + Cidade</p>
+          <p className="text-base font-bold tracking-[0.3em] uppercase text-foreground">{coreLabel}</p>
+          <p className="text-[10px] tracking-widest uppercase text-muted-foreground mt-1">{coreSub}</p>
         </motion.div>
 
-        {/* Layers reversed (inside out) */}
         {[...layers].reverse().map((layer, i) => (
           <motion.div
             key={layer.id}
@@ -92,14 +72,13 @@ const MethodDiagram = () => {
           </motion.div>
         ))}
 
-        {/* Expansion */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
           className="border border-border border-dashed rounded-lg p-4"
         >
-          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">Obra em Expansão →</p>
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">{expansionLabel}</p>
           <div className="flex flex-wrap gap-2">
             {expansionItems.map((item) => (
               <span key={item} className="text-xs text-foreground/60 bg-foreground/5 px-2 py-1 rounded">{item}</span>
@@ -113,7 +92,6 @@ const MethodDiagram = () => {
   return (
     <div className="flex flex-col items-center">
       <svg width="520" height="520" viewBox="0 0 520 520" className="max-w-full">
-        {/* Concentric rings */}
         {layers.map((layer, i) => (
           <motion.g
             key={layer.id}
@@ -134,7 +112,6 @@ const MethodDiagram = () => {
               strokeDasharray={i === 0 ? "none" : "8 4"}
               className="transition-all duration-300"
             />
-            {/* Label on top of ring */}
             <text
               x={cx}
               y={cy - layer.radius - 8}
@@ -149,7 +126,6 @@ const MethodDiagram = () => {
               {layer.label}
             </text>
 
-            {/* Items distributed around ring */}
             {layer.items.map((item, j) => {
               const angle = (Math.PI * 2 * j) / layer.items.length - Math.PI / 2 + Math.PI / 4;
               const x = cx + Math.cos(angle) * (layer.radius - 2);
@@ -180,7 +156,6 @@ const MethodDiagram = () => {
           </motion.g>
         ))}
 
-        {/* Core */}
         <motion.g
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -206,7 +181,7 @@ const MethodDiagram = () => {
             letterSpacing="0.2em"
             style={{ fontFamily: "Manrope, sans-serif" }}
           >
-            LOWMOVIE™
+            {coreLabel}
           </text>
           <text
             x={cx}
@@ -217,11 +192,10 @@ const MethodDiagram = () => {
             letterSpacing="0.1em"
             style={{ fontFamily: "Manrope, sans-serif" }}
           >
-            Corpo + Câmera + Cidade
+            {coreSub}
           </text>
         </motion.g>
 
-        {/* Expansion arrows */}
         {expansionItems.map((item, i) => {
           const angle = (Math.PI * 2 * i) / expansionItems.length - Math.PI / 2;
           const startR = 235;
@@ -263,7 +237,7 @@ const MethodDiagram = () => {
         transition={{ delay: 1.5 }}
         className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mt-4"
       >
-        Obra em Expansão →
+        {expansionLabel}
       </motion.p>
     </div>
   );

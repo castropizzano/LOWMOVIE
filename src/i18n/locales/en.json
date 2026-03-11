@@ -624,6 +624,34 @@
         { "label": "Overview", "justificativa": "From end to beginning. The labyrinth is circular." },
         { "label": "Concept Map", "justificativa": "From closure to full vision. The map reveals what the journey built." }
       ]
+    },
+    "methodDiagram": {
+      "core": "LOWMOVIE™",
+      "coreSub": "Body + Camera + City",
+      "expansion": "Expanding Work →",
+      "layers": {
+        "experiencia": {
+          "label": "URBAN EXPERIENCE",
+          "items": ["Skateboarding", "City", "LowPressure™ Collective"],
+          "description": "The street is the device. Skateboarding transforms the city into a field of creation — every spot, every terrain, every session produces language."
+        },
+        "processo": {
+          "label": "CREATIVE PROCESS",
+          "items": ["Skate filming", "Audiovisual editing", "Independent design", "Original soundtrack"],
+          "description": "The process is born from movement. Filming, editing, designing, and composing are simultaneous acts of a single creative gesture."
+        },
+        "triade": {
+          "label": "METHODOLOGICAL TRIAD",
+          "items": ["Affect", "Listening", "Improvisation"],
+          "description": "The three axes that sustain research-creation: to affect and be affected, to listen to the field, and to improvise as a form of knowledge."
+        },
+        "conceitos": {
+          "label": "OPERATIONAL CONCEPTS",
+          "items": ["Poetics of the Instant", "Aesthetics of the Edge", "Flow Recording"],
+          "description": "The concepts that organize practice: capturing the unrepeatable instant, inhabiting the edges, and recording without interrupting the flow."
+        }
+      },
+      "expansionItems": ["Film", "LowZine", "Digital Portal", "Events", "Living Archive"]
     }
   }
 }

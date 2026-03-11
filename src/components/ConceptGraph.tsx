@@ -217,12 +217,39 @@ const ConceptGraph = () => {
         width="100%"
         height="100%"
         viewBox="0 0 900 650"
-        className="cursor-grab active:cursor-grabbing"
+        className="cursor-grab active:cursor-grabbing touch-none"
         onWheel={handleWheel}
         onMouseDown={(e) => { handleBgMouseDown(e); }}
         onMouseMove={(e) => { handleMouseMove(e); handleBgMouseMove(e); }}
         onMouseUp={() => { handleMouseUp(); handleBgMouseUp(); }}
         onMouseLeave={() => { handleMouseUp(); handleBgMouseUp(); }}
+        onTouchStart={(e) => {
+          const touch = e.touches[0];
+          const target = e.target as SVGElement;
+          // Check if touching a node
+          const nodeGroup = target.closest("g[class*='cursor-pointer']");
+          if (nodeGroup) {
+            const nodeId = simNodes.find(n => {
+              const el = svgRef.current?.querySelector(`g[transform*="translate(${Math.round(n.x)}"]`);
+              return el === nodeGroup || nodeGroup.closest(`[transform]`) !== null;
+            })?.id;
+            // For touch, just show tooltip on tap
+          }
+          // Pan start
+          handlePanStart.current = { x: touch.clientX, y: touch.clientY, tx: transform.x, ty: transform.y };
+        }}
+        onTouchMove={(e) => {
+          if (handlePanStart.current) {
+            const touch = e.touches[0];
+            const dx = touch.clientX - handlePanStart.current.x;
+            const dy = touch.clientY - handlePanStart.current.y;
+            setTransform((t) => ({ ...t, x: handlePanStart.current!.tx + dx, y: handlePanStart.current!.ty + dy }));
+          }
+        }}
+        onTouchEnd={() => {
+          handlePanStart.current = null;
+          handleMouseUp();
+        }}
       >
         <g transform={`translate(${transform.x},${transform.y}) scale(${transform.scale})`}>
           {/* Edges */}
@@ -259,6 +286,7 @@ const ConceptGraph = () => {
                 onMouseDown={(e) => handleMouseDown(node.id, e)}
                 onMouseEnter={() => setHoveredNode(node.id)}
                 onMouseLeave={() => setHoveredNode(null)}
+                onTouchStart={(e) => { e.stopPropagation(); setHoveredNode(hoveredNode === node.id ? null : node.id); }}
                 className="cursor-pointer"
                 opacity={dimmed ? 0.2 : 1}
               >

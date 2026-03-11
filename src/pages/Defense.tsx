@@ -197,7 +197,7 @@ const Defense = () => {
           <div className="relative w-full h-full">
             {!videoEnded && (
               <div className="flex flex-col items-center justify-center h-full px-8">
-                <div className="w-[84%]">
+              <div className="w-full md:w-[84%]">
                   <VideoEmbed
                     src="https://www.youtube-nocookie.com/embed/rQuIDG-1EV4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
                     fadeIn
@@ -387,10 +387,10 @@ const Defense = () => {
       case 7:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <div className="w-[84%]">
+            <div className="w-full md:w-[84%]">
               <div className="flex items-center justify-between mb-4">
                 <div className="text-left">
-                  <p className="text-sm font-semibold uppercase tracking-widest text-foreground/80">
+                  <p className="text-xs md:text-sm font-semibold uppercase tracking-widest text-foreground/80">
                     {currentTeaser + 1}/6 — {teasers[currentTeaser]?.name}
                   </p>
                   <p className="mt-1 text-sm text-muted-foreground max-w-md leading-relaxed italic">
@@ -418,7 +418,7 @@ const Defense = () => {
       case 8:
         return (
           <div className="flex flex-col items-center justify-center h-full px-8">
-            <div className="w-[84%]">
+            <div className="w-full md:w-[84%]">
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed text-left mb-4">
                  {t("defense.block8P1")}
               </p>
@@ -447,7 +447,7 @@ const Defense = () => {
               </p>
             </div>
             <div className="max-w-6xl w-full">
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                 {[
                   { src: "/images/fotos/01.jpg", span: "col-span-2" },
                   { src: "/images/fotos/02.jpg", span: "col-span-1" },
@@ -559,7 +559,7 @@ const Defense = () => {
       case 13:
         return (
           <div className="flex items-center justify-center h-full px-8">
-            <div className="w-[84%]">
+            <div className="w-full md:w-[84%]">
               <VideoEmbed
                 src="https://www.youtube-nocookie.com/embed/g3SDaD16c7w?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=0"
                 fadeIn
@@ -590,7 +590,7 @@ const Defense = () => {
       {currentBlock > 0 && (
         <button
           onClick={(e) => { e.stopPropagation(); navigate("/home"); }}
-          className="absolute top-4 left-4 z-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
+          className="absolute top-[calc(1rem+env(safe-area-inset-top))] left-4 z-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
           title={t("defense.backToPortal")}
         >
           <X className="h-5 w-5" />
@@ -599,7 +599,7 @@ const Defense = () => {
 
       {/* Footer: block indicator left, arrow right */}
       {currentBlock > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-2 px-6 py-3">
+        <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-2 px-6 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
           {/* Progress dots */}
           <div className="flex items-center gap-1.5 pointer-events-auto">
             {BLOCK_KEYS.slice(1).map((key, i) => (
@@ -624,7 +624,7 @@ const Defense = () => {
           {/* Block label + arrow */}
           <div className="w-full flex items-center justify-between">
             <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70 pointer-events-none">
-              {t("defense.block")} {String(currentBlock).padStart(2, "0")} — {blockTitle.toUpperCase()}
+              <span className="hidden sm:inline">{t("defense.block")} {String(currentBlock).padStart(2, "0")} — </span>{blockTitle.toUpperCase()}
             </p>
             {currentBlock < BLOCK_KEYS.length - 1 && (
               <button
