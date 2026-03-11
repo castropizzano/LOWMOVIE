@@ -147,7 +147,7 @@ const Conclusao = () => {
 
               <div className="space-y-3">
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
-                  Sala de Aula — Possibilidades Metodológicas
+                  Sala de Aula: Possibilidades Metodológicas
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                   A experiência de pesquisa-criação do LowMovie™ me leva a pensar também em desdobramentos para ambientes educacionais — processo colaborativo, espiral cognitiva, implicação do corpo no gesto criativo.
