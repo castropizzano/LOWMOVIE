@@ -123,7 +123,7 @@ const Apresentacao = () => {
                 artista-pesquisador não observa de fora: ele participa da tessitura do objeto, compartilha suas
                 condições de existência e, ao fazê-lo, acessa camadas de sentido inacessíveis a uma abordagem
                 estritamente distanciada. Como afirma Pimentel, <em>"toda ação praticada numa experiência modifica
-                quem a pratica e quem a sofre"</em> — e é precisamente essa transformação mútua entre pesquisador
+                quem a pratica e quem a sofre"</em>. É precisamente essa transformação mútua entre pesquisador
                 e campo que a dissertação assume como motor epistemológico.
               </p>
               <p>
