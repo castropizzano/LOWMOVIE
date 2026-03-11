@@ -33,7 +33,7 @@ export const nodes: GraphNode[] = [
   { id: "lefebvre", label: "Henri Lefebvre", type: "autor", description: "Produção social do espaço: o espaço urbano como produto e produtor de relações." },
 
   // Conceitos autorais
-  { id: "lowbyrinth", label: "Lowbyrinth™", type: "conceito", description: "Imagem-conceito do caráter processual, não-linear e labiríntico da criação. O labirinto não tem saída — a obra é o percurso." },
+  { id: "lowbyrinth", label: "Lowbyrinth™", type: "conceito", description: "Imagem-conceito do caráter processual, não-linear e labiríntico da criação. O labirinto não tem saída: a obra é o percurso." },
   { id: "poetica", label: "Poética do instante", type: "conceito", description: "Captura do gesto efêmero como condensação sensível do real. Corpo, espaço, luz e câmera convergem numa configuração irrepetível." },
   { id: "estetica-borda", label: "Estética da borda", type: "conceito", description: "Linguagem entre controle e acaso. A borda do skate, do enquadramento e entre arte e vida." },
   { id: "registro-fluxo", label: "Registro em fluxo", type: "conceito", description: "Câmera como extensão do corpo em movimento. A imagem não representa o movimento: ela é movimento." },

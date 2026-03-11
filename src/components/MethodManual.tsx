@@ -52,7 +52,7 @@ const systemLayers = [
     number: "05",
     title: "NÚCLEO: LOWMOVIE™",
     subtitle: "Corpo + Câmera + Cidade = Sistema Criativo Vivo",
-    description: "No centro do sistema, LowMovie™ opera como organismo vivo onde corpo, câmera e cidade se fundem. Não é um método que se aplica, é uma prática que se vive. O erro é matéria sagrada, a autonomia é política, e produzir é resistir.",
+    description: "No centro do sistema, LowMovie™ funciona como organismo vivo onde corpo, câmera e cidade se fundem. Não é um método que se aplica, é uma prática que se vive. O erro é matéria sagrada, a autonomia é política, e produzir é resistir.",
   },
 ];
 
@@ -122,7 +122,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
               <p className="text-sm text-white/70 leading-relaxed max-w-2xl text-justify">
                 LowMovie™ constitui uma metodologia de pesquisa-criação implicada em que o skate 
                 atua como matriz de produção audiovisual. O corpo em movimento e a vivência urbana 
-                operam como agentes constituintes da gramática fílmica. A cidade funciona como campo 
+                são agentes constituintes da gramática fílmica. A cidade funciona como campo 
                 ativo de criação. A câmera participa do acontecimento.
               </p>
             </motion.div>
@@ -203,7 +203,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                   O Artista-Pesquisador
                 </h3>
                 <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-2xl text-justify">
-                  LowMovie™ opera a partir de um lugar de fala específico: o artista-pesquisador que é, 
+                  LowMovie™ parte de um lugar de fala específico: o artista-pesquisador que é, 
                   simultaneamente, skatista, videomaker e investigador. Não há separação entre quem cria 
                   e quem pesquisa. O corpo que anda de skate é o mesmo que filma, monta e teoriza.
                 </p>

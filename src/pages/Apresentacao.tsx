@@ -152,7 +152,7 @@ const Apresentacao = () => {
               <p>
                 Ao propor essa inflexão, a dissertação não documenta apenas uma cena ou uma estética: propõe
                 um modo de <em>pesquisar com</em> o skate, reconhecendo-o como prática produtora de conhecimento
-                sensível, situado e compartilhado. A contribuição é, portanto, simultaneamente temática,
+                sensível, situado e compartilhado. A contribuição é, portanto, temática,
                 metodológica e epistemológica.
               </p>
             </div>
