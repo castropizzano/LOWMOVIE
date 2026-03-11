@@ -108,7 +108,7 @@ const Apresentacao = () => {
           {/* Lugar de Fala */}
           <AnimatedSection delay={0.3} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6 text-foreground">
-              Lugar de Fala — Artista-Pesquisador
+              Lugar de Fala: Artista-Pesquisador
             </h3>
             <div className="space-y-4 text-foreground/80 leading-relaxed text-justify">
               <p>
