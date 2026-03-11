@@ -58,6 +58,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         </div>
       </div>
       <LowbyrinthMode open={lowbyrinthOpen} onClose={() => setLowbyrinthOpen(false)} />
+      <MethodManual open={methodOpen} onClose={() => setMethodOpen(false)} />
     </SidebarProvider>
   );
 };
