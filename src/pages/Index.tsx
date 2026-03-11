@@ -34,7 +34,7 @@ const Index = () => {
               <img
                 src={capaDissertacao}
                 alt="Capa da dissertação LowMovie e o Labirinto Criativo"
-                className="w-full h-full rounded-lg shadow-lg cursor-default"
+                className="w-full h-full rounded-lg shadow-lg cursor-default grayscale hover:grayscale-0 transition-all duration-500"
                 onClick={handleCoverClick}
                 width={1194}
                 height={1688}

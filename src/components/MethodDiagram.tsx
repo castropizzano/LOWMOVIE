@@ -10,7 +10,7 @@ const layers = [
     description: "A rua é o dispositivo. O skate transforma a cidade em campo de criação — cada pico, cada terreno, cada sessão produz linguagem.",
     radius: 230,
     color: "hsl(0, 0%, 30%)",
-    activeColor: "hsl(0, 70%, 45%)",
+    activeColor: "hsl(300, 60%, 45%)",
   },
   {
     id: "processo",
@@ -19,7 +19,7 @@ const layers = [
     description: "O processo nasce do movimento. Filmar, montar, desenhar e compor são atos simultâneos de um mesmo gesto criativo.",
     radius: 180,
     color: "hsl(0, 0%, 35%)",
-    activeColor: "hsl(0, 70%, 50%)",
+    activeColor: "hsl(300, 60%, 50%)",
   },
   {
     id: "triade",
@@ -28,7 +28,7 @@ const layers = [
     description: "Os três eixos que sustentam a pesquisa-criação: afetar e ser afetado, ouvir o campo, e improvisar como forma de conhecimento.",
     radius: 130,
     color: "hsl(0, 0%, 40%)",
-    activeColor: "hsl(0, 70%, 55%)",
+    activeColor: "hsl(300, 60%, 55%)",
   },
   {
     id: "conceitos",
@@ -37,7 +37,7 @@ const layers = [
     description: "Os conceitos que organizam a prática: capturar o instante irrepetível, habitar as bordas, e registrar sem interromper o fluxo.",
     radius: 80,
     color: "hsl(0, 0%, 45%)",
-    activeColor: "hsl(0, 70%, 60%)",
+    activeColor: "hsl(300, 60%, 60%)",
   },
 ];
 
@@ -57,10 +57,10 @@ const MethodDiagram = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1 }}
-          className="border border-[hsl(0,70%,45%)]/60 rounded-lg p-5 text-center bg-[hsl(0,70%,45%)]/10"
+          className="border border-primary/60 rounded-lg p-5 text-center bg-primary/10"
         >
-          <p className="text-base font-bold tracking-[0.3em] uppercase text-white/90">LOWMOVIE™</p>
-          <p className="text-[10px] tracking-widest uppercase text-white/40 mt-1">Corpo + Câmera + Cidade</p>
+          <p className="text-base font-bold tracking-[0.3em] uppercase text-foreground">LOWMOVIE™</p>
+          <p className="text-[10px] tracking-widest uppercase text-muted-foreground mt-1">Corpo + Câmera + Cidade</p>
         </motion.div>
 
         {/* Layers reversed (inside out) */}
@@ -70,13 +70,13 @@ const MethodDiagram = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 + i * 0.1 }}
-            className="border border-white/10 rounded-lg p-4 bg-white/5 cursor-pointer hover:bg-white/8 transition-colors"
+            className="border border-border rounded-lg p-4 bg-foreground/5 cursor-pointer hover:bg-foreground/[0.08] transition-colors"
             onClick={() => setActiveLayer(activeLayer === layer.id ? null : layer.id)}
           >
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/50">{layer.label}</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground">{layer.label}</p>
             <div className="flex flex-wrap gap-2 mt-2">
               {layer.items.map((item) => (
-                <span key={item} className="text-xs text-white/70 bg-white/5 px-2 py-1 rounded">{item}</span>
+                <span key={item} className="text-xs text-foreground/70 bg-foreground/5 px-2 py-1 rounded">{item}</span>
               ))}
             </div>
             {activeLayer === layer.id && (
@@ -84,7 +84,7 @@ const MethodDiagram = () => {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
-                className="text-xs text-white/50 mt-3 leading-relaxed italic"
+                className="text-xs text-muted-foreground mt-3 leading-relaxed italic"
               >
                 {layer.description}
               </motion.p>
@@ -97,12 +97,12 @@ const MethodDiagram = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="border border-white/10 border-dashed rounded-lg p-4"
+          className="border border-border border-dashed rounded-lg p-4"
         >
-          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 mb-2">Obra em Expansão →</p>
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">Obra em Expansão →</p>
           <div className="flex flex-wrap gap-2">
             {expansionItems.map((item) => (
-              <span key={item} className="text-xs text-white/60 bg-white/5 px-2 py-1 rounded">{item}</span>
+              <span key={item} className="text-xs text-foreground/60 bg-foreground/5 px-2 py-1 rounded">{item}</span>
             ))}
           </div>
         </motion.div>
@@ -139,7 +139,7 @@ const MethodDiagram = () => {
               x={cx}
               y={cy - layer.radius - 8}
               textAnchor="middle"
-              fill={activeLayer === layer.id ? "hsl(0, 70%, 55%)" : "rgba(255,255,255,0.4)"}
+              fill={activeLayer === layer.id ? "hsl(300, 60%, 55%)" : "rgba(255,255,255,0.4)"}
               fontSize="9"
               fontWeight="700"
               letterSpacing="0.15em"
@@ -186,12 +186,12 @@ const MethodDiagram = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
         >
-          <circle cx={cx} cy={cy} r="35" fill="none" stroke="hsl(0, 70%, 45%)" strokeWidth="2" />
+          <circle cx={cx} cy={cy} r="35" fill="none" stroke="hsl(300, 60%, 45%)" strokeWidth="2" />
           <motion.circle
             cx={cx}
             cy={cy}
             r="35"
-            fill="hsl(0, 70%, 45%)"
+            fill="hsl(300, 60%, 45%)"
             fillOpacity="0.1"
             animate={{ fillOpacity: [0.05, 0.15, 0.05] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -200,7 +200,7 @@ const MethodDiagram = () => {
             x={cx}
             y={cy - 4}
             textAnchor="middle"
-            fill="white"
+            fill="hsl(0, 0%, 93%)"
             fontSize="11"
             fontWeight="700"
             letterSpacing="0.2em"
@@ -261,7 +261,7 @@ const MethodDiagram = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="text-[10px] uppercase tracking-[0.3em] text-white/30 mt-4"
+        className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mt-4"
       >
         Obra em Expansão →
       </motion.p>

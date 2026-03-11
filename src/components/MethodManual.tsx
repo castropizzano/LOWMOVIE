@@ -88,21 +88,21 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
-          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl overflow-auto"
+          className="fixed inset-0 z-50 bg-background/95 backdrop-blur-xl overflow-auto"
         >
           {/* Header */}
-          <div className="sticky top-0 flex items-center justify-between px-6 py-4 z-10 bg-black/80 backdrop-blur-md">
+          <div className="sticky top-0 flex items-center justify-between px-6 py-4 z-10 bg-background/80 backdrop-blur-md">
             <div>
-              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-white/90">
+              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-foreground">
                 Manual do Método LowMovie™
               </h2>
-              <p className="text-xs text-white/40 mt-1 tracking-wide">
+              <p className="text-xs text-muted-foreground mt-1 tracking-wide">
                 Práticas de Pesquisa-Criação e Autonomia Coletiva
               </p>
             </div>
             <button
               onClick={onClose}
-              className="p-2 text-white/50 hover:text-white transition-colors"
+              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
             >
               <X className="h-5 w-5" />
             </button>
@@ -114,12 +114,12 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="py-12 border-b border-white/10"
+              className="py-12 border-b border-border"
             >
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[hsl(0,70%,50%)] mb-4">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-4">
                 O Deslocamento Fundamental
               </p>
-              <p className="text-sm text-white/70 leading-relaxed max-w-2xl text-justify">
+              <p className="text-sm text-foreground/70 leading-relaxed max-w-2xl text-justify">
                 LowMovie™ é uma metodologia de pesquisa-criação implicada em que o skate 
                 atua como matriz de produção audiovisual. O corpo em movimento e a vivência urbana 
                 são agentes constituintes da gramática fílmica. A cidade funciona como campo 
@@ -134,14 +134,14 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
               transition={{ delay: 0.4 }}
               className="py-16"
             >
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 mb-8 text-center">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-8 text-center">
                 Sistema de Conhecimento Criativo
               </p>
               <MethodDiagram />
             </motion.div>
 
             {/* Separator */}
-            <div className="border-t border-white/10" />
+            <div className="border-t border-border" />
 
             {/* === SEÇÃO 4: As 5 Camadas do Sistema === */}
             <div className="py-16">
@@ -151,10 +151,10 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 transition={{ delay: 0.5 }}
                 className="mb-10"
               >
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[hsl(0,70%,50%)] mb-2">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-2">
                   Anatomia do Sistema
                 </p>
-                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-white/90">
+                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-foreground">
                   As 5 Camadas do Sistema LowMovie™
                 </h3>
               </motion.div>
@@ -166,18 +166,18 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.6 + i * 0.1, duration: 0.4 }}
-                    className="border-l-2 border-[hsl(0,70%,45%)]/40 pl-6 py-6 hover:border-[hsl(0,70%,50%)] hover:bg-white/[0.02] transition-all -mx-2 px-8 rounded-r"
+                    className="border-l-2 border-primary/40 pl-6 py-6 hover:border-primary hover:bg-foreground/[0.02] transition-all -mx-2 px-8 rounded-r"
                   >
-                    <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[hsl(0,70%,45%)]/60 mb-1">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary/60 mb-1">
                       Camada {layer.number}
                     </p>
-                    <h4 className="text-sm font-bold uppercase tracking-[0.15em] text-white/80 mb-1">
+                    <h4 className="text-sm font-bold uppercase tracking-[0.15em] text-foreground/80 mb-1">
                       {layer.title}
                     </h4>
-                    <p className="text-xs font-semibold text-white/50 mb-3 italic">
+                    <p className="text-xs font-semibold text-muted-foreground mb-3 italic">
                       {layer.subtitle}
                     </p>
-                    <p className="text-sm text-white/60 leading-relaxed text-justify">
+                    <p className="text-sm text-foreground/60 leading-relaxed text-justify">
                       {layer.description}
                     </p>
                   </motion.div>
@@ -186,7 +186,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
             </div>
 
             {/* Separator */}
-            <div className="border-t border-white/10" />
+            <div className="border-t border-border" />
 
             {/* === SEÇÃO 5: O Artista-Pesquisador === */}
             <div className="py-16">
@@ -196,13 +196,13 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 transition={{ delay: 0.5 }}
                 className="mb-10"
               >
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[hsl(0,70%,50%)] mb-2">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-2">
                   Lugar de Fala
                 </p>
-                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-white/90">
+                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-foreground">
                   O Artista-Pesquisador
                 </h3>
-                <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-2xl text-justify">
+                <p className="text-sm text-muted-foreground mt-3 leading-relaxed max-w-2xl text-justify">
                   LowMovie™ parte de um lugar de fala específico: o artista-pesquisador que é, 
                   simultaneamente, skatista, videomaker e investigador. Não há separação entre quem cria 
                   e quem pesquisa. O corpo que anda de skate é o mesmo que filma, monta e teoriza.
@@ -216,15 +216,15 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                     initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.7 + i * 0.1 }}
-                    className="border border-white/10 rounded-lg p-5 hover:border-white/20 transition-colors"
+                    className="border border-border rounded-lg p-5 hover:border-border/80 transition-colors"
                   >
-                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[hsl(0,70%,50%)]/70 mb-2">
+                    <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary/70 mb-2">
                       {String(i + 1).padStart(2, "0")}
                     </p>
-                    <h4 className="text-xs font-bold uppercase tracking-[0.15em] text-white/80 mb-3">
+                    <h4 className="text-xs font-bold uppercase tracking-[0.15em] text-foreground/80 mb-3">
                       {directive.title}
                     </h4>
-                    <p className="text-xs text-white/50 leading-relaxed">
+                    <p className="text-xs text-muted-foreground leading-relaxed">
                       {directive.text}
                     </p>
                   </motion.div>
@@ -233,7 +233,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
             </div>
 
             {/* Separator */}
-            <div className="border-t border-white/10" />
+            <div className="border-t border-border" />
 
             {/* === SEÇÃO 6: Campo Simbólico === */}
             <div className="py-16">
@@ -243,13 +243,13 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 transition={{ delay: 0.5 }}
                 className="mb-10"
               >
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[hsl(0,70%,50%)] mb-2">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-2">
                   Imaginário
                 </p>
-                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-white/90">
+                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-foreground">
                   Campo Simbólico
                 </h3>
-                <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-2xl text-justify">
+                <p className="text-sm text-muted-foreground mt-3 leading-relaxed max-w-2xl text-justify">
                   LowMovie™ mobiliza um campo simbólico próprio, figuras arquetípicas e signos 
                   que atravessam a obra como forças de sentido, conectando o gesto criativo a camadas 
                   mais profundas de significação.
@@ -265,13 +265,13 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                       initial={{ opacity: 0, scale: 0.9 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.7 + i * 0.08 }}
-                      className="border border-white/10 rounded-lg p-4 text-center hover:border-[hsl(0,70%,45%)]/40 hover:bg-white/[0.02] transition-all group"
+                      className="border border-border rounded-lg p-4 text-center hover:border-primary/40 hover:bg-foreground/[0.02] transition-all group"
                     >
-                      <IconComp className="h-6 w-6 mx-auto mb-3 text-white/30 group-hover:text-[hsl(0,70%,50%)] transition-colors" />
-                      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/70 mb-2">
+                      <IconComp className="h-6 w-6 mx-auto mb-3 text-muted-foreground group-hover:text-primary transition-colors" />
+                      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-foreground/70 mb-2">
                         {symbol.name}
                       </p>
-                      <p className="text-[10px] text-white/40 leading-relaxed">
+                      <p className="text-[10px] text-muted-foreground leading-relaxed">
                         {symbol.meaning}
                       </p>
                     </motion.div>
@@ -281,7 +281,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
             </div>
 
             {/* Separator */}
-            <div className="border-t border-white/10" />
+            <div className="border-t border-border" />
 
             {/* 13 Principles */}
             <div className="py-16">
@@ -291,10 +291,10 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 transition={{ delay: 0.6 }}
                 className="mb-12"
               >
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[hsl(0,70%,50%)] mb-2">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary mb-2">
                   Manifesto
                 </p>
-                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-white/90">
+                <h3 className="text-xl font-bold uppercase tracking-[0.15em] text-foreground">
                   13 Princípios do Método LowMovie™
                 </h3>
               </motion.div>
@@ -306,12 +306,12 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.7 + i * 0.06, duration: 0.4 }}
-                    className="flex gap-5 py-5 border-b border-white/5 group hover:bg-white/[0.02] transition-colors px-2 -mx-2 rounded"
+                    className="flex gap-5 py-5 border-b border-border/30 group hover:bg-foreground/[0.02] transition-colors px-2 -mx-2 rounded"
                   >
-                    <span className="text-2xl font-bold text-[hsl(0,70%,45%)]/60 group-hover:text-[hsl(0,70%,50%)] transition-colors tabular-nums leading-none pt-0.5 min-w-[2ch] text-right">
+                    <span className="text-2xl font-bold text-primary/60 group-hover:text-primary transition-colors tabular-nums leading-none pt-0.5 min-w-[2ch] text-right">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <p className="text-sm text-white/70 group-hover:text-white/90 transition-colors leading-relaxed">
+                    <p className="text-sm text-foreground/70 group-hover:text-foreground/90 transition-colors leading-relaxed">
                       {principle}
                     </p>
                   </motion.div>
@@ -323,12 +323,12 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.6 }}
-                className="mt-16 pt-8 border-t border-white/10 text-center"
+                className="mt-16 pt-8 border-t border-border text-center"
               >
-                <blockquote className="text-sm italic text-white/50 max-w-lg mx-auto">
+                <blockquote className="text-sm italic text-muted-foreground max-w-lg mx-auto">
                   "O erro é algo que beira o sagrado."
                 </blockquote>
-                <p className="text-[10px] uppercase tracking-widest text-white/30 mt-3">
+                <p className="text-[10px] uppercase tracking-widest text-muted-foreground/60 mt-3">
                   Werner Herzog
                 </p>
               </motion.div>
