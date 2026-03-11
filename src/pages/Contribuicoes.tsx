@@ -32,7 +32,7 @@ const Contribuicoes = () => {
               <h3 className="text-lg font-semibold uppercase tracking-wide mb-3">{t("contribuicoes.archive.title")}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-4">{t("contribuicoes.archive.desc")}</p>
               <a href="https://doi.org/10.5281/zenodo.18950438" target="_blank" rel="noopener noreferrer">
-                <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18950438.svg" alt="DOI" className="h-5" />
+                <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18950438-cd59e8?style=flat&labelColor=1a1a1a" alt="DOI" className="h-5" />
               </a>
             </div>
           </AnimatedSection>
