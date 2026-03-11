@@ -107,7 +107,7 @@ const Conclusao = () => {
           </div>
 
           <div className="mt-16">
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <p className="text-sm text-muted-foreground leading-relaxed italic text-justify">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
@@ -121,7 +121,7 @@ const Conclusao = () => {
 
           {/* Card: Obra em Expansão */}
           <div className="mt-16">
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-6">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Obra em Expansão: Horizontes Pedagógicos
@@ -165,7 +165,7 @@ const Conclusao = () => {
 
           {/* Card: Dissertação PDF */}
           <div>
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Dissertação Completa
@@ -192,7 +192,7 @@ const Conclusao = () => {
 
           {/* Card: Acervo do Processo */}
           <div>
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Acervo do Processo
@@ -219,7 +219,7 @@ const Conclusao = () => {
 
           {/* Card: Entrevistas com Accordion */}
           <div>
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-6">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Entrevistas
@@ -260,7 +260,7 @@ const Conclusao = () => {
                             <img
                               src={item.image}
                               alt={item.label}
-                              className="w-full h-auto"
+                              className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500"
                               loading="lazy"
                             />
                           </div>
@@ -289,7 +289,7 @@ const Conclusao = () => {
 
           {/* Card: Manual LowMovie™ */}
           <div>
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Manual LowMovie™
@@ -317,7 +317,7 @@ const Conclusao = () => {
 
           {/* Card: Manual LowPressure™ */}
           <div>
-            <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
+            <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-4">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
                   Manual LowPressure™

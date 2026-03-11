@@ -25,16 +25,16 @@ const NodeCard = ({
     className={`
       border rounded-lg p-4 transition-all duration-300 cursor-pointer
       ${isActive
-        ? "bg-white/10 border-white/30 shadow-lg shadow-white/5"
-        : "bg-white/5 border-white/10 hover:bg-white/8 hover:border-white/20"
+        ? "bg-foreground/10 border-foreground/30 shadow-lg shadow-foreground/5"
+        : "bg-foreground/5 border-border hover:bg-foreground/[0.08] hover:border-foreground/20"
       }
     `}
     onClick={onToggle}
   >
-    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40 mb-1">
+    <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-1">
       {node.conceito}
     </p>
-    <p className="text-sm font-semibold text-white/90">{node.title}</p>
+    <p className="text-sm font-semibold text-foreground">{node.title}</p>
 
     <AnimatePresence>
       {isActive && (
@@ -45,21 +45,21 @@ const NodeCard = ({
           transition={{ duration: 0.3 }}
           className="overflow-hidden"
         >
-          <div className="pt-3 mt-3 border-t border-white/10 space-y-2">
-            <p className="text-[11px] uppercase tracking-widest text-white/30 mb-2">Derive para:</p>
+          <div className="pt-3 mt-3 border-t border-border space-y-2">
+            <p className="text-[11px] uppercase tracking-widest text-muted-foreground/60 mb-2">Derive para:</p>
             {node.derivas.map((d, i) => (
               <button
                 key={i}
                 onClick={(e) => { e.stopPropagation(); onNavigate(d.to); }}
-                className="block w-full text-left p-2 rounded bg-white/5 hover:bg-white/10 transition-colors"
+                className="block w-full text-left p-2 rounded bg-foreground/5 hover:bg-foreground/10 transition-colors"
               >
-                <p className="text-xs font-semibold text-white/80">{d.label}</p>
-                <p className="text-[11px] text-white/40 leading-relaxed mt-0.5">{d.justificativa}</p>
+                <p className="text-xs font-semibold text-foreground/80">{d.label}</p>
+                <p className="text-[11px] text-muted-foreground leading-relaxed mt-0.5">{d.justificativa}</p>
               </button>
             ))}
             <button
               onClick={(e) => { e.stopPropagation(); onNavigate(node.path); }}
-              className="text-[11px] uppercase tracking-widest text-white/50 hover:text-white/80 transition-colors mt-2"
+              className="text-[11px] uppercase tracking-widest text-muted-foreground hover:text-foreground/80 transition-colors mt-2"
             >
               → Ir para {node.title}
             </button>
@@ -88,17 +88,17 @@ const LowbyrinthMode = ({ open, onClose }: LowbyrinthModeProps) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
-          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl overflow-auto"
+          className="fixed inset-0 z-50 bg-background/95 backdrop-blur-xl overflow-auto"
         >
           {/* Header */}
-          <div className="sticky top-0 flex items-center justify-between px-6 py-4 z-10 bg-black/80 backdrop-blur-md">
+          <div className="sticky top-0 flex items-center justify-between px-6 py-4 z-10 bg-background/80 backdrop-blur-md">
             <div>
-              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-white/90">Lowbyrinth™</h2>
-              <p className="text-xs text-white/40 mt-1 tracking-wide">Derive. O percurso é o conhecimento.</p>
+              <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-foreground">Lowbyrinth™</h2>
+              <p className="text-xs text-muted-foreground mt-1 tracking-wide">Derive. O percurso é o conhecimento.</p>
             </div>
             <button
               onClick={onClose}
-              className="p-2 text-white/50 hover:text-white transition-colors"
+              className="p-2 text-muted-foreground hover:text-foreground transition-colors"
             >
               <X className="h-5 w-5" />
             </button>
@@ -139,7 +139,8 @@ const LowbyrinthMode = ({ open, onClose }: LowbyrinthModeProps) => {
                         transition={{ delay: 0.6 + i * 0.1, duration: 0.8 }}
                         x1={`${node.x}%`} y1={`${node.y}%`}
                         x2={`${target.x}%`} y2={`${target.y}%`}
-                        stroke="white"
+                        stroke="currentColor"
+                        className="text-foreground"
                         strokeWidth="0.5"
                         strokeDasharray="4 4"
                       />

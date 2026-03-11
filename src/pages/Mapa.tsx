@@ -11,7 +11,7 @@ const Mapa = () => {
             title="Mapa Conceitual"
             subtitle="Cartografia interativa das relações entre autores, conceitos e campos temáticos"
           />
-          <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-2xl">
+          <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-2xl text-justify">
             Arraste os nós para reorganizar. Passe o cursor para ver definições. Use scroll para zoom e arraste o fundo para navegar.
           </p>
           <ConceptGraph />
