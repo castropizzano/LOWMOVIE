@@ -21,7 +21,7 @@ const Coletivo = () => {
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle
-            title="O Coletivo — LowPressure™"
+            title="O Coletivo: LowPressure™"
             subtitle="Rede de artistas-skatistas que ativam a cidade como campo sensível"
           />
 
