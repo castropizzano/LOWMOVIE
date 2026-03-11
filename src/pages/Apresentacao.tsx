@@ -20,7 +20,7 @@ const Apresentacao = () => {
                 audiovisual em movimento vinculada à experiência urbana do skate. O trabalho situa-se no
                 cruzamento entre a produção cinematográfica contemporânea, as práticas subculturais urbanas
                 e a pesquisa acadêmica em artes, propondo uma abordagem que reconhece a potência estética
-                de formas de criação historicamente marginalizadas pelo campo artístico institucionalizado.
+                de práticas criativas que o campo artístico institucional historicamente marginalizou.
               </p>
               <p>
                 A pesquisa propõe um deslocamento epistemológico decisivo: reposiciona o
