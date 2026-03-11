@@ -260,7 +260,7 @@ const Conclusao = () => {
                             <img
                               src={item.image}
                               alt={item.label}
-                              className="w-full h-auto"
+                              className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500"
                               loading="lazy"
                             />
                           </div>
