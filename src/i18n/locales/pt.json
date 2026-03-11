@@ -26,9 +26,9 @@
     "keywords": "Skate · Videoarte · Processos Criativos · Subcultura Urbana · Colaboração Audiovisual"
   },
   "intro": {
-    "enableSound": "Enable sound",
-    "muteSound": "Mute sound",
-    "enterPortal": "Enter Portal"
+    "enableSound": "Ativar som",
+    "muteSound": "Silenciar",
+    "enterPortal": "Entrar no Portal"
   },
   "welcome": {
     "title": "Bem-vindo ao Labirinto Criativo",
