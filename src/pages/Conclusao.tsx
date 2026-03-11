@@ -99,6 +99,12 @@ const Conclusao = () => {
               mais profunda: o movimento é, simultaneamente, condição de produção, linguagem expressiva e forma de
               pensamento.
             </p>
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
+              Esta pesquisa não pretende estabelecer um método fechado, mas sugerir um campo de possibilidades para pensar processos criativos em audiovisual a partir da experiência do skate e da criação coletiva.
+            </p>
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
+              O LowMovie™ aparece aqui menos como conclusão e mais como processo em movimento — uma experiência que permanece aberta a novos desdobramentos criativos, teóricos e pedagógicos.
+            </p>
           </div>
 
           <div className="mt-16">
