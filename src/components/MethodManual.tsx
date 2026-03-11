@@ -19,7 +19,7 @@ const principles = [
   "O glitch e a imperfeição são força estética. A borda do skate encontra a borda do enquadramento.",
   "A autonomia é política criativa. Produção direta, circulação autônoma, criação coletiva.",
   "A crew é organismo criativo. Skatistas, videomakers, músicos e designers formam um sistema vivo.",
-  "A obra se expande para além do filme. Zine, portal, evento, arquivo — tudo é processo.",
+  "A obra se expande para além do filme. Zine, portal, evento, arquivo: tudo é processo.",
   "LowMovie™ é um sistema criativo vivo. Produzir é resistir. O movimento é a poética.",
 ];
 
