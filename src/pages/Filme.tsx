@@ -11,7 +11,7 @@ const Filme = () => {
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle
-            title="O Filme — LowMovie™"
+            title="O Filme: LowMovie™"
             subtitle="Dispositivo poético-político nascido do gesto coletivo"
           />
 
@@ -45,7 +45,7 @@ const Filme = () => {
                   { label: "Direção", value: "Rafão VM (dir.) & Castro Pizzano \"Punk\" (co-dir.)" },
                   { label: "Coletivo", value: "LowPressure™" },
                   { label: "Trilha sonora", value: "Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)" },
-                  { label: "Estrutura", value: "Segmentos entrelaçados — sessões, interlúdios, cenas de fabulação" },
+                  { label: "Estrutura", value: "Segmentos entrelaçados: sessões, interlúdios, cenas de fabulação" },
                   { label: "Circulação", value: "Circuitos independentes e institucionais" },
                 ].map((item) => (
                   <div key={item.label} className="border-l-2 border-primary/20 pl-4">
@@ -63,7 +63,7 @@ const Filme = () => {
               <div className="mb-6">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
-                    Linhagem — A Gramática dos Vídeos de Skate
+                    Linhagem: A Gramática dos Vídeos de Skate
                   </p>
                   <p className="text-sm text-foreground/80 leading-relaxed text-justify">
                     O LowMovie™ inscreve-se numa tradição audiovisual própria da cultura do skate. A <strong>VideoParte</strong> constitui
@@ -76,7 +76,7 @@ const Filme = () => {
                 {[
                   { nome: "Ty Evans", desc: "Pioneiro da cinematografia de skate em alta definição" },
                   { nome: "Spike Jonze", desc: "Do vídeo de skate ao cinema de autor" },
-                  { nome: "Beagle", desc: "Filmmaker da Baker Skateboards — documentário, identidade e subcultura" },
+                  { nome: "Beagle", desc: "Filmmaker da Baker Skateboards: documentário, identidade e subcultura" },
                 ].map((ref) => (
                   <div key={ref.nome} className="border-l-2 border-primary/20 pl-4">
                     <p className="text-sm font-semibold text-foreground">{ref.nome}</p>
@@ -97,7 +97,7 @@ const Filme = () => {
                 indissociáveis de uma mesma operação poética.
               </p>
               <p>
-                A filmagem é <strong>corpo-câmera</strong> — extensão sensível do realizador em movimento.
+                A filmagem é <strong>corpo-câmera</strong>, extensão sensível do realizador em movimento.
                 A montagem atua como <strong>artbook</strong>, reorganizando fragmentos em constelações de sentido.
                 O <strong>glitch</strong> emerge como linguagem de fratura.
               </p>
@@ -127,7 +127,7 @@ const Filme = () => {
 
           {/* Análise de Sequência */}
           <AnimatedSection delay={0.35} className="mt-16">
-            <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Análise de Sequência — Exemplo</h3>
+            <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Análise de Sequência: Exemplo</h3>
 
             {/* Bloco 1 — Sequência em Quadros */}
             <div className="grid grid-cols-4 md:grid-cols-7 gap-2 mb-4">
@@ -182,7 +182,7 @@ const Filme = () => {
                 </div>
               </div>
               <p>
-                O drop sintetiza simbolicamente o próprio argumento da dissertação: criar é assumir risco situado. O LowMovie™ emerge da borda, onde erro não é metáfora — é consequência física. O gesto único, irrepetível naquele contexto, condensa a ética da pesquisa: invenção como enfrentamento real do espaço.
+                O drop sintetiza simbolicamente o próprio argumento da dissertação: criar é assumir risco situado. O LowMovie™ emerge da borda, onde erro não é metáfora, é consequência física. O gesto único, irrepetível naquele contexto, condensa a ética da pesquisa: invenção como enfrentamento real do espaço.
               </p>
             </div>
           </AnimatedSection>

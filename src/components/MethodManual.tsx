@@ -9,7 +9,7 @@ interface MethodManualProps {
 
 const principles = [
   "A cidade é o campo de criação. A rua é o dispositivo.",
-  "O corpo é instrumento de pesquisa — ele sente a vibração do terreno e a tensão da cidade.",
+  "O corpo é instrumento de pesquisa. Ele sente a vibração do terreno e a tensão da cidade.",
   "A câmera é extensão do corpo em movimento. Ela não observa: participa.",
   "O skate gera linguagem audiovisual. Ritmo, enquadramento, duração e intensidade nascem da manobra.",
   "O erro beira o sagrado. Ele alimenta o processo criativo e revela o que o controle esconde.",
@@ -19,7 +19,7 @@ const principles = [
   "O glitch e a imperfeição são força estética. A borda do skate encontra a borda do enquadramento.",
   "A autonomia é política criativa. Produção direta, circulação autônoma, criação coletiva.",
   "A crew é organismo criativo. Skatistas, videomakers, músicos e designers formam um sistema vivo.",
-  "A obra se expande para além do filme. Zine, portal, evento, arquivo — tudo é processo.",
+  "A obra se expande para além do filme. Zine, portal, evento, arquivo: tudo é processo.",
   "LowMovie™ é um sistema criativo vivo. Produzir é resistir. O movimento é a poética.",
 ];
 
@@ -28,13 +28,13 @@ const systemLayers = [
     number: "01",
     title: "EXPERIÊNCIA URBANA",
     subtitle: "O Skate como Prática Estética Urbana",
-    description: "A experiência urbana constitui a base do sistema. O skate transforma a cidade em campo de criação — cada pico, cada terreno, cada sessão produz linguagem. O corpo do skatista negocia com a arquitetura, e dessa fricção emerge matéria criativa.",
+    description: "A experiência urbana constitui a base do sistema. O skate transforma a cidade em campo de criação: cada pico, cada terreno, cada sessão produz linguagem. O corpo do skatista negocia com a arquitetura, e dessa fricção emerge matéria criativa.",
   },
   {
     number: "02",
     title: "PROCESSO CRIATIVO",
     subtitle: "Filmagem, Montagem, Design e Trilha como Gesto Único",
-    description: "O processo criativo nasce do movimento. Filmar, montar, desenhar e compor não são etapas separadas — são atos simultâneos de um mesmo gesto. A câmera é extensão do corpo. A montagem é improvisação. O design é manifesto. A trilha é paisagem sonora do asfalto.",
+    description: "O processo criativo nasce do movimento. Filmar, montar, desenhar e compor não são etapas separadas, são atos simultâneos de um mesmo gesto. A câmera é extensão do corpo. A montagem é improvisação. O design é manifesto. A trilha é paisagem sonora do asfalto.",
   },
   {
     number: "03",
@@ -52,14 +52,14 @@ const systemLayers = [
     number: "05",
     title: "NÚCLEO: LOWMOVIE™",
     subtitle: "Corpo + Câmera + Cidade = Sistema Criativo Vivo",
-    description: "No centro do sistema, LowMovie™ opera como organismo vivo onde corpo, câmera e cidade se fundem. Não é um método que se aplica — é uma prática que se vive. O erro é matéria sagrada, a autonomia é política, e produzir é resistir.",
+    description: "No centro do sistema, LowMovie™ opera como organismo vivo onde corpo, câmera e cidade se fundem. Não é um método que se aplica, é uma prática que se vive. O erro é matéria sagrada, a autonomia é política, e produzir é resistir.",
   },
 ];
 
 const researcherDirectives = [
   {
     title: "Implicação Situada",
-    text: "O pesquisador não observa de fora — ele está dentro do campo. Skatista, videomaker e pesquisador são o mesmo corpo.",
+    text: "O pesquisador não observa de fora. Ele está dentro do campo. Skatista, videomaker e pesquisador são o mesmo corpo.",
   },
   {
     title: "Confrontação Teórica",
@@ -72,11 +72,11 @@ const researcherDirectives = [
 ];
 
 const symbolicField = [
-  { icon: Rat, name: "Rato Alquimista", meaning: "Transmutação pela margem — transformar o descarte em ouro criativo." },
-  { icon: Eye, name: "Olho de Hórus", meaning: "Visão expandida — ver além do visível, captar o invisível do gesto." },
-  { icon: Sparkles, name: "Estrela de Ishtar", meaning: "Criação como força cósmica — o ato de criar como ritual." },
-  { icon: Shield, name: "Estrela de Lakshmi", meaning: "Proteção e prosperidade criativa — a crew como rede de suporte." },
-  { icon: Zap, name: "Símbolo do Caos", meaning: "O caos como matriz generativa — desordem produtiva, entropia criativa." },
+  { icon: Rat, name: "Rato Alquimista", meaning: "Transmutação pela margem. Transformar o descarte em ouro criativo." },
+  { icon: Eye, name: "Olho de Hórus", meaning: "Visão expandida: ver além do visível, captar o invisível do gesto." },
+  { icon: Sparkles, name: "Estrela de Ishtar", meaning: "Criação como força cósmica. O ato de criar como ritual." },
+  { icon: Shield, name: "Estrela de Lakshmi", meaning: "Proteção e prosperidade criativa. A crew como rede de suporte." },
+  { icon: Zap, name: "Símbolo do Caos", meaning: "O caos como matriz generativa. Desordem produtiva, entropia criativa." },
 ];
 
 const MethodManual = ({ open, onClose }: MethodManualProps) => {
@@ -205,7 +205,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-2xl text-justify">
                   LowMovie™ opera a partir de um lugar de fala específico: o artista-pesquisador que é, 
                   simultaneamente, skatista, videomaker e investigador. Não há separação entre quem cria 
-                  e quem pesquisa — o corpo que anda de skate é o mesmo que filma, monta e teoriza.
+                  e quem pesquisa. O corpo que anda de skate é o mesmo que filma, monta e teoriza.
                 </p>
               </motion.div>
 
@@ -250,7 +250,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                   Campo Simbólico
                 </h3>
                 <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-2xl text-justify">
-                  LowMovie™ mobiliza um campo simbólico próprio — figuras arquetípicas e signos 
+                  LowMovie™ mobiliza um campo simbólico próprio, figuras arquetípicas e signos 
                   que atravessam a obra como forças de sentido, conectando o gesto criativo a camadas 
                   mais profundas de significação.
                 </p>

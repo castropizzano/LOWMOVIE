@@ -17,7 +17,7 @@ const contribuicoes = [
   {
     num: "03",
     title: "Pesquisa-criação implicada como método",
-    desc: "A dissertação estrutura a pesquisa-criação implicada como abordagem rigorosa, demonstrando que a implicação, quando submetida a reflexividade explícita, produz conhecimento válido. Propõe um modo de pesquisar COM o skate — prática produtora de conhecimento sensível, situado e compartilhado.",
+    desc: "A dissertação estrutura a pesquisa-criação implicada como abordagem rigorosa, demonstrando que a implicação, quando submetida a reflexividade explícita, produz conhecimento válido. Propõe um modo de pesquisar COM o skate, prática produtora de conhecimento sensível, situado e compartilhado.",
   },
   {
     num: "04",

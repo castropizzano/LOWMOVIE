@@ -7,7 +7,7 @@ import ImageLightbox from "@/components/ImageLightbox";
 const glossario = [
   { termo: "Crew", def: "Grupo de skatistas que compartilham afinidades, sessões e produções." },
   { termo: "Sessão", def: "Encontro de prática coletiva do skate em um determinado espaço urbano." },
-  { termo: "Spot", def: "Local urbano apropriado para a prática do skate — escadarias, bordas, corrimãos." },
+  { termo: "Spot", def: "Local urbano apropriado para a prática do skate: escadarias, bordas, corrimãos." },
   { termo: "Shape", def: "A prancha do skate. Elemento central da prática, com dimensões e desgastes que influenciam o estilo." },
   { termo: "Tricks", def: "Manobras executadas sobre o skate. Cada trick possui nome e gramática corporal própria." },
   { termo: "Linha", def: "Sequência encadeada de manobras executadas em fluxo contínuo." },
@@ -21,7 +21,7 @@ const Coletivo = () => {
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle
-            title="O Coletivo — LowPressure™"
+            title="O Coletivo: LowPressure™"
             subtitle="Rede de artistas-skatistas que ativam a cidade como campo sensível"
           />
 
@@ -29,7 +29,7 @@ const Coletivo = () => {
             <div className="space-y-4 text-base text-foreground/80 leading-relaxed text-justify mb-16">
               <p>
                 O <span className="text-primary font-semibold">LowPressure™</span> não é um grupo
-                formal — é uma rede de afinidades, uma forma de vida em rede que se constitui pelo
+                formal. É uma rede de afinidades, uma forma de vida em rede que se constitui pelo
                 encontro, pela prática e pela insistência do fazer.
               </p>
               <p>
@@ -43,7 +43,7 @@ const Coletivo = () => {
                 A questão da <span className="text-primary font-semibold">autoria compartilhada</span> é central.
                 Como propõe Abreu, <em>"num processo de criação partilhada não há muito espaço
                 para 'minha cena', 'meu texto', 'minha ideia'. Tudo é jogado numa arena comum"</em>. A autoria
-                não é propriedade individual — é emergência coletiva.
+                não é propriedade individual, é emergência coletiva.
               </p>
               <p>
                 O título <span className="text-primary font-semibold">"Like Rats on Hostile Paths"</span>{" "}
@@ -57,7 +57,7 @@ const Coletivo = () => {
                 improvisados</span>. A cidade não é palco — é co-autora.
               </p>
               <p>
-                Como sugere Herzog, no LowPressure™ o erro não é falha — é material criativo.
+                Como sugere Herzog, no LowPressure™ o erro não é falha, é material criativo.
               </p>
               <p>
                 A <span className="text-primary font-semibold">LowZine</span> funciona como arquivo vivo.
@@ -71,7 +71,7 @@ const Coletivo = () => {
           <AnimatedSection delay={0.2}>
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Vocabulário do Skate</h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Termos centrais da cultura do skate mobilizados na pesquisa — categorias operacionais
+              Termos centrais da cultura do skate mobilizados na pesquisa, categorias operacionais
               de uma prática estética situada.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">

@@ -89,7 +89,7 @@ const Conclusao = () => {
               Afirmo que o gesto criativo, quando analisado com rigor e implicação, constitui
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
               um filme fora dos circuitos convencionais — essas operações não são apenas práticas
-              artísticas: são modos de conhecer o mundo. O percurso metodológico se desenvolve em espiral — cada retorno ao
+              artísticas: são modos de conhecer o mundo. O percurso metodológico se desenvolve em espiral: cada retorno ao
               campo aprofunda a compreensão anterior.
             </p>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
@@ -125,7 +125,7 @@ const Conclusao = () => {
             <div className="border border-border/40 rounded-lg p-8 md:p-10 bg-card/20">
               <div className="flex items-center gap-2 mb-6">
                 <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80">
-                  Obra em Expansão — Horizontes Pedagógicos
+                  Obra em Expansão: Horizontes Pedagógicos
                 </h2>
               </div>
 
@@ -134,7 +134,7 @@ const Conclusao = () => {
                   Lowbyrinth™ como Ferramenta Pedagógica
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — sugere também aplicações pedagógicas que pretendo explorar.
+                  O Lowbyrinth™, labirinto conceitual que organiza a poética do LowMovie™, sugere também aplicações pedagógicas que pretendo explorar.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                   Penso nele como um mapa conceitual navegável: estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.
@@ -147,10 +147,10 @@ const Conclusao = () => {
 
               <div className="space-y-3">
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
-                  Sala de Aula — Possibilidades Metodológicas
+                  Sala de Aula: Possibilidades Metodológicas
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  A experiência de pesquisa-criação do LowMovie™ me leva a pensar também em desdobramentos para ambientes educacionais — processo colaborativo, espiral cognitiva, implicação do corpo no gesto criativo.
+                  A experiência de pesquisa-criação do LowMovie™ me leva a pensar também em desdobramentos para ambientes educacionais: processo colaborativo, espiral cognitiva, implicação do corpo no gesto criativo.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
                   Não pretendo estabelecer um modelo fechado. O que proponho é abrir caminhos para pensar a sala de aula como espaço de investigação estética, encontro coletivo e desenvolvimento de práticas autorais.
@@ -173,7 +173,7 @@ const Conclusao = () => {
                 </h2>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">
-                Leia a dissertação na íntegra — versão otimizada para leitura digital.
+                Leia a dissertação na íntegra. Versão otimizada para leitura digital.
               </p>
               <a
                 href="/docs/dissertacao.pdf"
@@ -200,7 +200,7 @@ const Conclusao = () => {
                 </h2>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">
-                Documentos, registros e materiais produzidos ao longo da pesquisa — disponíveis para consulta.
+                Documentos, registros e materiais produzidos ao longo da pesquisa, disponíveis para consulta.
               </p>
               <a
                 href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing"

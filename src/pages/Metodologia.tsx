@@ -58,7 +58,7 @@ const Metodologia = () => {
           <AnimatedSection delay={0.35}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-6">
-                Procedimentos de Campo — Três Operações Entrelaçadas
+                Procedimentos de Campo: Três Operações Entrelaçadas
               </p>
               <div className="grid gap-6 md:grid-cols-3 mb-8">
                 <div className="border-l-2 border-primary/20 pl-4">
@@ -126,8 +126,8 @@ const Metodologia = () => {
                   { label: "Período de pesquisa", value: "2023–2025" },
                   { label: "Instrumentos de registro", value: "Diário de campo, registros audiovisuais, caderno de montagem" },
                   { label: "Procedimentos de análise", value: "Análise fílmica implicada, descrição densa dos processos criativos" },
-                  { label: "Posicionamento", value: "Artista-pesquisador — membro ativo do coletivo criador" },
-                  { label: "Coleta de materiais", value: "Vídeos, zines, áudios, fotografias e trocas digitais — mediada pelo consentimento informado" },
+                  { label: "Posicionamento", value: "Artista-pesquisador, membro ativo do coletivo criador" },
+                  { label: "Coleta de materiais", value: "Vídeos, zines, áudios, fotografias e trocas digitais, mediada pelo consentimento informado" },
                   { label: "Organização", value: "Espiral cognitiva: prática → reflexão → formulação → retorno ao campo" },
                 ].map((item) => (
                   <div key={item.label} className="border-l-2 border-primary/20 pl-4">

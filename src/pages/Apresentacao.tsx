@@ -24,16 +24,16 @@ const Apresentacao = () => {
               </p>
               <p>
                 A pesquisa propõe um deslocamento epistemológico decisivo: reposiciona o
-                skate não apenas como fenômeno sociocultural — objeto recorrente de investigações sociológicas
-                e antropológicas — mas como prática estética produtora de linguagem audiovisual situada. Esse
+                skate não apenas como fenômeno sociocultural, objeto recorrente de investigações sociológicas
+                e antropológicas, mas como prática estética produtora de linguagem audiovisual situada. Esse
                 gesto de reposicionamento implica reconhecer que o corpo em movimento sobre o skate não é
                 meramente tema ou motivo visual, mas agente constitutivo de uma gramática fílmica própria,
                 dotada de ritmo, enquadramento, textura e temporalidade específicos.
               </p>
               <p>
                 Os vídeos de skate registram a evolução técnica e criativa dos praticantes e desempenham
-                papel central na construção da identidade cultural do skate. A <span className="text-primary font-semibold">VideoParte</span> — formato
-                audiovisual próprio da cultura do skate — constitui uma linguagem com gramática, ritmo e
+                papel central na construção da identidade cultural do skate. A <span className="text-primary font-semibold">VideoParte</span>, formato
+                audiovisual próprio da cultura do skate, constitui uma linguagem com gramática, ritmo e
                 códigos estéticos específicos que a dissertação analisa como matriz de produção cinematográfica
                 autônoma, e não apenas como registro documental de uma prática esportiva.
               </p>
@@ -108,7 +108,7 @@ const Apresentacao = () => {
           {/* Lugar de Fala */}
           <AnimatedSection delay={0.3} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6 text-foreground">
-              Lugar de Fala — Artista-Pesquisador
+              Lugar de Fala: Artista-Pesquisador
             </h3>
             <div className="space-y-4 text-foreground/80 leading-relaxed text-justify">
               <p>
@@ -123,13 +123,13 @@ const Apresentacao = () => {
                 artista-pesquisador não observa de fora: ele participa da tessitura do objeto, compartilha suas
                 condições de existência e, ao fazê-lo, acessa camadas de sentido inacessíveis a uma abordagem
                 estritamente distanciada. Como afirma Pimentel, <em>"toda ação praticada numa experiência modifica
-                quem a pratica e quem a sofre"</em> — e é precisamente essa transformação mútua entre pesquisador
+                quem a pratica e quem a sofre"</em>. É precisamente essa transformação mútua entre pesquisador
                 e campo que a dissertação assume como motor epistemológico.
               </p>
               <p>
                 O rigor se exerce por reflexividade, explicitação do posicionamento e articulação com os
-                referenciais da pesquisa-criação — não como defesa, mas como condição do próprio fazer.
-                A prática não substitui o rigor — ela
+                referenciais da pesquisa-criação, não como defesa, mas como condição do próprio fazer.
+                A prática não substitui o rigor. Ela
                 o produz. É no interior do fazer artístico, quando submetido à reflexão sistemática e à confrontação
                 teórica, que emerge um conhecimento que não poderia ser produzido por nenhuma outra via.
               </p>
@@ -150,7 +150,7 @@ const Apresentacao = () => {
                 subculturais urbanas com a produção cinematográfica contemporânea.
               </p>
               <p>
-                Ao propor essa inflexão, a dissertação não documenta apenas uma cena ou uma estética — ela propõe
+                Ao propor essa inflexão, a dissertação não documenta apenas uma cena ou uma estética: propõe
                 um modo de <em>pesquisar com</em> o skate, reconhecendo-o como prática produtora de conhecimento
                 sensível, situado e compartilhado. A contribuição é, portanto, simultaneamente temática,
                 metodológica e epistemológica.

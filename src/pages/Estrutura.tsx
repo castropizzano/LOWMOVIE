@@ -84,7 +84,7 @@ const Estrutura = () => {
           {/* Considerações Finais */}
           <AnimatedSection delay={0.45} className="mt-16">
              <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30">
-                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações — Ecos do Labirinto</h3>
+                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-1">Considerações: Ecos do Labirinto</h3>
                    <p className="text-sm text-foreground/80 leading-relaxed">
                     Retomam a pergunta de pesquisa, sintetizam os achados e situam as reverberações do percurso,
                     articulando implicações estéticas, políticas e metodológicas que permanecem em movimento.
@@ -99,7 +99,7 @@ const Estrutura = () => {
               <div className="space-y-4 text-sm text-foreground/80 leading-relaxed text-justify">
                 <p>
                   Este portal funciona como uma arquitetura epistemológica navegável.
-                  Não é apenas suporte de apresentação — é parte do dispositivo metodológico da pesquisa.
+                  Não é apenas suporte de apresentação. É parte do dispositivo metodológico da pesquisa.
                 </p>
                 <p>A estrutura digital organiza a investigação em três níveis simultâneos:</p>
                 <ul className="space-y-3 ml-1">
@@ -117,7 +117,7 @@ const Estrutura = () => {
                   </li>
                 </ul>
                 <p>
-                  Essa arquitetura transforma o portal em uma interface de pesquisa — onde teoria, criação e
+                  Essa arquitetura transforma o portal em uma interface de pesquisa, onde teoria, criação e
                   documentação coexistem em um sistema navegável. Dissertação, obra e interface digital se conectam
                   no que pode ser compreendido como um dispositivo expandido de pesquisa.
                 </p>
@@ -138,7 +138,7 @@ const Estrutura = () => {
                 </p>
                 <p>
                   O <span className="text-primary font-semibold">Lowbyrinth™</span> funciona como
-                  imagem-conceito e operador simbólico — uma lente imagética que sintetiza o caráter
+                  imagem-conceito e operador simbólico, uma lente imagética que sintetiza o caráter
                   processual, labiríntico e transformador da criação coletiva.
                 </p>
                 <p>
