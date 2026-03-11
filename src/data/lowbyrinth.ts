@@ -40,8 +40,8 @@ export const lowbyrinthNodes: LowbyrinthNode[] = [
     conceito: "Arquitetura",
     x: 88, y: 50,
     derivas: [
-      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Da estrutura linear ao grafo — ver as conexões que o texto lineariza." },
-      { to: "/apresentacao", label: "Apresentação", justificativa: "Retorne ao início com novos olhos — a estrutura recontextualiza a origem." },
+      { to: "/mapa", label: "Mapa Conceitual", justificativa: "Da estrutura linear ao grafo. Ver as conexões que o texto lineariza." },
+      { to: "/apresentacao", label: "Apresentação", justificativa: "Retorne ao início com novos olhos. A estrutura recontextualiza a origem." },
     ],
   },
   {
