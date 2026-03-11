@@ -63,7 +63,7 @@ const Filme = () => {
               <div className="mb-6">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
-                    Linhagem — A Gramática dos Vídeos de Skate
+                    Linhagem: A Gramática dos Vídeos de Skate
                   </p>
                   <p className="text-sm text-foreground/80 leading-relaxed text-justify">
                     O LowMovie™ inscreve-se numa tradição audiovisual própria da cultura do skate. A <strong>VideoParte</strong> constitui
