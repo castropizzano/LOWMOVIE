@@ -173,7 +173,7 @@ const Conclusao = () => {
                 </h2>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">
-                Leia a dissertação na íntegra — versão otimizada para leitura digital.
+                Leia a dissertação na íntegra. Versão otimizada para leitura digital.
               </p>
               <a
                 href="/docs/dissertacao.pdf"
