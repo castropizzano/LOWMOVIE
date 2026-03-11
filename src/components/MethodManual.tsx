@@ -52,7 +52,7 @@ const systemLayers = [
     number: "05",
     title: "NÚCLEO: LOWMOVIE™",
     subtitle: "Corpo + Câmera + Cidade = Sistema Criativo Vivo",
-    description: "No centro do sistema, LowMovie™ opera como organismo vivo onde corpo, câmera e cidade se fundem. Não é um método que se aplica — é uma prática que se vive. O erro é matéria sagrada, a autonomia é política, e produzir é resistir.",
+    description: "No centro do sistema, LowMovie™ opera como organismo vivo onde corpo, câmera e cidade se fundem. Não é um método que se aplica, é uma prática que se vive. O erro é matéria sagrada, a autonomia é política, e produzir é resistir.",
   },
 ];
 
