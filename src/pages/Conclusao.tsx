@@ -22,7 +22,7 @@ const interviews = [
     id: "black-media",
     label: "Black Media",
     subtitle: "Black View",
-    description: "Black Media Skate — mídia underground de skate nacional discute o LowMovie™, processos criativos e produção audiovisual independente.",
+    description: "Black Media Skate, mídia underground de skate nacional discute o LowMovie™, processos criativos e produção audiovisual independente.",
     youtubeId: "YJEW5YB59Ws",
     transcript: "/docs/transcricoes/Black_Media_Skate_LowMovie_Interview.pdf",
   },
@@ -54,7 +54,7 @@ const interviews = [
     id: "lowzine",
     label: "LowZine",
     subtitle: "Fanzine Coletivo",
-    description: "LowZine — fanzine coletivo produzido pelo grupo LowPressure™, reunindo registros visuais, textos e fragmentos do processo criativo.",
+    description: "LowZine, fanzine coletivo produzido pelo grupo LowPressure™, reunindo registros visuais, textos e fragmentos do processo criativo.",
     image: "/images/lowzine.png",
     transcript: "/docs/transcricoes/Entrevista-Transcrita_PIZZANO_Castro_LEITE_Rafael_Auto_Rafao_VM_METRI_Caio_LowZine_LowMovie_LowPressure.pdf",
   },
@@ -88,22 +88,21 @@ const Conclusao = () => {
             <p className="mt-4 text-base text-foreground/80 leading-relaxed text-justify">
               Afirmo que o gesto criativo, quando analisado com rigor e implicação, constitui
               também forma de pensamento. Filmar sobre um skate, montar imagens coletivamente, circular
-              um filme fora dos circuitos convencionais — essas operações não são apenas práticas
+              um filme fora dos circuitos convencionais. Essas operações não são apenas práticas
               artísticas: são modos de conhecer o mundo. O percurso metodológico se desenvolve em espiral: cada retorno ao
               campo aprofunda a compreensão anterior.
             </p>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
                O que o LowMovie™ ensina é que a poética não habita o resultado
               acabado, mas o percurso que o constitui. O filme é a sedimentação provisória de um fluxo
-              contínuo de gestos, decisões, improvisos e encontros. É nesse fluxo que reside a contribuição
-              mais profunda: o movimento é, simultaneamente, condição de produção, linguagem expressiva e forma de
+              de gestos, decisões e encontros. É nesse fluxo que o movimento se revela como condição de produção, linguagem e
               pensamento.
             </p>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
               Esta pesquisa não pretende estabelecer um método fechado, mas sugerir um campo de possibilidades para pensar processos criativos em audiovisual a partir da experiência do skate e da criação coletiva.
             </p>
             <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
-              O LowMovie™ aparece aqui menos como conclusão e mais como processo em movimento — uma experiência que permanece aberta a novos desdobramentos criativos, teóricos e pedagógicos.
+              O LowMovie™ aparece aqui menos como conclusão e mais como processo em movimento, uma experiência que permanece aberta a novos desdobramentos criativos, teóricos e pedagógicos.
             </p>
           </div>
 

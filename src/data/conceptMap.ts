@@ -15,16 +15,16 @@ export interface GraphEdge {
 export const nodes: GraphNode[] = [
   // Campos temáticos
   { id: "campo-urbano", label: "Skate e cidade", type: "campo", description: "Skate como reinscrição urbana: o corpo relê e reconfigura o espaço construído." },
-  { id: "campo-estetica", label: "Estética relacional", type: "campo", description: "A obra como interstício social — espaço de relações humanas e outras possibilidades de troca." },
-  { id: "campo-processo", label: "Processo colaborativo", type: "campo", description: "Criação coletiva como experiência — não método, mas processo." },
+  { id: "campo-estetica", label: "Estética relacional", type: "campo", description: "A obra como interstício social, espaço de relações humanas e outras possibilidades de troca." },
+  { id: "campo-processo", label: "Processo colaborativo", type: "campo", description: "Criação coletiva como experiência, não método, mas processo." },
   { id: "campo-cinema", label: "Corpo-câmera", type: "campo", description: "Fusão entre performer e dispositivo de registro: corpo e câmera como entidade única em ato." },
 
   // Autores
   { id: "borden", label: "Iain Borden", type: "autor", description: "Skate como reconfiguração espacial: o skate lê e reinscreve a cidade, ativando espaços como superfícies de criação." },
-  { id: "mcduie-ra", label: "McDuie-Ra", type: "autor", description: "Subcultura e territorialidade. 'Archiving from below' — arquivo não-oficial e ângulo de captura 'from below the knees'." },
+  { id: "mcduie-ra", label: "McDuie-Ra", type: "autor", description: "Subcultura e territorialidade. 'Archiving from below', arquivo não-oficial e ângulo de captura 'from below the knees'." },
   { id: "bourriaud", label: "Nicolas Bourriaud", type: "autor", description: "A obra de arte como interstício social que sugere outras possibilidades de troca." },
   { id: "hall", label: "Stuart Hall", type: "autor", description: "Identidade cultural como produção processual, nunca completa." },
-  { id: "abreu", label: "Luis A. de Abreu", type: "autor", description: "Processo colaborativo como experiência criativa coletiva — não método, mas processo." },
+  { id: "abreu", label: "Luis A. de Abreu", type: "autor", description: "Processo colaborativo como experiência criativa coletiva, não método, mas processo." },
   { id: "coessens", label: "Coessens / Pimentel", type: "autor", description: "Corpo como produção de conhecimento: toda ação praticada modifica quem a pratica." },
   { id: "delpeux", label: "Delpeux", type: "autor", description: "Fusão sensível entre corpo do performer e dispositivo de registro: entidade única em ato." },
   { id: "rouch", label: "Rouch / Deren", type: "autor", description: "Rouch e o cine-transe. Deren e a dança como cinema. Fabulação como gesto de criação do real." },

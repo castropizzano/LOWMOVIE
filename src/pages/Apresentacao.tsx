@@ -16,24 +16,24 @@ const Apresentacao = () => {
                 Esta dissertação investiga os processos criativos do filme{" "}
                 <span className="text-primary font-semibold">LowMovie™</span>, realizado pelo coletivo de
                 artistas-skatistas <span className="text-primary font-semibold">LowPressure™</span>,
-                analisando como tais dinâmicas colaborativas contribuem para a constituição de uma poética
+                analisando como tais dinâmicas colaborativas contribuem para a formação de uma poética
                 audiovisual em movimento vinculada à experiência urbana do skate. O trabalho situa-se no
                 cruzamento entre a produção cinematográfica contemporânea, as práticas subculturais urbanas
                 e a pesquisa acadêmica em artes, propondo uma abordagem que reconhece a potência estética
-                de formas de criação historicamente marginalizadas pelo campo artístico institucionalizado.
+                de práticas criativas que o campo artístico institucional historicamente marginalizou.
               </p>
               <p>
                 A pesquisa propõe um deslocamento epistemológico decisivo: reposiciona o
                 skate não apenas como fenômeno sociocultural, objeto recorrente de investigações sociológicas
                 e antropológicas, mas como prática estética produtora de linguagem audiovisual situada. Esse
                 gesto de reposicionamento implica reconhecer que o corpo em movimento sobre o skate não é
-                meramente tema ou motivo visual, mas agente constitutivo de uma gramática fílmica própria,
-                dotada de ritmo, enquadramento, textura e temporalidade específicos.
+                meramente tema ou motivo visual, mas agente constitutivo de uma gramática fílmica
+                com ritmo, enquadramento e temporalidade próprios.
               </p>
               <p>
                 Os vídeos de skate registram a evolução técnica e criativa dos praticantes e desempenham
                 papel central na construção da identidade cultural do skate. A <span className="text-primary font-semibold">VideoParte</span>, formato
-                audiovisual próprio da cultura do skate, constitui uma linguagem com gramática, ritmo e
+                audiovisual próprio da cultura do skate, apresenta uma linguagem com gramática, ritmo e
                 códigos estéticos específicos que a dissertação analisa como matriz de produção cinematográfica
                 autônoma, e não apenas como registro documental de uma prática esportiva.
               </p>
@@ -41,7 +41,7 @@ const Apresentacao = () => {
                 O coletivo <span className="text-primary font-semibold">LowPressure™</span> funciona como
                 condição de produção e como ecossistema criativo no qual se formam as decisões estéticas do
                 filme. Sua estrutura horizontal, baseada em vínculos afetivos e em uma ética de produção
-                autônoma, configura um modo de fazer cinema que prescinde das hierarquias tradicionais da
+                autônoma, representa um modo de fazer cinema que prescinde das hierarquias tradicionais da
                 indústria audiovisual. O LowMovie™, portanto, não é apenas um produto fílmico: é a
                 materialização de um processo coletivo que articula corpo, cidade, câmera e improviso como
                 elementos indissociáveis de uma mesma operação poética.
