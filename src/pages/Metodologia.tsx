@@ -58,7 +58,7 @@ const Metodologia = () => {
           <AnimatedSection delay={0.35}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-6">
-                Procedimentos de Campo — Três Operações Entrelaçadas
+                Procedimentos de Campo: Três Operações Entrelaçadas
               </p>
               <div className="grid gap-6 md:grid-cols-3 mb-8">
                 <div className="border-l-2 border-primary/20 pl-4">
