@@ -145,8 +145,8 @@ Use este checklist ao criar um pacote de arquivo completo:
 - [ ] Copiar metadados (`CITATION.cff`, `README.md`, `LICENSE`, `PRESERVATION.md`)
 - [ ] Gerar manifest com checksums SHA256
 - [ ] Registrar data e versão no `preservation_log.md`
-- [ ] Submeter ao Zenodo para DOI (opcional)
-- [ ] Submeter URL ao Wayback Machine: `https://web.archive.org/save/https://lowmovie.lovable.app`
+- [x] Submeter ao Zenodo para DOI — [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438)
+- [x] Submeter URL ao Wayback Machine: `https://web.archive.org/save/https://lowmovie.lovable.app`
 
 ---
 
