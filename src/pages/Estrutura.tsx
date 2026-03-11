@@ -138,7 +138,7 @@ const Estrutura = () => {
                 </p>
                 <p>
                   O <span className="text-primary font-semibold">Lowbyrinth™</span> funciona como
-                  imagem-conceito e operador simbólico — uma lente imagética que sintetiza o caráter
+                  imagem-conceito e operador simbólico, uma lente imagética que sintetiza o caráter
                   processual, labiríntico e transformador da criação coletiva.
                 </p>
                 <p>

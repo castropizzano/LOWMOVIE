@@ -46,7 +46,7 @@ const Index = () => {
             {/* Coluna direita — Texto */}
             <div className="text-left">
               <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                Dissertação de Mestrado — Março 2026
+                Dissertação de Mestrado · Março 2026
               </p>
 
               <h1 className="text-5xl md:text-7xl font-bold uppercase leading-none tracking-tight">

@@ -200,7 +200,7 @@ const Conclusao = () => {
                 </h2>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">
-                Documentos, registros e materiais produzidos ao longo da pesquisa — disponíveis para consulta.
+                Documentos, registros e materiais produzidos ao longo da pesquisa, disponíveis para consulta.
               </p>
               <a
                 href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing"

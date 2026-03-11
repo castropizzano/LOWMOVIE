@@ -71,7 +71,7 @@ const Coletivo = () => {
           <AnimatedSection delay={0.2}>
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">Vocabulário do Skate</h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Termos centrais da cultura do skate mobilizados na pesquisa — categorias operacionais
+              Termos centrais da cultura do skate mobilizados na pesquisa, categorias operacionais
               de uma prática estética situada.
             </p>
             <div className="grid gap-4 sm:grid-cols-2">

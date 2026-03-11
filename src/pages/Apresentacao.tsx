@@ -150,7 +150,7 @@ const Apresentacao = () => {
                 subculturais urbanas com a produção cinematográfica contemporânea.
               </p>
               <p>
-                Ao propor essa inflexão, a dissertação não documenta apenas uma cena ou uma estética — ela propõe
+                Ao propor essa inflexão, a dissertação não documenta apenas uma cena ou uma estética: propõe
                 um modo de <em>pesquisar com</em> o skate, reconhecendo-o como prática produtora de conhecimento
                 sensível, situado e compartilhado. A contribuição é, portanto, simultaneamente temática,
                 metodológica e epistemológica.

@@ -108,7 +108,7 @@ const Conceitos = () => {
           {/* Conceitos Próprios */}
           <AnimatedSection delay={0.2} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-4 text-foreground">
-              Conceitos Próprios — Formulações Autorais
+              Conceitos Próprios: Formulações Autorais
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-8">
               Operadores analíticos derivados da prática artística.
