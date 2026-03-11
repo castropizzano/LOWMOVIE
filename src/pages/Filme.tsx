@@ -146,8 +146,25 @@ const Filme = () => {
             </div>
           </AnimatedSection>
 
+          {/* Premiere */}
+          <AnimatedSection delay={0.47} className="mt-16">
+            <h3 className="text-lg font-semibold uppercase tracking-wide mb-4">{t("filme.premiereTitle")}</h3>
+            <p className="text-sm text-foreground/80 leading-relaxed text-justify mb-6">{t("filme.premiereDesc")}</p>
+            <div className="relative aspect-video rounded-lg overflow-hidden border border-border bg-card/30 group">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/RbsSyBhSHFg?rel=0&modestbranding=1"
+                className="absolute inset-0 w-full h-full grayscale group-hover:grayscale-0 transition-all duration-500"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
+                allowFullScreen
+                title="LowMovie™ Premiere"
+              />
+            </div>
+          </AnimatedSection>
+
           {/* Soundtrack */}
-          <AnimatedSection delay={0.4} className="mt-16">
+          <AnimatedSection delay={0.5} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">{t("filme.soundtrack")}</h3>
             <div className="grid gap-4 sm:grid-cols-2">
               <a
