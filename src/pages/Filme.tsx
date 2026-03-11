@@ -163,6 +163,17 @@ const Filme = () => {
             </div>
           </AnimatedSection>
 
+          {/* Correspondência */}
+          <AnimatedSection delay={0.48} className="mt-16">
+            <h3 className="text-lg font-semibold uppercase tracking-wide mb-4">{t("filme.correspondenceTitle")}</h3>
+            <p className="text-sm text-foreground/80 leading-relaxed text-justify mb-6">{t("filme.correspondenceDesc")}</p>
+            <div className="border-l-2 border-primary/40 pl-6 py-4 bg-card/30 rounded-r-lg">
+              <p className="text-base italic text-foreground/90 leading-relaxed">"{t("filme.correspondenceQuote")}"</p>
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mt-3">{t("filme.correspondenceAttrib")}</p>
+            </div>
+            <p className="text-[11px] text-muted-foreground/70 tracking-wide mt-4">{t("filme.correspondenceNote")}</p>
+          </AnimatedSection>
+
           {/* Soundtrack */}
           <AnimatedSection delay={0.5} className="mt-16">
             <h3 className="text-lg font-semibold uppercase tracking-wide mb-6">{t("filme.soundtrack")}</h3>
