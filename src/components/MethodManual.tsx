@@ -34,7 +34,7 @@ const systemLayers = [
     number: "02",
     title: "PROCESSO CRIATIVO",
     subtitle: "Filmagem, Montagem, Design e Trilha como Gesto Único",
-    description: "O processo criativo nasce do movimento. Filmar, montar, desenhar e compor não são etapas separadas — são atos simultâneos de um mesmo gesto. A câmera é extensão do corpo. A montagem é improvisação. O design é manifesto. A trilha é paisagem sonora do asfalto.",
+    description: "O processo criativo nasce do movimento. Filmar, montar, desenhar e compor não são etapas separadas, são atos simultâneos de um mesmo gesto. A câmera é extensão do corpo. A montagem é improvisação. O design é manifesto. A trilha é paisagem sonora do asfalto.",
   },
   {
     number: "03",
