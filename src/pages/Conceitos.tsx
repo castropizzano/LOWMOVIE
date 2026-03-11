@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useTranslation } from "react-i18next";
 
 const campoKeys = [
