@@ -250,7 +250,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                   Campo Simbólico
                 </h3>
                 <p className="text-sm text-white/50 mt-3 leading-relaxed max-w-2xl text-justify">
-                  LowMovie™ mobiliza um campo simbólico próprio — figuras arquetípicas e signos 
+                  LowMovie™ mobiliza um campo simbólico próprio, figuras arquetípicas e signos 
                   que atravessam a obra como forças de sentido, conectando o gesto criativo a camadas 
                   mais profundas de significação.
                 </p>
