@@ -1,36 +1,81 @@
 
-## Completed: Reduce em dash (—) overuse
 
-~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
+# Cinematic Intro Screen — LOWMOVIE™
 
-## Completed: Human Writing Audit
+## Overview
 
-~20 edits across 7 files:
-- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
-- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
-- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
-- Route fix: lowbyrinth.ts `/faq` → `/questoes`
+Create a fullscreen cinematic intro page (`/intro`) that plays the uploaded Lowbyrinth™ video as an immersive entry experience. The current `/` route becomes `/intro`, and the homepage moves to a new flow where visitors land on the intro first.
 
-## Completed: Full Editorial Audit (pre-defense)
+## Architecture
 
-7 edits across 6 files:
-- MethodManual.tsx L123: "constitui" → "é"
-- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
-- Filme.tsx L69: "constitui" → "possui"
-- Metodologia.tsx L109: "articula" → "formula"
-- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
-- README.md L32: "simultaneamente" → "a um só tempo,"
-- Defense.tsx L30: removed serial comma before "e"
+1. **Copy video** to `public/videos/lowbyrinth-intro.mp4`
+2. **Create `src/pages/Intro.tsx`** — fullscreen cinematic intro component
+3. **Update `src/App.tsx`** — route `/` → `Intro`, move current Index to `/home`
+4. **Update all internal links** pointing to `/` to point to `/home` instead (sidebar, nav, etc.)
 
-## Completed: Visual Design Consistency Audit
+## Intro.tsx Component Design
 
-8 fixes across 6 files:
-- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
-- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
-- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
-- Index.tsx: Cover image added grayscale hover:grayscale-0
-- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
-- Mapa.tsx: Added text-justify to instruction text
+```text
+┌─────────────────────────────────────┐
+│                                     │
+│     (fullscreen video background)   │
+│                                     │
+│          LOWMOVIE™                  │
+│     ENTER THE LOWBYRINTH            │
+│                                     │
+│                                     │
+│                                     │
+│    [ ENTER PORTAL ]  [ SKIP INTRO ] │
+│                                     │
+└─────────────────────────────────────┘
+```
 
-### Resolved
-- Hellraiser epigraph removed from Index.tsx
+**Video element:**
+- `<video>` tag with `autoPlay`, `playsInline`, `src` pointing to `/videos/lowbyrinth-intro.mp4`
+- Starts muted (browser requirement), with a sound toggle button (small speaker icon)
+- `object-fit: cover` fullscreen, no controls visible
+- `onEnded` → navigate to `/home`
+
+**Important browser constraint:** Browsers block autoplay with sound. The video will autoplay muted, with a prominent "Enable Sound" button that unmutes on click. This is the only way to guarantee autoplay works across all browsers.
+
+**Overlay elements (positioned absolute over video):**
+- Title: `LOWMOVIE™` — `text-5xl md:text-7xl font-bold uppercase tracking-tight text-foreground`
+- Subtitle: `ENTER THE LOWBYRINTH` — `text-xs uppercase tracking-[0.2em] text-muted-foreground`
+- Two buttons at bottom center, styled per STYLE_GUIDE:
+  - `ENTER PORTAL` → navigates to `/home`
+  - `SKIP INTRO` → navigates to `/home`
+  - Both use: `border border-border/50 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-foreground/70 hover:border-primary/50 hover:text-primary transition-all`
+- Sound toggle: small `Volume2`/`VolumeX` icon button, top-right corner
+
+**Fade-in animation:** Overlay text fades in after 1-2 seconds via CSS opacity transition.
+
+**Session behavior:** First-time visitors see the intro. Use `sessionStorage` (not localStorage) so the intro plays once per browser session but returns on new sessions. If `sessionStorage` has `lowmovie_intro_seen`, redirect `/` immediately to `/home`.
+
+## Route Changes
+
+| Before | After |
+|---|---|
+| `/` → Index (homepage) | `/` → Intro (cinematic entry) |
+| n/a | `/home` → Index (homepage) |
+
+## Files to Update
+
+- **`src/App.tsx`**: Add Intro route at `/`, change Index to `/home`
+- **`src/pages/Intro.tsx`**: New component (fullscreen video + overlay)
+- **`src/components/AppSidebar.tsx`**: Update Home link from `/` to `/home`
+- **`src/pages/Index.tsx`**: No changes needed (stays as-is, just mounted at `/home`)
+- **`src/components/WelcomeOverlay.tsx`**: Remains unchanged (still shows on homepage for email capture)
+
+## Performance
+
+- Video served from `public/videos/` (static asset, CDN-cached)
+- `preload="auto"` on the video tag for fast start
+- Lightweight page — no Layout wrapper, no sidebar, just video + overlay
+- No impact on homepage load (separate route)
+
+## Responsive
+
+- Video: `w-full h-full object-cover` on a `fixed inset-0` container
+- Text and buttons scale via standard Tailwind responsive classes
+- On mobile, buttons stack vertically with `flex-col` at small breakpoints
+
