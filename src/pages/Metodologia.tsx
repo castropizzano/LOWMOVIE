@@ -2,53 +2,32 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
+import { useTranslation } from "react-i18next";
 
-
-const eixos = [
-  {
-    title: "Afeto",
-    desc: "Vínculo sensível com o campo investigado. Inspirado nos debates do grupo Afetos (UFMG), o afeto não é contaminação, mas condição de acesso ao real em sua dimensão mais densa e significativa. Afetar e ser afetado constituem formas legítimas de produzir conhecimento.",
-  },
-  {
-    title: "Escuta",
-    desc: "Atenção às dinâmicas coletivas, aos silêncios, aos gestos não verbalizados. Escutar é mais do que ouvir — a escuta expande-se para o corpo, para o som da cidade, para o ruído das rodas sobre o concreto. Sustentar o silêncio, acolher o tempo do outro.",
-  },
-  {
-    title: "Improviso",
-    desc: "Abertura ao imprevisto como dado epistemológico legítimo, e não como falha do planejamento. A metodologia assume uma arquitetura móvel, capaz de se refazer a cada encontro. Um saber em movimento que aprende com a instabilidade.",
-  },
-];
+const eixoKeys = ["afeto", "escuta", "improviso"] as const;
+const opKeys = ["period", "instruments", "analysis", "positioning", "collection", "organization"] as const;
 
 const Metodologia = () => {
+  const { t } = useTranslation();
   return (
     <Layout>
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
-          <SectionTitle
-            title="Metodologia"
-            subtitle="Pesquisa-criação implicada, fundamentada na reflexividade"
-          />
+          <SectionTitle title={t("metodologia.title")} subtitle={t("metodologia.subtitle")} />
 
           <AnimatedSection delay={0.1}>
             <div className="space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-16">
-              <p>
-                A investigação estrutura-se como <span className="text-primary font-semibold">pesquisa-criação implicada</span>,
-                modalidade metodológica que articula a produção artística e a reflexão acadêmica como dimensões
-                indissociáveis de um mesmo processo investigativo.
-              </p>
-              <p className="text-sm text-muted-foreground">
-                Referências: Coessens, Pimentel, Moriceau — corpo como produção de conhecimento.
-              </p>
+              <p>{t("metodologia.intro")}</p>
+              <p className="text-sm text-muted-foreground">{t("metodologia.refs")}</p>
             </div>
           </AnimatedSection>
 
           <div className="grid gap-6 md:grid-cols-3 mb-16">
-            {eixos.map((eixo, i) => (
-              <AnimatedSection key={eixo.title} delay={0.15 + i * 0.1}>
+            {eixoKeys.map((key, i) => (
+              <AnimatedSection key={key} delay={0.15 + i * 0.1}>
                 <div className="border border-border rounded-lg p-6 md:p-8 bg-card/30 transition-colors hover:border-primary/30 h-full">
-                  
-                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-3">{eixo.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{eixo.desc}</p>
+                  <h3 className="text-lg font-semibold uppercase tracking-wide mb-3">{t(`metodologia.eixos.${key}.title`)}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">{t(`metodologia.eixos.${key}.desc`)}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -58,32 +37,18 @@ const Metodologia = () => {
           <AnimatedSection delay={0.35}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-6">
-                Procedimentos de Campo: Três Operações Entrelaçadas
+                {t("metodologia.fieldProcedures")}
               </p>
               <div className="grid gap-6 md:grid-cols-3 mb-8">
-                <div className="border-l-2 border-primary/20 pl-4">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Vivência Situada</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                    Participo de sessões de gravação, reuniões, eventos e sessões de skate com o coletivo.
-                  </p>
-                </div>
-                <div className="border-l-2 border-primary/20 pl-4">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Convivência Criativa</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                    Participo das dinâmicas de produção e montagem, contribuindo ativamente para
-                    as decisões estéticas do coletivo.
-                  </p>
-                </div>
-                <div className="border-l-2 border-primary/20 pl-4">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">Escuta Partilhada</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                    Registro conversas abertas por meio de notas, áudios e diário digital.
-                  </p>
-                </div>
+                {(["vivencia", "convivencia", "escutaPartilhada"] as const).map((key) => (
+                  <div key={key} className="border-l-2 border-primary/20 pl-4">
+                    <p className="text-sm font-semibold uppercase tracking-wide text-foreground mb-2">{t(`metodologia.${key}.title`)}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed text-justify">{t(`metodologia.${key}.desc`)}</p>
+                  </div>
+                ))}
               </div>
               <p className="text-xs text-muted-foreground leading-relaxed border-t border-border/50 pt-4">
-                A pesquisa adota uma <strong>espiral cognitiva</strong> inspirada na Taxonomia de Bloom adaptada:
-                cada retorno ao campo aprofunda a compreensão anterior, num movimento cumulativo.
+                {t("metodologia.spiralNote")}
               </p>
             </div>
           </AnimatedSection>
@@ -91,27 +56,21 @@ const Metodologia = () => {
           <AnimatedSection delay={0.4}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30 mb-16">
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-8">
-                Distinção Fundamental
+                {t("metodologia.distinction")}
               </p>
               <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-8">
                 <div className="flex-1 text-center md:text-right">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-foreground">Método de Pesquisa</p>
-                  <p className="text-xs text-muted-foreground mt-1">Reflexivo e analítico</p>
+                  <p className="text-sm font-semibold uppercase tracking-wide text-foreground">{t("metodologia.researchMethod")}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{t("metodologia.researchMethodSub")}</p>
                 </div>
                 <div className="text-3xl font-light text-primary/80">≠</div>
                 <div className="flex-1 text-center md:text-left">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-foreground">Métodos de Criação</p>
-                  <p className="text-xs text-muted-foreground mt-1">Filmagem, montagem, glitch, design</p>
+                  <p className="text-sm font-semibold uppercase tracking-wide text-foreground">{t("metodologia.creationMethods")}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{t("metodologia.creationMethodsSub")}</p>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                Embora método de pesquisa e métodos de criação se alimentem mutuamente, não se confundem.
-                O primeiro interroga, conceitua e formula; os segundos produzem, experimentam e materializam.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed text-justify mt-4">
-                O rigor reside na reflexividade com que cada decisão é interrogada e na consistência com que
-                as inferências se articulam aos referenciais mobilizados.
-              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify">{t("metodologia.distinctionP1")}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mt-4">{t("metodologia.distinctionP2")}</p>
             </div>
           </AnimatedSection>
 
@@ -119,27 +78,20 @@ const Metodologia = () => {
           <AnimatedSection delay={0.5}>
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/30">
               <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-6">
-                Procedimentos Operacionais
+                {t("metodologia.operational")}
               </p>
               <div className="grid gap-4 sm:grid-cols-2">
-                {[
-                  { label: "Período de pesquisa", value: "2023–2025" },
-                  { label: "Instrumentos de registro", value: "Diário de campo, registros audiovisuais, caderno de montagem" },
-                  { label: "Procedimentos de análise", value: "Análise fílmica implicada, descrição densa dos processos criativos" },
-                  { label: "Posicionamento", value: "Artista-pesquisador, membro ativo do coletivo criador" },
-                  { label: "Coleta de materiais", value: "Vídeos, zines, áudios, fotografias e trocas digitais, mediada pelo consentimento informado" },
-                  { label: "Organização", value: "Espiral cognitiva: prática → reflexão → formulação → retorno ao campo" },
-                ].map((item) => (
-                  <div key={item.label} className="border-l-2 border-primary/20 pl-4">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">{item.label}</p>
-                    <p className="text-sm text-foreground/80 mt-1">{item.value}</p>
+                {opKeys.map((key) => (
+                  <div key={key} className="border-l-2 border-primary/20 pl-4">
+                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">{t(`metodologia.opItems.${key}.label`)}</p>
+                    <p className="text-sm text-foreground/80 mt-1">{t(`metodologia.opItems.${key}.value`)}</p>
                   </div>
                 ))}
               </div>
             </div>
           </AnimatedSection>
 
-          <NextSectionButton to="/estrutura" label="Estrutura" />
+          <NextSectionButton to="/estrutura" label={t("metodologia.next")} />
         </div>
       </section>
     </Layout>

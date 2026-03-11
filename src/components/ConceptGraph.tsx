@@ -1,5 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from "react";
-import { nodes, edges, typeColors, typeLabels, GraphNode, NodeType } from "@/data/conceptMap";
+import { nodes, edges, typeColors, GraphNode, NodeType } from "@/data/conceptMap";
+import { useTranslation } from "react-i18next";
 
 interface SimNode extends GraphNode {
   x: number;
@@ -17,6 +18,7 @@ const NODE_RADIUS: Record<NodeType, number> = {
 };
 
 const ConceptGraph = () => {
+  const { t } = useTranslation();
   const svgRef = useRef<SVGSVGElement>(null);
   const animRef = useRef<number>(0);
   const [simNodes, setSimNodes] = useState<SimNode[]>([]);
@@ -177,11 +179,11 @@ const ConceptGraph = () => {
     <div className="relative w-full h-[70vh] min-h-[500px] border border-border rounded-lg bg-card/30 overflow-hidden">
       {/* Legenda */}
       <div className="absolute top-4 left-4 z-10 flex flex-col gap-2 bg-background/80 backdrop-blur-sm rounded-md p-3 border border-border">
-        {(Object.keys(typeLabels) as NodeType[]).map((type) => (
+        {(["conceito", "autor", "campo"] as NodeType[]).map((type) => (
           <div key={type} className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full" style={{ backgroundColor: typeColors[type] }} />
             <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-              {typeLabels[type]}
+              {t(`conceptMap.typeLabels.${type}`)}
             </span>
           </div>
         ))}
@@ -202,7 +204,7 @@ const ConceptGraph = () => {
             }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: typeColors[node.type] }}>
-              {typeLabels[node.type]}
+              {t(`conceptMap.typeLabels.${node.type}`)}
             </p>
             <p className="text-sm font-semibold text-foreground mb-1">{node.label}</p>
             <p className="text-xs text-muted-foreground leading-relaxed">{node.description}</p>
