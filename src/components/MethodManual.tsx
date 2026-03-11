@@ -9,7 +9,7 @@ interface MethodManualProps {
 
 const principles = [
   "A cidade é o campo de criação. A rua é o dispositivo.",
-  "O corpo é instrumento de pesquisa — ele sente a vibração do terreno e a tensão da cidade.",
+  "O corpo é instrumento de pesquisa. Ele sente a vibração do terreno e a tensão da cidade.",
   "A câmera é extensão do corpo em movimento. Ela não observa: participa.",
   "O skate gera linguagem audiovisual. Ritmo, enquadramento, duração e intensidade nascem da manobra.",
   "O erro beira o sagrado. Ele alimenta o processo criativo e revela o que o controle esconde.",
