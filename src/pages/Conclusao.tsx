@@ -99,6 +99,12 @@ const Conclusao = () => {
               mais profunda: o movimento é, simultaneamente, condição de produção, linguagem expressiva e forma de
               pensamento.
             </p>
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
+              Esta pesquisa não pretende estabelecer um método fechado, mas sugerir um campo de possibilidades para pensar processos criativos em audiovisual a partir da experiência do skate e da criação coletiva.
+            </p>
+            <p className="mt-4 text-sm text-muted-foreground leading-relaxed text-justify">
+              O LowMovie™ aparece aqui menos como conclusão e mais como processo em movimento — uma experiência que permanece aberta a novos desdobramentos criativos, teóricos e pedagógicos.
+            </p>
           </div>
 
           <div className="mt-16">
@@ -106,6 +112,10 @@ const Conclusao = () => {
               <p className="text-sm text-muted-foreground leading-relaxed italic text-justify">
                 "Da prática corporal à formulação conceitual, do coletivo ao campo acadêmico,
                 do instante ao pensamento — o percurso desta dissertação é, ele mesmo, um Lowbyrinth™."
+              </p>
+              <div className="my-4 h-px w-full bg-border/30" />
+              <p className="text-base text-foreground/80 leading-relaxed italic text-justify">
+                "O LowMovie™ pode ser compreendido como um processo de pesquisa-criação em movimento, que articula prática artística, reflexão crítica e experiência urbana."
               </p>
             </div>
           </div>
