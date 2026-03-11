@@ -57,6 +57,22 @@ const Layout = ({ children }: { children: ReactNode }) => {
               <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground leading-relaxed mb-4">
                 {t("footer.copyright")}
               </p>
+              <div className="flex flex-col md:flex-row md:justify-between mb-4">
+                <a
+                  href="https://lattes.cnpq.br/5523516994010198"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] text-muted-foreground hover:text-primary transition-colors leading-relaxed"
+                >
+                  {t("footer.lattes")}
+                </a>
+                <a
+                  href="mailto:castropizzano@gmail.com"
+                  className="text-[11px] text-muted-foreground hover:text-primary transition-colors leading-relaxed md:text-right"
+                >
+                  {t("footer.email")}
+                </a>
+              </div>
               <div className="space-y-2">
                 <div className="flex flex-col md:flex-row md:justify-between">
                   <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.university")}</p>
