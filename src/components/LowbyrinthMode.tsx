@@ -163,7 +163,7 @@ const LowbyrinthMode = ({ open, onClose }: LowbyrinthModeProps) => {
                 <img
                   src="/images/lowbyrinth.png"
                   alt=""
-                  className="absolute inset-0 w-full h-full object-contain opacity-[0.12] pointer-events-none"
+                  className="absolute inset-0 w-full h-full object-contain opacity-[0.05] blur-[1px] pointer-events-none"
                   style={{ minHeight: "100vh" }}
                 />
                 {lowbyrinthNodes.map((node, index) => (
