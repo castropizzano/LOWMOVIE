@@ -15,6 +15,7 @@ O projeto LOWMOVIE™ adota uma estratégia deliberada de preservação digital 
 | **Espelho offline** | Snapshot navegável do portal para acesso local |
 | **Arquivo de mídias** | Cópia organizada de todos os assets do projeto |
 | **Arquivos web públicos** | Internet Archive / Wayback Machine |
+| **DOI permanente** | [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438) via Zenodo |
 
 ---
 
