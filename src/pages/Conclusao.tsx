@@ -134,13 +134,10 @@ const Conclusao = () => {
                   Lowbyrinth™ como Ferramenta Pedagógica
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — também sugere possíveis aplicações pedagógicas.
+                  O Lowbyrinth™ — labirinto conceitual que organiza a poética do LowMovie™ — sugere também aplicações pedagógicas que pretendo explorar.
                 </p>
                 <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  Em contextos de ensino, o diagrama pode funcionar como ferramenta de mediação em processos de aprendizagem em arte, design e audiovisual. Nesse sentido, ele pode ser compreendido como um mapa conceitual navegável, no qual estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed text-justify">
-                  A ideia de percurso, característica do labirinto, aproxima-se de abordagens pedagógicas que valorizam a experimentação, a descoberta e o desenvolvimento de processos autorais.
+                  Penso nele como um mapa conceitual navegável: estudantes percorrem camadas de sentido, exploram referências e constroem trajetórias criativas próprias.
                 </p>
               </div>
 
