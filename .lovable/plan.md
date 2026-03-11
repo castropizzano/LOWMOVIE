@@ -22,5 +22,15 @@
 - README.md L32: "simultaneamente" → "a um só tempo,"
 - Defense.tsx L30: removed serial comma before "e"
 
+## Completed: Visual Design Consistency Audit
+
+8 fixes across 6 files:
+- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
+- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
+- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
+- Index.tsx: Cover image added grayscale hover:grayscale-0
+- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
+- Mapa.tsx: Added text-justify to instruction text
+
 ### Resolved
 - Hellraiser epigraph removed from Index.tsx
