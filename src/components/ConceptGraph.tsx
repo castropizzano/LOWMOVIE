@@ -286,6 +286,7 @@ const ConceptGraph = () => {
                 onMouseDown={(e) => handleMouseDown(node.id, e)}
                 onMouseEnter={() => setHoveredNode(node.id)}
                 onMouseLeave={() => setHoveredNode(null)}
+                onTouchStart={(e) => { e.stopPropagation(); setHoveredNode(hoveredNode === node.id ? null : node.id); }}
                 className="cursor-pointer"
                 opacity={dimmed ? 0.2 : 1}
               >

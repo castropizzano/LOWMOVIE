@@ -590,7 +590,7 @@ const Defense = () => {
       {currentBlock > 0 && (
         <button
           onClick={(e) => { e.stopPropagation(); navigate("/home"); }}
-          className="absolute top-4 left-4 z-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
+          className="absolute top-[calc(1rem+env(safe-area-inset-top))] left-4 z-20 text-muted-foreground/50 hover:text-muted-foreground transition-colors pointer-events-auto"
           title={t("defense.backToPortal")}
         >
           <X className="h-5 w-5" />
