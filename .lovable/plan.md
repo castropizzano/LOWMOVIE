@@ -1,11 +1,7 @@
 
-## Fix: Lightbox caption visibility
+## Completed: Reduce em dash (—) overuse
 
-**Problem**: In `ImageLightbox.tsx`, the lightbox container is `h-[80vh]` and the image is `max-h-[80vh]`. When the image fills the container, the caption (`mt-2`) overflows below the visible area.
+~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
 
-**Solution**: Reduce the image `max-h` to `max-h-[75vh]` to leave room for the caption below it. This ensures the caption remains visible within the 80vh container.
-
-**File**: `src/components/ImageLightbox.tsx` (line 51)
-- Change `max-h-[80vh]` to `max-h-[75vh]` on the lightbox `<img>`
-
-This affects all lightbox instances consistently, including blocks 01 (Punkinho) and 05 (Crew LowPressure) in Defense Mode.
+### Pending author decision
+- Hellraiser epigraph on Home page (Index.tsx lines 98-101): keep or remove?
