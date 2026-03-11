@@ -190,7 +190,7 @@ const Defense = () => {
         setCurrentBlock(BLOCKS.length - 1);
       } else if (e.key === "Escape") {
         if (document.querySelector("[role='dialog'][data-state='open']")) return;
-        navigate("/");
+        navigate("/home");
       }
     };
     window.addEventListener("keydown", handler);

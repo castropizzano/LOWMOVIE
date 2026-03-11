@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import { lowbyrinthNodes } from "@/data/lowbyrinth";
+import { lowbyrinthNodes, LowbyrinthNode } from "@/data/lowbyrinth";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useTranslation } from "react-i18next";
 
@@ -17,12 +17,15 @@ const NodeCard = ({
   onToggle,
   onNavigate,
 }: {
-  node: (typeof lowbyrinthNodes)[0];
+  node: LowbyrinthNode;
   isActive: boolean;
   onToggle: () => void;
   onNavigate: (path: string) => void;
 }) => {
   const { t } = useTranslation();
+  const title = t(`lowbyrinthData.${node.key}.title`);
+  const conceito = t(`lowbyrinthData.${node.key}.conceito`);
+
   return (
     <div
       className={`
@@ -35,9 +38,9 @@ const NodeCard = ({
       onClick={onToggle}
     >
       <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-1">
-        {node.conceito}
+        {conceito}
       </p>
-      <p className="text-sm font-semibold text-foreground">{node.title}</p>
+      <p className="text-sm font-semibold text-foreground">{title}</p>
 
       <AnimatePresence>
         {isActive && (
@@ -50,21 +53,25 @@ const NodeCard = ({
           >
             <div className="pt-3 mt-3 border-t border-border space-y-2">
               <p className="text-[11px] uppercase tracking-widest text-muted-foreground/60 mb-2">{t("lowbyrinth.driftTo")}</p>
-              {node.derivas.map((d, i) => (
-                <button
-                  key={i}
-                  onClick={(e) => { e.stopPropagation(); onNavigate(d.to); }}
-                  className="block w-full text-left p-2 rounded bg-foreground/5 hover:bg-foreground/10 transition-colors"
-                >
-                  <p className="text-xs font-semibold text-foreground/80">{d.label}</p>
-                  <p className="text-[11px] text-muted-foreground leading-relaxed mt-0.5">{d.justificativa}</p>
-                </button>
-              ))}
+              {node.derivas.map((d, i) => {
+                const label = t(`lowbyrinthData.${node.key}.derivas.${d.index}.label`);
+                const justificativa = t(`lowbyrinthData.${node.key}.derivas.${d.index}.justificativa`);
+                return (
+                  <button
+                    key={i}
+                    onClick={(e) => { e.stopPropagation(); onNavigate(d.to); }}
+                    className="block w-full text-left p-2 rounded bg-foreground/5 hover:bg-foreground/10 transition-colors"
+                  >
+                    <p className="text-xs font-semibold text-foreground/80">{label}</p>
+                    <p className="text-[11px] text-muted-foreground leading-relaxed mt-0.5">{justificativa}</p>
+                  </button>
+                );
+              })}
               <button
                 onClick={(e) => { e.stopPropagation(); onNavigate(node.path); }}
                 className="text-[11px] uppercase tracking-widest text-muted-foreground hover:text-foreground/80 transition-colors mt-2"
               >
-                → {t("lowbyrinth.goTo")} {node.title}
+                → {t("lowbyrinth.goTo")} {title}
               </button>
             </div>
           </motion.div>
