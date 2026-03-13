@@ -161,7 +161,7 @@ const MethodDiagram = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
         >
-          <circle cx={cx} cy={cy} r="35" fill="none" stroke="hsl(300, 60%, 45%)" strokeWidth="2" />
+          <circle cx={cx} cy={cy} r="45" fill="none" stroke="hsl(300, 60%, 45%)" strokeWidth="2" />
           <motion.circle
             cx={cx}
             cy={cy}
