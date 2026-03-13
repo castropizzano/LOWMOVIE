@@ -198,14 +198,14 @@ const MethodDiagram = () => {
 
         {expansionItems.map((item, i) => {
           const angle = (Math.PI * 2 * i) / expansionItems.length - Math.PI / 2;
-          const startR = 235;
-          const endR = 250;
+          const startR = 310;
+          const endR = 330;
           const x1 = cx + Math.cos(angle) * startR;
           const y1 = cy + Math.sin(angle) * startR;
           const x2 = cx + Math.cos(angle) * endR;
           const y2 = cy + Math.sin(angle) * endR;
-          const tx = cx + Math.cos(angle) * (endR + 8);
-          const ty = cy + Math.sin(angle) * (endR + 8);
+          const tx = cx + Math.cos(angle) * (endR + 12);
+          const ty = cy + Math.sin(angle) * (endR + 12);
           return (
             <motion.g
               key={item}
