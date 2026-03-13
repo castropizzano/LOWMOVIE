@@ -6,18 +6,18 @@ import { useTranslation } from "react-i18next";
 const LAYER_IDS = ["experiencia", "processo", "triade", "conceitos"] as const;
 
 const layerMeta = [
-  { id: "experiencia", radius: 230, color: "hsl(0, 0%, 30%)", activeColor: "hsl(300, 60%, 45%)" },
-  { id: "processo", radius: 180, color: "hsl(0, 0%, 35%)", activeColor: "hsl(300, 60%, 50%)" },
-  { id: "triade", radius: 130, color: "hsl(0, 0%, 40%)", activeColor: "hsl(300, 60%, 55%)" },
-  { id: "conceitos", radius: 80, color: "hsl(0, 0%, 45%)", activeColor: "hsl(300, 60%, 60%)" },
+  { id: "experiencia", radius: 300, color: "hsl(0, 0%, 30%)", activeColor: "hsl(300, 60%, 45%)" },
+  { id: "processo", radius: 240, color: "hsl(0, 0%, 35%)", activeColor: "hsl(300, 60%, 50%)" },
+  { id: "triade", radius: 180, color: "hsl(0, 0%, 40%)", activeColor: "hsl(300, 60%, 55%)" },
+  { id: "conceitos", radius: 115, color: "hsl(0, 0%, 45%)", activeColor: "hsl(300, 60%, 60%)" },
 ];
 
 const MethodDiagram = () => {
   const [activeLayer, setActiveLayer] = useState<string | null>(null);
   const isMobile = useIsMobile();
   const { t } = useTranslation();
-  const cx = 260;
-  const cy = 260;
+  const cx = 350;
+  const cy = 350;
 
   const layers = layerMeta.map((meta, i) => ({
     ...meta,
@@ -91,7 +91,7 @@ const MethodDiagram = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <svg width="520" height="520" viewBox="0 0 520 520" className="max-w-full">
+      <svg viewBox="0 0 700 700" className="w-full max-w-2xl">
         {layers.map((layer, i) => (
           <motion.g
             key={layer.id}
@@ -161,11 +161,11 @@ const MethodDiagram = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
         >
-          <circle cx={cx} cy={cy} r="35" fill="none" stroke="hsl(300, 60%, 45%)" strokeWidth="2" />
+          <circle cx={cx} cy={cy} r="45" fill="none" stroke="hsl(300, 60%, 45%)" strokeWidth="2" />
           <motion.circle
             cx={cx}
             cy={cy}
-            r="35"
+            r="45"
             fill="hsl(300, 60%, 45%)"
             fillOpacity="0.1"
             animate={{ fillOpacity: [0.05, 0.15, 0.05] }}
@@ -198,14 +198,14 @@ const MethodDiagram = () => {
 
         {expansionItems.map((item, i) => {
           const angle = (Math.PI * 2 * i) / expansionItems.length - Math.PI / 2;
-          const startR = 235;
-          const endR = 250;
+          const startR = 310;
+          const endR = 330;
           const x1 = cx + Math.cos(angle) * startR;
           const y1 = cy + Math.sin(angle) * startR;
           const x2 = cx + Math.cos(angle) * endR;
           const y2 = cy + Math.sin(angle) * endR;
-          const tx = cx + Math.cos(angle) * (endR + 8);
-          const ty = cy + Math.sin(angle) * (endR + 8);
+          const tx = cx + Math.cos(angle) * (endR + 12);
+          const ty = cy + Math.sin(angle) * (endR + 12);
           return (
             <motion.g
               key={item}
@@ -220,7 +220,7 @@ const MethodDiagram = () => {
                 textAnchor={Math.cos(angle) > 0.1 ? "start" : Math.cos(angle) < -0.1 ? "end" : "middle"}
                 dominantBaseline="middle"
                 fill="rgba(255,255,255,0.35)"
-                fontSize="9"
+                fontSize="11"
                 fontWeight="600"
                 style={{ fontFamily: "Manrope, sans-serif" }}
               >
