@@ -165,7 +165,7 @@ const MethodDiagram = () => {
           <motion.circle
             cx={cx}
             cy={cy}
-            r="35"
+            r="45"
             fill="hsl(300, 60%, 45%)"
             fillOpacity="0.1"
             animate={{ fillOpacity: [0.05, 0.15, 0.05] }}
