@@ -16,8 +16,8 @@ const MethodDiagram = () => {
   const [activeLayer, setActiveLayer] = useState<string | null>(null);
   const isMobile = useIsMobile();
   const { t } = useTranslation();
-  const cx = 350;
-  const cy = 350;
+  const cx = 400;
+  const cy = 400;
 
   const layers = layerMeta.map((meta, i) => ({
     ...meta,
@@ -91,7 +91,7 @@ const MethodDiagram = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <svg viewBox="0 0 700 700" className="w-full max-w-2xl">
+      <svg viewBox="0 0 800 800" className="w-full max-w-2xl">
         {layers.map((layer, i) => (
           <motion.g
             key={layer.id}
