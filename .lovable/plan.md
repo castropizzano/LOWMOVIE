@@ -1,47 +1,16 @@
 
-## Completed: Reduce em dash (—) overuse
 
-~45 em dashes replaced across 11 files with colons, periods, commas, or mid-dots. Kept em dashes only in cases of natural dramatic pause or emphatic parenthetical (e.g., Defense.tsx rhetorical contrasts, Conceitos.tsx key conceptual distinctions, Metodologia.tsx "Escutar é mais do que ouvir").
+# Fix: Labels de expansão cortados na borda direita
 
-## Completed: Human Writing Audit
+## Problema
+Os labels de expansão posicionados no lado direito do diagrama (como "Lowzine") usam `textAnchor="start"` e se estendem além do viewBox de 700px.
 
-~20 edits across 7 files:
-- Residual em dashes replaced in Conclusao.tsx, conceptMap.ts, Conceitos.tsx
-- Verb variety improved in Apresentacao.tsx (constitui→formação, configura→representa, constitui→apresenta) and FAQ.tsx (configura→constitui)
-- Overly synthetic passages rewritten in Apresentacao.tsx, Estrutura.tsx, Conclusao.tsx
-- Route fix: lowbyrinth.ts `/faq` → `/questoes`
+## Solução — `src/components/MethodDiagram.tsx`
 
-## Completed: Full Editorial Audit (pre-defense)
+1. **Expandir viewBox** de `700x700` para `800x800`, recentrar em (400, 400)
+2. **Manter os raios iguais** — o diagrama não muda de tamanho, apenas ganha margem
+3. **Atualizar `cx`/`cy`** de 350 para 400
+4. **Resultado**: ~50px de margem extra em cada lado para os labels não cortarem
 
-7 edits across 6 files:
-- MethodManual.tsx L123: "constitui" → "é"
-- Conceitos.tsx L40: "—" → ":" (align with conceptMap.ts)
-- Filme.tsx L69: "constitui" → "possui"
-- Metodologia.tsx L109: "articula" → "formula"
-- Conclusao.tsx L102: "não pretende estabelecer" → "não propõe"
-- README.md L32: "simultaneamente" → "a um só tempo,"
-- Defense.tsx L30: removed serial comma before "e"
+Alternativa mais leve: reduzir `endR + 12` para `endR + 8` e diminuir fontSize para 10, mas isso sacrifica legibilidade. O viewBox maior é a solução mais limpa.
 
-## Completed: Visual Design Consistency Audit
-
-8 fixes across 6 files:
-- MethodManual.tsx: All hardcoded white/black → semantic tokens (text-foreground, bg-background, border-border); red hsl(0,70%,50%) → text-primary
-- LowbyrinthMode.tsx: All hardcoded white/black → semantic tokens
-- MethodDiagram.tsx: Red activeColor hsl(0,70%,XX%) → primary hue hsl(300,60%,XX%); mobile hardcoded colors → semantic tokens
-- Index.tsx: Cover image added grayscale hover:grayscale-0
-- Conclusao.tsx: All border-border/40 → border-border; LowZine image added grayscale
-- Mapa.tsx: Added text-justify to instruction text
-
-### Resolved
-- Hellraiser epigraph removed from Index.tsx
-
-## Completed: Ultra-Comprehensive Final Audit
-
-All critical issues resolved:
-
-1. **NotFound link** — `href="/"` → `href="/home"` (no more Intro re-trigger)
-2. **Defense Mode i18n** — All hardcoded PT text moved to `defense.*` keys in pt.json/en.json; Defense.tsx fully refactored to use `t()`
-3. **ConceptGraph i18n** — All node labels/descriptions added to `conceptMap.nodes.*` in both locales; ConceptGraph.tsx uses `t()` with fallback
-4. **CITATION.cff** — Empty ORCID field removed
-5. **Repetitive patterns** — 7 targeted edits in pt.json: varied "constitui", "articula", "constituem" with "opera", "funde", "oferecem", "compõem", "funcionar como"
-6. **WelcomeOverlay** — Zod message hardcoded but has no visual impact (documented)
