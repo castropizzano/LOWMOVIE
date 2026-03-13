@@ -91,7 +91,7 @@ const MethodDiagram = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <svg width="520" height="520" viewBox="0 0 520 520" className="max-w-full">
+      <svg viewBox="0 0 700 700" className="w-full max-w-2xl">
         {layers.map((layer, i) => (
           <motion.g
             key={layer.id}
