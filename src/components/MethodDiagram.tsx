@@ -6,10 +6,10 @@ import { useTranslation } from "react-i18next";
 const LAYER_IDS = ["experiencia", "processo", "triade", "conceitos"] as const;
 
 const layerMeta = [
-  { id: "experiencia", radius: 230, color: "hsl(0, 0%, 30%)", activeColor: "hsl(300, 60%, 45%)" },
-  { id: "processo", radius: 180, color: "hsl(0, 0%, 35%)", activeColor: "hsl(300, 60%, 50%)" },
-  { id: "triade", radius: 130, color: "hsl(0, 0%, 40%)", activeColor: "hsl(300, 60%, 55%)" },
-  { id: "conceitos", radius: 80, color: "hsl(0, 0%, 45%)", activeColor: "hsl(300, 60%, 60%)" },
+  { id: "experiencia", radius: 300, color: "hsl(0, 0%, 30%)", activeColor: "hsl(300, 60%, 45%)" },
+  { id: "processo", radius: 240, color: "hsl(0, 0%, 35%)", activeColor: "hsl(300, 60%, 50%)" },
+  { id: "triade", radius: 180, color: "hsl(0, 0%, 40%)", activeColor: "hsl(300, 60%, 55%)" },
+  { id: "conceitos", radius: 115, color: "hsl(0, 0%, 45%)", activeColor: "hsl(300, 60%, 60%)" },
 ];
 
 const MethodDiagram = () => {
