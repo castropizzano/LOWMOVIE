@@ -16,8 +16,8 @@ const MethodDiagram = () => {
   const [activeLayer, setActiveLayer] = useState<string | null>(null);
   const isMobile = useIsMobile();
   const { t } = useTranslation();
-  const cx = 260;
-  const cy = 260;
+  const cx = 350;
+  const cy = 350;
 
   const layers = layerMeta.map((meta, i) => ({
     ...meta,
