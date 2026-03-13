@@ -220,7 +220,7 @@ const MethodDiagram = () => {
                 textAnchor={Math.cos(angle) > 0.1 ? "start" : Math.cos(angle) < -0.1 ? "end" : "middle"}
                 dominantBaseline="middle"
                 fill="rgba(255,255,255,0.35)"
-                fontSize="9"
+                fontSize="11"
                 fontWeight="600"
                 style={{ fontFamily: "Manrope, sans-serif" }}
               >
