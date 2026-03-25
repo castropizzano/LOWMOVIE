@@ -107,6 +107,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <a href="https://github.com/castropizzano/lowmovie/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-cd59e8?style=flat&labelColor=1a1a1a" alt="License" className="h-5" />
                   </a>
+                  <a href="https://orcid.org/0009-0000-3525-1713" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/ORCID-0009--0000--3525--1713-cd59e8?style=flat&logo=orcid&labelColor=1a1a1a" alt="ORCID" className="h-5" />
+                  </a>
                 </div>
               </div>
             </div>
