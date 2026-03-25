@@ -376,6 +376,10 @@
     "subtitle": "Interactive cartography of relationships between authors, concepts, and thematic fields",
     "instructions": "Drag nodes to reorganize. Hover to see definitions. Use scroll to zoom and drag the background to navigate."
   },
+  "timeline": {
+    "title": "Academic CV",
+    "subtitle": "Academic and professional trajectory extracted from the Lattes CV"
+  },
   "lowbyrinth": {
     "title": "Lowbyrinth™",
     "subtitle": "Drift. The journey is knowledge.",
