@@ -642,7 +642,7 @@ export const timelineEntries: TimelineEntry[] = ([
     title: "Interações da Crítica de Processo no Cinema e nas Artes do Vídeo",
     subtitle: "Participação em Evento Acadêmico",
   },
-].sort((a, b) => a.year - b.year);
+] as TimelineEntry[]).sort((a, b) => a.year - b.year);
 
 export const categoryLabels: Record<TimelineCategory, { pt: string; en: string }> = {
   formacao: { pt: "Formação", en: "Education" },
