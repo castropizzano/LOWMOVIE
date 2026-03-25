@@ -10,6 +10,7 @@ import {
   HelpCircle,
   CheckCircle,
   Network,
+  GraduationCap,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import lowpressureLogo from "@/assets/lowpressure-logo.png";
@@ -40,6 +41,7 @@ const itemDefs = [
   { key: "questoes", url: "/questoes", icon: HelpCircle },
   { key: "conclusao", url: "/conclusao", icon: CheckCircle },
   { key: "mapa", url: "/mapa", icon: Network },
+  { key: "timeline", url: "/timeline", icon: GraduationCap },
 ];
 
 export function AppSidebar() {
