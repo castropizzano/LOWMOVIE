@@ -36,7 +36,7 @@ export const idiomas = [
   { nome: "Inglês", nivel: "Intermediário" },
 ];
 
-export const timelineEntries: TimelineEntry[] = [
+export const timelineEntries: TimelineEntry[] = ([
   // ═══════════ FORMAÇÃO ═══════════
   {
     year: 1999,
