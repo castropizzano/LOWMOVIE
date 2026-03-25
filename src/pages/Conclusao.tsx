@@ -108,6 +108,9 @@ const Conclusao = () => {
                 <a href="https://drive.google.com/file/d/1mxB33_MHvVK0uLEej2oJqv6HRZuxZggm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
                   <span className="text-sm font-medium text-foreground/80">{t("conclusao.openMemorial")}</span>
                 </a>
+                <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCertificados")}</span>
+                </a>
               </div>
             </div>
           </div>

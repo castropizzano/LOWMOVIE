@@ -89,7 +89,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
               </div>
               <div className="space-y-2">
                 <div className="flex flex-col md:flex-row md:justify-between">
-                  <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.university")}</p>
+                  <a href="https://ppgcineav.unespar.edu.br/pesquisadores/discentes_new/Ingressantes%20PPG-CINEAV" target="_blank" rel="noopener noreferrer" className="text-xs text-muted-foreground hover:text-primary transition-colors leading-relaxed">{t("footer.university")}</a>
                   <p className="text-xs text-muted-foreground leading-relaxed md:text-right">{t("footer.advisor")}</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
@@ -106,6 +106,9 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   </a>
                   <a href="https://github.com/castropizzano/lowmovie/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">
                     <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-cd59e8?style=flat&labelColor=1a1a1a" alt="License" className="h-5" />
+                  </a>
+                  <a href="https://orcid.org/0009-0000-3525-1713" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.shields.io/badge/ORCID-0009--0000--3525--1713-cd59e8?style=flat&logo=orcid&labelColor=1a1a1a" alt="ORCID" className="h-5" />
                   </a>
                 </div>
               </div>
