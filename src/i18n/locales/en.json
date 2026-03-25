@@ -10,7 +10,8 @@
     "contribuicoes": "Contributions",
     "questoes": "Questions",
     "conclusao": "Conclusion",
-    "mapa": "Map"
+    "mapa": "Map",
+    "timeline": "CV"
   },
   "header": {
     "lowbyrinth": "Lowbyrinth™",
@@ -374,6 +375,10 @@
     "title": "Concept Map",
     "subtitle": "Interactive cartography of relationships between authors, concepts, and thematic fields",
     "instructions": "Drag nodes to reorganize. Hover to see definitions. Use scroll to zoom and drag the background to navigate."
+  },
+  "timeline": {
+    "title": "Academic CV",
+    "subtitle": "Academic and professional trajectory extracted from the Lattes CV"
   },
   "lowbyrinth": {
     "title": "Lowbyrinth™",
