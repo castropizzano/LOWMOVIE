@@ -89,7 +89,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
               </div>
               <div className="space-y-2">
                 <div className="flex flex-col md:flex-row md:justify-between">
-                  <p className="text-xs text-muted-foreground leading-relaxed">{t("footer.university")}</p>
+                  <a href="https://ppgcineav.unespar.edu.br/pesquisadores/discentes_new/Ingressantes%20PPG-CINEAV" target="_blank" rel="noopener noreferrer" className="text-xs text-muted-foreground hover:text-primary transition-colors leading-relaxed">{t("footer.university")}</a>
                   <p className="text-xs text-muted-foreground leading-relaxed md:text-right">{t("footer.advisor")}</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between">
