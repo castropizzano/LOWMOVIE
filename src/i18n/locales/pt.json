@@ -376,6 +376,10 @@
     "subtitle": "Cartografia interativa das relações entre autores, conceitos e campos temáticos",
     "instructions": "Arraste os nós para reorganizar. Passe o cursor para ver definições. Use scroll para zoom e arraste o fundo para navegar."
   },
+  "timeline": {
+    "title": "Currículo Acadêmico",
+    "subtitle": "Trajetória acadêmica e profissional extraída do Currículo Lattes"
+  },
   "lowbyrinth": {
     "title": "Lowbyrinth™",
     "subtitle": "Derive. O percurso é o conhecimento.",
