@@ -1,66 +1,38 @@
-# Timeline Acadêmica — Página com dados do Lattes XML
-
-## Visão geral
-
-Criar uma página **"/timeline"** com uma linha do tempo vertical interativa mostrando a trajetória acadêmica e profissional do Castro Pizzano, extraída do XML do Lattes. A página seguirá o estilo visual do portal (dark, tipografia uppercase, cards com bordas sutis).
-
-## Dados extraídos do XML
-
-O XML contém dados ricos que serão organizados em categorias na timeline:
 
 
-| Categoria                | Dados                                                                                                                               | Período    |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| **Formação**             | Técnico em Design (UTFPR), Direção Cinematográfica (AIC), Publicidade (UTP, UP), Gestão da Comunicação (UTP), Direção de Arte (UTP) | 1999–2016  |
-| **Mestrado**             | PPG-CINEAV, UNESPAR                                                                                                                 | 2024–atual |
-| **Atuação profissional** | CasaTreze, Sabre Vision, Fortune Skate, LowPressure, RadioTreze, AnotherOther, Bematech, etc. (~20 vínculos)                        | 2003–atual |
-| **Publicações**          | Artigos na Percurso e Harpia                                                                                                        | 2014, 2025 |
-| **Produções técnicas**   | Livros (Acid Neon, Carcoma, Mirage, Oriki), produções digitais (THEVØIDN13, NYX, LowMovie Portal)                                   | 2017–2026  |
-| **Áreas de atuação**     | Artes, Cinema, Design, Comunicação, Educação                                                                                        | —          |
-| **Idiomas**              | Português, Espanhol, Inglês                                                                                                         | —          |
+# Revisão Completa do Portal — Tudo Pronto para a Defesa
 
+## Resultado da Auditoria: **Portal Aprovado** ✔
 
-## Implementação
+Revisei todos os 14 arquivos de páginas, componentes de layout, navegação, rodapé, i18n, index.html, README, CITATION.cff e Defense Mode. **Não encontrei problemas que exijam correção.**
 
-### 1. Arquivo de dados: `src/data/lattesTimeline.ts`
+## Checklist Verificado
 
-Dados hardcoded (extraídos manualmente do XML) organizados como array tipado:
+| Item | Status |
+|---|---|
+| **14 rotas** funcionais (/, /home, /apresentacao ... /defense) | OK |
+| **Sidebar** com 12 itens na ordem correta da dissertação | OK |
+| **Fluxo de navegação** (NextSectionButton) encadeado corretamente: Apresentação → Metodologia → Estrutura → Conceitos → Filme → Coletivo → Contribuições → Questões → Conclusão → Mapa | OK |
+| **Defense Mode** com 14 blocos (0-13), teclado, clique, dots de progresso | OK |
+| **Rodapé** com Lattes, ORCID badge, DOI badge, License badge, link UNESPAR discentes, email, banca, orientador | OK |
+| **Conclusão** com dissertação PDF, publicação Harpia, memorial, certificados Lattes, entrevistas com vídeos/transcrições, manuais de identidade | OK |
+| **Timeline Acadêmica** com dados do Lattes, filtros por categoria, layout responsivo | OK |
+| **Mapa Conceitual** interativo (ConceptGraph) | OK |
+| **i18n** PT/BR e EN com switcher no header | OK |
+| **index.html** com meta tags OG, Twitter, favicon, canonical URL, Google Fonts | OK |
+| **CITATION.cff** com DOI Zenodo, metadados corretos | OK |
+| **README.md** institucional completo | OK |
+| **Console** sem erros ou warnings | OK |
+| **Intro** com vídeo, botão de entrada, skip se já visto | OK |
+| **Lowbyrinth™** e **Manual do Método** acessíveis pelo header | OK |
+| **Grayscale → cor no hover** em todas as mídias | OK |
+| **YouTube via youtube-nocookie.com** com sandbox | OK |
+| **404 page** funcional com link para /home | OK |
+| **Acesso ao Defense Mode** via triple-click na capa | OK |
 
-```ts
-type TimelineEntry = {
-  year: number;
-  yearEnd?: number;
-  category: 'formacao' | 'profissional' | 'publicacao' | 'producao' | 'mestrado';
-  title: string;
-  subtitle?: string;
-  institution?: string;
-  status?: string;
-}
-```
+## Conclusão
 
-~30-35 entradas ordenadas cronologicamente.
+O portal está **completo, coerente e funcional** para a apresentação na banca. Todas as seções seguem o padrão visual (dark mode, tipografia uppercase, max-w-5xl), a navegação é consistente, os links externos estão corretos, e o Defense Mode está pronto para projeção.
 
-### 2. Página: `src/pages/Timeline.tsx`
+**Nenhuma alteração de código é necessária.** O GitHub será atualizado automaticamente pelo sync bidirecional do Lovable ao aprovar este plano (sem mudanças de arquivo, apenas confirmação).
 
-- Layout vertical com linha central e marcadores por ano
-- Cards alternados esquerda/direita (desktop), empilhados (mobile)
-- Filtro por categoria no topo (chips clicáveis)
-- Cores distintas por categoria usando a paleta do portal (primary, muted tones)
-- Seção de resumo no topo com bio curta extraída do XML
-- Link para o Lattes completo e ORCID
-
-### 3. Integrações
-
-- **App.tsx**: nova rota `/timeline`
-- **AppSidebar.tsx**: novo item no menu (ícone `GraduationCap` ou `Clock`)
-- **i18n pt.json / en.json**: traduções para sidebar, título da página e categorias
-- **Conclusao.tsx**: o NextSectionButton atual vai para `/mapa`; a timeline pode ser linkada na seção de Acervo
-
-### 4. Estilo visual
-
-- Linha central vertical com `border-l` ou pseudo-elemento
-- Cada entry: card com borda sutil, hover state, ano em destaque
-- Badges coloridos por categoria
-- Animação de entrada com o componente `AnimatedSection` já existente no projeto  
-  
-Insira todas as produções existentes no lattes, bancas, participaçoes, encontros, o conteúdo real e exato na integra, nessa timeline. pode ser uma página depois de mapa, apenas como referencia sobre o autor
