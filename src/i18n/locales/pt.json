@@ -841,23 +841,23 @@
       "lowbyrinth": {
         "name": "Lowbyrinth™",
         "tag": "Método",
-        "license": "CC BY-NC-SA 4.0 · Marca em formalização",
-        "desc": "O método é livre para uso acadêmico, pedagógico e em pesquisa-criação, mediante atribuição. Adaptações devem manter a mesma licença. Uso comercial — cursos pagos, consultorias, produtos derivados — requer autorização. A marca Lowbyrinth™ está em processo de formalização."
+        "license": "CC BY-NC-SA 4.0 · Marca reivindicada (™)",
+        "desc": "O método é livre para uso acadêmico, pedagógico e em pesquisa-criação, mediante atribuição. Adaptações devem manter a mesma licença. Uso comercial — cursos pagos, consultorias, produtos derivados — requer autorização. A marca Lowbyrinth™ é autoidentificada pelo autor; o depósito formal junto ao INPI está previsto como próximo passo."
       },
       "lowrunner": {
         "name": "Low Runner™",
         "tag": "Plataforma",
-        "license": "MIT License · Código aberto · Marca em formalização",
-        "desc": "O código-fonte do portal é livre para clonagem, modificação e uso, inclusive comercial, sob os termos da licença MIT. Atribuição é recomendada. A marca Low Runner™ identifica especificamente esta arquitetura de dissertação navegável e está em processo de formalização."
+        "license": "MIT License · Código aberto · Marca reivindicada (™)",
+        "desc": "O código-fonte do portal é livre para clonagem, modificação e uso, inclusive comercial, sob os termos da licença MIT. Atribuição é recomendada. A marca Low Runner™ identifica especificamente esta arquitetura de dissertação navegável e é autoidentificada pelo autor; depósito formal junto ao INPI e eventual registro de software estão previstos como próximos passos."
       }
     },
-    "trademarksLabel": "Marcas Registradas",
+    "trademarksLabel": "Marcas Reivindicadas",
     "trademarks": {
       "lowmovie": "LowMovie™",
       "lowbyrinth": "Lowbyrinth™",
       "lowrunner": "Low Runner™"
     },
-    "trademarksNote": "As três marcas estão em processo de formalização junto ao INPI (Instituto Nacional da Propriedade Industrial), nas classes adequadas a cada camada — obra audiovisual, método educacional e software. O uso público do símbolo ™ indica reivindicação de marca em curso.",
+    "trademarksNote": "O símbolo ™ é utilizado como sinalização de marca reivindicada pelo autor — diferente do símbolo ®, seu uso não exige registro prévio e indica publicamente a intenção de proteção autoral. O depósito formal junto ao INPI (Instituto Nacional da Propriedade Industrial), nas classes adequadas a cada camada — obra audiovisual, método educacional e software — está previsto como próximo passo após a defesa.",
     "contactLabel": "Contato para Licenciamento",
     "contactDesc": "Para usos comerciais, parcerias institucionais, licenciamento de método ou consultas sobre as marcas, entre em contato diretamente. Usos acadêmicos e pedagógicos seguem as licenças acima e não requerem contato prévio — apenas atribuição.",
     "contactCta": "Enviar E-mail"
