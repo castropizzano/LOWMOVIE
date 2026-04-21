@@ -11,7 +11,8 @@
     "questoes": "Questions",
     "conclusao": "Conclusion",
     "mapa": "Map",
-    "timeline": "CV"
+    "timeline": "CV",
+    "replicar": "Replicate"
   },
   "header": {
     "lowbyrinth": "Lowbyrinth™",
@@ -665,5 +666,49 @@
       }
     },
     "expansionItems": ["Film", "LowZine", "Digital Portal", "Events", "Living Archive"]
+  },
+  "replicar": {
+    "title": "Replicate this Portal",
+    "subtitle": "Open guide for researchers to adapt this infrastructure",
+    "manifesto": "This portal was designed as open infrastructure. Beyond presenting a research project, it offers a replicable model of academic digital archiving — combining GitHub, Zenodo, ORCID, Lattes, Drive and web hosting. Any researcher can clone this repository, adapt it to their dissertation, thesis or project, and build their own digital presence with permanent DOI, long-term preservation and international visibility. This page is a gesture of community contribution to open research-creation.",
+    "architectureTitle": "Integration Architecture",
+    "stepsTitle": "Step-by-Step",
+    "step1": {
+      "title": "Step 1 — Fork the Repository",
+      "desc": "Clone the public repository on GitHub. Everything is open source: structure, components, typography, navigation. No mandatory backend required."
+    },
+    "step2": {
+      "title": "Step 2 — Adapt the Content",
+      "desc": "Edit the JSON and TypeScript files with your research content. The structure is modular: texts live in src/i18n/locales, data in src/data, pages in src/pages."
+    },
+    "step3": {
+      "title": "Step 3 — Academic Identity",
+      "desc": "Update CITATION.cff with your name, ORCID, DOI and institution. In Layout.tsx, adjust Lattes, committee, advisor and research line links."
+    },
+    "step4": {
+      "title": "Step 4 — Permanent DOI via Zenodo",
+      "desc": "Connect your GitHub repository to Zenodo (CERN). Each GitHub release automatically generates a citable, permanently archived DOI."
+    },
+    "step5": {
+      "title": "Step 5 — Hosting",
+      "desc": "Choose where to publish. All options below are free for academic projects and support custom domains."
+    },
+    "step6": {
+      "title": "Step 6 — Preservation Strategy",
+      "desc": "Use the archive.sh script included in the repo to generate a complete archive: offline portal, Git history, original media and checksums. Combine with Wayback Machine to ensure longevity."
+    },
+    "stackTitle": "Technical Stack",
+    "stackNote": "All technologies are free, open, widely documented and maintained by active communities. Accessible learning curve for researchers with basic HTML/CSS knowledge.",
+    "licenseTitle": "Licensing and Attribution",
+    "codeReuse": "Code (Reusable)",
+    "codeReuseDesc": "The structure, components, design system, navigation and infrastructure can be freely reused for academic purposes, maintaining attribution.",
+    "contentRights": "Content (All Rights Reserved)",
+    "contentRightsDesc": "The dissertation texts, images, videos, interviews and original LowMovie™ materials remain under reserved rights of Castro Pizzano.",
+    "attributionRequest": "Attribution request: \"Based on LOWMOVIE™ Portal — Castro Pizzano (2026). DOI: 10.5281/zenodo.18950438\"",
+    "ctaTitle": "Next Steps",
+    "ctaRepo": "View Repository on GitHub",
+    "ctaPreservation": "Download Preservation Guide",
+    "ctaCite": "Cite this Project (DOI)",
+    "ctaContact": "Email for Questions"
   }
 }
