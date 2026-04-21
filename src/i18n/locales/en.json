@@ -157,6 +157,15 @@
       "downloadCta": "Download Toolkit (PDF)",
       "openLabel": "Open device — use, adapt, remix."
     },
+    "cite": {
+      "label": "How to cite this method",
+      "intro": "Lowbyrinth™ is an authorial method in development, formulated and applied within the dissertation LowMovie™ and the Creative Labyrinth. It can be cited independently in research, workshops, and productions that mobilize its operators.",
+      "methodLabel": "ABNT citation — method",
+      "methodAbnt": "PIZZANO, C. Lowbyrinth™: implicated research-creation method in cognitive spiral. In: LowMovie™ and the Creative Labyrinth. Curitiba: UNESPAR, 2026.",
+      "toolkitLabel": "ABNT citation — toolkit",
+      "toolkitAbnt": "PIZZANO, C. Lowbyrinth™ Pedagogical Toolkit. Curitiba: UNESPAR, 2026. Available at: lowmovie.lovable.app/docs/toolkit_metodologia_castro.pdf",
+      "note": "Lowbyrinth™ is a trademark in formalization. Its application in pedagogical, research, or creative contexts is free upon attribution (CC BY-NC-SA 4.0)."
+    },
     "next": "Structure"
   },
   "estrutura": {

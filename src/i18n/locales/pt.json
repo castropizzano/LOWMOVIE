@@ -157,6 +157,15 @@
       "downloadCta": "Baixar Toolkit em PDF",
       "openLabel": "Dispositivo aberto — use, adapte, remixe."
     },
+    "cite": {
+      "label": "Como citar este método",
+      "intro": "Lowbyrinth™ é um método autoral em desenvolvimento, formulado e aplicado no interior da dissertação LowMovie™ e o Labirinto Criativo. Ele pode ser citado de forma independente em pesquisas, oficinas e produções que mobilizem seus operadores.",
+      "methodLabel": "Citação ABNT — método",
+      "methodAbnt": "PIZZANO, C. Lowbyrinth™: método de pesquisa-criação implicada em espiral cognitiva. In: LowMovie™ e o Labirinto Criativo. Curitiba: UNESPAR, 2026.",
+      "toolkitLabel": "Citação ABNT — toolkit",
+      "toolkitAbnt": "PIZZANO, C. Toolkit Pedagógico Lowbyrinth™. Curitiba: UNESPAR, 2026. Disponível em: lowmovie.lovable.app/docs/toolkit_metodologia_castro.pdf",
+      "note": "Lowbyrinth™ é marca em formalização. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA 4.0)."
+    },
     "next": "Estrutura"
   },
   "estrutura": {
