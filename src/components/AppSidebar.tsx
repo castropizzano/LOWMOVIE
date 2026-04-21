@@ -34,10 +34,10 @@ import {
   SidebarFooter,
 } from "@/components/ui/sidebar";
 
-const itemDefs = [
+const itemDefs: Array<{ key: string; url: string; icon: typeof Home; divider?: boolean }> = [
   { key: "home", url: "/home", icon: Home },
   // Dissertação (leitura linear)
-  { key: "apresentacao", url: "/apresentacao", icon: Presentation },
+  { key: "apresentacao", url: "/apresentacao", icon: Presentation, divider: true },
   { key: "metodologia", url: "/metodologia", icon: FlaskConical },
   { key: "estrutura", url: "/estrutura", icon: LayoutGrid },
   { key: "conceitos", url: "/conceitos", icon: Lightbulb },
@@ -47,15 +47,15 @@ const itemDefs = [
   { key: "questoes", url: "/questoes", icon: HelpCircle },
   { key: "conclusao", url: "/conclusao", icon: CheckCircle },
   // Ecossistema (3 camadas)
-  { key: "ecossistema", url: "/ecossistema", icon: Layers },
+  { key: "ecossistema", url: "/ecossistema", icon: Layers, divider: true },
   { key: "replicar", url: "/replicar", icon: Share2 },
   { key: "licenca", url: "/licenca", icon: Scale },
   // Recursos (ferramentas de leitura)
-  { key: "mapa", url: "/mapa", icon: Network },
+  { key: "mapa", url: "/mapa", icon: Network, divider: true },
   { key: "defenseMode", url: "/defense-mode", icon: Projector },
   { key: "imprimir", url: "/imprimir", icon: Printer },
   // Anexo
-  { key: "timeline", url: "/timeline", icon: GraduationCap },
+  { key: "timeline", url: "/timeline", icon: GraduationCap, divider: true },
 ];
 
 export function AppSidebar() {
@@ -80,7 +80,11 @@ export function AppSidebar() {
                 const title = t(`nav.${item.key}`);
                 const active = location.pathname === item.url;
                 return (
-                  <SidebarMenuItem key={item.key}>
+                  <div key={item.key}>
+                    {item.divider && (
+                      <div className="my-2 mx-3 border-t border-sidebar-border/30" aria-hidden="true" />
+                    )}
+                    <SidebarMenuItem>
                     <SidebarMenuButton asChild isActive={active} tooltip={title}>
                       <NavLink
                         to={item.url}
@@ -91,7 +95,8 @@ export function AppSidebar() {
                         <span>{title}</span>
                       </NavLink>
                     </SidebarMenuButton>
-                  </SidebarMenuItem>
+                    </SidebarMenuItem>
+                  </div>
                 );
               })}
             </SidebarMenu>
