@@ -16,6 +16,7 @@ import Mapa from "./pages/Mapa";
 import Conclusao from "./pages/Conclusao";
 import Timeline from "./pages/Timeline";
 import Defense from "./pages/Defense";
+import Replicar from "./pages/Replicar";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -40,6 +41,7 @@ const App = () => (
         <Route path="/conclusao" element={<Conclusao />} />
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/defense" element={<Defense />} />
+        <Route path="/replicar" element={<Replicar />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
