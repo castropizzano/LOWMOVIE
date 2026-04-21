@@ -80,7 +80,11 @@ export function AppSidebar() {
                 const title = t(`nav.${item.key}`);
                 const active = location.pathname === item.url;
                 return (
-                  <SidebarMenuItem key={item.key}>
+                  <div key={item.key}>
+                    {item.divider && (
+                      <div className="my-2 mx-3 border-t border-sidebar-border/30" aria-hidden="true" />
+                    )}
+                    <SidebarMenuItem>
                     <SidebarMenuButton asChild isActive={active} tooltip={title}>
                       <NavLink
                         to={item.url}
@@ -91,7 +95,8 @@ export function AppSidebar() {
                         <span>{title}</span>
                       </NavLink>
                     </SidebarMenuButton>
-                  </SidebarMenuItem>
+                    </SidebarMenuItem>
+                  </div>
                 );
               })}
             </SidebarMenu>
