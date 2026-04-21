@@ -111,6 +111,9 @@ const Conclusao = () => {
                 <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
                   <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCertificados")}</span>
                 </a>
+                <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("metodologia.toolkit.downloadCta")}</span>
+                </a>
               </div>
             </div>
           </div>
