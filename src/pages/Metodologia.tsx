@@ -6,8 +6,8 @@ import { useTranslation } from "react-i18next";
 
 const eixoKeys = ["afeto", "escuta", "improviso"] as const;
 const opKeys = ["period", "instruments", "analysis", "positioning", "collection", "organization"] as const;
-const stepKeys = ["s1", "s2", "s3", "s4", "s5"] as const;
-const archetypeKeys = ["void", "noise", "signal", "struct"] as const;
+const stepKeys = ["s1", "s2", "s3"] as const;
+const archetypeKeys = ["instante", "borda", "fluxo"] as const;
 const applicationKeys = ["classroom", "workshops", "reflective", "research"] as const;
 
 const Metodologia = () => {
@@ -117,7 +117,7 @@ const Metodologia = () => {
                 {t("metodologia.toolkit.stepsLabel")}
               </p>
               <p className="text-xs text-muted-foreground mb-6">{t("metodologia.toolkit.stepsNote")}</p>
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+              <div className="grid gap-4 sm:grid-cols-3">
                 {stepKeys.map((key, i) => (
                   <div key={key} className="border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30 h-full">
                     <p className="text-3xl font-bold text-primary/80 mb-3">{String(i + 1).padStart(2, "0")}</p>
@@ -155,7 +155,7 @@ const Metodologia = () => {
                 {t("metodologia.toolkit.archetypesLabel")}
               </p>
               <p className="text-xs text-muted-foreground mb-6">{t("metodologia.toolkit.archetypesNote")}</p>
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-4 sm:grid-cols-3">
                 {archetypeKeys.map((key) => (
                   <div key={key} className="border border-border rounded-lg p-6 bg-card/30 transition-colors hover:border-primary/30 h-full">
                     <div className="flex items-baseline gap-3 mb-3">
