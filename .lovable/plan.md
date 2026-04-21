@@ -1,82 +1,110 @@
 
 
-# Toolkit em PDF — Versão Visual e Didática
+# Ecossistema LowMovie™ · Lowbyrinth™ · Low Runner™ — Arquitetura de 3 Camadas
 
-## Diagnóstico
+## Visão geral
 
-O PDF atual (`public/docs/toolkit_metodologia_castro.pdf`) é fiel ao conteúdo da dissertação, mas visualmente é **texto corrido em colunas** — sem a riqueza didática do `MethodDiagram` (concêntrico, simbólico, espacial) presente no portal. Falta a camada visual que torna o método memorável e replicável.
+Materializar no portal a arquitetura intelectual de 3 camadas distintas, fortalecendo a narrativa de defesa e formalizando a contribuição comunitária com proteção autoral coerente. Quatro frentes simultâneas, todas fiéis ao que já existe (sem inventar conteúdo novo).
 
-## Proposta
+---
 
-Reescrever o PDF como um **caderno visual de 6–7 páginas**, cada página dedicada a um bloco do método, usando linguagem gráfica análoga ao Manual do Método e à identidade do portal (dark/sóbrio, geometria precisa, tipografia uppercase, espaço respirado).
+## 1. Nova página `/ecossistema`
 
-## Estrutura visual proposta (6 páginas)
+Página dedicada que articula as 3 camadas como sistema integrado.
 
-### Página 1 — Capa
-- Fundo dark (#0a0a0a)
-- Título monumental em uppercase: **"TOOLKIT PEDAGÓGICO"**
-- Subtítulo: *Metodologia da Pesquisa — Castro Pizzano (2026)*
-- Marca tipográfica `LOWMOVIE™` no rodapé
-- Bloco mínimo: DOI, programa, banca
+### Estrutura
+- **Header**: título "ECOSSISTEMA" + subtítulo "Três camadas, uma pesquisa-criação"
+- **Intro curta** (2–3 linhas): explica que a pesquisa entrega não apenas uma dissertação, mas um ecossistema articulado de obra, método e plataforma
+- **3 cards verticais grandes** (um por camada), cada um com:
+  - Numeração (01 · 02 · 03) em `text-primary`
+  - Nome com ™ e tag de natureza (OBRA · MÉTODO · PLATAFORMA)
+  - Descrição de 3–4 linhas (verbatim da nossa conversa, fiel à dissertação)
+  - Lista de artefatos concretos (ex: LowMovie → filme + dissertação + DOI Zenodo)
+  - Status (Consolidado · Em formalização · Em expansão)
+  - Link para a seção/página correspondente do portal
+- **Diagrama relacional** simples (SVG): 3 círculos articulados mostrando como as camadas se conectam (LowMovie é o caso aplicado de Lowbyrinth, que é replicado via Low Runner)
+- **Bloco final "Estratégia de circulação"**: explica modelo híbrido (open-source + método licenciado + marcas registradas)
 
-### Página 2 — Diagrama Concêntrico dos 3 Eixos
-- Réplica em PDF do `MethodDiagram` do portal: três círculos concêntricos
-- Centro: **PESQUISA-CRIAÇÃO IMPLICADA**
-- Anel interno: **AFETO · ESCUTA · IMPROVISO** (3 setores)
-- Anel externo: **VIVÊNCIA SITUADA · CONVIVÊNCIA CRIATIVA · ESCUTA PARTILHADA**
-- Legenda mínima abaixo
+### Navegação
+- Adicionar `/ecossistema` à `AppSidebar` (entre Conclusão e Mapa, ou antes de Replicar)
+- Texto i18n PT/EN completo
 
-### Página 3 — Espiral Cognitiva (Bloom/Ferraz-Belhot)
-- Espiral desenhada vetorialmente (curva de Arquimedes)
-- 6 nós ao longo da espiral: **LEMBRAR → ENTENDER → APLICAR → ANALISAR → CRIAR → AVALIAR**
-- Ícones geométricos mínimos (círculo, triângulo, quadrado)
-- Citação curta da referência (Ferraz & Belhot, 2010)
+---
 
-### Página 4 — 3 Operadores Poéticos do Olhar
-- Grid horizontal de 3 blocos: **INSTANTE · BORDA · FLUXO**
-- Cada bloco: símbolo geométrico grande + nome uppercase + descrição curta de 2–3 linhas
-- Referência ao Cap. 1.1 da dissertação no rodapé
+## 2. Marca ™ consistente em "Low Runner"
 
-### Página 5 — 6 Conceitos Operadores
-- Grid 2×3 de cards minimalistas
-- Lowbyrinth™ · Corpo-câmera · Fabulação · Glitch como linguagem · D.I.Y. · Pesquisa-criação implicada
-- Cada card: número (01–06) grande em outline, nome, 1 linha de definição
+Auditoria global e padronização do uso de `Low Runner™` em todos os pontos onde aparece (atualmente só "Replicar" / "Replicate"):
 
-### Página 6 — Aplicações Pedagógicas + Créditos
-- Lista das aplicações reais (Branding, Produção Audiovisual, oficinas, curadorias)
-- Bloco de créditos final: autora, orientação, programa, DOI, licença, link do portal
+- Renomear seção `/replicar` mantendo URL, mas exibindo "**LOW RUNNER™** — Replique este Portal"
+- Atualizar entrada na sidebar
+- Atualizar referências em `/conclusao` (Acervo) e `/ecossistema`
+- Manter convenção já estabelecida em memória (`mem://content/branding-and-attribution`)
+- Atualizar a memória de branding incluindo `Low Runner™`
 
-## Identidade visual (todas as páginas)
+---
 
-- **Fundo**: dark `#0a0a0a` ou off-black
-- **Texto**: branco/cinza claro com hierarquia (títulos uppercase letter-spacing largo, corpo regular)
-- **Geometria**: linhas finas (0.5pt), círculos perfeitos, sem decoração supérflua
-- **Tipografia**: Helvetica/Inter (substituto Manrope no reportlab)
-- **Margens**: generosas, espaço respirado tipo Swiss design
-- **Numeração de página**: discreta no rodapé (`02 / 06`)
-- **Marca de rodapé** em todas as páginas: `LOWMOVIE™ — TOOLKIT PEDAGÓGICO`
+## 3. Nova página `/licenca`
 
-## Implementação técnica
+Documentação pública e elegante da estratégia de licença híbrida.
 
-### Ferramentas
-- `reportlab` para layout e tipografia
-- Desenho vetorial nativo (`canvas.circle`, `canvas.line`, `canvas.bezier`) — sem imagens raster
-- Espiral via parametrização matemática (curva de Arquimedes ponto a ponto)
+### Estrutura
+- **Intro**: política de circulação aberta com proteção de autoria
+- **3 blocos** correspondendo às 3 camadas:
+  - **LowMovie™ (obra)** → © Castro Pizzano 2026 · Todos os direitos reservados · DOI Zenodo · Cita ABNT obrigatória
+  - **Lowbyrinth™ (método)** → CC BY-NC-SA 4.0 · Uso acadêmico livre com atribuição · Uso comercial requer autorização · Marca registrada
+  - **Low Runner™ (código/plataforma)** → MIT License · Código aberto e replicável · Marca registrada · Atribuição recomendada
+- **Bloco "Marcas registradas"**: lista das 3 marcas com nota sobre processo INPI
+- **Bloco "Contato para licenciamento comercial"**: e-mail/forma de contato
+- Link para LICENSE no rodapé já existente
 
-### Arquivo afetado
-- `public/docs/toolkit_metodologia_castro.pdf` — regenerado (mesmo nome, não quebra links em `/conclusao` e `/metodologia`)
+---
 
-### QA visual obrigatório
-- Converter PDF em JPG via `pdftoppm -r 150`
-- Inspecionar **todas as 6 páginas** uma a uma
-- Verificar: margens, contraste, alinhamentos, sem overflow, sem sobreposição
-- Iterar até zero defeitos
+## 4. Bloco "Como citar este método" em `/conceitos` (ou `/metodologia`)
 
-## Conteúdo: fidelidade absoluta
+Adicionar instruções formais de citação **separadas** da citação da dissertação, posicionando Lowbyrinth™ como método citável independentemente.
 
-Todo o texto será **verbatim** do conteúdo já validado em `mem://project/content-structure/methodology-toolkit` — nenhum termo novo, nenhuma reinterpretação. A mudança é **exclusivamente visual/didática**.
+### Conteúdo
+- **Citação ABNT do método**:
+  > PIZZANO, C. **Lowbyrinth™**: método de navegação não-linear para pesquisa-criação. In: _LowMovie™ e o Labirinto Criativo_. Curitiba: UNESPAR, 2026.
+- **Citação ABNT do toolkit**:
+  > PIZZANO, C. **Toolkit Pedagógico Lowbyrinth™**. Curitiba: UNESPAR, 2026. Disponível em: <link do PDF>.
+- **Bloco breve**: "Lowbyrinth™ é um método autoral em desenvolvimento. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA)."
+
+Posição: ao final de `/metodologia` (após o Toolkit Pedagógico, antes do `NextSectionButton`) — junto da contribuição metodológica faz mais sentido que em `/conceitos`.
+
+---
+
+## Arquivos afetados
+
+| Arquivo | Mudança |
+|---|---|
+| `src/pages/Ecossistema.tsx` | (novo) Página completa das 3 camadas |
+| `src/pages/Licenca.tsx` | (novo) Página de licenciamento híbrido |
+| `src/pages/Replicar.tsx` | Renomear visualmente para "Low Runner™ — Replique este Portal" |
+| `src/pages/Metodologia.tsx` | Adicionar bloco "Como citar este método" no final |
+| `src/pages/Conclusao.tsx` | Atualizar referência a Low Runner™ no Acervo |
+| `src/components/AppSidebar.tsx` | Adicionar entradas `/ecossistema` e `/licenca`; renomear "Replicar" para "Low Runner" |
+| `src/App.tsx` | Adicionar rotas `/ecossistema` e `/licenca` |
+| `src/i18n/locales/pt.json` + `en.json` | Chaves completas para `ecossistema.*` e `licenca.*`, ajustes em `replicar.*` |
+| `mem://content/branding-and-attribution` | Atualizar com Low Runner™ |
+| `mem://features/ecosystem-architecture` | (nova memória) Documentar as 3 camadas como arquitetura oficial |
+| `mem://index.md` | Adicionar referência |
+
+---
+
+## Princípios mantidos
+
+- **Hallucination Zero**: zero conteúdo inventado — tudo deriva da dissertação, do que já existe no portal e da nossa conversa estratégica explícita
+- **Identidade visual**: dark mode, `max-w-5xl`, Manrope, uppercase em títulos, `border-border`, `bg-card/30`
+- **Bilíngue**: PT/EN completo desde o nascimento
+- **Sidebar enxuta**: avaliar agrupamento se ficar muito longa
+- **Footer**: nada muda; LICENSE já é referenciado
 
 ## Resultado esperado
 
-Um PDF que parece um **caderno de método de design suíço** ou um **diagrama de pesquisa publicado em journal acadêmico** — denso visualmente, leve textualmente, didaticamente memorável, coerente com a estética do portal e do Manual do Método. Material que a banca pode imprimir, anotar e que outros pesquisadores podem efetivamente usar.
+- Narrativa de defesa **muito mais forte**: "entreguei um ecossistema, não só uma dissertação"
+- Posicionamento público e juridicamente coerente das 3 marcas
+- Base sólida para registros INPI pós-defesa (marcas + software)
+- Contribuição comunitária com regras claras de uso e atribuição
+- Lowbyrinth™ formalmente citável como método independente — base direta para o doutorado
 
