@@ -123,6 +123,15 @@ const Conclusao = () => {
                 <a href="/licenca" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
                   <span className="text-sm font-medium text-foreground/80">{t("conclusao.openLicense")}</span>
                 </a>
+                <a href="/defense-mode" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openDefenseMode")}</span>
+                </a>
+                <a href="/imprimir" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openImprimir")}</span>
+                </a>
+                <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCaderno")}</span>
+                </a>
               </div>
             </div>
           </div>
