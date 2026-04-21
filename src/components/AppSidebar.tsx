@@ -12,6 +12,8 @@ import {
   Network,
   GraduationCap,
   Share2,
+  Layers,
+  Scale,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import lowpressureLogo from "@/assets/lowpressure-logo.png";
@@ -43,7 +45,9 @@ const itemDefs = [
   { key: "conclusao", url: "/conclusao", icon: CheckCircle },
   { key: "mapa", url: "/mapa", icon: Network },
   { key: "timeline", url: "/timeline", icon: GraduationCap },
+  { key: "ecossistema", url: "/ecossistema", icon: Layers },
   { key: "replicar", url: "/replicar", icon: Share2 },
+  { key: "licenca", url: "/licenca", icon: Scale },
 ];
 
 export function AppSidebar() {

@@ -235,6 +235,29 @@ const Metodologia = () => {
             </div>
           </AnimatedSection>
 
+          {/* Como citar este método */}
+          <AnimatedSection delay={0.95}>
+            <div className="mt-16 border border-border rounded-lg p-8 md:p-10 bg-card/30">
+              <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-6">
+                {t("metodologia.cite.label")}
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">
+                {t("metodologia.cite.intro")}
+              </p>
+              <div className="space-y-4">
+                <div className="border-l-2 border-primary/30 pl-4">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-foreground/70 mb-2">{t("metodologia.cite.methodLabel")}</p>
+                  <p className="text-sm font-mono text-foreground/80 leading-relaxed">{t("metodologia.cite.methodAbnt")}</p>
+                </div>
+                <div className="border-l-2 border-primary/30 pl-4">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-foreground/70 mb-2">{t("metodologia.cite.toolkitLabel")}</p>
+                  <p className="text-sm font-mono text-foreground/80 leading-relaxed">{t("metodologia.cite.toolkitAbnt")}</p>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground italic mt-6 leading-relaxed">{t("metodologia.cite.note")}</p>
+            </div>
+          </AnimatedSection>
+
           <NextSectionButton to="/estrutura" label={t("metodologia.next")} />
         </div>
       </section>

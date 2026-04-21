@@ -12,7 +12,9 @@
     "conclusao": "Conclusão",
     "mapa": "Mapa",
     "timeline": "Currículo",
-    "replicar": "Replicar"
+    "ecossistema": "Ecossistema",
+    "replicar": "Low Runner",
+    "licenca": "Licença"
   },
   "header": {
     "lowbyrinth": "Lowbyrinth™",
@@ -154,6 +156,15 @@
       },
       "downloadCta": "Baixar Toolkit em PDF",
       "openLabel": "Dispositivo aberto — use, adapte, remixe."
+    },
+    "cite": {
+      "label": "Como citar este método",
+      "intro": "Lowbyrinth™ é um método autoral em desenvolvimento, formulado e aplicado no interior da dissertação LowMovie™ e o Labirinto Criativo. Ele pode ser citado de forma independente em pesquisas, oficinas e produções que mobilizem seus operadores.",
+      "methodLabel": "Citação ABNT — método",
+      "methodAbnt": "PIZZANO, C. Lowbyrinth™: método de pesquisa-criação implicada em espiral cognitiva. In: LowMovie™ e o Labirinto Criativo. Curitiba: UNESPAR, 2026.",
+      "toolkitLabel": "Citação ABNT — toolkit",
+      "toolkitAbnt": "PIZZANO, C. Toolkit Pedagógico Lowbyrinth™. Curitiba: UNESPAR, 2026. Disponível em: lowmovie.lovable.app/docs/toolkit_metodologia_castro.pdf",
+      "note": "Lowbyrinth™ é marca em formalização. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA 4.0)."
     },
     "next": "Estrutura"
   },
@@ -397,6 +408,9 @@
     "openArchive": "Abrir Acervo no Google Drive",
     "openMemorial": "Abrir Memorial Ecos Criativos",
     "openCertificados": "Certificados Lattes",
+    "openEcosystem": "Ver Ecossistema (3 Camadas)",
+    "openLowRunner": "Acessar Low Runner™",
+    "openLicense": "Política de Licenciamento",
     "interviews": "Entrevistas",
     "openTranscript": "Abrir Transcrição em PDF",
     "interviewItems": {
@@ -712,6 +726,8 @@
   "replicar": {
     "title": "Replique este Portal",
     "subtitle": "Guia aberto para pesquisadores adaptarem esta infraestrutura",
+    "brandTitle": "Low Runner™",
+    "brandTagline": "Plataforma · Sistema replicável de dissertação navegável",
     "manifesto": "Este portal foi concebido como infraestrutura aberta. Mais do que apresentar uma pesquisa, ele oferece um modelo replicável de arquivamento digital acadêmico — articulando GitHub, Zenodo, ORCID, Lattes, Drive e hospedagem web. Qualquer pesquisador pode clonar este repositório, adaptá-lo à sua dissertação, tese ou projeto, e construir sua própria presença digital com DOI permanente, preservação de longo prazo e visibilidade internacional. Esta página é um gesto de contribuição comunitária à pesquisa-criação aberta.",
     "architectureTitle": "Arquitetura das Integrações",
     "stepsTitle": "Passo a Passo",
@@ -752,5 +768,93 @@
     "ctaPreservation": "Baixar Guia de Preservação",
     "ctaCite": "Citar este Projeto (DOI)",
     "ctaContact": "Email para Dúvidas"
+  },
+  "ecossistema": {
+    "title": "Ecossistema",
+    "subtitle": "Três camadas, uma pesquisa-criação",
+    "intro1": "A pesquisa entrega não apenas uma dissertação, mas um ecossistema articulado de obra, método e plataforma. Três camadas distintas de valor intelectual que se sustentam mutuamente: o caso aplicado, o método formalizado e o sistema replicável.",
+    "intro2": "Esta separação não é apenas conceitual: é estratégica. Permite que a obra circule como obra, que o método seja citado como método independente, e que a plataforma seja replicada como infraestrutura comunitária — cada camada com sua própria lógica de circulação e proteção.",
+    "diagramTitle": "Articulação das três camadas",
+    "diagramCaseApplied": "caso aplicado",
+    "diagramFormalized": "método formalizado",
+    "diagramReplicable": "sistema replicável",
+    "diagramDesc": "LowMovie™ é o caso aplicado em que o método Lowbyrinth™ foi formulado e testado. Esse método, por sua vez, materializa-se em uma plataforma replicável — Low Runner™ — que outros pesquisadores podem clonar, adaptar e usar para suas próprias dissertações.",
+    "artifactsLabel": "Artefatos",
+    "circulationLabel": "Estratégia de Circulação",
+    "circulationP1": "O ecossistema adota um modelo híbrido de licenciamento: a obra (LowMovie™) permanece sob direitos reservados; o método (Lowbyrinth™) circula em licença Creative Commons com atribuição não-comercial; o código (Low Runner™) é open-source MIT. Esta arquitetura garante autoria, fomenta replicação acadêmica e mantém abertura a usos pedagógicos.",
+    "circulationP2": "As três marcas — LowMovie™, Lowbyrinth™ e Low Runner™ — estão em processo de formalização. A circulação aberta é compatível com a proteção autoral: uma protege a outra.",
+    "circulationCta": "Ver Política de Licenciamento",
+    "next": "Acessar Low Runner™",
+    "layers": {
+      "lowmovie": {
+        "name": "LowMovie™",
+        "tag": "Obra",
+        "status": "Consolidado",
+        "desc": "Filme experimental e dissertação de mestrado realizados a partir do coletivo LowPressure™. Materializa a poética em movimento do skate como linguagem audiovisual situada, articulando corpo, cidade, câmera e improviso numa mesma operação criativa.",
+        "filmArtifact": "Filme LowMovie™ (2024)",
+        "dissertationArtifact": "Dissertação completa (PDF)",
+        "doiArtifact": "DOI permanente — Zenodo (10.5281/zenodo.18950438)",
+        "portalArtifact": "Portal acadêmico (este site)",
+        "cta": "Ver Conclusão e Acervo"
+      },
+      "lowbyrinth": {
+        "name": "Lowbyrinth™",
+        "tag": "Método",
+        "status": "Em formalização",
+        "desc": "Método de pesquisa-criação implicada formulado no interior da dissertação. Articula três eixos (afeto, escuta, improviso), três procedimentos de campo (vivência situada, convivência criativa, escuta partilhada), uma espiral cognitiva e operadores poéticos do olhar (instante, borda, fluxo).",
+        "methodArtifact": "Método formulado na dissertação",
+        "toolkitArtifact": "Toolkit Pedagógico (PDF visual)",
+        "conceptsArtifact": "Conceitos operadores",
+        "diagramArtifact": "Diagrama do método (Manual)",
+        "cta": "Ver Metodologia"
+      },
+      "lowrunner": {
+        "name": "Low Runner™",
+        "tag": "Plataforma",
+        "status": "Em expansão",
+        "desc": "Sistema replicável que materializa esta dissertação como infraestrutura aberta. Articula GitHub, Zenodo, ORCID, Lattes e hospedagem web em um modelo que outros pesquisadores podem clonar e adaptar para suas próprias pesquisas-criação.",
+        "repoArtifact": "Repositório GitHub público",
+        "stackArtifact": "Stack React + TypeScript + Vite",
+        "preservationArtifact": "Estratégia de preservação (archive.sh)",
+        "licenseArtifact": "Licença open-source",
+        "cta": "Ver Low Runner™"
+      }
+    }
+  },
+  "licenca": {
+    "title": "Licenciamento",
+    "subtitle": "Política de circulação aberta com proteção de autoria",
+    "intro1": "O ecossistema LowMovie™ · Lowbyrinth™ · Low Runner™ adota um modelo híbrido de licenciamento, coerente com a natureza distinta de cada camada: obra, método e plataforma. Cada camada circula sob a licença mais adequada à sua lógica de uso e preservação.",
+    "intro2": "A escolha desse modelo segue um princípio: circulação aberta e proteção de autoria não se opõem — uma sustenta a outra. Atribuição clara, marcas registradas e licenças explícitas permitem que o trabalho circule sem ser apropriado.",
+    "items": {
+      "lowmovie": {
+        "name": "LowMovie™",
+        "tag": "Obra",
+        "license": "© 2026 Castro Pizzano · Todos os direitos reservados · DOI 10.5281/zenodo.18950438",
+        "desc": "O filme, a dissertação, as imagens, vídeos, entrevistas e materiais autorais permanecem sob direitos reservados. Citação acadêmica obrigatória em formato ABNT com DOI. Reprodução, exibição pública ou uso derivado requer autorização expressa do autor."
+      },
+      "lowbyrinth": {
+        "name": "Lowbyrinth™",
+        "tag": "Método",
+        "license": "CC BY-NC-SA 4.0 · Marca em formalização",
+        "desc": "O método é livre para uso acadêmico, pedagógico e em pesquisa-criação, mediante atribuição. Adaptações devem manter a mesma licença. Uso comercial — cursos pagos, consultorias, produtos derivados — requer autorização. A marca Lowbyrinth™ está em processo de formalização."
+      },
+      "lowrunner": {
+        "name": "Low Runner™",
+        "tag": "Plataforma",
+        "license": "MIT License · Código aberto · Marca em formalização",
+        "desc": "O código-fonte do portal é livre para clonagem, modificação e uso, inclusive comercial, sob os termos da licença MIT. Atribuição é recomendada. A marca Low Runner™ identifica especificamente esta arquitetura de dissertação navegável e está em processo de formalização."
+      }
+    },
+    "trademarksLabel": "Marcas Registradas",
+    "trademarks": {
+      "lowmovie": "LowMovie™",
+      "lowbyrinth": "Lowbyrinth™",
+      "lowrunner": "Low Runner™"
+    },
+    "trademarksNote": "As três marcas estão em processo de formalização junto ao INPI (Instituto Nacional da Propriedade Industrial), nas classes adequadas a cada camada — obra audiovisual, método educacional e software. O uso público do símbolo ™ indica reivindicação de marca em curso.",
+    "contactLabel": "Contato para Licenciamento",
+    "contactDesc": "Para usos comerciais, parcerias institucionais, licenciamento de método ou consultas sobre as marcas, entre em contato diretamente. Usos acadêmicos e pedagógicos seguem as licenças acima e não requerem contato prévio — apenas atribuição.",
+    "contactCta": "Enviar E-mail"
   }
 }

@@ -114,6 +114,15 @@ const Conclusao = () => {
                 <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
                   <span className="text-sm font-medium text-foreground/80">{t("metodologia.toolkit.downloadCta")}</span>
                 </a>
+                <a href="/ecossistema" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openEcosystem")}</span>
+                </a>
+                <a href="/replicar" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openLowRunner")}</span>
+                </a>
+                <a href="/licenca" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openLicense")}</span>
+                </a>
               </div>
             </div>
           </div>
