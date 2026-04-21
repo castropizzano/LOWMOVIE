@@ -1,76 +1,73 @@
 
 
-# Ecossistema LowMovie™ · Lowbyrinth™ · Low Runner™ — Arquitetura de 3 Camadas
+# Versão Imprimível + Documentação do Defense Mode
 
-## Visão geral
+## Diagnóstico das duas questões
 
-Materializar no portal a arquitetura intelectual de 3 camadas distintas, fortalecendo a narrativa de defesa e formalizando a contribuição comunitária com proteção autoral coerente. Quatro frentes simultâneas, todas fiéis ao que já existe (sem inventar conteúdo novo).
+### 1. Versão imprimível do portal
+**Faz sentido?** Sim, e muito — por três razões:
+- **Banca**: alguns membros preferem ler em papel/PDF anotável
+- **Preservação**: snapshot estático do portal complementa o DOI/Zenodo
+- **Acessibilidade**: leitura offline, sem dependência de browser/JS
 
----
+**Mas atenção a um trade-off honesto:** o portal é interativo por concepção (Lowbyrinth™, Mapa Conceitual, Defense Mode, vídeos, lightbox). Reduzi-lo a papel é traduzir uma obra navegável para um formato linear — perde-se exatamente o que o método propõe. A solução não é "imprimir tudo", é oferecer **um caderno-síntese impressível** que respeita a natureza de cada camada.
 
-## 1. Nova página `/ecossistema`
-
-Página dedicada que articula as 3 camadas como sistema integrado.
-
-### Estrutura
-- **Header**: título "ECOSSISTEMA" + subtítulo "Três camadas, uma pesquisa-criação"
-- **Intro curta** (2–3 linhas): explica que a pesquisa entrega não apenas uma dissertação, mas um ecossistema articulado de obra, método e plataforma
-- **3 cards verticais grandes** (um por camada), cada um com:
-  - Numeração (01 · 02 · 03) em `text-primary`
-  - Nome com ™ e tag de natureza (OBRA · MÉTODO · PLATAFORMA)
-  - Descrição de 3–4 linhas (verbatim da nossa conversa, fiel à dissertação)
-  - Lista de artefatos concretos (ex: LowMovie → filme + dissertação + DOI Zenodo)
-  - Status (Consolidado · Em formalização · Em expansão)
-  - Link para a seção/página correspondente do portal
-- **Diagrama relacional** simples (SVG): 3 círculos articulados mostrando como as camadas se conectam (LowMovie é o caso aplicado de Lowbyrinth, que é replicado via Low Runner)
-- **Bloco final "Estratégia de circulação"**: explica modelo híbrido (open-source + método licenciado + marcas registradas)
-
-### Navegação
-- Adicionar `/ecossistema` à `AppSidebar` (entre Conclusão e Mapa, ou antes de Replicar)
-- Texto i18n PT/EN completo
+### 2. Defense Mode escondido
+**Faz sentido documentar?** Sim — atualmente o `/defense` só é acessível via Easter egg (3 cliques na capa) e via `DEFENSE_MODE.md` no repositório. Para a banca e para o público, isso é opaco demais. O Defense Mode é uma **contribuição metodológica concreta** (uma forma de apresentar pesquisa-criação) e merece estar visível, sem perder o charme do acesso direto.
 
 ---
 
-## 2. Marca ™ consistente em "Low Runner"
+## Proposta
 
-Auditoria global e padronização do uso de `Low Runner™` em todos os pontos onde aparece (atualmente só "Replicar" / "Replicate"):
+### Parte A — Versão imprimível: estratégia em 2 níveis
 
-- Renomear seção `/replicar` mantendo URL, mas exibindo "**LOW RUNNER™** — Replique este Portal"
-- Atualizar entrada na sidebar
-- Atualizar referências em `/conclusao` (Acervo) e `/ecossistema`
-- Manter convenção já estabelecida em memória (`mem://content/branding-and-attribution`)
-- Atualizar a memória de branding incluindo `Low Runner™`
+**Nível 1 — Print stylesheet (CSS `@media print`)**
+Adicionar regras CSS globais em `src/index.css` que tornam **qualquer página do portal imprimível com qualidade**:
+- Esconde sidebar, header, botões de navegação, lightboxes
+- Converte fundo dark → fundo branco com texto preto (apenas no print)
+- Expande accordions/tabs fechados (todo conteúdo visível)
+- Quebras de página inteligentes (`page-break-inside: avoid` em cards, títulos não órfãos)
+- URLs expandidas após links: `a[href]::after { content: " (" attr(href) ")" }`
+- Imagens em escala apropriada
+- Footer com créditos + URL canônica em cada página
+- Funciona com Ctrl+P em qualquer rota → PDF nativo do browser
 
----
+**Nível 2 — Caderno-Síntese imprimível (PDF curado)**
+Gerar `public/docs/lowmovie_caderno_sintese.pdf` (8–12 páginas) via `reportlab`, contendo o **essencial textual** do portal organizado para leitura linear:
+1. Capa institucional
+2. Resumo (já existe na dissertação)
+3. Os 3 capítulos em formato condensado (Apresentação, Coletivo, Filme — extratos)
+4. Diagrama do método (concêntrico) + 6 conceitos operadores
+5. Estrutura da dissertação
+6. Conclusão sintética
+7. Mapa do portal (lista de URLs com QR code para o portal completo)
+8. Créditos, DOI, licenças, marcas
 
-## 3. Nova página `/licenca`
+Disponível para download na nova página `/imprimir` e linkado de `/conclusao`.
 
-Documentação pública e elegante da estratégia de licença híbrida.
+### Parte B — Documentar o Defense Mode
 
-### Estrutura
-- **Intro**: política de circulação aberta com proteção de autoria
-- **3 blocos** correspondendo às 3 camadas:
-  - **LowMovie™ (obra)** → © Castro Pizzano 2026 · Todos os direitos reservados · DOI Zenodo · Cita ABNT obrigatória
-  - **Lowbyrinth™ (método)** → CC BY-NC-SA 4.0 · Uso acadêmico livre com atribuição · Uso comercial requer autorização · Marca registrada
-  - **Low Runner™ (código/plataforma)** → MIT License · Código aberto e replicável · Marca registrada · Atribuição recomendada
-- **Bloco "Marcas registradas"**: lista das 3 marcas com nota sobre processo INPI
-- **Bloco "Contato para licenciamento comercial"**: e-mail/forma de contato
-- Link para LICENSE no rodapé já existente
+Criar página `/defense-mode` (página *sobre* o Defense Mode, não o modo em si) que explica:
+- **O que é**: dispositivo de apresentação para a defesa de mestrado
+- **Por que existe**: argumento metodológico — apresentar pesquisa-criação requer dispositivo próprio, não slides PowerPoint
+- **Como acessar**: dois caminhos
+  - **Discreto** (mantém Easter egg): "três cliques na capa da home"
+  - **Direto**: botão grande `Acessar Defense Mode →` apontando para `/defense`
+- **Como funciona**: 14 blocos sequenciais, navegação por teclado (`→`, `←`, `Esc`, `Home`, `End`)
+- **Quando foi usado**: contexto da defesa (UNESPAR · março 2026 · banca)
+- **Recomendações técnicas**: tela cheia, 1920×1080, browser moderno
+- **Captura de tela** (1 thumbnail estático do bloco 0)
 
----
+Adicionar entrada na sidebar (perto de Ecossistema/Replicar) e link em `/conclusao`.
 
-## 4. Bloco "Como citar este método" em `/conceitos` (ou `/metodologia`)
+### Parte C — Nova página `/imprimir`
 
-Adicionar instruções formais de citação **separadas** da citação da dissertação, posicionando Lowbyrinth™ como método citável independentemente.
+Página dedicada explicando as duas opções de leitura impressa:
+1. **Imprimir qualquer página agora** (Ctrl+P / Cmd+P) — instrução visual
+2. **Caderno-Síntese em PDF** — botão de download
+3. **Dissertação completa em PDF** — link para o PDF original (já existe)
 
-### Conteúdo
-- **Citação ABNT do método**:
-  > PIZZANO, C. **Lowbyrinth™**: método de navegação não-linear para pesquisa-criação. In: _LowMovie™ e o Labirinto Criativo_. Curitiba: UNESPAR, 2026.
-- **Citação ABNT do toolkit**:
-  > PIZZANO, C. **Toolkit Pedagógico Lowbyrinth™**. Curitiba: UNESPAR, 2026. Disponível em: <link do PDF>.
-- **Bloco breve**: "Lowbyrinth™ é um método autoral em desenvolvimento. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA)."
-
-Posição: ao final de `/metodologia` (após o Toolkit Pedagógico, antes do `NextSectionButton`) — junto da contribuição metodológica faz mais sentido que em `/conceitos`.
+Texto curto explicando a filosofia: "O portal é navegável por concepção. Estas versões impressas são sínteses, não substitutos."
 
 ---
 
@@ -78,33 +75,36 @@ Posição: ao final de `/metodologia` (após o Toolkit Pedagógico, antes do `Ne
 
 | Arquivo | Mudança |
 |---|---|
-| `src/pages/Ecossistema.tsx` | (novo) Página completa das 3 camadas |
-| `src/pages/Licenca.tsx` | (novo) Página de licenciamento híbrido |
-| `src/pages/Replicar.tsx` | Renomear visualmente para "Low Runner™ — Replique este Portal" |
-| `src/pages/Metodologia.tsx` | Adicionar bloco "Como citar este método" no final |
-| `src/pages/Conclusao.tsx` | Atualizar referência a Low Runner™ no Acervo |
-| `src/components/AppSidebar.tsx` | Adicionar entradas `/ecossistema` e `/licenca`; renomear "Replicar" para "Low Runner" |
-| `src/App.tsx` | Adicionar rotas `/ecossistema` e `/licenca` |
-| `src/i18n/locales/pt.json` + `en.json` | Chaves completas para `ecossistema.*` e `licenca.*`, ajustes em `replicar.*` |
-| `mem://content/branding-and-attribution` | Atualizar com Low Runner™ |
-| `mem://features/ecosystem-architecture` | (nova memória) Documentar as 3 camadas como arquitetura oficial |
-| `mem://index.md` | Adicionar referência |
+| `src/index.css` | Adicionar bloco `@media print` global |
+| `src/pages/DefenseModeAbout.tsx` | (novo) Página explicando o Defense Mode |
+| `src/pages/Imprimir.tsx` | (novo) Página de versões imprimíveis |
+| `public/docs/lowmovie_caderno_sintese.pdf` | (novo) PDF curado de 8–12 páginas via reportlab |
+| `src/components/AppSidebar.tsx` | Adicionar entradas `/defense-mode` e `/imprimir` |
+| `src/App.tsx` | Adicionar rotas |
+| `src/pages/Conclusao.tsx` | Adicionar atalhos para Defense Mode e Caderno |
+| `src/i18n/locales/pt.json` + `en.json` | Chaves novas para `defenseMode.*` e `imprimir.*` |
+| `mem://features/defense-mode` | Atualizar memória registrando documentação pública |
+| `mem://features/printable-version` | (novo) Documentar estratégia de impressão |
+| `mem://index.md` | Adicionar referências |
 
 ---
 
 ## Princípios mantidos
 
-- **Hallucination Zero**: zero conteúdo inventado — tudo deriva da dissertação, do que já existe no portal e da nossa conversa estratégica explícita
-- **Identidade visual**: dark mode, `max-w-5xl`, Manrope, uppercase em títulos, `border-border`, `bg-card/30`
-- **Bilíngue**: PT/EN completo desde o nascimento
-- **Sidebar enxuta**: avaliar agrupamento se ficar muito longa
-- **Footer**: nada muda; LICENSE já é referenciado
+- **Hallucination Zero**: caderno-síntese usa **apenas** texto já validado no portal/dissertação
+- **Easter egg preservado**: triple-click na capa continua funcionando
+- **Identidade visual**: PDF caderno segue mesma estética do toolkit (dark/Swiss design — ou versão clara para leitura impressa, decisão feita na implementação)
+- **Sidebar enxuta**: avaliar agrupamento se ficar pesada (ex.: agrupar `/imprimir` + `/defense-mode` + `/licenca` sob "Recursos")
+- **Bilíngue PT/EN** integral
+- **QA obrigatório**: PDF caderno passa por inspeção visual página a página
+
+---
 
 ## Resultado esperado
 
-- Narrativa de defesa **muito mais forte**: "entreguei um ecossistema, não só uma dissertação"
-- Posicionamento público e juridicamente coerente das 3 marcas
-- Base sólida para registros INPI pós-defesa (marcas + software)
-- Contribuição comunitária com regras claras de uso e atribuição
-- Lowbyrinth™ formalmente citável como método independente — base direta para o doutorado
+- **Banca pode imprimir** qualquer seção com Ctrl+P e ter uma versão limpa, profissional, em preto-branco
+- **Caderno-Síntese** circula como artefato impressível autônomo (com QR code de volta ao portal)
+- **Defense Mode deixa de ser secreto** — vira contribuição metodológica documentada e referenciável
+- **Easter egg permanece** — quem descobre por acaso ainda tem o prazer da descoberta
+- **Reforço da narrativa de defesa**: portal navegável + caderno impresso + Defense Mode = três modos de leitura coerentes da mesma pesquisa
 
