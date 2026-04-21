@@ -1,63 +1,82 @@
 
 
-# Correção de Fidelidade — Toolkit alinhado à Dissertação
+# Toolkit em PDF — Versão Visual e Didática
 
-## Problema identificado
+## Diagnóstico
 
-A seção "Toolkit Pedagógico" em `/metodologia` e o PDF `toolkit_metodologia_castro.pdf` usam termos do **rascunho pessoal** (VOID · NOISE · SIGNAL · STRUCT, "10 Conceitos Operadores", "5 Etapas") que **não constam na dissertação oficial**. Isso viola a política Hallucination Zero e a fidelidade absoluta ao PDF da dissertação.
+O PDF atual (`public/docs/toolkit_metodologia_castro.pdf`) é fiel ao conteúdo da dissertação, mas visualmente é **texto corrido em colunas** — sem a riqueza didática do `MethodDiagram` (concêntrico, simbólico, espacial) presente no portal. Falta a camada visual que torna o método memorável e replicável.
 
-A dissertação aprovada — `PIZZANO_Castro._LowMovie_e_o_Labirinto_Criativo` — é a única autoridade.
+## Proposta
 
-## Plano de correção
+Reescrever o PDF como um **caderno visual de 6–7 páginas**, cada página dedicada a um bloco do método, usando linguagem gráfica análoga ao Manual do Método e à identidade do portal (dark/sóbrio, geometria precisa, tipografia uppercase, espaço respirado).
 
-### 1. Auditoria de fontes (antes de reescrever)
+## Estrutura visual proposta (6 páginas)
 
-- Ler integralmente o PDF da dissertação recém-enviado via `document--parse_document`
-- Mapear os termos metodológicos **reais** usados pela autora: eixos, procedimentos, conceitos operadores, arquétipos (se existirem), etapas (se existirem)
-- Comparar com o conteúdo atual de `src/pages/Metodologia.tsx` e das chaves `metodologia.toolkit.*` em `pt.json`/`en.json`
-- Listar exatamente quais termos do toolkit-rascunho **não têm correspondência** na dissertação
+### Página 1 — Capa
+- Fundo dark (#0a0a0a)
+- Título monumental em uppercase: **"TOOLKIT PEDAGÓGICO"**
+- Subtítulo: *Metodologia da Pesquisa — Castro Pizzano (2026)*
+- Marca tipográfica `LOWMOVIE™` no rodapé
+- Bloco mínimo: DOI, programa, banca
 
-### 2. Reescrita da seção Toolkit em `/metodologia`
+### Página 2 — Diagrama Concêntrico dos 3 Eixos
+- Réplica em PDF do `MethodDiagram` do portal: três círculos concêntricos
+- Centro: **PESQUISA-CRIAÇÃO IMPLICADA**
+- Anel interno: **AFETO · ESCUTA · IMPROVISO** (3 setores)
+- Anel externo: **VIVÊNCIA SITUADA · CONVIVÊNCIA CRIATIVA · ESCUTA PARTILHADA**
+- Legenda mínima abaixo
 
-Substituir o conteúdo do rascunho pelos termos exatos da dissertação. Os blocos visuais permanecem (cards numerados, espiral, grid, lista, aplicações), mas o **texto** será reescrito verbatim a partir da dissertação:
+### Página 3 — Espiral Cognitiva (Bloom/Ferraz-Belhot)
+- Espiral desenhada vetorialmente (curva de Arquimedes)
+- 6 nós ao longo da espiral: **LEMBRAR → ENTENDER → APLICAR → ANALISAR → CRIAR → AVALIAR**
+- Ícones geométricos mínimos (círculo, triângulo, quadrado)
+- Citação curta da referência (Ferraz & Belhot, 2010)
 
-- **Etapas do método** → usar a sequência metodológica que a dissertação efetivamente descreve (não inventar "5 etapas" se a dissertação propõe outra estrutura)
-- **Espiral cognitiva** → manter apenas se a dissertação usa esse termo; caso contrário, substituir pela formulação real do percurso metodológico
-- **Arquétipos VOID/NOISE/SIGNAL/STRUCT** → **remover** se não constarem na dissertação. Substituir pelos operadores conceituais reais (ex.: *Poética do instante*, *Estética da borda*, *Registro em fluxo*, *Afeto como eixo* — já presentes em `mem://project/content-structure/conceptual-operators`)
-- **10 Conceitos Operadores** → reduzir/ajustar à lista real da dissertação
-- **Aplicações pedagógicas** → manter apenas as que a dissertação menciona
+### Página 4 — 3 Operadores Poéticos do Olhar
+- Grid horizontal de 3 blocos: **INSTANTE · BORDA · FLUXO**
+- Cada bloco: símbolo geométrico grande + nome uppercase + descrição curta de 2–3 linhas
+- Referência ao Cap. 1.1 da dissertação no rodapé
 
-### 3. Regeneração do PDF do Toolkit
+### Página 5 — 6 Conceitos Operadores
+- Grid 2×3 de cards minimalistas
+- Lowbyrinth™ · Corpo-câmera · Fabulação · Glitch como linguagem · D.I.Y. · Pesquisa-criação implicada
+- Cada card: número (01–06) grande em outline, nome, 1 linha de definição
 
-- Reescrever `public/docs/toolkit_metodologia_castro.pdf` usando `reportlab` com o conteúdo corrigido (mesmo conteúdo da nova seção `/metodologia`, em layout PDF coerente com a identidade visual: dark/sóbrio, Manrope-like, uppercase nos títulos)
-- QA visual: converter o PDF em imagens com `pdftoppm` e inspecionar cada página antes de entregar
-- Manter o nome do arquivo (não quebra link em Conclusão)
+### Página 6 — Aplicações Pedagógicas + Créditos
+- Lista das aplicações reais (Branding, Produção Audiovisual, oficinas, curadorias)
+- Bloco de créditos final: autora, orientação, programa, DOI, licença, link do portal
 
-### 4. Atualização de i18n
+## Identidade visual (todas as páginas)
 
-- Reescrever todas as chaves `metodologia.toolkit.*` em `pt.json` e `en.json` com o conteúdo fiel
-- Remover chaves órfãs (ex.: `archetypes.void/noise/signal/struct` se removidos)
+- **Fundo**: dark `#0a0a0a` ou off-black
+- **Texto**: branco/cinza claro com hierarquia (títulos uppercase letter-spacing largo, corpo regular)
+- **Geometria**: linhas finas (0.5pt), círculos perfeitos, sem decoração supérflua
+- **Tipografia**: Helvetica/Inter (substituto Manrope no reportlab)
+- **Margens**: generosas, espaço respirado tipo Swiss design
+- **Numeração de página**: discreta no rodapé (`02 / 06`)
+- **Marca de rodapé** em todas as páginas: `LOWMOVIE™ — TOOLKIT PEDAGÓGICO`
 
-### 5. Atualização da memória
+## Implementação técnica
 
-- Atualizar/criar `mem://project/content-structure/methodology-toolkit` documentando que o toolkit segue **estritamente** os termos da dissertação, sem termos de rascunho pessoal
-- Reforçar no índice a regra de Hallucination Zero aplicada especificamente ao toolkit
+### Ferramentas
+- `reportlab` para layout e tipografia
+- Desenho vetorial nativo (`canvas.circle`, `canvas.line`, `canvas.bezier`) — sem imagens raster
+- Espiral via parametrização matemática (curva de Arquimedes ponto a ponto)
 
-## Arquivos afetados
+### Arquivo afetado
+- `public/docs/toolkit_metodologia_castro.pdf` — regenerado (mesmo nome, não quebra links em `/conclusao` e `/metodologia`)
 
-| Arquivo | Mudança |
-|---|---|
-| `src/pages/Metodologia.tsx` | Reescrita da seção Toolkit (estrutura visual mantida, texto fiel à dissertação) |
-| `src/i18n/locales/pt.json` | Reescrita das chaves `metodologia.toolkit.*` |
-| `src/i18n/locales/en.json` | Tradução das mesmas chaves |
-| `public/docs/toolkit_metodologia_castro.pdf` | Regenerado via reportlab com conteúdo corrigido |
-| `mem://project/content-structure/methodology-toolkit` | Nova memória de fidelidade |
-| `mem://index.md` | Adicionar referência à nova memória |
+### QA visual obrigatório
+- Converter PDF em JPG via `pdftoppm -r 150`
+- Inspecionar **todas as 6 páginas** uma a uma
+- Verificar: margens, contraste, alinhamentos, sem overflow, sem sobreposição
+- Iterar até zero defeitos
+
+## Conteúdo: fidelidade absoluta
+
+Todo o texto será **verbatim** do conteúdo já validado em `mem://project/content-structure/methodology-toolkit` — nenhum termo novo, nenhuma reinterpretação. A mudança é **exclusivamente visual/didática**.
 
 ## Resultado esperado
 
-- Zero termos inventados ou de rascunho na página `/metodologia` e no PDF
-- Toolkit como **síntese pedagógica fiel** da metodologia da dissertação
-- Coerência total entre dissertação ↔ portal ↔ PDF baixável
-- Reforço da política Hallucination Zero documentado em memória
+Um PDF que parece um **caderno de método de design suíço** ou um **diagrama de pesquisa publicado em journal acadêmico** — denso visualmente, leve textualmente, didaticamente memorável, coerente com a estética do portal e do Manual do Método. Material que a banca pode imprimir, anotar e que outros pesquisadores podem efetivamente usar.
 
