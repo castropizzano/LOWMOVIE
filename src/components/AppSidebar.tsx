@@ -14,6 +14,8 @@ import {
   Share2,
   Layers,
   Scale,
+  Printer,
+  Projector,
 } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import lowpressureLogo from "@/assets/lowpressure-logo.png";
@@ -47,6 +49,8 @@ const itemDefs = [
   { key: "timeline", url: "/timeline", icon: GraduationCap },
   { key: "ecossistema", url: "/ecossistema", icon: Layers },
   { key: "replicar", url: "/replicar", icon: Share2 },
+  { key: "defenseMode", url: "/defense-mode", icon: Projector },
+  { key: "imprimir", url: "/imprimir", icon: Printer },
   { key: "licenca", url: "/licenca", icon: Scale },
 ];
 
