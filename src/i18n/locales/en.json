@@ -13,7 +13,7 @@
     "mapa": "Map",
     "timeline": "CV",
     "ecossistema": "Ecosystem",
-    "replicar": "Low Runner",
+    "replicar": "Low Runner™",
     "defenseMode": "Defense Mode",
     "imprimir": "Print",
     "licenca": "License"
@@ -912,5 +912,4 @@
     "option3Cta": "Open Full Dissertation ↓",
     "next": "License"
   }
-}
 }
