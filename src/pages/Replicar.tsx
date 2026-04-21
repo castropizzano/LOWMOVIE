@@ -19,7 +19,12 @@ const Replicar = () => {
   return (
     <Layout>
       <div className="mx-auto max-w-5xl px-4 py-12 md:py-20">
-        <SectionTitle title={t("replicar.title")} subtitle={t("replicar.subtitle")} />
+        <SectionTitle title={t("replicar.brandTitle")} subtitle={t("replicar.subtitle")} />
+        <AnimatedSection className="mb-12">
+          <p className="text-xs font-semibold uppercase tracking-widest text-primary">
+            {t("replicar.brandTagline")}
+          </p>
+        </AnimatedSection>
 
         {/* Manifesto */}
         <AnimatedSection className="mb-16">
