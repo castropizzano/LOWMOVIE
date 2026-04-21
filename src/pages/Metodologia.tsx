@@ -234,6 +234,8 @@ const Metodologia = () => {
               </a>
             </div>
           </AnimatedSection>
+
+          <NextSectionButton to="/estrutura" label={t("metodologia.next")} />
         </div>
       </section>
     </Layout>
