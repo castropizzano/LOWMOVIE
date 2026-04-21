@@ -1,94 +1,63 @@
 
 
-# Guia "Replique este Portal" — Contribuição para a Comunidade Acadêmica
+# Toolkit Pedagógico da Metodologia — Integração ao Portal
 
 ## Visão geral
 
-Criar uma nova página **`/replicar`** (ou "Para Pesquisadores") com um passo a passo didático, resumido e visual explicando como outros pesquisadores podem clonar o repositório, adaptar à sua pesquisa e replicar a estratégia de arquivamento digital (GitHub + Zenodo + ORCID + Lattes + Drive + Portal).
+O toolkit é uma síntese pedagógica excelente da metodologia. Ele **complementa** (não duplica) a página `/metodologia` atual, adicionando: 5 etapas do método híbrido, espiral cognitiva, 4 arquétipos criativos, 10 conceitos operadores e aplicações pedagógicas. É material valioso para a banca e para a comunidade.
 
-A página será o **gesto público de contribuição comunitária** do projeto — alinhada ao espírito open-source acadêmico e ao posicionamento do portal como ferramenta pedagógica.
+**Avaliação editorial**: conteúdo coerente com a dissertação, fiel aos eixos já presentes no portal (afeto, escuta, improviso), e expande com camadas didáticas inéditas. Aprovado para integração.
 
-## Por que essa página faz sentido
+## Estratégia de integração (3 frentes)
 
-- Materializa o compromisso ético-político do projeto (autonomia, compartilhamento, código aberto)
-- Transforma a dissertação em **infraestrutura replicável** para outros mestrandos/doutorandos
-- Reforça o argumento de "pesquisa-criação implicada" como prática que se estende além do objeto individual
-- Diferencial forte para a banca: demonstra impacto além do trabalho pessoal
+### 1. Nova seção "Toolkit Pedagógico" na página `/metodologia`
 
-## Estrutura da página
+Inserir **ao final** da página atual (antes do `NextSectionButton`), uma nova seção visual com:
 
-### 1. Manifesto curto (intro)
-Parágrafo explicando a motivação: portal como infraestrutura aberta para pesquisadores que queiram preservar e apresentar suas pesquisas digitalmente.
+- **Título**: "Toolkit Pedagógico — Metodologia em 5 Etapas"
+- **Intro curta**: 2 linhas explicando que o toolkit sintetiza a metodologia em formato aplicável
+- **5 cards numerados** (01 Observação · 02 Co-criação · 03 Documentação · 04 Reflexão · 05 Expansão) — grid responsivo
+- **Bloco "Espiral Cognitiva"**: card destacado com o diagrama (texto + setas Unicode `prática → reflexão → formulação → expansão ↻`)
+- **Bloco "4 Arquétipos Criativos"**: grid 2x2 (VOID · NOISE · SIGNAL · STRUCT) com traço e referências
+- **Bloco "10 Conceitos Operadores"**: lista compacta com ícone `→` por item
+- **Bloco "Aplicação Pedagógica"**: 4 contextos (sala de aula, oficinas, dispositivo reflexivo, pesquisa acadêmica)
+- **CTA Download PDF**: botão destacado "Baixar Toolkit em PDF" linkando ao arquivo
 
-### 2. Arquitetura das integrações (diagrama visual)
-Card visual mostrando como as 6 camadas se conectam:
+### 2. Disponibilizar PDF para download
 
-```text
-   GitHub (código)  ←→  Lovable (editor visual)
-        ↓
-   Portal Web (apresentação)
-        ↓
-   Zenodo (DOI permanente)  +  ORCID (identidade)  +  Lattes (currículo)
-        ↓
-   Google Drive (acervo de mídias)  +  Wayback Machine (arquivo web)
-```
+- Copiar `toolkit_metodologia_castro.pdf` para `public/docs/toolkit_metodologia_castro.pdf`
+- Botão de download visível na nova seção e também referenciado em **Conclusão → Acervo** (junto com dissertação, memorial, certificados)
 
-### 3. Passo a passo (5-6 etapas numeradas em cards)
+### 3. Visual: fidelidade à identidade do portal
 
-**Etapa 1 — Fork do repositório**
-Link direto para o repo público no GitHub + comando `git clone`.
+- Dark mode, tipografia uppercase, `max-w-5xl`
+- Cards com `border border-border rounded-lg bg-card/30` e hover `border-primary/30`
+- Numeração grande (01, 02...) em `text-primary` para as 5 etapas
+- Arquétipos com tag colorida sutil por tipo (VOID = silêncio, NOISE = caos, SIGNAL = padrão, STRUCT = forma)
+- Animações com `AnimatedSection` (delays escalonados)
+- Texto justificado nos parágrafos longos
 
-**Etapa 2 — Adaptação do conteúdo**
-Quais arquivos editar: `src/i18n/locales/`, `src/data/`, `src/pages/`, `public/images/`, `public/docs/`. Mencionar que tudo é TypeScript + JSON, sem necessidade de backend.
+## Arquivos a modificar
 
-**Etapa 3 — Configuração da identidade acadêmica**
-Como atualizar `CITATION.cff`, links do Lattes, ORCID, banca, orientador no `Layout.tsx`.
+| Arquivo | Mudança |
+|---|---|
+| `public/docs/toolkit_metodologia_castro.pdf` | (novo) PDF copiado dos uploads |
+| `src/pages/Metodologia.tsx` | Inserir nova seção "Toolkit Pedagógico" antes do botão de navegação |
+| `src/i18n/locales/pt.json` | Chaves `metodologia.toolkit.*` (intro, 5 etapas, espiral, 4 arquétipos, 10 conceitos, 4 aplicações, CTA download) |
+| `src/i18n/locales/en.json` | Tradução das mesmas chaves |
+| `src/pages/Conclusao.tsx` | Adicionar botão "Toolkit Pedagógico (PDF)" na seção Acervo |
 
-**Etapa 4 — Publicação do DOI no Zenodo**
-Como conectar GitHub → Zenodo para gerar DOI permanente automaticamente a cada release.
+## Conteúdo (verbatim do PDF)
 
-**Etapa 5 — Hospedagem do portal**
-Opções: Lovable (mais fácil), Vercel, Netlify, GitHub Pages — todas gratuitas para projetos acadêmicos.
-
-**Etapa 6 — Estratégia de preservação**
-Link para o `PRESERVATION.md` já existente, explicando as 4 camadas (espelho offline, git bundle, mídias, Wayback).
-
-### 4. Stack técnica (lista resumida)
-React · TypeScript · Vite · Tailwind · shadcn/ui · Framer Motion — todas tecnologias livres, gratuitas e amplamente documentadas.
-
-### 5. Licenciamento e atribuição
-Esclarecer: código pode ser reutilizado livremente (estrutura, componentes); conteúdo da dissertação tem licença própria (All Rights Reserved). Pedido de atribuição: "Baseado em LOWMOVIE™ Portal — Castro Pizzano (2026)".
-
-### 6. CTAs finais
-- Botão "Ver repositório no GitHub"
-- Botão "Baixar guia de preservação (PRESERVATION.md)"
-- Botão "Citar este projeto" (DOI Zenodo)
-- Email para contato/dúvidas
-
-## Implementação técnica
-
-### Arquivos novos
-- `src/pages/Replicar.tsx` — página completa seguindo o padrão visual (dark, uppercase, max-w-5xl, AnimatedSection, cards com bordas sutis)
-
-### Arquivos modificados
-- `src/App.tsx` — nova rota `/replicar`
-- `src/components/AppSidebar.tsx` — novo item no menu (ícone `Share2` ou `GitFork` do lucide-react), posicionado entre "Currículo" e o final do menu
-- `src/i18n/locales/pt.json` e `en.json` — chaves de tradução para título, etapas, descrições
-- `src/pages/Conclusao.tsx` (opcional) — adicionar link/menção na seção de Acervo apontando para `/replicar`
-
-### Estilo visual
-- Cards numerados grandes para cada etapa (1, 2, 3...) com bordas sutis e hover state
-- Ícones `lucide-react` por etapa (GitFork, Edit, User, Award, Globe, Archive)
-- Blocos de código com `bg-muted` e `font-mono` para os comandos shell
-- Diagrama em ASCII art dentro de `<pre>` ou usando flexbox com setas Unicode
-
-## Onde linkar a página
-
-1. **Sidebar** — item "Replicar" / "Para Pesquisadores" (visível em toda navegação)
-2. **Conclusão** — link na seção de Acervo, como gesto de extensão
-3. **Footer** — opcional, badge "Open Source · Reutilizável"
+Todo o conteúdo será transcrito **fiel ao PDF** (política Hallucination Zero):
+- Definições dos 3 eixos, 3 procedimentos, 5 etapas, 4 arquétipos, 10 conceitos, 4 aplicações pedagógicas — exatamente como redigidas no toolkit
+- Referências mantidas
+- Créditos preservados (DOI, banca, programa)
 
 ## Resultado esperado
 
-Uma página enxuta (~1 scroll longo), didática, visualmente coerente com o resto do portal, que permite a qualquer pesquisador entender em 5 minutos como replicar a infraestrutura — fortalecendo o argumento de **contribuição comunitária** e **pesquisa-criação como prática aberta**.
+- Página `/metodologia` ganha uma camada didática rica sem perder a estrutura atual
+- Toolkit fica disponível para download em PDF (contribuição pública concreta)
+- Reforça o argumento de "metodologia como dispositivo aberto" alinhado à página `/replicar`
+- Material extra forte para defesa: demonstra pensamento metodológico sintetizado e replicável
 
