@@ -1,63 +1,63 @@
 
 
-# Toolkit Pedagógico da Metodologia — Integração ao Portal
+# Correção de Fidelidade — Toolkit alinhado à Dissertação
 
-## Visão geral
+## Problema identificado
 
-O toolkit é uma síntese pedagógica excelente da metodologia. Ele **complementa** (não duplica) a página `/metodologia` atual, adicionando: 5 etapas do método híbrido, espiral cognitiva, 4 arquétipos criativos, 10 conceitos operadores e aplicações pedagógicas. É material valioso para a banca e para a comunidade.
+A seção "Toolkit Pedagógico" em `/metodologia` e o PDF `toolkit_metodologia_castro.pdf` usam termos do **rascunho pessoal** (VOID · NOISE · SIGNAL · STRUCT, "10 Conceitos Operadores", "5 Etapas") que **não constam na dissertação oficial**. Isso viola a política Hallucination Zero e a fidelidade absoluta ao PDF da dissertação.
 
-**Avaliação editorial**: conteúdo coerente com a dissertação, fiel aos eixos já presentes no portal (afeto, escuta, improviso), e expande com camadas didáticas inéditas. Aprovado para integração.
+A dissertação aprovada — `PIZZANO_Castro._LowMovie_e_o_Labirinto_Criativo` — é a única autoridade.
 
-## Estratégia de integração (3 frentes)
+## Plano de correção
 
-### 1. Nova seção "Toolkit Pedagógico" na página `/metodologia`
+### 1. Auditoria de fontes (antes de reescrever)
 
-Inserir **ao final** da página atual (antes do `NextSectionButton`), uma nova seção visual com:
+- Ler integralmente o PDF da dissertação recém-enviado via `document--parse_document`
+- Mapear os termos metodológicos **reais** usados pela autora: eixos, procedimentos, conceitos operadores, arquétipos (se existirem), etapas (se existirem)
+- Comparar com o conteúdo atual de `src/pages/Metodologia.tsx` e das chaves `metodologia.toolkit.*` em `pt.json`/`en.json`
+- Listar exatamente quais termos do toolkit-rascunho **não têm correspondência** na dissertação
 
-- **Título**: "Toolkit Pedagógico — Metodologia em 5 Etapas"
-- **Intro curta**: 2 linhas explicando que o toolkit sintetiza a metodologia em formato aplicável
-- **5 cards numerados** (01 Observação · 02 Co-criação · 03 Documentação · 04 Reflexão · 05 Expansão) — grid responsivo
-- **Bloco "Espiral Cognitiva"**: card destacado com o diagrama (texto + setas Unicode `prática → reflexão → formulação → expansão ↻`)
-- **Bloco "4 Arquétipos Criativos"**: grid 2x2 (VOID · NOISE · SIGNAL · STRUCT) com traço e referências
-- **Bloco "10 Conceitos Operadores"**: lista compacta com ícone `→` por item
-- **Bloco "Aplicação Pedagógica"**: 4 contextos (sala de aula, oficinas, dispositivo reflexivo, pesquisa acadêmica)
-- **CTA Download PDF**: botão destacado "Baixar Toolkit em PDF" linkando ao arquivo
+### 2. Reescrita da seção Toolkit em `/metodologia`
 
-### 2. Disponibilizar PDF para download
+Substituir o conteúdo do rascunho pelos termos exatos da dissertação. Os blocos visuais permanecem (cards numerados, espiral, grid, lista, aplicações), mas o **texto** será reescrito verbatim a partir da dissertação:
 
-- Copiar `toolkit_metodologia_castro.pdf` para `public/docs/toolkit_metodologia_castro.pdf`
-- Botão de download visível na nova seção e também referenciado em **Conclusão → Acervo** (junto com dissertação, memorial, certificados)
+- **Etapas do método** → usar a sequência metodológica que a dissertação efetivamente descreve (não inventar "5 etapas" se a dissertação propõe outra estrutura)
+- **Espiral cognitiva** → manter apenas se a dissertação usa esse termo; caso contrário, substituir pela formulação real do percurso metodológico
+- **Arquétipos VOID/NOISE/SIGNAL/STRUCT** → **remover** se não constarem na dissertação. Substituir pelos operadores conceituais reais (ex.: *Poética do instante*, *Estética da borda*, *Registro em fluxo*, *Afeto como eixo* — já presentes em `mem://project/content-structure/conceptual-operators`)
+- **10 Conceitos Operadores** → reduzir/ajustar à lista real da dissertação
+- **Aplicações pedagógicas** → manter apenas as que a dissertação menciona
 
-### 3. Visual: fidelidade à identidade do portal
+### 3. Regeneração do PDF do Toolkit
 
-- Dark mode, tipografia uppercase, `max-w-5xl`
-- Cards com `border border-border rounded-lg bg-card/30` e hover `border-primary/30`
-- Numeração grande (01, 02...) em `text-primary` para as 5 etapas
-- Arquétipos com tag colorida sutil por tipo (VOID = silêncio, NOISE = caos, SIGNAL = padrão, STRUCT = forma)
-- Animações com `AnimatedSection` (delays escalonados)
-- Texto justificado nos parágrafos longos
+- Reescrever `public/docs/toolkit_metodologia_castro.pdf` usando `reportlab` com o conteúdo corrigido (mesmo conteúdo da nova seção `/metodologia`, em layout PDF coerente com a identidade visual: dark/sóbrio, Manrope-like, uppercase nos títulos)
+- QA visual: converter o PDF em imagens com `pdftoppm` e inspecionar cada página antes de entregar
+- Manter o nome do arquivo (não quebra link em Conclusão)
 
-## Arquivos a modificar
+### 4. Atualização de i18n
+
+- Reescrever todas as chaves `metodologia.toolkit.*` em `pt.json` e `en.json` com o conteúdo fiel
+- Remover chaves órfãs (ex.: `archetypes.void/noise/signal/struct` se removidos)
+
+### 5. Atualização da memória
+
+- Atualizar/criar `mem://project/content-structure/methodology-toolkit` documentando que o toolkit segue **estritamente** os termos da dissertação, sem termos de rascunho pessoal
+- Reforçar no índice a regra de Hallucination Zero aplicada especificamente ao toolkit
+
+## Arquivos afetados
 
 | Arquivo | Mudança |
 |---|---|
-| `public/docs/toolkit_metodologia_castro.pdf` | (novo) PDF copiado dos uploads |
-| `src/pages/Metodologia.tsx` | Inserir nova seção "Toolkit Pedagógico" antes do botão de navegação |
-| `src/i18n/locales/pt.json` | Chaves `metodologia.toolkit.*` (intro, 5 etapas, espiral, 4 arquétipos, 10 conceitos, 4 aplicações, CTA download) |
+| `src/pages/Metodologia.tsx` | Reescrita da seção Toolkit (estrutura visual mantida, texto fiel à dissertação) |
+| `src/i18n/locales/pt.json` | Reescrita das chaves `metodologia.toolkit.*` |
 | `src/i18n/locales/en.json` | Tradução das mesmas chaves |
-| `src/pages/Conclusao.tsx` | Adicionar botão "Toolkit Pedagógico (PDF)" na seção Acervo |
-
-## Conteúdo (verbatim do PDF)
-
-Todo o conteúdo será transcrito **fiel ao PDF** (política Hallucination Zero):
-- Definições dos 3 eixos, 3 procedimentos, 5 etapas, 4 arquétipos, 10 conceitos, 4 aplicações pedagógicas — exatamente como redigidas no toolkit
-- Referências mantidas
-- Créditos preservados (DOI, banca, programa)
+| `public/docs/toolkit_metodologia_castro.pdf` | Regenerado via reportlab com conteúdo corrigido |
+| `mem://project/content-structure/methodology-toolkit` | Nova memória de fidelidade |
+| `mem://index.md` | Adicionar referência à nova memória |
 
 ## Resultado esperado
 
-- Página `/metodologia` ganha uma camada didática rica sem perder a estrutura atual
-- Toolkit fica disponível para download em PDF (contribuição pública concreta)
-- Reforça o argumento de "metodologia como dispositivo aberto" alinhado à página `/replicar`
-- Material extra forte para defesa: demonstra pensamento metodológico sintetizado e replicável
+- Zero termos inventados ou de rascunho na página `/metodologia` e no PDF
+- Toolkit como **síntese pedagógica fiel** da metodologia da dissertação
+- Coerência total entre dissertação ↔ portal ↔ PDF baixável
+- Reforço da política Hallucination Zero documentado em memória
 
