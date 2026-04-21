@@ -95,8 +95,6 @@ const Metodologia = () => {
             </div>
           </AnimatedSection>
 
-          <NextSectionButton to="/estrutura" label={t("metodologia.next")} />
-
           {/* Toolkit Pedagógico */}
           <AnimatedSection delay={0.6}>
             <div className="mt-20 mb-12">
