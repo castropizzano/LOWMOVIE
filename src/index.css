@@ -69,3 +69,110 @@
     background-clip: text;
   }
 }
+
+/* ===== Print stylesheet — Ctrl+P friendly version of any portal page ===== */
+@media print {
+  @page {
+    size: A4;
+    margin: 18mm 16mm 22mm 16mm;
+  }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 30%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --border: 0 0% 80%;
+  }
+
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+
+  /* Hide chrome */
+  [data-sidebar],
+  aside,
+  nav,
+  header,
+  footer,
+  [role="dialog"],
+  [data-state="open"][role="dialog"],
+  .no-print,
+  iframe,
+  video,
+  button,
+  a[href^="#"][role="button"] {
+    display: none !important;
+  }
+
+  /* Show main content full width */
+  main, [role="main"], .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  /* Expand collapsibles */
+  [data-state="closed"] {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  [hidden] { display: block !important; }
+
+  /* Typography */
+  h1, h2, h3, h4 {
+    color: #000 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+  h1 { font-size: 22pt; }
+  h2 { font-size: 16pt; margin-top: 14pt; }
+  h3 { font-size: 13pt; margin-top: 10pt; }
+  p, li { color: #111 !important; orphans: 3; widows: 3; }
+
+  /* Cards/blocks */
+  .border, [class*="border-"] {
+    border-color: #ccc !important;
+    background: #fff !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Links: show URL inline */
+  a[href^="http"]::after,
+  a[href^="/"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+    word-break: break-all;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    filter: none !important;
+  }
+
+  /* Print-only footer note (added per page via running element fallback) */
+  body::after {
+    content: "LowMovie™ — lowmovie.lovable.app · © 2026 Castro Pizzano";
+    display: block;
+    margin-top: 24pt;
+    padding-top: 8pt;
+    border-top: 1px solid #ccc;
+    font-size: 8pt;
+    color: #666;
+    text-align: center;
+  }
+}

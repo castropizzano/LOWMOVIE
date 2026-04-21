@@ -19,6 +19,8 @@ import Defense from "./pages/Defense";
 import Replicar from "./pages/Replicar";
 import Ecossistema from "./pages/Ecossistema";
 import Licenca from "./pages/Licenca";
+import DefenseModeAbout from "./pages/DefenseModeAbout";
+import Imprimir from "./pages/Imprimir";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -46,6 +48,8 @@ const App = () => (
         <Route path="/replicar" element={<Replicar />} />
         <Route path="/ecossistema" element={<Ecossistema />} />
         <Route path="/licenca" element={<Licenca />} />
+        <Route path="/defense-mode" element={<DefenseModeAbout />} />
+        <Route path="/imprimir" element={<Imprimir />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
