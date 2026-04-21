@@ -166,7 +166,7 @@
       "methodAbnt": "PIZZANO, C. Lowbyrinth™: método de pesquisa-criação implicada em espiral cognitiva. In: LowMovie™ e o Labirinto Criativo. Curitiba: UNESPAR, 2026.",
       "toolkitLabel": "Citação ABNT — toolkit",
       "toolkitAbnt": "PIZZANO, C. Toolkit Pedagógico Lowbyrinth™. Curitiba: UNESPAR, 2026. Disponível em: lowmovie.lovable.app/docs/toolkit_metodologia_castro.pdf",
-      "note": "Lowbyrinth™ é marca em formalização. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA 4.0)."
+      "note": "Lowbyrinth™ é marca autoidentificada pelo autor (uso do símbolo ™ como reivindicação de propriedade intelectual). Depósito formal junto ao INPI está previsto após a defesa. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA 4.0)."
     },
     "next": "Estrutura"
   },
@@ -787,7 +787,7 @@
     "artifactsLabel": "Artefatos",
     "circulationLabel": "Estratégia de Circulação",
     "circulationP1": "O ecossistema adota um modelo híbrido de licenciamento: a obra (LowMovie™) permanece sob direitos reservados; o método (Lowbyrinth™) circula em licença Creative Commons com atribuição não-comercial; o código (Low Runner™) é open-source MIT. Esta arquitetura garante autoria, fomenta replicação acadêmica e mantém abertura a usos pedagógicos.",
-    "circulationP2": "As três marcas — LowMovie™, Lowbyrinth™ e Low Runner™ — estão em processo de formalização. A circulação aberta é compatível com a proteção autoral: uma protege a outra.",
+    "circulationP2": "As três marcas — LowMovie™, Lowbyrinth™ e Low Runner™ — são autoidentificadas pelo autor com o símbolo ™ como reivindicação de propriedade intelectual. Depósito formal junto ao INPI está previsto como próximo passo após a defesa. A circulação aberta é compatível com a proteção autoral: uma protege a outra.",
     "circulationCta": "Ver Política de Licenciamento",
     "next": "Acessar Low Runner™",
     "layers": {
@@ -805,7 +805,7 @@
       "lowbyrinth": {
         "name": "Lowbyrinth™",
         "tag": "Método",
-        "status": "Em formalização",
+        "status": "Marca reivindicada (™)",
         "desc": "Método de pesquisa-criação implicada formulado no interior da dissertação. Articula três eixos (afeto, escuta, improviso), três procedimentos de campo (vivência situada, convivência criativa, escuta partilhada), uma espiral cognitiva e operadores poéticos do olhar (instante, borda, fluxo).",
         "methodArtifact": "Método formulado na dissertação",
         "toolkitArtifact": "Toolkit Pedagógico (PDF visual)",
@@ -830,7 +830,7 @@
     "title": "Licenciamento",
     "subtitle": "Política de circulação aberta com proteção de autoria",
     "intro1": "O ecossistema LowMovie™ · Lowbyrinth™ · Low Runner™ adota um modelo híbrido de licenciamento, coerente com a natureza distinta de cada camada: obra, método e plataforma. Cada camada circula sob a licença mais adequada à sua lógica de uso e preservação.",
-    "intro2": "A escolha desse modelo segue um princípio: circulação aberta e proteção de autoria não se opõem — uma sustenta a outra. Atribuição clara, marcas registradas e licenças explícitas permitem que o trabalho circule sem ser apropriado.",
+    "intro2": "A escolha desse modelo segue um princípio: circulação aberta e proteção de autoria não se opõem — uma sustenta a outra. Atribuição clara, marcas reivindicadas (™) e licenças explícitas permitem que o trabalho circule sem ser apropriado.",
     "items": {
       "lowmovie": {
         "name": "LowMovie™",
@@ -841,23 +841,23 @@
       "lowbyrinth": {
         "name": "Lowbyrinth™",
         "tag": "Método",
-        "license": "CC BY-NC-SA 4.0 · Marca em formalização",
-        "desc": "O método é livre para uso acadêmico, pedagógico e em pesquisa-criação, mediante atribuição. Adaptações devem manter a mesma licença. Uso comercial — cursos pagos, consultorias, produtos derivados — requer autorização. A marca Lowbyrinth™ está em processo de formalização."
+        "license": "CC BY-NC-SA 4.0 · Marca reivindicada (™)",
+        "desc": "O método é livre para uso acadêmico, pedagógico e em pesquisa-criação, mediante atribuição. Adaptações devem manter a mesma licença. Uso comercial — cursos pagos, consultorias, produtos derivados — requer autorização. A marca Lowbyrinth™ é autoidentificada pelo autor; o depósito formal junto ao INPI está previsto como próximo passo."
       },
       "lowrunner": {
         "name": "Low Runner™",
         "tag": "Plataforma",
-        "license": "MIT License · Código aberto · Marca em formalização",
-        "desc": "O código-fonte do portal é livre para clonagem, modificação e uso, inclusive comercial, sob os termos da licença MIT. Atribuição é recomendada. A marca Low Runner™ identifica especificamente esta arquitetura de dissertação navegável e está em processo de formalização."
+        "license": "MIT License · Código aberto · Marca reivindicada (™)",
+        "desc": "O código-fonte do portal é livre para clonagem, modificação e uso, inclusive comercial, sob os termos da licença MIT. Atribuição é recomendada. A marca Low Runner™ identifica especificamente esta arquitetura de dissertação navegável e é autoidentificada pelo autor; depósito formal junto ao INPI e eventual registro de software estão previstos como próximos passos."
       }
     },
-    "trademarksLabel": "Marcas Registradas",
+    "trademarksLabel": "Marcas Reivindicadas",
     "trademarks": {
       "lowmovie": "LowMovie™",
       "lowbyrinth": "Lowbyrinth™",
       "lowrunner": "Low Runner™"
     },
-    "trademarksNote": "As três marcas estão em processo de formalização junto ao INPI (Instituto Nacional da Propriedade Industrial), nas classes adequadas a cada camada — obra audiovisual, método educacional e software. O uso público do símbolo ™ indica reivindicação de marca em curso.",
+    "trademarksNote": "O símbolo ™ é utilizado como sinalização de marca reivindicada pelo autor — diferente do símbolo ®, seu uso não exige registro prévio e indica publicamente a intenção de proteção autoral. O depósito formal junto ao INPI (Instituto Nacional da Propriedade Industrial), nas classes adequadas a cada camada — obra audiovisual, método educacional e software — está previsto como próximo passo após a defesa.",
     "contactLabel": "Contato para Licenciamento",
     "contactDesc": "Para usos comerciais, parcerias institucionais, licenciamento de método ou consultas sobre as marcas, entre em contato diretamente. Usos acadêmicos e pedagógicos seguem as licenças acima e não requerem contato prévio — apenas atribuição.",
     "contactCta": "Enviar E-mail"

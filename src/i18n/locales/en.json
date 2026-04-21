@@ -166,7 +166,7 @@
       "methodAbnt": "PIZZANO, C. Lowbyrinth™: implicated research-creation method in cognitive spiral. In: LowMovie™ and the Creative Labyrinth. Curitiba: UNESPAR, 2026.",
       "toolkitLabel": "ABNT citation — toolkit",
       "toolkitAbnt": "PIZZANO, C. Lowbyrinth™ Pedagogical Toolkit. Curitiba: UNESPAR, 2026. Available at: lowmovie.lovable.app/docs/toolkit_metodologia_castro.pdf",
-      "note": "Lowbyrinth™ is a trademark in formalization. Its application in pedagogical, research, or creative contexts is free upon attribution (CC BY-NC-SA 4.0)."
+      "note": "Lowbyrinth™ is an author-claimed trademark (use of the ™ symbol as an intellectual property claim). Formal filing with INPI (Brazilian Trademark Office) is planned as a next step after the defense. Its application in pedagogical, research, or creative contexts is free upon attribution (CC BY-NC-SA 4.0)."
     },
     "next": "Structure"
   },
@@ -787,7 +787,7 @@
     "artifactsLabel": "Artifacts",
     "circulationLabel": "Circulation Strategy",
     "circulationP1": "The ecosystem adopts a hybrid licensing model: the work (LowMovie™) remains under reserved rights; the method (Lowbyrinth™) circulates under Creative Commons with non-commercial attribution; the code (Low Runner™) is open-source MIT. This architecture safeguards authorship, fosters academic replication, and keeps openness for pedagogical use.",
-    "circulationP2": "All three trademarks — LowMovie™, Lowbyrinth™, and Low Runner™ — are in the process of formalization. Open circulation is compatible with authorial protection: each one protects the other.",
+    "circulationP2": "All three trademarks — LowMovie™, Lowbyrinth™, and Low Runner™ — are author-claimed marks using the ™ symbol as an intellectual property claim. Formal filing with INPI (the Brazilian Trademark Office) is planned as a next step after the defense. Open circulation is compatible with authorial protection: each one protects the other.",
     "circulationCta": "View Licensing Policy",
     "next": "Access Low Runner™",
     "layers": {
@@ -805,7 +805,7 @@
       "lowbyrinth": {
         "name": "Lowbyrinth™",
         "tag": "Method",
-        "status": "Being formalized",
+        "status": "Author-claimed mark (™)",
         "desc": "Implicated research-creation method formulated within the dissertation. It articulates three axes (affect, listening, improvisation), three field procedures (situated experience, creative coexistence, shared listening), a cognitive spiral, and poetic operators of the gaze (instant, edge, flow).",
         "methodArtifact": "Method formulated in the dissertation",
         "toolkitArtifact": "Pedagogical Toolkit (visual PDF)",
@@ -830,7 +830,7 @@
     "title": "Licensing",
     "subtitle": "Open circulation policy with authorial protection",
     "intro1": "The LowMovie™ · Lowbyrinth™ · Low Runner™ ecosystem adopts a hybrid licensing model, coherent with the distinct nature of each layer: work, method, and platform. Each layer circulates under the license most appropriate to its logic of use and preservation.",
-    "intro2": "This choice follows a principle: open circulation and authorial protection do not oppose each other — one sustains the other. Clear attribution, registered trademarks, and explicit licenses allow the work to circulate without being appropriated.",
+    "intro2": "This choice follows a principle: open circulation and authorial protection do not oppose each other — one sustains the other. Clear attribution, author-claimed trademarks (™), and explicit licenses allow the work to circulate without being appropriated.",
     "items": {
       "lowmovie": {
         "name": "LowMovie™",
@@ -841,23 +841,23 @@
       "lowbyrinth": {
         "name": "Lowbyrinth™",
         "tag": "Method",
-        "license": "CC BY-NC-SA 4.0 · Trademark in formalization",
-        "desc": "The method is free for academic, pedagogical, and research-creation use, with attribution. Adaptations must keep the same license. Commercial use — paid courses, consultancy, derivative products — requires authorization. The Lowbyrinth™ trademark is in the process of formalization."
+        "license": "CC BY-NC-SA 4.0 · Author-claimed mark (™)",
+        "desc": "The method is free for academic, pedagogical, and research-creation use, with attribution. Adaptations must keep the same license. Commercial use — paid courses, consultancy, derivative products — requires authorization. The Lowbyrinth™ trademark is author-claimed; formal filing with INPI is planned as a next step."
       },
       "lowrunner": {
         "name": "Low Runner™",
         "tag": "Platform",
-        "license": "MIT License · Open source · Trademark in formalization",
-        "desc": "The portal source code is free for cloning, modification, and use, including commercial, under the MIT license terms. Attribution is recommended. The Low Runner™ trademark specifically identifies this navigable-dissertation architecture and is in the process of formalization."
+        "license": "MIT License · Open source · Author-claimed mark (™)",
+        "desc": "The portal source code is free for cloning, modification, and use, including commercial, under the MIT license terms. Attribution is recommended. The Low Runner™ trademark specifically identifies this navigable-dissertation architecture and is author-claimed; formal filing with INPI and eventual software registration are planned as next steps."
       }
     },
-    "trademarksLabel": "Registered Trademarks",
+    "trademarksLabel": "Claimed Trademarks",
     "trademarks": {
       "lowmovie": "LowMovie™",
       "lowbyrinth": "Lowbyrinth™",
       "lowrunner": "Low Runner™"
     },
-    "trademarksNote": "All three trademarks are in the process of formalization with INPI (Brazilian National Institute of Industrial Property), in classes appropriate to each layer — audiovisual work, educational method, and software. The public use of the ™ symbol indicates an active trademark claim.",
+    "trademarksNote": "The ™ symbol is used to signal an author-claimed trademark — unlike the ® symbol, it does not require prior registration and publicly indicates the author's intent to protect the mark. Formal filing with INPI (Brazilian National Institute of Industrial Property), in classes appropriate to each layer — audiovisual work, educational method, and software — is planned as a next step after the defense.",
     "contactLabel": "Licensing Contact",
     "contactDesc": "For commercial uses, institutional partnerships, method licensing, or trademark inquiries, please contact directly. Academic and pedagogical uses follow the licenses above and require no prior contact — only attribution.",
     "contactCta": "Send Email"
