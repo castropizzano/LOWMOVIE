@@ -6,9 +6,13 @@ import { useTranslation } from "react-i18next";
 
 const eixoKeys = ["afeto", "escuta", "improviso"] as const;
 const opKeys = ["period", "instruments", "analysis", "positioning", "collection", "organization"] as const;
+const stepKeys = ["s1", "s2", "s3", "s4", "s5"] as const;
+const archetypeKeys = ["void", "noise", "signal", "struct"] as const;
+const applicationKeys = ["classroom", "workshops", "reflective", "research"] as const;
 
 const Metodologia = () => {
   const { t } = useTranslation();
+  const operators = t("metodologia.toolkit.operators", { returnObjects: true }) as Array<{ title: string; desc: string }>;
   return (
     <Layout>
       <section className="py-20 md:py-28">
