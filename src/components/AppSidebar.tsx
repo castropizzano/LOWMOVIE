@@ -36,6 +36,7 @@ import {
 
 const itemDefs = [
   { key: "home", url: "/home", icon: Home },
+  // Dissertação (leitura linear)
   { key: "apresentacao", url: "/apresentacao", icon: Presentation },
   { key: "metodologia", url: "/metodologia", icon: FlaskConical },
   { key: "estrutura", url: "/estrutura", icon: LayoutGrid },
@@ -45,13 +46,16 @@ const itemDefs = [
   { key: "contribuicoes", url: "/contribuicoes", icon: HandHeart },
   { key: "questoes", url: "/questoes", icon: HelpCircle },
   { key: "conclusao", url: "/conclusao", icon: CheckCircle },
-  { key: "mapa", url: "/mapa", icon: Network },
-  { key: "timeline", url: "/timeline", icon: GraduationCap },
+  // Ecossistema (3 camadas)
   { key: "ecossistema", url: "/ecossistema", icon: Layers },
   { key: "replicar", url: "/replicar", icon: Share2 },
+  { key: "licenca", url: "/licenca", icon: Scale },
+  // Recursos (ferramentas de leitura)
+  { key: "mapa", url: "/mapa", icon: Network },
   { key: "defenseMode", url: "/defense-mode", icon: Projector },
   { key: "imprimir", url: "/imprimir", icon: Printer },
-  { key: "licenca", url: "/licenca", icon: Scale },
+  // Anexo
+  { key: "timeline", url: "/timeline", icon: GraduationCap },
 ];
 
 export function AppSidebar() {
