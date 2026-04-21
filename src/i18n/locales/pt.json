@@ -115,49 +115,42 @@
     },
     "toolkit": {
       "title": "Toolkit Pedagógico",
-      "subtitle": "Síntese aplicável da metodologia em cinco etapas",
-      "intro": "Dispositivo pedagógico aberto — não receita. Sintetiza a metodologia desenvolvida na dissertação em formato replicável: cada conceito, eixo e procedimento pode ser adaptado, recombinado e expandido conforme o contexto de aplicação.",
-      "stepsLabel": "Método Híbrido — 5 Etapas",
-      "stepsNote": "O método não é linear: é espiral. Cada etapa alimenta a seguinte e pode retornar às anteriores.",
+      "subtitle": "Síntese aplicável da metodologia desenvolvida na dissertação",
+      "intro": "Dispositivo pedagógico aberto — não receita. Sintetiza, em formato replicável, os termos efetivamente formulados na dissertação: três eixos metodológicos, três procedimentos de campo, a espiral cognitiva, os operadores poéticos do olhar e os conceitos operadores que emergem da prática.",
+      "stepsLabel": "Procedimentos de Campo",
+      "stepsNote": "Conduzidos a partir da vivência situada junto ao coletivo LowPressure™. Os três procedimentos não seguem hierarquia: retroalimentam-se em espiral.",
       "steps": {
-        "s1": { "title": "Observação", "desc": "Imersão sensorial no território. Escuta encarnada. Cartografia sensível dos espaços, fluxos e tensões. Registro dos primeiros afetos." },
-        "s2": { "title": "Co-criação", "desc": "Convivência criativa com colaboradores. Sessões de improviso. Produção de material bruto (vídeo, som, texto, código). A crew como laboratório." },
-        "s3": { "title": "Documentação", "desc": "Registro em fluxo — captura contínua e não hierárquica. Corpo-câmera. O registro não documenta o processo; ele é parte do processo." },
-        "s4": { "title": "Reflexão", "desc": "Análise do material produzido. Identificação de padrões, recorrências, glitches significativos. Diálogo com referências teóricas." },
-        "s5": { "title": "Expansão", "desc": "Transformação do material em obras, dispositivos, publicações. O processo se expande para além do contexto original. Compartilhamento e circulação." }
+        "s1": { "title": "Vivência situada", "desc": "Participação direta em processos coletivos: sessões de gravação, reuniões, eventos e momentos informais com skatistas, videomakers e colaboradores artísticos." },
+        "s2": { "title": "Convivência criativa", "desc": "O pesquisador participa das dinâmicas de produção e montagem, sustentando uma relação horizontal e implicada com o campo." },
+        "s3": { "title": "Escuta partilhada", "desc": "Materializada em conversas abertas, registradas por meio de notas, áudios e diário digital — escuta como operação metodológica que sustenta a investigação." }
       },
       "spiralLabel": "Espiral Cognitiva",
-      "spiralDiagram": "prática → reflexão → formulação → expansão ↻",
-      "spiralDesc": "Diferente de um ciclo fechado, a espiral sugere que cada volta eleva o processo a um novo patamar de complexidade. Cada passagem transforma tanto o material quanto o pesquisador.",
-      "archetypesLabel": "Quatro Arquétipos Criativos",
-      "archetypesNote": "Os arquétipos mapeiam estágios do processo criativo — não tipos fixos de pessoa. Todo criador transita entre eles.",
+      "spiralDiagram": "lembrar → entender → aplicar → analisar → criar → avaliar ↻",
+      "spiralDesc": "Lógica em espiral cognitiva inspirada na Taxonomia dos Objetivos de Bloom adaptada por Ferraz e Belhot (2010). Não é matriz rígida: serve como mapa em movimento. Cada etapa se dobra sobre a anterior, compondo uma trajetória de expansão da consciência metodológica entre sentir, compreender e criar.",
+      "archetypesLabel": "Operadores Poéticos do Olhar",
+      "archetypesNote": "Três operadores corporais antes de serem conceituais. Emergem da prática de filmar com o coletivo e estruturam o modo de olhar a cidade.",
       "archetypes": {
-        "void": { "title": "VOID", "subtitle": "O vazio fértil", "desc": "Silêncio, escuta, receptividade. O momento antes da criação, onde tudo é potência. Contemplação, pausa, abertura ao desconhecido.", "refs": "Refs: Cage, Tarkovsky, Zen." },
-        "noise": { "title": "NOISE", "subtitle": "O ruído criativo", "desc": "Caos, excesso, experimentação sem filtro. Acumulação de material, tentativa e erro. Energia bruta, improviso, produção sem julgamento.", "refs": "Refs: Noise music, action painting, free jazz." },
-        "signal": { "title": "SIGNAL", "subtitle": "O sinal emergente", "desc": "Padrão que surge do ruído. O momento de reconhecimento: isto aqui importa. Atenção, seleção, curadoria do material bruto.", "refs": "Refs: Montagem eisensteiniana, sampling, bricolagem." },
-        "struct": { "title": "STRUCT", "subtitle": "A estrutura viva", "desc": "Organização que respira. A forma que emerge do processo sem sufocar o material. Composição, ritmo, arquitetura flexível.", "refs": "Refs: Oulipo, serialismo, design generativo." }
+        "instante": { "title": "Instante", "subtitle": "Poética do instante", "desc": "Captura do momento irrepetível, na espera pela luz exata, na atenção ao gesto que pulsa em espiral. O instante como decisão sensível, não como instantaneidade técnica.", "refs": "Cap. 1.1 — Operadores Poéticos do Olhar" },
+        "borda": { "title": "Borda", "subtitle": "Estética da borda", "desc": "Criação nas margens — do quadro, da cidade, das disciplinas. A imagem nasce do deslocamento; não há centralidade, há aderência ao fluxo do entorno.", "refs": "Cap. 1.1 — Operadores Poéticos do Olhar" },
+        "fluxo": { "title": "Fluxo", "subtitle": "Registro em fluxo", "desc": "Documentação contínua em que se enfraquece a separação entre operador e acontecimento. A câmera como extensão do corpo implicado no gesto, no risco, na vibração.", "refs": "Cap. 1.1 — Operadores Poéticos do Olhar" }
       },
       "operatorsLabel": "Conceitos Operadores",
-      "operatorsNote": "Ferramentas analíticas derivadas da prática — não categorias teóricas aplicadas de fora. Emergem do processo e servem para operar sobre ele.",
+      "operatorsNote": "Ferramentas analíticas que emergem da prática e retornam a ela. Cada conceito é formulado e mobilizado verbatim no corpo da dissertação.",
       "operators": [
-        { "title": "Poética do instante", "desc": "Captura do momento irrepetível, o frame decisivo do fluxo criativo." },
-        { "title": "Estética da borda", "desc": "Criação nas margens — entre disciplinas, entre controle e acaso, entre centro e periferia." },
-        { "title": "Registro em fluxo", "desc": "Documentação contínua e não hierárquica; o registro como parte do processo, não representação dele." },
-        { "title": "Lowbyrinth™", "desc": "Mapa neural criativo, caminhos rizomáticos do fazer coletivo. Emblema gráfico, portal de transformação." },
-        { "title": "Cartografia sensível", "desc": "Mapeamento afetivo do território — não geográfico, mas relacional e somático." },
-        { "title": "Corpo-câmera", "desc": "O corpo como aparato de registro; a câmera como extensão somática do pesquisador." },
-        { "title": "Fabulação", "desc": "Invenção de narrativas a partir do real; ficção como método de acesso a verdades oblíquas." },
-        { "title": "Glitch como linguagem", "desc": "O erro, a falha, o ruído como matéria expressiva — não como defeito a corrigir." },
-        { "title": "Código como corpo", "desc": "Programação como gesto criativo; o código que respira, pulsa, falha como organismo vivo." },
-        { "title": "Documentação subversiva", "desc": "Registro que questiona suas próprias condições; documento como ato político e estético." }
+        { "title": "Lowbyrinth™", "desc": "Emblema e operador interno do processo: método, símbolo e vivência reunidos. Cartografia em espiral que valoriza o erro, o processo e o desejo de criar em relação." },
+        { "title": "Corpo-câmera", "desc": "O corpo como aparato de registro; a câmera como extensão somática do pesquisador implicado no gesto criador." },
+        { "title": "Fabulação", "desc": "Método de leitura e criação que revisita o vivido sem congelá-lo, deslocando o real para revelar outras camadas do experimentado." },
+        { "title": "Glitch como linguagem", "desc": "O erro, a falha, o ruído como matéria expressiva e ética da insistência — não como defeito a corrigir." },
+        { "title": "Faça você mesmo (D.I.Y.)", "desc": "Ética que atravessa o coletivo: ocupação de espaços informais, construção de redes afetivas e criativas, autonomia produtiva." },
+        { "title": "Pesquisa-criação implicada", "desc": "Modo de pesquisar em que afetar-se constitui condição epistemológica. Criar é pesquisar; refletir é parte do gesto." }
       ],
       "applicationsLabel": "Aplicação Pedagógica",
-      "applicationsNote": "O toolkit pode ser utilizado em contextos de ensino de artes, cinema, design, performance e processos criativos em geral.",
+      "applicationsNote": "As metodologias cultivadas no processo do LowMovie™ passaram a compor a prática docente do autor — em disciplinas como Branding e Produção Audiovisual.",
       "applications": {
-        "classroom": { "title": "Sala de aula / ateliê", "desc": "Usar os 3 eixos como enquadramento de projeto. Propor que estudantes identifiquem seus afetos em relação ao tema, pratiquem escuta encarnada e incorporem o improviso como método." },
-        "workshops": { "title": "Oficinas / workshops", "desc": "Aplicar as 5 etapas do método híbrido como estrutura de uma oficina de 1–5 dias. Cada dia = uma etapa. Ao final, os participantes terão material para montar uma espiral completa." },
-        "reflective": { "title": "Dispositivo reflexivo", "desc": "Usar os 4 arquétipos e os 10 conceitos operadores como vocabulário para que o criador nomeie e reflita sobre seu próprio processo." },
-        "research": { "title": "Pesquisa acadêmica", "desc": "Os conceitos operadores podem ser adotados como categorias analíticas em pesquisas sobre processos criativos, práticas artísticas colaborativas e metodologias de pesquisa-criação." }
+        "classroom": { "title": "Sala de aula", "desc": "Os princípios de escuta ativa, improviso criativo, coautoria e rizoma incorporados aos planos de ensino. Estudantes criam videoclipes, ensaios visuais e projetos autorais a partir de seus próprios contextos." },
+        "workshops": { "title": "Oficinas e curadorias", "desc": "Curadorias, oficinas, rodas de exibição e conversas como extensão viva da crew. O LowMovie™ se prolonga em oficina, festival, turnê — onde encontra fissura, faz morada provisória." },
+        "reflective": { "title": "Dispositivo reflexivo", "desc": "Os três eixos (afeto, escuta, improviso), os operadores poéticos do olhar e os conceitos operadores funcionam como vocabulário para nomear e refletir sobre o próprio processo criativo." },
+        "research": { "title": "Pesquisa-criação", "desc": "Os procedimentos de campo e os conceitos operadores podem ser adotados como matriz analítica em pesquisas sobre processos criativos, práticas artísticas colaborativas e metodologias de pesquisa em arte." }
       },
       "downloadCta": "Baixar Toolkit em PDF",
       "openLabel": "Dispositivo aberto — use, adapte, remixe."

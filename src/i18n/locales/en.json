@@ -115,49 +115,42 @@
     },
     "toolkit": {
       "title": "Pedagogical Toolkit",
-      "subtitle": "Applicable synthesis of the methodology in five stages",
-      "intro": "An open pedagogical device — not a recipe. It synthesizes the methodology developed in the dissertation in a replicable format: each concept, axis, and procedure can be adapted, recombined, and expanded according to the context of application.",
-      "stepsLabel": "Hybrid Method — 5 Stages",
-      "stepsNote": "The method is not linear: it is a spiral. Each stage feeds the next and can return to previous ones.",
+      "subtitle": "Applicable synthesis of the methodology developed in the dissertation",
+      "intro": "An open pedagogical device — not a recipe. It synthesizes, in replicable format, the terms actually formulated in the dissertation: three methodological axes, three field procedures, the cognitive spiral, the poetic operators of the gaze, and the operator concepts that emerge from practice.",
+      "stepsLabel": "Field Procedures",
+      "stepsNote": "Conducted from the situated experience with the LowPressure™ collective. The three procedures follow no hierarchy: they feed back into each other in a spiral.",
       "steps": {
-        "s1": { "title": "Observation", "desc": "Sensory immersion in the territory. Embodied listening. Sensitive cartography of spaces, flows, and tensions. Recording of the first affects." },
-        "s2": { "title": "Co-creation", "desc": "Creative coexistence with collaborators. Improvisation sessions. Production of raw material (video, sound, text, code). The crew as laboratory." },
-        "s3": { "title": "Documentation", "desc": "Recording in flow — continuous and non-hierarchical capture. Body-camera. The record does not document the process; it is part of the process." },
-        "s4": { "title": "Reflection", "desc": "Analysis of the produced material. Identification of patterns, recurrences, significant glitches. Dialogue with theoretical references." },
-        "s5": { "title": "Expansion", "desc": "Transformation of material into works, devices, publications. The process expands beyond the original context. Sharing and circulation." }
+        "s1": { "title": "Situated experience", "desc": "Direct participation in collective processes: filming sessions, meetings, events, and informal moments with skaters, videomakers, and artistic collaborators." },
+        "s2": { "title": "Creative coexistence", "desc": "The researcher takes part in production and editing dynamics, sustaining a horizontal and implicated relation with the field." },
+        "s3": { "title": "Shared listening", "desc": "Materialized in open conversations, recorded through notes, audio, and digital diary — listening as the methodological operation that sustains the research." }
       },
       "spiralLabel": "Cognitive Spiral",
-      "spiralDiagram": "practice → reflection → formulation → expansion ↻",
-      "spiralDesc": "Unlike a closed cycle, the spiral suggests that each turn elevates the process to a new level of complexity. Each passage transforms both the material and the researcher.",
-      "archetypesLabel": "Four Creative Archetypes",
-      "archetypesNote": "The archetypes map stages of the creative process — not fixed types of person. Every creator moves between them.",
+      "spiralDiagram": "remember → understand → apply → analyze → create → evaluate ↻",
+      "spiralDesc": "A spiral cognitive logic inspired by Bloom's Taxonomy of Objectives, adapted by Ferraz and Belhot (2010). It is not a rigid matrix: it serves as a moving map. Each stage folds over the previous one, composing a trajectory of expansion of methodological consciousness between sensing, understanding, and creating.",
+      "archetypesLabel": "Poetic Operators of the Gaze",
+      "archetypesNote": "Three corporeal operators before being conceptual. They emerge from the practice of filming with the collective and structure the way of looking at the city.",
       "archetypes": {
-        "void": { "title": "VOID", "subtitle": "The fertile emptiness", "desc": "Silence, listening, receptivity. The moment before creation, where everything is potential. Contemplation, pause, openness to the unknown.", "refs": "Refs: Cage, Tarkovsky, Zen." },
-        "noise": { "title": "NOISE", "subtitle": "The creative noise", "desc": "Chaos, excess, unfiltered experimentation. Material accumulation, trial and error. Raw energy, improvisation, production without judgment.", "refs": "Refs: Noise music, action painting, free jazz." },
-        "signal": { "title": "SIGNAL", "subtitle": "The emergent signal", "desc": "Pattern that emerges from noise. The moment of recognition: this matters. Attention, selection, curation of raw material.", "refs": "Refs: Eisensteinian montage, sampling, bricolage." },
-        "struct": { "title": "STRUCT", "subtitle": "The living structure", "desc": "Organization that breathes. The form that emerges from the process without suffocating the material. Composition, rhythm, flexible architecture.", "refs": "Refs: Oulipo, serialism, generative design." }
+        "instante": { "title": "Instant", "subtitle": "Poetics of the instant", "desc": "Capture of the unrepeatable moment, in the wait for the exact light, in attention to the gesture that pulses in spiral. The instant as a sensible decision, not as technical instantaneity.", "refs": "Ch. 1.1 — Poetic Operators of the Gaze" },
+        "borda": { "title": "Edge", "subtitle": "Aesthetics of the edge", "desc": "Creation at the margins — of the frame, the city, disciplines. The image is born from displacement; there is no centrality, there is adherence to the flow of the surroundings.", "refs": "Ch. 1.1 — Poetic Operators of the Gaze" },
+        "fluxo": { "title": "Flow", "subtitle": "Recording in flow", "desc": "Continuous documentation in which the separation between operator and event weakens. The camera as an extension of the body implicated in gesture, risk, vibration.", "refs": "Ch. 1.1 — Poetic Operators of the Gaze" }
       },
       "operatorsLabel": "Operator Concepts",
-      "operatorsNote": "Analytical tools derived from practice — not theoretical categories applied from outside. They emerge from the process and serve to operate on it.",
+      "operatorsNote": "Analytical tools that emerge from practice and return to it. Each concept is formulated and mobilized verbatim in the body of the dissertation.",
       "operators": [
-        { "title": "Poetics of the instant", "desc": "Capture of the unrepeatable moment, the decisive frame of the creative flow." },
-        { "title": "Aesthetics of the edge", "desc": "Creation at the margins — between disciplines, between control and chance, between center and periphery." },
-        { "title": "Recording in flow", "desc": "Continuous and non-hierarchical documentation; the record as part of the process, not its representation." },
-        { "title": "Lowbyrinth™", "desc": "Creative neural map, rhizomatic paths of collective making. Graphic emblem, portal of transformation." },
-        { "title": "Sensitive cartography", "desc": "Affective mapping of the territory — not geographic, but relational and somatic." },
-        { "title": "Body-camera", "desc": "The body as recording apparatus; the camera as somatic extension of the researcher." },
-        { "title": "Fabulation", "desc": "Invention of narratives from the real; fiction as a method of accessing oblique truths." },
-        { "title": "Glitch as language", "desc": "Error, failure, noise as expressive matter — not as defect to be corrected." },
-        { "title": "Code as body", "desc": "Programming as creative gesture; code that breathes, pulses, fails as a living organism." },
-        { "title": "Subversive documentation", "desc": "Recording that questions its own conditions; document as political and aesthetic act." }
+        { "title": "Lowbyrinth™", "desc": "Emblem and internal operator of the process: method, symbol, and lived experience reunited. A spiral cartography that values error, process, and the desire to create in relation." },
+        { "title": "Body-camera", "desc": "The body as recording apparatus; the camera as somatic extension of the researcher implicated in the creative gesture." },
+        { "title": "Fabulation", "desc": "A method of reading and creation that revisits the lived without freezing it, displacing the real to reveal other layers of experience." },
+        { "title": "Glitch as language", "desc": "Error, failure, noise as expressive matter and ethics of insistence — not as a defect to be corrected." },
+        { "title": "Do It Yourself (D.I.Y.)", "desc": "An ethics that crosses the collective: occupation of informal spaces, building of affective and creative networks, productive autonomy." },
+        { "title": "Implicated research-creation", "desc": "A way of researching in which being affected constitutes an epistemological condition. To create is to research; to reflect is part of the gesture." }
       ],
       "applicationsLabel": "Pedagogical Application",
-      "applicationsNote": "The toolkit can be used in teaching contexts of arts, cinema, design, performance, and creative processes in general.",
+      "applicationsNote": "The methodologies cultivated in the LowMovie™ process became part of the author's teaching practice — in courses such as Branding and Audiovisual Production.",
       "applications": {
-        "classroom": { "title": "Classroom / studio", "desc": "Use the 3 axes as project framework. Propose that students identify their affects in relation to the theme, practice embodied listening, and incorporate improvisation as method." },
-        "workshops": { "title": "Workshops", "desc": "Apply the 5 stages of the hybrid method as the structure of a 1–5 day workshop. Each day = one stage. At the end, participants will have material to assemble a complete spiral." },
-        "reflective": { "title": "Reflective device", "desc": "Use the 4 archetypes and the 10 operator concepts as vocabulary so the creator can name and reflect on their own process." },
-        "research": { "title": "Academic research", "desc": "The operator concepts can be adopted as analytical categories in research on creative processes, collaborative artistic practices, and research-creation methodologies." }
+        "classroom": { "title": "Classroom", "desc": "Principles of active listening, creative improvisation, co-authorship, and rhizome incorporated into syllabi. Students create music videos, visual essays, and authorial projects from their own contexts." },
+        "workshops": { "title": "Workshops and curatorship", "desc": "Curatorship, workshops, screening rounds, and conversations as a living extension of the crew. LowMovie™ extends into workshop, festival, tour — wherever it finds a fissure, makes provisional dwelling." },
+        "reflective": { "title": "Reflective device", "desc": "The three axes (affect, listening, improvisation), the poetic operators of the gaze, and the operator concepts function as vocabulary to name and reflect on one's own creative process." },
+        "research": { "title": "Research-creation", "desc": "Field procedures and operator concepts can be adopted as an analytical matrix in research on creative processes, collaborative artistic practices, and methodologies of research in art." }
       },
       "downloadCta": "Download Toolkit (PDF)",
       "openLabel": "Open device — use, adapt, remix."
