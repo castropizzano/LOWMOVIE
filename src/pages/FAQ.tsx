@@ -10,9 +10,21 @@ const qKeys = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"] as const;
 
 const FAQ = () => {
   const { t } = useTranslation();
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: qKeys.map((key) => ({
+      "@type": "Question",
+      name: t(`questoes.items.${key}.q`),
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: t(`questoes.items.${key}.a`),
+      },
+    })),
+  };
   return (
     <Layout>
-      <SeoHead route="/questoes" />
+      <SeoHead route="/questoes" jsonLd={faqJsonLd} />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("questoes.title")} subtitle={t("questoes.subtitle")} />
