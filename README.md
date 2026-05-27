@@ -18,7 +18,7 @@ Repositório oficial da dissertação de mestrado de **Castro Pizzano**.
 | **Linha de pesquisa** | Processos de Criação no Cinema e nas Artes do Vídeo |
 | **Orientador** | Prof. Dr. Fábio Jabur de Noronha |
 | **Banca** | Profa. Dra. Fabiana Pelinson · Profa. Dra. Luciana Barone · Prof. Dr. Antar Mikosz |
-| **Defesa** | Março 2026 |
+| **Defesa** | Defendida e aprovada em 27 de março de 2026 |
 
 ---
 
@@ -145,4 +145,4 @@ Este projeto foi desenvolvido através de processos híbridos de criação, envo
 
 Materiais audiovisuais e imagens podem possuir licenças específicas. Ver [`LICENSE`](LICENSE).
 
-<!-- sync: 2026-03-11 -->
+<!-- sync: 2026-03-27 -->

@@ -4,6 +4,10 @@ Todas as mudanças significativas do projeto são documentadas neste arquivo.
 
 ---
 
+## [v1.0] — 2026-03-27
+
+Dissertação **defendida e aprovada** no PPG-CINEAV / UNESPAR. Versão final do PDF submetida ao repositório institucional disponível em `public/docs/dissertacao.pdf`.
+
 ## [v1.0-defense] — 2026-03-11
 
 Versão apresentada na defesa da dissertação de mestrado.

@@ -47,7 +47,7 @@
     "playVideo": "Reproduzir vídeo"
   },
   "home": {
-    "dissertationDate": "Dissertação de Mestrado · Março 2026",
+    "dissertationDate": "Dissertação de Mestrado · Defendida e aprovada em 27.03.2026",
     "subtitle": "e o Labirinto Criativo",
     "tagline": "Subjetividade, Subcultura e a Poética em Movimento",
     "tagline2": "do Coletivo LowPressure™",
@@ -166,7 +166,7 @@
       "methodAbnt": "PIZZANO, C. Lowbyrinth™: método de pesquisa-criação implicada em espiral cognitiva. In: LowMovie™ e o Labirinto Criativo. Curitiba: UNESPAR, 2026.",
       "toolkitLabel": "Citação ABNT — toolkit",
       "toolkitAbnt": "PIZZANO, C. Toolkit Pedagógico Lowbyrinth™. Curitiba: UNESPAR, 2026. Disponível em: lowmovie.lovable.app/docs/toolkit_metodologia_castro.pdf",
-      "note": "Lowbyrinth™ é marca autoidentificada pelo autor (uso do símbolo ™ como reivindicação de propriedade intelectual). Depósito formal junto ao INPI está previsto após a defesa. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA 4.0)."
+      "note": "Lowbyrinth™ é marca autoidentificada pelo autor (uso do símbolo ™ como reivindicação de propriedade intelectual). Depósito formal junto ao INPI está previsto como próximo passo. Sua aplicação em contextos pedagógicos, de pesquisa ou criação é livre mediante atribuição (CC BY-NC-SA 4.0)."
     },
     "next": "Estrutura"
   },
@@ -589,7 +589,7 @@
     ],
     "block1Quote1": "\"Essa pesquisa começou tentando compreender o que acontece nesse tipo de gesto.\"",
     "block1Quote2": "\"Um gesto que acontece entre corpo, cidade e risco — e que muitas vezes acaba se transformando em imagem.\"",
-    "block2Date": "Dissertação de Mestrado · Março 2026",
+    "block2Date": "Dissertação de Mestrado · Defendida e aprovada em 27.03.2026",
     "block2Intro": "A dissertação que apresento hoje investiga como práticas subculturais, como o skate, podem produzir linguagem cinematográfica e conhecimento estético.",
     "block2Object": "O objeto central da pesquisa é o processo criativo do coletivo LowPressure™, a partir da produção do filme LowMovie™.",
     "block2Method": "Em vez de observar esse processo à distância, a pesquisa foi construída a partir dele.",
@@ -787,7 +787,7 @@
     "artifactsLabel": "Artefatos",
     "circulationLabel": "Estratégia de Circulação",
     "circulationP1": "O ecossistema adota um modelo híbrido de licenciamento: a obra (LowMovie™) permanece sob direitos reservados; o método (Lowbyrinth™) circula em licença Creative Commons com atribuição não-comercial; o código (Low Runner™) é open-source MIT. Esta arquitetura garante autoria, fomenta replicação acadêmica e mantém abertura a usos pedagógicos.",
-    "circulationP2": "As três marcas — LowMovie™, Lowbyrinth™ e Low Runner™ — são autoidentificadas pelo autor com o símbolo ™ como reivindicação de propriedade intelectual. Depósito formal junto ao INPI está previsto como próximo passo após a defesa. A circulação aberta é compatível com a proteção autoral: uma protege a outra.",
+    "circulationP2": "As três marcas — LowMovie™, Lowbyrinth™ e Low Runner™ — são autoidentificadas pelo autor com o símbolo ™ como reivindicação de propriedade intelectual. Depósito formal junto ao INPI está previsto como próximo passo. A circulação aberta é compatível com a proteção autoral: uma protege a outra.",
     "circulationCta": "Ver Política de Licenciamento",
     "next": "Acessar Low Runner™",
     "layers": {
@@ -857,7 +857,7 @@
       "lowbyrinth": "Lowbyrinth™",
       "lowrunner": "Low Runner™"
     },
-    "trademarksNote": "O símbolo ™ é utilizado como sinalização de marca reivindicada pelo autor — diferente do símbolo ®, seu uso não exige registro prévio e indica publicamente a intenção de proteção autoral. O depósito formal junto ao INPI (Instituto Nacional da Propriedade Industrial), nas classes adequadas a cada camada — obra audiovisual, método educacional e software — está previsto como próximo passo após a defesa.",
+    "trademarksNote": "O símbolo ™ é utilizado como sinalização de marca reivindicada pelo autor — diferente do símbolo ®, seu uso não exige registro prévio e indica publicamente a intenção de proteção autoral. O depósito formal junto ao INPI (Instituto Nacional da Propriedade Industrial), nas classes adequadas a cada camada — obra audiovisual, método educacional e software — está previsto como próximo passo.",
     "contactLabel": "Contato para Licenciamento",
     "contactDesc": "Para usos comerciais, parcerias institucionais, licenciamento de método ou consultas sobre as marcas, entre em contato diretamente. Usos acadêmicos e pedagógicos seguem as licenças acima e não requerem contato prévio — apenas atribuição.",
     "contactCta": "Enviar E-mail"
@@ -887,7 +887,7 @@
     "tech2": "Browser moderno (Chrome, Firefox, Safari, Edge — versões recentes).",
     "tech3": "Conexão estável de internet para carregamento de mídias embutidas.",
     "contextTitle": "Contexto de uso",
-    "contextDesc": "Concebido para a defesa pública da dissertação LowMovie™ e o Labirinto Criativo (UNESPAR · PPG-CINEAV · Março 2026), o Defense Mode integra a entrega da pesquisa como contribuição metodológica documentada — uma forma replicável de apresentar pesquisa-criação.",
+    "contextDesc": "Concebido para a defesa pública da dissertação LowMovie™ e o Labirinto Criativo (UNESPAR · PPG-CINEAV · defendida e aprovada em 27.03.2026), o Defense Mode integra a entrega da pesquisa como contribuição metodológica documentada — uma forma replicável de apresentar pesquisa-criação.",
     "next": "Versões Imprimíveis"
   },
   "imprimir": {
