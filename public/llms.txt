@@ -1,0 +1,30 @@
+# LOWMOVIE™ e o Labirinto Criativo
+
+> Portal da dissertação de mestrado de Castro Pizzano — pesquisa-criação implicada sobre o Coletivo LowPressure™. PPG-CINEAV · UNESPAR. Defendida e aprovada em 27 de março de 2026.
+
+A dissertação investiga processos criativos contemporâneos do Coletivo LowPressure™ a partir da articulação entre cinema, subcultura urbana, prática D.I.Y. e pesquisa-criação implicada. O portal é uma interface expandida da dissertação, com três camadas: LowMovie™ (obra), Lowbyrinth™ (método) e Low Runner™ (plataforma).
+
+## Páginas
+
+- [Home](/home): Capa institucional, dados acadêmicos, autor, banca e DOI.
+- [Apresentação](/apresentacao): Contexto, motivação e objeto da pesquisa.
+- [Metodologia](/metodologia): Pesquisa-criação implicada · afeto, escuta, improviso · Toolkit Pedagógico Lowbyrinth™.
+- [Estrutura](/estrutura): Arquitetura da dissertação por capítulos.
+- [Conceitos](/conceitos): Operadores conceituais — Lowbyrinth™, corpo-câmera, fabulação, glitch, D.I.Y.
+- [O Filme](/filme): Documentário LowMovie™, análise sequencial e operadores poéticos do olhar.
+- [O Coletivo](/coletivo): Coletivo LowPressure™ e produção colaborativa (LowZine, arquivo).
+- [Contribuições](/contribuicoes): Aportes ao campo do cinema e das artes do vídeo.
+- [Questões](/questoes): Antecipação de tensões críticas da banca (FAQ acadêmico).
+- [Mapa Conceitual](/mapa): Grafo interativo das conexões teóricas.
+- [Conclusão](/conclusao): Síntese, horizontes e Arquivo de Processo.
+- [Timeline](/timeline): Trajetória acadêmica (Lattes).
+- [Ecossistema](/ecossistema): As três camadas — obra, método, plataforma.
+- [Licença](/licenca): Política híbrida de licenciamento por camada.
+- [Low Runner™](/replicar): Sistema replicável de dissertação navegável.
+- [Defense Mode](/defense-mode): Dispositivo de apresentação para defesa pública.
+- [Imprimir / Baixar](/imprimir): PDF da dissertação e Caderno-Síntese.
+
+## Opcional
+
+- [DOI / Zenodo](https://doi.org/10.5281/zenodo.18950438): Arquivo formal da pesquisa.
+- [PDF da dissertação](/docs/dissertacao.pdf): Versão final aprovada.
