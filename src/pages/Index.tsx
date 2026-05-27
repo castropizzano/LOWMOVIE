@@ -51,6 +51,7 @@ const Index = () => {
               </p>
               <h1 className="text-5xl md:text-7xl font-bold uppercase leading-none tracking-tight">
                 <span className="text-primary">LowMovie™</span>
+                <span className="sr-only"> — e o Labirinto Criativo: Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™</span>
               </h1>
               <p className="mt-2 text-xl md:text-2xl font-medium text-foreground/70 uppercase tracking-wide">
                 {t("home.subtitle")}
