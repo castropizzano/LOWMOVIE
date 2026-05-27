@@ -3,6 +3,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionTitle from "@/components/SectionTitle";
 import { useTranslation } from "react-i18next";
 import { GitFork, Edit3, UserCheck, Award, Globe, Archive, Github, FileDown, Quote, Mail, ExternalLink } from "lucide-react";
+import SeoHead from "@/components/SeoHead";
 
 const Replicar = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ const Replicar = () => {
 
   return (
     <Layout>
+      <SeoHead route="/replicar" />
       <div className="mx-auto max-w-5xl px-4 py-12 md:py-20">
         <SectionTitle title={t("replicar.brandTitle")} subtitle={t("replicar.subtitle")} />
         <AnimatedSection className="mb-12">

@@ -14,6 +14,7 @@ import {
   type TimelineCategory,
 } from "@/data/lattesTimeline";
 import { ExternalLink } from "lucide-react";
+import SeoHead from "@/components/SeoHead";
 
 const allCategories: TimelineCategory[] = [
   "formacao",
@@ -65,6 +66,7 @@ const Timeline = () => {
 
   return (
     <Layout>
+      <SeoHead route="/timeline" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-4xl">
           <SectionTitle

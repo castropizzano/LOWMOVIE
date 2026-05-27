@@ -4,6 +4,7 @@ import NextSectionButton from "@/components/NextSectionButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import PdfPageViewer from "@/components/PdfPageViewer";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const interviews = [
   { id: "skate-punk", tKey: "skatePunk", youtubeId: "rOoUJyzGkDY", transcript: "/docs/transcricoes/Skate_Punk_Interview_Transcript.pdf" },
@@ -18,6 +19,7 @@ const Conclusao = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <SeoHead route="/conclusao" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl text-left">
           <SectionTitle title={t("conclusao.title")} subtitle={t("conclusao.subtitle")} />

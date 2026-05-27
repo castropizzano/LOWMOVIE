@@ -4,6 +4,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const qKeys = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8"] as const;
 
@@ -11,6 +12,7 @@ const FAQ = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <SeoHead route="/questoes" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("questoes.title")} subtitle={t("questoes.subtitle")} />
