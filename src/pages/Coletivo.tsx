@@ -51,7 +51,7 @@ const Coletivo = () => {
                   <ImageLightbox
                     key={i}
                     src={`/images/coletivo/${num}.png`}
-                    alt={`${t("coletivo.gallery")} ${i}`}
+                    alt={`LowZine — página ${i} do fanzine impresso do Coletivo LowPressure™`}
                     aspectRatio="aspect-video"
                     imageClassName="object-contain bg-muted/20"
                   />

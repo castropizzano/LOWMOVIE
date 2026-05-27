@@ -33,7 +33,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
               <h2 className="text-sm font-bold uppercase tracking-[0.3em] text-foreground">{t("method.title")}</h2>
               <p className="text-xs text-muted-foreground mt-1 tracking-wide">{t("method.subtitle")}</p>
             </div>
-            <button onClick={onClose} className="p-2 text-muted-foreground hover:text-foreground transition-colors">
+            <button onClick={onClose} aria-label="Fechar Manual do Método" className="p-2 text-muted-foreground hover:text-foreground transition-colors">
               <X className="h-5 w-5" />
             </button>
           </div>
