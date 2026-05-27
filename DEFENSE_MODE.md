@@ -39,7 +39,7 @@ Durante a defesa, o portal pode ser usado em conjunto com:
 
 ## Contexto
 
-A defesa ocorre no **Programa de Pós-Graduação em Cinema e Artes do Vídeo (PPG-CINEAV)** da **UNESPAR**, em março de 2026, perante a banca composta por:
+A defesa ocorreu no **Programa de Pós-Graduação em Cinema e Artes do Vídeo (PPG-CINEAV)** da **UNESPAR** em **27 de março de 2026**, perante a banca composta por:
 
 - Prof. Dr. Fábio Jabur de Noronha (orientador)
 - Profa. Dra. Fabiana Pelinson

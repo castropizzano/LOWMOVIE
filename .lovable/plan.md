@@ -1,55 +1,57 @@
+# Atualização: Dissertação aprovada e submetida
 
+## Status oficial sugerido
 
-# Separação visual discreta dos blocos do menu
+**PT:** "Defendida e aprovada · 27 de março de 2026"
+**EN:** "Defended and approved · March 27, 2026"
 
-## Objetivo
+Variante curta para badges/microcopy:
+- PT: "Aprovada · 27.03.2026"
+- EN: "Approved · 03.27.2026"
 
-Adicionar separação visual sutil entre os 5 blocos lógicos do sidebar (Entrada · Dissertação · Ecossistema · Recursos · Anexo), sem poluir a interface nem introduzir labels que aumentem ruído visual. O menu já está ordenado corretamente — falta apenas o **respiro visual** que comunica o agrupamento.
+Justificativa: comunica conclusão institucional com data verificável, sem soar triunfalista. Mantém o tom acadêmico/assertivo da memória do projeto.
 
-## Abordagem escolhida: separadores finos entre blocos
+## Arquivos a alterar
 
-Em vez de adicionar `SidebarGroupLabel` (que adiciona texto e altura), uso uma **linha divisória extremamente sutil** entre os blocos, com pequeno espaçamento vertical. Resultado: o olho percebe os 5 grupos sem precisar ler labels.
+### 1. PDF da dissertação (substituição)
+- Substituir `public/docs/dissertacao.pdf` pelo novo arquivo aprovado (`PIZZANO_Castro_Dissertacao_Mestrado_PPGCINEAV_UNESPAR_2026.pdf`)
+- Manter o nome `dissertacao.pdf` para não quebrar links existentes (`/imprimir`, `/conclusao`, etc.)
 
-```text
-Home
-─────────────  ← divisor sutil
-Apresentação
-Metodologia
-...
-Conclusão
-─────────────  ← divisor sutil
-Ecossistema
-Low Runner™
-Licença
-─────────────  ← divisor sutil
-Mapa
-Defense Mode
-Imprimir
-─────────────  ← divisor sutil
-Currículo
-```
+### 2. i18n (PT + EN)
+- `src/i18n/locales/pt.json` e `en.json`
+- Trocar todas as ocorrências de "Defesa: Março 2026" / "em formalização para defesa" / "a ser defendida" por status final
+- Chaves afetadas (a confirmar na varredura): `home.*`, `apresentacao.*`, `conclusao.*`, `defense.*`, `ecossistema.*` (status LowMovie™ "consolidado")
 
-## Implementação técnica
+### 3. Páginas
+- `src/pages/Index.tsx` (Home) — subtítulo institucional com data
+- `src/pages/Apresentacao.tsx` — bloco de status
+- `src/pages/Conclusao.tsx` — referência à defesa concluída
+- `src/pages/Defense.tsx` / `src/pages/DefenseModeAbout.tsx` — ajustar tempos verbais ("apresentação realizada em…")
+- `src/pages/Ecossistema.tsx` — LowMovie™ status atualizado
 
-**Arquivo único afetado:** `src/components/AppSidebar.tsx`
+### 4. Metadados e SEO
+- `index.html` — meta description e og:description
+- `README.md` — linha "Defesa: Março 2026" → "Defendida e aprovada em 27 de março de 2026"
+- `CITATION.cff` — `date-released: 2026-03-27`
+- `CHANGELOG.md` — entrada nova: "v1.0 — Dissertação aprovada (27.03.2026)"
+- `PRESERVATION.md` / `DEFENSE_MODE.md` / `PROJECT_STRUCTURE.md` — checar referências à data
 
-1. Adicionar campo opcional `divider: true` no `itemDefs` para os itens que **iniciam** um novo bloco (apresentacao, ecossistema, mapa, timeline).
-2. No `.map()`, antes de renderizar cada item com `divider: true`, renderizar um `<li>` com classe `my-2 mx-3 border-t border-sidebar-border/30`.
+### 5. Memória do projeto
+- Atualizar `mem://project/academic-context` para refletir defesa concluída em 27/03/2026
+- Atualizar `mem://features/ecosystem-architecture` (status LowMovie™ permanece "consolidado", agora com defesa concluída)
 
-Especificações visuais:
-- Cor: `border-sidebar-border/30` (30% opacidade do token existente — quase imperceptível mas presente)
-- Espaçamento: `my-2` acima/abaixo do divisor
-- Margem horizontal: `mx-3` (não toca as bordas do sidebar)
+## Processo
 
-## Princípios mantidos
+1. Substituir o PDF em `public/docs/dissertacao.pdf`
+2. Rodar `rg` por padrões: "Março 2026", "March 2026", "defesa", "defense", "a ser defendida", "em formalização", "será defendida", "to be defended"
+3. Aplicar substituições preservando tom e idioma em cada arquivo
+4. Validar parity PT/EN das chaves i18n
+5. Build check
 
-- **Zero novos textos**: nenhuma label de grupo adicionada, i18n intacto
-- **Zero nova dependência**: usa apenas tokens semânticos já existentes
-- **Minimalismo preservado**: separadores invisíveis à primeira vista, perceptíveis ao olhar atento
-- **Hallucination Zero**: nenhum item do menu muda, apenas espaçamento visual
-- **Mobile-friendly**: separadores escalam naturalmente no offcanvas
+## Hallucination Zero
+
+Não invento data nova — uso a fornecida (27/03/2026). Não altero conteúdo conceitual da dissertação no portal: apenas status temporal. PDF substituído verbatim pelo enviado.
 
 ## Resultado esperado
 
-Sidebar com **ritmo visual** que comunica os 5 blocos de forma silenciosa. Banca e visitantes percebem subliminarmente o agrupamento conceitual (entrada → dissertação → ecossistema → recursos → anexo) sem que o menu vire uma lista verbosa com cabeçalhos. Mantém a estética minimalista que já é marca do portal.
-
+Portal comunica de forma uniforme e institucional que a dissertação foi defendida e aprovada em 27 de março de 2026, com o PDF final disponível para download. Nenhum link quebrado, nenhum texto remanescente no futuro do subjuntivo.

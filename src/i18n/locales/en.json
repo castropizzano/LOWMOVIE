@@ -47,7 +47,7 @@
     "playVideo": "Play video"
   },
   "home": {
-    "dissertationDate": "Master's Dissertation · March 2026",
+    "dissertationDate": "Master's Dissertation · Defended and approved on 03.27.2026",
     "subtitle": "and the Creative Labyrinth",
     "tagline": "Subjectivity, Subculture and the Poetics in Motion",
     "tagline2": "of the LowPressure™ Collective",
@@ -166,7 +166,7 @@
       "methodAbnt": "PIZZANO, C. Lowbyrinth™: implicated research-creation method in cognitive spiral. In: LowMovie™ and the Creative Labyrinth. Curitiba: UNESPAR, 2026.",
       "toolkitLabel": "ABNT citation — toolkit",
       "toolkitAbnt": "PIZZANO, C. Lowbyrinth™ Pedagogical Toolkit. Curitiba: UNESPAR, 2026. Available at: lowmovie.lovable.app/docs/toolkit_metodologia_castro.pdf",
-      "note": "Lowbyrinth™ is an author-claimed trademark (use of the ™ symbol as an intellectual property claim). Formal filing with INPI (Brazilian Trademark Office) is planned as a next step after the defense. Its application in pedagogical, research, or creative contexts is free upon attribution (CC BY-NC-SA 4.0)."
+      "note": "Lowbyrinth™ is an author-claimed trademark (use of the ™ symbol as an intellectual property claim). Formal filing with INPI (Brazilian Trademark Office) is planned as a next step. Its application in pedagogical, research, or creative contexts is free upon attribution (CC BY-NC-SA 4.0)."
     },
     "next": "Structure"
   },
@@ -589,7 +589,7 @@
     ],
     "block1Quote1": "\"This research began by trying to understand what happens in this kind of gesture.\"",
     "block1Quote2": "\"A gesture that occurs between body, city and risk — and that often ends up becoming image.\"",
-    "block2Date": "Master's Dissertation · March 2026",
+    "block2Date": "Master's Dissertation · Defended and approved on 03.27.2026",
     "block2Intro": "The dissertation I present today investigates how subcultural practices, such as skateboarding, can produce cinematic language and aesthetic knowledge.",
     "block2Object": "The central object of the research is the creative process of the LowPressure™ collective, through the production of the film LowMovie™.",
     "block2Method": "Rather than observing this process from a distance, the research was built from within it.",
@@ -787,7 +787,7 @@
     "artifactsLabel": "Artifacts",
     "circulationLabel": "Circulation Strategy",
     "circulationP1": "The ecosystem adopts a hybrid licensing model: the work (LowMovie™) remains under reserved rights; the method (Lowbyrinth™) circulates under Creative Commons with non-commercial attribution; the code (Low Runner™) is open-source MIT. This architecture safeguards authorship, fosters academic replication, and keeps openness for pedagogical use.",
-    "circulationP2": "All three trademarks — LowMovie™, Lowbyrinth™, and Low Runner™ — are author-claimed marks using the ™ symbol as an intellectual property claim. Formal filing with INPI (the Brazilian Trademark Office) is planned as a next step after the defense. Open circulation is compatible with authorial protection: each one protects the other.",
+    "circulationP2": "All three trademarks — LowMovie™, Lowbyrinth™, and Low Runner™ — are author-claimed marks using the ™ symbol as an intellectual property claim. Formal filing with INPI (the Brazilian Trademark Office) is planned as a next step. Open circulation is compatible with authorial protection: each one protects the other.",
     "circulationCta": "View Licensing Policy",
     "next": "Access Low Runner™",
     "layers": {
@@ -857,7 +857,7 @@
       "lowbyrinth": "Lowbyrinth™",
       "lowrunner": "Low Runner™"
     },
-    "trademarksNote": "The ™ symbol is used to signal an author-claimed trademark — unlike the ® symbol, it does not require prior registration and publicly indicates the author's intent to protect the mark. Formal filing with INPI (Brazilian National Institute of Industrial Property), in classes appropriate to each layer — audiovisual work, educational method, and software — is planned as a next step after the defense.",
+    "trademarksNote": "The ™ symbol is used to signal an author-claimed trademark — unlike the ® symbol, it does not require prior registration and publicly indicates the author's intent to protect the mark. Formal filing with INPI (Brazilian National Institute of Industrial Property), in classes appropriate to each layer — audiovisual work, educational method, and software — is planned as a next step.",
     "contactLabel": "Licensing Contact",
     "contactDesc": "For commercial uses, institutional partnerships, method licensing, or trademark inquiries, please contact directly. Academic and pedagogical uses follow the licenses above and require no prior contact — only attribution.",
     "contactCta": "Send Email"
@@ -887,7 +887,7 @@
     "tech2": "Modern browser (Chrome, Firefox, Safari, Edge — recent versions).",
     "tech3": "Stable internet connection for embedded media loading.",
     "contextTitle": "Context of use",
-    "contextDesc": "Conceived for the public defense of the dissertation LowMovie™ and the Creative Labyrinth (UNESPAR · PPG-CINEAV · March 2026), Defense Mode integrates the research delivery as a documented methodological contribution — a replicable way of presenting research-creation.",
+    "contextDesc": "Conceived for the public defense of the dissertation LowMovie™ and the Creative Labyrinth (UNESPAR · PPG-CINEAV · defended and approved on 03.27.2026), Defense Mode integrates the research delivery as a documented methodological contribution — a replicable way of presenting research-creation.",
     "next": "Printable Versions"
   },
   "imprimir": {
