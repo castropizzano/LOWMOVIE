@@ -3,11 +3,13 @@ import SectionTitle from "@/components/SectionTitle";
 import NextSectionButton from "@/components/NextSectionButton";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const DefenseModeAbout = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <SeoHead route="/defense-mode" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl text-left">
           <SectionTitle title={t("defenseMode.title")} subtitle={t("defenseMode.subtitle")} />

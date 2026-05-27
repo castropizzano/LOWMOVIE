@@ -2,11 +2,13 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import NextSectionButton from "@/components/NextSectionButton";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const Imprimir = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <SeoHead route="/imprimir" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl text-left">
           <SectionTitle title={t("imprimir.title")} subtitle={t("imprimir.subtitle")} />

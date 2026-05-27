@@ -110,6 +110,7 @@ const LowbyrinthMode = ({ open, onClose }: LowbyrinthModeProps) => {
             </div>
             <button
               onClick={onClose}
+              aria-label={t("lowbyrinth.close", "Fechar Lowbyrinth")}
               className="p-2 text-muted-foreground hover:text-foreground transition-colors"
             >
               <X className="h-5 w-5" />

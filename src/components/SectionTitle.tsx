@@ -8,9 +8,9 @@ interface SectionTitleProps {
 const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {
   return (
     <AnimatedSection className="mb-12 md:mb-16">
-      <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-tight text-foreground">
+      <h1 className="text-2xl md:text-3xl font-bold uppercase tracking-tight text-foreground">
         {title}
-      </h2>
+      </h1>
       {subtitle && (
         <p className="mt-3 text-sm text-muted-foreground">
           {subtitle}

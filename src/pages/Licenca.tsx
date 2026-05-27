@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const licenseKeys = ["lowmovie", "lowbyrinth", "lowrunner"] as const;
 
@@ -10,6 +11,7 @@ const Licenca = () => {
 
   return (
     <Layout>
+      <SeoHead route="/licenca" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("licenca.title")} subtitle={t("licenca.subtitle")} />

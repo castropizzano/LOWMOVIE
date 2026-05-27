@@ -6,6 +6,7 @@ import { ArrowRight, X, ChevronDown } from "lucide-react";
 import ConceptGraph from "@/components/ConceptGraph";
 import ImageLightbox from "@/components/ImageLightbox";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
+import SeoHead from "@/components/SeoHead";
 
 /* ─── Block definitions (0-13) ─── */
 const BLOCK_KEYS = [
@@ -32,6 +33,7 @@ const VideoEmbed = ({ src, fadeIn = true, contained = false }: { src: string; fa
   const [loaded, setLoaded] = useState(false);
   return (
     <div className={`relative flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-500 ${contained ? 'w-full aspect-video' : 'w-full h-full'}`}>
+      <SeoHead route="/defense" />
       <iframe
         src={src}
         className="w-full h-full absolute inset-0"

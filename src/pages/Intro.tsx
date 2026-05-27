@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const Intro = () => {
   const navigate = useNavigate();
@@ -34,6 +35,7 @@ const Intro = () => {
 
   return (
     <div className="fixed inset-0 z-50 bg-background overflow-hidden">
+      <SeoHead route="/" />
       <video
         ref={videoRef}
         src="/videos/lowbyrinth-intro.mp4"

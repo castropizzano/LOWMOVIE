@@ -3,11 +3,13 @@ import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const Apresentacao = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <SeoHead route="/apresentacao" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("apresentacao.title")} subtitle={t("apresentacao.subtitle")} />

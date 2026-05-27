@@ -4,6 +4,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
 import ImageLightbox from "@/components/ImageLightbox";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const glossKeys = ["crew", "sessao", "spot", "shape", "tricks", "linha", "videoparte", "fulllength"] as const;
 
@@ -11,6 +12,7 @@ const Coletivo = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <SeoHead route="/coletivo" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("coletivo.title")} subtitle={t("coletivo.subtitle")} />
@@ -51,7 +53,7 @@ const Coletivo = () => {
                   <ImageLightbox
                     key={i}
                     src={`/images/coletivo/${num}.png`}
-                    alt={`${t("coletivo.gallery")} ${i}`}
+                    alt={`LowZine — página ${i} do fanzine impresso do Coletivo LowPressure™`}
                     aspectRatio="aspect-video"
                     imageClassName="object-contain bg-muted/20"
                   />

@@ -5,6 +5,7 @@ import Layout from "@/components/Layout";
 import WelcomeOverlay from "@/components/WelcomeOverlay";
 import capaDissertacao from "@/assets/capa-dissertacao.png";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ const Index = () => {
 
   return (
     <Layout>
+      <SeoHead route="/home" />
       <WelcomeOverlay />
       <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden">
         <div className="relative z-10 container mx-auto px-4 max-w-5xl">
@@ -49,6 +51,7 @@ const Index = () => {
               </p>
               <h1 className="text-5xl md:text-7xl font-bold uppercase leading-none tracking-tight">
                 <span className="text-primary">LowMovie™</span>
+                <span className="sr-only"> — e o Labirinto Criativo: Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™</span>
               </h1>
               <p className="mt-2 text-xl md:text-2xl font-medium text-foreground/70 uppercase tracking-wide">
                 {t("home.subtitle")}

@@ -4,6 +4,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import NextSectionButton from "@/components/NextSectionButton";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const campoKeys = [
   { key: "urbano", refs: [{ key: "borden", name: "Iain Borden" }, { key: "mcduie", name: "McDuie-Ra" }] },
@@ -18,6 +19,7 @@ const Conceitos = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <SeoHead route="/conceitos" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("conceitos.title")} subtitle={t("conceitos.subtitle")} />

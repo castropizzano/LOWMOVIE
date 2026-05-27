@@ -5,6 +5,7 @@ import NextSectionButton from "@/components/NextSectionButton";
 import { ExternalLink } from "lucide-react";
 import ImageLightbox from "@/components/ImageLightbox";
 import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
 
 const dataKeys = ["titulo", "ano", "formato", "duracao", "direcao", "coletivo", "trilha", "estrutura", "circulacao"] as const;
 const lineageRefKeys = ["tyEvans", "spikeJonze", "beagle"] as const;
@@ -15,6 +16,7 @@ const Filme = () => {
 
   return (
     <Layout>
+      <SeoHead route="/filme" />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("filme.title")} subtitle={t("filme.subtitle")} />
@@ -84,7 +86,7 @@ const Filme = () => {
                 <ImageLightbox
                   key={i}
                   src={`/images/stills/00${i}.jpg`}
-                  alt={`Still ${i} — LowMovie™`}
+                  alt={`Still ${i} do documentário LowMovie™ — frame extraído da montagem final`}
                   aspectRatio="aspect-video"
                   imageClassName="object-cover"
                 />
@@ -102,7 +104,7 @@ const Filme = () => {
                   <div key={i}>
                     <ImageLightbox
                       src={`/images/sequence/${num}.png`}
-                      alt={`Frame ${i + 1}`}
+                      alt={`Frame ${i + 1} da sequência analítica do documentário LowMovie™`}
                       aspectRatio="aspect-video"
                     />
                   </div>
@@ -110,7 +112,7 @@ const Filme = () => {
               })}
             </div>
             <div className="mb-4">
-              <ImageLightbox src="/images/sequence/foto-final.jpg" alt="Final photograph" aspectRatio="aspect-[3/4]" />
+              <ImageLightbox src="/images/sequence/foto-final.jpg" alt="Fotografia final da sequência analítica — encerramento conceitual do documentário LowMovie™" aspectRatio="aspect-[3/4]" />
             </div>
             <p className="text-xs text-muted-foreground mb-16">{t("filme.sequenceCaption")}</p>
           </AnimatedSection>
@@ -184,7 +186,7 @@ const Filme = () => {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
-                <img src="/images/lowbyrinth-ep-cover.jpg" alt="Lowbyrinth EP Cover" className="h-12 w-12 rounded-md object-cover shrink-0" />
+                <img src="/images/lowbyrinth-ep-cover.jpg" alt="Capa do EP Lowbyrinth — trilha musical original do documentário LowMovie™" className="h-12 w-12 rounded-md object-cover shrink-0" />
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide">Lowbyrinth EP</p>
                   <p className="text-xs text-muted-foreground mt-1">Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)</p>
@@ -197,7 +199,7 @@ const Filme = () => {
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
               >
-                <img src="/images/like-rats-cover.jpg" alt="Like Rats on Hostile Paths Cover" className="h-12 w-12 rounded-md object-cover shrink-0" />
+                <img src="/images/like-rats-cover.jpg" alt="Capa do álbum Like Rats on Hostile Paths — referência musical citada no documentário" className="h-12 w-12 rounded-md object-cover shrink-0" />
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-wide">Like Rats on Hostile Paths</p>
                   <p className="text-xs text-muted-foreground mt-1">{t("filme.soundtrackOriginal")}</p>
