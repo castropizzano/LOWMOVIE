@@ -14,9 +14,42 @@ const Filme = () => {
   const { t } = useTranslation();
   const operators = t("filme.operators", { returnObjects: true }) as string[];
 
+  const videoJsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "LowMovie™ — Trailer",
+      description:
+        "Trailer oficial do documentário LowMovie™, obra audiovisual da dissertação de Castro Pizzano (PPG-CINEAV · UNESPAR).",
+      thumbnailUrl: [
+        "https://img.youtube.com/vi/wcYBh6_DqO8/maxresdefault.jpg",
+        "https://img.youtube.com/vi/wcYBh6_DqO8/hqdefault.jpg",
+      ],
+      uploadDate: "2026-03-27",
+      embedUrl: "https://www.youtube-nocookie.com/embed/wcYBh6_DqO8",
+      contentUrl: "https://www.youtube.com/watch?v=wcYBh6_DqO8",
+      inLanguage: "pt-BR",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "LowMovie™ — Análise sequencial",
+      description:
+        "Vídeo complementar de análise sequencial do documentário LowMovie™ no contexto da pesquisa-criação implicada.",
+      thumbnailUrl: [
+        "https://img.youtube.com/vi/RbsSyBhSHFg/maxresdefault.jpg",
+        "https://img.youtube.com/vi/RbsSyBhSHFg/hqdefault.jpg",
+      ],
+      uploadDate: "2026-03-27",
+      embedUrl: "https://www.youtube-nocookie.com/embed/RbsSyBhSHFg",
+      contentUrl: "https://www.youtube.com/watch?v=RbsSyBhSHFg",
+      inLanguage: "pt-BR",
+    },
+  ];
+
   return (
     <Layout>
-      <SeoHead route="/filme" />
+      <SeoHead route="/filme" jsonLd={videoJsonLd} />
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("filme.title")} subtitle={t("filme.subtitle")} />
