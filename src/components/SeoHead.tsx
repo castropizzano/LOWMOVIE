@@ -121,6 +121,11 @@ const META: Record<string, SeoMeta> = {
     description:
       "Opções de impressão e download: PDF da dissertação aprovada (27.03.2026) e Caderno-Síntese para leitura impressa.",
   },
+  "/palestra": {
+    title: "Lowbyrinth: Quando a Pesquisa Me Encontrou — Palestra · LowMovie™",
+    description:
+      "Palestra para graduandos iniciantes em TCC (PPGCINEAV/UNESPAR, 17.06.2026): 10 blocos sequenciais sobre os pilares de uma pesquisa de mestrado, usando o portal LowMovie™ como ambiente.",
+  },
 };
 
 interface SeoHeadProps {

@@ -21,6 +21,8 @@ import Ecossistema from "./pages/Ecossistema";
 import Licenca from "./pages/Licenca";
 import DefenseModeAbout from "./pages/DefenseModeAbout";
 import Imprimir from "./pages/Imprimir";
+import Palestra from "./pages/Palestra";
+import PalestraBloco from "./pages/PalestraBloco";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -50,6 +52,8 @@ const App = () => (
         <Route path="/licenca" element={<Licenca />} />
         <Route path="/defense-mode" element={<DefenseModeAbout />} />
         <Route path="/imprimir" element={<Imprimir />} />
+        <Route path="/palestra" element={<Palestra />} />
+        <Route path="/palestra/:bloco" element={<PalestraBloco />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
