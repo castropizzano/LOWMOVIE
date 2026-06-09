@@ -28,8 +28,8 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Every research starts from a position. Before discussing method, problem or state of the art, the researcher must be situated in the world: biography, community, lived questions. The standpoint is not introductory decoration — it is the epistemological foundation that sustains coherence between the object investigated and the subject investigating.",
     },
     comoChegueiNisso: {
-      pt: "Sou Castro Pizzano, pesquisador-praticante do Coletivo LowPressure™ há mais de quinze anos. A dissertação nasce de dentro do coletivo, não de fora. Essa implicação é o ponto de partida — e também o ponto crítico que precisei elaborar metodologicamente.",
-      en: "I am Castro Pizzano, practitioner-researcher of the LowPressure™ Collective for over fifteen years. The dissertation is born from within the collective, not from outside. This implication is the starting point — and also the critical point I had to elaborate methodologically.",
+      pt: "Sou Castro Pizzano, designer e pesquisador-praticante. Atuo desde 2008 no CasaTreze Studio, coletivo do qual sou fundador, e integro o Coletivo LowPressure™ — coletivo de artistas-skatistas com o qual realizei o filme LowMovie™ (2023). A dissertação nasce de dentro dessas práticas, não de fora. Essa implicação é o ponto de partida — e também o ponto crítico que precisei elaborar metodologicamente.",
+      en: "I am Castro Pizzano, designer and practitioner-researcher. Since 2008 I work at CasaTreze Studio, the collective I founded, and I am part of the LowPressure™ Collective — the artist-skater collective with which I made the film LowMovie™ (2023). The dissertation is born from within these practices, not from outside. This implication is the starting point — and also the critical point I had to elaborate methodologically.",
     },
     ancoras: {
       pt: [
@@ -55,22 +55,22 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Trajectory — from the street to the master's degree",
     },
     oQueE: {
-      pt: "A trajetória de um pesquisador não é currículo cronológico — é o tecido das experiências que produziram suas perguntas. Para quem inicia o TCC, mapear a própria trajetória ajuda a identificar de onde vêm os interesses de pesquisa: ler-se como sujeito histórico é o primeiro exercício metodológico.",
-      en: "A researcher's trajectory is not a chronological CV — it is the fabric of experiences that produced the research questions. For those starting an undergraduate thesis, mapping one's own trajectory helps identify where research interests come from: reading oneself as a historical subject is the first methodological exercise.",
+      pt: "A trajetória de um pesquisador não é currículo cronológico — é o tecido das experiências que produziram suas perguntas. Mapear a própria trajetória ajuda a identificar de onde vêm os interesses de pesquisa: ler-se como sujeito histórico é o primeiro exercício metodológico.",
+      en: "A researcher's trajectory is not a chronological CV — it is the fabric of experiences that produced the research questions. Mapping one's own trajectory helps identify where research interests come from: reading oneself as a historical subject is the first methodological exercise.",
     },
     comoChegueiNisso: {
-      pt: "Meu percurso atravessa três planos entrelaçados: a prática do skate desde a adolescência em Curitiba; a produção audiovisual com o Coletivo LowPressure™ (fotografia, filme, fanzine LowZine, eventos); e a formação acadêmica em comunicação, design e — agora — cinema e artes do vídeo. O encontro entre rua, imagem e universidade não foi linear: foram quinze anos de prática antes da pergunta acadêmica se formular.",
-      en: "My path crosses three intertwined planes: skateboarding practice since adolescence in Curitiba; audiovisual production with the LowPressure™ Collective (photography, film, LowZine fanzine, events); and academic training in communication, design and — now — film and video arts. The encounter between street, image and university was not linear: fifteen years of practice came before the academic question was formulated.",
+      pt: "Meu percurso atravessa planos entrelaçados: a formação técnica em design gráfico (UTFPR, 1999–2001) e a graduação em Publicidade (UTP, concluída em 2010); a fundação do CasaTreze Studio em 2008, coletivo de design e contracultura; a integração ao Coletivo LowPressure™, com quem produzi o filme LowMovie™ (2023); e o ingresso no mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR), defendido em 27 de março de 2026. O encontro entre rua, imagem e universidade não foi linear: foi a prática que, ao se acumular, formulou a pergunta acadêmica.",
+      en: "My path crosses intertwined planes: technical training in graphic design (UTFPR, 1999–2001) and an undergraduate degree in Advertising (UTP, completed in 2010); founding CasaTreze Studio in 2008, a design and counterculture collective; joining the LowPressure™ Collective, with whom I produced the film LowMovie™ (2023); and joining the master's in Cinema and Video Arts (PPG-CINEAV/UNESPAR), defended on March 27, 2026. The encounter between street, image and university was not linear: it was practice that, by accumulating, formulated the academic question.",
     },
     ancoras: {
       pt: [
         "Abrir /timeline e navegar pelos filtros do Lattes (publicações, eventos, formação)",
-        "Destacar marcos: primeiros vídeos LowPressure™, LowZine, exposições, ingresso no PPG-CINEAV",
+        "Destacar marcos: CasaTreze Studio (2008), entrada no LowPressure™, LowMovie™ (2023), defesa do mestrado (2026)",
         "Conectar com a Introdução do PDF — 'Rastros nas Ruas' (cap. inicial)",
       ],
       en: [
         "Open /timeline and navigate Lattes filters (publications, events, education)",
-        "Highlight milestones: first LowPressure™ videos, LowZine, exhibitions, joining PPG-CINEAV",
+        "Highlight milestones: CasaTreze Studio (2008), joining LowPressure™, LowMovie™ (2023), master's defense (2026)",
         "Connect with the PDF Introduction — 'Tracks on the Streets' (opening chapter)",
       ],
     },
@@ -90,8 +90,8 @@ export const BLOCOS: PalestraBloco[] = [
       en: "There is a moment when lived practice begins to demand theory. The researcher does not choose the object — the object imposes itself as a question. For undergraduate thesis writing: pay attention to what in your practical life insists on being thought academically.",
     },
     comoChegueiNisso: {
-      pt: "O LowMovie™ (2024) foi o catalisador. Ao montar o filme — fruto de quinze anos de arquivo coletivo — percebi que ali havia uma poética em movimento que escapava das categorias disponíveis: nem documentário etnográfico, nem videoarte canônica, nem vídeo de skate comercial. Era preciso construir um quadro teórico que desse conta dessa singularidade. A pesquisa de mestrado nasceu desse impasse produtivo.",
-      en: "LowMovie™ (2024) was the catalyst. While editing the film — the outcome of fifteen years of collective archive — I realized there was a poetics in motion that escaped available categories: neither ethnographic documentary, nor canonical video art, nor commercial skate video. A theoretical framework had to be built to account for this singularity. The master's research was born from this productive impasse.",
+      pt: "O LowMovie™ (2023) foi o catalisador. Ao montar o filme — fruto do arquivo coletivo do LowPressure™ — percebi que ali havia uma poética em movimento que escapava das categorias disponíveis: nem documentário etnográfico, nem videoarte canônica, nem vídeo de skate comercial. Era preciso construir um quadro teórico que desse conta dessa singularidade. A pesquisa de mestrado nasceu desse impasse produtivo.",
+      en: "LowMovie™ (2023) was the catalyst. While editing the film — the outcome of the LowPressure™ collective archive — I realized there was a poetics in motion that escaped available categories: neither ethnographic documentary, nor canonical video art, nor commercial skate video. A theoretical framework had to be built to account for this singularity. The master's research was born from this productive impasse.",
     },
     ancoras: {
       pt: [
@@ -117,23 +117,23 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Research problem — how I framed it",
     },
     oQueE: {
-      pt: "Problema de pesquisa não é tema. Tema é amplo ('skate', 'audiovisual'); problema é a fricção específica entre o que se vive/observa e o que a literatura já cobre. Formular um problema é delimitar uma lacuna investigável. Sem essa delimitação, o TCC vira ensaio livre, não pesquisa.",
-      en: "Research problem is not topic. Topic is broad ('skateboarding', 'audiovisual'); problem is the specific friction between what is lived/observed and what the literature already covers. Formulating a problem is delimiting an investigable gap. Without this delimitation, the thesis becomes free essay, not research.",
+      pt: "Problema de pesquisa não é tema. Tema é amplo ('skate', 'audiovisual'); problema é a fricção específica entre o que se vive/observa e o que a literatura já cobre. Formular um problema é delimitar uma lacuna investigável. Sem essa delimitação, a pesquisa vira ensaio livre.",
+      en: "Research problem is not topic. Topic is broad ('skateboarding', 'audiovisual'); problem is the specific friction between what is lived/observed and what the literature already covers. Formulating a problem is delimiting an investigable gap. Without this delimitation, research turns into free essay.",
     },
     comoChegueiNisso: {
-      pt: "Minha fricção: o Coletivo LowPressure™ produz há quinze anos uma poética audiovisual situada na subcultura do skate, mas essa produção raramente é lida academicamente como pesquisa-criação. Há vasta bibliografia sobre skate (sociologia urbana, estudos culturais), sobre videoarte (estética e teoria do cinema) e sobre coletivos artísticos — mas o cruzamento específico entre prática implicada, poética coletiva e subcultura urbana audiovisual seguia sub-tematizado. O problema virou: como narrar academicamente um processo coletivo, afetivo e implicado, sem traí-lo?",
-      en: "My friction: the LowPressure™ Collective has produced for fifteen years an audiovisual poetics situated in skate subculture, but this production is rarely read academically as research-creation. There is vast literature on skateboarding (urban sociology, cultural studies), on video art (aesthetics and film theory) and on artistic collectives — but the specific crossing between implicated practice, collective poetics and urban audiovisual subculture remained under-thematized. The problem became: how to academically narrate a collective, affective and implicated process without betraying it?",
+      pt: "Minha fricção: o Coletivo LowPressure™ produz uma poética audiovisual situada na subcultura do skate que culminou no filme LowMovie™ (2023), mas essa produção raramente é lida academicamente como pesquisa-criação. Há vasta bibliografia sobre skate (sociologia urbana, estudos culturais), sobre videoarte (estética e teoria do cinema) e sobre coletivos artísticos — mas o cruzamento específico entre prática implicada, poética coletiva e subcultura urbana audiovisual seguia sub-tematizado. O problema virou: como narrar academicamente um processo coletivo, afetivo e implicado, sem traí-lo?",
+      en: "My friction: the LowPressure™ Collective produces an audiovisual poetics situated in skate subculture that culminated in the film LowMovie™ (2023), but this production is rarely read academically as research-creation. There is vast literature on skateboarding (urban sociology, cultural studies), on video art (aesthetics and film theory) and on artistic collectives — but the specific crossing between implicated practice, collective poetics and urban audiovisual subculture remained under-thematized. The problem became: how to academically narrate a collective, affective and implicated process without betraying it?",
     },
     ancoras: {
       pt: [
         "Abrir /apresentacao seção Justificativa: ler os 2 parágrafos",
         "Mostrar o salto: do tema ('skate + vídeo') para o problema ('como narrar sem trair?')",
-        "Frisar para os graduandos: o problema se formula contra alguma coisa — uma lacuna ou tensão",
+        "Frisar: o problema se formula contra alguma coisa — uma lacuna ou tensão",
       ],
       en: [
         "Open /apresentacao Justificativa section: read the 2 paragraphs",
         "Show the leap: from topic ('skate + video') to problem ('how to narrate without betraying?')",
-        "Stress for undergrads: a problem is formulated against something — a gap or tension",
+        "Stress: a problem is formulated against something — a gap or tension",
       ],
     },
   },
