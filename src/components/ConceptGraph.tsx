@@ -210,7 +210,6 @@ const ConceptGraph = () => {
         height="100%"
         viewBox="0 0 900 650"
         className="cursor-grab active:cursor-grabbing touch-none"
-        onWheel={handleWheel}
         onMouseDown={(e) => { handleBgMouseDown(e); }}
         onMouseMove={(e) => { handleMouseMove(e); handleBgMouseMove(e); }}
         onMouseUp={() => { handleMouseUp(); handleBgMouseUp(); }}
