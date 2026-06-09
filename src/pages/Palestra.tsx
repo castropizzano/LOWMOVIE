@@ -22,11 +22,11 @@ const Palestra = () => {
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle
-            title={isPt ? "Lowbyrinth: Quando a Pesquisa Me Encontrou" : "Lowbyrinth: When Research Found Me"}
+            title={isPt ? "Palestra sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada" : "Lecture on the path of a master's research in implicated research-creation"}
             subtitle={
               isPt
-                ? "Palestra sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada"
-                : "Lecture on the path of a master's research in implicated research-creation"
+                ? "Lowbyrinth: Quando a Pesquisa Me Encontrou"
+                : "Lowbyrinth: When Research Found Me"
             }
           />
 
