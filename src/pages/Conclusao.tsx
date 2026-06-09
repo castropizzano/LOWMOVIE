@@ -181,9 +181,6 @@ const Conclusao = () => {
               <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80 mb-4">{t("conclusao.manualLowMovie")}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">{t("conclusao.manualLowMovieNote")}</p>
               <PdfPageViewer src="/docs/LowMovie_brandbook.pdf" title={t("conclusao.manualLowMovie")} />
-              <a href="/docs/LowMovie_brandbook.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                <span className="text-sm font-medium text-foreground/80">{t("conclusao.openManual")}</span>
-              </a>
             </div>
           </div>
 
@@ -195,9 +192,6 @@ const Conclusao = () => {
               <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80 mb-4">{t("conclusao.manualLowPressure")}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">{t("conclusao.manualLowPressureNote")}</p>
               <PdfPageViewer src="/docs/LowPressure_brandbook.pdf" title={t("conclusao.manualLowPressure")} />
-              <a href="/docs/LowPressure_brandbook.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                <span className="text-sm font-medium text-foreground/80">{t("conclusao.openManual")}</span>
-              </a>
             </div>
           </div>
 
