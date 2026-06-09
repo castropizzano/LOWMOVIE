@@ -5,18 +5,18 @@
     "metodologia": "Methodology",
     "estrutura": "Structure",
     "conceitos": "Concepts",
-    "filme": "The Film",
-    "coletivo": "The Collective",
+    "filme": "LowMovie™",
+    "coletivo": "LowPressure™",
     "contribuicoes": "Contributions",
-    "questoes": "Questions",
-    "conclusao": "Conclusion",
-    "mapa": "Map",
-    "timeline": "CV",
+    "questoes": "Critical Questions",
+    "conclusao": "Reflections and Conclusions",
+    "mapa": "Conceptual Map",
+    "timeline": "Academic CV",
     "ecossistema": "Ecosystem",
     "replicar": "Low Runner™",
     "defenseMode": "Defense Mode",
-    "imprimir": "Print",
-    "licenca": "License",
+    "imprimir": "Printables",
+    "licenca": "Licensing",
     "palestraMode": "Lecture Mode"
   },
   "header": {
@@ -388,7 +388,7 @@
     "next": "The Film"
   },
   "filme": {
-    "title": "The Film: LowMovie™",
+    "title": "LowMovie™",
     "subtitle": "Poetic-political device born from collective gesture",
     "workData": "Work Data",
     "data": {
@@ -599,7 +599,7 @@
     "next": "Conclusion"
   },
   "conclusao": {
-    "title": "Conclusion",
+    "title": "Reflections and Conclusions",
     "subtitle": "Research synthesis and open horizons",
     "headline1": "The poetics is not a result.",
     "headline2": "It is a process in motion.",
@@ -676,7 +676,7 @@
     "next": "Concept Map"
   },
   "mapa": {
-    "title": "Concept Map",
+    "title": "Conceptual Map",
     "subtitle": "Interactive cartography of relationships between authors, concepts, and thematic fields",
     "instructions": "Drag nodes to reorganize. Hover to see definitions. Use scroll to zoom and drag the background to navigate."
   },
@@ -887,7 +887,7 @@
     "blocks": {
       "abertura": "Opening",
       "pesquisa": "The Research",
-      "coletivo": "The Collective",
+      "coletivo": "LowPressure™",
       "conceitos": "Concepts",
       "metodologia": "Methodology",
       "fragmentos": "Fragments",
@@ -1075,7 +1075,7 @@
       "conceito": "Research-creation",
       "derivas": [
         {
-          "label": "The Collective",
+          "label": "LowPressure™",
           "justificativa": "From method to field. The collaborative process is methodology in action."
         },
         {
@@ -1089,7 +1089,7 @@
       "conceito": "Architecture",
       "derivas": [
         {
-          "label": "Concept Map",
+          "label": "Conceptual Map",
           "justificativa": "From linear structure to graph. See the connections that text linearizes."
         },
         {
@@ -1107,7 +1107,7 @@
           "justificativa": "From concepts to image. Each analytical operator is embodied in the film."
         },
         {
-          "label": "Concept Map",
+          "label": "Conceptual Map",
           "justificativa": "From text to graph. Visualize the theoretical constellation in its connections."
         },
         {
@@ -1117,11 +1117,11 @@
       ]
     },
     "filme": {
-      "title": "The Film",
+      "title": "LowMovie™",
       "conceito": "Body in drift",
       "derivas": [
         {
-          "label": "The Collective",
+          "label": "LowPressure™",
           "justificativa": "From film to bodies. Who are the ones who create together."
         },
         {
@@ -1131,7 +1131,7 @@
       ]
     },
     "coletivo": {
-      "title": "The Collective",
+      "title": "LowPressure™",
       "conceito": "Collaborative process",
       "derivas": [
         {
@@ -1159,7 +1159,7 @@
       ]
     },
     "questoes": {
-      "title": "Questions",
+      "title": "Critical Questions",
       "conceito": "Anticipation",
       "derivas": [
         {
@@ -1173,7 +1173,7 @@
       ]
     },
     "conclusao": {
-      "title": "Conclusion",
+      "title": "Reflections and Conclusions",
       "conceito": "Horizon",
       "derivas": [
         {
@@ -1181,7 +1181,7 @@
           "justificativa": "From end to beginning. The labyrinth is circular."
         },
         {
-          "label": "Concept Map",
+          "label": "Conceptual Map",
           "justificativa": "From closure to full vision. The map reveals what the journey built."
         }
       ]

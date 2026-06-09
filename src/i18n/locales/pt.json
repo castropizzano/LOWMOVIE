@@ -5,18 +5,18 @@
     "metodologia": "Metodologia",
     "estrutura": "Estrutura",
     "conceitos": "Conceitos",
-    "filme": "O Filme",
-    "coletivo": "O Coletivo",
+    "filme": "LowMovie™",
+    "coletivo": "LowPressure™",
     "contribuicoes": "Contribuições",
-    "questoes": "Questões",
-    "conclusao": "Conclusão",
-    "mapa": "Mapa",
-    "timeline": "Currículo",
+    "questoes": "Questões Críticas",
+    "conclusao": "Reflexões e Conclusões",
+    "mapa": "Mapa Conceitual",
+    "timeline": "Currículo Acadêmico",
     "ecossistema": "Ecossistema",
     "replicar": "Low Runner™",
     "defenseMode": "Modo Defesa",
-    "imprimir": "Imprimir",
-    "licenca": "Licença",
+    "imprimir": "Imprimíveis",
+    "licenca": "Licenciamento",
     "palestraMode": "Modo Palestra"
   },
   "header": {
@@ -388,7 +388,7 @@
     "next": "O Filme"
   },
   "filme": {
-    "title": "O Filme: LowMovie™",
+    "title": "LowMovie™",
     "subtitle": "Dispositivo poético-político nascido do gesto coletivo",
     "workData": "Dados da Obra",
     "data": {
@@ -599,7 +599,7 @@
     "next": "Conclusão"
   },
   "conclusao": {
-    "title": "Conclusão",
+    "title": "Reflexões e Conclusões",
     "subtitle": "Síntese da pesquisa e horizontes abertos",
     "headline1": "A poética não é resultado.",
     "headline2": "É processo em movimento.",
@@ -887,7 +887,7 @@
     "blocks": {
       "abertura": "Abertura",
       "pesquisa": "A Pesquisa",
-      "coletivo": "O Coletivo",
+      "coletivo": "LowPressure™",
       "conceitos": "Conceitos",
       "metodologia": "Metodologia",
       "fragmentos": "Fragmentos",
@@ -1075,7 +1075,7 @@
       "conceito": "Pesquisa-criação",
       "derivas": [
         {
-          "label": "O Coletivo",
+          "label": "LowPressure™",
           "justificativa": "Do método ao campo. O processo colaborativo é a metodologia em ato."
         },
         {
@@ -1117,11 +1117,11 @@
       ]
     },
     "filme": {
-      "title": "O Filme",
+      "title": "LowMovie™",
       "conceito": "Corpo em deriva",
       "derivas": [
         {
-          "label": "O Coletivo",
+          "label": "LowPressure™",
           "justificativa": "Do filme aos corpos. Quem são os que criam juntos."
         },
         {
@@ -1131,7 +1131,7 @@
       ]
     },
     "coletivo": {
-      "title": "O Coletivo",
+      "title": "LowPressure™",
       "conceito": "Processo colaborativo",
       "derivas": [
         {
@@ -1159,7 +1159,7 @@
       ]
     },
     "questoes": {
-      "title": "Questões",
+      "title": "Questões Críticas",
       "conceito": "Antecipação",
       "derivas": [
         {
@@ -1173,7 +1173,7 @@
       ]
     },
     "conclusao": {
-      "title": "Conclusão",
+      "title": "Reflexões e Conclusões",
       "conceito": "Horizonte",
       "derivas": [
         {
