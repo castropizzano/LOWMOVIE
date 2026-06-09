@@ -385,7 +385,7 @@
     "ethicsP1": "Herzog states that \"error is something that borders the sacred... one must accept trial and error.\" This dialogue is not an aesthetic affiliation — it is an ethical resonance: both share the conviction that authentic creation does not depend on ideal conditions, but on the willingness to act with available resources.",
     "ethicsP2": "Creating without waiting for institutional authorization constitutes, in itself, a micropolitics of making. When a collective of skaters produces a film that dialogues with experimental cinema without requesting permission or prior approval, this gesture carries a political dimension that is realized in the very materiality of the work.",
     "ethicsP3": "The approximation with Herzog allows situating LowPressure™ in a lineage of filmmakers who operated on the margins of the industrial system — from Jean Rouch filming in trance to Maya Deren reinventing dance in experimental cinema.",
-    "next": "The Film"
+    "next": "LowMovie™"
   },
   "filme": {
     "title": "LowMovie™ | The Film",
@@ -476,7 +476,7 @@
     "correspondenceNote": "The full correspondence is part of the project's process document archive.",
     "soundtrack": "Soundtrack",
     "soundtrackOriginal": "Original film soundtrack",
-    "next": "The Collective"
+    "next": "LowPressure™"
   },
   "coletivo": {
     "title": "LowPressure™ | The Collective",
@@ -556,7 +556,7 @@
       "desc": "The LOWMOVIE™ project is archived on the Zenodo scientific repository, ensuring digital preservation and academic citability through DOI.",
       "link": "View on Zenodo"
     },
-    "next": "Questions"
+    "next": "Critical Questions"
   },
   "questoes": {
     "title": "Critical Questions",
@@ -596,7 +596,7 @@
         "a": "It is about cinema from skateboarding. The focus is on the audiovisual process — how the bodily practice of skateboarding produces cinematic language. Skateboarding is not the final object of investigation, but the matrix from which a specific audiovisual poetics emerges."
       }
     },
-    "next": "Conclusion"
+    "next": "Reflections and Conclusions"
   },
   "conclusao": {
     "title": "Reflections and Conclusions",
