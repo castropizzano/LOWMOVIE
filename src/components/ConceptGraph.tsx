@@ -1,12 +1,10 @@
-import { useRef, useState, useCallback, useEffect } from "react";
+import { useRef, useState, useMemo } from "react";
 import { nodes, edges, typeColors, GraphNode, NodeType } from "@/data/conceptMap";
 import { useTranslation } from "react-i18next";
 
 interface SimNode extends GraphNode {
   x: number;
   y: number;
-  vx: number;
-  vy: number;
 }
 
 const NODE_RADIUS: Record<NodeType, number> = {
@@ -18,98 +16,41 @@ const NODE_RADIUS: Record<NodeType, number> = {
 const ConceptGraph = () => {
   const { t } = useTranslation();
   const svgRef = useRef<SVGSVGElement>(null);
-  const animRef = useRef<number>(0);
-  const [simNodes, setSimNodes] = useState<SimNode[]>([]);
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
-  const nodesRef = useRef<SimNode[]>([]);
 
-  // Initialize positions
-  useEffect(() => {
-    const w = 900, h = 650;
+  // Static spiral layout: campos interleaved as anchor points along an Archimedean spiral
+  const simNodes = useMemo<SimNode[]>(() => {
+    const cx = 450, cy = 325;
     const campos = nodes.filter(n => n.type === "campo");
-    const autores = nodes.filter(n => n.type === "autor");
-    const conceitos = nodes.filter(n => n.type === "conceito");
-    const placeRing = (arr: typeof nodes, radiusFactor: number) =>
-      arr.map((n, i) => {
-        const angle = (i / arr.length) * Math.PI * 2 - Math.PI / 2;
-        const r = (Math.min(w, h) / 2) * radiusFactor;
-        return { ...n, x: w / 2 + Math.cos(angle) * r, y: h / 2 + Math.sin(angle) * r, vx: 0, vy: 0 };
-      });
-    const initial: SimNode[] = [
-      ...placeRing(campos, 0.75),
-      ...placeRing(autores, 0.45),
-      ...placeRing(conceitos, 0.2),
-    ];
-    nodesRef.current = initial;
-    setSimNodes([...initial]);
-    startSimulation();
-    return () => cancelAnimationFrame(animRef.current);
+    const others = nodes.filter(n => n.type !== "campo");
+    // Interleave: insert one campo every ~step positions
+    const total = nodes.length;
+    const step = Math.floor(total / campos.length);
+    const ordered: GraphNode[] = [];
+    let ci = 0, oi = 0;
+    for (let i = 0; i < total; i++) {
+      if (ci < campos.length && (i % step === Math.floor(step / 2))) {
+        ordered.push(campos[ci++]);
+      } else if (oi < others.length) {
+        ordered.push(others[oi++]);
+      } else if (ci < campos.length) {
+        ordered.push(campos[ci++]);
+      }
+    }
+    // Archimedean spiral: r = a + b*theta, ~2.25 turns
+    const turns = 2.25;
+    const thetaMax = turns * Math.PI * 2;
+    const rMin = 55;
+    const rMax = 280;
+    return ordered.map((n, i) => {
+      const t = i / (ordered.length - 1);
+      const theta = t * thetaMax - Math.PI / 2;
+      const r = rMin + (rMax - rMin) * t;
+      return { ...n, x: cx + Math.cos(theta) * r, y: cy + Math.sin(theta) * r };
+    });
   }, []);
 
-  const startSimulation = useCallback(() => {
-    let iterations = 0;
-    const maxIterations = 500;
-
-    const tick = () => {
-      if (iterations >= maxIterations) return;
-      const ns = nodesRef.current;
-      const alpha = 1 - iterations / maxIterations;
-
-      // Repulsion
-      for (let i = 0; i < ns.length; i++) {
-        for (let j = i + 1; j < ns.length; j++) {
-          const dx = ns[j].x - ns[i].x;
-          const dy = ns[j].y - ns[i].y;
-          const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
-          const force = (2500 * alpha) / (dist * dist);
-          const fx = (dx / dist) * force;
-          const fy = (dy / dist) * force;
-          ns[i].vx -= fx;
-          ns[i].vy -= fy;
-          ns[j].vx += fx;
-          ns[j].vy += fy;
-        }
-      }
-
-      // Attraction (edges)
-      for (const edge of edges) {
-        const s = ns.find((n) => n.id === edge.source);
-        const t = ns.find((n) => n.id === edge.target);
-        if (!s || !t) continue;
-        const dx = t.x - s.x;
-        const dy = t.y - s.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        const force = (dist - 180) * 0.005 * alpha;
-        const fx = (dx / Math.max(dist, 1)) * force;
-        const fy = (dy / Math.max(dist, 1)) * force;
-        s.vx += fx;
-        s.vy += fy;
-        t.vx -= fx;
-        t.vy -= fy;
-      }
-
-      // Center gravity
-      for (const n of ns) {
-        n.vx += (450 - n.x) * 0.0005 * alpha;
-        n.vy += (325 - n.y) * 0.0005 * alpha;
-      }
-
-      // Apply velocities
-      for (const n of ns) {
-        n.vx *= 0.85; n.x += n.vx;
-        n.vy *= 0.85; n.y += n.vy;
-        n.x = Math.max(50, Math.min(850, n.x));
-        n.y = Math.max(50, Math.min(600, n.y));
-      }
-
-      iterations++;
-      setSimNodes([...ns]);
-      animRef.current = requestAnimationFrame(tick);
-    };
-    animRef.current = requestAnimationFrame(tick);
-  }, []);
-
-  const nodeMap = new Map(simNodes.map((n) => [n.id, n]));
+  const nodeMap = useMemo(() => new Map(simNodes.map((n) => [n.id, n])), [simNodes]);
 
   return (
     <div className="relative w-full h-[70vh] min-h-[500px] border border-border rounded-lg bg-card/30 overflow-hidden">

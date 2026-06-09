@@ -12,7 +12,7 @@ const Mapa = () => {
       <section className="py-20 md:py-28">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle title={t("mapa.title")} subtitle={t("mapa.subtitle")} />
-          <p className="text-sm text-muted-foreground leading-relaxed mb-8 max-w-2xl text-justify">{t("mapa.instructions")}</p>
+          <div className="mb-8" />
           <ConceptGraph />
         </div>
       </section>
