@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
 import AnimatedSection from "@/components/AnimatedSection";
-import NextSectionButton from "@/components/NextSectionButton";
 import { NavLink } from "@/components/NavLink";
 import { useTranslation } from "react-i18next";
 import SeoHead from "@/components/SeoHead";
@@ -136,8 +135,6 @@ const Ecossistema = () => {
               </div>
             </div>
           </AnimatedSection>
-
-          <NextSectionButton to="/replicar" label={t("ecossistema.next")} />
         </div>
       </section>
     </Layout>
