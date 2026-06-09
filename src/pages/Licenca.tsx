@@ -64,7 +64,7 @@ const Licenca = () => {
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">{t("licenca.contactDesc")}</p>
               <a
                 href="mailto:castropizzano@gmail.com?subject=Licenciamento%20-%20Lowbyrinth%20%2F%20Low%20Runner"
-                className="inline-flex items-center gap-2 border border-border/40 rounded px-4 py-3 bg-card/30 hover:bg-card/50 transition-colors"
+                className="inline-flex items-center gap-2 border border-primary/40 rounded px-4 py-3 bg-primary/10 hover:bg-primary/20 transition-colors"
               >
                 <span className="text-xs font-semibold uppercase tracking-widest text-foreground/80">
                   {t("licenca.contactCta")}
