@@ -23,6 +23,7 @@ import DefenseModeAbout from "./pages/DefenseModeAbout";
 import Imprimir from "./pages/Imprimir";
 import Palestra from "./pages/Palestra";
 import PalestraBloco from "./pages/PalestraBloco";
+import GuiaApresentador from "./pages/GuiaApresentador";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -54,6 +55,7 @@ const App = () => (
         <Route path="/imprimir" element={<Imprimir />} />
         <Route path="/palestra" element={<Palestra />} />
         <Route path="/palestra/:bloco" element={<PalestraBloco />} />
+        <Route path="/guia-apresentador" element={<GuiaApresentador />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
