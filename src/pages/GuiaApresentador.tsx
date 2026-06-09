@@ -37,14 +37,14 @@ const GuiaApresentador = () => {
         "Falar mais devagar do que parece natural — a banca precisa acompanhar",
         "Não ler o portal em voz alta: usar a página como apoio visual, narrar com a própria voz",
         "Cada bloco tem ~9 min em média — se passar, pular para o próximo sem se prender",
-        "Reservar pelo menos 15 min finais para perguntas dos graduandos",
+        "Reservar pelo menos 15 min finais para perguntas da audiência",
         "Setas ← → navegam entre blocos · Espaço avança · Esc volta ao índice",
       ]
     : [
         "Speak slower than feels natural — the audience needs to follow",
         "Don't read the portal aloud: use the page as visual support, narrate in your own voice",
         "Each block averages ~9 min — if it runs over, move on without getting stuck",
-        "Reserve at least 15 min at the end for student questions",
+        "Reserve at least 15 min at the end for audience questions",
         "Arrows ← → navigate blocks · Space advances · Esc returns to index",
       ];
 

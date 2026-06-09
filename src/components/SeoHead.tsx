@@ -124,7 +124,7 @@ const META: Record<string, SeoMeta> = {
   "/palestra": {
     title: "Lowbyrinth: Quando a Pesquisa Me Encontrou — Palestra · LowMovie™",
     description:
-      "Palestra para graduandos iniciantes em TCC (PPGCINEAV/UNESPAR, 17.06.2026): 10 blocos sequenciais sobre os pilares de uma pesquisa de mestrado, usando o portal LowMovie™ como ambiente.",
+      "Palestra de Castro Pizzano: 10 blocos sequenciais sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada, usando o portal LowMovie™ como ambiente.",
   },
 };
 
