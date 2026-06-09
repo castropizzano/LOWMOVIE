@@ -105,7 +105,7 @@ const Ecossistema = () => {
                       ))}
                     </div>
 
-                    <NavLink to={meta.to} className="inline-flex items-center gap-2 border border-border/40 rounded px-4 py-2 bg-card/30 hover:bg-card/50 transition-colors">
+                    <NavLink to={meta.to} className="inline-flex items-center gap-2 border border-primary/40 rounded px-4 py-2 bg-primary/10 hover:bg-primary/20 transition-colors">
                       <span className="text-xs font-semibold uppercase tracking-widest text-foreground/80">
                         {t(`ecossistema.layers.${key}.cta`)}
                       </span>
@@ -127,7 +127,7 @@ const Ecossistema = () => {
                 <p>{t("ecossistema.circulationP2")}</p>
               </div>
               <div className="mt-6">
-                <NavLink to="/licenca" className="inline-flex items-center gap-2 border border-border/40 rounded px-4 py-2 bg-card/30 hover:bg-card/50 transition-colors">
+                <NavLink to="/licenca" className="inline-flex items-center gap-2 border border-primary/40 rounded px-4 py-2 bg-primary/10 hover:bg-primary/20 transition-colors">
                   <span className="text-xs font-semibold uppercase tracking-widest text-foreground/80">
                     {t("ecossistema.circulationCta")}
                   </span>

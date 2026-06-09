@@ -153,7 +153,7 @@ const Replicar = () => {
               href="https://github.com/castropizzano/lowmovie"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 border border-border/50 rounded-lg p-4 hover:border-primary/40 hover:bg-muted/20 transition-all group"
+              className="flex items-center gap-3 border border-primary/40 rounded-lg p-4 bg-primary/10 hover:bg-primary/20 transition-all group"
             >
               <Github className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
               <span className="text-xs font-bold uppercase tracking-widest text-foreground flex-1">{t("replicar.ctaRepo")}</span>
@@ -163,7 +163,7 @@ const Replicar = () => {
               href="https://github.com/castropizzano/lowmovie/blob/main/PRESERVATION.md"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 border border-border/50 rounded-lg p-4 hover:border-primary/40 hover:bg-muted/20 transition-all group"
+              className="flex items-center gap-3 border border-primary/40 rounded-lg p-4 bg-primary/10 hover:bg-primary/20 transition-all group"
             >
               <FileDown className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
               <span className="text-xs font-bold uppercase tracking-widest text-foreground flex-1">{t("replicar.ctaPreservation")}</span>
@@ -173,7 +173,7 @@ const Replicar = () => {
               href="https://doi.org/10.5281/zenodo.18950438"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 border border-border/50 rounded-lg p-4 hover:border-primary/40 hover:bg-muted/20 transition-all group"
+              className="flex items-center gap-3 border border-primary/40 rounded-lg p-4 bg-primary/10 hover:bg-primary/20 transition-all group"
             >
               <Quote className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
               <span className="text-xs font-bold uppercase tracking-widest text-foreground flex-1">{t("replicar.ctaCite")}</span>
@@ -181,7 +181,7 @@ const Replicar = () => {
             </a>
             <a
               href="mailto:castropizzano@gmail.com?subject=LowMovie%20Portal%20-%20Replication"
-              className="flex items-center gap-3 border border-border/50 rounded-lg p-4 hover:border-primary/40 hover:bg-muted/20 transition-all group"
+              className="flex items-center gap-3 border border-primary/40 rounded-lg p-4 bg-primary/10 hover:bg-primary/20 transition-all group"
             >
               <Mail className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
               <span className="text-xs font-bold uppercase tracking-widest text-foreground flex-1">{t("replicar.ctaContact")}</span>

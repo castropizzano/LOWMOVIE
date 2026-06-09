@@ -73,7 +73,7 @@ const Conclusao = () => {
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80 mb-4">{t("conclusao.fullDissertation")}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">{t("conclusao.fullDissertationNote")}</p>
-              <a href="/docs/dissertacao.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
+              <a href="/docs/dissertacao.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                 <span className="text-sm font-medium text-foreground/80">{t("conclusao.openPdf")}</span>
               </a>
             </div>
@@ -86,7 +86,7 @@ const Conclusao = () => {
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20">
               <h2 className="text-lg font-semibold uppercase tracking-widest text-foreground/80 mb-4">{t("conclusao.publicationsTitle")}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-8">{t("conclusao.publicationHarpiaDesc")}</p>
-              <a href="https://drive.google.com/file/d/1DUueUK6W9C2u4vJY6HRqQ7Ji0J00EUh1/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
+              <a href="https://drive.google.com/file/d/1DUueUK6W9C2u4vJY6HRqQ7Ji0J00EUh1/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                 <span className="text-sm font-medium text-foreground/80">{t("conclusao.openPublication")}</span>
               </a>
             </div>
@@ -104,20 +104,20 @@ const Conclusao = () => {
                 ))}
               </div>
               <div className="space-y-4">
-                <a href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
+                <a href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                   <span className="text-sm font-medium text-foreground/80">{t("conclusao.openArchive")}</span>
                 </a>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  <a href="https://drive.google.com/file/d/1mxB33_MHvVK0uLEej2oJqv6HRZuxZggm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
+                  <a href="https://drive.google.com/file/d/1mxB33_MHvVK0uLEej2oJqv6HRZuxZggm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("conclusao.openMemorial")}</span>
                   </a>
-                  <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
+                  <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCertificados")}</span>
                   </a>
-                  <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
+                  <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("metodologia.toolkit.downloadCta")}</span>
                   </a>
-                  <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
+                  <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCaderno")}</span>
                   </a>
                 </div>
@@ -162,7 +162,7 @@ const Conclusao = () => {
                             <img src={item.image} alt={t(`conclusao.interviewItems.${item.tKey}.label`)} className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" loading="lazy" />
                           </div>
                         ) : null}
-                        <a href={item.transcript} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                        <a href={item.transcript} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group">
                           <span className="text-sm font-medium text-foreground/80">{t("conclusao.openTranscript")}</span>
                         </a>
                       </div>

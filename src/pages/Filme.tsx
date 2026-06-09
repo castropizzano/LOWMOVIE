@@ -217,7 +217,7 @@ const Filme = () => {
                 href="https://open.spotify.com/album/74vGlNUZCHtuycS2DR3wXv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
+                className="group flex items-center gap-4 border border-primary/40 rounded-lg p-5 bg-primary/10 transition-colors hover:bg-primary/20"
               >
                 <img src="/images/lowbyrinth-ep-cover.jpg" alt="Capa do EP Lowbyrinth — trilha musical original do documentário LowMovie™" className="h-12 w-12 rounded-md object-cover shrink-0" />
                 <div>
@@ -230,7 +230,7 @@ const Filme = () => {
                 href="https://open.spotify.com/album/61vLb0sa98Xjr5ZGtDEEiZ"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 border border-border rounded-lg p-5 bg-card/30 transition-colors hover:border-primary/30"
+                className="group flex items-center gap-4 border border-primary/40 rounded-lg p-5 bg-primary/10 transition-colors hover:bg-primary/20"
               >
                 <img src="/images/like-rats-cover.jpg" alt="Capa do álbum Like Rats on Hostile Paths — referência musical citada no documentário" className="h-12 w-12 rounded-md object-cover shrink-0" />
                 <div>
