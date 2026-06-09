@@ -281,8 +281,8 @@ export const BLOCOS: PalestraBloco[] = [
       en: "The dissertation structure is the argumentative design of the work. Each chapter fulfills a function in the global argument: to prepare, sustain, demonstrate, synthesize. Chapter order is a rhetorical decision, organized by the logic of exposition.",
     },
     comoChegueiNisso: {
-      pt: "Estruturei a dissertação em três movimentos: Corpo em Deriva (sujeito e operadores poéticos), Coletivo em Baixo Relevo (LowPressure™ como ética e identidade) e o terceiro movimento (LowMovie™ como síntese fílmica), acrescidos da introdução 'Rastros nas Ruas' e das considerações finais. A palavra 'movimento' carrega valor conceitual: traduz a tese metodológica de que o conhecimento se produz em deslocamento.",
-      en: "I structured the dissertation in three movements: Body in Drift (subject and poetic operators), Collective in Low Relief (LowPressure™ as ethics and identity), and the third movement (LowMovie™ as filmic synthesis), plus the introduction 'Tracks on the Streets' and final considerations. The word 'movement' carries conceptual value: it translates the methodological thesis that knowledge is produced in displacement.",
+      pt: "Estruturei a dissertação em três movimentos: Corpo em Deriva (sujeito e operadores poéticos), Coletivo em Baixo Relevo (LowPressure™ como ética e identidade) e Obra em Expansão (LowMovie™ desde a gênese até a circulação), acrescidos da Introdução 'Rastros nas Ruas' e das Considerações 'Ecos do Labirinto'. A palavra 'movimento' carrega valor conceitual: traduz a tese metodológica de que o conhecimento se produz em deslocamento.",
+      en: "I structured the dissertation in three movements: Body in Drift (subject and poetic operators), Collective in Low Relief (LowPressure™ as ethics and identity) and Work in Expansion (LowMovie™ from genesis to circulation), plus the Introduction 'Tracks on the Streets' and the Considerations 'Echoes of the Labyrinth'. The word 'movement' carries conceptual value: it translates the methodological thesis that knowledge is produced in displacement.",
     },
     ancoras: {
       pt: [
