@@ -95,6 +95,18 @@ const PalestraBloco = () => {
                 {b.comoChegueiNisso[lang]}
               </p>
             </AnimatedSection>
+            {b.destaque && (
+              <AnimatedSection delay={0.25}>
+                <figure className="mt-8 border-l-2 border-primary bg-primary/5 px-6 py-6 md:px-8 md:py-7">
+                  <figcaption className="mb-3 text-[11px] font-semibold uppercase tracking-widest text-primary">
+                    {isPt ? "Pergunta de pesquisa · enunciado da dissertação" : "Research question · dissertation statement"}
+                  </figcaption>
+                  <blockquote className="text-lg md:text-xl leading-relaxed text-foreground italic">
+                    “{b.destaque[lang]}”
+                  </blockquote>
+                </figure>
+              </AnimatedSection>
+            )}
           </div>
 
           {/* Nav footer */}

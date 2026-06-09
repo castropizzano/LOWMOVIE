@@ -10,6 +10,7 @@ export interface PalestraBloco {
   oQueE: { pt: string; en: string };
   comoChegueiNisso: { pt: string; en: string };
   ancoras: { pt: string[]; en: string[] };
+  destaque?: { pt: string; en: string };
 }
 
 export const BLOCOS: PalestraBloco[] = [
@@ -154,6 +155,10 @@ export const BLOCOS: PalestraBloco[] = [
     comoChegueiNisso: {
       pt: "Cheguei na pergunta central depois de várias reformulações em diálogo com o orientador. A versão final amarra subjetividade (sujeito implicado), subcultura (contexto material) e poética em movimento (objeto estético): os três vetores que estruturam toda a dissertação. Cada palavra da pergunta foi pesada e cumpre função no enunciado.",
       en: "I arrived at the central question after several reformulations in dialogue with my advisor. The final version ties subjectivity (implicated subject), subculture (material context) and poetics in motion (aesthetic object): the three vectors that structure the entire dissertation. Each word of the question was weighed and carries a function in the statement.",
+    },
+    destaque: {
+      pt: "Como os processos criativos que compõem o LowMovie™, gestados em dinâmica coletiva e rizomática do LowPressure™, contribuem para a construção de uma poética audiovisual em movimento no campo do cinema e das artes visuais? Quais modos de subjetivação, de elaboração simbólica e de relação com o espaço urbano emergem dessas práticas?",
+      en: "How do the creative processes that compose LowMovie™, gestated in the collective and rhizomatic dynamics of LowPressure™, contribute to the construction of an audiovisual poetics in motion in the field of cinema and the visual arts? What modes of subjectivation, symbolic elaboration, and relation to urban space emerge from these practices?",
     },
     ancoras: {
       pt: [
