@@ -179,8 +179,8 @@ export const BLOCOS: PalestraBloco[] = [
       en: "State of the art — mapping",
     },
     oQueE: {
-      pt: "Estado da arte não é lista de livros lidos. É um mapeamento crítico do que já se produziu sobre o seu problema — para mostrar (a) que há literatura suficiente para sustentar uma conversa acadêmica, (b) que há uma lacuna específica que sua pesquisa preenche. Sem esse mapeamento, o TCC parece ingênuo: o leitor pensa que você inventou tudo do zero.",
-      en: "State of the art is not a list of books read. It is a critical mapping of what has been produced on your problem — to show (a) that there is enough literature to sustain an academic conversation, and (b) that there is a specific gap your research fills. Without this mapping, the thesis seems naive: the reader thinks you invented everything from scratch.",
+      pt: "Estado da arte não é lista de livros lidos. É um mapeamento crítico do que já se produziu sobre o seu problema — para mostrar (a) que há literatura suficiente para sustentar uma conversa acadêmica, (b) que há uma lacuna específica que sua pesquisa preenche. Sem esse mapeamento, a pesquisa parece ingênua: o leitor pensa que você inventou tudo do zero.",
+      en: "State of the art is not a list of books read. It is a critical mapping of what has been produced on your problem — to show (a) that there is enough literature to sustain an academic conversation, and (b) that there is a specific gap your research fills. Without this mapping, research looks naive: the reader thinks you invented everything from scratch.",
     },
     comoChegueiNisso: {
       pt: "Mapeei três campos: (1) teoria do cinema e videoarte — referências para pensar imagem-movimento, montagem, dispositivo; (2) estudos urbanos e subculturais — para situar o skate como prática espacial e identitária; (3) pesquisa-criação como metodologia — autoras e autores que legitimam o praticante-pesquisador. A intersecção dos três campos é onde minha contribuição se aloja. Esses campos viram, dentro da dissertação, os 'conceitos operadores' — ferramentas teóricas que atravessam o texto inteiro.",
@@ -190,12 +190,12 @@ export const BLOCOS: PalestraBloco[] = [
       pt: [
         "Abrir /conceitos: mostrar os 6 conceitos operadores como cristalização do estado da arte",
         "Abrir /mapa: mostrar o grafo de conexões entre conceitos",
-        "Para o TCC: como organizar leituras em campos, não em pilhas",
+        "Como organizar leituras em campos, não em pilhas",
       ],
       en: [
         "Open /conceitos: show the 6 operating concepts as crystallization of the state of the art",
         "Open /mapa: show the graph of concept connections",
-        "For undergrad thesis: how to organize readings into fields, not piles",
+        "How to organize readings into fields, not piles",
       ],
     },
   },
@@ -221,12 +221,12 @@ export const BLOCOS: PalestraBloco[] = [
       pt: [
         "Abrir /apresentacao 'Objetivos Específicos': ler os 4 itens",
         "Mapear cada objetivo específico no sumário da dissertação",
-        "Para o TCC: regra prática — um objetivo específico = uma seção",
+        "Regra prática — um objetivo específico = uma seção",
       ],
       en: [
         "Open /apresentacao 'Objetivos Específicos': read the 4 items",
         "Map each specific objective to the dissertation's table of contents",
-        "For undergrad thesis: practical rule — one specific objective = one section",
+        "Practical rule — one specific objective = one section",
       ],
     },
   },
@@ -252,12 +252,12 @@ export const BLOCOS: PalestraBloco[] = [
       pt: [
         "Abrir /metodologia: mostrar diagrama concêntrico do Lowbyrinth™",
         "Mostrar Toolkit Pedagógico (PDF) — 3 eixos, 3 procedimentos, 6 verbos de Bloom",
-        "Para o TCC: nomeie sua metodologia, ancore em pelo menos um autor metodólogo",
+        "Nomeie sua metodologia, ancore em pelo menos um autor metodólogo",
       ],
       en: [
         "Open /metodologia: show concentric Lowbyrinth™ diagram",
         "Show Pedagogical Toolkit (PDF) — 3 axes, 3 procedures, 6 Bloom verbs",
-        "For undergrad thesis: name your methodology, anchor in at least one methodologist",
+        "Name your methodology, anchor in at least one methodologist",
       ],
     },
   },
@@ -272,8 +272,8 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Dissertation structure — three movements",
     },
     oQueE: {
-      pt: "A estrutura da dissertação não é índice administrativo: é o desenho argumentativo. Cada capítulo deve cumprir uma função no argumento global — preparar, sustentar, demonstrar, sintetizar. Para o TCC, vale ter consciência: a ordem dos capítulos é uma decisão retórica, não cronológica.",
-      en: "The dissertation structure is not an administrative index: it is the argumentative design. Each chapter must fulfill a function in the global argument — to prepare, sustain, demonstrate, synthesize. For undergrad thesis: chapter order is a rhetorical decision, not chronological.",
+      pt: "A estrutura da dissertação não é índice administrativo: é o desenho argumentativo. Cada capítulo deve cumprir uma função no argumento global — preparar, sustentar, demonstrar, sintetizar. Vale ter consciência: a ordem dos capítulos é uma decisão retórica, não cronológica.",
+      en: "The dissertation structure is not an administrative index: it is the argumentative design. Each chapter must fulfill a function in the global argument — to prepare, sustain, demonstrate, synthesize. Chapter order is a rhetorical decision, not chronological.",
     },
     comoChegueiNisso: {
       pt: "Estruturei a dissertação em três movimentos — Corpo em Deriva (sujeito e operadores poéticos), Coletivo em Baixo Relevo (LowPressure™ como ética e identidade), e o terceiro movimento (LowMovie™ como síntese fílmica) — mais introdução 'Rastros nas Ruas' e considerações finais. A palavra 'movimento' não é estilística: ela traduz a tese metodológica de que conhecimento se produz em deslocamento, não em paragem.",
@@ -282,12 +282,12 @@ export const BLOCOS: PalestraBloco[] = [
     ancoras: {
       pt: [
         "Abrir /estrutura: mostrar os 3 movimentos como cards",
-        "Para os graduandos: como nomear capítulos para que o título já argumente",
+        "Como nomear capítulos para que o título já argumente",
         "Mostrar também 'O Portal como Interface de Pesquisa' (níveis 1-2-3)",
       ],
       en: [
         "Open /estrutura: show the 3 movements as cards",
-        "For undergrads: how to name chapters so titles already argue",
+        "How to name chapters so titles already argue",
         "Show also 'The Portal as Research Interface' (levels 1-2-3)",
       ],
     },
@@ -314,12 +314,12 @@ export const BLOCOS: PalestraBloco[] = [
       pt: [
         "Abrir /conclusao: mostrar Arquivo de Processo",
         "Abrir /ecossistema: mostrar as 3 camadas (obra · método · plataforma)",
-        "Abrir para Q&A — incentivar perguntas sobre TCC dos graduandos",
+        "Abrir para Q&A — espaço de perguntas e diálogo com a audiência",
       ],
       en: [
         "Open /conclusao: show Process Archive",
         "Open /ecossistema: show the 3 layers (work · method · platform)",
-        "Open for Q&A — encourage questions about students' own thesis",
+        "Open for Q&A — space for questions and dialogue with the audience",
       ],
     },
   },
