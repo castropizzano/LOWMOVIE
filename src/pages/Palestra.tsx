@@ -34,13 +34,8 @@ const Palestra = () => {
             <div className="space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-12">
               <p>
                 {isPt
-                  ? "Esta palestra usa o próprio portal da dissertação como ambiente da exposição. Em vez de slides, navego ao vivo pelos blocos abaixo, mostrando como cada pilar de pesquisa foi construído — do encontro com o objeto até os resultados consolidados. Para quem está iniciando o TCC, cada bloco demonstra um passo replicável."
-                  : "This lecture uses the dissertation's own portal as its environment. Instead of slides, I navigate live through the blocks below, showing how each research pillar was built — from the encounter with the object to consolidated results. For those starting their undergrad thesis, each block demonstrates a replicable step."}
-              </p>
-              <p>
-                {isPt
-                  ? "Duração total: 90 minutos. Estrutura: 10 blocos sequenciais, cada um ancorado em uma página real do portal."
-                  : "Total duration: 90 minutes. Structure: 10 sequential blocks, each anchored in a real page of the portal."}
+                  ? "Quinze anos antes desta palestra, eu não sabia que estava começando uma pesquisa. Estava no skate, com a câmera na mão, com os amigos do Coletivo LowPressure™. A pesquisa veio depois — e veio quase como uma consequência. É essa história que eu quero contar aqui, em dez passos, do encontro com o objeto até os resultados consolidados."
+                  : "Fifteen years before this lecture, I didn't know I was starting a research. I was skateboarding, camera in hand, with my friends from the LowPressure™ Collective. The research came later — almost as a consequence. That is the story I want to tell here, in ten steps, from the encounter with the object to the consolidated results."}
               </p>
             </div>
           </AnimatedSection>
@@ -48,13 +43,13 @@ const Palestra = () => {
           <AnimatedSection delay={0.1}>
             <div className="flex flex-wrap items-center justify-between gap-4 mb-8 border-y border-border/40 py-4">
               <div className="text-xs uppercase tracking-widest text-muted-foreground">
-                {isPt ? `${BLOCOS.length} blocos · ${total} min total` : `${BLOCOS.length} blocks · ${total} min total`}
+                {isPt ? `${BLOCOS.length} passos · ${total} min` : `${BLOCOS.length} steps · ${total} min`}
               </div>
               <Link
                 to="/palestra/0"
                 className="group inline-flex items-center gap-2 border border-primary/40 bg-primary/10 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-primary transition-all hover:bg-primary/20"
               >
-                {isPt ? "Iniciar palestra" : "Start lecture"}
+                {isPt ? "Começar" : "Begin"}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -75,9 +70,6 @@ const Palestra = () => {
                     <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-foreground group-hover:text-primary transition-colors">
                       {b.titulo[lang]}
                     </h3>
-                    <p className="mt-1 text-xs uppercase tracking-widest text-muted-foreground">
-                      {isPt ? "Âncora no portal" : "Portal anchor"}: {b.portalLabel}
-                    </p>
                   </div>
                   <ArrowRight className="h-4 w-4 mt-2 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                 </Link>
@@ -85,18 +77,6 @@ const Palestra = () => {
             ))}
           </div>
 
-          <AnimatedSection delay={0.7} className="mt-16">
-            <div className="border border-border/40 rounded-lg p-6 md:p-8 bg-card/20 text-xs text-muted-foreground leading-relaxed">
-              <p className="font-semibold uppercase tracking-widest mb-2 text-foreground/70">
-                {isPt ? "Como usar no dia da palestra" : "How to use on the lecture day"}
-              </p>
-              <p>
-                {isPt
-                  ? "Abra esta página no projetor, clique em \"Iniciar palestra\" e use as setas ←/→ (ou Espaço) para navegar. Cada bloco mostra o roteiro à esquerda e a âncora do portal à direita — clique no link da âncora para abrir a página real e demonstrar o conteúdo da dissertação ao vivo. Tecla Esc volta para a home."
-                  : "Open this page on the projector, click \"Start lecture\" and use ←/→ arrows (or Space) to navigate. Each block shows the script on the left and the portal anchor on the right — click the anchor link to open the real page and demonstrate the dissertation content live. Esc returns to home."}
-              </p>
-            </div>
-          </AnimatedSection>
         </div>
       </section>
     </Layout>
