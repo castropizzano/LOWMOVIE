@@ -63,8 +63,8 @@ const GuiaApresentador = () => {
             title={isPt ? "Guia do Apresentador" : "Presenter's Guide"}
             subtitle={
               isPt
-                ? `Documento operacional · ${BLOCOS.length} blocos · ${total} min · uso interno`
-                : `Operational document · ${BLOCOS.length} blocks · ${total} min · internal use`
+                ? `Documento operacional · ${BLOCOS.length} blocos · uso interno`
+                : `Operational document · ${BLOCOS.length} blocks · internal use`
             }
           />
 
