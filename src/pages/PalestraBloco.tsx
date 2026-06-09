@@ -68,7 +68,6 @@ const PalestraBloco = () => {
                 <span className="text-xs font-semibold uppercase tracking-widest text-primary">
                   {isPt ? "Bloco" : "Block"} {String(b.id).padStart(2, "0")} / {String(BLOCOS.length - 1).padStart(2, "0")}
                 </span>
-                <span className="text-xs uppercase tracking-widest text-muted-foreground">{b.tempoMin} min</span>
               </div>
               <Link to="/palestra" className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
                 <List className="h-3.5 w-3.5" />

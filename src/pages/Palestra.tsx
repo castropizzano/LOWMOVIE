@@ -14,8 +14,6 @@ const Palestra = () => {
   // i18n.language is read so component re-renders on language change
   void i18n.language;
 
-  const total = BLOCOS.reduce((s, b) => s + b.tempoMin, 0);
-
   return (
     <Layout>
       <SeoHead route="/palestra" />
@@ -43,7 +41,7 @@ const Palestra = () => {
           <AnimatedSection delay={0.1}>
             <div className="flex flex-wrap items-center justify-between gap-4 mb-8 border-y border-border/40 py-4">
               <div className="text-xs uppercase tracking-widest text-muted-foreground">
-                {isPt ? `${BLOCOS.length} passos · ${total} min` : `${BLOCOS.length} steps · ${total} min`}
+                {isPt ? `${BLOCOS.length} passos` : `${BLOCOS.length} steps`}
               </div>
               <Link
                 to="/palestra/0"
@@ -64,7 +62,6 @@ const Palestra = () => {
                 >
                   <div className="shrink-0 w-12 text-center">
                     <div className="text-2xl font-bold text-primary leading-none">{String(b.id).padStart(2, "0")}</div>
-                    <div className="mt-1 text-[10px] uppercase tracking-widest text-muted-foreground">{b.tempoMin} min</div>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-sm md:text-base font-semibold uppercase tracking-wide text-foreground group-hover:text-primary transition-colors">
