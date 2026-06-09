@@ -1075,7 +1075,7 @@
       "conceito": "Research-creation",
       "derivas": [
         {
-          "label": "The Collective",
+          "label": "LowPressure™",
           "justificativa": "From method to field. The collaborative process is methodology in action."
         },
         {
@@ -1089,7 +1089,7 @@
       "conceito": "Architecture",
       "derivas": [
         {
-          "label": "Concept Map",
+          "label": "Conceptual Map",
           "justificativa": "From linear structure to graph. See the connections that text linearizes."
         },
         {
@@ -1107,7 +1107,7 @@
           "justificativa": "From concepts to image. Each analytical operator is embodied in the film."
         },
         {
-          "label": "Concept Map",
+          "label": "Conceptual Map",
           "justificativa": "From text to graph. Visualize the theoretical constellation in its connections."
         },
         {
@@ -1117,11 +1117,11 @@
       ]
     },
     "filme": {
-      "title": "The Film",
+      "title": "LowMovie™",
       "conceito": "Body in drift",
       "derivas": [
         {
-          "label": "The Collective",
+          "label": "LowPressure™",
           "justificativa": "From film to bodies. Who are the ones who create together."
         },
         {
@@ -1131,7 +1131,7 @@
       ]
     },
     "coletivo": {
-      "title": "The Collective",
+      "title": "LowPressure™",
       "conceito": "Collaborative process",
       "derivas": [
         {
@@ -1159,7 +1159,7 @@
       ]
     },
     "questoes": {
-      "title": "Questions",
+      "title": "Critical Questions",
       "conceito": "Anticipation",
       "derivas": [
         {
@@ -1181,7 +1181,7 @@
           "justificativa": "From end to beginning. The labyrinth is circular."
         },
         {
-          "label": "Concept Map",
+          "label": "Conceptual Map",
           "justificativa": "From closure to full vision. The map reveals what the journey built."
         }
       ]
