@@ -262,7 +262,7 @@
     "next": "Structure"
   },
   "estrutura": {
-    "title": "Analytical Structure",
+    "title": "Structure",
     "subtitle": "The dissertation is organized in three movements",
     "intro": "The dissertation is organized in three analytical movements that correspond to distinct dimensions of the object, in progressive conceptual complexity. Each movement has internal autonomy but articulates with the others in a logic of cumulative deepening: from body to collective, from collective to work, from work to field.",
     "subchapters": "Subchapters",
@@ -388,7 +388,7 @@
     "next": "The Film"
   },
   "filme": {
-    "title": "LowMovie™",
+    "title": "LowMovie™ - The Film",
     "subtitle": "Poetic-political device born from collective gesture",
     "workData": "Work Data",
     "data": {
@@ -479,7 +479,7 @@
     "next": "The Collective"
   },
   "coletivo": {
-    "title": "The Collective: LowPressure™",
+    "title": "LowPressure™ - The Collective:",
     "subtitle": "Network of artist-skaters who activate the city as a sensible field",
     "p1": "LowPressure™ is not a formal group. It is a network of affinities, a form of networked life constituted by encounter, practice, and the insistence of making.",
     "p2": "The creative process is born from listening and coexistence. The collective's identity affirms itself as a rhizomatic construction (growing as a network, without fixed hierarchy), in which knowledge and practices are shaped to the rhythm of a collective in motion. As Stuart Hall states, \"cultural identity should perhaps be thought of as a 'production', something that is never complete, that is always processual.\"",
@@ -1239,7 +1239,7 @@
     ]
   },
   "replicar": {
-    "title": "Replicate this Portal",
+    "title": "Low Runner™ - The Replicant",
     "subtitle": "Open guide for researchers to adapt this infrastructure",
     "brandTitle": "Low Runner™",
     "brandTagline": "Platform · Replicable navigable-dissertation system",
@@ -1401,7 +1401,7 @@
     "next": "Printable Versions"
   },
   "imprimir": {
-    "title": "Printable Versions",
+    "title": "Printables",
     "subtitle": "Three ways to take the portal to paper",
     "headline": "The portal is navigable by design.",
     "p1": "These printed versions are syntheses, not substitutes. Each respects a distinct layer of reading: the current page for ad hoc consultation, the synthesis booklet for linear reading, and the full dissertation for complete academic rigor.",
