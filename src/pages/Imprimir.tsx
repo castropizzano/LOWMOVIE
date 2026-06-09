@@ -73,8 +73,8 @@ const Imprimir = () => {
                 </h2>
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed text-justify mb-6">{t("imprimir.option3Desc")}</p>
-              <a href="/docs/dissertacao.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors">
-                <span className="text-sm font-medium text-foreground/80">{t("imprimir.option3Cta")}</span>
+              <a href="/docs/dissertacao.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors">
+                <span className="text-sm font-semibold uppercase tracking-wider text-foreground">{t("imprimir.option3Cta")}</span>
               </a>
             </div>
           </div>
