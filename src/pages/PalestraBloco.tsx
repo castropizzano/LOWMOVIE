@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { ArrowLeft, ArrowRight, ExternalLink, List } from "lucide-react";
+import { ArrowLeft, ArrowRight, List } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -84,73 +84,17 @@ const PalestraBloco = () => {
             </h1>
           </AnimatedSection>
 
-          {/* Content grid */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Left: script (2 cols) */}
-            <div className="md:col-span-2 space-y-8">
-              <AnimatedSection delay={0.15}>
-                <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-3">
-                    {isPt ? "O que é este pilar" : "What this pillar is"}
-                  </p>
-                  <p className="text-base leading-relaxed text-foreground/85 text-justify">
-                    {b.oQueE[lang]}
-                  </p>
-                </div>
-              </AnimatedSection>
-
-              <AnimatedSection delay={0.2}>
-                <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-3">
-                    {isPt ? "Como cheguei nisso" : "How I arrived here"}
-                  </p>
-                  <p className="text-base leading-relaxed text-foreground/85 text-justify">
-                    {b.comoChegueiNisso[lang]}
-                  </p>
-                </div>
-              </AnimatedSection>
-
-              <AnimatedSection delay={0.25}>
-                <div className="border-t border-border/40 pt-6">
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-3">
-                    {isPt ? "Falas-âncora" : "Anchor cues"}
-                  </p>
-                  <ul className="space-y-2">
-                    {b.ancoras[lang].map((a, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm text-foreground/75 leading-relaxed">
-                        <div className="h-1.5 w-1.5 rounded-full bg-primary/50 mt-2 shrink-0" />
-                        <span>{a}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </AnimatedSection>
-            </div>
-
-            {/* Right: portal anchor */}
-            <AnimatedSection delay={0.3} className="md:col-span-1">
-              <div className="border border-border rounded-lg p-6 bg-card/30 sticky top-24">
-                <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground mb-2">
-                  {isPt ? "Âncora no portal" : "Portal anchor"}
-                </p>
-                <p className="text-base font-semibold uppercase tracking-wide text-foreground mb-4 leading-tight">
-                  {b.portalLabel}
-                </p>
-                {b.portalRota && (
-                  <Link
-                    to={b.portalRota}
-                    target="_blank"
-                    rel="noopener"
-                    className="group inline-flex w-full items-center justify-between gap-2 border border-primary/40 bg-primary/10 px-4 py-3 text-xs font-semibold uppercase tracking-widest text-primary transition-all hover:bg-primary/20"
-                  >
-                    <span>{isPt ? "Abrir página" : "Open page"}</span>
-                    <ExternalLink className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
-                  </Link>
-                )}
-                <p className="mt-4 text-[10px] uppercase tracking-widest text-muted-foreground/70 leading-relaxed">
-                  {isPt ? "Abre em nova aba para preservar o roteiro" : "Opens in a new tab to preserve the script"}
-                </p>
-              </div>
+          {/* Narrative-only content */}
+          <div className="max-w-3xl space-y-6">
+            <AnimatedSection delay={0.15}>
+              <p className="text-lg leading-relaxed text-foreground/85 text-justify">
+                {b.oQueE[lang]}
+              </p>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <p className="text-lg leading-relaxed text-foreground/85 text-justify">
+                {b.comoChegueiNisso[lang]}
+              </p>
             </AnimatedSection>
           </div>
 
@@ -173,9 +117,6 @@ const PalestraBloco = () => {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
-            <p className="mt-4 text-center text-[10px] uppercase tracking-widest text-muted-foreground/60">
-              {isPt ? "Teclado: ← → para navegar · Esc para o índice" : "Keyboard: ← → to navigate · Esc for index"}
-            </p>
           </AnimatedSection>
         </div>
       </section>
