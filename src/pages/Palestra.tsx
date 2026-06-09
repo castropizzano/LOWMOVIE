@@ -25,8 +25,8 @@ const Palestra = () => {
             title={isPt ? "Lowbyrinth: Quando a Pesquisa Me Encontrou" : "Lowbyrinth: When Research Found Me"}
             subtitle={
               isPt
-                ? "Palestra para graduandos iniciantes em TCC · PPGCINEAV/UNESPAR · 17.06.2026"
-                : "Lecture for undergraduates starting their thesis · PPGCINEAV/UNESPAR · 06.17.2026"
+                ? "Palestra sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada"
+                : "Lecture on the path of a master's research in implicated research-creation"
             }
           />
 
@@ -34,8 +34,8 @@ const Palestra = () => {
             <div className="space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-12">
               <p>
                 {isPt
-                  ? "Quinze anos antes desta palestra, eu não sabia que estava começando uma pesquisa. Estava no skate, com a câmera na mão, com os amigos do Coletivo LowPressure™. A pesquisa veio depois — e veio quase como uma consequência. É essa história que eu quero contar aqui, em dez passos, do encontro com o objeto até os resultados consolidados."
-                  : "Fifteen years before this lecture, I didn't know I was starting a research. I was skateboarding, camera in hand, with my friends from the LowPressure™ Collective. The research came later — almost as a consequence. That is the story I want to tell here, in ten steps, from the encounter with the object to the consolidated results."}
+                  ? "Antes desta pesquisa existir como dissertação, ela já existia como prática — no skate, na câmera na mão, nos coletivos com os quais sigo trabalhando. A pesquisa veio depois, quase como consequência. É essa história que conto aqui, em dez passos, do encontro com o objeto até os resultados consolidados."
+                  : "Before this research existed as a dissertation, it already existed as practice — in skateboarding, in the camera in hand, in the collectives I keep working with. The research came later, almost as a consequence. That is the story I tell here, in ten steps, from the encounter with the object to the consolidated results."}
               </p>
             </div>
           </AnimatedSection>
