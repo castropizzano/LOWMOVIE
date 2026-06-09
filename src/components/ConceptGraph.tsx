@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect, useMemo } from "react";
+import { useRef, useState, useMemo } from "react";
 import { nodes, edges, typeColors, GraphNode, NodeType } from "@/data/conceptMap";
 import { useTranslation } from "react-i18next";
 
