@@ -103,37 +103,46 @@ const Conclusao = () => {
                   <p key={i}>{paragraph}</p>
                 ))}
               </div>
-              <div className="flex flex-wrap gap-4">
-                <a href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openArchive")}</span>
-                </a>
-                <a href="https://drive.google.com/file/d/1mxB33_MHvVK0uLEej2oJqv6HRZuxZggm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openMemorial")}</span>
-                </a>
-                <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCertificados")}</span>
-                </a>
-                <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("metodologia.toolkit.downloadCta")}</span>
-                </a>
-                <a href="/ecossistema" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openEcosystem")}</span>
-                </a>
-                <a href="/replicar" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openLowRunner")}</span>
-                </a>
-                <a href="/licenca" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openLicense")}</span>
-                </a>
-                <a href="/defense-mode" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openDefenseMode")}</span>
-                </a>
-                <a href="/imprimir" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openImprimir")}</span>
-                </a>
-                <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
-                  <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCaderno")}</span>
-                </a>
+              <div className="space-y-6">
+                {/* Documentos e arquivos da pesquisa */}
+                <div className="flex flex-wrap gap-4">
+                  <a href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openArchive")}</span>
+                  </a>
+                  <a href="https://drive.google.com/file/d/1mxB33_MHvVK0uLEej2oJqv6HRZuxZggm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openMemorial")}</span>
+                  </a>
+                  <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCertificados")}</span>
+                  </a>
+                  <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("metodologia.toolkit.downloadCta")}</span>
+                  </a>
+                  <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCaderno")}</span>
+                  </a>
+                </div>
+
+                <div className="h-px w-full bg-border/20" />
+
+                {/* Seções e recursos do portal — ordem do menu Ecossistema */}
+                <div className="flex flex-wrap gap-4">
+                  <a href="/ecossistema" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openEcosystem")}</span>
+                  </a>
+                  <a href="/replicar" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openLowRunner")}</span>
+                  </a>
+                  <a href="/defense-mode" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openDefenseMode")}</span>
+                  </a>
+                  <a href="/imprimir" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openImprimir")}</span>
+                  </a>
+                  <a href="/licenca" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                    <span className="text-sm font-medium text-foreground/80">{t("conclusao.openLicense")}</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
