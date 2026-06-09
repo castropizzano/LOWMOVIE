@@ -20,8 +20,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/home",
     portalLabel: "Home + Lugar de Fala",
     titulo: {
-      pt: "Abertura — quem fala, de onde fala",
-      en: "Opening — who speaks, from where",
+      pt: "Abertura | quem fala, de onde fala",
+      en: "Opening | who speaks, from where",
     },
     oQueE: {
       pt: "Toda pesquisa começa por uma posição. Antes de discutir método, problema ou estado da arte, situa-se o pesquisador no mundo: sua biografia, sua comunidade, suas perguntas vividas. O lugar de fala opera como base epistemológica que sustenta a coerência entre o objeto investigado e o sujeito que investiga.",
@@ -51,8 +51,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/timeline",
     portalLabel: "Timeline Acadêmica (Lattes)",
     titulo: {
-      pt: "Trajetória — do chão da rua ao mestrado",
-      en: "Trajectory — from the street to the master's degree",
+      pt: "Trajetória | do chão da rua ao mestrado",
+      en: "Trajectory | from the street to the master's degree",
     },
     oQueE: {
       pt: "A trajetória de um pesquisador é o tecido das experiências que produziram suas perguntas, para além de um currículo cronológico. Mapear a própria trajetória ajuda a identificar de onde vêm os interesses de pesquisa: ler-se como sujeito histórico é o primeiro exercício metodológico.",
@@ -82,8 +82,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/coletivo",
     portalLabel: "Coletivo LowPressure™",
     titulo: {
-      pt: "O encontro — quando a pesquisa me encontrou",
-      en: "The encounter — when research found me",
+      pt: "O encontro | quando a pesquisa me encontrou",
+      en: "The encounter | when research found me",
     },
     oQueE: {
       pt: "Há um momento em que a prática vivida começa a pedir teoria. É o objeto que se impõe como questão ao pesquisador. Vale prestar atenção ao que na vida prática insiste em ser pensado academicamente.",
@@ -113,8 +113,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/apresentacao",
     portalLabel: "Apresentação · Justificativa",
     titulo: {
-      pt: "Problema de pesquisa — como contornei",
-      en: "Research problem — how I framed it",
+      pt: "Problema de pesquisa | como contornei",
+      en: "Research problem | how I framed it",
     },
     oQueE: {
       pt: "Problema de pesquisa é distinto de tema. Tema é amplo ('skate', 'audiovisual'); problema é a fricção específica entre o que se vive ou observa e o que a literatura já cobre. Formular um problema é delimitar uma lacuna investigável. Essa delimitação dá foco à pesquisa.",
@@ -144,8 +144,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/apresentacao",
     portalLabel: "Apresentação · Pergunta Central",
     titulo: {
-      pt: "Pergunta de pesquisa — o enunciado",
-      en: "Research question — the statement",
+      pt: "Pergunta de pesquisa | o enunciado",
+      en: "Research question | the statement",
     },
     oQueE: {
       pt: "A pergunta de pesquisa é o problema convertido em sentença interrogativa precisa. Boa pergunta é específica, respondível e implica um método. Uma pergunta delimitada ('como X opera em Y a partir de Z?') sustenta uma dissertação inteira; a precisão da pergunta orienta cada decisão posterior.",
@@ -175,8 +175,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/conceitos",
     portalLabel: "Conceitos Operadores",
     titulo: {
-      pt: "Estado da arte — mapeamento",
-      en: "State of the art — mapping",
+      pt: "Estado da arte | mapeamento",
+      en: "State of the art | mapping",
     },
     oQueE: {
       pt: "Estado da arte é um mapeamento crítico do que já se produziu sobre o seu problema. Ele cumpre duas funções: (a) demonstrar que há literatura suficiente para sustentar uma conversa acadêmica e (b) localizar a lacuna específica que a pesquisa preenche. Com esse mapeamento, a contribuição da pesquisa fica situada no campo.",
@@ -206,8 +206,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/apresentacao",
     portalLabel: "Apresentação · Objetivos",
     titulo: {
-      pt: "Objetivos — geral e específicos",
-      en: "Objectives — general and specific",
+      pt: "Objetivos | geral e específicos",
+      en: "Objectives | general and specific",
     },
     oQueE: {
       pt: "Objetivos traduzem a pergunta em ações de pesquisa. O objetivo geral responde à pergunta como um todo; os específicos quebram esse todo em etapas verificáveis. Cada objetivo específico tende a corresponder a uma seção ou capítulo, oferecendo critérios concretos para verificar o avanço da pesquisa.",
@@ -237,8 +237,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/metodologia",
     portalLabel: "Metodologia · Lowbyrinth™",
     titulo: {
-      pt: "Metodologia — Lowbyrinth™ como método",
-      en: "Methodology — Lowbyrinth™ as method",
+      pt: "Metodologia | Lowbyrinth™ como método",
+      en: "Methodology | Lowbyrinth™ as method",
     },
     oQueE: {
       pt: "Metodologia é a explicitação de como o conhecimento foi produzido: que tipo de evidência reconheceu, como coletou, como analisou e em diálogo com qual tradição metodológica. Uma metodologia bem formulada abre caminho para que outra pessoa, em outro contexto, replique ou critique o percurso.",
@@ -268,8 +268,8 @@ export const BLOCOS: PalestraBloco[] = [
     portalRota: "/estrutura",
     portalLabel: "Estrutura · 3 Movimentos",
     titulo: {
-      pt: "Estrutura da dissertação — três movimentos",
-      en: "Dissertation structure — three movements",
+      pt: "Estrutura da dissertação | três movimentos",
+      en: "Dissertation structure | three movements",
     },
     oQueE: {
       pt: "A estrutura da dissertação é o desenho argumentativo do trabalho. Cada capítulo cumpre uma função no argumento global: preparar, sustentar, demonstrar, sintetizar. A ordem dos capítulos é uma decisão retórica, organizada pela lógica da exposição.",
