@@ -7,8 +7,6 @@ interface SimNode extends GraphNode {
   y: number;
   vx: number;
   vy: number;
-  fx?: number;
-  fy?: number;
 }
 
 const NODE_RADIUS: Record<NodeType, number> = {
@@ -23,8 +21,6 @@ const ConceptGraph = () => {
   const animRef = useRef<number>(0);
   const [simNodes, setSimNodes] = useState<SimNode[]>([]);
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
-  const [dragNode, setDragNode] = useState<string | null>(null);
-  const [transform, setTransform] = useState({ x: 0, y: 0, scale: 1 });
   const nodesRef = useRef<SimNode[]>([]);
 
   // Initialize positions
@@ -100,10 +96,8 @@ const ConceptGraph = () => {
 
       // Apply velocities
       for (const n of ns) {
-        if (n.fx !== undefined) { n.x = n.fx; n.vx = 0; }
-        else { n.vx *= 0.85; n.x += n.vx; }
-        if (n.fy !== undefined) { n.y = n.fy; n.vy = 0; }
-        else { n.vy *= 0.85; n.y += n.vy; }
+        n.vx *= 0.85; n.x += n.vx;
+        n.vy *= 0.85; n.y += n.vy;
         n.x = Math.max(50, Math.min(850, n.x));
         n.y = Math.max(50, Math.min(600, n.y));
       }
@@ -113,56 +107,6 @@ const ConceptGraph = () => {
       animRef.current = requestAnimationFrame(tick);
     };
     animRef.current = requestAnimationFrame(tick);
-  }, []);
-
-
-  const handleMouseDown = useCallback((id: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    setDragNode(id);
-    const node = nodesRef.current.find((n) => n.id === id);
-    if (node) { node.fx = node.x; node.fy = node.y; }
-  }, []);
-
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    if (!dragNode || !svgRef.current) return;
-    const svg = svgRef.current;
-    const rect = svg.getBoundingClientRect();
-    const x = (e.clientX - rect.left - transform.x) / transform.scale;
-    const y = (e.clientY - rect.top - transform.y) / transform.scale;
-    const node = nodesRef.current.find((n) => n.id === dragNode);
-    if (node) {
-      node.fx = x; node.fy = y;
-      node.x = x; node.y = y;
-      setSimNodes([...nodesRef.current]);
-    }
-  }, [dragNode, transform]);
-
-  const handleMouseUp = useCallback(() => {
-    if (dragNode) {
-      const node = nodesRef.current.find((n) => n.id === dragNode);
-      if (node) { delete node.fx; delete node.fy; }
-      setDragNode(null);
-    }
-  }, [dragNode]);
-
-  const handlePanStart = useRef<{ x: number; y: number; tx: number; ty: number } | null>(null);
-
-  const handleBgMouseDown = useCallback((e: React.MouseEvent) => {
-    if ((e.target as SVGElement).tagName === "svg" || (e.target as SVGElement).tagName === "rect") {
-      handlePanStart.current = { x: e.clientX, y: e.clientY, tx: transform.x, ty: transform.y };
-    }
-  }, [transform]);
-
-  const handleBgMouseMove = useCallback((e: React.MouseEvent) => {
-    if (handlePanStart.current && !dragNode) {
-      const dx = e.clientX - handlePanStart.current.x;
-      const dy = e.clientY - handlePanStart.current.y;
-      setTransform((t) => ({ ...t, x: handlePanStart.current!.tx + dx, y: handlePanStart.current!.ty + dy }));
-    }
-  }, [dragNode]);
-
-  const handleBgMouseUp = useCallback(() => {
-    handlePanStart.current = null;
   }, []);
 
   const nodeMap = new Map(simNodes.map((n) => [n.id, n]));
@@ -185,8 +129,12 @@ const ConceptGraph = () => {
       {hoveredNode && (() => {
         const node = nodeMap.get(hoveredNode);
         if (!node) return null;
-        const screenX = node.x * transform.scale + transform.x;
-        const screenY = node.y * transform.scale + transform.y;
+        const svg = svgRef.current;
+        const rect = svg?.getBoundingClientRect();
+        const scaleX = rect ? rect.width / 900 : 1;
+        const scaleY = rect ? rect.height / 650 : 1;
+        const screenX = node.x * scaleX;
+        const screenY = node.y * scaleY;
         return (
           <div
             className="absolute z-20 max-w-xs bg-popover border border-border rounded-md p-3 shadow-lg pointer-events-none"
@@ -209,40 +157,9 @@ const ConceptGraph = () => {
         width="100%"
         height="100%"
         viewBox="0 0 900 650"
-        className="cursor-grab active:cursor-grabbing touch-none"
-        onMouseDown={(e) => { handleBgMouseDown(e); }}
-        onMouseMove={(e) => { handleMouseMove(e); handleBgMouseMove(e); }}
-        onMouseUp={() => { handleMouseUp(); handleBgMouseUp(); }}
-        onMouseLeave={() => { handleMouseUp(); handleBgMouseUp(); }}
-        onTouchStart={(e) => {
-          const touch = e.touches[0];
-          const target = e.target as SVGElement;
-          // Check if touching a node
-          const nodeGroup = target.closest("g[class*='cursor-pointer']");
-          if (nodeGroup) {
-            const nodeId = simNodes.find(n => {
-              const el = svgRef.current?.querySelector(`g[transform*="translate(${Math.round(n.x)}"]`);
-              return el === nodeGroup || nodeGroup.closest(`[transform]`) !== null;
-            })?.id;
-            // For touch, just show tooltip on tap
-          }
-          // Pan start
-          handlePanStart.current = { x: touch.clientX, y: touch.clientY, tx: transform.x, ty: transform.y };
-        }}
-        onTouchMove={(e) => {
-          if (handlePanStart.current) {
-            const touch = e.touches[0];
-            const dx = touch.clientX - handlePanStart.current.x;
-            const dy = touch.clientY - handlePanStart.current.y;
-            setTransform((t) => ({ ...t, x: handlePanStart.current!.tx + dx, y: handlePanStart.current!.ty + dy }));
-          }
-        }}
-        onTouchEnd={() => {
-          handlePanStart.current = null;
-          handleMouseUp();
-        }}
+        onMouseLeave={() => setHoveredNode(null)}
       >
-        <g transform={`translate(${transform.x},${transform.y}) scale(${transform.scale})`}>
+        <g>
           {/* Edges */}
           {edges.map((edge, i) => {
             const s = nodeMap.get(edge.source);
@@ -274,11 +191,10 @@ const ConceptGraph = () => {
               <g
                 key={node.id}
                 transform={`translate(${node.x},${node.y})`}
-                onMouseDown={(e) => handleMouseDown(node.id, e)}
                 onMouseEnter={() => setHoveredNode(node.id)}
                 onMouseLeave={() => setHoveredNode(null)}
                 onTouchStart={(e) => { e.stopPropagation(); setHoveredNode(hoveredNode === node.id ? null : node.id); }}
-                className="cursor-pointer"
+                className="cursor-default"
                 opacity={dimmed ? 0.2 : 1}
               >
                 <circle
