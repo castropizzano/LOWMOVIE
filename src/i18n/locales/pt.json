@@ -262,7 +262,7 @@
     "next": "Estrutura"
   },
   "estrutura": {
-    "title": "Estrutura Analítica",
+    "title": "Estrutura",
     "subtitle": "A dissertação se organiza em três movimentos",
     "intro": "A dissertação organiza-se em três movimentos analíticos que correspondem a dimensões distintas do objeto, em complexidade conceitual progressiva. Cada movimento possui autonomia interna, mas articula-se com os demais numa lógica de aprofundamento cumulativo: do corpo ao coletivo, do coletivo à obra, da obra ao campo.",
     "subchapters": "Subcapítulos",
@@ -388,7 +388,7 @@
     "next": "O Filme"
   },
   "filme": {
-    "title": "LowMovie™",
+    "title": "LowMovie™ - O Filme",
     "subtitle": "Dispositivo poético-político nascido do gesto coletivo",
     "workData": "Dados da Obra",
     "data": {
@@ -479,7 +479,7 @@
     "next": "O Coletivo"
   },
   "coletivo": {
-    "title": "O Coletivo: LowPressure™",
+    "title": "LowPressure™ - O Coletivo:",
     "subtitle": "Rede de artistas-skatistas que ativam a cidade como campo sensível",
     "p1": "O LowPressure™ não é um grupo formal. É uma rede de afinidades, uma forma de vida em rede que se constitui pelo encontro, pela prática e pela insistência do fazer.",
     "p2": "O processo criativo nasce da escuta e da convivência. A identidade do coletivo se afirma como construção rizomática (que cresce em rede, sem hierarquia fixa), em que saberes e fazeres se moldam ao ritmo de um coletivo em movimento. Como afirma Stuart Hall, \"a identidade cultural talvez deva ser pensada como uma 'produção', algo que nunca está completo, que é sempre processual\".",
@@ -1239,7 +1239,7 @@
     ]
   },
   "replicar": {
-    "title": "Replique este Portal",
+    "title": "Low Runner™ - O Replicante",
     "subtitle": "Guia aberto para pesquisadores adaptarem esta infraestrutura",
     "brandTitle": "Low Runner™",
     "brandTagline": "Plataforma · Sistema replicável de dissertação navegável",
@@ -1401,7 +1401,7 @@
     "next": "Versões Imprimíveis"
   },
   "imprimir": {
-    "title": "Versões Imprimíveis",
+    "title": "Imprimíveis",
     "subtitle": "Três modos de levar o portal para o papel",
     "headline": "O portal é navegável por concepção.",
     "p1": "Estas versões impressas são sínteses, não substitutos. Cada uma respeita uma camada distinta de leitura: a página atual para consulta pontual, o caderno-síntese para leitura linear, e a dissertação completa para o rigor acadêmico integral.",
