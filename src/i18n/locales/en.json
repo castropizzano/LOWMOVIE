@@ -1310,7 +1310,7 @@
         "dissertationArtifact": "Full dissertation (PDF)",
         "doiArtifact": "Permanent DOI — Zenodo (10.5281/zenodo.18950438)",
         "portalArtifact": "Academic portal (this site)",
-        "cta": "View Reflections and Conclusions"
+        "cta": "Reflections and Conclusions"
       },
       "lowbyrinth": {
         "name": "Lowbyrinth™",
@@ -1321,7 +1321,7 @@
         "toolkitArtifact": "Pedagogical Toolkit (visual PDF)",
         "conceptsArtifact": "Operator concepts",
         "diagramArtifact": "Method diagram (Manual)",
-        "cta": "View Methodology"
+        "cta": "Methodology"
       },
       "lowrunner": {
         "name": "Low Runner™",
@@ -1332,7 +1332,7 @@
         "stackArtifact": "React + TypeScript + Vite stack",
         "preservationArtifact": "Preservation strategy (archive.sh)",
         "licenseArtifact": "Open-source license",
-        "cta": "View Low Runner™"
+        "cta": "Low Runner™"
       }
     }
   },
