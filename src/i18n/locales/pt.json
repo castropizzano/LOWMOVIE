@@ -385,7 +385,7 @@
     "ethicsP1": "Herzog afirma que \"o erro é algo que beira o sagrado... é preciso aceitar a tentativa e erro\". Esse diálogo não é uma filiação estética — é uma ressonância ética: ambos compartilham a convicção de que a criação autêntica não depende de condições ideais, mas da disposição para agir com os recursos disponíveis.",
     "ethicsP2": "Criar sem esperar autorização institucional configura, por si só, uma micropolítica do fazer. Quando um coletivo de skatistas produz um filme que dialoga com o campo do cinema experimental sem solicitar permissão nem aprovação prévia, esse gesto carrega uma dimensão política que se realiza na própria materialidade da obra.",
     "ethicsP3": "A aproximação com Herzog permite situar o LowPressure™ numa linhagem de cineastas que operaram nas margens do sistema industrial — de Jean Rouch filmando em transe a Maya Deren reinventando a dança no cinema experimental.",
-    "next": "O Filme"
+    "next": "LowMovie™"
   },
   "filme": {
     "title": "LowMovie™ | O Filme",
@@ -476,7 +476,7 @@
     "correspondenceNote": "A correspondência completa integra o acervo de documentos processuais do projeto.",
     "soundtrack": "Trilha Sonora",
     "soundtrackOriginal": "Trilha original do filme",
-    "next": "O Coletivo"
+    "next": "LowPressure™"
   },
   "coletivo": {
     "title": "LowPressure™ | O Coletivo",
@@ -556,7 +556,7 @@
       "desc": "O projeto LOWMOVIE™ está arquivado no repositório científico Zenodo, garantindo preservação digital e citabilidade acadêmica através de DOI.",
       "link": "Acessar no Zenodo"
     },
-    "next": "Questões"
+    "next": "Questões Críticas"
   },
   "questoes": {
     "title": "Questões Críticas",
