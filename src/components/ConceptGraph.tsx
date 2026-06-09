@@ -115,14 +115,6 @@ const ConceptGraph = () => {
     animRef.current = requestAnimationFrame(tick);
   }, []);
 
-  const handleWheel = useCallback((e: React.WheelEvent) => {
-    e.preventDefault();
-    const delta = e.deltaY > 0 ? 0.9 : 1.1;
-    setTransform((t) => ({
-      ...t,
-      scale: Math.max(0.3, Math.min(3, t.scale * delta)),
-    }));
-  }, []);
 
   const handleMouseDown = useCallback((id: string, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -218,7 +210,6 @@ const ConceptGraph = () => {
         height="100%"
         viewBox="0 0 900 650"
         className="cursor-grab active:cursor-grabbing touch-none"
-        onWheel={handleWheel}
         onMouseDown={(e) => { handleBgMouseDown(e); }}
         onMouseMove={(e) => { handleMouseMove(e); handleBgMouseMove(e); }}
         onMouseUp={() => { handleMouseUp(); handleBgMouseUp(); }}
