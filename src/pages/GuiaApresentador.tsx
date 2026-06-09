@@ -12,7 +12,6 @@ const GuiaApresentador = () => {
   void i18n.language;
   const lang = getLang();
   const isPt = lang === "pt";
-  const total = BLOCOS.reduce((s, b) => s + b.tempoMin, 0);
 
   const checklist = isPt
     ? [
@@ -64,8 +63,8 @@ const GuiaApresentador = () => {
             title={isPt ? "Guia do Apresentador" : "Presenter's Guide"}
             subtitle={
               isPt
-                ? `Documento operacional · ${BLOCOS.length} blocos · ${total} min · uso interno`
-                : `Operational document · ${BLOCOS.length} blocks · ${total} min · internal use`
+                ? `Documento operacional · ${BLOCOS.length} blocos · uso interno`
+                : `Operational document · ${BLOCOS.length} blocks · internal use`
             }
           />
 
@@ -106,7 +105,6 @@ const GuiaApresentador = () => {
                       <h4 className="text-sm font-semibold uppercase tracking-wide text-foreground">{b.titulo[lang]}</h4>
                     </div>
                     <div className="flex items-center gap-3 text-[10px] uppercase tracking-widest text-muted-foreground">
-                      <span>{b.tempoMin} min</span>
                       {b.portalRota && (
                         <Link to={b.portalRota} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-primary hover:underline">
                           {b.portalLabel}
