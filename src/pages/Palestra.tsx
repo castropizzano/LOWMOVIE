@@ -39,13 +39,10 @@ const Palestra = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={0.1}>
-            <div className="flex flex-wrap items-center justify-between gap-4 mb-8 border-y border-border/40 py-4">
-              <div className="text-xs uppercase tracking-widest text-muted-foreground">
-                {isPt ? `${BLOCOS.length} passos` : `${BLOCOS.length} steps`}
-              </div>
+            <div className="mb-8 border-y border-border/40 py-4">
               <Link
                 to="/palestra/0"
-                className="group inline-flex items-center gap-2 border border-primary/40 bg-primary/10 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-primary transition-all hover:bg-primary/20"
+                className="group flex w-full items-center justify-center gap-2 border border-primary/40 bg-primary/10 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-primary transition-all hover:bg-primary/20"
               >
                 {isPt ? "Começar" : "Begin"}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
