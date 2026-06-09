@@ -107,17 +107,17 @@ const Conclusao = () => {
                 <a href="https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
                   <span className="text-sm font-medium text-foreground/80">{t("conclusao.openArchive")}</span>
                 </a>
-                <div className="flex flex-wrap gap-4">
-                  <a href="https://drive.google.com/file/d/1mxB33_MHvVK0uLEej2oJqv6HRZuxZggm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <a href="https://drive.google.com/file/d/1mxB33_MHvVK0uLEej2oJqv6HRZuxZggm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("conclusao.openMemorial")}</span>
                   </a>
-                  <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCertificados")}</span>
                   </a>
-                  <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("metodologia.toolkit.downloadCta")}</span>
                   </a>
-                  <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group">
+                  <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-border/40 rounded-lg px-6 py-4 bg-card/30 hover:bg-card/50 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCaderno")}</span>
                   </a>
                 </div>
