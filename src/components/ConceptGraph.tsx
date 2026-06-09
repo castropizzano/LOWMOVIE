@@ -115,14 +115,6 @@ const ConceptGraph = () => {
     animRef.current = requestAnimationFrame(tick);
   }, []);
 
-  const handleWheel = useCallback((e: React.WheelEvent) => {
-    e.preventDefault();
-    const delta = e.deltaY > 0 ? 0.9 : 1.1;
-    setTransform((t) => ({
-      ...t,
-      scale: Math.max(0.3, Math.min(3, t.scale * delta)),
-    }));
-  }, []);
 
   const handleMouseDown = useCallback((id: string, e: React.MouseEvent) => {
     e.stopPropagation();
