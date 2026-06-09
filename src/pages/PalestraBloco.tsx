@@ -85,7 +85,7 @@ const PalestraBloco = () => {
           </AnimatedSection>
 
           {/* Narrative-only content */}
-          <div className="max-w-3xl space-y-6">
+          <div className="w-full space-y-6">
             <AnimatedSection delay={0.15}>
               <p className="text-lg leading-relaxed text-foreground/85 text-justify">
                 {b.oQueE[lang]}
@@ -100,7 +100,7 @@ const PalestraBloco = () => {
 
           {/* Nav footer */}
           <AnimatedSection delay={0.35}>
-            <div className="mt-16 grid grid-cols-2 gap-3">
+            <div className={`mt-16 grid gap-3 ${id >= BLOCOS.length - 1 ? "grid-cols-1" : "grid-cols-2"}`}>
               <button
                 onClick={goPrev}
                 className="group flex items-center justify-start gap-2 border border-border px-5 py-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
@@ -108,14 +108,15 @@ const PalestraBloco = () => {
                 <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
                 {id === 0 ? (isPt ? "Índice" : "Index") : (isPt ? "Anterior" : "Previous")}
               </button>
-              <button
-                onClick={goNext}
-                disabled={id >= BLOCOS.length - 1}
-                className="group flex items-center justify-end gap-2 border border-border px-5 py-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-border disabled:hover:text-muted-foreground"
-              >
-                {isPt ? "Próximo" : "Next"}
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </button>
+              {id < BLOCOS.length - 1 && (
+                <button
+                  onClick={goNext}
+                  className="group flex items-center justify-end gap-2 border border-border px-5 py-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
+                >
+                  {isPt ? "Próximo" : "Next"}
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </button>
+              )}
             </div>
           </AnimatedSection>
         </div>

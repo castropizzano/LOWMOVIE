@@ -34,8 +34,8 @@ const Palestra = () => {
             <div className="space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-12">
               <p>
                 {isPt
-                  ? "Antes desta pesquisa existir como dissertação, ela já existia como prática — no skate, na câmera na mão, nos coletivos com os quais sigo trabalhando. A pesquisa veio depois, quase como consequência. É essa história que conto aqui, em dez passos, do encontro com o objeto até os resultados consolidados."
-                  : "Before this research existed as a dissertation, it already existed as practice — in skateboarding, in the camera in hand, in the collectives I keep working with. The research came later, almost as a consequence. That is the story I tell here, in ten steps, from the encounter with the object to the consolidated results."}
+                  ? "Antes desta pesquisa existir como dissertação, ela já existia como prática: no skate, na câmera na mão, nos coletivos com os quais sigo trabalhando. A pesquisa veio depois, quase como consequência. É essa história que conto aqui, em dez passos, do encontro com o objeto até os resultados consolidados."
+                  : "Before this research existed as a dissertation, it already existed as practice: in skateboarding, in the camera in hand, in the collectives I keep working with. The research came later, almost as a consequence. That is the story I tell here, in ten steps, from the encounter with the object to the consolidated results."}
               </p>
             </div>
           </AnimatedSection>

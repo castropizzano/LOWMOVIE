@@ -24,12 +24,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Opening — who speaks, from where",
     },
     oQueE: {
-      pt: "Toda pesquisa começa por uma posição. Antes de discutir método, problema ou estado da arte, é preciso situar o pesquisador no mundo: sua biografia, sua comunidade, suas perguntas vividas. O lugar de fala não é decoração introdutória — é a base epistemológica que sustenta a coerência entre o objeto investigado e o sujeito que investiga.",
-      en: "Every research starts from a position. Before discussing method, problem or state of the art, the researcher must be situated in the world: biography, community, lived questions. The standpoint is not introductory decoration — it is the epistemological foundation that sustains coherence between the object investigated and the subject investigating.",
+      pt: "Toda pesquisa começa por uma posição. Antes de discutir método, problema ou estado da arte, situa-se o pesquisador no mundo: sua biografia, sua comunidade, suas perguntas vividas. O lugar de fala opera como base epistemológica que sustenta a coerência entre o objeto investigado e o sujeito que investiga.",
+      en: "Every research starts from a position. Before discussing method, problem or state of the art, the researcher is situated in the world: biography, community, lived questions. The standpoint operates as the epistemological foundation that sustains coherence between the object investigated and the subject investigating.",
     },
     comoChegueiNisso: {
-      pt: "Sou Castro Pizzano, designer e pesquisador-praticante. Atuo desde 2008 no CasaTreze Studio, coletivo do qual sou fundador, e integro o Coletivo LowPressure™ — coletivo de artistas-skatistas com o qual realizei o filme LowMovie™ (2023). A dissertação nasce de dentro dessas práticas, não de fora. Essa implicação é o ponto de partida — e também o ponto crítico que precisei elaborar metodologicamente.",
-      en: "I am Castro Pizzano, designer and practitioner-researcher. Since 2008 I work at CasaTreze Studio, the collective I founded, and I am part of the LowPressure™ Collective — the artist-skater collective with which I made the film LowMovie™ (2023). The dissertation is born from within these practices, not from outside. This implication is the starting point — and also the critical point I had to elaborate methodologically.",
+      pt: "Sou Castro Pizzano, artista visual e pesquisador criativo. Atuo como designer, diretor de arte e fotografia e filmmaker desde 2008 no CasaTreze Studio, coletivo do qual sou fundador, e integro o Coletivo LowPressure™, com quem realizei o filme LowMovie™ (2023). A dissertação nasce de dentro dessas práticas. Essa implicação é o ponto de partida e também o ponto crítico que precisei elaborar metodologicamente.",
+      en: "I am Castro Pizzano, visual artist and creative researcher. I work as designer, art and photography director, and filmmaker, active since 2008 at CasaTreze Studio, the collective I founded, and I am part of the LowPressure™ Collective, with whom I made the film LowMovie™ (2023). The dissertation is born from within these practices. This implication is the starting point and also the critical point I had to elaborate methodologically.",
     },
     ancoras: {
       pt: [
@@ -55,12 +55,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Trajectory — from the street to the master's degree",
     },
     oQueE: {
-      pt: "A trajetória de um pesquisador não é currículo cronológico — é o tecido das experiências que produziram suas perguntas. Mapear a própria trajetória ajuda a identificar de onde vêm os interesses de pesquisa: ler-se como sujeito histórico é o primeiro exercício metodológico.",
-      en: "A researcher's trajectory is not a chronological CV — it is the fabric of experiences that produced the research questions. Mapping one's own trajectory helps identify where research interests come from: reading oneself as a historical subject is the first methodological exercise.",
+      pt: "A trajetória de um pesquisador é o tecido das experiências que produziram suas perguntas, para além de um currículo cronológico. Mapear a própria trajetória ajuda a identificar de onde vêm os interesses de pesquisa: ler-se como sujeito histórico é o primeiro exercício metodológico.",
+      en: "A researcher's trajectory is the fabric of experiences that produced the research questions, beyond a chronological CV. Mapping one's own trajectory helps identify where research interests come from: reading oneself as a historical subject is the first methodological exercise.",
     },
     comoChegueiNisso: {
-      pt: "Meu percurso atravessa planos entrelaçados: a formação técnica em design gráfico (UTFPR, 1999–2001) e a graduação em Publicidade (UTP, concluída em 2010); a fundação do CasaTreze Studio em 2008, coletivo de design e contracultura; a integração ao Coletivo LowPressure™, com quem produzi o filme LowMovie™ (2023); e o ingresso no mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR), defendido em 27 de março de 2026. O encontro entre rua, imagem e universidade não foi linear: foi a prática que, ao se acumular, formulou a pergunta acadêmica.",
-      en: "My path crosses intertwined planes: technical training in graphic design (UTFPR, 1999–2001) and an undergraduate degree in Advertising (UTP, completed in 2010); founding CasaTreze Studio in 2008, a design and counterculture collective; joining the LowPressure™ Collective, with whom I produced the film LowMovie™ (2023); and joining the master's in Cinema and Video Arts (PPG-CINEAV/UNESPAR), defended on March 27, 2026. The encounter between street, image and university was not linear: it was practice that, by accumulating, formulated the academic question.",
+      pt: "Meu percurso atravessa planos entrelaçados: a formação técnica em design gráfico (UTFPR, 1999 a 2001) e a graduação em Publicidade (UTP, concluída em 2010); a fundação do CasaTreze Studio em 2008, coletivo de design e contracultura; a integração ao Coletivo LowPressure™, com quem produzi o filme LowMovie™ (2023); e o ingresso no mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR), defendido em 27 de março de 2026. O encontro entre rua, imagem e universidade se deu de modo espiralado: foi a prática que, ao se acumular, formulou a pergunta acadêmica.",
+      en: "My path crosses intertwined planes: technical training in graphic design (UTFPR, 1999 to 2001) and an undergraduate degree in Advertising (UTP, completed in 2010); founding CasaTreze Studio in 2008, a design and counterculture collective; joining the LowPressure™ Collective, with whom I produced the film LowMovie™ (2023); and joining the master's in Cinema and Video Arts (PPG-CINEAV/UNESPAR), defended on March 27, 2026. The encounter between street, image and university unfolded as a spiral: it was practice that, by accumulating, formulated the academic question.",
     },
     ancoras: {
       pt: [
@@ -86,12 +86,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "The encounter — when research found me",
     },
     oQueE: {
-      pt: "Há um momento em que a prática vivida começa a pedir teoria. Não é o pesquisador que escolhe o objeto — é o objeto que se impõe como questão. Para o TCC, vale prestar atenção: o que na sua vida prática insiste em ser pensado academicamente?",
-      en: "There is a moment when lived practice begins to demand theory. The researcher does not choose the object — the object imposes itself as a question. For undergraduate thesis writing: pay attention to what in your practical life insists on being thought academically.",
+      pt: "Há um momento em que a prática vivida começa a pedir teoria. É o objeto que se impõe como questão ao pesquisador. Vale prestar atenção ao que na vida prática insiste em ser pensado academicamente.",
+      en: "There is a moment when lived practice begins to demand theory. It is the object that imposes itself as a question to the researcher. It is worth paying attention to what in practical life insists on being thought academically.",
     },
     comoChegueiNisso: {
-      pt: "O LowMovie™ (2023) foi o catalisador. Ao montar o filme — fruto do arquivo coletivo do LowPressure™ — percebi que ali havia uma poética em movimento que escapava das categorias disponíveis: nem documentário etnográfico, nem videoarte canônica, nem vídeo de skate comercial. Era preciso construir um quadro teórico que desse conta dessa singularidade. A pesquisa de mestrado nasceu desse impasse produtivo.",
-      en: "LowMovie™ (2023) was the catalyst. While editing the film — the outcome of the LowPressure™ collective archive — I realized there was a poetics in motion that escaped available categories: neither ethnographic documentary, nor canonical video art, nor commercial skate video. A theoretical framework had to be built to account for this singularity. The master's research was born from this productive impasse.",
+      pt: "O LowMovie™ (2023) foi o catalisador. Ao montar o filme, fruto do arquivo coletivo do LowPressure™, percebi ali uma poética em movimento que escapava das categorias disponíveis: ocupava um lugar próprio, distinto do documentário etnográfico, da videoarte canônica e do vídeo de skate comercial. Era preciso construir um quadro teórico que desse conta dessa singularidade. A pesquisa de mestrado nasceu desse impasse produtivo.",
+      en: "LowMovie™ (2023) was the catalyst. While editing the film, the outcome of the LowPressure™ collective archive, I recognized there a poetics in motion that escaped available categories: it occupied a place of its own, distinct from ethnographic documentary, canonical video art, and commercial skate video. A theoretical framework had to be built to account for this singularity. The master's research was born from this productive impasse.",
     },
     ancoras: {
       pt: [
@@ -117,12 +117,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Research problem — how I framed it",
     },
     oQueE: {
-      pt: "Problema de pesquisa não é tema. Tema é amplo ('skate', 'audiovisual'); problema é a fricção específica entre o que se vive/observa e o que a literatura já cobre. Formular um problema é delimitar uma lacuna investigável. Sem essa delimitação, a pesquisa vira ensaio livre.",
-      en: "Research problem is not topic. Topic is broad ('skateboarding', 'audiovisual'); problem is the specific friction between what is lived/observed and what the literature already covers. Formulating a problem is delimiting an investigable gap. Without this delimitation, research turns into free essay.",
+      pt: "Problema de pesquisa é distinto de tema. Tema é amplo ('skate', 'audiovisual'); problema é a fricção específica entre o que se vive ou observa e o que a literatura já cobre. Formular um problema é delimitar uma lacuna investigável. Essa delimitação dá foco à pesquisa.",
+      en: "A research problem is distinct from a topic. Topic is broad ('skateboarding', 'audiovisual'); problem is the specific friction between what is lived or observed and what the literature already covers. Formulating a problem is delimiting an investigable gap. This delimitation gives focus to the research.",
     },
     comoChegueiNisso: {
-      pt: "Minha fricção: o Coletivo LowPressure™ produz uma poética audiovisual situada na subcultura do skate que culminou no filme LowMovie™ (2023), mas essa produção raramente é lida academicamente como pesquisa-criação. Há vasta bibliografia sobre skate (sociologia urbana, estudos culturais), sobre videoarte (estética e teoria do cinema) e sobre coletivos artísticos — mas o cruzamento específico entre prática implicada, poética coletiva e subcultura urbana audiovisual seguia sub-tematizado. O problema virou: como narrar academicamente um processo coletivo, afetivo e implicado, sem traí-lo?",
-      en: "My friction: the LowPressure™ Collective produces an audiovisual poetics situated in skate subculture that culminated in the film LowMovie™ (2023), but this production is rarely read academically as research-creation. There is vast literature on skateboarding (urban sociology, cultural studies), on video art (aesthetics and film theory) and on artistic collectives — but the specific crossing between implicated practice, collective poetics and urban audiovisual subculture remained under-thematized. The problem became: how to academically narrate a collective, affective and implicated process without betraying it?",
+      pt: "Minha fricção: o Coletivo LowPressure™ produz uma poética audiovisual situada na subcultura do skate que culminou no filme LowMovie™ (2023). Esta produção pede uma leitura acadêmica como pesquisa-criação. Há vasta bibliografia sobre skate (sociologia urbana, estudos culturais), sobre videoarte (estética e teoria do cinema) e sobre coletivos artísticos. O cruzamento específico entre prática implicada, poética coletiva e subcultura urbana audiovisual permanece como território a tematizar. O problema se desenhou então como pergunta de método: como narrar academicamente um processo coletivo, afetivo e implicado, preservando sua integridade?",
+      en: "My friction: the LowPressure™ Collective produces an audiovisual poetics situated in skate subculture that culminated in the film LowMovie™ (2023). This production calls for an academic reading as research-creation. There is vast literature on skateboarding (urban sociology, cultural studies), on video art (aesthetics and film theory) and on artistic collectives. The specific crossing between implicated practice, collective poetics and urban audiovisual subculture remains as a territory to be thematized. The problem then took shape as a methodological question: how to academically narrate a collective, affective and implicated process while preserving its integrity?",
     },
     ancoras: {
       pt: [
@@ -148,12 +148,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Research question — the statement",
     },
     oQueE: {
-      pt: "A pergunta de pesquisa é o problema convertido em sentença interrogativa precisa. Boa pergunta é específica, respondível, e implica um método. Pergunta vaga ('o que é o skate?') não orienta — pergunta delimitada ('como X opera em Y a partir de Z?') sustenta uma dissertação inteira.",
-      en: "The research question is the problem converted into a precise interrogative sentence. A good question is specific, answerable, and implies a method. Vague questions ('what is skateboarding?') do not guide — delimited questions ('how does X operate in Y from Z?') sustain an entire dissertation.",
+      pt: "A pergunta de pesquisa é o problema convertido em sentença interrogativa precisa. Boa pergunta é específica, respondível e implica um método. Uma pergunta delimitada ('como X opera em Y a partir de Z?') sustenta uma dissertação inteira; a precisão da pergunta orienta cada decisão posterior.",
+      en: "The research question is the problem converted into a precise interrogative sentence. A good question is specific, answerable, and implies a method. A delimited question ('how does X operate in Y from Z?') sustains an entire dissertation; the precision of the question guides every subsequent decision.",
     },
     comoChegueiNisso: {
-      pt: "Cheguei na pergunta central depois de várias reformulações com o orientador. A versão final amarra subjetividade (sujeito implicado), subcultura (contexto material) e poética em movimento (objeto estético) — os três vetores que estruturam toda a dissertação. Cada palavra da pergunta foi pesada: nenhuma é decorativa.",
-      en: "I arrived at the central question after several reformulations with my advisor. The final version ties subjectivity (implicated subject), subculture (material context) and poetics in motion (aesthetic object) — the three vectors that structure the entire dissertation. Each word of the question was weighed: none is decorative.",
+      pt: "Cheguei na pergunta central depois de várias reformulações em diálogo com o orientador. A versão final amarra subjetividade (sujeito implicado), subcultura (contexto material) e poética em movimento (objeto estético): os três vetores que estruturam toda a dissertação. Cada palavra da pergunta foi pesada e cumpre função no enunciado.",
+      en: "I arrived at the central question after several reformulations in dialogue with my advisor. The final version ties subjectivity (implicated subject), subculture (material context) and poetics in motion (aesthetic object): the three vectors that structure the entire dissertation. Each word of the question was weighed and carries a function in the statement.",
     },
     ancoras: {
       pt: [
@@ -179,12 +179,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "State of the art — mapping",
     },
     oQueE: {
-      pt: "Estado da arte não é lista de livros lidos. É um mapeamento crítico do que já se produziu sobre o seu problema — para mostrar (a) que há literatura suficiente para sustentar uma conversa acadêmica, (b) que há uma lacuna específica que sua pesquisa preenche. Sem esse mapeamento, a pesquisa parece ingênua: o leitor pensa que você inventou tudo do zero.",
-      en: "State of the art is not a list of books read. It is a critical mapping of what has been produced on your problem — to show (a) that there is enough literature to sustain an academic conversation, and (b) that there is a specific gap your research fills. Without this mapping, research looks naive: the reader thinks you invented everything from scratch.",
+      pt: "Estado da arte é um mapeamento crítico do que já se produziu sobre o seu problema. Ele cumpre duas funções: (a) demonstrar que há literatura suficiente para sustentar uma conversa acadêmica e (b) localizar a lacuna específica que a pesquisa preenche. Com esse mapeamento, a contribuição da pesquisa fica situada no campo.",
+      en: "State of the art is a critical mapping of what has been produced on your problem. It serves two functions: (a) demonstrating that there is enough literature to sustain an academic conversation, and (b) locating the specific gap the research fills. With this mapping, the contribution becomes situated within the field.",
     },
     comoChegueiNisso: {
-      pt: "Mapeei três campos: (1) teoria do cinema e videoarte — referências para pensar imagem-movimento, montagem, dispositivo; (2) estudos urbanos e subculturais — para situar o skate como prática espacial e identitária; (3) pesquisa-criação como metodologia — autoras e autores que legitimam o praticante-pesquisador. A intersecção dos três campos é onde minha contribuição se aloja. Esses campos viram, dentro da dissertação, os 'conceitos operadores' — ferramentas teóricas que atravessam o texto inteiro.",
-      en: "I mapped three fields: (1) film and video art theory — references to think image-movement, montage, dispositif; (2) urban and subcultural studies — to situate skateboarding as spatial and identity practice; (3) research-creation as methodology — authors who legitimize the practitioner-researcher. The intersection of the three fields is where my contribution sits. These fields became, within the dissertation, the 'operating concepts' — theoretical tools that run through the entire text.",
+      pt: "Mapeei três campos: (1) teoria do cinema e videoarte, referências para pensar imagem-movimento, montagem e dispositivo; (2) estudos urbanos e subculturais, para situar o skate como prática espacial e identitária; (3) pesquisa-criação como metodologia, autoras e autores que legitimam o praticante-pesquisador. A intersecção dos três campos é onde minha contribuição se aloja. Esses campos viraram, dentro da dissertação, os conceitos operadores: ferramentas teóricas que atravessam o texto inteiro.",
+      en: "I mapped three fields: (1) film and video art theory, references to think image-movement, montage and dispositif; (2) urban and subcultural studies, to situate skateboarding as spatial and identity practice; (3) research-creation as methodology, authors who legitimize the practitioner-researcher. The intersection of the three fields is where my contribution sits. These fields became, within the dissertation, the operating concepts: theoretical tools that run through the entire text.",
     },
     ancoras: {
       pt: [
@@ -210,12 +210,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Objectives — general and specific",
     },
     oQueE: {
-      pt: "Objetivos traduzem a pergunta em ações de pesquisa. O objetivo geral responde à pergunta como um todo; os específicos quebram esse todo em etapas verificáveis. Cada objetivo específico deve poder virar uma seção ou capítulo. Sem isso, a pesquisa não tem onde encostar para verificar o próprio avanço.",
-      en: "Objectives translate the question into research actions. The general objective answers the question as a whole; the specific objectives break this whole into verifiable steps. Each specific objective should be able to become a section or chapter. Without this, the research has nowhere to lean to verify its own progress.",
+      pt: "Objetivos traduzem a pergunta em ações de pesquisa. O objetivo geral responde à pergunta como um todo; os específicos quebram esse todo em etapas verificáveis. Cada objetivo específico tende a corresponder a uma seção ou capítulo, oferecendo critérios concretos para verificar o avanço da pesquisa.",
+      en: "Objectives translate the question into research actions. The general objective answers the question as a whole; the specific objectives break this whole into verifiable steps. Each specific objective tends to correspond to a section or chapter, offering concrete criteria to verify the research progress.",
     },
     comoChegueiNisso: {
-      pt: "Defini um objetivo geral — analisar a poética em movimento do Coletivo LowPressure™ a partir da pesquisa-criação implicada — e quatro objetivos específicos que se conectam diretamente aos três movimentos da dissertação e à conclusão. Cada um deles é verificável: o leitor consegue apontar, na dissertação, onde cada objetivo foi cumprido.",
-      en: "I defined one general objective — to analyze the poetics in motion of the LowPressure™ Collective from implicated research-creation — and four specific objectives that connect directly to the three movements of the dissertation and the conclusion. Each one is verifiable: the reader can point, within the dissertation, where each objective was met.",
+      pt: "Defini um objetivo geral, analisar a poética em movimento do Coletivo LowPressure™ a partir da pesquisa-criação implicada, e quatro objetivos específicos que se conectam diretamente aos três movimentos da dissertação e à conclusão. Cada um deles é verificável: o leitor consegue apontar, na dissertação, onde cada objetivo foi cumprido.",
+      en: "I defined one general objective, to analyze the poetics in motion of the LowPressure™ Collective from implicated research-creation, and four specific objectives that connect directly to the three movements of the dissertation and the conclusion. Each one is verifiable: the reader can point, within the dissertation, where each objective was met.",
     },
     ancoras: {
       pt: [
@@ -241,12 +241,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Methodology — Lowbyrinth™ as method",
     },
     oQueE: {
-      pt: "Metodologia não é capítulo de protocolo burocrático. É a explicitação de como você produziu conhecimento: que tipo de evidência reconheceu, como coletou, como analisou, em diálogo com qual tradição metodológica. Uma metodologia bem formulada permite que outra pessoa, em outro contexto, replique ou critique o seu caminho.",
-      en: "Methodology is not a chapter of bureaucratic protocol. It is the explicitation of how you produced knowledge: what kind of evidence you recognized, how you collected, how you analyzed, in dialogue with which methodological tradition. A well-formulated methodology allows another person, in another context, to replicate or criticize your path.",
+      pt: "Metodologia é a explicitação de como o conhecimento foi produzido: que tipo de evidência reconheceu, como coletou, como analisou e em diálogo com qual tradição metodológica. Uma metodologia bem formulada abre caminho para que outra pessoa, em outro contexto, replique ou critique o percurso.",
+      en: "Methodology is the explicitation of how knowledge was produced: what kind of evidence you recognized, how you collected, how you analyzed, in dialogue with which methodological tradition. A well-formulated methodology opens the way for another person, in another context, to replicate or criticize the path.",
     },
     comoChegueiNisso: {
-      pt: "Adotei a pesquisa-criação implicada como abordagem, estruturada em três eixos (afeto, escuta, improviso) e três procedimentos de campo (vivência situada, convivência criativa, escuta partilhada). Disso emergiu o Lowbyrinth™ — método autoral que articula os procedimentos numa espiral cognitiva. O Lowbyrinth™ é, simultaneamente, ferramenta metodológica da dissertação e contribuição autônoma para o campo: pode ser citado e replicado fora deste trabalho específico.",
-      en: "I adopted implicated research-creation as approach, structured in three axes (affect, listening, improvisation) and three field procedures (situated experience, creative coexistence, shared listening). From this emerged Lowbyrinth™ — an authorial method that articulates the procedures in a cognitive spiral. Lowbyrinth™ is, simultaneously, the dissertation's methodological tool and an autonomous contribution to the field: it can be cited and replicated outside this specific work.",
+      pt: "Adotei a pesquisa-criação implicada como abordagem, estruturada em três eixos (afeto, escuta, improviso) e três procedimentos de campo (vivência situada, convivência criativa, escuta partilhada). Disso emergiu o Lowbyrinth™, método autoral que articula os procedimentos numa espiral cognitiva. O Lowbyrinth™ é, simultaneamente, ferramenta metodológica da dissertação e contribuição autônoma para o campo: pode ser citado e replicado fora deste trabalho específico.",
+      en: "I adopted implicated research-creation as approach, structured in three axes (affect, listening, improvisation) and three field procedures (situated experience, creative coexistence, shared listening). From this emerged Lowbyrinth™, an authorial method that articulates the procedures in a cognitive spiral. Lowbyrinth™ is, simultaneously, the dissertation's methodological tool and an autonomous contribution to the field: it can be cited and replicated outside this specific work.",
     },
     ancoras: {
       pt: [
@@ -272,12 +272,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Dissertation structure — three movements",
     },
     oQueE: {
-      pt: "A estrutura da dissertação não é índice administrativo: é o desenho argumentativo. Cada capítulo deve cumprir uma função no argumento global — preparar, sustentar, demonstrar, sintetizar. Vale ter consciência: a ordem dos capítulos é uma decisão retórica, não cronológica.",
-      en: "The dissertation structure is not an administrative index: it is the argumentative design. Each chapter must fulfill a function in the global argument — to prepare, sustain, demonstrate, synthesize. Chapter order is a rhetorical decision, not chronological.",
+      pt: "A estrutura da dissertação é o desenho argumentativo do trabalho. Cada capítulo cumpre uma função no argumento global: preparar, sustentar, demonstrar, sintetizar. A ordem dos capítulos é uma decisão retórica, organizada pela lógica da exposição.",
+      en: "The dissertation structure is the argumentative design of the work. Each chapter fulfills a function in the global argument: to prepare, sustain, demonstrate, synthesize. Chapter order is a rhetorical decision, organized by the logic of exposition.",
     },
     comoChegueiNisso: {
-      pt: "Estruturei a dissertação em três movimentos — Corpo em Deriva (sujeito e operadores poéticos), Coletivo em Baixo Relevo (LowPressure™ como ética e identidade), e o terceiro movimento (LowMovie™ como síntese fílmica) — mais introdução 'Rastros nas Ruas' e considerações finais. A palavra 'movimento' não é estilística: ela traduz a tese metodológica de que conhecimento se produz em deslocamento, não em paragem.",
-      en: "I structured the dissertation in three movements — Body in Drift (subject and poetic operators), Collective in Low Relief (LowPressure™ as ethics and identity), and the third movement (LowMovie™ as filmic synthesis) — plus the introduction 'Tracks on the Streets' and final considerations. The word 'movement' is not stylistic: it translates the methodological thesis that knowledge is produced in displacement, not in stillness.",
+      pt: "Estruturei a dissertação em três movimentos: Corpo em Deriva (sujeito e operadores poéticos), Coletivo em Baixo Relevo (LowPressure™ como ética e identidade) e o terceiro movimento (LowMovie™ como síntese fílmica), acrescidos da introdução 'Rastros nas Ruas' e das considerações finais. A palavra 'movimento' carrega valor conceitual: traduz a tese metodológica de que o conhecimento se produz em deslocamento.",
+      en: "I structured the dissertation in three movements: Body in Drift (subject and poetic operators), Collective in Low Relief (LowPressure™ as ethics and identity), and the third movement (LowMovie™ as filmic synthesis), plus the introduction 'Tracks on the Streets' and final considerations. The word 'movement' carries conceptual value: it translates the methodological thesis that knowledge is produced in displacement.",
     },
     ancoras: {
       pt: [
@@ -303,12 +303,12 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Results, ecosystem and Q&A",
     },
     oQueE: {
-      pt: "Resultados de pesquisa em ciências humanas e artes não são números — são contribuições verificáveis ao campo: conceitos novos, métodos novos, obras novas, leituras críticas inéditas. Apresentar resultados é mostrar exatamente o que existe no mundo depois da sua pesquisa que não existia antes.",
-      en: "Research results in humanities and arts are not numbers — they are verifiable contributions to the field: new concepts, new methods, new works, original critical readings. Presenting results is showing exactly what exists in the world after your research that did not exist before.",
+      pt: "Resultados de pesquisa em ciências humanas e artes se expressam como contribuições verificáveis ao campo: conceitos novos, métodos novos, obras novas, leituras críticas inéditas. Apresentar resultados é mostrar exatamente o que passa a existir no mundo a partir da pesquisa.",
+      en: "Research results in humanities and arts take the form of verifiable contributions to the field: new concepts, new methods, new works, original critical readings. Presenting results is showing exactly what comes to exist in the world from the research.",
     },
     comoChegueiNisso: {
-      pt: "Os resultados deste mestrado se materializam em três camadas articuladas: LowMovie™ (a obra), Lowbyrinth™ (o método) e Low Runner™ (a plataforma replicável que sustenta este portal). Esse ecossistema é, ele mesmo, parte do resultado: a pesquisa não termina na dissertação escrita — ela continua circulando como obra, como método citável e como infraestrutura reusável. Abro agora para perguntas.",
-      en: "The results of this master's materialize in three articulated layers: LowMovie™ (the work), Lowbyrinth™ (the method) and Low Runner™ (the replicable platform that sustains this portal). This ecosystem is itself part of the result: research does not end with the written dissertation — it continues circulating as a work, as a citable method and as reusable infrastructure. I open now for questions.",
+      pt: "Os resultados deste mestrado se materializam em três camadas articuladas: LowMovie™ (a obra), Lowbyrinth™ (o método) e Low Runner™ (a plataforma replicável que sustenta este portal). Esse ecossistema é, ele mesmo, parte do resultado: a pesquisa segue circulando como obra, como método citável e como infraestrutura reusável. Abro agora para perguntas.",
+      en: "The results of this master's materialize in three articulated layers: LowMovie™ (the work), Lowbyrinth™ (the method) and Low Runner™ (the replicable platform that sustains this portal). This ecosystem is itself part of the result: research continues circulating as a work, as a citable method and as reusable infrastructure. I open now for questions.",
     },
     ancoras: {
       pt: [
