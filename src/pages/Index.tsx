@@ -74,7 +74,7 @@ const Index = () => {
               <div className="mt-8">
                 <Link
                   to="/apresentacao"
-                  className="group inline-flex items-center gap-2 border border-border px-6 py-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition-all hover:border-primary/50 hover:text-primary"
+                  className="group inline-flex items-center gap-2 border border-primary/40 bg-primary/10 hover:bg-primary/20 px-6 py-3 text-xs font-semibold uppercase tracking-widest text-foreground transition-all"
                 >
                   {t("home.explore")}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
