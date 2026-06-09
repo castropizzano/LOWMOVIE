@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
-import NextSectionButton from "@/components/NextSectionButton";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SeoHead from "@/components/SeoHead";
@@ -96,8 +95,6 @@ const DefenseModeAbout = () => {
               <p className="text-sm text-muted-foreground leading-relaxed text-justify">{t("defenseMode.contextDesc")}</p>
             </div>
           </div>
-
-          <NextSectionButton to="/imprimir" label={t("defenseMode.next")} />
         </div>
       </section>
     </Layout>
