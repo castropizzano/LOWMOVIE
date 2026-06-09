@@ -108,7 +108,7 @@ export const timelineEntries: TimelineEntry[] = ([
     yearEnd: 2016,
     category: "formacao",
     title: "Direção de Arte e Estratégias Criativas",
-    subtitle: "Monografia: CasaTreze Studio: A Importância do Empreendedorismo sob a ótica do Design Colaborativo e a Contracultura",
+    subtitle: "Monografia: casatrezestudio®: A Importância do Empreendedorismo sob a ótica do Design Colaborativo e a Contracultura",
     institution: "Centro Universitário Curitiba (UniCuritiba)",
     status: "Concluído",
   },
@@ -163,7 +163,7 @@ export const timelineEntries: TimelineEntry[] = ([
     year: 2008,
     category: "profissional",
     title: "Fundador, Diretor de Arte e VideoMaker",
-    institution: "CasaTreze Studio",
+    institution: "casatrezestudio®",
     status: "Atual",
   },
   {
@@ -261,7 +261,7 @@ export const timelineEntries: TimelineEntry[] = ([
   {
     year: 2014,
     category: "publicacao",
-    title: "CasaTreze Studio: A Importância do Empreendedorismo sob a ótica do Design Colaborativo e a Contracultura",
+    title: "casatrezestudio®: A Importância do Empreendedorismo sob a ótica do Design Colaborativo e a Contracultura",
     subtitle: "Revista Percurso (Curitiba)",
     institution: "Autores: Castro Pizzano, Arabella Natal Galvão da Silva",
   },
@@ -285,21 +285,21 @@ export const timelineEntries: TimelineEntry[] = ([
     year: 2018,
     category: "publicacao",
     title: "Acid Neon — Narrativas de Um Futuro Próximo",
-    subtitle: "Produção Independente / Organização · CasaTreze / Coverge",
+    subtitle: "Produção Independente / Organização · casatrezestudio® / Coverge",
     institution: "Autores: Washington Albuquerque, Hezi Santos, Castro Pizzano",
   },
   {
     year: 2019,
     category: "publicacao",
     title: "Carcoma — Sutileza Atroz",
-    subtitle: "Produção Independente / Organização · CasaTreze / Coverge",
+    subtitle: "Produção Independente / Organização · casatrezestudio® / Coverge",
     institution: "Autores: Washington Albuquerque, Hezi Santos, Castro Pizzano",
   },
   {
     year: 2019,
     category: "publicacao",
     title: "Mirage — Miscelânea de Narrativas Irreais",
-    subtitle: "Produção Independente / Organização · CasaTreze / Coverge",
+    subtitle: "Produção Independente / Organização · casatrezestudio® / Coverge",
     institution: "Autores: Washington Albuquerque, Hezi Santos, Castro Pizzano",
   },
 
@@ -327,7 +327,7 @@ export const timelineEntries: TimelineEntry[] = ([
   {
     year: 2017,
     category: "producao",
-    title: "CasaTreze Studio — Registro de Marca",
+    title: "casatrezestudio® — Registro de Marca",
     subtitle: "Marca Registrada",
   },
 

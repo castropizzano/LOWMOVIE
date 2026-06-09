@@ -28,8 +28,8 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Every research starts from a position. Before discussing method, problem or state of the art, the researcher is situated in the world: biography, community, lived questions. The standpoint operates as the epistemological foundation that sustains coherence between the object investigated and the subject investigating.",
     },
     comoChegueiNisso: {
-      pt: "Sou Castro Pizzano, artista visual e pesquisador criativo. Atuo como designer, diretor de arte e fotografia e filmmaker desde 2008 no CasaTreze Studio, coletivo do qual sou fundador, e integro o Coletivo LowPressure™, com quem realizei o filme LowMovie™ (2023). A dissertação nasce de dentro dessas práticas. Essa implicação é o ponto de partida e também o ponto crítico que precisei elaborar metodologicamente.",
-      en: "I am Castro Pizzano, visual artist and creative researcher. I work as designer, art and photography director, and filmmaker, active since 2008 at CasaTreze Studio, the collective I founded, and I am part of the LowPressure™ Collective, with whom I made the film LowMovie™ (2023). The dissertation is born from within these practices. This implication is the starting point and also the critical point I had to elaborate methodologically.",
+      pt: "Sou Castro Pizzano, artista visual e pesquisador criativo. Atuo como designer, diretor de arte e fotografia e filmmaker desde 2008 no casatrezestudio®, coletivo do qual sou fundador, e integro o Coletivo LowPressure™, com quem realizei o filme LowMovie™ (2023). A dissertação nasce de dentro dessas práticas. Essa implicação é o ponto de partida e também o ponto crítico que precisei elaborar metodologicamente.",
+      en: "I am Castro Pizzano, visual artist and creative researcher. I work as designer, art and photography director, and filmmaker, active since 2008 at casatrezestudio®, the collective I founded, and I am part of the LowPressure™ Collective, with whom I made the film LowMovie™ (2023). The dissertation is born from within these practices. This implication is the starting point and also the critical point I had to elaborate methodologically.",
     },
     ancoras: {
       pt: [
@@ -59,18 +59,18 @@ export const BLOCOS: PalestraBloco[] = [
       en: "A researcher's trajectory is the fabric of experiences that produced the research questions, beyond a chronological CV. Mapping one's own trajectory helps identify where research interests come from: reading oneself as a historical subject is the first methodological exercise.",
     },
     comoChegueiNisso: {
-      pt: "Meu percurso atravessa planos entrelaçados: a formação técnica em design gráfico (UTFPR, 1999 a 2001) e a graduação em Publicidade (UTP, concluída em 2010); a fundação do CasaTreze Studio em 2008, coletivo de design e contracultura; a integração ao Coletivo LowPressure™, com quem produzi o filme LowMovie™ (2023); e o ingresso no mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR), defendido em 27 de março de 2026. O encontro entre rua, imagem e universidade se deu de modo espiralado: foi a prática que, ao se acumular, formulou a pergunta acadêmica.",
-      en: "My path crosses intertwined planes: technical training in graphic design (UTFPR, 1999 to 2001) and an undergraduate degree in Advertising (UTP, completed in 2010); founding CasaTreze Studio in 2008, a design and counterculture collective; joining the LowPressure™ Collective, with whom I produced the film LowMovie™ (2023); and joining the master's in Cinema and Video Arts (PPG-CINEAV/UNESPAR), defended on March 27, 2026. The encounter between street, image and university unfolded as a spiral: it was practice that, by accumulating, formulated the academic question.",
+      pt: "Meu percurso atravessa planos entrelaçados: a formação técnica em design gráfico (UTFPR, 1999 a 2001) e a graduação em Publicidade (UTP, concluída em 2010); a fundação do casatrezestudio® em 2008, coletivo de design e contracultura; a integração ao Coletivo LowPressure™, com quem produzi o filme LowMovie™ (2023); e o ingresso no mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR), defendido em 27 de março de 2026. O encontro entre rua, imagem e universidade se deu de modo espiralado: foi a prática que, ao se acumular, formulou a pergunta acadêmica.",
+      en: "My path crosses intertwined planes: technical training in graphic design (UTFPR, 1999 to 2001) and an undergraduate degree in Advertising (UTP, completed in 2010); founding casatrezestudio® in 2008, a design and counterculture collective; joining the LowPressure™ Collective, with whom I produced the film LowMovie™ (2023); and joining the master's in Cinema and Video Arts (PPG-CINEAV/UNESPAR), defended on March 27, 2026. The encounter between street, image and university unfolded as a spiral: it was practice that, by accumulating, formulated the academic question.",
     },
     ancoras: {
       pt: [
         "Abrir /timeline e navegar pelos filtros do Lattes (publicações, eventos, formação)",
-        "Destacar marcos: CasaTreze Studio (2008), entrada no LowPressure™, LowMovie™ (2023), defesa do mestrado (2026)",
+        "Destacar marcos: casatrezestudio® (2008), entrada no LowPressure™, LowMovie™ (2023), defesa do mestrado (2026)",
         "Conectar com a Introdução do PDF — 'Rastros nas Ruas' (cap. inicial)",
       ],
       en: [
         "Open /timeline and navigate Lattes filters (publications, events, education)",
-        "Highlight milestones: CasaTreze Studio (2008), joining LowPressure™, LowMovie™ (2023), master's defense (2026)",
+        "Highlight milestones: casatrezestudio® (2008), joining LowPressure™, LowMovie™ (2023), master's defense (2026)",
         "Connect with the PDF Introduction — 'Tracks on the Streets' (opening chapter)",
       ],
     },
