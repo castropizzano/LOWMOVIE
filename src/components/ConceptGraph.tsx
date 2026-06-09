@@ -131,17 +131,25 @@ const ConceptGraph = () => {
         if (!node) return null;
         const svg = svgRef.current;
         const rect = svg?.getBoundingClientRect();
-        const scaleX = rect ? rect.width / 900 : 1;
-        const scaleY = rect ? rect.height / 650 : 1;
+        const containerW = rect?.width ?? 900;
+        const containerH = rect?.height ?? 650;
+        const scaleX = containerW / 900;
+        const scaleY = containerH / 650;
         const screenX = node.x * scaleX;
         const screenY = node.y * scaleY;
+        const CARD_W = 280;
+        const CARD_H = 180;
+        const offset = 20;
+        // Flip to the left of the node when near the right edge
+        const flipLeft = screenX + offset + CARD_W > containerW - 8;
+        const left = flipLeft
+          ? Math.max(8, screenX - offset - CARD_W)
+          : Math.min(screenX + offset, containerW - CARD_W - 8);
+        const top = Math.max(8, Math.min(screenY - 10, containerH - CARD_H - 8));
         return (
           <div
-            className="absolute z-20 max-w-xs bg-popover border border-border rounded-md p-3 shadow-lg pointer-events-none"
-            style={{
-              left: Math.min(screenX + 20, window.innerWidth - 300),
-              top: screenY - 10,
-            }}
+            className="absolute z-20 w-[280px] bg-popover border border-border rounded-md p-3 shadow-lg pointer-events-none"
+            style={{ left, top }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: typeColors[node.type] }}>
               {t(`conceptMap.typeLabels.${node.type}`)}
