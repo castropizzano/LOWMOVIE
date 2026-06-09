@@ -160,9 +160,8 @@ const Timeline = () => {
             {grouped.map(([year, entries], gi) => (
               <div key={year} className="mb-8">
                 {/* Year marker */}
-                <div className="relative flex items-center mb-4">
-                  <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-primary border-2 border-background z-10" />
-                  <div className="ml-10 md:ml-0 md:absolute md:left-1/2 md:-translate-x-1/2 bg-background px-3">
+                <div className="relative flex items-center mb-6 mt-2">
+                  <div className="ml-10 md:ml-0 md:absolute md:left-1/2 md:-translate-x-1/2 bg-background px-4 py-1 border border-primary/40 rounded-full z-30">
                     <span className="text-sm font-bold text-foreground tracking-wider">
                       {year}
                     </span>
