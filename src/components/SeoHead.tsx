@@ -46,7 +46,7 @@ const META: Record<string, SeoMeta> = {
     type: "article",
   },
   "/filme": {
-    title: "O Filme LowMovie™ — Documentário e Análise Sequencial",
+    title: "LowMovie™ — Documentário e Análise Sequencial",
     description:
       "O documentário LowMovie™: análise sequencial frame a frame, operadores poéticos do olhar (instante, borda, fluxo) e processo criativo.",
     type: "article",
@@ -64,7 +64,7 @@ const META: Record<string, SeoMeta> = {
     type: "article",
   },
   "/questoes": {
-    title: "Questões da Banca — FAQ Acadêmico · LowMovie™",
+    title: "Questões Críticas — FAQ Acadêmico · LowMovie™",
     description:
       "Antecipação de tensões críticas da banca examinadora: perguntas-chave e respostas argumentadas sobre método, objeto e rigor.",
     type: "article",
@@ -76,13 +76,13 @@ const META: Record<string, SeoMeta> = {
     type: "article",
   },
   "/conclusao": {
-    title: "Conclusão — Síntese e Arquivo de Processo · LowMovie™",
+    title: "Reflexões e Conclusões — Síntese e Arquivo de Processo · LowMovie™",
     description:
       "Síntese da pesquisa, horizontes futuros e Arquivo de Processo: artigo Harpia, Memorial Ecos Criativos e materiais complementares.",
     type: "article",
   },
   "/timeline": {
-    title: "Timeline Acadêmica — Trajetória Lattes · Castro Pizzano",
+    title: "Currículo Acadêmico — Trajetória Lattes · Castro Pizzano",
     description:
       "Linha do tempo da trajetória acadêmica de Castro Pizzano a partir do currículo Lattes, com filtros por categoria.",
     type: "article",
@@ -117,12 +117,12 @@ const META: Record<string, SeoMeta> = {
     type: "article",
   },
   "/imprimir": {
-    title: "Imprimir e Baixar — LowMovie™",
+    title: "Imprimíveis — LowMovie™",
     description:
       "Opções de impressão e download: PDF da dissertação aprovada (27.03.2026) e Caderno-Síntese para leitura impressa.",
   },
   "/palestra": {
-    title: "Lowbyrinth: Quando a Pesquisa Me Encontrou — Palestra · LowMovie™",
+    title: "Palestra sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada — LowMovie™",
     description:
       "Palestra de Castro Pizzano: 10 blocos sequenciais sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada, usando o portal LowMovie™ como ambiente.",
   },
