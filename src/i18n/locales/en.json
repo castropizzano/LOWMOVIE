@@ -388,7 +388,7 @@
     "next": "The Film"
   },
   "filme": {
-    "title": "The Film: LowMovie™",
+    "title": "LowMovie™",
     "subtitle": "Poetic-political device born from collective gesture",
     "workData": "Work Data",
     "data": {
@@ -599,7 +599,7 @@
     "next": "Conclusion"
   },
   "conclusao": {
-    "title": "Conclusion",
+    "title": "Reflections and Conclusions",
     "subtitle": "Research synthesis and open horizons",
     "headline1": "The poetics is not a result.",
     "headline2": "It is a process in motion.",
@@ -676,7 +676,7 @@
     "next": "Concept Map"
   },
   "mapa": {
-    "title": "Concept Map",
+    "title": "Conceptual Map",
     "subtitle": "Interactive cartography of relationships between authors, concepts, and thematic fields",
     "instructions": "Drag nodes to reorganize. Hover to see definitions. Use scroll to zoom and drag the background to navigate."
   },
@@ -1173,7 +1173,7 @@
       ]
     },
     "conclusao": {
-      "title": "Conclusion",
+      "title": "Reflections and Conclusions",
       "conceito": "Horizon",
       "derivas": [
         {

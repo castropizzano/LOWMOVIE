@@ -388,7 +388,7 @@
     "next": "O Filme"
   },
   "filme": {
-    "title": "O Filme: LowMovie™",
+    "title": "LowMovie™",
     "subtitle": "Dispositivo poético-político nascido do gesto coletivo",
     "workData": "Dados da Obra",
     "data": {
@@ -599,7 +599,7 @@
     "next": "Conclusão"
   },
   "conclusao": {
-    "title": "Conclusão",
+    "title": "Reflexões e Conclusões",
     "subtitle": "Síntese da pesquisa e horizontes abertos",
     "headline1": "A poética não é resultado.",
     "headline2": "É processo em movimento.",
@@ -1173,7 +1173,7 @@
       ]
     },
     "conclusao": {
-      "title": "Conclusão",
+      "title": "Reflexões e Conclusões",
       "conceito": "Horizonte",
       "derivas": [
         {
