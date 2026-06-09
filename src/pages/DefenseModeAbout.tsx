@@ -1,6 +1,5 @@
 import Layout from "@/components/Layout";
 import SectionTitle from "@/components/SectionTitle";
-import NextSectionButton from "@/components/NextSectionButton";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SeoHead from "@/components/SeoHead";
