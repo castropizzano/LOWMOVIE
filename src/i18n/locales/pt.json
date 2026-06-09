@@ -1310,7 +1310,7 @@
         "dissertationArtifact": "Dissertação completa (PDF)",
         "doiArtifact": "DOI permanente — Zenodo (10.5281/zenodo.18950438)",
         "portalArtifact": "Portal acadêmico (este site)",
-        "cta": "Ver Reflexões e Conclusões"
+        "cta": "Reflexões e Conclusões"
       },
       "lowbyrinth": {
         "name": "Lowbyrinth™",
@@ -1321,7 +1321,7 @@
         "toolkitArtifact": "Toolkit Pedagógico (PDF visual)",
         "conceptsArtifact": "Conceitos operadores",
         "diagramArtifact": "Diagrama do método (Manual)",
-        "cta": "Ver Metodologia"
+        "cta": "Metodologia"
       },
       "lowrunner": {
         "name": "Low Runner™",
@@ -1332,7 +1332,7 @@
         "stackArtifact": "Stack React + TypeScript + Vite",
         "preservationArtifact": "Estratégia de preservação (archive.sh)",
         "licenseArtifact": "Licença open-source",
-        "cta": "Ver Low Runner™"
+        "cta": "Low Runner™"
       }
     }
   },
