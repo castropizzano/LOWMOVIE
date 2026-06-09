@@ -388,7 +388,7 @@
     "next": "O Filme"
   },
   "filme": {
-    "title": "LowMovie™ - O Filme",
+    "title": "LowMovie™ | O Filme",
     "subtitle": "Dispositivo poético-político nascido do gesto coletivo",
     "workData": "Dados da Obra",
     "data": {
@@ -479,7 +479,7 @@
     "next": "O Coletivo"
   },
   "coletivo": {
-    "title": "LowPressure™ - O Coletivo:",
+    "title": "LowPressure™ | O Coletivo",
     "subtitle": "Rede de artistas-skatistas que ativam a cidade como campo sensível",
     "p1": "O LowPressure™ não é um grupo formal. É uma rede de afinidades, uma forma de vida em rede que se constitui pelo encontro, pela prática e pela insistência do fazer.",
     "p2": "O processo criativo nasce da escuta e da convivência. A identidade do coletivo se afirma como construção rizomática (que cresce em rede, sem hierarquia fixa), em que saberes e fazeres se moldam ao ritmo de um coletivo em movimento. Como afirma Stuart Hall, \"a identidade cultural talvez deva ser pensada como uma 'produção', algo que nunca está completo, que é sempre processual\".",
@@ -1239,7 +1239,7 @@
     ]
   },
   "replicar": {
-    "title": "Low Runner™ - O Replicante",
+    "title": "Low Runner™ | O Replicante",
     "subtitle": "Guia aberto para pesquisadores adaptarem esta infraestrutura",
     "brandTitle": "Low Runner™",
     "brandTagline": "Plataforma · Sistema replicável de dissertação navegável",
