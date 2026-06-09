@@ -10,6 +10,7 @@ export interface PalestraBloco {
   oQueE: { pt: string; en: string };
   comoChegueiNisso: { pt: string; en: string };
   ancoras: { pt: string[]; en: string[] };
+  destaque?: { pt: string; en: string };
 }
 
 export const BLOCOS: PalestraBloco[] = [
