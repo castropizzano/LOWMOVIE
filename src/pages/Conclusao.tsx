@@ -114,7 +114,7 @@ const Conclusao = () => {
                   <a href="https://drive.google.com/drive/folders/13diA0ay3Ue1BxnAlADaOm03Vi0NAvLr1?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("conclusao.openCertificados")}</span>
                   </a>
-                  <a href="/docs/toolkit_metodologia_castro.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
+                  <a href="/docs/lowmovie_toolkit_pedagogico.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">
                     <span className="text-sm font-medium text-foreground/80">{t("metodologia.toolkit.downloadCta")}</span>
                   </a>
                   <a href="/docs/lowmovie_caderno_sintese.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors group w-full">

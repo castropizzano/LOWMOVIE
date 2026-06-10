@@ -225,7 +225,7 @@ const Metodologia = () => {
             <div className="border border-border rounded-lg p-8 md:p-10 bg-card/20 text-center">
               <p className="text-xs text-muted-foreground italic mb-6">{t("metodologia.toolkit.openLabel")}</p>
               <a
-                href="/docs/toolkit_metodologia_castro.pdf"
+                href="/docs/lowmovie_toolkit_pedagogico.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-primary/40 rounded-lg px-6 py-4 bg-primary/10 hover:bg-primary/20 transition-colors"

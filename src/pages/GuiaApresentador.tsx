@@ -50,7 +50,7 @@ const GuiaApresentador = () => {
   const arquivos = [
     { label: isPt ? "Roteiro imprimível (PDF)" : "Printable script (PDF)", to: "/imprimir" },
     { label: isPt ? "Caderno-Síntese (PDF)" : "Synthesis Notebook (PDF)", to: "/docs/lowmovie_caderno_sintese.pdf", external: true },
-    { label: isPt ? "Toolkit Metodológico (PDF)" : "Methodology Toolkit (PDF)", to: "/docs/toolkit_metodologia_castro.pdf", external: true },
+    { label: isPt ? "Toolkit Metodológico (PDF)" : "Methodology Toolkit (PDF)", to: "/docs/lowmovie_toolkit_pedagogico.pdf", external: true },
     { label: isPt ? "Modo Defesa (backup offline)" : "Defense Mode (offline backup)", to: "/defense" },
   ];
 
