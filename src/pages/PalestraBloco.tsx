@@ -7,6 +7,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SeoHead from "@/components/SeoHead";
 import { BLOCOS, getLang } from "@/data/palestra";
 import lowpressurePhoto from "@/assets/lowpressure_photoshoot.jpg.asset.json";
+import lowpressureCrew from "@/assets/lowpressure_crew.png.asset.json";
 
 const PalestraBloco = () => {
   const { bloco } = useParams();
@@ -107,6 +108,21 @@ const PalestraBloco = () => {
                   />
                   <figcaption className="mt-2 text-[11px] uppercase tracking-widest text-muted-foreground">
                     {isPt ? "Coletivo LowPressure™ · ensaio fotográfico" : "LowPressure™ Collective · photoshoot"}
+                  </figcaption>
+                </figure>
+              </AnimatedSection>
+            )}
+            {b.slug === "resultados" && (
+              <AnimatedSection delay={0.25}>
+                <figure className="mt-4">
+                  <img
+                    src={lowpressureCrew.url}
+                    alt={isPt ? "Coletivo LowPressure™ — crew na rua" : "LowPressure™ Collective — crew in the street"}
+                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                    loading="lazy"
+                  />
+                  <figcaption className="mt-2 text-[11px] uppercase tracking-widest text-muted-foreground">
+                    {isPt ? "Coletivo LowPressure™ · crew" : "LowPressure™ Collective · crew"}
                   </figcaption>
                 </figure>
               </AnimatedSection>
