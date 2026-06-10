@@ -3,7 +3,7 @@ message: "Se você utilizar este projeto como referência, por favor cite confor
 title: "LOWMOVIE™ e o Labirinto Criativo"
 subtitle: "Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™"
 type: software
-doi: "10.5281/zenodo.18950438"
+doi: "10.5281/zenodo.20619076"
 authors:
   - family-names: Pizzano
     given-names: Castro
@@ -12,7 +12,7 @@ repository-code: "https://github.com/castropizzano/lowmovie"
 url: "https://lowmovie.lovable.app"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.18950438"
+    value: "10.5281/zenodo.20619076"
     description: "Zenodo archive of the LOWMOVIE™ research-creation project"
 abstract: >-
   Portal interativo da dissertação de mestrado de Castro Pizzano,
@@ -38,7 +38,7 @@ preferred-citation:
   authors:
     - family-names: Pizzano
       given-names: Castro
-  doi: "10.5281/zenodo.18950438"
-  url: "https://doi.org/10.5281/zenodo.18950438"
+  doi: "10.5281/zenodo.20619076"
+  url: "https://doi.org/10.5281/zenodo.20619076"
   year: 2026
   publisher: "Zenodo"

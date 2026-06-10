@@ -1,6 +1,6 @@
 # LOWMOVIE™ E O LABIRINTO CRIATIVO 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18950438.svg)](https://doi.org/10.5281/zenodo.18950438)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20619076.svg)](https://doi.org/10.5281/zenodo.20619076)
 
 > **Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™**
 
@@ -89,7 +89,7 @@ A página `/defense` oferece um modo de apresentação dedicado com navegação 
 |---|---|
 | 🌐 **Portal** | [lowmovie.lovable.app](https://lowmovie.lovable.app) |
 | 📁 **Acervo** | [Google Drive](https://drive.google.com/drive/folders/1z0nDmYxxyub0gbhzMo4bj1o3L4lXyiUw?usp=sharing) |
-| 🔗 **DOI** | [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438) |
+| 🔗 **DOI** | [10.5281/zenodo.20619076](https://doi.org/10.5281/zenodo.20619076) |
 
 ---
 
@@ -118,7 +118,7 @@ npm run dev
 
 **Zenodo:**
 
-> PIZZANO, C. *LowMovie™ and the Creative Labyrinth: A Research-Creation Project in Cinema and Skate Culture.* Zenodo, 2026. https://doi.org/10.5281/zenodo.18950438
+> PIZZANO, C. *LowMovie™ and the Creative Labyrinth: A Research-Creation Project in Cinema and Skate Culture.* Zenodo, 2026. https://doi.org/10.5281/zenodo.20619076
 
 → Ver também [`CITATION.cff`](CITATION.cff) para citação automática no GitHub.
 
