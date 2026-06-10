@@ -736,7 +736,7 @@
       },
       "d2": {
         "title": "Theoretical Confrontation",
-        "text": "Practice interrogates theory. Deleuze, Guattari, Rancière, and Herzog are summoned by the asphalt, not by the library."
+        "text": "Practice interrogates theory. Herzog, Jung, Cirlot, Benjamin and Ricœur are summoned by the asphalt, not by the library."
       },
       "d3": {
         "title": "Simultaneity of Methods",
@@ -745,45 +745,48 @@
     },
     "symbolicTitle": "Symbolic Field",
     "symbolicPlace": "Imaginary",
-    "symbolicDesc": "LowMovie™ mobilizes its own symbolic field — archetypal figures and signs that traverse the work as forces of meaning, connecting the creative gesture to deeper layers of signification.",
+    "symbolicDesc": "The Symbolic Field (Chap. 3.6 of the dissertation) gathers icons developed from ancestral and philosophical references, re-appropriated as an aesthetic and political tactic. Not as doctrine, but as keys for reading the creative gesture.",
     "symbols": {
       "s1": {
-        "name": "Alchemist Rat",
-        "meaning": "Transmutation through the margin. Transforming discards into creative gold."
+        "name": "Eye of Horus",
+        "meaning": "Expanded vision. Esoteric evocation re-appropriated as a key for reading the creative gaze."
       },
       "s2": {
-        "name": "Eye of Horus",
-        "meaning": "Expanded vision: seeing beyond the visible, capturing the invisible of the gesture."
+        "name": "Star of Ishtar",
+        "meaning": "Passage and renewal of life through the acceptance of new horizons."
       },
       "s3": {
-        "name": "Star of Ishtar",
-        "meaning": "Creation as cosmic force. The act of creating as ritual."
+        "name": "Star of Lakshmi",
+        "meaning": "Familial spirit, ancestral knowledge and symbolic abundance — aesthetic and sonic fertility of the crew."
       },
       "s4": {
-        "name": "Star of Lakshmi",
-        "meaning": "Creative protection and prosperity. The crew as a support network."
+        "name": "Chaos",
+        "meaning": "Chaos Theory graphism reconfigured: disorder as generative matrix."
       },
       "s5": {
-        "name": "Symbol of Chaos",
-        "meaning": "Chaos as a generative matrix. Productive disorder, creative entropy."
+        "name": "Labyrinth",
+        "meaning": "Lowbyrinth™ — symbolic system of non-linear paths, double crossing: inner and urban."
+      },
+      "s6": {
+        "name": "Rat",
+        "meaning": "Rats on hostile paths: occupation of urban gaps and interstices as a language of confrontation."
       }
     },
-    "manifestoTitle": "13 Principles of the LowMovie™ Method",
-    "manifestoLabel": "Manifesto",
+    "manifestoTitle": "LowMovie™ Manifesto",
+    "manifestoLabel": "Appendix A of the dissertation",
     "principles": [
-      "The city is the field of creation. The street is the device.",
-      "The body is a research instrument. It feels the terrain's vibration and the city's tension.",
-      "The camera is an extension of the body in motion. It does not observe: it participates.",
-      "Skateboarding generates audiovisual language. Rhythm, framing, duration, and intensity are born from the trick.",
-      "Error borders the sacred. It feeds the creative process and reveals what control hides.",
-      "Improvisation is epistemology. Instability and surprise function as matter of knowledge.",
-      "Listening is method. Silence before the trick, the noise of wheels on concrete, the city's breathing.",
-      "Affect is a form of knowledge. To affect and be affected by the field produces knowledge.",
-      "Glitch and imperfection are aesthetic force. The edge of the skateboard meets the edge of the frame.",
-      "Autonomy is creative politics. Direct production, autonomous circulation, collective creation.",
-      "The crew is a creative organism. Skaters, videomakers, musicians, and designers form a living system.",
-      "The work expands beyond the film. Zine, portal, event, archive: everything is process.",
-      "LowMovie™ is a living creative system. To produce is to resist. Movement is the poetics."
+      "LowMovie™ is not a film about skateboarding. It is the risk of the concrete crossed by the camera.",
+      "It is born from the urgency to create with what one has. To film with the body in motion. To listen to the asphalt.",
+      "In a world where the logic of production tries to tame the gesture, LowPressure™ responds with the unfinished.",
+      "Gambiarra as aesthetics. Improvisation as method. We are skate, video and city.",
+      "We accept failure as part of the crossing. We film the way we drop.",
+      "The camera shakes, the cut tears, the sound bursts. That is where the real lives.",
+      "The collective as home, as method, as labyrinth.",
+      "For those who find beauty in the glitch, in the worn tape, in the tag on the broken board.",
+      "LowMovie™ is our offering. A poetics of the possible — camera in hand, city as altar.",
+      "Every mistake is an archive; every hit, a surprise.",
+      "Imperfection is celebrated, improvisation is method, collectivity is language.",
+      "We do not film to please, we film to cross through. To film is to drop."
     ],
     "closingQuote": "\"Error is something that borders the sacred.\"",
     "closingAuthor": "Werner Herzog"

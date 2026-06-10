@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Rat, Eye, Sparkles, Shield, Zap } from "lucide-react";
+import { X, Rat, Eye, Star, Sparkles, Zap, Spline } from "lucide-react";
 import MethodDiagram from "./MethodDiagram";
 import { useTranslation } from "react-i18next";
 
@@ -8,8 +8,8 @@ interface MethodManualProps {
   onClose: () => void;
 }
 
-const symbolIcons = [Rat, Eye, Sparkles, Shield, Zap];
-const symbolKeys = ["s1", "s2", "s3", "s4", "s5"] as const;
+const symbolIcons = [Eye, Star, Sparkles, Zap, Spline, Rat];
+const symbolKeys = ["s1", "s2", "s3", "s4", "s5", "s6"] as const;
 const layerKeys = ["l1", "l2", "l3", "l4", "l5"] as const;
 const directiveKeys = ["d1", "d2", "d3"] as const;
 
@@ -109,7 +109,7 @@ const MethodManual = ({ open, onClose }: MethodManualProps) => {
                 <p className="text-sm text-muted-foreground mt-3 leading-relaxed max-w-2xl text-justify">{t("method.symbolicDesc")}</p>
               </motion.div>
 
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                 {symbolKeys.map((key, i) => {
                   const IconComp = symbolIcons[i];
                   return (
