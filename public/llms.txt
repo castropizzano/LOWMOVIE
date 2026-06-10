@@ -26,5 +26,5 @@ A dissertação investiga processos criativos contemporâneos do Coletivo LowPre
 
 ## Opcional
 
-- [DOI / Zenodo](https://doi.org/10.5281/zenodo.18950438): Arquivo formal da pesquisa.
+- [DOI / Zenodo](https://doi.org/10.5281/zenodo.20619076): Arquivo formal da pesquisa.
 - [PDF da dissertação](/docs/dissertacao.pdf): Versão final aprovada.

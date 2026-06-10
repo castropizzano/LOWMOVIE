@@ -1277,7 +1277,7 @@
     "codeReuseDesc": "The structure, components, design system, navigation and infrastructure can be freely reused for academic purposes, maintaining attribution.",
     "contentRights": "Content (All Rights Reserved)",
     "contentRightsDesc": "The dissertation texts, images, videos, interviews and original LowMovie™ materials remain under reserved rights of Castro Pizzano.",
-    "attributionRequest": "Attribution request: \"Based on LOWMOVIE™ Portal — Castro Pizzano (2026). DOI: 10.5281/zenodo.18950438\"",
+    "attributionRequest": "Attribution request: \"Based on LOWMOVIE™ Portal — Castro Pizzano (2026). DOI: 10.5281/zenodo.20619076\"",
     "ctaTitle": "Next Steps",
     "ctaRepo": "GitHub Repository",
     "ctaPreservation": "Preservation Guide",
@@ -1308,7 +1308,7 @@
         "desc": "Experimental film and master's dissertation produced from the LowPressure™ collective. It materializes the poetics in motion of skateboarding as situated audiovisual language, articulating body, city, camera, and improvisation in a single creative operation.",
         "filmArtifact": "LowMovie™ film (2024)",
         "dissertationArtifact": "Full dissertation (PDF)",
-        "doiArtifact": "Permanent DOI — Zenodo (10.5281/zenodo.18950438)",
+        "doiArtifact": "Permanent DOI — Zenodo (10.5281/zenodo.20619076)",
         "portalArtifact": "Academic portal (this site)",
         "cta": "Reflections and Conclusions"
       },
@@ -1345,7 +1345,7 @@
       "lowmovie": {
         "name": "LowMovie™",
         "tag": "Work",
-        "license": "© 2026 Castro Pizzano · All rights reserved · DOI 10.5281/zenodo.18950438",
+        "license": "© 2026 Castro Pizzano · All rights reserved · DOI 10.5281/zenodo.20619076",
         "desc": "The film, dissertation, images, videos, interviews, and original materials remain under reserved rights. Mandatory academic citation in ABNT format with DOI. Reproduction, public exhibition, or derivative use requires explicit authorization from the author."
       },
       "lowbyrinth": {

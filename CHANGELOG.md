@@ -38,7 +38,7 @@ Versão apresentada na defesa da dissertação de mestrado.
 - `PRESERVATION.md`: guia completo de preservação digital
 - `CITATION.cff`: metadados de citação para GitHub
 - `scripts/archive.sh`: script de exportação do arquivo
-- DOI permanente via Zenodo: [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438)
+- DOI permanente via Zenodo: [10.5281/zenodo.20619076](https://doi.org/10.5281/zenodo.20619076)
 - Snapshot no Internet Archive / Wayback Machine
 
 ### Conteúdo

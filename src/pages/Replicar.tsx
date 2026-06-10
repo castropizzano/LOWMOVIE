@@ -170,7 +170,7 @@ const Replicar = () => {
               <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
             </a>
             <a
-              href="https://doi.org/10.5281/zenodo.18950438"
+              href="https://doi.org/10.5281/zenodo.20619076"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 border border-primary/40 rounded-lg p-4 bg-primary/10 hover:bg-primary/20 transition-all group"

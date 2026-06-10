@@ -15,7 +15,7 @@ O projeto LOWMOVIE™ adota uma estratégia deliberada de preservação digital 
 | **Espelho offline** | Snapshot navegável do portal para acesso local |
 | **Arquivo de mídias** | Cópia organizada de todos os assets do projeto |
 | **Arquivos web públicos** | Internet Archive / Wayback Machine |
-| **DOI permanente** | [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438) via Zenodo |
+| **DOI permanente** | [10.5281/zenodo.20619076](https://doi.org/10.5281/zenodo.20619076) via Zenodo |
 
 ---
 
@@ -124,7 +124,7 @@ O repositório público no GitHub é automaticamente elegível para o [GitHub Ar
 
 O projeto possui DOI permanente atribuído pelo Zenodo:
 
-- **DOI:** [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438)
+- **DOI:** [10.5281/zenodo.20619076](https://doi.org/10.5281/zenodo.20619076)
 - Badge adicionado ao `README.md`
 - Referência incluída no `CITATION.cff`
 - Citação disponível no portal (página Contribuições e footer)
@@ -145,7 +145,7 @@ Use este checklist ao criar um pacote de arquivo completo:
 - [ ] Copiar metadados (`CITATION.cff`, `README.md`, `LICENSE`, `PRESERVATION.md`)
 - [ ] Gerar manifest com checksums SHA256
 - [ ] Registrar data e versão no `preservation_log.md`
-- [x] Submeter ao Zenodo para DOI — [10.5281/zenodo.18950438](https://doi.org/10.5281/zenodo.18950438)
+- [x] Submeter ao Zenodo para DOI — [10.5281/zenodo.20619076](https://doi.org/10.5281/zenodo.20619076)
 - [x] Submeter URL ao Wayback Machine: `https://web.archive.org/save/https://lowmovie.lovable.app`
 
 ---
