@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
 import SeoHead from "@/components/SeoHead";
 import { BLOCOS, getLang } from "@/data/palestra";
+import lowpressurePhoto from "@/assets/lowpressure_photoshoot.jpg.asset.json";
 
 const PalestraBloco = () => {
   const { bloco } = useParams();
@@ -95,6 +96,21 @@ const PalestraBloco = () => {
                 {b.comoChegueiNisso[lang]}
               </p>
             </AnimatedSection>
+            {b.slug === "abertura" && (
+              <AnimatedSection delay={0.25}>
+                <figure className="mt-4">
+                  <img
+                    src={lowpressurePhoto.url}
+                    alt={isPt ? "Coletivo LowPressure™ — ensaio fotográfico" : "LowPressure™ Collective — photoshoot"}
+                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-700"
+                    loading="lazy"
+                  />
+                  <figcaption className="mt-2 text-[11px] uppercase tracking-widest text-muted-foreground">
+                    {isPt ? "Coletivo LowPressure™ · ensaio fotográfico" : "LowPressure™ Collective · photoshoot"}
+                  </figcaption>
+                </figure>
+              </AnimatedSection>
+            )}
             {b.destaque && (
               <AnimatedSection delay={0.25}>
                 <figure className="mt-8 border-l-2 border-primary bg-primary/5 px-6 py-6 md:px-8 md:py-7">
