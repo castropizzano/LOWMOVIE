@@ -736,7 +736,7 @@
       },
       "d2": {
         "title": "Confrontação Teórica",
-        "text": "A prática interroga a teoria. Deleuze, Guattari, Rancière e Herzog são convocados pelo asfalto, não pela biblioteca."
+        "text": "A prática interroga a teoria. Herzog, Jung, Cirlot, Benjamin e Ricœur são convocados pelo asfalto, não pela biblioteca."
       },
       "d3": {
         "title": "Simultaneidade de Métodos",
@@ -745,45 +745,48 @@
     },
     "symbolicTitle": "Campo Simbólico",
     "symbolicPlace": "Imaginário",
-    "symbolicDesc": "LowMovie™ mobiliza um campo simbólico próprio — figuras arquetípicas e signos que atravessam a obra, conectando o gesto criativo a territórios de significação não verbalizáveis.",
+    "symbolicDesc": "O Campo Simbólico (Cap. 3.6 da dissertação) reúne ícones desenvolvidos a partir de referências ancestrais e filosóficas, reapropriados como tática estética e política. Não como doutrina, mas como chaves de leitura do gesto criativo.",
     "symbols": {
       "s1": {
-        "name": "Rato Alquimista",
-        "meaning": "Transmutação pela margem. Transformar o descarte em ouro criativo."
+        "name": "Olho de Hórus",
+        "meaning": "Visão expandida. Evocação esotérica reapropriada como chave de leitura do olhar criativo."
       },
       "s2": {
-        "name": "Olho de Hórus",
-        "meaning": "Visão expandida: ver além do visível, captar o invisível do gesto."
+        "name": "Estrela de Ishtar",
+        "meaning": "Travessia e renovação da vida pela aceitação de novos horizontes."
       },
       "s3": {
-        "name": "Estrela de Ishtar",
-        "meaning": "Criação como força cósmica. O ato de criar como ritual."
+        "name": "Estrela de Lakshmi",
+        "meaning": "Espírito familiar, conhecimento ancestral e abundância simbólica — fertilidade estética e sonora da crew."
       },
       "s4": {
-        "name": "Estrela de Lakshmi",
-        "meaning": "Proteção e prosperidade criativa. A crew como rede de suporte."
+        "name": "Caos",
+        "meaning": "Grafismo da Teoria do Caos reconfigurado: desordem como matriz generativa."
       },
       "s5": {
-        "name": "Símbolo do Caos",
-        "meaning": "O caos como matriz generativa. Desordem produtiva, entropia criativa."
+        "name": "Labirinto",
+        "meaning": "Lowbyrinth™ — sistema simbólico de caminhos não lineares, dupla travessia interna e urbana."
+      },
+      "s6": {
+        "name": "Rato",
+        "meaning": "Ratos em caminhos hostis: ocupação dos vãos e interstícios urbanos como linguagem de enfrentamento."
       }
     },
-    "manifestoTitle": "13 Princípios do Método LowMovie™",
-    "manifestoLabel": "Manifesto",
+    "manifestoTitle": "Manifesto LowMovie™",
+    "manifestoLabel": "Apêndice A da dissertação",
     "principles": [
-      "A cidade é o campo de criação. A rua é o dispositivo.",
-      "O corpo é instrumento de pesquisa. Ele sente a vibração do terreno e a tensão da cidade.",
-      "A câmera é extensão do corpo em movimento. Ela não observa: participa.",
-      "O skate gera linguagem audiovisual. Ritmo, enquadramento, duração e intensidade nascem da manobra.",
-      "O erro beira o sagrado. Ele alimenta o processo criativo e revela o que o controle esconde.",
-      "O improviso é epistemologia. A instabilidade e a surpresa funcionam como matéria de conhecimento.",
-      "A escuta é método. Silêncio antes da manobra, ruído das rodas no concreto, respiração da cidade.",
-      "O afeto é forma de conhecimento. Afetar e ser afetado pelo campo produz saber.",
-      "O glitch e a imperfeição são força estética. A borda do skate encontra a borda do enquadramento.",
-      "A autonomia é política criativa. Produção direta, circulação autônoma, criação coletiva.",
-      "A crew é organismo criativo. Skatistas, videomakers, músicos e designers formam um sistema vivo.",
-      "A obra se expande para além do filme. Zine, portal, evento, arquivo: tudo é processo.",
-      "LowMovie™ é um sistema criativo vivo. Produzir é resistir. O movimento é a poética."
+      "LowMovie™ não é um filme sobre skate. É o risco do concreto atravessado pela câmera.",
+      "Nasce da urgência de criar com o que se tem. De filmar com o corpo em movimento. De escutar o asfalto.",
+      "Em um mundo onde a lógica da produção tenta domar o gesto, o LowPressure™ responde com o inacabado.",
+      "A gambiarra como estética. O improviso como método. Somos skate, vídeo e cidade.",
+      "Aceitamos a falha como parte da travessia. Filmamos como quem dropa.",
+      "A câmera treme, o corte rasga, o som estoura. É aí que mora o real.",
+      "O coletivo como casa, como método, como labirinto.",
+      "Para quem encontra beleza no glitch, na fita usada, na tag no shape quebrado.",
+      "LowMovie™ é a nossa oferenda. Uma poética do possível, uma câmera na mão e a cidade como altar.",
+      "Cada erro é arquivo; cada acerto, uma surpresa.",
+      "A imperfeição é celebrada, o improviso é método, e a coletividade é linguagem.",
+      "Não filmamos para agradar, filmamos para atravessar. Filmar é dropar."
     ],
     "closingQuote": "\"O erro é algo que beira o sagrado.\"",
     "closingAuthor": "Werner Herzog"
