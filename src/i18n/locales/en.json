@@ -1,0 +1,1779 @@
+{
+  "nav": {
+    "home": "Home",
+    "apresentacao": "Overview",
+    "metodologia": "Methodology",
+    "estrutura": "Structure",
+    "conceitos": "Concepts",
+    "filme": "Film",
+    "coletivo": "Crew",
+    "contribuicoes": "Contributions",
+    "questoes": "Critical Questions",
+    "conclusao": "Reflections and Conclusions",
+    "mapa": "Conceptual Map",
+    "timeline": "Academic CV",
+    "ecossistema": "Ecosystem",
+    "replicar": "Low Runner™",
+    "defenseMode": "Defense Mode",
+    "imprimir": "Printables",
+    "licenca": "Licensing",
+    "palestraMode": "Lecture Mode",
+    "livro": "Book",
+    "arquivo": "Archive",
+    "guia": "Presenter guide"
+  },
+  "header": {
+    "lowbyrinth": "Lowbyrinth™",
+    "methodManual": "Method Manual"
+  },
+  "footer": {
+    "copyright": "© 2026 Castro Pizzano",
+    "lattes": "Lattes CV",
+    "email": "castropizzano@gmail.com",
+    "university": "State University of Paraná",
+    "advisor": "Advisor: Prof. Dr. Fábio Jabur de Noronha",
+    "program": "Master's in Film and Video Arts | PPG-CINEAV | UNESPAR",
+    "committee": "Committee: Prof. Dr. Fabiana Pelinson · Prof. Dr. Luciana Barone · Prof. Dr. Antar Mikosz",
+    "researchLine": "Research Line: Creative Processes in Film and Video Arts",
+    "keywords": "Skateboarding · Video Art · Creative Processes · Urban Subculture · Audiovisual Collaboration",
+    "doiAlt": "Dissertation DOI: 10.5281/zenodo.20619076, Zenodo",
+    "licenseAlt": "Portal code: terms of use and rights reserved",
+    "orcidAlt": "Castro Pizzano ORCID: 0009-0000-3525-1713"
+  },
+  "intro": {
+    "enableSound": "Enable sound",
+    "muteSound": "Mute sound",
+    "enterPortal": "Enter the portal",
+    "replay": "Replay opening",
+    "play": "Play opening",
+    "videoTitle": "Lowbyrinth™ audiovisual opening",
+    "openVideo": "Open original video"
+  },
+  "home": {
+    "dissertationDate": "Master's Dissertation · Defended and approved on 03.27.2026",
+    "subtitle": "and the Creative Labyrinth",
+    "tagline": "Subjectivity, Subculture and the Poetics in Motion",
+    "tagline2": "of the LowPressure™ Collective",
+    "program": "Master's in Film and Video Arts | PPG-CINEAV | UNESPAR",
+    "researchLine": "Research Line: Creative Processes in Film and Video Arts",
+    "author": "Castro Pizzano",
+    "advisor": "Advisor: Prof. Dr. Fábio Jabur de Noronha",
+    "committee": "Committee: Prof. Dr. Fabiana Pelinson · Prof. Dr. Luciana Barone · Prof. Dr. Antar Mikosz",
+    "explore": "Explore the research",
+    "keywords": "Skateboarding · Video Art · Creative Processes · Urban Subculture · Audiovisual Collaboration",
+    "coverAlt": "Cover of the dissertation LowMovie and the Creative Labyrinth"
+  },
+  "apresentacao": {
+    "title": "Overview",
+    "subtitle": "Context, subject and research positioning",
+    "p1": "I took part in LowMovie™ as a visual artist, designer and filmmaker. The research led me to return to the images and listen to what they still had to say. I followed a process in which skateboarding, filming, editing, making music and drawing intersect.",
+    "p2": "My interest lies in what the body, camera and city do together. A trick holds the time of the attempts, the risk, the listening and the work of those who accompanied it. These relationships participate in the form of the film.",
+    "p3": "A VideoParte brings together a way of skating and a way of looking. The Full-Length connects several of these parts in a shared work. In LowMovie™, reading these images also involves voices, photographs, zines and process documents.",
+    "p4": "LowPressure™ sustains this creation through bonds, available resources and roles that adjust to the work. Being together does not eliminate differences in participation, visibility or recognition. I write as part of this network and try to keep these differences present in the reading.",
+    "centralQuestion": "Central Question",
+    "question": "\"How do the creative processes that compose LowMovie™, gestated within the collective and rhizomatic dynamic of LowPressure™, contribute to the construction of an audiovisual poetics in motion in the field of cinema and visual arts? What modes of subjectivation, symbolic elaboration, and relation to urban space emerge from these practices?\"",
+    "questionNote": "The question articulates the description of creative processes and their theoretical formulation in the field of cinema and video arts.",
+    "specificObjectives": "Specific Objectives",
+    "obj1": "Describe the collaborative practices mobilized in the film process (filming, editing, zine, and events)",
+    "obj2": "Analyze the formal choices of LowMovie™ as a language of risk, error, and presence",
+    "obj3": "Investigate the aesthetic crossings that manifest in the work",
+    "obj4": "Observe their reverberations in different circuits of circulation and exhibition",
+    "syntheticAnswer": "Synthetic Answer",
+    "answer": "LowMovie™’s creative processes transform the bodily experience of skateboarding into situated, collective cinematic language. The research analyzes them through poetics of the instant, a temporal operator of situated decisions; aesthetics of the edge, a spatial and political operator of negotiations with the city; and recording in flow, a relational and methodological operator of implicated filming. This synthesis paraphrases the research formulations.",
+    "lugarDeFala": "Positionality: Artist-Researcher",
+    "lugarP1": "I write in the first person because I participated in the process I investigate. This position allows me to answer for my interpretive choices and recognize the differences between my experience and the voices of the other participants.",
+    "lugarP2": "Living together, listening to voices and returning to the records guided the research. This implication finds support in Coessens (2014), Pimentel (2015) and Moriceau (2021), in dialogue with the references of the dissertation.",
+    "lugarP3": "Rigor requires making my position explicit, recording choices, confronting the materials and recognizing the limits of interpretation. My closeness to the crew participates in this work and also needs to be examined.",
+    "justificativa": "Justification",
+    "justP1": "Machado and Brandão (2019) mapped research on skateboarding in graduate programs in Brazil. This survey helps situate the path of this investigation, focused on the audiovisual creation processes of a crew.",
+    "justP2": "The contribution of this research lies in following skateboarding through its creative decisions, relationships and materials, connecting artistic practice, reflection and documentation. The book and the portal offer other ways of accessing this path.",
+    "next": "Methodology"
+  },
+  "metodologia": {
+    "title": "Methodology",
+    "subtitle": "Implicated research-creation, grounded in reflexivity",
+    "intro": "The investigation is structured as implicated research-creation, a methodological modality that articulates artistic production and academic reflection as inseparable dimensions of the same investigative process.",
+    "refs": "References: Coessens, Pimentel, Moriceau — body as knowledge production.",
+    "eixos": {
+      "afeto": {
+        "title": "Affect",
+        "desc": "Sensitive bond with the investigated field. Inspired by the Afetos group (UFMG) debates, affect is not contamination but a condition of access to the real in its densest and most significant dimension. To affect and be affected constitute legitimate forms of producing knowledge."
+      },
+      "escuta": {
+        "title": "Listening",
+        "desc": "Attention to collective dynamics, silences, non-verbalized gestures. Listening is more than hearing — it extends to the body, to the sound of the city, to the noise of wheels on concrete. Sustaining silence, welcoming the other's time."
+      },
+      "improviso": {
+        "title": "Improvisation",
+        "desc": "Openness to the unforeseen as legitimate epistemological data, not as a planning failure. The methodology assumes a mobile architecture, capable of remaking itself at each encounter. A knowledge in motion that learns from instability."
+      }
+    },
+    "fieldProcedures": "Field Procedures: Three Interwoven Operations",
+    "vivencia": {
+      "title": "Situated Experience",
+      "desc": "I participate in recording sessions, meetings, events, and skate sessions with the collective."
+    },
+    "convivencia": {
+      "title": "Creative Coexistence",
+      "desc": "I participate in the production and editing dynamics, actively contributing to the collective's aesthetic decisions."
+    },
+    "escutaPartilhada": {
+      "title": "Shared Listening",
+      "desc": "I record open conversations through notes, audio recordings, and a digital diary."
+    },
+    "spiralNote": "The cognitive spiral is an organizing metaphor for the reflective path, inspired by the revised Bloom's Taxonomy; the verb order is an authorial adaptation. Each return to the field deepens the previous understanding.",
+    "distinction": "Fundamental Distinction",
+    "researchMethod": "Research Method",
+    "researchMethodSub": "Reflective and analytical",
+    "creationMethods": "Creation Methods",
+    "creationMethodsSub": "Filming, editing, glitch, design",
+    "distinctionP1": "Although research method and creation methods feed each other, they are not the same. The first interrogates, conceptualizes, and formulates; the others produce, experiment, and materialize.",
+    "distinctionP2": "Rigor lies in the reflexivity with which each decision is interrogated and the consistency with which inferences are articulated with the mobilized references.",
+    "operational": "Operational Procedures",
+    "opItems": {
+      "period": {
+        "label": "Research period",
+        "value": "2023–2025"
+      },
+      "instruments": {
+        "label": "Recording instruments",
+        "value": "Field diary, audiovisual records, editing notebook"
+      },
+      "analysis": {
+        "label": "Analysis procedures",
+        "value": "Implicated film analysis, thick description of creative processes"
+      },
+      "positioning": {
+        "label": "Positioning",
+        "value": "Artist-researcher, active member of the creative collective"
+      },
+      "collection": {
+        "label": "Material collection",
+        "value": "Videos, zines, audio recordings, photographs and digital exchanges, mediated by informed consent"
+      },
+      "organization": {
+        "label": "Organization",
+        "value": "Cognitive spiral: practice → reflection → formulation → return to the field"
+      }
+    },
+    "toolkit": {
+      "title": "Pedagogical Toolkit",
+      "subtitle": "Applicable synthesis of the methodology developed in the dissertation",
+      "intro": "An open pedagogical device — not a recipe. It synthesizes, in replicable format, the terms actually formulated in the dissertation: three methodological axes, three field procedures, the cognitive spiral, the poetic operators of the gaze, and the operator concepts that emerge from practice.",
+      "stepsLabel": "Field Procedures",
+      "stepsNote": "Conducted from the situated experience with the LowPressure™ collective. The three procedures follow no hierarchy: they feed back into each other in a spiral.",
+      "steps": {
+        "s1": {
+          "title": "Situated experience",
+          "desc": "Direct participation in collective processes: filming sessions, meetings, events, and informal moments with skaters, videomakers, and artistic collaborators."
+        },
+        "s2": {
+          "title": "Creative coexistence",
+          "desc": "I followed the dynamics of production and editing through my involvement with the collective."
+        },
+        "s3": {
+          "title": "Shared listening",
+          "desc": "Materialized in open conversations, recorded through notes, audio, and digital diary — listening as the methodological operation that sustains the research."
+        }
+      },
+      "spiralLabel": "Cognitive Spiral",
+      "spiralDiagram": "remember → understand → apply → analyze → create → evaluate ↻",
+      "spiralDesc": "The cognitive spiral is an organizing metaphor for the reflective path, inspired by the revised Bloom's Taxonomy as mobilized by Ferraz and Belhot (2010). The order of verbs shown here is an authorial adaptation and works as a map in motion, without assessing the crew or imposing a sequence on creation.",
+      "archetypesLabel": "Poetic Operators of the Gaze",
+      "archetypesNote": "Paraphrases of the three operators formulated through reflective return to the practice of filming with the collective.",
+      "archetypes": {
+        "instante": {
+          "title": "Instant",
+          "subtitle": "Poetics of the instant",
+          "desc": "Temporal operator naming situated decisions at the meeting of body, space, light, risk and camera. The near-landing, the near-fall and the gesture in formation make perceptible a decision that happens alongside movement.",
+          "refs": "Ch. 1.1 — Poetic Operators of the Gaze"
+        },
+        "borda": {
+          "title": "Edge",
+          "subtitle": "Aesthetics of the edge",
+          "desc": "Spatial and political operator that begins at ledges, holes, imperfections and surfaces that resist the body. It helps understand negotiations between intended uses, prohibitions and passages invented by skateboarding.",
+          "refs": "Ch. 1.1 — Poetic Operators of the Gaze"
+        },
+        "fluxo": {
+          "title": "Flow",
+          "subtitle": "Recording in flow",
+          "desc": "Relational and methodological operator of implicated filming, in which camera, body and event influence one another. Distance, speed, framing and duration are negotiated through the participation of whoever films.",
+          "refs": "Ch. 1.1 — Poetic Operators of the Gaze"
+        }
+      },
+      "operatorsLabel": "Operator Concepts",
+      "operatorsNote": "The descriptions below summarize research formulations and theoretical interlocutions. They are paraphrases, with attribution to the sources mobilized in the dissertation.",
+      "operators": [
+        {
+          "title": "Lowbyrinth™",
+          "desc": "Emblem, operator and methodological device in development, formulated through reflective return to practice."
+        },
+        {
+          "title": "Body-camera",
+          "desc": "Notion formulated by Catherine Perret, as discussed by Sophie Delpeux (2018), mobilized here to reflect on the relationship between the filming body and the device."
+        },
+        {
+          "title": "Fabulation",
+          "desc": "An interlocution with Deleuze to think about the elaboration of lived experience, staging and other possibilities of perception. In LowMovie™, the scenes fabulate the experience of the crew, without being reduced to a literal record of everyday life."
+        },
+        {
+          "title": "Glitch as language",
+          "desc": "Error, failure, noise as expressive matter and ethics of insistence — not as a defect to be corrected."
+        },
+        {
+          "title": "Do It Yourself (D.I.Y.)",
+          "desc": "An ethics that crosses the collective: occupation of informal spaces, building of affective and creative networks, productive autonomy."
+        },
+        {
+          "title": "Implicated research-creation",
+          "desc": "Approach mobilized in dialogue with the dissertation references, including Pimentel, Coessens, Crispin and Douglas, and Moriceau, connecting artistic creation and implicated reflection."
+        }
+      ],
+      "applicationsLabel": "Pedagogical Application",
+      "applicationsNote": "The teaching experiences narrated in the dissertation are distinguished from future possibilities and proposals in planning.",
+      "applications": {
+        "classroom": {
+          "title": "Teaching experiences narrated",
+          "desc": "In courses such as Branding and Audiovisual Production, principles of listening, improvisation, co-authorship and attention to process were incorporated into teaching plans. Students produced music videos, visual essays and projects based on their contexts."
+        },
+        "workshops": {
+          "title": "Workshops, curatorship and circulation | possibilities",
+          "desc": "Workshops, curatorial projects and screenings are possible developments. LowTour remains a proposal in planning. These horizons are presented as projects, distinct from documented events."
+        },
+        "reflective": {
+          "title": "Reflective return to practice",
+          "desc": "In the research, affect, listening and improvisation, field procedures and poetic operators of the gaze make up the vocabulary for reflecting on the creative process."
+        },
+        "research": {
+          "title": "Other research | possibilities",
+          "desc": "The procedures and operators may guide dialogues with other research on creation and collaborative practices. Their mobilization requires attention to context and to the dissertation references; Lowbyrinth™ remains in development."
+        }
+      },
+      "downloadCta": "Download Toolkit (PDF)",
+      "openLabel": "Research synthesis for reading and dialogue. Uses and adaptations follow the credits and licensing."
+    },
+    "cite": {
+      "label": "How to reference the research",
+      "intro": "Lowbyrinth™ is an emblem, operator and methodological device in development, formulated within the dissertation LowMovie™ and the Creative Labyrinth. It may be cited in research and workshops that mobilize its operators, with reference to the dissertation.",
+      "methodLabel": "Dissertation reference",
+      "methodAbnt": "PIZZANO, Castro. LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™. Dissertação (Mestrado em Cinema e Artes do Vídeo), PPG-CINEAV, Universidade Estadual do Paraná, Curitiba, 2026. DOI: 10.5281/zenodo.20619076.",
+      "toolkitLabel": "ABNT citation — toolkit",
+      "toolkitAbnt": "PIZZANO, Castro. Toolkit Pedagógico Lowbyrinth™. Versão revista em novembro de 2026. Disponível em: https://lowmovie.lovable.app/docs/lowmovie_toolkit_pedagogico.pdf.",
+      "note": "Lowbyrinth™ is a mark used by the author with the ™ symbol. It is an emblem, operator and methodological device in development, formulated in the research and applied in a situated way. Uses beyond academic citation require the author's permission."
+    },
+    "next": "Structure"
+  },
+  "estrutura": {
+    "title": "Structure",
+    "subtitle": "The dissertation is organized in three movements",
+    "intro": "The dissertation is organized in three analytical movements that correspond to distinct dimensions of the object, in progressive conceptual complexity. Each movement has internal autonomy but articulates with the others in a logic of cumulative deepening: from body to collective, from collective to work, from work to field.",
+    "subchapters": "Subchapters",
+    "mov1": {
+      "title": "Body in Drift",
+      "subtitle": "Poetic Operators",
+      "desc": "I present my trajectory and relationship with filming, tracing a cartography of the aesthetic formation that leads me to skateboarding as a field of creation. In this movement, I formulate the concepts that emerge from practice — poetics of the instant, aesthetics of the edge, and flow recording — and guide the reading of the journey, articulating experience, body, and city as an axis of creation.",
+      "subs": [
+        "Poetic operators of the gaze: instant, edge, flow",
+        "Body-camera: theoretical dialogues",
+        "Between voices"
+      ]
+    },
+    "mov2": {
+      "title": "Collective in Low Relief",
+      "subtitle": "Production Ethics",
+      "desc": "I present LowPressure™ and its dynamics of collaboration, following how bonds, production ethics, and modes of belonging are organized in the group's daily life. I discuss its relationship with the city, architecture, and institutions. I conclude with LowZine, as a living archive of images, interviews, and testimonies that compose the collective's memory and language.",
+      "subs": [
+        "Identity and ethics in motion",
+        "City as a field of bonds",
+        "The Zine"
+      ]
+    },
+    "mov3": {
+      "title": "Work in Expansion",
+      "subtitle": "Film Processes",
+      "desc": "I present LowMovie™ from its genesis and creative lineages, traversing production, filming, editing, soundtrack, design, and the construction of a symbolic field that becomes legible in the work. I analyze fabulation in scenes and rituals, and examine the modes of premiere, circulation, and crossings of the film across different circuits.",
+      "subs": [
+        "Genesis and ethos of listening as a living method",
+        "Lineage of skate videos and the grammar of the medium",
+        "Filming: body-camera, risk and error as language",
+        "Editing: artbook and the film as writing",
+        "Sensory ecology: soundtrack, sound, palette and design",
+        "Symbolic field: Hellraiser, Lowbyrinth™ and semiotics",
+        "Scenes and fabulation: improvisation as dramaturgy of the real",
+        "Premiere rites: organism in circulation",
+        "Post-work: reverberation, continuity"
+      ]
+    },
+    "considerations": {
+      "title": "Considerations: Echoes of the Labyrinth",
+      "desc": "They revisit the research question, synthesize the findings, and situate the reverberations of the journey, articulating aesthetic, political, and methodological implications that remain in motion."
+    },
+    "portal": {
+      "title": "The Portal as Research Interface",
+      "p1": "This portal functions as a navigable epistemological architecture. It is not merely a presentation medium. It is part of the research's methodological apparatus.",
+      "p2": "The digital structure organizes the investigation on three simultaneous levels:",
+      "level1": "Level 1 — Sensible interface: home, aesthetics, and navigation. The visual experience introduces the visitor to the project's poetic universe.",
+      "level2": "Level 2 — Conceptual structure: methodology, concepts, and analytical organization of the research.",
+      "level3": "Level 3 — Living documentation: film, collective, archive, interviews, and concept map.",
+      "p3": "Theory, creation, and documentation coexist here in a navigable system. Dissertation, work, and digital interface connect as an expanded research apparatus."
+    },
+    "operators": {
+      "title": "Operators and Symbolic Field",
+      "p1": "The operators emerge from practice and return to it. They are not categories defined beforehand, but concepts formulated from the sensible experience of artistic practice.",
+      "p2": "Lowbyrinth™ functions as an image-concept and symbolic operator, an imagistic lens that synthesizes the processual, labyrinthine, and transformative character of collective creation.",
+      "p3": "The work expands beyond its formal limits, opening new relationships between art, city, and subculture. Lowbyrinth™ operates as an autonomous image-concept, formulated from within the practice itself."
+    },
+    "next": "Concepts"
+  },
+  "conceitos": {
+    "title": "Concepts",
+    "subtitle": "Theoretical cartography, authorial formulations and ethics of creation",
+    "intro1": "The theoretical foundation articulates distinct intellectual traditions: urban theory, relational aesthetics, cultural studies, research in the arts, film theory, in a conceptual constellation guided by the specific demands of the object.",
+    "intro2": "The poetic operators seek to name decisions, negotiations and forms of participation that I recognized when returning to practice.",
+    "authorsMap": "Authors' Concept Map",
+    "campos": {
+      "urbano": "Skateboarding as urban reinscription",
+      "estetica": "Relational aesthetics and identity",
+      "processo": "Collaborative process and research-creation",
+      "cinema": "Body-camera and embodied cinema"
+    },
+    "autores": {
+      "borden": "Borden (2019) helps think about skateboarding as a reading and reconfiguration of the city, in the relationship between body, movement and architecture.",
+      "mcduie": "McDuie-Ra (2021) reads skate video as an archive of the city produced from below: through the physical position of the camera and the elaboration of a memory that does not arise from official records.",
+      "bourriaud": "Bourriaud (2008) allows us to think of the social interstice as a space of relationships and other possibilities of exchange. In skateboarding, this reading encounters negotiations over the use of the city.",
+      "hall": "Hall (2006) helps think about identity as continuous production, constituted in representations. In the crew, the codes that bring people together can also establish limits of belonging.",
+      "abreu": "Abreu (2004) describes collaborative creation as a debate of proposals in a common arena. The circulation of ideas maintains responsibility for each contribution.",
+      "coessens": "Coessens (2014), Pimentel (2015) and Moriceau (2021) sustain the dialogue between artistic practice, reflection and implication. Closeness to the field requires recognizing one’s own position and its limits.",
+      "delpeux": "The notion of body-camera, formulated by Catherine Perret and discussed by Sophie Delpeux (2018), helps think about the participation of the device in the movement of whoever films.",
+      "rouch": "The readings of Rouch, Deren and Deleuze bring participation, camera movement and fabulation closer together. They are distinct interlocutions, mobilized to read situations in the film."
+    },
+    "ownConcepts": "Research formulations and theoretical interlocutions",
+    "ownConceptsNote": "The descriptions are paraphrases. Each item distinguishes its nature and the interlocution mobilized in the dissertation.",
+    "processVideoCaption": "Lowbyrinth™ movement creation process in Blender",
+    "tabProcesso": "Process",
+    "tabBox": "Box",
+    "tabCard": "Card",
+    "tabVHS": "VHS Tape",
+    "nftBoxCaption": "Lowbyrinth™ — Box (NFT digital artifact)",
+    "nftCardCaption": "Lowbyrinth™ — Card (NFT digital artifact)",
+    "nftVHSCaption": "Lowbyrinth™ — VHS Tape (NFT digital artifact)",
+    "concepts": {
+      "lowbyrinth": {
+        "name": "Lowbyrinth™",
+        "def": "Image-concept that synthesizes the processual, non-linear, and labyrinthine character of creation within the LowPressure™ collective. The labyrinth has no planned exit: the work is the journey itself.",
+        "nature": "Research formulation | device in development"
+      },
+      "poetica": {
+        "name": "Poetics of the instant",
+        "def": "Temporal operator naming situated decisions at the meeting of body, space, light, risk and camera. The near-landing, the near-fall and the gesture in formation make perceptible a decision that happens alongside movement.",
+        "nature": "Research formulation | temporal operator"
+      },
+      "borda": {
+        "name": "Aesthetics of the edge",
+        "def": "Spatial and political operator that begins at ledges, holes, imperfections and surfaces that resist the body. It helps understand negotiations between intended uses, prohibitions and passages invented by skateboarding.",
+        "nature": "Research formulation | spatial and political operator"
+      },
+      "fluxo": {
+        "name": "Flow recording",
+        "def": "Relational and methodological operator of implicated filming, in which camera, body and event influence one another. Distance, speed, framing and duration are negotiated through the participation of whoever films.",
+        "nature": "Research formulation | relational and methodological operator"
+      },
+      "fabulacao": {
+        "name": "Fabulation",
+        "def": "An interlocution with Deleuze to think about the elaboration of lived experience, staging and other possibilities of perception. In LowMovie™, the scenes fabulate the experience of the crew, without being reduced to a literal record of everyday life.",
+        "nature": "Theoretical interlocution | Deleuze"
+      },
+      "afeto": {
+        "name": "Affect as methodological axis",
+        "def": "Sensible implication as an epistemological operator. The affective bond with the field constitutes an instrument of knowledge as legitimate as formal analysis.",
+        "nature": "Axis of the approach | implicated research-creation"
+      }
+    },
+    "ethicsTitle": "Ethics of Creation and Resonance with Herzog",
+    "ethicsP1": "The research connects LowPressure™’s creative ethics with Herzog’s reflections on trial and error. Willingness to act with available resources sustains this dialogue.",
+    "ethicsP2": "Creating without waiting for institutional authorization constitutes, in itself, a micropolitics of making. When a collective of skaters produces a film that dialogues with experimental cinema without requesting permission or prior approval, this gesture carries a political dimension that is realized in the very materiality of the work.",
+    "ethicsP3": "The approximation with Herzog allows situating LowPressure™ in a lineage of filmmakers who operated on the margins of the industrial system — from Jean Rouch filming in trance to Maya Deren reinventing dance in experimental cinema.",
+    "next": "LowMovie™",
+    "authorsNote": "Paraphrases of the readings mobilized in the dissertation."
+  },
+  "filme": {
+    "title": "LowMovie™ | The Film",
+    "subtitle": "Poetic-political device born from collective gesture",
+    "workData": "Work Data",
+    "data": {
+      "titulo": {
+        "label": "Title",
+        "value": "LowMovie™"
+      },
+      "ano": {
+        "label": "Year",
+        "value": "2023"
+      },
+      "formato": {
+        "label": "Format",
+        "value": "Full-length (skate feature film)"
+      },
+      "duracao": {
+        "label": "Duration",
+        "value": "1h6min56s"
+      },
+      "direcao": {
+        "label": "Direction",
+        "value": "Rafão VM: direction · Castro Pizzano “Punk”: co-direction and cinematographic direction"
+      },
+      "coletivo": {
+        "label": "Collective",
+        "value": "LowPressure™"
+      },
+      "trilha": {
+        "label": "Soundtrack",
+        "value": "Lowbyrinth™ EP: Dan Guinski (Non-Grata) · Like Rats on Hostile Paths: Raphael Carvalho (Relvi)"
+      },
+      "estrutura": {
+        "label": "Structure",
+        "value": "Interwoven segments: sessions, interludes, fabulation scenes"
+      },
+      "circulacao": {
+        "label": "Circulation",
+        "value": "Independent and institutional circuits"
+      },
+      "roteiro": {
+        "label": "Screenplay",
+        "value": "Castro Pizzano and Rafael Auto Leite, with suggestions from the crew. Credit in the film: BFAM."
+      }
+    },
+    "lineageTitle": "Lineage: The Grammar of Skate Videos",
+    "lineageDesc": "LowMovie™ inscribes itself in an audiovisual tradition specific to skate culture. The VideoParte has a grammar with its own rhythm, editing, and aesthetic codes. The Full-Length expands this grammar into a complete narrative structure.",
+    "lineageRefs": {
+      "tyEvans": {
+        "name": "Ty Evans",
+        "desc": "Pioneer of high-definition skate cinematography"
+      },
+      "spikeJonze": {
+        "name": "Spike Jonze",
+        "desc": "From skate video to auteur cinema"
+      },
+      "beagle": {
+        "name": "Beagle",
+        "desc": "Baker Skateboards filmmaker: documentary, identity and subculture"
+      }
+    },
+    "descP1": "LowMovie™ functions as a poetic-political device, where living, thinking, and creating converge in a single gesture. It is the materialization of a collective process that articulates body, city, camera, and improvisation as inseparable elements of a single poetic operation.",
+    "descP2": "Filming is body-camera, a sensible extension of the filmmaker in motion. Editing acts as an artbook, reorganizing fragments into constellations of meaning. The glitch emerges as a language of fracture.",
+    "descP3": "Fabulation scenes function as improvisation as dramaturgy of the real. Premiere rites constitute the film's circulation circuit, extending the work beyond its formal limits.",
+    "stills": "Film Stills",
+    "sequenceTitle": "Sequence Analysis",
+    "sequenceCaption": "Drop sequence — a singular gesture executed with no margin for error, in a high-risk urban context both physically and technically.",
+    "seqP1": "The sequence is organized in three articulated visual moments: preparation, projection, and absorption of the gesture in urban space. The framing favors the wide shot, with the slope (inclined concrete plane) occupying most of the frame and the skater's body reduced to the condition of a vector in displacement, evidencing the disproportion between body and architecture.",
+    "seqP2": "The camera movement is contained, allowing the action to develop within the frame. The descent along the inclined plane creates a dominant diagonal, reinforced by the shadow projected on the concrete, transforming the body into a graphic trace. The climax occurs at the moment of the drop to the main road — a gesture executed with no possibility of error, given the height difference, inclination, and traffic.",
+    "seqP3": "The editing preserves the continuity of movement, sustaining the flow recording and refusing spectacularizing fragmentation. The direct sound of wheels on concrete anchors the gesture in the materiality of space.",
+    "seqP4": "In the final frames, the body crosses the road and leaves the field. The architecture remains. The city returns as surface. The photograph taken during the take crystallizes the instant of suspension between gravity and invention.",
+    "conceptualOperators": "Conceptual operators",
+    "operators": [
+      "Poetics of the instant",
+      "Aesthetics of the edge",
+      "Flow recording",
+      "Affect as axis"
+    ],
+    "seqP5": "The drop symbolically synthesizes the dissertation's own argument: to create is to assume situated risk. LowMovie™ emerges from the edge, where error is not metaphor but physical consequence. The singular, unrepeatable gesture in that context condenses the ethics of the research: invention as real confrontation with space.",
+    "thesisConnection1": "This drop is not just a trick.",
+    "thesisConnection2": "It is the structural metaphor of the research.",
+    "thesisConnectionP": "The dissertation argues that situated creative processes operate in contexts of risk, threshold zones (between control and uncertainty), and improvisation. Just as on the slope, there is no neutrality or flat ground. There is edge, inclination, and decision.",
+    "thesisConnection3": "LowMovie™ is the record of that condition.",
+    "premiereTitle": "LowPremière™ · Curitiba",
+    "premiereDesc": "LowMovie™’s in-person première took place on 16 December 2022 at Vila Ida, Curitiba. The record was published on 23 January 2023. The collective screening brings makers and audience together. The experimental virtual LowPremière™, on a link now unavailable, remains documented in the ArtBook; simultaneity with the in-person première is not established.",
+    "correspondenceTitle": "Correspondence",
+    "correspondenceDesc": "During the circulation of LowMovie™, contact was made with Thrasher Magazine — a key reference in underground skate culture. The record documents an email exchange with Eben Sterling, connected to the magazine.",
+    "correspondenceQuote": "I'd say you achieved your goal of presenting skateboarding and skateboard film making as art.",
+    "correspondenceAttrib": "Eben Sterling — Thrasher Magazine, 2024",
+    "correspondenceNote": "The full correspondence is part of the project's process document archive.",
+    "soundtrack": "Soundtrack",
+    "soundtrackOriginal": "21-track album · Compositions: Raphael Carvalho (Relvi) · Mix/master: Dan Guinski · Design: Castro Pizzano · Photo: Mario Kreb",
+    "next": "LowPressure™",
+    "watchFull": "Watch the film on YouTube",
+    "watchPremiere": "Watch the première record on YouTube",
+    "epCredits": "5-track EP · Dan Guinski (Non-Grata), SFX, mixing and mastering · Design: Castro Pizzano",
+    "alt": {
+      "still": "Still {{number}} from LowMovie™ (2023), a frame from the final edit",
+      "frame": "Frame {{number}} from the analytical sequence of LowMovie™",
+      "final": "Final photograph of the analytical sequence, conceptual closure of LowMovie™",
+      "ep": "Cover of the Lowbyrinth™ EP (LowMovie™ Original Motion Picture Soundtrack), by Dan Guinski (Non-Grata), design by Castro Pizzano",
+      "album": "Cover of Like Rats on Hostile Paths (LowMovie™ Soundtrack), by Raphael Carvalho (Relvi), design by Castro Pizzano and photography by Mario Kreb"
+    },
+    "videoTitle": "LowMovie™ (2023) | Full film",
+    "premiereVideoTitle": "LowPremière™ | Record of the première in Curitiba",
+    "onlineDate": "Full film published on YouTube: 19 April 2023. Work reference year: 2023.",
+    "eventSource": "In-person event record | Sympla, 16 December 2022"
+  },
+  "coletivo": {
+    "title": "LowPressure™ | The Collective",
+    "subtitle": "Network of artist-skaters who activate the city as a sensible field",
+    "p1": "LowPressure™ formed through the encounter of people who skated and shared music, images and a desire to create. This network of affinities acquired forms of work, a visual identity and ways of circulating.",
+    "p2": "Listening and living together participate in the decisions of the film. I read the identity of the crew as a construction in motion, in dialogue with Hall (2006). Bonds bring people and references together, with differences in participation and recognition that need to remain visible.",
+    "p3": "In LowMovie™, filming, editing, design and music come together without making all roles equivalent. Proposals circulate, are discussed and are transformed. Preserving credits allows us to recognize the work of those who participated.",
+    "p4": "Like Rats on Hostile Paths runs through the visual identity of the crew. I connect this phrase with the tactics of everyday life discussed by Certeau (2003): finding passages and other uses in conditions we did not choose.",
+    "p5": "Lefebvre complements: urban space is social production in dispute. Skateboarding operates in this interval, transforming planned trajectories into improvised routes. The city is not a stage — it is a co-author.",
+    "p6": "As Herzog suggests, in LowPressure™ error is not failure; it is creative material.",
+    "p7": "The LowZine functions as a living archive. The BrandBook is the collective's narrative artifact. Rafão VM acts as an aggregator, a central figure in the articulation of bonds.",
+    "vocab": "Skateboarding Vocabulary",
+    "vocabNote": "Central terms of skate culture mobilized in the research — operational categories of a situated aesthetic practice.",
+    "glossary": {
+      "crew": {
+        "term": "Crew",
+        "def": "Group of skaters who share affinities, sessions, and productions."
+      },
+      "sessao": {
+        "term": "Session",
+        "def": "Collective skateboarding practice gathering at a specific urban space."
+      },
+      "spot": {
+        "term": "Spot",
+        "def": "Urban location appropriated for skateboarding: staircases, ledges, handrails."
+      },
+      "shape": {
+        "term": "Shape",
+        "def": "The skateboard deck. Central element of the practice, with dimensions and wear that influence style."
+      },
+      "tricks": {
+        "term": "Tricks",
+        "def": "Maneuvers performed on the skateboard. Each trick has its own name and bodily grammar."
+      },
+      "linha": {
+        "term": "Line",
+        "def": "Chained sequence of tricks executed in continuous flow."
+      },
+      "videoparte": {
+        "term": "VideoParte",
+        "def": "Audiovisual format specific to skate culture: edited recording of performance with soundtrack."
+      },
+      "fulllength": {
+        "term": "Full-Length",
+        "def": "Complete skateboarding audiovisual production with multiple parts and narrative structure."
+      }
+    },
+    "gallery": "Gallery",
+    "quote": "Proposals undergo debate and transformation in a common arena. Collaboration preserves responsibility for contributions and requires negotiating choices.",
+    "quoteAuthor": "Reading of Abreu (2004).",
+    "next": "Contributions",
+    "galleryAlt": "LowZine | page {{page}} of the printed fanzine of the LowPressure™ Collective"
+  },
+  "contribuicoes": {
+    "title": "Contributions",
+    "subtitle": "What this dissertation proposes to the field",
+    "intro": "I bring together four contributions of this research to the study of creative processes in cinema and video arts.",
+    "items": {
+      "c1": {
+        "title": "Epistemological repositioning of skateboarding",
+        "desc": "I examine skateboarding as a practice that contributes to audiovisual language, in dialogue with the survey by Machado and Brandão and with the materials of LowMovie™."
+      },
+      "c2": {
+        "title": "Formulation of conceptual operators",
+        "desc": "I formulated poetics of the instant, aesthetics of the edge and flow recording by returning reflectively to practice. Lowbyrinth™ is part of this trajectory as an emblem, operator and device in development."
+      },
+      "c3": {
+        "title": "Implicated research-creation as method",
+        "desc": "Through implicated research-creation, I examined my experience alongside the records, participants’ accounts and the dissertation’s references. This work supports my reading of the collective’s creative processes."
+      },
+      "c4": {
+        "title": "Displacement in the Brazilian audiovisual field",
+        "desc": "I followed how LowMovie™ was created and circulated across skateboarding, cinema and other art spaces. These trajectories offer a situated experience from which to discuss independent production and collaboration."
+      }
+    },
+    "archive": {
+      "title": "Academic Archival",
+      "desc": "The dissertation is deposited on Zenodo and can be cited using DOI 10.5281/zenodo.20619076. Access to the film and the other materials is brought together in the portal’s archive.",
+      "link": "View on Zenodo"
+    },
+    "next": "Critical Questions"
+  },
+  "questoes": {
+    "title": "Critical Questions",
+    "subtitle": "Conceptual tensions",
+    "intro": "The research moves in a hybrid field between artistic practice and theoretical reflection. In this context, certain tensions inevitably arise. Below, I directly confront the most sensitive points of the work.",
+    "items": {
+      "q1": {
+        "q": "Poetics versus aesthetics",
+        "a": "The choice of the term poetics — rather than aesthetics — is deliberate. Poetics refers to making in act, to how the work takes shape during the process. The emphasis falls on the process, not merely on the formal result. Aesthetics concerns the reception and sensible experience of the viewer — a dimension the dissertation does not ignore but does not choose as its primary focus."
+      },
+      "q2": {
+        "q": "Symbol and sign",
+        "a": "The symbol is mobilized as an image that condenses meanings, in the aesthetic field of the research. The interlocution with Deleuze helps think about fabulation, the elaboration of lived experience and the possibilities opened by staging."
+      },
+      "q3": {
+        "q": "Methodological rigor",
+        "a": "Rigor requires making my position explicit, recording choices, confronting the materials and recognizing the limits of interpretation. Living alongside the crew participates in this work and also needs to be examined, in dialogue with the references of research-creation."
+      },
+      "q4": {
+        "q": "Delimitation of the object",
+        "a": "The central object is the film LowMovie™ and its creative processes. The LowPressure™ collective is analyzed as a condition of production — not as an object in itself. The specific objectives precisely delimit the scope: describe, analyze, investigate, and observe."
+      },
+      "q5": {
+        "q": "Political dimension",
+        "a": "The work acts as a micropolitics of gesture and sensible occupation of the city. Its political dimension is inseparable from practice, not declarative. Creating without waiting for institutional authorization constitutes, in itself, a micropolitics of making."
+      },
+      "q6": {
+        "q": "Conceptual autonomy",
+        "a": "The dissertation connects the reading of the materials and its references. Lowbyrinth™ is an emblem, operator and device in development. Poetics of the instant, aesthetics of the edge and flow recording were formulated through reflective return to practice."
+      },
+      "q7": {
+        "q": "Research contributions.",
+        "a": "The research follows the audiovisual creation of LowPressure™ and formulates three situated operators: poetics of the instant, aesthetics of the edge and flow recording. Its contribution connects body, city, camera and collective in reading the process."
+      },
+      "q8": {
+        "q": "Is this research about skateboarding or about cinema?",
+        "a": "It is about cinema from skateboarding. The focus is on the audiovisual process — how the bodily practice of skateboarding produces cinematic language. Skateboarding is not the final object of investigation, but the matrix from which a specific audiovisual poetics emerges."
+      }
+    },
+    "next": "Reflections and Conclusions"
+  },
+  "conclusao": {
+    "title": "Reflections and Conclusions",
+    "subtitle": "Research synthesis and open horizons",
+    "headline1": "The poetics is not a result.",
+    "headline2": "It is a process in motion.",
+    "p1": "LowMovie™ demonstrates that subcultural practices can produce autonomous audiovisual language and legitimate aesthetic knowledge in the academic field. I demonstrate analytically that skateboarding already constitutes an aesthetic practice that produces forms, languages, and knowledge.",
+    "p2": "I affirm that the creative gesture, when analyzed with rigor and implication, is also a form of thought. Filming on a skateboard, collectively editing images, circulating a film outside conventional circuits. These operations are not merely artistic practices: they are ways of knowing the world. The methodological journey develops in a spiral: each return to the field deepens previous understanding.",
+    "p3": "What LowMovie™ teaches is that poetics does not inhabit the finished result, but the journey that constitutes it. The film is the provisional sedimentation of a flow of gestures, decisions, and encounters. It is in this flow that movement reveals itself as a condition of production, language, and thought.",
+    "p4": "This research does not propose a closed method, but a field of possibilities for thinking about creative processes in audiovisual from the experience of skateboarding and collective creation.",
+    "p5": "LowMovie™ appears here less as a conclusion and more as a process in motion, an experience that remains open to new creative, theoretical, and pedagogical developments.",
+    "quote1": "Returning to the images and listening to those who participated changed how I myself understood and followed the process.",
+    "quote2": "LowMovie™ brings together artistic practice, reflection and urban experience. Its circulation opens other readings and returns questions to the work.",
+    "expansion": "Work in Expansion: Pedagogical Horizons",
+    "pedagogyTitle": "Lowbyrinth™ as Pedagogical Tool",
+    "pedagogyP1": "The Lowbyrinth™, the conceptual labyrinth that organizes the poetics of LowMovie™, also suggests pedagogical applications that I intend to explore.",
+    "pedagogyP2": "I think of it as a navigable concept map: students traverse layers of meaning, explore references, and construct their own creative trajectories.",
+    "classroomTitle": "Classroom: Methodological Possibilities",
+    "classroomP1": "The research-creation experience of LowMovie™ also leads me to think about developments for educational environments: collaborative process, cognitive spiral, body implication in the creative gesture.",
+    "classroomP2": "I do not intend to establish a closed model. What I propose is to open paths for thinking about the classroom as a space for aesthetic investigation, collective encounter, and development of authorial practices.",
+    "fullDissertation": "Full Dissertation",
+    "fullDissertationNote": "Read the full deposited dissertation, preserved in its original file.",
+    "openPdf": "Open Dissertation PDF",
+    "publicationsTitle": "Related Publications",
+    "publicationHarpiaDesc": "An article I published with Fabiana Pelinson: A Arte de Contar: As Tessituras Entre Narrativa e Jornalismo a Partir do Conceito de Tríplice Mimese. Harpia, no.16, pp.26–48, 2025, a journal affiliated with ISULPAR.",
+    "openPublication": "Article in Harpia journal",
+    "archive": "Process Archive",
+    "archiveNote": "Here I bring together documents, records and materials produced throughout the research.\n\nIn my artistic-academic memorial Ecos Criativos: Skate, Arte e Vídeo, I revisit my trajectory across skateboarding, art and audiovisual work, the experiences of collective creation and the cultural projects that preceded and influenced LowMovie™.",
+    "openArchive": "Open Archive on Google Drive",
+    "openMemorial": "Open Ecos Criativos Memorial",
+    "openCertificados": "Lattes Certificates",
+    "openEcosystem": "View Ecosystem (3 Layers)",
+    "openLowRunner": "Access Low Runner™",
+    "openLicense": "Licensing Policy",
+    "openDefenseMode": "About Defense Mode",
+    "openImprimir": "Printable Versions",
+    "openCaderno": "Synthesis Booklet (PDF)",
+    "interviews": "Interviews",
+    "openTranscript": "Open Transcript PDF",
+    "interviewItems": {
+      "skatePunk": {
+        "label": "Skate Punk",
+        "subtitle": "Chiclé Vídeos Podcast",
+        "desc": "Conversation about the creative trajectory, behind the scenes of LowMovie™, the relationship between skateboarding and audiovisual, and the collaborative processes of the LowPressure™ collective."
+      },
+      "blackMedia": {
+        "label": "Black Media",
+        "subtitle": "Black View",
+        "desc": "Black Media Skate, a national underground skate media outlet discusses LowMovie™, creative processes, and independent audiovisual production."
+      },
+      "peralta": {
+        "label": "Gabriel Peralta",
+        "subtitle": "Skate Photography",
+        "desc": "Gabriel Peralta talks about skate photography, documentary recording, and the construction of visual memory in the skateboarding universe."
+      },
+      "rafao": {
+        "label": "Rafão VM",
+        "subtitle": "Marginal Skateboarding",
+        "desc": "Rafão VM discusses marginal skateboarding, independent production, and the intersections between subculture, art, and resistance."
+      },
+      "herzog": {
+        "label": "Herzog",
+        "subtitle": "On Skateboarding",
+        "desc": "Werner Herzog reflects on skateboarding as gesture, movement, and form of contemporary cultural expression."
+      },
+      "lowzine": {
+        "label": "LowZine",
+        "subtitle": "Collective Fanzine",
+        "desc": "LowZine, a collective fanzine produced by the LowPressure™ group, gathering visual records, texts, and fragments of the creative process."
+      }
+    },
+    "manualLowMovie": "LowMovie™ Manual",
+    "manualLowMovieNote": "LowMovie™ ArtBook (2022, 13 pages): official project manual.",
+    "manualLowPressure": "LowPressure™ Manual",
+    "manualLowPressureNote": "LowPressure™ BrandBook (2022, 26 pages): official collective manual.",
+    "openManual": "Open Manual PDF",
+    "next": "Concept Map",
+    "errataTitle": "Dissertation erratum",
+    "errataText": "Factual correction to the dissertation: on page 26, where it reads Rua Padre Agostinho, number 446, read Rua Padre Anchieta, number 446, the address of the building where I spent my childhood. The Vídeo 1 rental store was on the same street, at number 458. This correction was confirmed by me on November 20, 2026. The deposited PDF remains preserved.",
+    "brandbookProvenance": "The moodboard on page 12 brings together photographs of physical references from my collection and that of Rafael Auto Leite, Rafão VM: CDs, posters, books and other objects. Graphic design: Castro Pizzano. Credits for the photographs and the works photographed remain distinct from the provenance of the materials.",
+    "publicationPdf": "Original journal PDF",
+    "synthesisTitle": "Synthesis of the journey"
+  },
+  "mapa": {
+    "title": "Conceptual Map",
+    "subtitle": "Interactive cartography of relationships between authors, concepts, and thematic fields"
+  },
+  "timeline": {
+    "title": "Academic CV",
+    "subtitle": "Academic and professional trajectory extracted from the Lattes CV",
+    "currentBio": "I hold a master’s degree in Cinema and Video Arts from PPG-CINEAV/UNESPAR. I defended my dissertation on 27 March 2026, when it was approved. I work across art, cinema, design, communication and education.",
+    "historicalBio": "Historical summary from the consulted Lattes CV:"
+  },
+  "lowbyrinth": {
+    "title": "Lowbyrinth™",
+    "subtitle": "Drift. The journey is knowledge.",
+    "driftTo": "Drift to:",
+    "goTo": "Go to",
+    "close": "Close Lowbyrinth™"
+  },
+  "method": {
+    "title": "LowMovie™ Method Manual",
+    "subtitle": "Research-Creation and Collective Autonomy Practices",
+    "fundamentalShift": "The Fundamental Shift",
+    "fundamentalShiftDesc": "This research follows the creative processes of LowMovie™, made by LowPressure™. Implicated research-creation connects artistic production and academic reflection. The film precedes the systematization of the procedures and operators presented here.",
+    "knowledgeSystem": "Creative Knowledge System",
+    "anatomyTitle": "System Anatomy",
+    "layersTitle": "The 5 Layers of the LowMovie™ System",
+    "layerLabel": "Layer",
+    "layers": {
+      "l1": {
+        "title": "URBAN EXPERIENCE",
+        "subtitle": "Skateboarding as Urban Aesthetic Practice",
+        "desc": "The urban experience constitutes the system's foundation. Skateboarding transforms the city into a field of creation: every spot, every terrain, every session produces language. The skater's body negotiates with architecture, and from this friction creative matter emerges."
+      },
+      "l2": {
+        "title": "CREATIVE PROCESS",
+        "subtitle": "Connected creative practices",
+        "desc": "Filming, editing, design, composition and glitch are connected practices, with overlaps and returns. Their encounters and decisions compose the creative process followed and analyzed by the research."
+      },
+      "l3": {
+        "title": "SENSITIVE AXES",
+        "subtitle": "Affect, Listening and Improvisation as Epistemology",
+        "desc": "The three axes that sustain research-creation: affect as a form of knowledge (to affect and be affected by the field), listening as a method (hearing what the terrain, the body, and the city say), and improvisation as epistemology (instability and surprise as matter of knowledge)."
+      },
+      "l4": {
+        "title": "OPERATOR CONCEPTS",
+        "subtitle": "Poetics of the Instant, Aesthetics of the Edge, Flow Recording",
+        "desc": "Poetics of the instant, aesthetics of the edge and recording in flow are operators formulated through reflective return to practice. The descriptions below are paraphrases of the research formulations."
+      },
+      "l5": {
+        "title": "CORE: LOWMOVIE™",
+        "subtitle": "Body, camera and city",
+        "desc": "LowMovie™ is the film made by LowPressure™ and the original work of this investigation. Body, camera and city run through the creative process that the dissertation follows and analyzes."
+      }
+    },
+    "researcherTitle": "The Artist-Researcher",
+    "researcherPlace": "Positionality",
+    "researcherDesc": "I investigate LowMovie™ through my participation in its creation process. My experience with skateboarding, video and design informs the questions I bring to the materials. In the research, I return to that practice, examine the records and distinguish my creative choices from the research procedures.",
+    "directives": {
+      "d1": {
+        "title": "Situated Implication",
+        "text": "I participate in the field I investigate. Living and working alongside the crew informs my reading of the records and requires me to make my position explicit."
+      },
+      "d2": {
+        "title": "Theoretical Confrontation",
+        "text": "Practice and theory question one another. References are mobilized to think through creative situations, without reducing experience to an application of concepts."
+      },
+      "d3": {
+        "title": "Research and Creation",
+        "text": "Situated experience, creative coexistence and shared listening are research procedures. Filming, editing, design, composition and glitch make up the creative process followed and analyzed."
+      }
+    },
+    "symbolicTitle": "Symbolic Field",
+    "symbolicPlace": "Imaginary",
+    "symbolicDesc": "The Symbolic Field (Chap. 3.6 of the dissertation) gathers icons developed from ancestral and philosophical references, re-appropriated as an aesthetic and political tactic. Not as doctrine, but as keys for reading the creative gesture.",
+    "symbols": {
+      "s1": {
+        "name": "Eye of Horus",
+        "meaning": "Expanded vision. Esoteric evocation re-appropriated as a key for reading the creative gaze."
+      },
+      "s2": {
+        "name": "Star of Ishtar",
+        "meaning": "Passage and renewal of life through the acceptance of new horizons."
+      },
+      "s3": {
+        "name": "Star of Lakshmi",
+        "meaning": "Familial spirit, ancestral knowledge and symbolic abundance — aesthetic and sonic fertility of the crew."
+      },
+      "s4": {
+        "name": "Chaos",
+        "meaning": "Duality and fertile disorder as aesthetic and interpretative keys to the creative process."
+      },
+      "s5": {
+        "name": "Labyrinth",
+        "meaning": "Lowbyrinth™ — symbolic system of non-linear paths, double crossing: inner and urban."
+      },
+      "s6": {
+        "name": "Rat",
+        "meaning": "Rats on hostile paths: occupation of urban gaps and interstices as a language of confrontation."
+      }
+    },
+    "manifestoTitle": "{{count}} gestures from the LowMovie™ Manifesto",
+    "manifestoLabel": "Editorial condensation for the portal, 2026. Source: Appendix A of the dissertation, pp.136–138.",
+    "principles": [
+      "LowMovie™ is not a film about skateboarding. It is the risk of the concrete crossed by the camera.",
+      "It is born from the urgency to create with what one has. To film with the body in motion. To listen to the asphalt.",
+      "In a world where the logic of production tries to tame the gesture, LowPressure™ responds with the unfinished.",
+      "Gambiarra as aesthetics. Improvisation as method. We are skate, video and city.",
+      "We accept failure as part of the crossing. We film the way we drop.",
+      "The camera shakes, the cut tears, the sound bursts. That is where the real lives.",
+      "The collective as home, as method, as labyrinth.",
+      "For those who find beauty in the glitch, in the worn tape, in the tag on the broken board.",
+      "LowMovie™ is our offering. A poetics of the possible, a camera in hand and the city as altar.",
+      "Every mistake is an archive; every hit, a surprise.",
+      "The image is always a risk, a rite, a beautiful ruin.",
+      "We do not film to please, we film to cross through. To film is to drop.",
+      "We vow to create with intention and erasure. With desire and rawness. With the rules we invent."
+    ],
+    "close": "Close Method Manual",
+    "layersNote": "The five layers are a didactic organization of the portal. Practices connect through overlaps and returns; this organization does not prescribe universal stages or require filming, editing and composing to happen at the same time.",
+    "sets": {
+      "axes": {
+        "title": "Sensitive axes",
+        "text": "Affect, listening and improvisation."
+      },
+      "procedures": {
+        "title": "Research procedures",
+        "text": "Situated experience, creative coexistence and shared listening."
+      },
+      "practices": {
+        "title": "Creative practices",
+        "text": "Filming, editing, design, composition and glitch."
+      },
+      "supports": {
+        "title": "Supports",
+        "text": "Dissertation, portal and book."
+      }
+    },
+    "symbolSheet": "Original sheet: Semiotic Study, LowMovie™ ArtBook (2022), page 5. The following pages present the symbols. Source: LowPressure™ Archive.",
+    "originalManifesto": "Original manifesto in the dissertation | Appendix A"
+  },
+  "conceptMap": {
+    "typeLabels": {
+      "conceito": "Authorial concept",
+      "autor": "Author / Reference",
+      "campo": "Thematic field"
+    },
+    "nodes": {
+      "campo-urbano": {
+        "label": "Skateboarding & city",
+        "description": "Skateboarding as urban reinscription: the body reads and reconfigures built space."
+      },
+      "campo-estetica": {
+        "label": "Relational aesthetics",
+        "description": "The work as social interstice, a space of human relations and other possibilities of exchange."
+      },
+      "campo-processo": {
+        "label": "Collaborative process",
+        "description": "Collaborative process: proposals debated and transformed, with negotiation of choices."
+      },
+      "campo-cinema": {
+        "label": "Body-camera",
+        "description": "Readings on body, camera, participation and fabulation, mobilized in situations of the film."
+      },
+      "borden": {
+        "label": "Iain Borden",
+        "description": "Skateboarding as spatial reconfiguration: skating reads and reinscribes the city, activating spaces as surfaces of creation."
+      },
+      "mcduie-ra": {
+        "label": "McDuie-Ra",
+        "description": "Subculture and territoriality. 'Archiving from below' — unofficial archive and angle of capture 'from below the knees'."
+      },
+      "bourriaud": {
+        "label": "Nicolas Bourriaud",
+        "description": "The work of art as social interstice suggesting other possibilities of exchange."
+      },
+      "hall": {
+        "label": "Stuart Hall",
+        "description": "Cultural identity as processual production, never complete."
+      },
+      "abreu": {
+        "label": "Luis A. de Abreu",
+        "description": "Paraphrase of Abreu (2004): debate of proposals in a common arena, preserving responsibilities for contributions."
+      },
+      "coessens": {
+        "label": "Coessens / Pimentel",
+        "description": "Paraphrase of Coessens, Pimentel and Moriceau: artistic practice, reflection and implication, with attention to the researcher’s position."
+      },
+      "delpeux": {
+        "label": "Delpeux",
+        "description": "Body-camera: notion of Catherine Perret, discussed by Sophie Delpeux (2018), to think about the device and the movement of whoever films."
+      },
+      "rouch": {
+        "label": "Rouch / Deren",
+        "description": "Rouch and cine-trance. Deren and dance as cinema. Fabulation as gesture of creation of the real."
+      },
+      "deleuze": {
+        "label": "Deleuze",
+        "description": "Interlocution with Deleuze: fabulation, elaboration of lived experience and possibilities of perception opened by staging."
+      },
+      "certeau": {
+        "label": "Michel de Certeau",
+        "description": "Tactics and strategies: everyday reinvention of space through ordinary practice."
+      },
+      "lefebvre": {
+        "label": "Henri Lefebvre",
+        "description": "Social production of space: urban space as product and producer of relations."
+      },
+      "lowbyrinth": {
+        "label": "Lowbyrinth™",
+        "description": "Image-concept of the processual, non-linear and labyrinthine character of creation. The labyrinth has no exit: the work is the journey."
+      },
+      "poetica": {
+        "label": "Poetics of the instant",
+        "description": "Temporal operator naming situated decisions at the meeting of body, space, light, risk and camera. The near-landing, the near-fall and the gesture in formation make perceptible a decision that happens alongside movement."
+      },
+      "estetica-borda": {
+        "label": "Aesthetics of the edge",
+        "description": "Spatial and political operator that begins at ledges, holes, imperfections and surfaces that resist the body. It helps understand negotiations between intended uses, prohibitions and passages invented by skateboarding."
+      },
+      "registro-fluxo": {
+        "label": "Flow recording",
+        "description": "Relational and methodological operator of implicated filming, in which camera, body and event influence one another. Distance, speed, framing and duration are negotiated through the participation of whoever films."
+      },
+      "fabulacao": {
+        "label": "Fabulation",
+        "description": "Interlocution with Deleuze to read the elaboration of lived experience and the crew’s staging."
+      },
+      "afeto": {
+        "label": "Affect as axis",
+        "description": "Sensible implication as epistemological operator. Affective bond as instrument of knowledge."
+      }
+    }
+  },
+  "defense": {
+    "backToPortal": "Back to portal (ESC)",
+    "block": "BLOCK",
+    "blocks": {
+      "abertura": "Opening",
+      "pesquisa": "The Research",
+      "coletivo": "LowPressure™",
+      "conceitos": "Concepts",
+      "metodologia": "Methodology",
+      "fragmentos": "Fragments",
+      "teasers": "Teasers",
+      "trailer": "Trailer",
+      "frames": "Frames",
+      "contribuicoes": "Contributions",
+      "questoes": "Critical Questions",
+      "lowbyrinth": "Lowbyrinth™",
+      "encerramento": "Closing"
+    },
+    "teasers": [
+      {
+        "name": "Eye of Horus",
+        "legend": "The gaze. The camera. The recording of attempts."
+      },
+      {
+        "name": "Ishtar Star",
+        "legend": "Collective creation and behind-the-scenes production."
+      },
+      {
+        "name": "Star of Lakshmi",
+        "legend": "Effort, error, and overcoming."
+      },
+      {
+        "name": "The Chaos",
+        "legend": "Urban tension and transgression."
+      },
+      {
+        "name": "Labyrinth",
+        "legend": "The city as a field of learning."
+      },
+      {
+        "name": "The Rat",
+        "legend": "Survival and adaptation of urban subcultures."
+      }
+    ],
+    "conceitos": [
+      {
+        "nome": "Lowbyrinth™",
+        "def": "Image-concept that synthesizes the processual, non-linear and labyrinthine character of creation within the LowPressure™ collective."
+      },
+      {
+        "nome": "Poetics of the instant",
+        "def": "Temporal operator naming situated decisions at the meeting of body, space, light, risk and camera. The near-landing, the near-fall and the gesture in formation make perceptible a decision that happens alongside movement."
+      },
+      {
+        "nome": "Aesthetics of the edge",
+        "def": "Spatial and political operator that begins at ledges, holes, imperfections and surfaces that resist the body. It helps understand negotiations between intended uses, prohibitions and passages invented by skateboarding."
+      },
+      {
+        "nome": "Flow recording",
+        "def": "Relational and methodological operator of implicated filming, in which camera, body and event influence one another. Distance, speed, framing and duration are negotiated through the participation of whoever films."
+      },
+      {
+        "nome": "Fabulation",
+        "def": "Interlocution with Deleuze: fabulation, elaboration of lived experience and possibilities of perception opened by staging."
+      },
+      {
+        "nome": "Affect as axis",
+        "def": "Sensible implication as epistemological operator."
+      }
+    ],
+    "faqItems": [
+      {
+        "q": "Poetics versus aesthetics",
+        "a": "The choice of the term poetics — rather than aesthetics — is deliberate. Poetics refers to making in act, to how the work takes shape during the process."
+      },
+      {
+        "q": "Symbol and sign",
+        "a": "The symbol condenses meanings in the aesthetic field. In dialogue with Deleuze, fabulation helps read the elaboration of lived experience and staging."
+      },
+      {
+        "q": "Methodological rigor",
+        "a": "I make my position explicit, record choices, confront materials and recognize limits. Living alongside the crew also needs to be examined."
+      },
+      {
+        "q": "Delimitation of the object",
+        "a": "The central object is the film LowMovie™ and its creative processes. The LowPressure™ collective is analyzed as a condition of production."
+      },
+      {
+        "q": "Political dimension",
+        "a": "The work acts as a micropolitics of gesture and sensible occupation of the city."
+      },
+      {
+        "q": "Conceptual autonomy",
+        "a": "The dissertation connects materials and references. Lowbyrinth™ is in development; the three operators were formulated through reflective return to practice."
+      },
+      {
+        "q": "Research contributions.",
+        "a": "I follow the audiovisual creation of LowPressure™ through poetics of the instant, aesthetics of the edge and flow recording, connecting body, city, camera and collective."
+      },
+      {
+        "q": "Skateboarding or cinema?",
+        "a": "It is about cinema from skateboarding. Skateboarding is not the final object of investigation, but the matrix."
+      }
+    ],
+    "contribuicoes": [
+      {
+        "title": "Skateboarding as audiovisual matrix",
+        "desc": "I examine skateboarding as a practice that contributes to audiovisual language, in dialogue with the survey by Machado and Brandão and with the materials of LowMovie™."
+      },
+      {
+        "title": "Conceptual operators",
+        "desc": "I formulated poetics of the instant, aesthetics of the edge and flow recording by returning reflectively to practice. Lowbyrinth™ is part of this trajectory as an emblem, operator and device in development."
+      },
+      {
+        "title": "Implicated research-creation",
+        "desc": "Through implicated research-creation, I examined my experience alongside the records, participants’ accounts and the dissertation’s references. This work supports my reading of the collective’s creative processes."
+      },
+      {
+        "title": "Displacement in the Brazilian audiovisual field",
+        "desc": "I followed how LowMovie™ was created and circulated across skateboarding, cinema and other art spaces. These trajectories offer a situated experience from which to discuss independent production and collaboration."
+      }
+    ],
+    "triad": [
+      {
+        "title": "Affect",
+        "desc": "Sensitive bond with the investigated field. To affect and be affected constitute legitimate forms of producing knowledge."
+      },
+      {
+        "title": "Listening",
+        "desc": "Attention to collective dynamics, silences, non-verbalized gestures. Listening is more than hearing."
+      },
+      {
+        "title": "Improvisation",
+        "desc": "Openness to the unforeseen as legitimate epistemological data. Mobile architecture capable of remaking itself at each encounter."
+      }
+    ],
+    "block1Quote1": "\"This research began by trying to understand what happens in this kind of gesture.\"",
+    "block1Quote2": "\"A gesture that occurs between body, city and risk — and that often ends up becoming image.\"",
+    "block2Date": "Master's Dissertation · Defended and approved on 03.27.2026",
+    "block2Intro": "The dissertation I present today investigates how subcultural practices, such as skateboarding, can produce cinematic language and aesthetic knowledge.",
+    "block2Object": "The central object of the research is the creative process of the LowPressure™ collective, through the production of the film LowMovie™.",
+    "block2Method": "Rather than observing this process from a distance, the research was built from within it.",
+    "block2Program": "Master's in Film and Video Arts | PPG-CINEAV | UNESPAR",
+    "block2Author": "Castro Pizzano · Advisor: Prof. Dr. Fábio Jabur de Noronha",
+    "block3P1": "The LowPressure™ collective organizes itself as a space of aesthetic experimentation where skateboarding, image and city converge.",
+    "block3P2": "This encounter produces not merely trick recordings, but a distinct form of audiovisual language.",
+    "block4P1": "To understand this process, I propose the concept of Lowbyrinth™.",
+    "block4P2": "The Lowbyrinth™ describes a creative process that does not organize itself linearly.",
+    "block4P3": "It functions as a sensible labyrinth, where trial, error, discovery and improvisation are part of creation.",
+    "block5P1": "I adopt implicated research-creation as a methodological approach.",
+    "block5P2": "In this model, artistic practice and theoretical reflection are not separated.",
+    "block5P3": "The creative process functions simultaneously as aesthetic production and as a field of investigation.",
+    "block5P4": "Rigor does not lie in neutrality — it lies in the capacity to interrogate every creative decision.",
+    "block6Presents": "LowPressure™ presents",
+    "block6Title": "Symbolic fragments",
+    "block6P1": "During the creation of LowMovie™, we produced audiovisual pieces that condense the film's symbolic universe.",
+    "block6P2": "These fragments do not directly reveal the work, but express the principles that structure the collective's creative process.",
+    "block8P1": "These ideas converge in the LowMovie™ trailer, which synthesizes the Lowbyrinth™.",
+    "block9P1": "LowMovie™ is not merely the object of the research.",
+    "block9P2": "It is also the space where the investigation takes place.",
+    "block9P3": "The film articulates body, camera and city as operators of language.",
+    "block10P1": "I propose four main contributions.",
+    "block11P1": "All research in art moves between conceptual tensions.",
+    "block11P2": "Rather than avoiding them, I chose to make them visible.",
+    "block12P1": "I organized the research as a navigable journey.",
+    "block12P2": "LowMovie™ is a labyrinth-film.",
+    "block12P3": "You don't watch it from the outside.",
+    "block12P4": "You must enter.",
+    "videoLabel": "Video | {{id}}",
+    "previousTeaser": "Previous teaser",
+    "nextTeaser": "Next teaser",
+    "nextBlock": "Next block"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Page not found",
+    "back": "Back to home"
+  },
+  "lowbyrinthData": {
+    "apresentacao": {
+      "title": "Overview",
+      "conceito": "Implication",
+      "derivas": [
+        {
+          "label": "Methodology",
+          "justificativa": "From personal implication to methodological rigor. Affect grounds the research."
+        },
+        {
+          "label": "Concepts",
+          "justificativa": "From narrative to conceptual cartography. Naming what experience revealed."
+        }
+      ]
+    },
+    "metodologia": {
+      "title": "Methodology",
+      "conceito": "Research-creation",
+      "derivas": [
+        {
+          "label": "LowPressure™",
+          "justificativa": "Collective creation is the field followed. Situated experience, creative coexistence and shared listening are the research procedures."
+        },
+        {
+          "label": "LowMovie™",
+          "justificativa": "Returning to the film allows us to observe the practice that the research followed and analyzed."
+        }
+      ]
+    },
+    "estrutura": {
+      "title": "Structure",
+      "conceito": "Architecture",
+      "derivas": [
+        {
+          "label": "Conceptual Map",
+          "justificativa": "From linear structure to graph. See the connections that text linearizes."
+        },
+        {
+          "label": "Overview",
+          "justificativa": "Return to the beginning with new eyes. Structure recontextualizes the origin."
+        }
+      ]
+    },
+    "conceitos": {
+      "title": "Concepts",
+      "conceito": "Lowbyrinth™",
+      "derivas": [
+        {
+          "label": "LowMovie™",
+          "justificativa": "Returning to the images connects the operators with the practice from which they emerged."
+        },
+        {
+          "label": "Conceptual Map",
+          "justificativa": "From text to graph. Visualize the theoretical constellation in its connections."
+        },
+        {
+          "label": "Reflections and Conclusions",
+          "justificativa": "From concepts to horizon. What these formulations open as possibility."
+        }
+      ]
+    },
+    "filme": {
+      "title": "LowMovie™",
+      "conceito": "Body in drift",
+      "derivas": [
+        {
+          "label": "LowPressure™",
+          "justificativa": "From film to bodies. Who are the ones who create together."
+        },
+        {
+          "label": "Concepts",
+          "justificativa": "Concepts offer a vocabulary for reflecting on the film’s creative decisions."
+        }
+      ]
+    },
+    "coletivo": {
+      "title": "LowPressure™",
+      "conceito": "Collaborative process",
+      "derivas": [
+        {
+          "label": "Contributions",
+          "justificativa": "From collective to field. What collective practice offers to academia."
+        },
+        {
+          "label": "Methodology",
+          "justificativa": "Collective creation is the field followed. Situated experience, creative coexistence and shared listening are the research procedures."
+        }
+      ]
+    },
+    "contribuicoes": {
+      "title": "Contributions",
+      "conceito": "Legacy",
+      "derivas": [
+        {
+          "label": "Reflections and Conclusions",
+          "justificativa": "From contributions to closure. What remains open."
+        },
+        {
+          "label": "Critical Questions",
+          "justificativa": "From contributions to questions. Anticipating what the committee may ask."
+        }
+      ]
+    },
+    "questoes": {
+      "title": "Critical Questions",
+      "conceito": "Anticipation",
+      "derivas": [
+        {
+          "label": "Concepts",
+          "justificativa": "From questions to definitions. Each question refers to a conceptual operator."
+        },
+        {
+          "label": "Overview",
+          "justificativa": "From questions to origin. Rereading the beginning in light of doubts."
+        }
+      ]
+    },
+    "conclusao": {
+      "title": "Reflections and Conclusions",
+      "conceito": "Horizon",
+      "derivas": [
+        {
+          "label": "Overview",
+          "justificativa": "From end to beginning. The labyrinth is circular."
+        },
+        {
+          "label": "Conceptual Map",
+          "justificativa": "From closure to full vision. The map reveals what the journey built."
+        }
+      ]
+    }
+  },
+  "methodDiagram": {
+    "core": "LOWMOVIE™",
+    "coreSub": "Body + Camera + City",
+    "expansion": "Expanding Work →",
+    "layers": {
+      "experiencia": {
+        "label": "URBAN EXPERIENCE",
+        "items": [
+          "Skateboarding",
+          "City",
+          "LowPressure™ Collective"
+        ],
+        "description": "The street is the device. Skateboarding transforms the city into a field of creation — every spot, every terrain, every session produces language."
+      },
+      "processo": {
+        "label": "CREATIVE PROCESS",
+        "items": [
+          "Filming",
+          "Editing",
+          "Design",
+          "Composition and glitch"
+        ],
+        "description": "Filming, editing, design, composition and glitch are connected practices, with overlaps and returns. Their encounters and decisions compose the creative process followed and analyzed by the research."
+      },
+      "triade": {
+        "label": "SENSITIVE AXES",
+        "items": [
+          "Affect",
+          "Listening",
+          "Improvisation"
+        ],
+        "description": "The three axes that sustain research-creation: to affect and be affected, to listen to the field, and to improvise as a form of knowledge."
+      },
+      "conceitos": {
+        "label": "OPERATIONAL CONCEPTS",
+        "items": [
+          "Poetics of the Instant",
+          "Aesthetics of the Edge",
+          "Flow Recording"
+        ],
+        "description": "Poetics of the instant, aesthetics of the edge and recording in flow are operators formulated through reflective return to practice. The descriptions below are paraphrases of the research formulations."
+      }
+    },
+    "expansionItems": [
+      "Film",
+      "LowZine",
+      "Digital Portal",
+      "Events",
+      "Living Archive"
+    ]
+  },
+  "replicar": {
+    "title": "Low Runner™ | The Replicant",
+    "subtitle": "Structure and documentation of the public reference version",
+    "brandTitle": "Low Runner™",
+    "brandTagline": "Platform · Replicable navigable-dissertation system",
+    "manifesto": "On this page I bring together the structure and tools I used to present the research as a navigable portal. The public reference version gathers selected code and documentation for consultation. Adaptations of the code and materials follow the terms of use and depend on the authorization of the respective rights holders.",
+    "architectureTitle": "Integration Architecture",
+    "stepsTitle": "Consultation and authorized adaptation",
+    "step1": {
+      "title": "Step 1: Repository and terms of use",
+      "desc": "Consult the public reference version and its terms of use. The examples below describe a possible authorized adaptation; they do not grant permission to reuse the code or materials."
+    },
+    "step2": {
+      "title": "Step 2 — Adapt the Content",
+      "desc": "Edit the JSON and TypeScript files with your research content. The structure is modular: texts live in src/i18n/locales, data in src/data, pages in src/pages."
+    },
+    "step3": {
+      "title": "Step 3 — Academic Identity",
+      "desc": "Update CITATION.cff with your name, ORCID, DOI and institution. In Layout.tsx, adjust Lattes, committee, advisor and research line links."
+    },
+    "step4": {
+      "title": "Step 4: Deposit and DOI of the material",
+      "desc": "Associate each DOI with the material actually deposited. DOI 10.5281/zenodo.20619076 identifies the dissertation LowMovie™ e o Labirinto Criativo. The code and other materials need their own identification when deposited separately.",
+      "code": "1. Identify the material to deposit\n2. Check files, credits and terms of use\n3. Record the deposit and its own DOI\nDissertation: 10.5281/zenodo.20619076"
+    },
+    "step5": {
+      "title": "Step 5 — Hosting",
+      "desc": "Choose the hosting service and check its publishing terms, limits and costs before making the project public."
+    },
+    "step6": {
+      "title": "Step 6 — Preservation Strategy",
+      "desc": "The scripts/archive.sh script organizes a copy structure, gathers local files and can generate a Git bundle. A navigable mirror of the portal must be produced and checked separately. Record the date, version and contents of each copy.",
+      "code": "bash scripts/archive.sh\n→ copy structure for local files\n→ attempt to create a Git bundle\n→ SHA256 manifest\nNavigable mirror: a separate step"
+    },
+    "stackTitle": "Technical Stack",
+    "stackNote": "The structure uses React, TypeScript, Vite and the other tools listed on this page. Consult each tool’s documentation and terms of use before adapting the project.",
+    "licenseTitle": "Licensing and Attribution",
+    "codeReuse": "Code and terms of use",
+    "codeReuseDesc": "The public reference version of the code is available for consultation. Its reproduction, modification and reuse follow the terms of use and depend on the authorizations stated there.",
+    "contentRights": "Content (All Rights Reserved)",
+    "contentRightsDesc": "The dissertation and authorial texts are my work. Photographs, the film, music, interviews and creation documents retain the credits and rights of their respective makers.",
+    "attributionRequest": "DOI 10.5281/zenodo.20619076 identifies the dissertation. To reference the portal’s code, identify the repository and the version consulted.",
+    "ctaTitle": "Next Steps",
+    "ctaRepo": "Public code version",
+    "ctaPreservation": "Preservation Guide",
+    "ctaCite": "Cite the dissertation (DOI)",
+    "ctaContact": "Contact me"
+  },
+  "ecossistema": {
+    "title": "Ecosystem",
+    "subtitle": "Three supports, one collective process",
+    "intro1": "The LowMovie™ film and the work of LowPressure™ sustain the dissertation, the book and the portal.",
+    "intro2": "The work, methodological device and infrastructure are research developments. This classification is distinct from the three supports: dissertation, book and portal.",
+    "diagramTitle": "Articulation of the three layers",
+    "diagramCaseApplied": "LowMovie™ | Collective work",
+    "diagramFormalized": "Lowbyrinth™ | In development",
+    "diagramReplicable": "Low Runner™ | Infrastructure",
+    "diagramDesc": "The work, methodological device and infrastructure are research developments. This classification is distinct from the three supports: dissertation, book and portal.",
+    "artifactsLabel": "Artifacts",
+    "circulationLabel": "Circulation Strategy",
+    "circulationP1": "The dissertation and the authorial texts on this portal are my work. The film, photographs, music, interviews and creation documents retain the authorship and credits of their makers. Use of the code follows the terms of use made available on this portal, with all rights reserved. For other uses of the materials, contact the respective rights holders.",
+    "circulationP2": "LowMovie™, LowPressure™, Lowbyrinth™ and Low Runner™ are used with the ™ symbol as trademark signaling. The DOI 10.5281/zenodo.20619076 identifies the dissertation.",
+    "circulationCta": "Licensing",
+    "next": "Access Low Runner™",
+    "layers": {
+      "lowmovie": {
+        "name": "LowMovie™",
+        "tag": "Work",
+        "status": "Consolidated",
+        "desc": "Experimental film and master's dissertation produced from the LowPressure™ collective. It materializes the poetics in motion of skateboarding as situated audiovisual language, articulating body, city, camera, and improvisation in a single creative operation.",
+        "filmArtifact": "LowMovie™ film (2023)",
+        "dissertationArtifact": "Full dissertation (PDF)",
+        "doiArtifact": "Dissertation DOI: 10.5281/zenodo.20619076",
+        "portalArtifact": "Academic portal (this site)",
+        "cta": "Reflections and Conclusions"
+      },
+      "lowbyrinth": {
+        "name": "Lowbyrinth™",
+        "tag": "Method",
+        "status": "Author-claimed mark (™)",
+        "desc": "Emblem, operator and methodological device in development, formulated within the dissertation through reflective return to practice. It articulates three axes (affect, listening, improvisation), three research procedures (situated experience, creative coexistence, shared listening), a cognitive spiral and poetic operators of the gaze (instant, edge, flow).",
+        "methodArtifact": "Method formulated in the dissertation",
+        "toolkitArtifact": "Pedagogical Toolkit (visual PDF)",
+        "conceptsArtifact": "Operator concepts",
+        "diagramArtifact": "Method diagram (Manual)",
+        "cta": "Methodology"
+      },
+      "lowrunner": {
+        "name": "Low Runner™",
+        "tag": "Platform",
+        "status": "Expanding",
+        "desc": "The structure that presents this dissertation as a navigable portal. It brings together code, documents and access to research materials. The public reference version of the code can be consulted under the stated terms of use.",
+        "repoArtifact": "Public reference version of the code",
+        "stackArtifact": "React + TypeScript + Vite stack",
+        "preservationArtifact": "Preservation strategy (archive.sh)",
+        "licenseArtifact": "License: all rights reserved (LICENSE)",
+        "cta": "Low Runner™"
+      }
+    }
+  },
+  "licenca": {
+    "title": "Licensing",
+    "subtitle": "Authorship, credits and uses",
+    "intro1": "The dissertation and the authorial texts on this portal are my work. The film, photographs, music, interviews and creation documents retain the authorship and credits of their makers. Use of the code follows the terms of use made available on this portal, with all rights reserved. For other uses of the materials, contact the respective rights holders.",
+    "intro2": "The credits identify the responsibilities for each material. Public consultation of the portal and of the public reference version of the code does not change the terms of use.",
+    "items": {
+      "lowmovie": {
+        "name": "LowMovie™",
+        "tag": "Work",
+        "license": "© Castro Pizzano and collective authors · Rights reserved · Dissertation: DOI 10.5281/zenodo.20619076",
+        "desc": "The film is a collective work of LowPressure™, credited by role (direction, screenplay, soundtracks, photography). The dissertation, authorial texts and design are by Castro Pizzano. Photographs, music and interviews belong to their respective authors. Academic citation with the dissertation DOI; other uses require permission."
+      },
+      "lowbyrinth": {
+        "name": "Lowbyrinth™",
+        "tag": "Method",
+        "license": "All rights reserved · Trademark ™",
+        "desc": "To cite Lowbyrinth™, use the dissertation reference. For reproduction or other uses of the materials, contact the rights holders identified in the credits."
+      },
+      "lowrunner": {
+        "name": "Low Runner™",
+        "tag": "Platform",
+        "license": "All rights reserved (LICENSE) · Trademark ™",
+        "desc": "The public reference version of the source code follows the terms of use made available on this portal, with all rights reserved. Consulting its structure does not grant authorization for reproduction, modification or reuse."
+      }
+    },
+    "trademarksLabel": "Claimed Trademarks",
+    "trademarks": {
+      "lowmovie": "LowMovie™",
+      "lowbyrinth": "Lowbyrinth™",
+      "lowrunner": "Low Runner™"
+    },
+    "trademarksNote": "The ™ symbol signals a mark used by the author. Unlike ®, its use does not depend on a granted registration.",
+    "contactLabel": "Licensing Contact",
+    "contactDesc": "For any use beyond academic citation, institutional partnerships or trademark inquiries, contact the author directly.",
+    "contactCta": "Send Email"
+  },
+  "defenseMode": {
+    "title": "Defense Mode",
+    "subtitle": "Presentation device for the master's dissertation defense",
+    "headline": "A situated presentation of this research.",
+    "p1": "Defense Mode is a cinematic presentation mode designed specifically for the public defense of this dissertation. It replaces the traditional slide format with a sequence of 14 articulated blocks that re-enact, at a pace controlled by the presenter, the complete arc of the research — from opening to final synthesis.",
+    "p2": "The presentation is a live navigation that connects portal materials in dialogue with the examination committee and the audience.",
+    "whyTitle": "Why it exists",
+    "whyP1": "Defense mode was created to present this research through connections between images, concepts and documents. It is one possible way of presenting the work.",
+    "whyP2": "The choice of this environment accompanies the research path and brings together the work, its records and reflection during the presentation.",
+    "howTitle": "How it works",
+    "how1": "14 sequential blocks (0 to 13) following a rigorous narrative arc: cinematic opening, context, problem, method, concepts, work, contributions, and synthesis.",
+    "how2": "Block 0 opens with a 2.5-second automatic timer to allow a cinematic full-screen entry.",
+    "how3": "Keyboard navigation: → advance · ← rewind · Esc exit · Home return to block 0 · End jump to last block.",
+    "how4": "Each block fills the entire screen in projection-optimized proportion, with no interface distractions.",
+    "accessTitle": "How to access",
+    "directLabel": "Direct access",
+    "directDesc": "For the committee, researchers, and any visitor who wants to experience the device, access is public and direct.",
+    "directCta": "Enter Defense Mode →",
+    "easterLabel": "Hidden access (Easter Egg)",
+    "easterDesc": "Originally, Defense Mode is accessed via a hidden trigger on the home page: three rapid clicks on the dissertation cover. The shortcut remains active as a discreet signature of the portal architecture.",
+    "techTitle": "Technical recommendations",
+    "tech1": "Full screen (F11) on a monitor or projection with minimum resolution 1920×1080.",
+    "tech2": "Modern browser (Chrome, Firefox, Safari, Edge — recent versions).",
+    "tech3": "Stable internet connection for embedded media loading.",
+    "contextTitle": "Context of use",
+    "contextDesc": "Conceived for the public defense of the dissertation LowMovie™ and the Creative Labyrinth (UNESPAR · PPG-CINEAV · defended and approved on 03.27.2026), Defense Mode integrates the research delivery as a documented methodological contribution — a replicable way of presenting research-creation.",
+    "next": "Printable Versions"
+  },
+  "imprimir": {
+    "title": "Printables",
+    "subtitle": "Three ways to take the portal to paper",
+    "headline": "The portal is navigable by design.",
+    "p1": "These printed versions are syntheses, not substitutes. Each respects a distinct layer of reading: the current page for ad hoc consultation, the synthesis booklet for linear reading, and the full dissertation for complete academic rigor.",
+    "philosophy": "To print is to translate. Each format preserves what it can and admits what it loses — that is the pact.",
+    "option1Title": "Print this page now",
+    "option1Desc": "Any portal page can be printed directly from the browser. The system automatically applies an optimized style: white background, black typography, hidden menus and buttons, expanded collapsed blocks, and display of URLs after each link.",
+    "or": "or",
+    "option1Note": "You can also use the \"Save as PDF\" option in the browser's print dialog to generate a clean digital file of the current page.",
+    "option2Title": "Synthesis Booklet (PDF)",
+    "option2Desc": "A curated 8 to 12-page A4 document organized for linear reading. It gathers the textual essentials of the portal into a continuous narrative, with a QR code for returning to the full portal.",
+    "option2Item1": "Abstract, central question, and objectives",
+    "option2Item2": "The three poetic operators of the gaze and the operator concepts",
+    "option2Item3": "Analytical structure of the dissertation in three chapters",
+    "option2Item4": "Portal map, credits, DOI, and licenses",
+    "option2Cta": "Synthesis Booklet (PDF) ↓",
+    "option3Title": "Full Dissertation (PDF)",
+    "option3Desc": "For full academic reading, with complete theoretical apparatus, ABNT citations, footnotes, and bibliographical references. Official document submitted to the committee.",
+    "option3Cta": "Full Dissertation ↓",
+    "next": "License"
+  },
+  "navGroups": {
+    "pesquisa": "Research",
+    "ecossistema": "Ecosystem",
+    "recursos": "Complementary resources",
+    "principal": "Film, people and archive"
+  },
+  "pdf": {
+    "previous": "Previous page",
+    "next": "Next page",
+    "zoomOut": "Zoom out",
+    "zoomIn": "Zoom in",
+    "loading": "Loading {{title}}…",
+    "loadingPages": "Loading pages…",
+    "error": "Unable to load PDF",
+    "openExternal": "Open {{title}} in another tab"
+  },
+  "portal": {
+    "opening": "LowMovie™ grew out of the encounters of LowPressure™. Here, the film meets the people, images and documents that took part in its creation. The research continues in the dissertation, the book and this expanding archive.",
+    "watch": "Watch the film",
+    "crew": "Meet the crew",
+    "archive": "Explore the archive",
+    "book": "Explore the book",
+    "research": "Research",
+    "supportTitle": "Three supports, one collective process",
+    "supportIntro": "The LowMovie™ film and the work of LowPressure™ sustain the dissertation, the book and the portal.",
+    "supports": {
+      "dissertation": {
+        "name": "The dissertation documents.",
+        "desc": "Records the investigation, its procedures, references and reflections. The deposited version remains preserved.",
+        "cta": "Full dissertation"
+      },
+      "portal": {
+        "name": "The portal expands.",
+        "desc": "Brings together the film, people, images and creation documents in a navigable archive.",
+        "cta": "Explore the archive"
+      },
+      "book": {
+        "name": "The book invites.",
+        "desc": "In editorial preparation, it brings images, voices and process documents closer to other reading paths.",
+        "cta": "Book in preparation"
+      }
+    },
+    "developmentsTitle": "Research developments",
+    "developmentsIntro": "The film LowMovie™ is the original work. Lowbyrinth™ and Low Runner™ are research developments, presented respectively as a device in development and the portal infrastructure. This relationship is distinct from the three supports: dissertation, book and portal.",
+    "developments": {
+      "lowmovie": {
+        "name": "LowMovie™ | Collective work",
+        "desc": "A 2023 film created by LowPressure™. The work and crew encounters are the origin of the paths gathered here.",
+        "cta": "Film"
+      },
+      "lowbyrinth": {
+        "name": "Lowbyrinth™ | In development",
+        "desc": "Emblem, operator and methodological device in development, formulated through reflective return to practice.",
+        "cta": "Methodology"
+      },
+      "lowrunner": {
+        "name": "Low Runner™ | Infrastructure",
+        "desc": "The navigable structure of this portal and a research development. The public reference version of the code follows the terms of use made available on the portal.",
+        "cta": "Low Runner™"
+      }
+    },
+    "bookTitle": "LowMovie™ e o Labirinto Criativo",
+    "bookStatus": "Book in editorial preparation",
+    "bookAuthor": "Author: Castro Pizzano",
+    "bookCollection": "Coleção Artes do Cinema e do Vídeo | PPG-CINEAV/UNESPAR",
+    "bookText": "In this book, I return to my research into the creation process of LowMovie™. I bring together images, voices and documents from a work in which skateboarding, filming, composing and drawing intersect.",
+    "bookRelation": "The dissertation documents the investigation and its references. The book brings the reader closer to images, voices and creative choices. The portal offers access to the work and documents that expand this path.",
+    "bookProcess": "Body, collective creation and the expansion of the work guide the reading path.",
+    "bookImageAlt": "Still from LowMovie™ (2023)",
+    "bookImageCaption": "Still from LowMovie™ (2023).",
+    "bookBrandbook": "The book incorporates the complete official LowPressure™ BrandBook, 26 pages, contextualized as a process document from 2022.",
+    "archiveTitle": "Archive",
+    "archiveSubtitle": "Film, soundtracks and creation documents",
+    "archiveIntro": "Available materials from the LowMovie™ and LowPressure™ process, with their credits, states and documented information.",
+    "noDate": "No date indicated in the document",
+    "undocumentedDate": "Publication date not documented in the consulted sources",
+    "process": "Process document",
+    "filmState": "Completed work",
+    "proposal": "Proposal / screenplay",
+    "study": "Graphic study",
+    "open": "Open document",
+    "listen": "Listen on Spotify",
+    "view": "Explore material",
+    "interviews": "Interviews",
+    "documents": "Creation documents",
+    "archiveItems": {
+      "film": {
+        "name": "LowMovie™",
+        "desc": "Full film and sequence analysis.",
+        "credits": "LowPressure™. Direction: Rafão VM; co-direction and cinematographic direction: Castro Pizzano. Screenplay: Castro Pizzano and Rafael Auto Leite, with suggestions from the crew; BFAM is a historical film credit."
+      },
+      "ep": {
+        "name": "Lowbyrinth™ EP",
+        "desc": "LowMovie™ Original Motion Picture Soundtrack, five tracks.",
+        "credits": "Dan Guinski (Non-Grata): music, SFX, mixing and mastering. Design: Castro Pizzano."
+      },
+      "album": {
+        "name": "Like Rats on Hostile Paths",
+        "desc": "LowMovie™ Soundtrack, 21-track album.",
+        "credits": "Raphael Carvalho (Relvi): compositions. Dan Guinski: mixing and mastering. Castro Pizzano: design. Mario Kreb: photography."
+      },
+      "zine": {
+        "name": "LowZine",
+        "desc": "Collective fanzine and visual records available in the gallery.",
+        "credits": "Editing and production: Black Media. Curatorship: Rafão VM and Caio Metri “Kibe”. Graphic design and prepress: Castro Pizzano. Collective production and other credits preserved in the original."
+      },
+      "artbook": {
+        "name": "LowMovie™ ArtBook",
+        "desc": "Official document of the film’s visual process, 13 pages.",
+        "credits": "Graphic design: Castro Pizzano. Historical credits preserved in the facsimile."
+      },
+      "brandbook": {
+        "name": "LowPressure™ BrandBook",
+        "desc": "Official collective identity document, 26 pages.",
+        "credits": "Graphic design: Castro Pizzano. Historical credits preserved in the facsimile."
+      },
+      "script": {
+        "name": "LowMovie™ screenplay",
+        "desc": "Original 14-page PDF, including title pages. The excerpt selected for the book is on PDF page 3, numbered 2 in the document. Planned scenes record creative proposals.",
+        "credits": "Castro Pizzano and Rafael Auto Leite, with suggestions from the crew."
+      },
+      "emblem": {
+        "name": "Graphic study of the emblem",
+        "desc": "estudo-00.pdf, one page. Document of the visual elaboration of the emblem.",
+        "credits": "Castro Pizzano."
+      },
+      "research": {
+        "name": "Research documents",
+        "desc": "Preserved dissertation, revised Pedagogical Toolkit and Synthesis Booklet, with an external erratum.",
+        "credits": "Castro Pizzano."
+      }
+    },
+    "menu": "Open menu",
+    "workYear": "Work year",
+    "platformDate": "Platform publication",
+    "documentYear": "Document year",
+    "watchVideo": "Watch video",
+    "referenceInterview": "Reference interview",
+    "researchInterview": "Interview related to the film and crew",
+    "circulationTitle": "Circulation and publications",
+    "bookReading": "From the book to the archive",
+    "bookReadingSubtitle": "Explore documents, images and references connected to the book's chapters.",
+    "reading": [
+      {
+        "title": "Traces in the streets",
+        "context": "Formation and origins of the path."
+      },
+      {
+        "title": "Collective in low relief",
+        "context": "The crew and LowZine."
+      },
+      {
+        "title": "Body in drift",
+        "context": "Body, camera and city."
+      },
+      {
+        "title": "Image in editing",
+        "context": "Frames, editing and soundtracks."
+      },
+      {
+        "title": "Identity in transit",
+        "context": "Emblem study, ArtBook and BrandBook."
+      },
+      {
+        "title": "Work in expansion",
+        "context": "Première, circulation and publications."
+      }
+    ],
+    "circulation": {
+      "lowcard": {
+        "title": "Low Pressure – “LOWMOVIE”",
+        "nature": "Brief editorial presentation of the film in a skate magazine."
+      },
+      "pocket": {
+        "title": "LOWMOVIE",
+        "nature": "Editorial presentation commenting on Curitiba and the crew and embedding the film."
+      },
+      "blackmedia": {
+        "title": "Première do LowMovie em Curitiba",
+        "nature": "Event coverage. Text: Felipe Minozzi. Photographs: Pietro Vieira."
+      },
+      "dose": {
+        "title": "Augusto Akio interview",
+        "nature": "Interview mentioning the film and crew, distinct from a review of LowMovie™."
+      }
+    },
+    "readingLinks": {
+      "timeline": "Academic and creative trajectory",
+      "apresentacao": "Research origins and context",
+      "coletivo": "Meet LowPressure™",
+      "zine": "LowZine gallery",
+      "conceitos": "Body-camera and operators",
+      "filme": "LowMovie™ | The Film",
+      "frames": "Stills and sequence analysis",
+      "soundtrack": "Film soundtracks",
+      "emblem": "Original graphic study",
+      "artbook": "LowMovie™ ArtBook | 2022",
+      "brandbook": "LowPressure™ BrandBook | 2022",
+      "premiere": "Première and record",
+      "circulation": "Circulation records",
+      "publications": "Article in Harpia journal"
+    }
+  },
+  "portalSeo": {
+    "home": {
+      "title": "LowMovie™ | Film, crew and archive",
+      "description": "LowMovie™ grew out of the encounters of LowPressure™. Here, the film meets the people, images and documents that took part in its creation. The research continues in the dissertation, the book and this expanding archive."
+    },
+    "filme": {
+      "title": "LowMovie™ | Film and collective creation",
+      "description": "LowMovie™ film (2023), a collective LowPressure™ production, with sequence analysis and creation documents."
+    },
+    "livro": {
+      "title": "Book in preparation | LowMovie™ e o Labirinto Criativo",
+      "description": "In this book, I return to my research into the creation process of LowMovie™. I bring together images, voices and documents from a work in which skateboarding, filming, composing and drawing intersect. The book is in editorial preparation for the Coleção Artes do Cinema e do Vídeo."
+    },
+    "arquivo": {
+      "title": "Archive | LowMovie™",
+      "description": "Available materials from the LowMovie™ and LowPressure™ process, with their credits, states and documented information."
+    },
+    "ecossistema": {
+      "title": "Ecosystem | Dissertation, book and LowMovie™ portal",
+      "description": "The LowMovie™ film and the work of LowPressure™ sustain the dissertation, the book and the portal."
+    },
+    "apresentacao": {
+      "title": "Overview | LowMovie™",
+      "description": "Context, subject and research positioning"
+    },
+    "metodologia": {
+      "title": "Methodology | LowMovie™",
+      "description": "Implicated research-creation, grounded in reflexivity"
+    },
+    "estrutura": {
+      "title": "Structure | LowMovie™",
+      "description": "The dissertation is organized in three movements"
+    },
+    "conceitos": {
+      "title": "Concepts | LowMovie™",
+      "description": "Theoretical cartography, authorial formulations and ethics of creation"
+    },
+    "coletivo": {
+      "title": "LowPressure™ | The Collective | LowMovie™",
+      "description": "Network of artist-skaters who activate the city as a sensible field"
+    },
+    "contribuicoes": {
+      "title": "Contributions | LowMovie™",
+      "description": "What this dissertation proposes to the field"
+    },
+    "conclusao": {
+      "title": "Reflections and Conclusions | LowMovie™",
+      "description": "Research synthesis and open horizons"
+    },
+    "timeline": {
+      "title": "Academic CV | LowMovie™",
+      "description": "Academic and professional trajectory extracted from the Lattes CV"
+    },
+    "mapa": {
+      "title": "Conceptual Map | LowMovie™",
+      "description": "Interactive cartography of relationships between authors, concepts, and thematic fields"
+    },
+    "replicar": {
+      "title": "Low Runner™ | The Replicant | LowMovie™",
+      "description": "Portal structure and public reference version of the code for consultation, under the terms of use."
+    },
+    "licenca": {
+      "title": "Licensing | LowMovie™",
+      "description": "Authorship, credits and uses"
+    },
+    "imprimir": {
+      "title": "Printables | LowMovie™",
+      "description": "Three ways to take the portal to paper"
+    },
+    "defense-mode": {
+      "title": "Defense Mode | LowMovie™",
+      "description": "Presentation device for the master's dissertation defense"
+    },
+    "": {
+      "title": "LowMovie™ | Audiovisual opening",
+      "description": "LowMovie™ grew out of the encounters of LowPressure™. Here, the film meets the people, images and documents that took part in its creation. The research continues in the dissertation, the book and this expanding archive."
+    },
+    "palestra": {
+      "title": "Lecture Mode | LowMovie™",
+      "description": "Lowbyrinth: When Research Found Me. A master’s research journey in implicated research-creation."
+    },
+    "defense": {
+      "title": "Defense Mode | LowMovie™",
+      "description": "A situated presentation of the research in 14 blocks."
+    }
+  }
+}

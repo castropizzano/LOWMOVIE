@@ -1,0 +1,38 @@
+# LOWMOVIE™ e o Labirinto Criativo
+
+> Portal da dissertação de mestrado de Castro Pizzano — pesquisa-criação implicada sobre o Coletivo LowPressure™. PPG-CINEAV · UNESPAR. Defendida e aprovada em 27 de março de 2026.
+
+A dissertação investiga processos criativos contemporâneos do Coletivo LowPressure™ a partir da articulação entre cinema, subcultura urbana, prática D.I.Y. e pesquisa-criação implicada. O filme LowMovie™ e o trabalho do LowPressure™ são a origem desse percurso. A dissertação documenta, o portal expande e o livro convida. Lowbyrinth™ é emblema, operador e dispositivo em desenvolvimento; Low Runner™ é infraestrutura do portal. Esses desdobramentos são distintos dos três suportes: dissertação, livro e portal.
+
+## Páginas
+
+- [Home](/home): Filme, crew e arquivo, com acesso à pesquisa, ao livro e aos documentos de criação.
+- [Apresentação](/apresentacao): Contexto, motivação e objeto da pesquisa.
+- [Metodologia](/metodologia): Pesquisa-criação implicada · afeto, escuta, improviso · Toolkit Pedagógico Lowbyrinth™.
+- [Estrutura](/estrutura): Arquitetura da dissertação por capítulos.
+- [Conceitos](/conceitos): Operadores conceituais — Lowbyrinth™, corpo-câmera, fabulação, glitch, D.I.Y.
+- [O Filme](/filme): Filme LowMovie™ (2023), produção coletiva do LowPressure™, com análise de sequência e documentos de criação.
+- [O Coletivo](/coletivo): Coletivo LowPressure™ e produção colaborativa (LowZine, arquivo).
+- [Contribuições](/contribuicoes): Aportes ao campo do cinema e das artes do vídeo.
+- [Questões](/questoes): Antecipação de tensões críticas da banca (FAQ acadêmico).
+- [Mapa Conceitual](/mapa): Grafo interativo das conexões teóricas.
+- [Conclusão](/conclusao): Síntese, horizontes e Arquivo de Processo.
+- [Timeline](/timeline): Trajetória acadêmica (Lattes).
+- [Ecossistema](/ecossistema): Relação entre dissertação, livro e portal; o filme como obra de origem, Lowbyrinth™ como dispositivo em desenvolvimento e Low Runner™ como infraestrutura.
+- [Licença](/licenca): Autoria, créditos e condições de uso dos materiais e do código, conforme as condições de uso e os respectivos titulares.
+- [Low Runner™](/replicar): Sistema replicável de dissertação navegável.
+- [Defense Mode](/defense-mode): Dispositivo de apresentação para defesa pública.
+- [Imprimir / Baixar](/imprimir): PDF da dissertação e Caderno-Síntese.
+
+- [Livro](/livro): LowMovie™ e o Labirinto Criativo, de Castro Pizzano, em preparação editorial para a Coleção Artes do Cinema e do Vídeo, PPG-CINEAV/UNESPAR.
+- [Arquivo](/arquivo): Filme, trilhas, LowZine, ArtBook, BrandBook, entrevistas e documentos de criação.
+
+## Código
+
+- [Versão pública de referência do código](https://github.com/castropizzano/LOWMOVIE-public): Código e documentação selecionados para consulta, conforme as condições de uso.
+- [Condições de uso do código](/docs/licenca_codigo.txt): Texto integral, com todos os direitos reservados.
+
+## Opcional
+
+- [DOI / Zenodo](https://doi.org/10.5281/zenodo.20619076): Arquivo formal da pesquisa.
+- [PDF da dissertação](/docs/dissertacao.pdf): Versão final aprovada.

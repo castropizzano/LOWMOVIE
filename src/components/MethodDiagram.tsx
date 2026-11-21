@@ -1,0 +1,250 @@
+import { useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { useTranslation } from "react-i18next";
+import { Button } from "@/components/ui/button";
+
+const LAYER_IDS = ["experiencia", "processo", "triade", "conceitos"] as const;
+
+const layerMeta = [
+  { id: "experiencia", radius: 300, color: "hsl(var(--muted-foreground) / 0.5)", activeColor: "hsl(var(--primary))" },
+  { id: "processo", radius: 240, color: "hsl(var(--muted-foreground) / 0.6)", activeColor: "hsl(var(--primary))" },
+  { id: "triade", radius: 180, color: "hsl(var(--muted-foreground) / 0.6)", activeColor: "hsl(var(--primary))" },
+  { id: "conceitos", radius: 115, color: "hsl(var(--muted-foreground) / 0.6)", activeColor: "hsl(var(--primary))" },
+];
+
+const MethodDiagram = () => {
+  const [activeLayer, setActiveLayer] = useState<string | null>(null);
+  const isMobile = useIsMobile();
+  const reducedMotion = useReducedMotion();
+  const { t } = useTranslation();
+  const cx = 400;
+  const cy = 400;
+
+  const layers = layerMeta.map((meta, i) => ({
+    ...meta,
+    label: t(`methodDiagram.layers.${meta.id}.label`),
+    items: t(`methodDiagram.layers.${meta.id}.items`, { returnObjects: true }) as string[],
+    description: t(`methodDiagram.layers.${meta.id}.description`),
+  }));
+
+  const expansionItems = t("methodDiagram.expansionItems", { returnObjects: true }) as string[];
+  const coreLabel = t("methodDiagram.core");
+  const coreSub = t("methodDiagram.coreSub");
+  const expansionLabel = t("methodDiagram.expansion");
+
+  if (isMobile) {
+    return (
+      <div className="space-y-3 px-2">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1 }}
+          className="border border-primary/60 rounded-lg p-5 text-center bg-primary/10"
+        >
+          <p className="text-base font-bold tracking-[0.3em] uppercase text-foreground">{coreLabel}</p>
+          <p className="text-[10px] tracking-widest uppercase text-muted-foreground mt-1">{coreSub}</p>
+        </motion.div>
+
+        {[...layers].reverse().map((layer, i) => (
+          <motion.div
+            key={layer.id}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 + i * 0.1 }}
+            className="border border-border rounded-lg p-4 bg-foreground/5 hover:bg-foreground/[0.08] transition-colors"
+          >
+            <Button variant="ghost" className="h-auto w-full whitespace-normal justify-start text-left text-[11px] font-bold uppercase text-foreground" aria-expanded={activeLayer === layer.id} onClick={() => setActiveLayer(activeLayer === layer.id ? null : layer.id)}>{layer.label}</Button>
+            <div className="flex flex-wrap gap-2 mt-2">
+              {layer.items.map((item) => (
+                <span key={item} className="text-xs text-foreground/70 bg-foreground/5 px-2 py-1 rounded">{item}</span>
+              ))}
+            </div>
+            {activeLayer === layer.id && (
+              <motion.p
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="text-base text-foreground/90 mt-3 leading-relaxed"
+              >
+                {layer.description}
+              </motion.p>
+            )}
+          </motion.div>
+        ))}
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+          className="border border-border border-dashed rounded-lg p-4"
+        >
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">{expansionLabel}</p>
+          <div className="flex flex-wrap gap-2">
+            {expansionItems.map((item) => (
+              <span key={item} className="text-xs text-foreground/60 bg-foreground/5 px-2 py-1 rounded">{item}</span>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-col items-center">
+      <svg viewBox="0 0 800 800" className="w-full max-w-2xl" role="img" aria-label={t("method.knowledgeSystem")}>
+        {layers.map((layer, i) => (
+          <motion.g
+            key={layer.id}
+            initial={reducedMotion ? false : { opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.3 + i * 0.15, duration: 0.6 }}
+            onMouseEnter={() => setActiveLayer(layer.id)}
+            onMouseLeave={() => setActiveLayer(null)}
+            className="cursor-default"
+          >
+            <circle
+              cx={cx}
+              cy={cy}
+              r={layer.radius}
+              fill="none"
+              stroke={activeLayer === layer.id ? layer.activeColor : layer.color}
+              strokeWidth={activeLayer === layer.id ? 2 : 1}
+              strokeDasharray={i === 0 ? "none" : "8 4"}
+              className="transition-all duration-300"
+            />
+            <text
+              x={cx}
+              y={cy - layer.radius - 8}
+              textAnchor="middle"
+              fill={activeLayer === layer.id ? "hsl(var(--primary))" : "hsl(var(--muted-foreground))"}
+              fontSize="11"
+              fontWeight="700"
+              letterSpacing="0.15em"
+              className="uppercase transition-all duration-300"
+              style={{ fontFamily: "Manrope, sans-serif" }}
+            >
+              {layer.label}
+            </text>
+
+            {layer.items.map((item, j) => {
+              const angle = (Math.PI * 2 * j) / layer.items.length - Math.PI / 2 + Math.PI / 4;
+              const x = cx + Math.cos(angle) * (layer.radius - 2);
+              const y = cy + Math.sin(angle) * (layer.radius - 2);
+              return (
+                <motion.g
+                  key={item}
+                  initial={reducedMotion ? false : { opacity: 0 }}
+                  animate={{ opacity: activeLayer === layer.id ? 1 : 0.5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <circle cx={x} cy={y} r="3" fill={activeLayer === layer.id ? layer.activeColor : "hsl(var(--muted-foreground) / 0.5)"} />
+                  <text
+                    x={x}
+                    y={y - 10}
+                    textAnchor="middle"
+                    fill={activeLayer === layer.id ? "hsl(var(--foreground))" : "hsl(var(--muted-foreground))"}
+                    fontSize="10"
+                    fontWeight="600"
+                    style={{ fontFamily: "Manrope, sans-serif" }}
+                    className="transition-all duration-300"
+                  >
+                    {item}
+                  </text>
+                </motion.g>
+              );
+            })}
+          </motion.g>
+        ))}
+
+        <motion.g
+          initial={reducedMotion ? false : { opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1, duration: 0.5, ease: "easeOut" }}
+        >
+          <circle cx={cx} cy={cy} r="45" fill="none" stroke="hsl(var(--primary))" strokeWidth="2" />
+          <motion.circle
+            cx={cx}
+            cy={cy}
+            r="45"
+            fill="hsl(var(--primary))"
+            fillOpacity="0.1"
+
+          />
+          <text
+            x={cx}
+            y={cy - 4}
+            textAnchor="middle"
+            fill="hsl(var(--foreground))"
+            fontSize="11"
+            fontWeight="700"
+            letterSpacing="0.2em"
+            style={{ fontFamily: "Manrope, sans-serif" }}
+          >
+            {coreLabel}
+          </text>
+          <text
+            x={cx}
+            y={cy + 12}
+            textAnchor="middle"
+            fill="hsl(var(--muted-foreground))"
+            fontSize="7"
+            letterSpacing="0.1em"
+            style={{ fontFamily: "Manrope, sans-serif" }}
+          >
+            {coreSub}
+          </text>
+        </motion.g>
+
+        {expansionItems.map((item, i) => {
+          const angle = (Math.PI * 2 * i) / expansionItems.length - Math.PI / 2;
+          const startR = 310;
+          const endR = 330;
+          const x1 = cx + Math.cos(angle) * startR;
+          const y1 = cy + Math.sin(angle) * startR;
+          const x2 = cx + Math.cos(angle) * endR;
+          const y2 = cy + Math.sin(angle) * endR;
+          const tx = cx + Math.cos(angle) * (endR + 12);
+          const ty = cy + Math.sin(angle) * (endR + 12);
+          return (
+            <motion.g
+              key={item}
+              initial={reducedMotion ? false : { opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.2 + i * 0.1 }}
+            >
+              <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="hsl(var(--muted-foreground) / 0.5)" strokeWidth="1" strokeDasharray="3 2" />
+              <text
+                x={tx}
+                y={ty}
+                textAnchor={Math.cos(angle) > 0.1 ? "start" : Math.cos(angle) < -0.1 ? "end" : "middle"}
+                dominantBaseline="middle"
+                fill="hsl(var(--muted-foreground))"
+                fontSize="11"
+                fontWeight="600"
+                style={{ fontFamily: "Manrope, sans-serif" }}
+              >
+                {item}
+              </text>
+            </motion.g>
+          );
+        })}
+      </svg>
+
+      <div className="w-full space-y-3 mt-4">{layers.map(layer => <div key={layer.id} className="border-l-2 border-border pl-4">
+        <Button variant="ghost" className="h-auto whitespace-normal text-left justify-start font-semibold" onFocus={() => setActiveLayer(layer.id)} onClick={() => setActiveLayer(activeLayer === layer.id ? null : layer.id)} aria-expanded={activeLayer === layer.id}>{layer.label}</Button>
+        {activeLayer === layer.id && <p className="text-base text-foreground/90 leading-relaxed mt-2">{layer.description}</p>}
+      </div>)}</div>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mt-4"
+      >
+        {expansionLabel}
+      </motion.p>
+    </div>
+  );
+};
+
+export default MethodDiagram;

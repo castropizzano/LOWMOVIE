@@ -1,0 +1,23 @@
+import Layout from "@/components/Layout";
+import SectionTitle from "@/components/SectionTitle";
+import ConceptGraph from "@/components/ConceptGraph";
+import { useTranslation } from "react-i18next";
+import SeoHead from "@/components/SeoHead";
+
+const Mapa = () => {
+  const { t } = useTranslation();
+  return (
+    <Layout>
+      <SeoHead route="/mapa" />
+      <section className="py-20 md:py-28">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <SectionTitle title={t("mapa.title")} subtitle={t("mapa.subtitle")} />
+          <div className="mb-8" />
+          <ConceptGraph />
+        </div>
+      </section>
+    </Layout>
+  );
+};
+
+export default Mapa;

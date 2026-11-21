@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "Para citar a pesquisa, use a referência preferencial (dissertação). Este arquivo também identifica o código do portal."
+title: "Portal LowMovie™ e o Labirinto Criativo (código-fonte)"
+type: software
+authors:
+  - family-names: Pizzano
+    given-names: Castro
+repository-code: "https://github.com/castropizzano/LOWMOVIE-public"
+url: "https://lowmovie.lovable.app"
+abstract: >-
+  Código-fonte do portal da dissertação de mestrado de Castro Pizzano,
+  Programa de Pós-Graduação em Cinema e Artes do Vídeo (PPG-CINEAV),
+  Universidade Estadual do Paraná (UNESPAR). O DOI abaixo identifica a
+  dissertação, não o código.
+keywords:
+  - cinema
+  - artes do vídeo
+  - pesquisa-criação
+  - subcultura
+  - skate
+  - LowPressure
+  - LowMovie
+license: "All Rights Reserved"
+preferred-citation:
+  type: thesis
+  thesis-type: "Dissertação (Mestrado em Cinema e Artes do Vídeo)"
+  title: "LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure™"
+  authors:
+    - family-names: Pizzano
+      given-names: Castro
+  institution:
+    name: "Universidade Estadual do Paraná (UNESPAR), PPG-CINEAV"
+    city: Curitiba
+  doi: "10.5281/zenodo.20619076"
+  url: "https://doi.org/10.5281/zenodo.20619076"
+  year: 2026
