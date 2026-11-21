@@ -7,3 +7,8 @@ Preparação da versão pública de referência do código e da documentação d
 ### Endereço do código
 
 - Identifica a distribuição pública como `castropizzano/lowmovie` e atualiza os links e comandos de consulta.
+
+### Apresentação e citação
+
+- Esclarece a função da versão pública no README e torna mais precisas duas descrições de metadados.
+- Usa o endereço das condições de uso em CITATION.cff, mantendo o LICENSE vigente.

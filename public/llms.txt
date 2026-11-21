@@ -19,8 +19,8 @@ A dissertação investiga processos criativos contemporâneos do Coletivo LowPre
 - [Conclusão](/conclusao): Síntese, horizontes e Arquivo de Processo.
 - [Timeline](/timeline): Trajetória acadêmica (Lattes).
 - [Ecossistema](/ecossistema): Relação entre dissertação, livro e portal; o filme como obra de origem, Lowbyrinth™ como dispositivo em desenvolvimento e Low Runner™ como infraestrutura.
-- [Licença](/licenca): Autoria, créditos e condições de uso dos materiais e do código, conforme as condições de uso e os respectivos titulares.
-- [Low Runner™](/replicar): Sistema replicável de dissertação navegável.
+- [Licença](/licenca): Autoria, créditos e condições de uso do código e dos materiais, com direitos dos respectivos titulares.
+- [Low Runner™](/replicar): Infraestrutura do portal, documentação e versão pública de referência do código.
 - [Defense Mode](/defense-mode): Dispositivo de apresentação para defesa pública.
 - [Imprimir / Baixar](/imprimir): PDF da dissertação e Caderno-Síntese.
 

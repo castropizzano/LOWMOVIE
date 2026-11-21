@@ -10,7 +10,7 @@ A dissertação documenta. O portal expande. O livro convida.
 
 ## Sobre esta versão
 
-Este repositório publica uma seleção identificada de arquivos para consulta. Seu histórico começa com a disponibilização desta versão. As atualizações públicas são revisadas antes de sua inclusão.
+Este repositório reúne uma versão revisada do código e da documentação do portal. Permite estudar sua estrutura, executar uma cópia local e referenciar a implementação em pesquisas e apresentações. Seu histórico registra as atualizações desta distribuição, revisadas antes da publicação.
 
 Os materiais de pesquisa mantêm seus créditos e condições de uso. A consulta ao código e sua disponibilidade no GitHub não concedem autorização geral para reproduzir, modificar ou reutilizar os materiais. Adaptações dependem de autorização conforme [LICENSE](LICENSE).
 
