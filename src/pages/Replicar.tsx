@@ -10,7 +10,7 @@ const Replicar = () => {
   const { t } = useTranslation();
 
   const steps = [
-    { icon: GitFork, key: "step1", code: "git clone https://github.com/castropizzano/LOWMOVIE-public.git\ncd LOWMOVIE-public\nnpm ci\nnpm run dev" },
+    { icon: GitFork, key: "step1", code: "git clone https://github.com/castropizzano/lowmovie.git\ncd lowmovie\nnpm ci\nnpm run dev" },
     { icon: Edit3, key: "step2", code: "src/i18n/locales/   ← textos (PT/EN)\nsrc/data/           ← timeline, conceitos, mapa\nsrc/pages/          ← páginas da dissertação\npublic/images/      ← imagens\npublic/docs/        ← PDFs e documentos" },
     { icon: UserCheck, key: "step3", code: "CITATION.cff           ← autoria, DOI, ORCID\nsrc/components/Layout.tsx  ← Lattes, banca, orientador\nindex.html             ← meta tags, título, OG" },
     { icon: Award, key: "step4", code: t("replicar.step4.code") },
@@ -153,7 +153,7 @@ const Replicar = () => {
           </h3>
           <div className="grid sm:grid-cols-2 gap-3">
             <Button asChild variant="outline" className="flex items-center gap-3 border border-primary/40 rounded-lg p-4 bg-primary/10 hover:bg-primary/20 transition-all group"><a
-              href="https://github.com/castropizzano/LOWMOVIE-public"
+              href="https://github.com/castropizzano/lowmovie"
               target="_blank"
               rel="noopener noreferrer"
 
@@ -163,7 +163,7 @@ const Replicar = () => {
               <ExternalLink className="h-3.5 w-3.5 text-muted-foreground" />
             </a></Button>
             <Button asChild variant="outline" className="flex items-center gap-3 border border-primary/40 rounded-lg p-4 bg-primary/10 hover:bg-primary/20 transition-all group"><a
-              href="https://github.com/castropizzano/LOWMOVIE-public/blob/main/PRESERVATION.md"
+              href="https://github.com/castropizzano/lowmovie/blob/main/PRESERVATION.md"
               target="_blank"
               rel="noopener noreferrer"
 

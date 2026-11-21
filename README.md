@@ -28,8 +28,8 @@ Os materiais de pesquisa mantêm seus créditos e condições de uso. A consulta
 Requisitos: Git, Node.js e npm.
 
 ```sh
-git clone https://github.com/castropizzano/LOWMOVIE-public.git
-cd LOWMOVIE-public
+git clone https://github.com/castropizzano/lowmovie.git
+cd lowmovie
 npm ci
 npm run dev
 ```

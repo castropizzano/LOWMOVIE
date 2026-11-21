@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Pizzano
     given-names: Castro
-repository-code: "https://github.com/castropizzano/LOWMOVIE-public"
+repository-code: "https://github.com/castropizzano/lowmovie"
 url: "https://lowmovie.lovable.app"
 abstract: >-
   Código-fonte do portal da dissertação de mestrado de Castro Pizzano,

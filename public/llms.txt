@@ -29,7 +29,7 @@ A dissertação investiga processos criativos contemporâneos do Coletivo LowPre
 
 ## Código
 
-- [Versão pública de referência do código](https://github.com/castropizzano/LOWMOVIE-public): Código e documentação selecionados para consulta, conforme as condições de uso.
+- [Versão pública de referência do código](https://github.com/castropizzano/lowmovie): Código e documentação selecionados para consulta, conforme as condições de uso.
 - [Condições de uso do código](/docs/licenca_codigo.txt): Texto integral, com todos os direitos reservados.
 
 ## Opcional
