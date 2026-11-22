@@ -849,7 +849,7 @@
   },
   "conceptMap": {
     "typeLabels": {
-      "conceito": "Authorial concept",
+      "conceito": "Formulations and interlocutions",
       "autor": "Author / Reference",
       "campo": "Thematic field"
     },
@@ -938,7 +938,9 @@
         "label": "Affect as axis",
         "description": "Sensible implication as epistemological operator. Affective bond as instrument of knowledge."
       }
-    }
+    },
+    "textView": "Nodes and relationships",
+    "connections": "Map relationships"
   },
   "defense": {
     "backToPortal": "Back to portal (ESC)",
@@ -1116,7 +1118,9 @@
   "notFound": {
     "title": "404",
     "message": "Page not found",
-    "back": "Back to home"
+    "back": "Back to home",
+    "metaTitle": "Page not found | LowMovie™",
+    "metaDescription": "The requested address does not correspond to a page in the LowMovie™ portal. Return to the home page."
   },
   "lowbyrinthData": {
     "apresentacao": {
@@ -1217,7 +1221,7 @@
         },
         {
           "label": "Critical Questions",
-          "justificativa": "From contributions to questions. Anticipating what the committee may ask."
+          "justificativa": "From contributions to questions. Examine the questions and tensions of the defended research."
         }
       ]
     },
@@ -1315,11 +1319,13 @@
     },
     "step2": {
       "title": "Step 2 — Adapt the Content",
-      "desc": "Edit the JSON and TypeScript files with your research content. The structure is modular: texts live in src/i18n/locales, data in src/data, pages in src/pages."
+      "desc": "Edit the JSON and TypeScript files with your research content. The structure is modular: texts live in src/i18n/locales, data in src/data, pages in src/pages.",
+      "code": "src/i18n/locales/   ← texts (PT/EN)\nsrc/data/           ← timeline, concepts, map\nsrc/pages/          ← dissertation pages\npublic/images/      ← images\npublic/docs/        ← PDFs and documents"
     },
     "step3": {
       "title": "Step 3 — Academic Identity",
-      "desc": "Update CITATION.cff with your name, ORCID, DOI and institution. In Layout.tsx, adjust Lattes, committee, advisor and research line links."
+      "desc": "Update CITATION.cff with your name, ORCID, DOI and institution. In Layout.tsx, adjust Lattes, committee, advisor and research line links.",
+      "code": "CITATION.cff               ← authorship, DOI, ORCID\nsrc/components/Layout.tsx  ← Lattes, committee, advisor\nindex.html                 ← metadata, title, OG"
     },
     "step4": {
       "title": "Step 4: Deposit and DOI of the material",
@@ -1328,7 +1334,8 @@
     },
     "step5": {
       "title": "Step 5 — Hosting",
-      "desc": "Choose the hosting service and check its publishing terms, limits and costs before making the project public."
+      "desc": "Generate dist/ with the commands below and choose hosting that routes portal paths to index.html (SPA fallback). Check limits and costs. GitHub Pages requires specific Vite base and BrowserRouter routing configuration; publishing dist/ alone does not guarantee direct access to routes.",
+      "code": "npm ci\nnpm run build\nOutput: dist/\nSPA hosting: fallback to index.html"
     },
     "step6": {
       "title": "Step 6 — Preservation Strategy",
@@ -1347,7 +1354,16 @@
     "ctaRepo": "Public code version",
     "ctaPreservation": "Preservation Guide",
     "ctaCite": "Cite the dissertation (DOI)",
-    "ctaContact": "Contact me"
+    "ctaContact": "Contact me",
+    "architecture": {
+      "editing": "Lovable · editing",
+      "portal": "Portal · presentation",
+      "code": "GitHub · public reference version",
+      "identity": "ORCID and Lattes · author identification",
+      "thesis": "Zenodo · dissertation DOI",
+      "media": "Google Drive · reference materials",
+      "archive": "Wayback Machine · capture consultation"
+    }
   },
   "ecossistema": {
     "title": "Ecosystem",
@@ -1472,11 +1488,11 @@
     "p1": "These printed versions are syntheses, not substitutes. Each respects a distinct layer of reading: the current page for ad hoc consultation, the synthesis booklet for linear reading, and the full dissertation for complete academic rigor.",
     "philosophy": "To print is to translate. Each format preserves what it can and admits what it loses — that is the pact.",
     "option1Title": "Print this page now",
-    "option1Desc": "Any portal page can be printed directly from the browser. The system automatically applies an optimized style: white background, black typography, hidden menus and buttons, expanded collapsed blocks, and display of URLs after each link.",
+    "option1Desc": "Any portal page can be printed directly from the browser, with a white background, black typography, hidden menus and buttons, and URLs after links. Open the desired tabs and sections before printing and check the print preview.",
     "or": "or",
     "option1Note": "You can also use the \"Save as PDF\" option in the browser's print dialog to generate a clean digital file of the current page.",
     "option2Title": "Synthesis Booklet (PDF)",
-    "option2Desc": "A curated 8 to 12-page A4 document organized for linear reading. It gathers the textual essentials of the portal into a continuous narrative, with a QR code for returning to the full portal.",
+    "option2Desc": "A curated 10-page A4 document organized for linear reading. It gathers the textual essentials of the portal into a continuous narrative, with a QR code for returning to the full portal.",
     "option2Item1": "Abstract, central question, and objectives",
     "option2Item2": "The three poetic operators of the gaze and the operator concepts",
     "option2Item3": "Analytical structure of the dissertation in three chapters",
@@ -1501,7 +1517,8 @@
     "loading": "Loading {{title}}…",
     "loadingPages": "Loading pages…",
     "error": "Unable to load PDF",
-    "openExternal": "Open {{title}} in another tab"
+    "openExternal": "Open {{title}} in another tab",
+    "original": "Original PDF: {{title}}"
   },
   "portal": {
     "opening": "LowMovie™ grew out of the encounters of LowPressure™. Here, the film meets the people, images and documents that took part in its creation. The research continues in the dissertation, the book and this expanding archive.",
@@ -1688,7 +1705,8 @@
       "premiere": "Première and record",
       "circulation": "Circulation records",
       "publications": "Article in Harpia journal"
-    }
+    },
+    "skipContent": "Skip to content"
   },
   "portalSeo": {
     "home": {
@@ -1769,11 +1787,41 @@
     },
     "palestra": {
       "title": "Lecture Mode | LowMovie™",
-      "description": "Lowbyrinth: When Research Found Me. A master’s research journey in implicated research-creation."
+      "description": "Lowbyrinth™: When Research Found Me. A master’s research journey in implicated research-creation."
     },
     "defense": {
       "title": "Defense Mode | LowMovie™",
       "description": "A situated presentation of the research in 14 blocks."
+    },
+    "questoes": {
+      "title": "Critical Questions | LowMovie™",
+      "description": "Reflections on tensions in the subject, method and research-creation presented in the dissertation."
+    },
+    "guia-apresentador": {
+      "title": "Presenter’s Guide | LowMovie™",
+      "description": "Public lecture support guide with sequence, preparation and reference materials."
     }
+  },
+  "presenterGuide": {
+    "subtitle": "Public presentation support guide · {{count}} blocks",
+    "intro": "This public guide brings together preparation, a recommended sequence, quick links, reminders and support materials for delivering the lecture.",
+    "checklist": [
+      "Test the projector, audio, internet and browser at the lecture venue.",
+      "Rehearse reading the 10 blocks aloud.",
+      "Open support pages and check the videos using the venue’s connection.",
+      "Open /palestra on the projector and check the full-screen presentation.",
+      "Download PDFs in advance and bring copies for reference and printing.",
+      "Test any local installation separately. Embedded videos depend on external services and an internet connection."
+    ],
+    "reminders": [
+      "Speak calmly so the audience can follow.",
+      "Use the page as visual support and narrate in your own voice.",
+      "Adjust the pace of the blocks to the time available for the lecture.",
+      "Reserve time for audience questions.",
+      "Arrows ← → navigate blocks · Space advances · Esc returns to index."
+    ],
+    "printOptions": "Printing options",
+    "onlineDefense": "Defense Mode (online presentation)",
+    "publicSupport": "Public lecture support guide"
   }
 }

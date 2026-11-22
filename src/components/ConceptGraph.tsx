@@ -1,6 +1,8 @@
-import { useRef, useState, useMemo } from "react";
-import { nodes, edges, typeColors, GraphNode, NodeType } from "@/data/conceptMap";
+import { useRef, useState, useMemo, useId } from "react";
+import { nodes, edges, typeColors, typeLabels, getConnectedNodes, GraphNode, NodeType } from "@/data/conceptMap";
 import { useTranslation } from "react-i18next";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { projectSvgPoint } from "@/lib/svg-position";
 
 interface SimNode extends GraphNode {
   x: number;
@@ -17,6 +19,8 @@ const ConceptGraph = () => {
   const { t } = useTranslation();
   const svgRef = useRef<SVGSVGElement>(null);
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
+  const descriptionId = useId();
+  const isMobile = useIsMobile();
 
   // Static spiral layout: campos interleaved as anchor points along an Archimedean spiral
   const simNodes = useMemo<SimNode[]>(() => {
@@ -53,14 +57,15 @@ const ConceptGraph = () => {
   const nodeMap = useMemo(() => new Map(simNodes.map((n) => [n.id, n])), [simNodes]);
 
   return (
-    <div className="relative w-full h-[70vh] min-h-[500px] border border-border rounded-lg bg-card/30 overflow-hidden">
+    <div className="w-full space-y-6">
+    <div className="hidden md:block relative w-full h-[70vh] min-h-[500px] border border-border rounded-lg bg-card/30 overflow-hidden">
       {/* Legenda */}
       <div className="absolute top-4 left-4 z-10 flex flex-col gap-2 bg-background/80 backdrop-blur-sm rounded-md p-3 border border-border">
         {(["conceito", "autor", "campo"] as NodeType[]).map((type) => (
           <div key={type} className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full" style={{ backgroundColor: typeColors[type] }} />
             <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-              {t(`conceptMap.typeLabels.${type}`)}
+              {t(`conceptMap.typeLabels.${type}`, typeLabels[type])}
             </span>
           </div>
         ))}
@@ -74,10 +79,7 @@ const ConceptGraph = () => {
         const rect = svg?.getBoundingClientRect();
         const containerW = rect?.width ?? 900;
         const containerH = rect?.height ?? 650;
-        const scaleX = containerW / 900;
-        const scaleY = containerH / 650;
-        const screenX = node.x * scaleX;
-        const screenY = node.y * scaleY;
+        const { x: screenX, y: screenY } = projectSvgPoint(node.x, node.y, containerW, containerH);
         const CARD_W = 280;
         const CARD_H = 180;
         const offset = 20;
@@ -89,13 +91,13 @@ const ConceptGraph = () => {
         const top = Math.max(8, Math.min(screenY - 10, containerH - CARD_H - 8));
         return (
           <div
-            id="concept-node-description"
+            id={descriptionId}
             role="status"
             className="absolute z-20 w-[280px] max-w-[calc(100%-16px)] max-h-[calc(100%-16px)] overflow-auto bg-popover border border-border rounded-md p-3 shadow-lg"
             style={{ left: Math.max(8, left), top }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: typeColors[node.type] }}>
-              {t(`conceptMap.typeLabels.${node.type}`)}
+              {t(`conceptMap.typeLabels.${node.type}`, typeLabels[node.type])}
             </p>
             <p className="text-sm font-semibold text-foreground mb-1">{t(`conceptMap.nodes.${node.id}.label`, node.label)}</p>
             <p className="text-xs text-muted-foreground leading-relaxed">{t(`conceptMap.nodes.${node.id}.description`, node.description)}</p>
@@ -145,7 +147,7 @@ const ConceptGraph = () => {
                 role="button"
                 tabIndex={0}
                 aria-label={t(`conceptMap.nodes.${node.id}.label`, node.label)}
-                aria-describedby={isHovered ? "concept-node-description" : undefined}
+                aria-describedby={isHovered ? descriptionId : undefined}
                 aria-pressed={isHovered}
                 onMouseEnter={() => setHoveredNode(node.id)}
                 onMouseLeave={() => setHoveredNode(null)}
@@ -198,6 +200,33 @@ const ConceptGraph = () => {
           })}
         </g>
       </svg>
+    </div>
+    <details open={isMobile} className="border-t border-border pt-4">
+      <summary className="cursor-pointer min-h-11 py-2 text-sm font-semibold text-foreground">
+        {t("conceptMap.textView")}
+      </summary>
+      <ul className="divide-y divide-border">
+        {nodes.map(node => <li key={node.id}>
+          <details className="py-3">
+            <summary className="cursor-pointer min-h-11 py-2 text-base font-semibold text-foreground">
+              {t(`conceptMap.nodes.${node.id}.label`, node.label)}
+              <span className="block text-[11px] font-normal text-muted-foreground mt-1">
+                {t(`conceptMap.typeLabels.${node.type}`, typeLabels[node.type])}
+              </span>
+            </summary>
+            <p className="reading-measure text-sm leading-relaxed text-foreground/90 py-3">
+              {t(`conceptMap.nodes.${node.id}.description`, node.description)}
+            </p>
+            <h3 className="text-xs font-semibold text-muted-foreground mb-2">{t("conceptMap.connections")}</h3>
+            <ul className="list-disc pl-5 space-y-2 text-sm text-foreground/90">
+              {getConnectedNodes(node.id).map(connected => <li key={connected.id}>
+                {t(`conceptMap.nodes.${connected.id}.label`, connected.label)}
+              </li>)}
+            </ul>
+          </details>
+        </li>)}
+      </ul>
+    </details>
     </div>
   );
 };

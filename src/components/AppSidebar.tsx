@@ -121,7 +121,7 @@ export function AppSidebar() {
 
         {navSections.map((section) => (
           <SidebarGroup key={section.groupKey}>
-            <SidebarGroupLabel className="text-[11px] uppercase tracking-widest text-sidebar-foreground/40">
+            <SidebarGroupLabel className="text-[11px] uppercase tracking-widest text-sidebar-foreground/80">
               {t(`navGroups.${section.groupKey}`)}
             </SidebarGroupLabel>
             <SidebarGroupContent>
@@ -136,7 +136,7 @@ export function AppSidebar() {
           <a href="https://www.instagram.com/lowpressure.fam/" target="_blank" rel="noopener noreferrer">
             <img src={lowpressureLogo} alt="LowPressure™" className="w-24 h-24 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" width={96} height={96} loading="lazy" decoding="async" />
           </a>
-          <p className="text-[11px] uppercase tracking-widest text-sidebar-foreground/40">
+          <p className="text-[11px] uppercase tracking-widest text-sidebar-foreground/80">
             © 2026 Castro Pizzano
           </p>
         </div>

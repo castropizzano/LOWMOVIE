@@ -65,9 +65,9 @@ const META: Record<string, SeoMeta> = {
     type: "article",
   },
   "/questoes": {
-    title: "Questões Críticas — FAQ Acadêmico · LowMovie™",
+    title: "Questões Críticas | LowMovie™",
     description:
-      "Antecipação de tensões críticas da banca examinadora: perguntas-chave e respostas argumentadas sobre método, objeto e rigor.",
+      "Reflexões sobre as tensões do objeto, do método e da pesquisa-criação apresentadas na dissertação.",
     type: "article",
   },
   "/mapa": {
@@ -126,6 +126,10 @@ const META: Record<string, SeoMeta> = {
     title: "Palestra sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada — LowMovie™",
     description:
       "Palestra de Castro Pizzano: 10 blocos sequenciais sobre o percurso de uma pesquisa de mestrado em pesquisa-criação implicada, usando o portal LowMovie™ como ambiente.",
+  },
+  "/guia-apresentador": {
+    title: "Guia do Apresentador | LowMovie™",
+    description: "Guia público de apoio à palestra, com sequência, preparação e materiais de consulta.",
   },
 };
 

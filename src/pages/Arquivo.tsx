@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { archiveMaterials, interviews, circulationRecords, videoPublications } from "@/data/portal";
 export default function Arquivo() {
   const { t, i18n } = useTranslation();
-  const formatDate = (value: string) => new Intl.DateTimeFormat(i18n.language === "pt" ? "pt-BR" : "en-GB", { timeZone: "UTC" }).format(new Date(value.slice(0, 10) + "T12:00:00Z"));
+  const formatDate = (value: string) => new Intl.DateTimeFormat(i18n.resolvedLanguage === "pt" ? "pt-BR" : "en-GB", { timeZone: "UTC" }).format(new Date(value.slice(0, 10) + "T12:00:00Z"));
   return <Layout><SeoHead route="/arquivo" />
     <section className="py-16 md:py-20 mx-auto max-w-5xl px-4">
       <SectionTitle title={t("portal.archiveTitle")} subtitle={t("portal.archiveSubtitle")} />

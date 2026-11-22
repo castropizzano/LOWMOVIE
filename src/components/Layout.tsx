@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useRef, lazy, Suspense } from "react";
+import { ReactNode, useRef, lazy, Suspense } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { getPortalPanel, withPortalPanel, PortalPanel } from "@/lib/panel-state";
@@ -20,12 +20,11 @@ const Layout = ({ children }: { children: ReactNode }) => {
   const setPanel = (value: PortalPanel | null) => navigate({ pathname: location.pathname, search: withPortalPanel(search, value).toString(), hash: location.hash }, { preventScrollReset: true });
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
-
   return (
     <SidebarProvider>
+      <a href="#main-content" onClick={(event) => { event.preventDefault(); document.getElementById("main-content")?.focus(); }} className="no-print sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:bg-background focus:text-foreground focus:p-3 focus:border focus:border-border">
+        {t("portal.skipContent")}
+      </a>
       <div className="min-h-screen flex w-full">
         <AppSidebar />
 
@@ -45,11 +44,11 @@ const Layout = ({ children }: { children: ReactNode }) => {
               {t("header.methodManual")}
             </Button>
             <div className="ml-auto shrink-0 flex items-center gap-1">
-              <Button variant="ghost" aria-pressed={i18n.language === "pt"}
+              <Button variant="ghost" aria-pressed={i18n.resolvedLanguage === "pt"}
                 onClick={() => i18n.changeLanguage("pt")}
                 className={cn(
                   "text-[11px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 transition-colors",
-                  i18n.language === "pt"
+                  i18n.resolvedLanguage === "pt"
                     ? "bg-primary/20 text-primary"
                     : "text-muted-foreground hover:text-foreground"
                 )}
@@ -57,11 +56,11 @@ const Layout = ({ children }: { children: ReactNode }) => {
                 PT
               </Button>
               <div className="w-px h-4 bg-border/50" />
-              <Button variant="ghost" aria-pressed={i18n.language === "en"}
+              <Button variant="ghost" aria-pressed={i18n.resolvedLanguage === "en"}
                 onClick={() => i18n.changeLanguage("en")}
                 className={cn(
                   "text-[11px] font-bold uppercase tracking-[0.2em] px-2.5 py-1 transition-colors",
-                  i18n.language === "en"
+                  i18n.resolvedLanguage === "en"
                     ? "bg-primary/20 text-primary"
                     : "text-muted-foreground hover:text-foreground"
                 )}
@@ -71,7 +70,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
             </div>
           </header>
 
-          <main className="flex-1">
+          <main id="main-content" tabIndex={-1} className="flex-1">
             {children}
           </main>
 

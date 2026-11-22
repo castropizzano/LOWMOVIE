@@ -21,4 +21,6 @@
   <url><loc>https://lowmovie.lovable.app/imprimir</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://lowmovie.lovable.app/livro</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://lowmovie.lovable.app/arquivo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://lowmovie.lovable.app/palestra</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://lowmovie.lovable.app/guia-apresentador</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>

@@ -108,8 +108,9 @@ const PdfPageViewer = ({ src, title, initialPage = 1 }: PdfPageViewerProps) => {
       </div>
 
       {/* PDF Page */}
-      <div ref={containerRef} className="flex justify-center overflow-auto bg-muted/30 py-6 min-h-[240px] max-h-[75vh]">
+      <div ref={containerRef} className="overflow-auto bg-muted/30 py-6 min-h-[240px] max-h-[75vh]">
         {visible && <Document
+          className="w-max min-w-0 mx-auto"
           file={src}
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={() => { setFailed(true); setNumPages(0); }}
@@ -137,6 +138,11 @@ const PdfPageViewer = ({ src, title, initialPage = 1 }: PdfPageViewerProps) => {
             renderAnnotationLayer={false}
           />
         </Document>}
+      </div>
+      <div className="border-t border-border/30 px-4 py-3">
+        <a href={src} target="_blank" rel="noopener noreferrer" className="inline-block text-sm text-primary underline underline-offset-4 py-2">
+          {t("pdf.original", { title })}
+        </a>
       </div>
     </div>
   );

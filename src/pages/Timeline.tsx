@@ -30,7 +30,7 @@ const allCategories: TimelineCategory[] = [
 
 const Timeline = () => {
   const { t, i18n } = useTranslation();
-  const lang = i18n.language === "pt" ? "pt" : "en";
+  const lang = i18n.resolvedLanguage === "pt" ? "pt" : "en";
   const [activeFilters, setActiveFilters] = useState<Set<TimelineCategory>>(
     new Set(allCategories)
   );

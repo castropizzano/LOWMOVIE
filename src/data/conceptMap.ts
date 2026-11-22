@@ -32,7 +32,7 @@ export const nodes: GraphNode[] = [
   { id: "certeau", label: "Michel de Certeau", type: "autor", description: "Táticas e estratégias: reinvenção cotidiana do espaço pela prática ordinária." },
   { id: "lefebvre", label: "Henri Lefebvre", type: "autor", description: "Produção social do espaço: o espaço urbano como produto e produtor de relações." },
 
-  // Conceitos autorais
+  // Formulações e interlocuções
   { id: "lowbyrinth", label: "Lowbyrinth™", type: "conceito", description: "Imagem-conceito do caráter processual, não-linear e labiríntico da criação. O labirinto não tem saída: a obra é o percurso." },
   { id: "poetica", label: "Poética do instante", type: "conceito", description: "Operador temporal que nomeia decisões situadas no encontro entre corpo, espaço, luz, risco e câmera. O quase-acerto, a quase-queda e o gesto em formação tornam perceptível uma decisão que acontece junto ao movimento." },
   { id: "estetica-borda", label: "Estética da borda", type: "conceito", description: "Operador espacial e político que começa nas quinas, nos buracos, nas imperfeições e nas superfícies que resistem ao corpo. Permite compreender negociações entre usos previstos, interdições e passagens inventadas pelo skate." },
@@ -85,7 +85,14 @@ export const typeColors: Record<NodeType, string> = {
 };
 
 export const typeLabels: Record<NodeType, string> = {
-  conceito: "Conceito autoral",
+  conceito: "Formulações e interlocuções",
   autor: "Autor / Referência",
   campo: "Campo temático",
 };
+
+export function getConnectedNodes(id: string): GraphNode[] {
+  const connectedIds = new Set(edges.flatMap(edge =>
+    edge.source === id ? [edge.target] : edge.target === id ? [edge.source] : []
+  ));
+  return nodes.filter(node => connectedIds.has(node.id));
+}

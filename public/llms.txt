@@ -1,4 +1,4 @@
-# LOWMOVIE™ e o Labirinto Criativo
+# LowMovie™ e o Labirinto Criativo
 
 > Portal da dissertação de mestrado de Castro Pizzano — pesquisa-criação implicada sobre o Coletivo LowPressure™. PPG-CINEAV · UNESPAR. Defendida e aprovada em 27 de março de 2026.
 
@@ -14,7 +14,7 @@ A dissertação investiga processos criativos contemporâneos do Coletivo LowPre
 - [O Filme](/filme): Filme LowMovie™ (2023), produção coletiva do LowPressure™, com análise de sequência e documentos de criação.
 - [O Coletivo](/coletivo): Coletivo LowPressure™ e produção colaborativa (LowZine, arquivo).
 - [Contribuições](/contribuicoes): Aportes ao campo do cinema e das artes do vídeo.
-- [Questões](/questoes): Antecipação de tensões críticas da banca (FAQ acadêmico).
+- [Questões Críticas](/questoes): Reflexões sobre questões e tensões do objeto, do método e da pesquisa já defendida.
 - [Mapa Conceitual](/mapa): Grafo interativo das conexões teóricas.
 - [Conclusão](/conclusao): Síntese, horizontes e Arquivo de Processo.
 - [Timeline](/timeline): Trajetória acadêmica (Lattes).
@@ -23,6 +23,8 @@ A dissertação investiga processos criativos contemporâneos do Coletivo LowPre
 - [Low Runner™](/replicar): Infraestrutura do portal, documentação e versão pública de referência do código.
 - [Defense Mode](/defense-mode): Dispositivo de apresentação para defesa pública.
 - [Imprimir / Baixar](/imprimir): PDF da dissertação e Caderno-Síntese.
+- [Modo Palestra](/palestra): Lowbyrinth™: Quando a Pesquisa Me Encontrou, percurso da pesquisa em dez blocos.
+- [Guia do Apresentador](/guia-apresentador): Guia público de apoio à palestra, com preparação, sequência e materiais de consulta.
 
 - [Livro](/livro): LowMovie™ e o Labirinto Criativo, de Castro Pizzano, em preparação editorial para a Coleção Artes do Cinema e do Vídeo, PPG-CINEAV/UNESPAR.
 - [Arquivo](/arquivo): Filme, trilhas, LowZine, ArtBook, BrandBook, entrevistas e documentos de criação.

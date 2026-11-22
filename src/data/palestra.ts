@@ -178,7 +178,7 @@ export const BLOCOS: PalestraBloco[] = [
     slug: "estado-da-arte",
     tempoMin: 10,
     portalRota: "/conceitos",
-    portalLabel: "Conceitos Operadores",
+    portalLabel: "Conceitos",
     titulo: {
       pt: "Estado da arte [mapeamento]",
       en: "State of the art [mapping]",
@@ -188,17 +188,17 @@ export const BLOCOS: PalestraBloco[] = [
       en: "State of the art is a critical mapping of what has been produced on your problem. It serves two functions: (a) demonstrating that there is enough literature to sustain an academic conversation, and (b) locating the specific gap the research fills. With this mapping, the contribution becomes situated within the field.",
     },
     comoChegueiNisso: {
-      pt: "Mapeei três campos: (1) teoria do cinema e videoarte, referências para pensar imagem-movimento, montagem e dispositivo; (2) estudos urbanos e subculturais, para situar o skate como prática espacial e identitária; (3) pesquisa-criação como metodologia, autoras e autores que legitimam o praticante-pesquisador. A intersecção dos três campos é onde minha contribuição se aloja. Esses campos viraram, dentro da dissertação, os conceitos operadores: ferramentas teóricas que atravessam o texto inteiro.",
-      en: "I mapped three fields: (1) film and video art theory, references to think image-movement, montage and dispositif; (2) urban and subcultural studies, to situate skateboarding as spatial and identity practice; (3) research-creation as methodology, authors who legitimize the practitioner-researcher. The intersection of the three fields is where my contribution sits. These fields became, within the dissertation, the operating concepts: theoretical tools that run through the entire text.",
+      pt: "Mapeei três campos: (1) teoria do cinema e videoarte, referências para pensar imagem-movimento, montagem e dispositivo; (2) estudos urbanos e subculturais, para situar o skate como prática espacial e identitária; (3) pesquisa-criação como metodologia, autoras e autores que legitimam o praticante-pesquisador. A intersecção dos três campos é onde minha contribuição se aloja. Esses campos sustentam interlocuções teóricas na dissertação. Pelo retorno reflexivo à prática, formulei os três operadores autorais: poética do instante, estética da borda e registro em fluxo. A página Conceitos reúne essas formulações, interlocuções teóricas e eixos da pesquisa.",
+      en: "I mapped three fields: (1) film and video art theory, references to think image-movement, montage and dispositif; (2) urban and subcultural studies, to situate skateboarding as spatial and identity practice; (3) research-creation as methodology, authors who legitimize the practitioner-researcher. The intersection of the three fields is where my contribution sits. These fields support theoretical interlocutions in the dissertation. By returning reflectively to practice, I formulated the three authorial operators: poetics of the instant, aesthetics of the edge and flow recording. The Concepts page brings together these formulations, theoretical interlocutions and research axes.",
     },
     ancoras: {
       pt: [
-        "Abrir /conceitos: mostrar os 6 conceitos operadores como cristalização do estado da arte",
+        "Abrir /conceitos: distinguir os três operadores autorais, as interlocuções teóricas e os eixos da pesquisa",
         "Abrir /mapa: mostrar o grafo de conexões entre conceitos",
         "Como organizar leituras em campos, não em pilhas",
       ],
       en: [
-        "Open /conceitos: show the 6 operating concepts as crystallization of the state of the art",
+        "Open /conceitos: distinguish the three authorial operators, theoretical interlocutions and research axes",
         "Open /mapa: show the graph of concept connections",
         "How to organize readings into fields, not piles",
       ],
@@ -215,8 +215,8 @@ export const BLOCOS: PalestraBloco[] = [
       en: "Objectives [general and specific]",
     },
     oQueE: {
-      pt: "Objetivos traduzem a pergunta em ações de pesquisa. O objetivo geral responde à pergunta como um todo; os específicos quebram esse todo em etapas verificáveis. Cada objetivo específico tende a corresponder a uma seção ou capítulo, oferecendo critérios concretos para verificar o avanço da pesquisa.",
-      en: "Objectives translate the question into research actions. The general objective answers the question as a whole; the specific objectives break this whole into verifiable steps. Each specific objective tends to correspond to a section or chapter, offering concrete criteria to verify the research progress.",
+      pt: "Objetivos traduzem a pergunta em ações de pesquisa. O objetivo geral responde à pergunta como um todo; os específicos quebram esse todo em etapas verificáveis. A articulação dos objetivos com o argumento oferece critérios concretos para verificar o avanço da pesquisa.",
+      en: "Objectives translate the question into research actions. The general objective answers the question as a whole; the specific objectives break this whole into verifiable steps. The articulation of objectives with the argument offers concrete criteria to verify the research progress.",
     },
     comoChegueiNisso: {
       pt: "Defini um objetivo geral, analisar a poética em movimento do Coletivo LowPressure™ a partir da pesquisa-criação implicada, e quatro objetivos específicos que se conectam diretamente aos três movimentos da dissertação e à conclusão. Cada um deles é verificável: o leitor consegue apontar, na dissertação, onde cada objetivo foi cumprido.",
@@ -226,12 +226,12 @@ export const BLOCOS: PalestraBloco[] = [
       pt: [
         "Abrir /apresentacao 'Objetivos Específicos': ler os 4 itens",
         "Mapear cada objetivo específico no sumário da dissertação",
-        "Regra prática — um objetivo específico = uma seção",
+        "Verificar como os objetivos se articulam ao argumento e às seções da dissertação",
       ],
       en: [
         "Open /apresentacao 'Objetivos Específicos': read the 4 items",
         "Map each specific objective to the dissertation's table of contents",
-        "Practical rule — one specific objective = one section",
+        "Check how the objectives connect to the argument and sections of the dissertation",
       ],
     },
   },
@@ -331,6 +331,6 @@ export const BLOCOS: PalestraBloco[] = [
 ];
 
 export const getLang = (): "pt" | "en" => {
-  const l = i18n.language?.toLowerCase() ?? "pt";
+  const l = i18n.resolvedLanguage?.toLowerCase() ?? "pt";
   return l.startsWith("en") ? "en" : "pt";
 };

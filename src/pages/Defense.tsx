@@ -588,12 +588,12 @@ const Defense = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 bg-background text-foreground overflow-hidden cursor-pointer select-none"
+      className="fixed inset-0 flex flex-col bg-background text-foreground overflow-hidden cursor-pointer select-none"
       onClick={handleClick}
     >
       <VideoPreloader blockIndex={currentBlock} />
 
-      <div className="absolute inset-0">
+      <div className="relative flex-1 min-h-0">
         {renderBlock()}
       </div>
 
@@ -611,7 +611,7 @@ const Defense = () => {
 
       {/* Footer: block indicator left, arrow right */}
       {currentBlock > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-2 px-6 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+        <div className="relative shrink-0 z-20 flex flex-col items-center gap-2 px-6 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] bg-background">
           {/* Progress dots */}
           <div className="flex flex-wrap justify-center items-center gap-1.5 pointer-events-auto">
             {BLOCK_KEYS.slice(1).map((key, i) => (

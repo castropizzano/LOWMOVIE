@@ -1,4 +1,4 @@
-# Estratégia de Preservação Digital — LOWMOVIE™
+# Estratégia de Preservação Digital — LowMovie™
 
 > Guia para preservação de longo prazo do portal, mídias e documentação do projeto.
 
@@ -51,7 +51,7 @@ httrack "https://lowmovie.lovable.app/" \
 ### Notas
 
 - O portal é uma SPA (Single Page Application). O espelho captura os assets estáticos, mas a navegação interna pode requerer um servidor local.
-- Para servir localmente o espelho: `npx serve LOWMOVIE_ARCHIVE/portal_snapshot`
+- Para servir localmente o espelho: `npx serve -s LOWMOVIE_ARCHIVE/portal_snapshot`
 - Recomenda-se gerar o espelho após cada atualização significativa do portal.
 
 ---
@@ -137,7 +137,7 @@ Use este checklist ao criar um pacote de arquivo completo:
 
 - [ ] Executar `scripts/archive.sh` para gerar a estrutura base
 - [ ] Gerar espelho offline via wget ou HTTrack
-- [ ] Verificar se o espelho abre localmente (`npx serve`)
+- [ ] Verificar se o espelho abre localmente (`npx serve -s`)
 - [ ] Criar git bundle do repositório
 - [ ] Copiar todos os vídeos de `public/videos/`
 - [ ] Copiar todas as imagens de `public/images/`
@@ -163,7 +163,7 @@ sha256sum -c metadata/manifest.sha256
 
 ```sh
 cd LOWMOVIE_ARCHIVE/portal_snapshot
-npx serve .
+npx serve -s .
 # Abrir http://localhost:3000 e navegar pelas seções
 ```
 

@@ -24,13 +24,13 @@ const Palestra = () => {
             title={isPt ? "Modo Palestra" : "Lecture Mode"}
             subtitle={
               isPt
-                ? "Lowbyrinth: Quando a Pesquisa Me Encontrou"
-                : "Lowbyrinth: When Research Found Me"
+                ? "Lowbyrinth™: Quando a Pesquisa Me Encontrou"
+                : "Lowbyrinth™: When Research Found Me"
             }
           />
 
           <AnimatedSection delay={0.05}>
-            <div className="space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-12">
+            <div className="reading-measure space-y-4 text-base leading-relaxed text-foreground/80 text-justify mb-12">
               <p>
                 {isPt
                   ? "Antes desta pesquisa existir como dissertação, ela já existia como prática: no skate, na câmera na mão, nos coletivos com os quais sigo trabalhando. A pesquisa veio depois, quase como consequência. É essa história que conto aqui, em dez passos, do encontro com o objeto até os resultados consolidados."

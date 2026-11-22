@@ -9,71 +9,32 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
 const GuiaApresentador = () => {
-  const { i18n } = useTranslation();
-  void i18n.language;
+  const { t } = useTranslation();
   const lang = getLang();
   const isPt = lang === "pt";
-
-  const checklist = isPt
-    ? [
-        "48h antes — testar projetor, áudio, internet e navegador no espaço da palestra",
-        "24h antes — revisar leitura em voz alta dos 10 blocos cronometrando o tempo",
-        "2h antes — carregar todas as páginas-âncora em abas separadas, deixar pré-aquecidas",
-        "30 min antes — abrir /palestra no projetor em tela cheia, modo escuro, sidebar recolhida",
-        "Backup — levar o roteiro impresso (página /imprimir) e o PDF da dissertação no pendrive",
-        "Plano B — se a internet cair, navegar offline pelo PDF impresso e pelo Defense Mode local",
-      ]
-    : [
-        "48h before — test projector, audio, internet and browser at the venue",
-        "24h before — rehearse reading the 10 blocks aloud, timing each one",
-        "2h before — preload all anchor pages in separate tabs, keep them warm",
-        "30 min before — open /palestra on projector full-screen, dark mode, sidebar collapsed",
-        "Backup — bring printed script (/imprimir) and the dissertation PDF on a USB drive",
-        "Plan B — if internet fails, navigate offline via printed PDF and local Defense Mode",
-      ];
-
-  const lembretes = isPt
-    ? [
-        "Falar mais devagar do que parece natural — a banca precisa acompanhar",
-        "Não ler o portal em voz alta: usar a página como apoio visual, narrar com a própria voz",
-        "Cada bloco tem ~9 min em média — se passar, pular para o próximo sem se prender",
-        "Reservar pelo menos 15 min finais para perguntas da audiência",
-        "Setas ← → navegam entre blocos · Espaço avança · Esc volta ao índice",
-      ]
-    : [
-        "Speak slower than feels natural — the audience needs to follow",
-        "Don't read the portal aloud: use the page as visual support, narrate in your own voice",
-        "Each block averages ~9 min — if it runs over, move on without getting stuck",
-        "Reserve at least 15 min at the end for audience questions",
-        "Arrows ← → navigate blocks · Space advances · Esc returns to index",
-      ];
+  const checklist = t("presenterGuide.checklist", { returnObjects: true }) as string[];
+  const lembretes = t("presenterGuide.reminders", { returnObjects: true }) as string[];
 
   const arquivos = [
-    { label: isPt ? "Roteiro imprimível (PDF)" : "Printable script (PDF)", to: "/imprimir" },
+    { label: t("presenterGuide.printOptions"), to: "/imprimir" },
     { label: isPt ? "Caderno-Síntese (PDF)" : "Synthesis Notebook (PDF)", to: "/docs/lowmovie_caderno_sintese.pdf", external: true },
     { label: isPt ? "Toolkit Pedagógico Lowbyrinth™ (PDF)" : "Lowbyrinth™ Pedagogical Toolkit (PDF)", to: "/docs/lowmovie_toolkit_pedagogico.pdf", external: true },
-    { label: isPt ? "Modo Defesa (backup offline)" : "Defense Mode (offline backup)", to: "/defense" },
+    { label: t("presenterGuide.onlineDefense"), to: "/defense" },
   ];
 
   return (
     <Layout>
-      <SeoHead route="/palestra" />
-      <section className="py-20 md:py-28">
+      <SeoHead route="/guia-apresentador" />
+      <section className="py-20 md:py-28 print:py-0">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionTitle
             title={isPt ? "Guia do Apresentador" : "Presenter's Guide"}
-            subtitle={
-              isPt
-                ? `Documento operacional · ${BLOCOS.length} blocos · uso interno`
-                : `Operational document · ${BLOCOS.length} blocks · internal use`
-            }
+            subtitle={t("presenterGuide.subtitle", { count: BLOCOS.length })}
           />
 
           <AnimatedSection delay={0.05}>
-            <div className="mb-12 text-sm leading-relaxed text-muted-foreground text-justify border-l-2 border-primary/40 pl-4">
-              {isPt
-                ? "Este documento concentra tudo o que o apresentador precisa para conduzir a palestra: checklist pré-defesa, sequência recomendada, links rápidos, lembretes, contingência e arquivos de apoio. Nada disso aparece na apresentação vista pela banca."
-                : "This document concentrates everything the presenter needs to run the lecture: pre-defense checklist, recommended sequence, quick links, reminders, contingency and support files. None of this appears in the presentation seen by the audience."}
+            <div className="mb-12 text-sm leading-relaxed text-muted-foreground reading-measure text-justify border-l-2 border-primary/40 pl-4">
+              {t("presenterGuide.intro")}
             </div>
           </AnimatedSection>
 
@@ -173,12 +134,12 @@ const GuiaApresentador = () => {
           </AnimatedSection>
 
           <AnimatedSection delay={0.3}>
-            <div className="border-t border-border/40 pt-6 text-[10px] uppercase tracking-widest text-muted-foreground/70 flex flex-wrap gap-4">
+            <div className="no-print border-t border-border/40 pt-6 text-[10px] uppercase tracking-widest text-muted-foreground/70 flex flex-wrap gap-4">
               <Link to="/palestra" className="hover:text-primary transition-colors">
                 {isPt ? "← Ir para a apresentação" : "← Go to presentation"}
               </Link>
               <span>·</span>
-              <span>{isPt ? "Rota não listada · uso do apresentador" : "Unlisted route · presenter use"}</span>
+              <span>{t("presenterGuide.publicSupport")}</span>
             </div>
           </AnimatedSection>
         </div>

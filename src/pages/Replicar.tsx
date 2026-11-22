@@ -11,10 +11,10 @@ const Replicar = () => {
 
   const steps = [
     { icon: GitFork, key: "step1", code: "git clone https://github.com/castropizzano/lowmovie.git\ncd lowmovie\nnpm ci\nnpm run dev" },
-    { icon: Edit3, key: "step2", code: "src/i18n/locales/   ← textos (PT/EN)\nsrc/data/           ← timeline, conceitos, mapa\nsrc/pages/          ← páginas da dissertação\npublic/images/      ← imagens\npublic/docs/        ← PDFs e documentos" },
-    { icon: UserCheck, key: "step3", code: "CITATION.cff           ← autoria, DOI, ORCID\nsrc/components/Layout.tsx  ← Lattes, banca, orientador\nindex.html             ← meta tags, título, OG" },
+    { icon: Edit3, key: "step2", code: t("replicar.step2.code") },
+    { icon: UserCheck, key: "step3", code: t("replicar.step3.code") },
     { icon: Award, key: "step4", code: t("replicar.step4.code") },
-    { icon: Globe, key: "step5", code: "Lovable    → publish no editor (1 clique)\nVercel     → vercel deploy\nNetlify    → netlify deploy --prod\nGH Pages   → npm run build && deploy /dist" },
+    { icon: Globe, key: "step5", code: t("replicar.step5.code") },
     { icon: Archive, key: "step6", code: t("replicar.step6.code") },
   ];
 
@@ -32,7 +32,7 @@ const Replicar = () => {
         {/* Manifesto */}
         <AnimatedSection className="mb-16">
           <div className="border border-border/50 rounded-lg p-6 md:p-8 bg-muted/20">
-            <p className="text-sm md:text-base text-foreground/90 leading-relaxed">
+            <p className="reading-measure text-sm md:text-base text-foreground/90 leading-relaxed">
               {t("replicar.manifesto")}
             </p>
           </div>
@@ -43,18 +43,15 @@ const Replicar = () => {
           <h3 className="text-lg font-bold uppercase tracking-widest text-foreground mb-6">
             {t("replicar.architectureTitle")}
           </h3>
-          <div className="border border-border/50 rounded-lg p-4 md:p-8 bg-muted/10 overflow-x-auto">
-            <pre className="text-[11px] md:text-xs font-mono text-muted-foreground leading-loose whitespace-pre">
-{`   Lovable (edição)
-              ↓
-        Portal Web (apresentação)
-
-   GitHub (versão pública de referência)
-              ↓
-   Zenodo (DOI)  +  ORCID  +  Lattes
-              ↓
-   Google Drive (mídias)  +  Wayback Machine`}
-            </pre>
+          <div className="border border-border/50 p-4 md:p-8 bg-muted/10 text-sm text-muted-foreground">
+            <ol className="space-y-3" aria-label={t("replicar.architectureTitle")}>
+              <li>{t("replicar.architecture.editing")} <span aria-hidden="true">→</span> {t("replicar.architecture.portal")}</li>
+              <li>{t("replicar.architecture.code")}</li>
+              <li>{t("replicar.architecture.identity")}</li>
+              <li>{t("replicar.architecture.thesis")}</li>
+              <li>{t("replicar.architecture.media")}</li>
+              <li>{t("replicar.architecture.archive")}</li>
+            </ol>
           </div>
         </AnimatedSection>
 
@@ -82,7 +79,7 @@ const Replicar = () => {
                       <h4 className="text-sm md:text-base font-bold uppercase tracking-wider text-foreground mb-2">
                         {t(`replicar.${step.key}.title`)}
                       </h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      <p className="reading-measure text-sm text-muted-foreground leading-relaxed mb-4">
                         {t(`replicar.${step.key}.desc`)}
                       </p>
                       <pre className="text-[11px] md:text-xs font-mono bg-muted/40 border border-border/30 rounded p-3 overflow-x-auto text-foreground/80 whitespace-pre">
