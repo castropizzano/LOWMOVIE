@@ -12,6 +12,8 @@ A dissertação documenta. O portal expande. O livro convida.
 
 Este repositório reúne uma versão revisada do código e da documentação do portal. Permite estudar sua estrutura, executar uma cópia local e referenciar a implementação em pesquisas e apresentações. Seu histórico registra as atualizações desta distribuição, revisadas antes da publicação.
 
+Esta distribuição tem histórico próprio e não é sincronizada automaticamente com o editor do Lovable. Para consultar a experiência atual, acesse o portal publicado. Para referenciar o código, registre o commit desta distribuição.
+
 Os materiais de pesquisa mantêm seus créditos e condições de uso. A consulta ao código e sua disponibilidade no GitHub não concedem autorização geral para reproduzir, modificar ou reutilizar os materiais. Adaptações dependem de autorização conforme [LICENSE](LICENSE).
 
 ## Explorar a pesquisa
